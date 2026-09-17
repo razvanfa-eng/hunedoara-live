@@ -530,6 +530,42 @@ window.SITE_NATURE = [
         { label: "Access to", value: "Cheile Sohodolului gorge, Lake Valea de Pești" }
       ]
     }
+  },
+  {
+    id: "padurea-bejan",
+    name: "Pădurea Bejan",
+    category: { ro: "Rezervație naturală", en: "Nature reserve" },
+    area: "Deva",
+    coords: [45.8517, 22.8889],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Rezervație forestieră de 70 ha lângă Deva, unde coexistă opt din cele nouă specii native de stejar din România.",
+      description: [
+        "Pădurea Bejan este o rezervație naturală de tip forestier declarată prin Legea nr. 5 din 6 martie 2000, cu o suprafață de 70 ha, situată pe teritoriul administrativ al Devei, pe drumul județean DJ708E dinspre Almașu Sec. Este încadrată în categoria IV IUCN (arie de gestionare a habitatelor/speciilor).",
+        "Valoarea ei științifică vine din coexistența a opt din cele nouă specii native de stejar din România, care au dat naștere, de-a lungul timpului, unor hibrizi rar întâlniți în altă parte. Printre plantele rare identificate aici se numără frăsinelul (Dictamnus albus), iar dintre animale — căprior, jder, iepure de câmp, șarpele lui Esculap și buhaiul de baltă cu burta galbenă."
+      ],
+      facts: [
+        { label: "Suprafață", value: "70 ha" },
+        { label: "Statut", value: "Rezervație naturală (Legea nr. 5/2000), categoria IUCN IV" },
+        { label: "Valoare științifică", value: "8 din cele 9 specii native de stejar din România" },
+        { label: "Acces", value: "DJ708E, lângă Deva" }
+      ]
+    },
+    en: {
+      tagline: "A 70 ha forest reserve near Deva, home to eight of Romania's nine native oak species growing side by side.",
+      description: [
+        "Pădurea Bejan is a forest-type nature reserve declared under Law no. 5 of 6 March 2000, covering 70 ha within Deva's administrative territory, on county road DJ708E from Almașu Sec. It is classified as IUCN category IV (habitat/species management area).",
+        "Its scientific value comes from the coexistence of eight of Romania's nine native oak (Quercus) species, which over time have produced hybrids rarely found elsewhere. Rare plants recorded here include fraxinella (Dictamnus albus), while the fauna includes roe deer, pine marten, European hare, the Aesculapian snake and the yellow-bellied toad."
+      ],
+      facts: [
+        { label: "Area", value: "70 ha" },
+        { label: "Status", value: "Nature reserve (Law no. 5/2000), IUCN category IV" },
+        { label: "Scientific value", value: "8 of Romania's 9 native oak species" },
+        { label: "Access", value: "DJ708E, near Deva" }
+      ]
+    }
   }
 ];
 
@@ -901,6 +937,41 @@ window.SITE_ACTIVITIES = [
         { label: "Built", value: "2022, Pro Montana + Vulcan Town Hall + Salvamont Hunedoara" }
       ]
     }
+  },
+  {
+    id: "parcul-cetatii-deva",
+    name: "Parcul Cetății Deva",
+    category: { ro: "Parc & acces cetate", en: "Park & citadel access" },
+    area: "Deva",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Parcul de la poalele Cetății Deva — punctul de plecare pentru potecile pietonale, telecabină și minibuzul electric spre platoul cetății.",
+      description: [
+        "Parcul Cetății se întinde la baza dealului vulcanic pe care se află Cetatea Deva și este punctul de plecare pentru mai multe poteci pietonale marcate spre platoul cetății, un urcuș de aproximativ 40 de minute, de dificultate medie, pe pietriș și trepte.",
+        "Telecabina, funcțională din 2003, are un traseu de 278 m lungime, o diferență de nivel de 158 m și cabine de 30 de locuri. Ca alternativă — inclusiv atunci când telecabina nu funcționează — circulă un minibuz electric de 22 de locuri, de regulă zilnic între 09:00 și 18:00, cu variații sezoniere. Parcarea la baza dealului este gratuită."
+      ],
+      facts: [
+        { label: "Poteci pietonale", value: "~40 min, dificultate medie" },
+        { label: "Telecabină", value: "din 2003, 278 m lungime, diferență de nivel 158 m, cabine de 30 locuri" },
+        { label: "Minibuz electric (alternativ)", value: "22 locuri, de regulă 09:00–18:00" },
+        { label: "Parcare", value: "gratuită, la baza dealului" }
+      ]
+    },
+    en: {
+      tagline: "The park at the foot of Deva Citadel — the starting point for the walking trails, cable car and electric minibus up to the citadel plateau.",
+      description: [
+        "Parcul Cetății spreads at the base of the volcanic hill that Deva Citadel sits on, and is the starting point for several marked walking trails up to the citadel plateau, a climb of about 40 minutes, moderate difficulty, on gravel paths and steps.",
+        "The cable car, running since 2003, covers a 278 m route with a 158 m height difference, in 30-person cabins. As an alternative — including whenever the cable car is not running — a 22-seat electric minibus operates, generally daily between 09:00 and 18:00, with seasonal variations. Parking at the base of the hill is free."
+      ],
+      facts: [
+        { label: "Walking trails", value: "~40 min, moderate difficulty" },
+        { label: "Cable car", value: "since 2003, 278 m route, 158 m height difference, 30-seat cabins" },
+        { label: "Electric minibus (alternative)", value: "22 seats, generally 09:00–18:00" },
+        { label: "Parking", value: "free, at the base of the hill" }
+      ]
+    }
   }
 ];
 
@@ -1099,6 +1170,76 @@ window.SITE_HERITAGE = [
         { label: "Context", value: "King Ferdinand's visit; support for 94 orphans and widows" }
       ]
     }
+  },
+  {
+    id: "aleea-gimnastelor",
+    name: "Aleea Gimnastelor",
+    category: { ro: "Alee comemorativă", en: "Memorial walk" },
+    area: "Deva",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Alee cu 15 busturi de bronz, inaugurată în 2008 la poalele Cetății Deva, dedicată gimnastelor și antrenorilor care au făcut din Deva un centru mondial al gimnasticii.",
+      description: [
+        "Aleea Gimnastelor a fost inaugurată în 2008 la baza Cetății Deva, chiar în fața sălii unde se antrenează lotul național feminin de gimnastică, lângă stația de plecare a telecabinei. Aleea are 15 busturi de bronz de circa 42-43 cm, turnate la o fabrică din București și așezate pe socluri de granit înalte de 1,80 m.",
+        "Ansamblul cuprinde patru busturi de antrenori — cuplurile Marta și Bela Karolyi, respectiv Maria Bitang și Octavian Belu — și 11 busturi de gimnaste, printre care Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu și Andreea Răducan. Aleea marchează palmaresul școlii de gimnastică de la Deva, unde s-a mutat lotul național în 1978, de la Onești."
+      ],
+      facts: [
+        { label: "Inaugurare", value: "2008" },
+        { label: "Compoziție", value: "15 busturi de bronz (4 antrenori + 11 gimnaste)" },
+        { label: "Antrenori comemorați", value: "Marta și Bela Karolyi, Maria Bitang și Octavian Belu" },
+        { label: "Amplasare", value: "la poalele Cetății Deva, lângă stația telecabinei" }
+      ]
+    },
+    en: {
+      tagline: "A row of 15 bronze busts, unveiled in 2008 at the foot of Deva Citadel, honouring the gymnasts and coaches who made Deva a world centre of gymnastics.",
+      description: [
+        "Aleea Gimnastelor (\"the gymnasts' walk\") was unveiled in 2008 at the base of Deva Citadel, right in front of the hall where the national women's gymnastics team trains, next to the cable car's lower station. The walk has 15 bronze busts about 42-43 cm tall, cast at a foundry in Bucharest and set on 1.80 m granite pedestals.",
+        "The ensemble includes four busts of coaches — the couples Marta and Bela Karolyi, and Maria Bitang and Octavian Belu — and 11 busts of gymnasts, including Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu and Andreea Răducan. The walk marks the record of Deva's gymnastics school, where the national team moved in 1978, from Onești."
+      ],
+      facts: [
+        { label: "Unveiled", value: "2008" },
+        { label: "Composition", value: "15 bronze busts (4 coaches + 11 gymnasts)" },
+        { label: "Coaches honoured", value: "Marta and Bela Karolyi, Maria Bitang and Octavian Belu" },
+        { label: "Location", value: "at the foot of Deva Citadel, by the cable car station" }
+      ]
+    }
+  },
+  {
+    id: "muzeul-civilizatiei-dacice-si-romane-deva",
+    name: "Muzeul Civilizației Dacice și Romane — Magna Curia",
+    category: { ro: "Muzeu", en: "Museum" },
+    area: "Deva",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Palatul baroc Magna Curia, în centrul Devei, găzduiește colecțiile de istorie ale Muzeului Civilizației Dacice și Romane și un lapidariu cu peste o sută de piese arheologice.",
+      description: [
+        "Magna Curia este un monument istoric de categorie A, ridicat inițial ca reședință a principelui Transilvaniei Gabriel Bethlen și a soției sale Susana, care au modificat substanțial clădirea între 1614 și 1618. La mijlocul secolului al XVIII-lea, guvernatorul Transilvaniei Ioan Haller și soția sa, Sofia Dániel, au transformat-o în palat baroc, înfățișare păstrată până azi. Clădirea se află pe Bulevardul 1 Decembrie nr. 39.",
+        "Aici sunt expuse secțiile de istorie și numismatică ale Muzeului Civilizației Dacice și Romane — piese preistorice, dacice, romane și medievale timpurii, alături de colecții de etnografie și de științe naturale (botanică, paleontologie, mineralogie). În spatele palatului se află Lapidariul, o structură de sticlă cu peste o sută de piese arheologice masive, organizate în cinci săli tematice."
+      ],
+      facts: [
+        { label: "Adresă", value: "Bd. 1 Decembrie nr. 39, Deva" },
+        { label: "Clădire", value: "Palatul Magna Curia (Bethlen), monument istoric categoria A" },
+        { label: "Transformare barocă", value: "mijlocul secolului XVIII, guvernatorul Ioan Haller" },
+        { label: "Colecții", value: "arheologie, etnografie, numismatică, științe naturale; Lapidariul (100+ piese)" }
+      ]
+    },
+    en: {
+      tagline: "The baroque Magna Curia palace, in central Deva, houses the history collections of the Museum of Dacian and Roman Civilisation and a lapidarium with over a hundred archaeological pieces.",
+      description: [
+        "Magna Curia is a category A historic monument, originally built as a residence for Transylvanian prince Gabriel Bethlen and his wife Susana, who substantially altered the building between 1614 and 1618. In the mid-18th century, Transylvania's governor Ioan Haller and his wife, Sofia Dániel, turned it into a baroque palace, an appearance preserved to this day. The building stands at 39, 1 Decembrie Boulevard.",
+        "It houses the history and numismatics sections of the Museum of Dacian and Roman Civilisation — prehistoric, Dacian, Roman and early medieval pieces, alongside ethnography and natural sciences collections (botany, palaeontology, mineralogy). Behind the palace stands the Lapidarium, a glass structure with over a hundred massive archaeological pieces, arranged in five themed rooms."
+      ],
+      facts: [
+        { label: "Address", value: "39, 1 Decembrie Blvd., Deva" },
+        { label: "Building", value: "Magna Curia (Bethlen) Palace, category A historic monument" },
+        { label: "Baroque conversion", value: "mid-18th century, governor Ioan Haller" },
+        { label: "Collections", value: "archaeology, ethnography, numismatics, natural sciences; the Lapidarium (100+ pieces)" }
+      ]
+    }
   }
 ];
 
@@ -1110,6 +1251,7 @@ window.SITE_TOWNS = [
     area: "Culoarul Mureșului",
     coords: [45.8781, 22.9144],
     hasReviews: false,
+    relatedAreas: ["Deva"],
     images: ["images/deva-cetate.jpg"],
     photoCredit: { author: "Bogdan.onis", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Deva.jpg" },
     ro: {
