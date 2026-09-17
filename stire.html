@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Știre — Hunedoara Live</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" data-i18n="site.name">Hunedoara Live</a>
+      <nav class="site-nav">
+        <a href="locuri.html" data-i18n="nav.locuri">Locuri</a>
+        <a href="activitati.html" data-i18n="nav.activitati">Activități</a>
+        <a href="istorie.html" data-i18n="nav.istorie">Istorie</a>
+        <a href="orase.html" data-i18n="nav.orase">Orașe</a>
+        <a href="stiri.html" aria-current="page" data-i18n="nav.stiri">Știri</a>
+        <a href="afaceri.html" data-i18n="nav.afaceri">Afaceri</a>
+        <a href="utile.html" data-i18n="nav.utile">Utile</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        <button id="lang-toggle" class="lang-toggle" type="button" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container detail">
+    <div id="detail-root">
+      <a id="detail-back" class="detail-back" href="stiri.html">← Toate știrile</a>
+      <div class="detail-badge" id="detail-badge"></div>
+      <h1 class="detail-title" id="detail-title"></h1>
+      <p class="detail-tagline" id="detail-tagline"></p>
+      <div class="gallery" id="detail-gallery"></div>
+      <div class="detail-body">
+        <div class="detail-description" id="detail-description"></div>
+        <aside>
+          <div class="detail-facts" id="detail-facts"></div>
+          <div class="detail-map" id="detail-map"></div>
+        </aside>
+      </div>
+    </div>
+    <div id="detail-notfound" class="not-found" hidden>
+      <p data-i18n="detail.notFound">Rezultatul căutat nu există.</p>
+      <a href="stiri.html" data-i18n="detail.notFound.link">← Înapoi</a>
+    </div>
+    <div id="reviews" hidden></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <a class="brand" href="index.html" data-i18n="site.name">Hunedoara Live</a>
+        <div class="footer-tagline" data-i18n="footer.tagline">ghidul digital al județului Hunedoara</div>
+      </div>
+    </div>
+    <div class="container"><p class="footer-note" data-i18n="footer.note">Proiect independent, necomercial.</p></div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    window.DETAIL_CONFIG = { dataKey: "SITE_NEWS", backPage: "stiri.html", backLabelKey: "detail.back.stiri" };
+  </script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

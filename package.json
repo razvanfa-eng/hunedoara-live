@@ -1,0 +1,15 @@
+{
+  "name": "hunedoara-live",
+  "version": "1.0.0",
+  "description": "Ghidul digital al judetului Hunedoara - schelet bilingv RO/EN, structura completa (locuri, activitati, istorie, orase, stiri, afaceri, utile, contact).",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node serve.js",
+    "test": "node test/run.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^30.0.1"
+  }
+}

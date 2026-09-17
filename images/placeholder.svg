@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Imagine in curand / Image coming soon">
+  <rect width="800" height="600" fill="#F6F5F1"/>
+  <rect x="0" y="0" width="800" height="600" fill="none" stroke="#E7E4DC" stroke-width="2"/>
+  <circle cx="400" cy="240" r="46" fill="none" stroke="#0E6B64" stroke-width="3" opacity="0.55"/>
+  <path d="M330 300 L400 240 L470 300" fill="none" stroke="#0E6B64" stroke-width="3" opacity="0.55"/>
+  <text x="400" y="380" text-anchor="middle" font-family="'Work Sans', Arial, sans-serif" font-size="20" fill="#8A8375">Imagine în curând · Image coming soon</text>
+</svg>
