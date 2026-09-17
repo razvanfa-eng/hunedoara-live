@@ -19,9 +19,18 @@
  *               facts = listă liberă de perechi etichetă/valoare, afișate
  *               într-un tabel pe pagina de detaliu (adresă, program, altitudine,
  *               populație, dificultate — ce are sens pentru intrarea respectivă)
+ *   season      opțional — "primavara" | "vara" | "toamna" | "iarna" | "tot-anul".
+ *               Folosit doar pentru gruparea din blocul "Obiective din zonă"
+ *               (vezi relatedAreas mai jos); fără el, intrarea e pusă la "tot-anul".
+ *   relatedAreas opțional, doar pe intrări din SITE_TOWNS/SITE_DESTINATIONS —
+ *               listă de nume de `area` (ex. ["Petroșani", "Parâng", "Vâlcan"]).
+ *               js/detail.js afișează automat, grupate pe sezon, toate intrările
+ *               din Natură/Turism activ/Moștenire/Afaceri a căror `area` se
+ *               regăsește în listă — vezi orașul Petroșani mai jos.
  *
- * Momentan sunt doar EXEMPLE (example: true) — completăm împreună conținutul
- * real pe măsură ce alegem locurile, orașele și afacerile din tot județul.
+ * Câteva intrări sunt încă EXEMPLE (example: true) — completăm împreună
+ * conținutul real pe măsură ce alegem locurile, orașele și afacerile din
+ * tot județul.
  */
 
 window.SITE_DESTINATIONS = [
@@ -195,6 +204,7 @@ window.SITE_NATURE = [
     area: "Petrila",
     coords: [45.4539, 23.3183],
     hasReviews: true,
+    season: "tot-anul",
     images: ["images/pestera-bolii-portal.jpg"],
     photoCredit: { author: "mihai moise", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Pestera_Boli_-_panoramio.jpg" },
     ro: {
@@ -259,6 +269,7 @@ window.SITE_NATURE = [
     area: "Parâng",
     coords: [45.3411, 23.5406],
     hasReviews: true,
+    season: "vara",
     images: ["images/parangul-mare-varf.jpg"],
     photoCredit: { author: "Cioboata Andrei", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Varful_Parangul_Mare_(2519m)_-_panoramio.jpg" },
     ro: {
@@ -279,6 +290,207 @@ window.SITE_NATURE = [
       facts: [
         { label: "Altitude", value: "2,519 m" },
         { label: "Getting there", value: "Chairlift from Petroșani + ridge trail" }
+      ]
+    }
+  },
+  {
+    id: "padurea-bicolora-petrila",
+    name: "Pădurea Bicoloră",
+    category: { ro: "Fenomen natural", en: "Natural phenomenon" },
+    area: "Petrila",
+    coords: [45.4717, 23.4081],
+    hasReviews: true,
+    season: "toamna",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Un deal parcă tăiat în două culori, la Cheile Tăii, lângă Petrila — molid mereu verde pe o parte, fag auriu pe cealaltă.",
+      description: [
+        "Pădurea Bicoloră s-a format acum aproape jumătate de secol, când o jumătate din versant a fost defrișată și replantată cu molid, în timp ce cealaltă jumătate a rămas pădure naturală de fag. Linia dintre cele două tipuri de vegetație a rămas aproape perfect dreaptă, de la vârful dealului până la vale.",
+        "Contrastul se vede tot anul — molidul rămâne verde, fagul își schimbă culoarea — dar cel mai spectaculos e toamna, timp de câteva săptămâni, când frunzișul de fag devine auriu-roșcat. Locul se află pe traseul spre Cheile Tăii, rezervație naturală protejată, la câțiva kilometri de Petrila."
+      ],
+      facts: [
+        { label: "Acces", value: "Câțiva kilometri de Petrila, pe drumul spre Cheile Tăii" },
+        { label: "Cel mai bun sezon", value: "Toamna, câteva săptămâni, cât fagul se colorează" },
+        { label: "Zonă protejată", value: "Rezervația naturală Cheile Tăii (2 ha)" }
+      ]
+    },
+    en: {
+      tagline: "A hillside that looks cut in two colours, at the Tăia Gorges near Petrila — evergreen spruce on one side, golden beech on the other.",
+      description: [
+        "Pădurea Bicoloră (the \"Two-Coloured Forest\") formed nearly half a century ago, when one half of the slope was cleared and replanted with spruce, while the other half stayed natural beech forest. The line between the two kinds of vegetation stayed almost perfectly straight, from the hilltop down to the valley.",
+        "The contrast is visible year-round — the spruce stays green, the beech changes colour — but it's most spectacular in autumn, for a few weeks, when the beech foliage turns golden-rust. The spot lies on the way to the Tăia Gorges, a protected nature reserve, a few kilometres from Petrila."
+      ],
+      facts: [
+        { label: "Access", value: "A few kilometres from Petrila, on the road to the Tăia Gorges" },
+        { label: "Best season", value: "Autumn, a few weeks while the beech turns colour" },
+        { label: "Protected area", value: "Tăia Gorges nature reserve (2 ha)" }
+      ]
+    }
+  },
+  {
+    id: "pasul-vulcan",
+    name: "Pasul Vulcan",
+    category: { ro: "Trecătoare montană", en: "Mountain pass" },
+    area: "Vâlcan",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Trecătoare istorică de 1.621 m care leagă Valea Jiului de Oltenia.",
+      description: [
+        "Pasul Vulcan este o trecătoare montană aflată la altitudinea de 1.621 m, în partea de est a Munților Vâlcan, la granița dintre județele Hunedoara și Gorj. Face legătura între Depresiunea Petroșani și depresiunea subcarpatică Târgu Jiu – Câmpu Mare, pe drumul județean DJ664 (Vulcan – Schela).",
+        "Drumul peste pas urmează un traseu folosit din antichitate, străbătut istoric de Mihai Viteazul în 1600, în drumul său spre Viena. În septembrie 1916, pasul a fost și scena unor lupte între trupele române și cele germano-austro-ungare, în timpul Primului Război Mondial."
+      ],
+      facts: [
+        { label: "Altitudine", value: "1.621 m" },
+        { label: "Leagă", value: "județele Hunedoara și Gorj" },
+        { label: "Drum de acces", value: "DJ664, parțial nemodernizat" }
+      ]
+    },
+    en: {
+      tagline: "A historic 1,621 m pass linking the Jiu Valley to Oltenia.",
+      description: [
+        "Vulcan Pass is a mountain pass at 1,621 m altitude, in the eastern Vâlcan Mountains, on the border between Hunedoara and Gorj counties. It connects the Petroșani Depression with the Târgu Jiu – Câmpu Mare sub-Carpathian depression, via county road DJ664 (Vulcan–Schela).",
+        "The road over the pass follows a route used since antiquity, historically crossed by Prince Michael the Brave in 1600, on his way to Vienna. In September 1916, the pass was also the site of fighting between Romanian and German/Austro-Hungarian troops during World War I."
+      ],
+      facts: [
+        { label: "Altitude", value: "1,621 m" },
+        { label: "Connects", value: "Hunedoara and Gorj counties" },
+        { label: "Access road", value: "DJ664, partly unpaved" }
+      ]
+    }
+  },
+  {
+    id: "jiet-groapa-seaca",
+    name: "Cheile Jiețului – Groapa Seacă",
+    category: { ro: "Rezervație naturală", en: "Nature reserve" },
+    area: "Parâng",
+    hasReviews: true,
+    season: "vara",
+    images: ["images/jiet-groapa-seaca.jpg"],
+    photoCredit: { author: "Cioboata Andrei", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Indicatoare_turistice_Cabana_Groapa_Seac%C4%83_-_panoramio.jpg" },
+    ro: {
+      tagline: "Chei sălbatice și izvoarele Jiețului, poartă naturală spre inima Parângului.",
+      description: [
+        "Rezervația Cheile Jiețului este o arie naturală protejată de interes național (categoria IV IUCN), cu o suprafață de 10 ha, situată pe versantul drept al Munților Parâng, pe teritoriul orașului Petrila. Aici apele Jiețului au săpat chei abrupte și înguste, cu stânci acoperite de licheni și vegetație de pădure montană; rezervația a fost instituită în 1995 și declarată oficial în 2000.",
+        "În amonte, Cabana Groapa Seacă (~1.220 m) este un punct de plecare cunoscut pentru trasee spre Vârful Parângul Mare, Lacul Mija și alte obiective din masiv, fiind una dintre porțile clasice de acces în Parângul hunedorean."
+      ],
+      facts: [
+        { label: "Suprafață rezervație", value: "10 ha" },
+        { label: "Statut", value: "arie protejată, categoria IV IUCN (din 1995/2000)" },
+        { label: "Altitudine Cabana Groapa Seacă", value: "~1.220 m" }
+      ]
+    },
+    en: {
+      tagline: "Wild gorges and the springs of the Jieț, a natural gateway into the Parâng massif.",
+      description: [
+        "The Cheile Jiețului reserve is a nationally protected natural area (IUCN category IV), covering 10 ha, on the right slope of the Parâng Mountains, within the territory of Petrila town. Here the Jieț river has carved steep, narrow gorges with lichen-covered rock walls and mountain forest vegetation; the reserve was established in 1995 and officially declared in 2000.",
+        "Further upstream, Cabana Groapa Seacă (~1,220 m) is a well-known starting point for trails to Parângul Mare Peak, Lake Mija and other landmarks in the massif, one of the classic access gates into the Hunedoara side of the Parâng Mountains."
+      ],
+      facts: [
+        { label: "Reserve area", value: "10 ha" },
+        { label: "Status", value: "protected area, IUCN category IV (since 1995/2000)" },
+        { label: "Cabana Groapa Seacă altitude", value: "~1,220 m" }
+      ]
+    }
+  },
+  {
+    id: "campu-lui-neag",
+    name: "Câmpu lui Neag",
+    category: { ro: "Zonă montană", en: "Mountain area" },
+    area: "Uricani",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/campu-lui-neag.jpg"],
+    photoCredit: { author: "Nicu Farcaș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:C%C3%A2mpu_lui_Neag,_Hunedoara.JPG" },
+    ro: {
+      tagline: "Satul momârlanilor de la poalele Retezatului, poartă spre Parâng și Retezat.",
+      description: [
+        "Câmpu lui Neag este o localitate din componența orașului Uricani, așezată în sud-vestul județului Hunedoara, la poalele Munților Retezat, fiind considerată una dintre porțile de acces spre Parcul Național Retezat. Zona păstrează tradițiile comunității momârlanilor, locuitorii statornici ai Văii Jiului.",
+        "Accesul se face din Petroșani sau din Târgu Jiu, pe DN66A, pe traseul Vulcan – Lupeni – Uricani – Câmpu lui Neag, pe o distanță de circa 40 km. De aici pornesc numeroase trasee turistice spre lacurile, cheile și vârfurile din Munții Retezat și Parâng."
+      ],
+      facts: [
+        { label: "Distanță de Petroșani", value: "~40 km (DN66A)" },
+        { label: "Poziție", value: "poalele Munților Retezat, orașul Uricani" },
+        { label: "Specific local", value: "comunitatea tradițională a momârlanilor" }
+      ]
+    },
+    en: {
+      tagline: "The Momârlani mountain village at the foot of the Retezat, gateway to Parâng and Retezat.",
+      description: [
+        "Câmpu lui Neag is a village within Uricani town, in the southwestern part of Hunedoara County, at the foot of the Retezat Mountains, considered one of the gateways to Retezat National Park. The area preserves the traditions of the Momârlani, the long-settled mountain community of the Jiu Valley.",
+        "Access is from Petroșani or Târgu Jiu on road DN66A, via Vulcan – Lupeni – Uricani – Câmpu lui Neag, about 40 km. From here, numerous trails lead to lakes, gorges and peaks in the Retezat and Parâng mountains."
+      ],
+      facts: [
+        { label: "Distance from Petroșani", value: "~40 km (DN66A)" },
+        { label: "Location", value: "foot of the Retezat Mountains, Uricani town" },
+        { label: "Local character", value: "traditional Momârlani community" }
+      ]
+    }
+  },
+  {
+    id: "cheile-buta",
+    name: "Cheile Buții",
+    category: { ro: "Chei", en: "Gorge" },
+    area: "Vâlcan",
+    hasReviews: true,
+    season: "vara",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Chei calcaroase spectaculoase, printre cele mai frumoase arii protejate din Munții Vâlcan.",
+      description: [
+        "Cheile Buții sunt săpate de râul Buta (afluent al Jiului de Vest) în calcare jurasice, la granița dintre județele Hunedoara și Gorj, în Munții Vâlcan. Pereții abrupți, care ajung până la aproximativ 100 m înălțime, adăpostesc peșteri, izvoare și cascade, zona fiind considerată una dintre cele mai spectaculoase arii protejate din această parte a Europei.",
+        "Punctul de plecare pentru vizitarea cheilor este Cabana Buta, aflată la altitudinea de 1.580 m, pe creasta Piule–Pleșa, cu priveliști spre Oslea și Munții Vâlcan. Accesul pe jos, marcat cu bandă/cruce roșie, durează aproximativ 4 ore de la șoseaua DN66A."
+      ],
+      facts: [
+        { label: "Altitudine Cabana Buta", value: "1.580 m" },
+        { label: "Rocă", value: "calcar jurasic" },
+        { label: "Acces pe jos", value: "~4 ore de la DN66A, marcaj cruce roșie" }
+      ]
+    },
+    en: {
+      tagline: "Spectacular limestone gorges, among the most beautiful protected areas in the Vâlcan Mountains.",
+      description: [
+        "Cheile Buții (Buta Gorges) were carved by the Buta river (a tributary of the Jiul de Vest) through Jurassic limestone, on the Hunedoara–Gorj county border, in the Vâlcan Mountains. The steep walls, reaching about 100 m in height, shelter caves, springs and waterfalls, and the area is considered one of the most spectacular protected areas in this part of Europe.",
+        "The starting point for visiting the gorges is Cabana Buta, at 1,580 m altitude, on the Piule–Pleșa ridge, with views toward Oslea and the Vâlcan Mountains. The hike, marked with a red cross trail, takes about 4 hours from the DN66A road."
+      ],
+      facts: [
+        { label: "Cabana Buta altitude", value: "1,580 m" },
+        { label: "Rock type", value: "Jurassic limestone" },
+        { label: "Hiking access", value: "~4 hours from DN66A, red cross marking" }
+      ]
+    }
+  },
+  {
+    id: "valea-iarului",
+    name: "Valea Iarului",
+    category: { ro: "Vale montană", en: "Mountain valley" },
+    area: "Uricani",
+    hasReviews: true,
+    season: "vara",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Vale montană retrasă lângă Câmpușel, punct de plecare pentru drumeții și camping montan.",
+      description: [
+        "Valea Iarului este o vale montană situată în zona Câmpușel, la aproximativ 29 km de orașul Uricani, pe versantul dinspre Retezat al munților din sud-vestul județului. Zona este relativ sălbatică și puțin populată, cu acces facilitat de câteva trasee marcate, de dificultate moderată spre dificilă.",
+        "Aici funcționează Camping Valea Iarului, o amenajare de tip glamping cu corturi încălzite montate pe platforme de lemn, punct de popas apreciat de drumeți înainte de a urca spre creste."
+      ],
+      facts: [
+        { label: "Zonă", value: "Câmpușel, orașul Uricani" },
+        { label: "Distanță de Uricani", value: "~29 km" },
+        { label: "Facilități", value: "camping/glamping, trasee de drumeție marcate" }
+      ]
+    },
+    en: {
+      tagline: "A secluded mountain valley near Câmpușel, a base for hiking and mountain camping.",
+      description: [
+        "Valea Iarului is a mountain valley in the Câmpușel area, about 29 km from the town of Uricani, on the Retezat side of the mountains in the county's south-west. The area is relatively wild and sparsely populated, reached via several marked trails of moderate to difficult grade.",
+        "Camping Valea Iarului operates here, a glamping-style site with heated tents on wooden platforms, a popular stop for hikers before heading up to the ridges."
+      ],
+      facts: [
+        { label: "Area", value: "Câmpușel, Uricani town" },
+        { label: "Distance from Uricani", value: "~29 km" },
+        { label: "Facilities", value: "camping/glamping, marked hiking trails" }
       ]
     }
   }
@@ -325,6 +537,7 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Schi", en: "Skiing" },
     area: "Parâng",
     hasReviews: false,
+    season: "iarna",
     images: ["images/partii-parang.jpg"],
     photoCredit: { author: "Cioboata Andrei", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Lacul_C%C3%A2lcescu_-_panoramio.jpg" },
     ro: {
@@ -356,6 +569,7 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Schi", en: "Skiing" },
     area: "Vâlcan",
     hasReviews: false,
+    season: "iarna",
     images: ["images/statiunea-straja.jpg"],
     photoCredit: { author: "Albundy64", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Ski_resort_Straja.jpg" },
     ro: {
@@ -380,6 +594,72 @@ window.SITE_ACTIVITIES = [
         { label: "Altitude", value: "1,130–1,868 m (Straja Peak)" },
         { label: "Access", value: "from Lupeni — 8 km paved road or gondola" },
         { label: "Ski area", value: "approx. 26 km (20 km artificial snow), 12 slopes, 11 lifts" }
+      ]
+    }
+  },
+  {
+    id: "sania-straja",
+    name: "Sania pe șine Straja (Baloo Coaster)",
+    category: { ro: "Sanie pe șine", en: "Alpine coaster" },
+    area: "Vâlcan",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Prima sanie pe șine din Hunedoara, o coborâre cu adrenalină prin pădurea de la Straja.",
+      description: [
+        "Sania pe șine (Baloo Coaster) este o atracție de tip alpine coaster deschisă la finalul anului 2025 în stațiunea Straja, lângă Lupeni, la poalele Munților Vâlcan. Instalația a fost realizată printr-o investiție de aproximativ 2,6 milioane de euro, finanțată prin Programul pentru Tranziție Justă.",
+        "Traseul, lung de circa 1,4 km, traversează pârtia Sfântul Gheorghe prin două poduri suspendate și include patru spirale care mențin adrenalina la cote înalte. Sania are două locuri, se deplasează pe șine duble pentru siguranță sporită și poate atinge o viteză maximă de aproximativ 40 km/h."
+      ],
+      facts: [
+        { label: "Lungime traseu", value: "~1,4 km" },
+        { label: "Viteză maximă", value: "~40 km/h" },
+        { label: "Investiție", value: "~2,6 milioane euro (fonduri Tranziție Justă)" }
+      ]
+    },
+    en: {
+      tagline: "Hunedoara's first alpine coaster — an adrenaline ride through the forest at Straja.",
+      description: [
+        "The Baloo Coaster alpine coaster opened in late 2025 at the Straja resort, near Lupeni, at the foot of the Vâlcan Mountains. The installation was built through an investment of about €2.6 million, funded through the Just Transition Program.",
+        "The roughly 1.4 km track crosses the Sfântul Gheorghe ski slope over two suspended bridges and includes four spirals for extra thrills. The two-seat sled runs on a double rail system for added safety and can reach a top speed of about 40 km/h."
+      ],
+      facts: [
+        { label: "Track length", value: "~1.4 km" },
+        { label: "Top speed", value: "~40 km/h" },
+        { label: "Investment", value: "~€2.6 million (Just Transition funding)" }
+      ]
+    }
+  },
+  {
+    id: "traseu-dealul-babii",
+    name: "Traseul Dealul Babii",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Petroșani",
+    hasReviews: true,
+    season: "primavara",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Culme domoală între Vulcan și Merișor, vestită primăvara pentru covorul de ghiocei.",
+      description: [
+        "Dealul Babii este o zonă deluroasă situată între orașul Vulcan și satul Merișor, parte a unui traseu de drumeție care pleacă din Petroșani, trece prin Aninoasa, Vulcan, Dealu Babii, Pasul Dealu Babii, Merișor și Bănița, revenind în buclă spre Petroșani — un circuit de aproximativ 44 km, cu altitudini între cca. 550 m și puțin peste 900 m.",
+        "Zona este cunoscută mai ales primăvara, când ghioceii înfloresc pe o porțiune de aproximativ 3 km de deal, transformând Dealul Babii într-un „covor alb”, un obiectiv apreciat de localnici și drumeți din Valea Jiului."
+      ],
+      facts: [
+        { label: "Lungime circuit", value: "~44 km (Petroșani–Vulcan–Dealu Babii–Merișor–Bănița–Petroșani)" },
+        { label: "Altitudine", value: "~550–900 m" },
+        { label: "Perioadă recomandată", value: "primăvara, pentru înflorirea ghioceilor" }
+      ]
+    },
+    en: {
+      tagline: "A gentle ridge between Vulcan and Merișor, famous in spring for its carpet of snowdrops.",
+      description: [
+        "Dealul Babii is a hilly area between the town of Vulcan and the village of Merișor, part of a hiking loop that starts in Petroșani, passes through Aninoasa, Vulcan, Dealu Babii, Pasul Dealu Babii, Merișor and Bănița, and loops back to Petroșani — a circuit of about 44 km, climbing from roughly 550 m to just over 900 m.",
+        "The area is best known in spring, when snowdrops bloom across about 3 km of hillside, turning Dealul Babii into a white carpet — a favourite spot for locals and hikers in the Jiu Valley."
+      ],
+      facts: [
+        { label: "Loop length", value: "~44 km (Petroșani–Vulcan–Dealu Babii–Merișor–Bănița–Petroșani)" },
+        { label: "Elevation", value: "~550–900 m" },
+        { label: "Best season", value: "spring, for the snowdrop bloom" }
       ]
     }
   }
@@ -487,6 +767,7 @@ window.SITE_HERITAGE = [
     area: "Petroșani",
     coords: [45.4166, 23.3733],
     hasReviews: true,
+    season: "tot-anul",
     images: ["images/muzeul-mineritului-petrosani.jpg"],
     photoCredit: { author: "Strainu", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Muzeul_Mineritului_(2).JPG" },
     ro: {
@@ -588,6 +869,7 @@ window.SITE_TOWNS = [
     area: "Valea Jiului",
     coords: [45.4166, 23.3733],
     hasReviews: false,
+    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Petrila", "Uricani"],
     images: ["images/petrosani-panorama.jpg"],
     photoCredit: { author: "Eduard Gergely", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrosani_Town.jpg" },
     ro: {
@@ -830,6 +1112,39 @@ window.SITE_BUSINESSES = [
       facts: [
         { label: "Address", value: "Lupeni" },
         { label: "Phone", value: "To be filled in" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-retezat-petrosani",
+    name: "Pensiunea Retezat",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Uricani",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune de familie la poalele Retezatului, în Câmpu lui Neag.",
+      description: [
+        "Pensiunea Retezat este situată în Câmpu lui Neag (orașul Uricani), chiar la poalele masivului Retezat, la capătul drumului DN66A dinspre Petroșani. Oferă 15 camere, piscină, restaurant și terasă, fiind un punct de plecare comod pentru vizitarea Parcului Național Retezat.",
+        "Pensiunea pune la dispoziția oaspeților și activități de agrement — parc de aventură, călărie și acces la piscină în sezonul cald — potrivite atât pentru familii, cât și pentru drumeți."
+      ],
+      facts: [
+        { label: "Locație", value: "Câmpu lui Neag, orașul Uricani" },
+        { label: "Facilități", value: "15 camere, piscină, restaurant, terasă" },
+        { label: "Contact", value: "tel. 0722 538 551 · office@pensiunearetezat.com · pensiunearetezat.com" }
+      ]
+    },
+    en: {
+      tagline: "A family guesthouse at the foot of the Retezat, in Câmpu lui Neag.",
+      description: [
+        "Pensiunea Retezat is located in Câmpu lui Neag (Uricani town), right at the foot of the Retezat massif, at the end of road DN66A from Petroșani. It offers 15 rooms, a pool, restaurant and terrace, making it a convenient base for visiting Retezat National Park.",
+        "The guesthouse also offers recreational activities — an adventure park, horse riding and pool access in the warm season — suited to both families and hikers."
+      ],
+      facts: [
+        { label: "Location", value: "Câmpu lui Neag, Uricani town" },
+        { label: "Facilities", value: "15 rooms, pool, restaurant, terrace" },
+        { label: "Contact", value: "phone +40 722 538 551 · office@pensiunearetezat.com · pensiunearetezat.com" }
       ]
     }
   }

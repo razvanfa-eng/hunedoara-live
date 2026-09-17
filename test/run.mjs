@@ -64,8 +64,8 @@ function load(file, query = "") {
   const w1 = await load("natura.html");
   const d1 = w1.document;
   ok(!w1.__err, "natura: fără erori JS" + (w1.__err ? " — " + w1.__err : ""));
-  ok(d1.querySelectorAll("#grid .card").length === 4, "natura: 4 carduri (conținut real)");
-  ok(d1.querySelectorAll("#f-area option").length === 1 + 4, "natura: filtru zonă = 4 + Toate");
+  ok(d1.querySelectorAll("#grid .card").length === 10, "natura: 10 carduri (conținut real)");
+  ok(d1.querySelectorAll("#f-area option").length === 1 + 6, "natura: filtru zonă = 6 + Toate");
 
   const w = await load("natura-loc.html", "?id=pestera-bolii");
   const d = w.document;
@@ -98,7 +98,7 @@ function load(file, query = "") {
 /* -------- afaceri.html + afacere.html (recenzii, altă secțiune) -------- */
 {
   const w1 = await load("afaceri.html");
-  ok(w1.document.querySelectorAll("#grid .card").length === 2, "afaceri: 2 carduri (exemple)");
+  ok(w1.document.querySelectorAll("#grid .card").length === 3, "afaceri: 3 carduri");
 
   const w2 = await load("afacere.html", "?id=exemplu-restaurant-local");
   const d2 = w2.document;
@@ -110,7 +110,7 @@ function load(file, query = "") {
 /* -------- restul secțiunilor: randare fără erori + numărul corect de carduri -------- */
 {
   const pairs = [
-    ["turism-activ.html", 3], ["mostenire.html", 4], ["orase.html", 6], ["stiri.html", 2]
+    ["turism-activ.html", 5], ["mostenire.html", 4], ["orase.html", 6], ["stiri.html", 2]
   ];
   for (const [file, count] of pairs) {
     const w = await load(file);
@@ -130,6 +130,16 @@ function load(file, query = "") {
   }
 }
 
+/* -------- oras.html?id=petrosani: secțiunea "Obiective din zonă" (relatedAreas) -------- */
+{
+  const w = await load("oras.html", "?id=petrosani");
+  ok(!w.__err, "oras petrosani: fără erori JS" + (w.__err ? " — " + w.__err : ""));
+  const rel = w.document.querySelector("#detail-related");
+  ok(!!rel && !rel.hidden, "oras petrosani: #detail-related vizibil");
+  ok(rel.querySelectorAll(".card").length === 14, "oras petrosani: 14 obiective din zonă");
+  ok(rel.querySelectorAll(".related-group__title").length >= 3, "oras petrosani: grupate pe cel puțin 3 sezoane");
+}
+
 /* -------- pagini statice -------- */
 {
   for (const file of ["utile.html", "contact.html", "404.html", "credite.html"]) {
@@ -137,7 +147,7 @@ function load(file, query = "") {
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
   const w = await load("credite.html");
-  ok(w.document.querySelectorAll(".credit-card").length === 25, "credite: 25 intrări (4+4+3+4+6+2+2, toate secțiunile)");
+  ok(w.document.querySelectorAll(".credit-card").length === 34, "credite: 34 intrări (4+10+5+4+6+2+3, toate secțiunile)");
 }
 
 /* -------- fișiere prezente -------- */
