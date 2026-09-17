@@ -161,6 +161,74 @@ window.SITE_DESTINATIONS = [
         { label: "Towns included", value: "Deva, Simeria, Orăștie" }
       ]
     }
+  },
+  {
+    id: "muntii-metaliferi",
+    name: "Munții Metaliferi",
+    category: { ro: "Zonă montană și minieră", en: "Mining & mountain zone" },
+    area: "Nord-Vest",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Partea hunedoreană a „patrulaterului aurifer” — Brad, Săcărâmb și Crișcior, minerit neîntrerupt din perioada romană până în secolul XX.",
+      description: [
+        "Munții Metaliferi, în nord-vestul județului, cuprind partea hunedoreană a „patrulaterului aurifer” — una dintre cele mai bogate regiuni aurifere din Europa. Brad este centrul istoric al zonei, cu propriul Muzeu al Aurului; în apropiere se află Ruda-Brad, cu o galerie minieră romană din secolele II–III d.Hr., și Crișcior, cu o biserică din secolele XIV–XV.",
+        "La Săcărâmb, exploatat neîntrerupt din 1746, au fost descrise pentru prima dată în lume șase minerale, printre care silvanitul (1835) — zăcământul a fost considerat, aproape 130 de ani (1748–1876), cel mai profitabil din Europa."
+      ],
+      facts: [
+        { label: "Localități incluse", value: "Brad, Săcărâmb, Crișcior, Ruda-Brad" },
+        { label: "Reper", value: "Muzeul Aurului din Brad" },
+        { label: "Curiozitate mineralogică", value: "la Săcărâmb au fost descrise 6 minerale noi pentru știință, inclusiv silvanitul (1835)" },
+        { label: "Oraș principal", value: "Brad" }
+      ]
+    },
+    en: {
+      tagline: "The Hunedoara side of the \"gold quadrilateral\" — Brad, Săcărâmb and Crișcior, gold mining without interruption from Roman times to the 20th century.",
+      description: [
+        "The Metaliferi Mountains, in the county's north-west, hold the Hunedoara portion of the \"gold quadrilateral\" — one of Europe's richest gold-bearing regions. Brad is the area's historic centre, with its own Gold Museum; nearby lie Ruda-Brad, with a Roman mining gallery from the 2nd-3rd centuries AD, and Crișcior, with a 14th-15th century church.",
+        "At Săcărâmb, worked without interruption since 1746, six minerals were described for the first time in the world, including sylvanite (1835) — the deposit was regarded, for nearly 130 years (1748-1876), as the most profitable in Europe."
+      ],
+      facts: [
+        { label: "Towns/villages included", value: "Brad, Săcărâmb, Crișcior, Ruda-Brad" },
+        { label: "Landmark", value: "Gold Museum in Brad" },
+        { label: "Mineralogical curiosity", value: "6 minerals first described at Săcărâmb, including sylvanite (1835)" },
+        { label: "Main town", value: "Brad" }
+      ]
+    }
+  },
+  {
+    id: "tinutul-padurenilor",
+    name: "Ținutul Pădurenilor",
+    category: { ro: "Zonă etnografică și montană", en: "Ethnographic & mountain zone" },
+    area: "Vest",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Zonă etno-folclorică arhaică pe valea Cernei Hunedorene — 40 de sate risipite pe culmi, tradiție siderurgică și port popular încă purtat la sărbători.",
+      description: [
+        "Ținutul Pădurenilor se întinde pe valea Cernei Hunedorene, între Culoarul Mureșului la nord, Țara Hațegului la sud și Munții Poiana Ruscă la vest — o „insulă etnografică” de circa 40 de sate și cătune, majoritatea așezate pe culmi despădurite, între 600 și 1.100 m altitudine. Ghelari, cea mai mare localitate a zonei, a dat numele tradiției de extragere a minereului de fier, topit până în 1924 la furnalul din apropiere, de la Govăjdia — primul furnal cu flux continuu din Europa.",
+        "Lângă Teliucu Inferior se află Lacul Cinciș, amenajat pe Cerna la începutul anilor 1960, cu plaje și pescuit. Zona rămâne cunoscută pentru portul popular tradițional al pădurenilor, purtat încă la sărbători și evenimente."
+      ],
+      facts: [
+        { label: "Localități incluse", value: "Ghelari, Govăjdia, Teliucu Inferior și cca. 40 de sate/cătune" },
+        { label: "Delimitare", value: "Culoarul Mureșului (nord), Țara Hațegului (sud), Munții Poiana Ruscă (vest)" },
+        { label: "Reper industrial", value: "Furnalul de la Govăjdia (1806–1810)" },
+        { label: "Lac", value: "Lacul Cinciș (~867 ha)" }
+      ]
+    },
+    en: {
+      tagline: "An archaic ethno-folkloric zone on the Cerna Hunedoreană valley — 40 villages scattered across hilltops, an iron-making tradition and folk costume still worn at festivals.",
+      description: [
+        "Ținutul Pădurenilor (\"the Foresters' Land\") stretches along the Cerna Hunedoreană valley, bordered by the Mureș corridor to the north, Țara Hațegului to the south and the Poiana Ruscă Mountains to the west — an \"ethnographic island\" of about 40 villages and hamlets, most perched on deforested hilltops between 600 and 1,100 m altitude. Ghelari, the area's largest village, gave its name to the region's iron-ore mining tradition, smelted until 1924 at the nearby Govăjdia furnace — Europe's first continuous-flow blast furnace.",
+        "Near Teliucu Inferior lies Lacul Cinciș, a reservoir built on the Cerna in the early 1960s, with beaches and fishing. The area remains known for the traditional folk costume of the pădureni, still worn at festivals and events."
+      ],
+      facts: [
+        { label: "Villages included", value: "Ghelari, Govăjdia, Teliucu Inferior and about 40 villages/hamlets" },
+        { label: "Bordered by", value: "Mureș corridor (north), Țara Hațegului (south), Poiana Ruscă Mountains (west)" },
+        { label: "Industrial landmark", value: "Govăjdia furnace (1806-1810)" },
+        { label: "Lake", value: "Lacul Cinciș (~867 ha)" }
+      ]
+    }
   }
 ];
 
