@@ -275,30 +275,97 @@ window.SITE_NATURE = [
 
 window.SITE_ACTIVITIES = [
   {
-    id: "exemplu-traseu-parang",
-    name: "Exemplu · Traseu montan",
-    category: { ro: "Drumeție", en: "Hiking" },
-    area: "Parâng",
-    coords: [45.3430, 23.5190],
-    example: true,
+    id: "traseu-pietrele-bucura-peleaga",
+    name: "Traseu Cabana Pietrele – Lacul Bucura – Vf. Peleaga",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parcul Național Retezat",
+    coords: [45.3583, 22.8750],
     hasReviews: false,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "EXEMPLU de traseu de drumeție în masivul Parâng.",
-      description: ["Înlocuiește cu un traseu real: marcaj, puncte de reper, ce se vede pe drum."],
+      tagline: "Clasicul traseu din Retezat: de la Cabana Pietrele (1.480 m), la Lacul Bucura și pe Vf. Peleaga (2.509 m).",
+      description: [
+        "Traseul pornește de la Cabana Pietrele și urcă spre Lacul Bucura, cel mai mare lac glaciar din România — de aici, ultimul tronson spre Vf. Peleaga durează în jur de 2–2,5 ore și are porțiuni de grohotiș instabil.",
+        "E un traseu de o zi, solicitant, potrivit doar cu echipament de munte; ultimul tronson (Bucura–Peleaga) se închide iarna din cauza riscului de avalanșă."
+      ],
       facts: [
-        { label: "Dificultate", value: "Medie" },
-        { label: "Durată", value: "De completat" },
-        { label: "Cum ajungi", value: "Telescaunul din Petroșani urcă spre platoul Parâng." }
+        { label: "Punct de plecare", value: "Cabana Pietrele (1.480 m)" },
+        { label: "Dificultate", value: "Medie–dificilă, porțiuni de grohotiș" },
+        { label: "Sezon", value: "Tronsonul Bucura–Peleaga se închide iarna (risc de avalanșă)" }
       ]
     },
     en: {
-      tagline: "EXAMPLE hiking trail in the Parâng massif.",
-      description: ["Replace with a real trail: markings, waypoints, what you see along the way."],
+      tagline: "The classic Retezat route: from Cabana Pietrele (1,480 m), to Bucura Lake and Peleaga Peak (2,509 m).",
+      description: [
+        "The trail starts at Cabana Pietrele and climbs to Bucura Lake, Romania's largest glacial lake — from there, the last stretch to Peleaga Peak takes around 2–2.5 hours and has sections of unstable scree.",
+        "It's a demanding day hike, suitable only with proper mountain gear; the last stretch (Bucura–Peleaga) closes in winter due to avalanche risk."
+      ],
       facts: [
-        { label: "Difficulty", value: "Medium" },
-        { label: "Duration", value: "To be filled in" },
-        { label: "Getting there", value: "The chairlift from Petroșani goes up towards the Parâng plateau." }
+        { label: "Starting point", value: "Cabana Pietrele (1,480 m)" },
+        { label: "Difficulty", value: "Medium–hard, scree sections" },
+        { label: "Season", value: "The Bucura–Peleaga stretch closes in winter (avalanche risk)" }
+      ]
+    }
+  },
+  {
+    id: "partiile-parang",
+    name: "Pârtiile de schi din Parâng",
+    category: { ro: "Schi", en: "Skiing" },
+    area: "Parâng",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Domeniu schiabil la cca. 15 km de Petroșani, cu telescaun de la 950 la 1.650 m.",
+      description: [
+        "Stațiunea Parâng are 9 pârtii însumând circa 8 km, deservite de 9 instalații de transport pe cablu. Telescaunul urcă din zona Petroșani până la 1.650 m altitudine, pe un traseu de 700 m diferență de nivel."
+      ],
+      facts: [
+        { label: "Acces", value: "cca. 15 km de Petroșani" },
+        { label: "Telescaun", value: "de la 950 m la 1.650 m altitudine" },
+        { label: "Domeniu", value: "cca. 8 km, 9 pârtii, 9 instalații" }
+      ]
+    },
+    en: {
+      tagline: "A ski area about 15 km from Petroșani, with a chairlift climbing from 950 to 1,650 m.",
+      description: [
+        "The Parâng resort has 9 slopes totalling about 8 km, served by 9 cable lifts. The chairlift climbs from the Petroșani area up to 1,650 m altitude, a 700 m difference in elevation."
+      ],
+      facts: [
+        { label: "Access", value: "approx. 15 km from Petroșani" },
+        { label: "Chairlift", value: "from 950 m to 1,650 m altitude" },
+        { label: "Ski area", value: "approx. 8 km, 9 slopes, 9 lifts" }
+      ]
+    }
+  },
+  {
+    id: "statiunea-straja",
+    name: "Stațiunea de schi Straja",
+    category: { ro: "Schi", en: "Skiing" },
+    area: "Vâlcan",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Declarată stațiune în 2002, cu cel mai întins domeniu schiabil din județ — cca. 26 km de pârtii.",
+      description: [
+        "Straja se află la 1.440 m altitudine, în Munții Vâlcan, accesibilă din Lupeni pe un drum asfaltat de 8 km sau cu telegondola. Domeniul schiabil are circa 26 km (din care 20 km cu zăpadă artificială), 12 pârtii și 11 instalații de transport pe cablu, între 1.130 și 1.868 m altitudine (Vf. Straja).",
+        "Cea mai lungă pârtie, Straja Strand, are 3,8 km."
+      ],
+      facts: [
+        { label: "Altitudine", value: "1.130–1.868 m (Vf. Straja)" },
+        { label: "Acces", value: "din Lupeni — 8 km drum asfaltat sau telegondolă" },
+        { label: "Domeniu", value: "cca. 26 km (20 km cu zăpadă artificială), 12 pârtii, 11 instalații" }
+      ]
+    },
+    en: {
+      tagline: "Declared a resort in 2002, with the county's largest ski area — about 26 km of slopes.",
+      description: [
+        "Straja sits at 1,440 m altitude, in the Vâlcan Mountains, reachable from Lupeni via an 8 km paved road or by gondola. The ski area covers about 26 km (20 km with artificial snow), 12 slopes and 11 cable lifts, between 1,130 and 1,868 m altitude (Straja Peak).",
+        "The longest slope, Straja Strand, is 3.8 km."
+      ],
+      facts: [
+        { label: "Altitude", value: "1,130–1,868 m (Straja Peak)" },
+        { label: "Access", value: "from Lupeni — 8 km paved road or gondola" },
+        { label: "Ski area", value: "approx. 26 km (20 km artificial snow), 12 slopes, 11 lifts" }
       ]
     }
   }
@@ -620,23 +687,69 @@ window.SITE_TOWNS = [
 
 window.SITE_NEWS = [
   {
-    id: "exemplu-eveniment-local",
-    name: "Exemplu · Anunț / eveniment local",
-    category: { ro: "Eveniment", en: "Event" },
-    area: "Deva",
-    date: "2026-09-01",
-    example: true,
+    id: "istorie-natura-cultura-costesti-2026",
+    name: "„Istorie, Natură, Cultură” — ediția a 55-a, la Costești",
+    category: { ro: "Festival", en: "Festival" },
+    area: "Costești, Orăștioara de Sus",
+    date: "2026-09-18",
     hasReviews: false,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "EXEMPLU de știre. Înlocuiește cu un eveniment sau anunț real din județ.",
-      description: ["Textul real al știrii vine aici — dată, locație, detalii practice pentru cine vrea să participe."],
-      facts: [{ label: "Data", value: "1 septembrie 2026" }]
+      tagline: "În weekendul 18–20 septembrie 2026, lângă cetățile dacice — concerte, marș folcloric și artizanat local.",
+      description: [
+        "Festivalul „Istorie, Natură, Cultură” ajunge la ediția a 55-a, în comuna Orăștioara de Sus, în apropierea cetăților dacice din Munții Orăștiei. Organizat de GAL Sargeția, Asociația Culturală Valea Dacilor și Parcul Natural Grădiștea Muncelului-Cioclovina, alături de instituții locale.",
+        "Programul include concerte de muzică ușoară și populară cu artiști cunoscuți, un marș folcloric cu ansambluri din tot județul, foc de artificii la apus, o paradă de costume istorice și populare, plus produse de la producători și meșteșugari locali."
+      ],
+      facts: [
+        { label: "Perioadă", value: "18–20 septembrie 2026" },
+        { label: "Loc", value: "Costești, comuna Orăștioara de Sus" },
+        { label: "Organizatori", value: "GAL Sargeția, Asociația Culturală Valea Dacilor, Parcul Natural Grădiștea Muncelului-Cioclovina" }
+      ]
     },
     en: {
-      tagline: "EXAMPLE news item. Replace with a real event or announcement from the county.",
-      description: ["The real news text goes here — date, location, practical details for anyone who wants to attend."],
-      facts: [{ label: "Date", value: "1 September 2026" }]
+      tagline: "On the weekend of 18–20 September 2026, near the Dacian fortresses — concerts, a folklore march and local crafts.",
+      description: [
+        "The \"Istorie, Natură, Cultură\" festival reaches its 55th edition, in the Orăștioara de Sus commune, near the Dacian fortresses in the Orăștie Mountains. Organised by the GAL Sargeția local action group, the Valea Dacilor Cultural Association and the Grădiștea Muncelului-Cioclovina Natural Park, together with local institutions.",
+        "The programme includes pop and folk music concerts with well-known artists, a folklore march with ensembles from across the county, a sunset fireworks display, a parade of historical and traditional costumes, plus products from local producers and craftspeople."
+      ],
+      facts: [
+        { label: "Dates", value: "18–20 September 2026" },
+        { label: "Location", value: "Costești, Orăștioara de Sus commune" },
+        { label: "Organisers", value: "GAL Sargeția, Valea Dacilor Cultural Association, Grădiștea Muncelului-Cioclovina Natural Park" }
+      ]
+    }
+  },
+  {
+    id: "festivalul-medieval-ioan-de-hunedoara-2026",
+    name: "Festivalul Medieval „Ioan de Hunedoara” — ediția 2026",
+    category: { ro: "Festival", en: "Festival" },
+    area: "Hunedoara",
+    date: "2026-08-29",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "18 grupuri de reconstituire istorică din țară și străinătate au adus Evul Mediu la Castelul Corvinilor.",
+      description: [
+        "Pe 29–30 august 2026, Castelul Corvinilor și Pietonala Corvin din Hunedoara au găzduit Festivalul Medieval „Ioan de Hunedoara”, cu reconstituiri de bătălii istorice, ateliere interactive, demonstrații de tir cu arcul și lupte medievale.",
+        "Ediția din acest an a adus 18 grupuri de reconstituire istorică din România, Cehia, Slovacia și Ungaria, plus concerte susținute de trupele Iris și Peregrinii."
+      ],
+      facts: [
+        { label: "Perioadă", value: "29–30 august 2026" },
+        { label: "Loc", value: "Castelul Corvinilor, Hunedoara" },
+        { label: "Participanți", value: "18 grupuri de reconstituire istorică, din țară și din străinătate" }
+      ]
+    },
+    en: {
+      tagline: "18 historical re-enactment groups from Romania and abroad brought the Middle Ages back to Corvin Castle.",
+      description: [
+        "On 29–30 August 2026, Corvin Castle and the Corvin pedestrian street in Hunedoara hosted the \"Ioan de Hunedoara\" Medieval Festival, with historical battle re-enactments, interactive workshops, archery demonstrations and medieval combat.",
+        "This year's edition brought 18 historical re-enactment groups from Romania, the Czech Republic, Slovakia and Hungary, plus concerts by the bands Iris and Peregrinii."
+      ],
+      facts: [
+        { label: "Dates", value: "29–30 August 2026" },
+        { label: "Location", value: "Corvin Castle, Hunedoara" },
+        { label: "Participants", value: "18 historical re-enactment groups, from Romania and abroad" }
+      ]
     }
   }
 ];

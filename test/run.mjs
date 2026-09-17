@@ -38,7 +38,7 @@ function load(file, query = "") {
   ok(d.querySelectorAll("#home-stats .stat").length === 4, "index: 4 statistici randate");
   ok(d.querySelectorAll("#explore-grid .tile").length === 8, "index: 8 module în grid-ul de explorare (structura hibridă)");
   ok([...d.querySelectorAll("#explore-grid .tile")].every((a) => /\.html$/.test(a.getAttribute("href"))), "index: toate tile-urile leagă spre o pagină");
-  ok(d.querySelectorAll("#home-news .news-item").length === 1, "index: 1 știre randată (exemplu)");
+  ok(d.querySelectorAll("#home-news .news-item").length === 2, "index: 2 știri randate (conținut real)");
   const before = d.querySelector(".hero h1").textContent;
   d.querySelector("#lang-toggle").dispatchEvent(new w.Event("click"));
   ok(d.querySelector(".hero h1").textContent === before, "index: numele site-ului nu se traduce (Hunedoara Live rămâne la fel)");
@@ -110,7 +110,7 @@ function load(file, query = "") {
 /* -------- restul secțiunilor: randare fără erori + numărul corect de carduri -------- */
 {
   const pairs = [
-    ["turism-activ.html", 1], ["mostenire.html", 4], ["orase.html", 6], ["stiri.html", 1]
+    ["turism-activ.html", 3], ["mostenire.html", 4], ["orase.html", 6], ["stiri.html", 2]
   ];
   for (const [file, count] of pairs) {
     const w = await load(file);
@@ -118,10 +118,10 @@ function load(file, query = "") {
     ok(w.document.querySelectorAll("#grid .card").length === count, file + ": " + count + " card(uri) randate");
   }
   const details = [
-    ["activitate.html", "exemplu-traseu-parang", "Traseu"],
+    ["activitate.html", "traseu-pietrele-bucura-peleaga", "Pietrele"],
     ["mostenire-articol.html", "sarmizegetusa-regia", "Sarmizegetusa"],
     ["oras.html", "petrosani", "Petroșani"],
-    ["stire.html", "exemplu-eveniment-local", "eveniment"]
+    ["stire.html", "istorie-natura-cultura-costesti-2026", "Costești"]
   ];
   for (const [file, id, needle] of details) {
     const w = await load(file, "?id=" + id);
@@ -137,7 +137,7 @@ function load(file, query = "") {
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
   const w = await load("credite.html");
-  ok(w.document.querySelectorAll(".credit-card").length === 22, "credite: 22 intrări (4+4+1+4+6+1+2, toate secțiunile)");
+  ok(w.document.querySelectorAll(".credit-card").length === 25, "credite: 25 intrări (4+4+3+4+6+2+2, toate secțiunile)");
 }
 
 /* -------- fișiere prezente -------- */
