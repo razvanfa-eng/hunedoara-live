@@ -1205,6 +1205,74 @@ window.SITE_TOWNS = [
     }
   },
   {
+    id: "petrila",
+    name: "Petrila",
+    category: { ro: "Oraș", en: "Town" },
+    area: "Valea Jiului",
+    coords: [45.4530, 23.4160],
+    hasReviews: false,
+    relatedAreas: ["Petrila", "Parâng"],
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cel mai vechi oraș minier al Văii Jiului, azi poartă spre Cheile Jiețului și fosta mină devenită muzeu.",
+      description: [
+        "Petrila este atestată documentar din 1499 și s-a dezvoltat de la 1840 ca centru minier, în jurul minelor Lonea și Petrila. Mina, închisă în 2015, a fost clasată monument istoric și transformată treptat în „Planeta Petrila” — un muzeu în aer liber cu tururi ghidate și festivalul Opera Nights.",
+        "Pe teritoriul orașului se află și rezervațiile naturale Cheile Jiețului (10 ha) și Cheile Taia (2 ha), punct de plecare spre platoul Parâng, precum și Conacul Rădăcinilor, un complex hotelier și de agrement deschis în 2023 în Cheile Jietului."
+      ],
+      facts: [
+        { label: "Populație", value: "19.600 locuitori (recensământ 2021)" },
+        { label: "Atestare documentară", value: "1499" },
+        { label: "Reper", value: "Mina Petrila / Planeta Petrila (monument istoric)" }
+      ]
+    },
+    en: {
+      tagline: "The oldest mining town of Valea Jiului, now a gateway to Cheile Jiețului and its former mine turned museum.",
+      description: [
+        "Petrila is first documented in 1499 and grew from the 1840s as a mining centre, around the Lonea and Petrila mines. The mine, closed in 2015, was listed as a historic monument and gradually turned into \"Planet Petrila\" — an open-air museum with guided tours and the Opera Nights festival.",
+        "The town's territory also holds the Cheile Jiețului (10 ha) and Cheile Taia (2 ha) nature reserves, a starting point for the Parâng plateau, as well as Conacul Rădăcinilor, a hotel and leisure complex opened in 2023 in the Jieț gorge."
+      ],
+      facts: [
+        { label: "Population", value: "19,600 (2021 census)" },
+        { label: "First documented", value: "1499" },
+        { label: "Landmark", value: "Petrila Mine / Planet Petrila (historic monument)" }
+      ]
+    }
+  },
+  {
+    id: "vulcan",
+    name: "Vulcan",
+    category: { ro: "Municipiu", en: "Municipality" },
+    area: "Valea Jiului",
+    coords: [45.3833, 23.2667],
+    hasReviews: false,
+    relatedAreas: ["Vulcan", "Vâlcan"],
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "A doua localitate ca mărime din Valea Jiului, poartă spre Pasul Vâlcan și Peștera Dracului.",
+      description: [
+        "Vulcan apare menționat încă din Harta Iosefină (1769–1773) și este, din 2003, municipiu — a doua localitate ca mărime din Valea Jiului, după Petroșani. Orașul s-a dezvoltat tot în jurul mineritului cărbunelui, iar astăzi e cunoscut mai ales pentru Peștera Dracului, cu propria cascadă, aflată pe unul dintre cele cinci trasee tematice amenajate în zonă în 2022.",
+        "De la Vulcan pornește drumul spre Pasul Vâlcan (1.621 m), care leagă Valea Jiului de nordul Olteniei, traversat istoric de Mihai Viteazul în 1600 și loc de luptă în Primul Război Mondial."
+      ],
+      facts: [
+        { label: "Populație", value: "19.772 locuitori (recensământ 2021)" },
+        { label: "Statut", value: "municipiu (din 2003)" },
+        { label: "Reper", value: "Peștera Dracului; Pasul Vâlcan (1.621 m)" }
+      ]
+    },
+    en: {
+      tagline: "The second-largest town in Valea Jiului, gateway to Vulcan Pass and the Devil's Cave.",
+      description: [
+        "Vulcan is mentioned as far back as the Josephine Land Survey (1769–1773) and has been a municipality since 2003 — the second-largest town in Valea Jiului after Petroșani. Like its neighbours, it grew around coal mining, and today it's best known for Peștera Dracului (Devil's Cave), with its own waterfall, found on one of five themed trails built in the area in 2022.",
+        "From Vulcan, the road climbs to Vulcan Pass (1,621 m), which links Valea Jiului to northern Oltenia — historically crossed by Prince Michael the Brave in 1600, and the site of fighting during World War I."
+      ],
+      facts: [
+        { label: "Population", value: "19,772 (2021 census)" },
+        { label: "Status", value: "municipality (since 2003)" },
+        { label: "Landmark", value: "Devil's Cave; Vulcan Pass (1,621 m)" }
+      ]
+    }
+  },
+  {
     id: "orastie",
     name: "Orăștie",
     category: { ro: "Municipiu", en: "Municipality" },
