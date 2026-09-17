@@ -2148,28 +2148,610 @@ window.SITE_BUSINESSES = [
     }
   },
   {
-    id: "exemplu-pensiune",
-    name: "Exemplu · Pensiune",
+    id: "casa-lupeni",
+    name: "Casa Lupeni",
     category: { ro: "Cazare", en: "Accommodation" },
     area: "Lupeni",
-    coords: [45.3590, 23.2400],
-    example: true,
     hasReviews: true,
+    season: "tot-anul",
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "EXEMPLU de pensiune. Înlocuiește cu una reală.",
-      description: ["De completat: număr de camere, facilități, preț orientativ/noapte, dacă acceptă animale, parcare."],
+      tagline: "Pensiune mică, cu 6 camere și jacuzzi în aer liber, pe strada Bărbăteni din Lupeni.",
+      description: [
+        "Casa Lupeni este o pensiune de dimensiuni mici, situată pe strada Bărbăteni nr. 58, în Lupeni, cu 6 camere (duble, triple și un apartament cu două camere), fiecare cu baie proprie. Oferă parcare privată gratuită, cu 10 locuri supravegheate video, wi-fi în spațiile comune și grădină.",
+        "Punctul de atracție al pensiunii este jacuzzi-ul în aer liber, disponibil contra cost, iar locația este un punct de plecare comod spre stațiunea Straja și spre traseele din Valea Jiului. Pensiunea nu are restaurant propriu, tarifele afișate nefiind cu masă inclusă."
+      ],
       facts: [
-        { label: "Adresă", value: "Lupeni" },
-        { label: "Telefon", value: "De completat" }
+        { label: "Adresă", value: "Str. Bărbăteni nr. 58, Lupeni" },
+        { label: "Camere", value: "6 camere (duble, triple, apartament), baie proprie" },
+        { label: "Facilități", value: "parcare privată, wi-fi, grădină, jacuzzi în aer liber (contra cost)" },
+        { label: "Contact", value: "tel. 0364 431 808" }
       ]
     },
     en: {
-      tagline: "EXAMPLE guesthouse. Replace with a real one.",
-      description: ["To be filled in: number of rooms, facilities, indicative price/night, pets, parking."],
+      tagline: "A small 6-room guesthouse with an outdoor jacuzzi on Bărbăteni street in Lupeni.",
+      description: [
+        "Casa Lupeni is a small guesthouse on Bărbăteni street no. 58 in Lupeni, with 6 rooms (double, triple and a two-room apartment), each with a private bathroom. It offers free private parking with 10 video-monitored spaces, wi-fi in common areas and a garden.",
+        "The guesthouse's highlight is its outdoor jacuzzi, available for an extra fee, and the location is a convenient base for the Straja resort and the hiking trails of the Jiu Valley. There is no restaurant on site, so the listed rates do not include meals."
+      ],
       facts: [
-        { label: "Address", value: "Lupeni" },
-        { label: "Phone", value: "To be filled in" }
+        { label: "Address", value: "Bărbăteni street no. 58, Lupeni" },
+        { label: "Rooms", value: "6 rooms (double, triple, apartment), private bathroom" },
+        { label: "Facilities", value: "private parking, wi-fi, garden, outdoor jacuzzi (extra fee)" },
+        { label: "Contact", value: "phone +40 364 431 808" }
+      ]
+    }
+  },
+  {
+    id: "hotel-sarmis-deva",
+    name: "Hotel Sarmis",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Deva",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Hotel de 3 stele cu 117 camere, pe strada principală din centrul Devei.",
+      description: [
+        "Hotel Sarmis este un hotel de 3 stele situat pe strada Mareșal Averescu nr. 7, în centrul orașului Deva, la mai puțin de un kilometru de gară și autogară. Dispune de 117 camere și apartamente, majoritatea cu balcon, minibar și TV, precum și de un restaurant propriu cu bucătărie românească și internațională, servită în salon sau pe terasă.",
+        "Fiind unul dintre cele mai mari hoteluri din oraș, este folosit atât pentru sejururi turistice, cât și pentru cazare de afaceri și evenimente; recepția funcționează non-stop, iar micul dejun, parcarea și internetul wi-fi sunt incluse în tarif."
+      ],
+      facts: [
+        { label: "Locație", value: "Str. Mareșal Averescu nr. 7, Deva" },
+        { label: "Categorie", value: "3 stele, 117 camere" },
+        { label: "Facilități", value: "restaurant propriu, parcare gratuită, wi-fi, mic dejun inclus" },
+        { label: "Contact", value: "tel. 0254 214 731 · sarmis.deva@unita-turism.ro" }
+      ]
+    },
+    en: {
+      tagline: "A 3-star hotel with 117 rooms on Deva's main street, in the city centre.",
+      description: [
+        "Hotel Sarmis is a 3-star hotel at 7 Mareșal Averescu street, in central Deva, less than a kilometre from the train and bus stations. It has 117 rooms and suites, most with a balcony, minibar and TV, plus its own restaurant serving Romanian and international dishes, indoors or on the terrace.",
+        "As one of the largest hotels in town, it is used for both tourist stays and business travel or events; the front desk is open 24 hours, and breakfast, parking and wi-fi are included in the rate."
+      ],
+      facts: [
+        { label: "Location", value: "7 Mareșal Averescu street, Deva" },
+        { label: "Category", value: "3 stars, 117 rooms" },
+        { label: "Facilities", value: "in-house restaurant, free parking, wi-fi, breakfast included" },
+        { label: "Contact", value: "phone +40 254 214 731 · sarmis.deva@unita-turism.ro" }
+      ]
+    }
+  },
+  {
+    id: "cocosul-de-aur-deva",
+    name: "Cocoșul de Aur",
+    category: { ro: "Restaurant", en: "Restaurant" },
+    area: "Deva",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Restaurant cu specific românesc, lipit de Sinagoga din centrul Devei.",
+      description: [
+        "Cocoșul de Aur este un restaurant cu specific tradițional românesc, situat pe Bulevardul Iuliu Maniu nr. 9, chiar în centrul Devei, lângă clădirea Sinagogii. Are 60 de locuri în interior și o terasă încălzită cu încă 40 de locuri, iar meniul îmbină ciorbe și fripturi la grătar, gătite după rețete clasice, cu câteva preparate internaționale."
+      ],
+      facts: [
+        { label: "Adresă", value: "Bd. Iuliu Maniu nr. 9, Deva" },
+        { label: "Specific", value: "bucătărie tradițională românească" },
+        { label: "Capacitate", value: "60 de locuri interior + terasă încălzită, 40 de locuri" },
+        { label: "Contact", value: "tel. 0767 651 253" }
+      ]
+    },
+    en: {
+      tagline: "A traditional Romanian restaurant right next to the Deva synagogue.",
+      description: [
+        "Cocoșul de Aur (\"The Golden Rooster\") is a traditional Romanian restaurant at 9 Iuliu Maniu boulevard, in central Deva, next to the synagogue building. It seats 60 indoors plus another 40 on a heated terrace, and its menu combines soups and grilled meats cooked to classic recipes with a few international dishes."
+      ],
+      facts: [
+        { label: "Address", value: "9 Iuliu Maniu boulevard, Deva" },
+        { label: "Cuisine", value: "traditional Romanian" },
+        { label: "Capacity", value: "60 seats indoors + heated terrace, 40 seats" },
+        { label: "Contact", value: "phone +40 767 651 253" }
+      ]
+    }
+  },
+  {
+    id: "casa-rustica-deva",
+    name: "Casa Rustică",
+    category: { ro: "Restaurant", en: "Restaurant" },
+    area: "Deva",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Bistro-pizzerie cu specific italian, vizavi de centrul comercial Ulpia din Deva.",
+      description: [
+        "Casa Rustică este un bistro-pizzerie cu specific italian, situat pe Aleea Transilvaniei, vizavi de centrul comercial Ulpia din Deva. Meniul cuprinde pizza la cuptor, paste, salate și preparate internaționale, într-o atmosferă rustică, potrivită atât pentru mese rapide, cât și pentru comenzi la pachet."
+      ],
+      facts: [
+        { label: "Adresă", value: "Aleea Transilvaniei, bl. 7, sc. 2, parter, Deva" },
+        { label: "Specific", value: "pizza, paste, bucătărie italiană și internațională" },
+        { label: "Contact", value: "tel. 0254 222 300" }
+      ]
+    },
+    en: {
+      tagline: "An Italian-style bistro and pizzeria across from the Ulpia mall in Deva.",
+      description: [
+        "Casa Rustică is an Italian-style bistro and pizzeria on Aleea Transilvaniei, across from the Ulpia shopping centre in Deva. The menu includes oven-baked pizza, pasta, salads and international dishes, in a rustic setting suited to both quick meals and takeaway orders."
+      ],
+      facts: [
+        { label: "Address", value: "Aleea Transilvaniei, bl. 7, sc. 2, ground floor, Deva" },
+        { label: "Cuisine", value: "pizza, pasta, Italian and international" },
+        { label: "Contact", value: "phone +40 254 222 300" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-la-fontaine-hunedoara",
+    name: "Pensiunea La Fontaine",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Hunedoara",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune cu 10 camere și grădină, la câteva minute de mers pe jos de Castelul Corvinilor.",
+      description: [
+        "Pensiunea La Fontaine este situată pe strada Rotarilor nr. 4, în centrul Hunedoarei, la câteva minute de mers pe jos de Castelul Corvinilor — unele camere au vedere directă spre castel. Dispune de 10 camere (duble, twin și de familie), restaurant propriu, bar și o grădină amenajată pentru mese în aer liber.",
+        "Pensiunea oferă parcare gratuită și wi-fi atât în camere, cât și în grădină, fiind o opțiune potrivită pentru un sejur axat pe vizitarea cetății și a orașului vechi."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Rotarilor nr. 4, Hunedoara" },
+        { label: "Camere", value: "10 camere (duble, twin, de familie)" },
+        { label: "Facilități", value: "restaurant, bar, grădină, parcare gratuită, wi-fi" },
+        { label: "Contact", value: "tel. 0770 235 524 · rezervare@lafontaine.ro · lafontaine.ro" }
+      ]
+    },
+    en: {
+      tagline: "A 10-room guesthouse with a garden, a few minutes' walk from Corvin Castle.",
+      description: [
+        "Pensiunea La Fontaine is on Rotarilor street no. 4, in central Hunedoara, a few minutes' walk from Corvin Castle — some rooms have a direct view of the castle. It has 10 rooms (double, twin and family), its own restaurant, a bar and a landscaped garden for outdoor dining.",
+        "The guesthouse offers free parking and wi-fi both in the rooms and in the garden, making it a good choice for a stay focused on the fortress and the old town."
+      ],
+      facts: [
+        { label: "Address", value: "4 Rotarilor street, Hunedoara" },
+        { label: "Rooms", value: "10 rooms (double, twin, family)" },
+        { label: "Facilities", value: "restaurant, bar, garden, free parking, wi-fi" },
+        { label: "Contact", value: "phone +40 770 235 524 · rezervare@lafontaine.ro · lafontaine.ro" }
+      ]
+    }
+  },
+  {
+    id: "curtea-veche-hunedoara",
+    name: "Curtea Veche",
+    category: { ro: "Hotel & restaurant", en: "Hotel & restaurant" },
+    area: "Hunedoara",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Fost han vechi, azi pensiune și restaurant cu bucătărie tradițională hunedoreană.",
+      description: [
+        "Curtea Veche este un complex de cazare și restaurant amenajat într-un vechi han din Hunedoara, pe strada Cernei nr. 2, la poalele Castelului Corvinilor. Pensiunea oferă camere single, duble, triple și de familie, iar restaurantul servește preparate din bucătăria tradițională hunedoreană — friptură cu garnitură „ca la bunica”, produse de patiserie coapte la cuptorul cu lemne și tocănițe gătite lent în oale de lut.",
+        "Complexul are curte spațioasă cu șemineu pe lemne și spații destinate evenimentelor, fiind unul dintre puținele locuri din oraș care combină cazare și restaurant sub același acoperiș, în imediata apropiere a cetății."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Cernei nr. 2, Hunedoara" },
+        { label: "Specific", value: "bucătărie tradițională hunedoreană, produse la cuptorul cu lemne" },
+        { label: "Program", value: "10:00–22:00, zilnic" },
+        { label: "Contact", value: "pensiune tel. 0772 028 207 · restaurant tel. 0770 123 333 · curteavechehunedoara.ro" }
+      ]
+    },
+    en: {
+      tagline: "A former old inn, now a guesthouse and restaurant with traditional Hunedoara cuisine.",
+      description: [
+        "Curtea Veche is an accommodation and restaurant complex set up in an old inn in Hunedoara, at 2 Cernei street, at the foot of Corvin Castle. The guesthouse offers single, double, triple and family rooms, while the restaurant serves traditional Hunedoara dishes — roasted meat with sides \"like grandmother used to make\", wood-fired oven pastries and stews slow-cooked in clay pots.",
+        "The complex has a spacious courtyard with a wood-burning fireplace and event spaces, making it one of the few places in town that combines lodging and dining under one roof, right next to the fortress."
+      ],
+      facts: [
+        { label: "Address", value: "2 Cernei street, Hunedoara" },
+        { label: "Cuisine", value: "traditional Hunedoara cuisine, wood-fired oven dishes" },
+        { label: "Hours", value: "10:00 AM–10:00 PM, daily" },
+        { label: "Contact", value: "guesthouse phone +40 772 028 207 · restaurant phone +40 770 123 333 · curteavechehunedoara.ro" }
+      ]
+    }
+  },
+  {
+    id: "eden-by-werk-hunedoara",
+    name: "Eden by Werk",
+    category: { ro: "Restaurant", en: "Restaurant" },
+    area: "Hunedoara",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Restaurant modern cu vedere spre Castelul Corvinilor, în cadrul complexului Werk Hotel & Spa.",
+      description: [
+        "Eden by Werk este restaurantul complexului Werk Hotel & Spa, situat pe strada Voinei nr. 2A din Hunedoara, la câteva minute de mers pe jos de Castelul Corvinilor, cu vedere directă spre cetate. Meniul, semnat de un bucătar propriu, combină bucătăria contemporană cu influențe internaționale, într-un decor modern."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Voinei nr. 2A, Hunedoara" },
+        { label: "Specific", value: "bucătărie contemporană, meniu de autor" },
+        { label: "Reper", value: "la câteva minute de Castelul Corvinilor, în cadrul Werk Hotel & Spa" }
+      ]
+    },
+    en: {
+      tagline: "A modern restaurant with a view of Corvin Castle, inside the Werk Hotel & Spa complex.",
+      description: [
+        "Eden by Werk is the restaurant of the Werk Hotel & Spa complex, at 2A Voinei street in Hunedoara, a few minutes' walk from Corvin Castle, with a direct view of the fortress. The menu, created by an in-house chef, blends contemporary cooking with international influences in a modern setting."
+      ],
+      facts: [
+        { label: "Address", value: "2A Voinei street, Hunedoara" },
+        { label: "Cuisine", value: "contemporary, chef's menu" },
+        { label: "Landmark", value: "a few minutes from Corvin Castle, inside Werk Hotel & Spa" }
+      ]
+    }
+  },
+  {
+    id: "hotel-petrosani",
+    name: "Hotel Petroșani",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Petroșani",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Hotel central, construit în 1987, lângă Parcul Central din Petroșani.",
+      description: [
+        "Hotel Petroșani este situat pe strada 1 Decembrie 1918 nr. 110, în centrul municipiului, chiar lângă Parcul Central, la câțiva pași de principalele obiective din oraș. Construit în 1987, oferă camere twin, duble și apartamente de tip superior, cu wi-fi gratuit, sală de fitness și zonă de recepție/lounge.",
+        "Poziția centrală îl recomandă atât pentru vizite turistice în Valea Jiului, cât și pentru cazare de afaceri sau tranzit spre stațiunile de schi Parâng și Straja."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. 1 Decembrie 1918 nr. 110, Petroșani" },
+        { label: "Deschis", value: "1987" },
+        { label: "Camere", value: "twin, duble, apartamente superior" },
+        { label: "Contact", value: "tel. 0721 205 023 · contact@hotelpetrosani.com · hotelpetrosani.com" }
+      ]
+    },
+    en: {
+      tagline: "A central hotel, built in 1987, next to Petroșani's Central Park.",
+      description: [
+        "Hotel Petroșani is located at 110 1 Decembrie 1918 street, in the city centre, right next to Central Park, a short walk from the town's main sights. Built in 1987, it offers twin, double and superior apartment rooms, with free wi-fi, a fitness room and a reception/lounge area.",
+        "Its central location makes it suitable both for sightseeing trips around the Jiu Valley and for business stays or as a stopover on the way to the Parâng and Straja ski resorts."
+      ],
+      facts: [
+        { label: "Address", value: "110 1 Decembrie 1918 street, Petroșani" },
+        { label: "Opened", value: "1987" },
+        { label: "Rooms", value: "twin, double, superior apartments" },
+        { label: "Contact", value: "phone +40 721 205 023 · contact@hotelpetrosani.com · hotelpetrosani.com" }
+      ]
+    }
+  },
+  {
+    id: "complex-keops-petrosani",
+    name: "Complex Keops",
+    category: { ro: "Restaurant", en: "Restaurant" },
+    area: "Petroșani",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Restaurant și complex de agrement din 2005, cu centru ecvestru propriu, în Petroșani.",
+      description: [
+        "Complex Keops funcționează din 2005 pe strada 1 Decembrie 1918 nr. 137, în Petroșani, ca restaurant cu terasă și zonă de club, servind atât preparate tradiționale românești, cât și bucătărie internațională, cu servicii de catering la cerere.",
+        "Complexul include și un centru ecvestru propriu (Keops Horses), cu lecții de călărie și trasee montane cu caii, precum și spații de joacă pentru copii — fiind partenerul apropiat al hotelului Conacul Rădăcinilor din Cheile Jietului."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. 1 Decembrie 1918 nr. 137, Petroșani" },
+        { label: "Deschis", value: "2005" },
+        { label: "Specific", value: "bucătărie românească și internațională, catering, centru ecvestru" },
+        { label: "Contact", value: "tel. 0730 072 626" }
+      ]
+    },
+    en: {
+      tagline: "A restaurant and leisure complex open since 2005, with its own equestrian centre, in Petroșani.",
+      description: [
+        "Complex Keops has operated since 2005 at 137 1 Decembrie 1918 street in Petroșani, as a restaurant with a terrace and a club area, serving both traditional Romanian dishes and international cuisine, with catering services on request.",
+        "The complex also includes its own equestrian centre (Keops Horses), with riding lessons and mountain trail rides, plus a children's play area — it is the close partner of the Conacul Rădăcinilor hotel in the Jieț gorge."
+      ],
+      facts: [
+        { label: "Address", value: "137 1 Decembrie 1918 street, Petroșani" },
+        { label: "Opened", value: "2005" },
+        { label: "Cuisine", value: "Romanian and international, catering, equestrian centre" },
+        { label: "Contact", value: "phone +40 730 072 626" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-avy-hateg",
+    name: "Pensiunea Avy",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Hațeg",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune cu 13 camere, vizavi de benzinăria Petrom, la 2 minute de centrul Hațegului.",
+      description: [
+        "Pensiunea Avy este situată în Hațeg, vizavi de benzinăria Petrom, la aproximativ 2 minute de mers pe jos de centrul orașului. Are 13 camere moderne, cu o capacitate totală de 27 de locuri, dotate cu aer condiționat, baie proprie, TV LCD, wi-fi gratuit, minifrigider și uscător de păr.",
+        "Pensiunea pune la dispoziția oaspeților un pavilion cu grătar și o bucătărie complet echipată, fiind un punct de plecare bun spre Parcul Național Retezat și Geoparcul Țara Hațegului."
+      ],
+      facts: [
+        { label: "Adresă", value: "Hațeg, vizavi de benzinăria Petrom" },
+        { label: "Camere", value: "13 camere, 27 de locuri" },
+        { label: "Facilități", value: "pavilion cu grătar, bucătărie pentru oaspeți, wi-fi" },
+        { label: "Contact", value: "tel. 0762 642 046 · pensiunea-avy.ro" }
+      ]
+    },
+    en: {
+      tagline: "A 13-room guesthouse across from the Petrom station, 2 minutes from central Hațeg.",
+      description: [
+        "Pensiunea Avy is located in Hațeg, across from the Petrom fuel station, about a 2-minute walk from the town centre. It has 13 modern rooms with a total capacity of 27 guests, fitted with air conditioning, a private bathroom, LCD TV, free wi-fi, a mini-fridge and a hairdryer.",
+        "The guesthouse provides guests with a barbecue pavilion and a fully equipped kitchen, making it a good starting point for Retezat National Park and the Hațeg Country Geopark."
+      ],
+      facts: [
+        { label: "Address", value: "Hațeg, opposite the Petrom station" },
+        { label: "Rooms", value: "13 rooms, 27 guests" },
+        { label: "Facilities", value: "barbecue pavilion, guest kitchen, wi-fi" },
+        { label: "Contact", value: "phone +40 762 642 046 · pensiunea-avy.ro" }
+      ]
+    }
+  },
+  {
+    id: "avy-wine-dine-hateg",
+    name: "Avy Wine & Dine",
+    category: { ro: "Restaurant", en: "Restaurant" },
+    area: "Hațeg",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Restaurant cu bucătărie mediteraneeană, pe strada Viilor din Hațeg.",
+      description: [
+        "Avy Wine & Dine este un restaurant situat pe strada Viilor nr. 2, în Hațeg, cu un meniu de inspirație mediteraneeană, cu influențe italiene și franțuzești, alături de o listă de vinuri dedicată. Este unul dintre restaurantele cele mai bine cotate din oraș pe platformele de recenzii."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Viilor nr. 2, Hațeg" },
+        { label: "Specific", value: "bucătărie mediteraneeană, italiană și franțuzească, listă de vinuri" },
+        { label: "Contact", value: "tel. 0786 725 000 · restaurant-avy.ro" }
+      ]
+    },
+    en: {
+      tagline: "A restaurant with Mediterranean cuisine, on Viilor street in Hațeg.",
+      description: [
+        "Avy Wine & Dine is a restaurant at 2 Viilor street in Hațeg, with a Mediterranean-inspired menu carrying Italian and French influences, alongside a dedicated wine list. It is one of the highest-rated restaurants in town on review platforms."
+      ],
+      facts: [
+        { label: "Address", value: "2 Viilor street, Hațeg" },
+        { label: "Cuisine", value: "Mediterranean, Italian and French, wine list" },
+        { label: "Contact", value: "phone +40 786 725 000 · restaurant-avy.ro" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-jorja-orastie",
+    name: "Pensiunea Jorja",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Orăștie",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune cu 14 camere în centrul Orăștiei, la 350 m de un magazin Lidl.",
+      description: [
+        "Pensiunea Jorja este situată pe Bulevardul Nicolae Bălcescu nr. 30, în centrul orașului Orăștie, la aproximativ 350 de metri de un magazin Lidl și 3 km de gară. Dispune de 14 camere — single, duble și apartamente — cu o capacitate totală de 36 de locuri, fiecare cu baie proprie, TV și încălzire centrală.",
+        "Pensiunea are sală de mese, grătar propriu și acceptă animale de companie, fiind o bază convenabilă pentru vizitarea cetăților dacice din Munții Orăștiei, aflate la aproximativ 38 km."
+      ],
+      facts: [
+        { label: "Adresă", value: "Bd. Nicolae Bălcescu nr. 30, Orăștie" },
+        { label: "Camere", value: "14 camere, 36 de locuri" },
+        { label: "Facilități", value: "sală de mese, grătar, acceptă animale, parcare" },
+        { label: "Contact", value: "tel. 0254 240 013 / 0254 241 574" }
+      ]
+    },
+    en: {
+      tagline: "A 14-room guesthouse in central Orăștie, 350 m from a Lidl store.",
+      description: [
+        "Pensiunea Jorja is located at 30 Nicolae Bălcescu boulevard, in central Orăștie, about 350 metres from a Lidl store and 3 km from the train station. It has 14 rooms — single, double and apartments — with a total capacity of 36 guests, each with a private bathroom, TV and central heating.",
+        "The guesthouse has a dining room, its own barbecue and accepts pets, making it a convenient base for visiting the Dacian fortresses in the Orăștie Mountains, about 38 km away."
+      ],
+      facts: [
+        { label: "Address", value: "30 Nicolae Bălcescu boulevard, Orăștie" },
+        { label: "Rooms", value: "14 rooms, 36 guests" },
+        { label: "Facilities", value: "dining room, barbecue, pets allowed, parking" },
+        { label: "Contact", value: "phone +40 254 240 013 / +40 254 241 574" }
+      ]
+    }
+  },
+  {
+    id: "bistro-merinde-orastie",
+    name: "Bistro Merinde",
+    category: { ro: "Restaurant", en: "Restaurant" },
+    area: "Orăștie",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Bistro cu meniu românesc și internațional, într-una dintre casele vechi din Orăștie.",
+      description: [
+        "Bistro Merinde este situat pe strada Octavian Goga nr. 31, la parterul uneia dintre cele mai vechi case din Orăștie, cu design contemporan. Meniul este de inspirație românească și internațională, servit într-o atmosferă casual, potrivită atât pentru o masă rapidă, cât și pentru o oprire mai lungă pentru cei care circulă pe autostrada A1 între Sibiu și Lugoj."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Octavian Goga nr. 31, Orăștie" },
+        { label: "Specific", value: "bucătărie românească și internațională contemporană" },
+        { label: "Program", value: "luni–vineri 10:00–21:00/22:00, sâmbătă 10:00–18:00, duminică închis" },
+        { label: "Contact", value: "tel. 0728 653 798" }
+      ]
+    },
+    en: {
+      tagline: "A bistro with a Romanian and international menu, in one of Orăștie's old houses.",
+      description: [
+        "Bistro Merinde is located at 31 Octavian Goga street, on the ground floor of one of the oldest houses in Orăștie, with a contemporary design. The menu is inspired by Romanian and international cuisine, served in a casual setting suited both to a quick meal and to a longer stop for travellers on the A1 motorway between Sibiu and Lugoj."
+      ],
+      facts: [
+        { label: "Address", value: "31 Octavian Goga street, Orăștie" },
+        { label: "Cuisine", value: "contemporary Romanian and international" },
+        { label: "Hours", value: "Mon–Fri 10:00 AM–9:00/10:00 PM, Sat 10:00 AM–6:00 PM, closed Sun" },
+        { label: "Contact", value: "phone +40 728 653 798" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-irina-brad",
+    name: "Pensiunea Irina",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Brad",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune de familie deschisă în 2001, cu 5 camere duble, în Brad.",
+      description: [
+        "Pensiunea Irina funcționează din 2001 pe strada Vânătorilor nr. 20, în municipiul Brad, fiind clasificată la 2 stele de Ministerul Turismului. Are 5 camere duble, cu o capacitate totală de 10 locuri, fiecare cu baie proprie, aer condiționat, TV LED și încălzire proprie.",
+        "Pensiunea dispune de parcare și zonă de luat masa cu chicinetă, fiind o opțiune bine cotată pentru vizitarea Muzeului Aurului și a obiectivelor din Munții Metaliferi."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Vânătorilor nr. 20, Brad" },
+        { label: "Deschisă", value: "2001, clasificare 2 stele" },
+        { label: "Camere", value: "5 camere duble, 10 locuri" },
+        { label: "Contact", value: "tel. 0740 841 239 · contact@pensiuneairina.ro · pensiuneairina.ro" }
+      ]
+    },
+    en: {
+      tagline: "A family guesthouse opened in 2001, with 5 double rooms, in Brad.",
+      description: [
+        "Pensiunea Irina has operated since 2001 at 20 Vânătorilor street, in Brad, classified as a 2-star establishment by the Ministry of Tourism. It has 5 double rooms, with a total capacity of 10 guests, each with a private bathroom, air conditioning, LED TV and its own heating.",
+        "The guesthouse has parking and a dining area with a kitchenette, making it a well-rated option for visiting the Gold Museum and the sights of the Metaliferi Mountains."
+      ],
+      facts: [
+        { label: "Address", value: "20 Vânătorilor street, Brad" },
+        { label: "Opened", value: "2001, 2-star classification" },
+        { label: "Rooms", value: "5 double rooms, 10 guests" },
+        { label: "Contact", value: "phone +40 740 841 239 · contact@pensiuneairina.ro · pensiuneairina.ro" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-ana-maria-brad",
+    name: "Pensiunea Ana Maria",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Brad",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune mai mare, cu 19 camere, pe strada Avram Iancu din Brad.",
+      description: [
+        "Pensiunea Ana Maria este situată pe strada Avram Iancu nr. 52, în Brad, și oferă 43 de locuri de cazare în 19 camere (16 duble și 3 triple), cu servicii de masă pentru oaspeți. Este una dintre cele mai mari unități de cazare din oraș, potrivită și pentru grupuri."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Avram Iancu nr. 52, Brad" },
+        { label: "Camere", value: "19 camere (16 duble, 3 triple), 43 de locuri" },
+        { label: "Facilități", value: "servicii de masă pentru oaspeți" },
+        { label: "Rezervări", value: "prin platforme online (Booking.com, Agoda)" }
+      ]
+    },
+    en: {
+      tagline: "A larger, 19-room guesthouse on Avram Iancu street in Brad.",
+      description: [
+        "Pensiunea Ana Maria is located at 52 Avram Iancu street, in Brad, and offers 43 beds across 19 rooms (16 double and 3 triple), with meal service for guests. It is one of the largest accommodation units in town, also suited to groups."
+      ],
+      facts: [
+        { label: "Address", value: "52 Avram Iancu street, Brad" },
+        { label: "Rooms", value: "19 rooms (16 double, 3 triple), 43 beds" },
+        { label: "Facilities", value: "meal service for guests" },
+        { label: "Booking", value: "via online platforms (Booking.com, Agoda)" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-phoenix-simeria",
+    name: "Pensiunea Phoenix",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Simeria",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune cu 8 camere duble, la marginea Simeriei, pe drumul spre Deva.",
+      description: [
+        "Pensiunea Phoenix este situată în satul Sântandrei, aparținător orașului Simeria, la circa 700 de metri de Simeria, pe partea stângă a drumului spre Deva (la aproximativ 10 km de Deva). Dispune de 8 camere duble, oferind o alternativă mai liniștită de cazare în zonă, potrivită ca bază pentru vizitarea Parcului Dendrologic Simeria și a împrejurimilor."
+      ],
+      facts: [
+        { label: "Adresă", value: "Sântandrei, ferma nr. 5, orașul Simeria" },
+        { label: "Camere", value: "8 camere duble" },
+        { label: "Reper", value: "~700 m de Simeria, pe drumul spre Deva" },
+        { label: "Contact", value: "tel. 0722 379 967" }
+      ]
+    },
+    en: {
+      tagline: "An 8-room guesthouse on the edge of Simeria, on the road to Deva.",
+      description: [
+        "Pensiunea Phoenix is located in Sântandrei village, part of Simeria town, about 700 metres from Simeria, on the left side of the road to Deva (roughly 10 km from Deva). It has 8 double rooms, offering a quieter accommodation option in the area, suited as a base for visiting the Simeria Dendrological Park and its surroundings."
+      ],
+      facts: [
+        { label: "Address", value: "Sântandrei, farm no. 5, Simeria town" },
+        { label: "Rooms", value: "8 double rooms" },
+        { label: "Landmark", value: "~700 m from Simeria, on the road to Deva" },
+        { label: "Contact", value: "phone +40 722 379 967" }
+      ]
+    }
+  },
+  {
+    id: "atrium-hotel-vulcan",
+    name: "Atrium Hotel",
+    category: { ro: "Hotel & restaurant", en: "Hotel & restaurant" },
+    area: "Vulcan",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Hotel cu design modern, poziționat între stațiunile Straja și Parâng, în Vulcan.",
+      description: [
+        "Atrium Hotel este situat pe strada Nicolae Titulescu nr. 44, în municipiul Vulcan, între stațiunile montane Straja și Parâng. Combină un design modern cu elemente rustice montane și dispune de restaurant propriu, bar și terasă, alături de camere de tip deluxe și apartamente executive.",
+        "Poziția din Valea Jiului îl recomandă atât drumeților și schiorilor care merg spre Straja sau Parâng, cât și celor care caută un popas confortabil în zonă."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Nicolae Titulescu nr. 44, Vulcan" },
+        { label: "Camere", value: "camere deluxe, apartamente executive" },
+        { label: "Facilități", value: "restaurant, bar, terasă" },
+        { label: "Contact", value: "tel. 0728 244 511 · office@atriumhotel.ro · atriumhotel.ro" }
+      ]
+    },
+    en: {
+      tagline: "A modern-design hotel between the Straja and Parâng resorts, in Vulcan.",
+      description: [
+        "Atrium Hotel is located at 44 Nicolae Titulescu street, in Vulcan, between the Straja and Parâng mountain resorts. It combines modern design with rustic mountain touches and has its own restaurant, bar and terrace, alongside deluxe rooms and executive apartments.",
+        "Its position in the Jiu Valley makes it a good choice both for hikers and skiers heading to Straja or Parâng, and for anyone looking for a comfortable stop in the area."
+      ],
+      facts: [
+        { label: "Address", value: "44 Nicolae Titulescu street, Vulcan" },
+        { label: "Rooms", value: "deluxe rooms, executive apartments" },
+        { label: "Facilities", value: "restaurant, bar, terrace" },
+        { label: "Contact", value: "phone +40 728 244 511 · office@atriumhotel.ro · atriumhotel.ro" }
+      ]
+    }
+  },
+  {
+    id: "heaven-inn-vulcan",
+    name: "Heaven Inn",
+    category: { ro: "Restaurant", en: "Restaurant" },
+    area: "Vulcan",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Restaurant deschis în 2022, cu bucătărie românească și internațională, în centrul Vulcanului.",
+      description: [
+        "Heaven Inn este un restaurant deschis în mai 2022 pe Bulevardul Mihai Viteazu nr. 14, în centrul municipiului Vulcan. Are un meniu variat, românesc și internațional, terasă și zonă interioară climatizată, plus opțiunea de comandă și livrare online."
+      ],
+      facts: [
+        { label: "Adresă", value: "Bd. Mihai Viteazu nr. 14, Vulcan" },
+        { label: "Deschis", value: "2022" },
+        { label: "Specific", value: "bucătărie românească și internațională, livrare la domiciliu" },
+        { label: "Contact", value: "tel. 0790 865 091 · heaven-inn.com" }
+      ]
+    },
+    en: {
+      tagline: "A restaurant opened in 2022, with Romanian and international cuisine, in central Vulcan.",
+      description: [
+        "Heaven Inn is a restaurant opened in May 2022 at 14 Mihai Viteazu boulevard, in central Vulcan. It has a varied Romanian and international menu, a terrace and an air-conditioned indoor area, plus online ordering and delivery."
+      ],
+      facts: [
+        { label: "Address", value: "14 Mihai Viteazu boulevard, Vulcan" },
+        { label: "Opened", value: "2022" },
+        { label: "Cuisine", value: "Romanian and international, home delivery" },
+        { label: "Contact", value: "phone +40 790 865 091 · heaven-inn.com" }
       ]
     }
   },
