@@ -13,6 +13,9 @@
       "nav.contact": "Contact",
       "nav.ai": "Întreabă-ne",
       "nav.search.aria": "Căutare",
+      "search.placeholder": "Caută destinații, orașe, locuri, afaceri…",
+      "search.hint": "Scrie ca să cauți pe tot site-ul.",
+      "search.none": "Niciun rezultat. Încearcă alt termen.",
       "lang.switch": "EN",
       "lang.switch.aria": "Switch to English",
 
@@ -182,6 +185,9 @@
       "nav.contact": "Contact",
       "nav.ai": "Ask us",
       "nav.search.aria": "Search",
+      "search.placeholder": "Search destinations, towns, places, businesses…",
+      "search.hint": "Start typing to search the whole site.",
+      "search.none": "No results. Try a different term.",
       "lang.switch": "RO",
       "lang.switch.aria": "Comută pe română",
 
