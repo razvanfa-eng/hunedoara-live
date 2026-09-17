@@ -107,6 +107,7 @@
       "footer.apps.appstore": "App Store",
       "footer.apps.googleplay": "Google Play",
       "img.missing": "Imagine în curând",
+      "credits.photo": "Foto",
 
       "utile.heading": "Informații utile",
       "utile.intro": "Transport, contacte și linkuri practice pentru vizitarea județului Hunedoara.",
@@ -224,6 +225,7 @@
       "footer.apps.appstore": "App Store",
       "footer.apps.googleplay": "Google Play",
       "img.missing": "Image coming soon",
+      "credits.photo": "Photo",
 
       "utile.heading": "Useful information",
       "utile.intro": "Transport, contacts and practical links for visiting Hunedoara county.",

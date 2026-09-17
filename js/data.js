@@ -31,7 +31,8 @@ window.SITE_DESTINATIONS = [
     category: { ro: "Zonă montană și minieră", en: "Mining & mountain zone" },
     area: "Sud-Vest",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/valea-jiului-parang.jpg"],
+    photoCredit: { author: "Cioboata Andrei", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Creasta_Par%C3%A2ngului_-_panoramio.jpg" },
     ro: {
       tagline: "Bazinul carbonifer al Văii Jiului — șase orașe miniere la poalele Parângului, Retezatului și Vâlcanului.",
       description: [
@@ -61,7 +62,8 @@ window.SITE_DESTINATIONS = [
     category: { ro: "Zonă naturală și istorică", en: "Natural & historic zone" },
     area: "Sud",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/tara-hategului-ulpia-traiana.jpg"],
+    photoCredit: { author: "Roamata", license: "CC BY-SA 3.0 / GFDL", source: "https://commons.wikimedia.org/wiki/File:Ulpia_Traiana_Sarmizegetusa_02.JPG" },
     ro: {
       tagline: "Ținutul dinozaurilor pitici, al bisericilor de piatră și al celui mai vechi parc național din România.",
       description: [
@@ -91,7 +93,8 @@ window.SITE_DESTINATIONS = [
     category: { ro: "Zonă istorică", en: "Historic zone" },
     area: "Nord",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/cetatile-dacice-ansamblu.jpg"],
+    photoCredit: { author: "Ionut Vaida", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Sarmisegetusa_Regia_-_ansamblu_1.jpg" },
     ro: {
       tagline: "Munții Orăștiei — nucleul fortificat al Regatului Dac, patrimoniu UNESCO din 1999.",
       description: [
@@ -123,7 +126,8 @@ window.SITE_DESTINATIONS = [
     category: { ro: "Zonă mixtă", en: "Mixed zone" },
     area: "Centru",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/culoarul-muresului-simeria.jpg"],
+    photoCredit: { author: "Roxana Stamate", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Lacul_din_parcul_dendrologic_Simeria.jpg" },
     ro: {
       tagline: "Coridorul Deva–Simeria–Orăștie, de-a lungul Mureșului — orașe, cetăți și cel mai vechi parc dendrologic din România.",
       description: [
@@ -157,7 +161,8 @@ window.SITE_NATURE = [
     area: "Țara Hațegului",
     coords: [45.3583, 22.8750],
     hasReviews: true,
-    images: ["images/placeholder.svg"],
+    images: ["images/retezat-bucura.jpg"],
+    photoCredit: { author: "Daniel Ighișan", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Retezat_View_over_Bucura_lake.jpg" },
     ro: {
       tagline: "Cel mai vechi parc național din România (1935), cu peste 80 de lacuri glaciare.",
       description: [
@@ -190,7 +195,8 @@ window.SITE_NATURE = [
     area: "Petrila",
     coords: [45.4539, 23.3183],
     hasReviews: true,
-    images: ["images/placeholder.svg"],
+    images: ["images/pestera-bolii-portal.jpg"],
+    photoCredit: { author: "mihai moise", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Pestera_Boli_-_panoramio.jpg" },
     ro: {
       tagline: "Peșteră-râu de 455 m, amenajată cu iluminat electric, la marginea Parcului Natural Grădiștea Muncelului-Cioclovina.",
       description: [
@@ -224,20 +230,24 @@ window.SITE_NATURE = [
     hasReviews: true,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "Defileu îngust săpat de râul Bănița, traversat de DN66 și de calea ferată Simeria–Petroșani.",
+      tagline: "Defileu calcaros de cca. 300 m, cu pereți de 10-15 m, traversat de DN66 și de calea ferată Simeria–Petroșani.",
       description: [
-        "Cheile Băniței sunt un defileu calcaros pe drumul dintre Petroșani și restul județului, chiar în zona Peșterii Bolii. Pereții abrupți și drumul/calea ferată care șerpuiesc prin chei fac din traseu unul dintre cele mai spectaculoase din județ, chiar și văzut din mașină sau tren."
+        "Cheile Băniței sunt un defileu calcaros pe drumul dintre Petroșani și restul județului, chiar în zona Peșterii Bolii. Pereții abrupți și drumul/calea ferată care șerpuiesc prin chei fac din traseu unul dintre cele mai spectaculoase din județ, chiar și văzut din mașină sau tren.",
+        "Pe jos, traseul prin chei se face parțial prin albia râului — recomandat cu încălțăminte adecvată, apa ajunge de obicei până la gleznă, pe alocuri până la genunchi."
       ],
       facts: [
+        { label: "Lungime", value: "cca. 300 m, pereți de 10-15 m înălțime" },
         { label: "Acces", value: "DN66 Simeria–Petroșani, în apropierea Peșterii Bolii" }
       ]
     },
     en: {
-      tagline: "A narrow gorge cut by the Bănița river, crossed by the DN66 road and the Simeria–Petroșani railway.",
+      tagline: "A limestone gorge about 300 m long, with 10-15 m walls, crossed by the DN66 road and the Simeria–Petroșani railway.",
       description: [
-        "Cheile Băniței is a limestone gorge on the road between Petroșani and the rest of the county, right by Bolii Cave. The steep walls and the road/railway winding through the gorge make it one of the county's most spectacular routes, even seen from a car or train."
+        "Cheile Băniței is a limestone gorge on the road between Petroșani and the rest of the county, right by Bolii Cave. The steep walls and the road/railway winding through the gorge make it one of the county's most spectacular routes, even seen from a car or train.",
+        "On foot, the route through the gorge partly follows the riverbed — proper footwear is recommended, as the water usually reaches ankle height, sometimes knee height."
       ],
       facts: [
+        { label: "Length", value: "approx. 300 m, 10-15 m walls" },
         { label: "Access", value: "DN66 Simeria–Petroșani, near Bolii Cave" }
       ]
     }
@@ -249,7 +259,8 @@ window.SITE_NATURE = [
     area: "Parâng",
     coords: [45.3411, 23.5406],
     hasReviews: true,
-    images: ["images/placeholder.svg"],
+    images: ["images/parangul-mare-varf.jpg"],
+    photoCredit: { author: "Cioboata Andrei", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Varful_Parangul_Mare_(2519m)_-_panoramio.jpg" },
     ro: {
       tagline: "2.519 m — cel mai înalt vârf din Munții Parâng, accesibil cu telescaunul din Petroșani plus un traseu pe creastă.",
       description: [
@@ -281,7 +292,8 @@ window.SITE_ACTIVITIES = [
     area: "Parcul Național Retezat",
     coords: [45.3583, 22.8750],
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/traseu-peleaga.jpg"],
+    photoCredit: { author: "Daniel Ighișan", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Varful_Peleaga.jpg" },
     ro: {
       tagline: "Clasicul traseu din Retezat: de la Cabana Pietrele (1.480 m), la Lacul Bucura și pe Vf. Peleaga (2.509 m).",
       description: [
@@ -313,7 +325,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Schi", en: "Skiing" },
     area: "Parâng",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/partii-parang.jpg"],
+    photoCredit: { author: "Cioboata Andrei", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Lacul_C%C3%A2lcescu_-_panoramio.jpg" },
     ro: {
       tagline: "Domeniu schiabil la cca. 15 km de Petroșani, cu telescaun de la 950 la 1.650 m.",
       description: [
@@ -343,7 +356,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Schi", en: "Skiing" },
     area: "Vâlcan",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/statiunea-straja.jpg"],
+    photoCredit: { author: "Albundy64", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Ski_resort_Straja.jpg" },
     ro: {
       tagline: "Declarată stațiune în 2002, cu cel mai întins domeniu schiabil din județ — cca. 26 km de pârtii.",
       description: [
@@ -379,7 +393,8 @@ window.SITE_HERITAGE = [
     area: "Munții Orăștiei",
     coords: [45.6219, 23.3093],
     hasReviews: true,
-    images: ["images/placeholder.svg"],
+    images: ["images/sarmizegetusa-regia-sanctuar.jpg"],
+    photoCredit: { author: "Eliza Palos", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Sarmizegetusa_Regia-Sanctuarul_mare_circular_(Zona_sacr%C4%83).jpg" },
     ro: {
       tagline: "Capitala regatului dac, pe un vârf la 1.200 m altitudine — patrimoniu mondial UNESCO din 1999.",
       description: [
@@ -412,7 +427,8 @@ window.SITE_HERITAGE = [
     area: "Țara Hațegului",
     coords: [45.5819, 22.8047],
     hasReviews: true,
-    images: ["images/placeholder.svg"],
+    images: ["images/densus-biserica.jpg"],
+    photoCredit: { author: "Bodor Istvan", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Biserica_Sf%C3%A2ntul_Nicolae_din_Densu%C8%99_2.jpg" },
     ro: {
       tagline: "Una dintre cele mai vechi biserici de piatră din România aflate încă în uz, ridicată din materiale romane refolosite.",
       description: [
@@ -441,7 +457,8 @@ window.SITE_HERITAGE = [
     area: "Silvașu de Sus, Țara Hațegului",
     coords: [45.6317, 22.8503],
     hasReviews: true,
-    images: ["images/placeholder.svg"],
+    images: ["images/prislop-manastire.jpg"],
+    photoCredit: { author: "Tomoniu N. Nicolae", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Biserica_%22Sf._Treime%22_a_M%C4%83n%C4%83stirii_Prislop_img-0690.jpg" },
     ro: {
       tagline: "Ctitorie din 1564, loc de pelerinaj legat de părintele Arsenie Boca.",
       description: [
@@ -470,7 +487,8 @@ window.SITE_HERITAGE = [
     area: "Petroșani",
     coords: [45.4166, 23.3733],
     hasReviews: true,
-    images: ["images/placeholder.svg"],
+    images: ["images/muzeul-mineritului-petrosani.jpg"],
+    photoCredit: { author: "Strainu", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Muzeul_Mineritului_(2).JPG" },
     ro: {
       tagline: "Singurul muzeu din România dedicat exclusiv tehnicii miniere a cărbunelui.",
       description: [
@@ -504,7 +522,8 @@ window.SITE_TOWNS = [
     area: "Culoarul Mureșului",
     coords: [45.8781, 22.9144],
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/deva-cetate.jpg"],
+    photoCredit: { author: "Bogdan.onis", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Deva.jpg" },
     ro: {
       tagline: "Reședința județului Hunedoara, dominată de Cetatea Deva, pe un deal vulcanic în mijlocul orașului.",
       description: [
@@ -537,7 +556,8 @@ window.SITE_TOWNS = [
     area: "Culoarul Mureșului",
     coords: [45.7697, 22.9203],
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/hunedoara-corvin-castle.jpg"],
+    photoCredit: { author: "Andrei Stroe", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Corvin_castle.jpg" },
     ro: {
       tagline: "Orașul Castelului Corvinilor, unul dintre cele mai mari castele medievale din Europa.",
       description: [
@@ -568,7 +588,8 @@ window.SITE_TOWNS = [
     area: "Valea Jiului",
     coords: [45.4166, 23.3733],
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/petrosani-panorama.jpg"],
+    photoCredit: { author: "Eduard Gergely", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrosani_Town.jpg" },
     ro: {
       tagline: "Orașul universitar al Văii Jiului și poarta spre platoul Parâng.",
       description: [
@@ -601,7 +622,8 @@ window.SITE_TOWNS = [
     area: "Zona cetăților dacice",
     coords: [45.8500, 23.2000],
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/orastie-cetate.jpg"],
+    photoCredit: { author: "Roamata", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Cetatea_orastie.JPG" },
     ro: {
       tagline: "Poarta de acces spre Cetățile dacice din Munții Orăștiei, patrimoniu UNESCO.",
       description: [
@@ -630,7 +652,8 @@ window.SITE_TOWNS = [
     area: "Țara Hațegului",
     coords: [45.6075, 22.9500],
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/hateg-panorama.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Hateg_2015_(1).JPG" },
     ro: {
       tagline: "Poarta spre Parcul Național Retezat și Geoparcul Dinozaurilor din Țara Hațegului.",
       description: [
@@ -659,7 +682,8 @@ window.SITE_TOWNS = [
     area: "Munții Metaliferi",
     coords: [46.1294, 22.7900],
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/brad-skyline.jpg"],
+    photoCredit: { author: "Sthadrian", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Brad_Skyline.jpg" },
     ro: {
       tagline: "Orașul aurului — istoric centru minier, cu propriul muzeu al aurului.",
       description: [
