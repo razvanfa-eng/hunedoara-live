@@ -1122,7 +1122,8 @@ window.SITE_BUSINESSES = [
     area: "Uricani",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-retezat.jpg"],
+    photoCredit: { author: "Pensiunea Retezat", license: "material promoțional al afacerii", source: "https://pensiunearetezat.com", sourceLabel: "pensiunearetezat.com" },
     ro: {
       tagline: "Pensiune de familie la poalele Retezatului, în Câmpu lui Neag.",
       description: [

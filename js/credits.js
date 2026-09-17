@@ -14,7 +14,8 @@
         var credit = e.photoCredit
           ? '<p class="photo-credit">' + window.RL.esc(window.I18N.t("credits.photo")) + ": " +
             window.RL.esc(e.photoCredit.author) + " — " + window.RL.esc(e.photoCredit.license) +
-            ' (<a href="' + window.RL.esc(e.photoCredit.source) + '" target="_blank" rel="noopener">Wikimedia Commons</a>)</p>'
+            ' (<a href="' + window.RL.esc(e.photoCredit.source) + '" target="_blank" rel="noopener">' +
+            window.RL.esc(e.photoCredit.sourceLabel || "Wikimedia Commons") + "</a>)</p>"
           : "";
         cards.push('<div class="credit-card"><h3>' + window.RL.esc(e.name) +
           ' <span class="muted">· ' + window.RL.esc(e.area || "") + "</span></h3>" +
