@@ -495,6 +495,41 @@ window.SITE_NATURE = [
         { label: "Facilities", value: "camping/glamping, marked hiking trails" }
       ]
     }
+  },
+  {
+    id: "drum-transmontan-uricani-runcu",
+    name: "Drumul transmontan Uricani – Runcu",
+    category: { ro: "Drum montan turistic", en: "Scenic mountain road" },
+    area: "Uricani",
+    hasReviews: true,
+    season: "vara",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Drum montan nou-asfaltat care leagă Uricani de Gorj prin Cheile Sohodolului, la 830 m altitudine.",
+      description: [
+        "Finalizat pe partea hunedoreană în noiembrie 2025, drumul transmontan Uricani–Runcu leagă județele Hunedoara și Gorj printr-o zonă montană cu peisaje spectaculoase, trecând pe lângă Cheile Sohodolului și barajul de la Valea de Pești, la o altitudine maximă de circa 830 m. Lucrarea, în valoare de peste 44,4 milioane de lei, a fost finanțată prin Programul Anghel Saligny, de UAT Uricani în parteneriat cu Consiliul Județean Hunedoara.",
+        "Pe partea dinspre Gorj lucrările mai au nevoie de până la doi ani pentru finalizare, dar noul acces deschide deja drumul spre Cheile Sohodolului și lacul Valea de Pești și a atras primele investiții în cabane și pensiuni din zonă."
+      ],
+      facts: [
+        { label: "Leagă", value: "Uricani (Hunedoara) – Runcu (Gorj)" },
+        { label: "Altitudine maximă", value: "~830 m" },
+        { label: "Finalizat (partea HD)", value: "noiembrie 2025" },
+        { label: "Acces spre", value: "Cheile Sohodolului, lacul Valea de Pești" }
+      ]
+    },
+    en: {
+      tagline: "A newly-paved mountain road linking Uricani to Gorj county through Cheile Sohodolului, at 830 m altitude.",
+      description: [
+        "Completed on the Hunedoara side in November 2025, the Uricani–Runcu mountain road links Hunedoara and Gorj counties through a mountain area with spectacular scenery, passing Cheile Sohodolului gorge and the Valea de Pești dam, at a maximum altitude of about 830 m. The works, worth over 44.4 million lei, were funded through the Anghel Saligny Programme, carried out by Uricani local authority in partnership with Hunedoara County Council.",
+        "On the Gorj side, works still need up to two years to finish, but the new access already opens the way to Cheile Sohodolului and Lake Valea de Pești, and has already drawn the area's first guesthouse and cabin investments."
+      ],
+      facts: [
+        { label: "Connects", value: "Uricani (Hunedoara) – Runcu (Gorj)" },
+        { label: "Maximum altitude", value: "~830 m" },
+        { label: "Completed (HD side)", value: "November 2025" },
+        { label: "Access to", value: "Cheile Sohodolului gorge, Lake Valea de Pești" }
+      ]
+    }
   }
 ];
 
@@ -796,6 +831,76 @@ window.SITE_ACTIVITIES = [
         { label: "Opened", value: "5 December 2025" }
       ]
     }
+  },
+  {
+    id: "traseul-tunelelor-vulcan",
+    name: "Traseul Tunelelor",
+    category: { ro: "Traseu tematic", en: "Themed trail" },
+    area: "Vulcan",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu tematic ușor-mediu prin munții de lângă Vulcan, cu Peștera și Cascada Dracului.",
+      description: [
+        "Traseul Tunelelor este unul dintre cele cinci poteci turistice tematice amenajate în 2022 în zona montană a municipiului Vulcan, dintr-o inițiativă a Grupului Pro Montana, realizată de Primăria Vulcan cu sprijinul Salvamont Hunedoara.",
+        "Lung de aproximativ 6 km (3–4 ore dus-întors), de dificultate ușoară spre medie, traseul trece pe lângă foste construcții hidrotehnice abandonate și duce la Peștera Dracului, Cascada Dracului și izvoarele Baleii — poate fi parcurs pe jos, cu bicicleta sau, iarna, cu schiurile."
+      ],
+      facts: [
+        { label: "Lungime", value: "~6 km (3–4 ore dus-întors)" },
+        { label: "Dificultate", value: "ușoară-medie" },
+        { label: "Obiective pe traseu", value: "Peștera Dracului, Cascada Dracului, Izvoarele Baleii" },
+        { label: "Amenajat", value: "2022, Pro Montana + Primăria Vulcan + Salvamont Hunedoara" }
+      ]
+    },
+    en: {
+      tagline: "An easy-to-moderate themed trail near Vulcan, leading to the Devil's Cave and Waterfall.",
+      description: [
+        "Traseul Tunelelor (\"the tunnels trail\") is one of five themed hiking trails set up in 2022 in the mountains near Vulcan, an initiative of the Pro Montana group, carried out by Vulcan Town Hall with support from Salvamont Hunedoara.",
+        "About 6 km long (3–4 hours round trip), easy to moderate in difficulty, the trail passes abandoned hydro-technical structures and leads to Peștera Dracului (Devil's Cave), Cascada Dracului (Devil's Waterfall) and the Baleia springs — it can be covered on foot, by bike or, in winter, on skis."
+      ],
+      facts: [
+        { label: "Length", value: "~6 km (3–4 hours round trip)" },
+        { label: "Difficulty", value: "easy-moderate" },
+        { label: "Landmarks", value: "Devil's Cave, Devil's Waterfall, Baleia springs" },
+        { label: "Built", value: "2022, Pro Montana + Vulcan Town Hall + Salvamont Hunedoara" }
+      ]
+    }
+  },
+  {
+    id: "traseul-ruinelor-aninoasa",
+    name: "Traseul Ruinelor",
+    category: { ro: "Traseu tematic", en: "Themed trail" },
+    area: "Aninoasa",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu de 12 km de la Vulcan la Aninoasa, pe Valea Ungurului, cu mănăstire, cascadă și ruine.",
+      description: [
+        "Traseul Ruinelor este cel mai lung dintre cele cinci poteci tematice amenajate în 2022 lângă Vulcan (proiect Pro Montana, Primăria Vulcan și Salvamont Hunedoara). Pornește din Vulcan și urmează cursul Văii Ungurului până în Aninoasa, pe o distanță de aproximativ 12 km, de dificultate medie.",
+        "Pe parcurs se află Mănăstirea Sf. Nicolae, Cascada Ungurului, formațiunea stâncoasă numită Sfinxul Văii Ungurului și mai multe ruine istorice de construcții din piatră — de unde și numele traseului."
+      ],
+      facts: [
+        { label: "Traseu", value: "Vulcan → Valea Ungurului → Aninoasa, ~12 km" },
+        { label: "Dificultate", value: "medie" },
+        { label: "Obiective pe traseu", value: "Mănăstirea Sf. Nicolae, Cascada Ungurului, Sfinxul Văii Ungurului, ruine" },
+        { label: "Amenajat", value: "2022, Pro Montana + Primăria Vulcan + Salvamont Hunedoara" }
+      ]
+    },
+    en: {
+      tagline: "A 12 km trail from Vulcan to Aninoasa along Valea Ungurului, with a monastery, waterfall and ruins.",
+      description: [
+        "Traseul Ruinelor (\"the ruins trail\") is the longest of five themed trails set up in 2022 near Vulcan (a Pro Montana project, with Vulcan Town Hall and Salvamont Hunedoara). It starts in Vulcan and follows the Valea Ungurului stream to Aninoasa, covering about 12 km at moderate difficulty.",
+        "Along the way lie Sf. Nicolae Monastery, Cascada Ungurului waterfall, a rock formation known as the Sphinx of Valea Ungurului, and several historic stone ruins — which give the trail its name."
+      ],
+      facts: [
+        { label: "Route", value: "Vulcan → Valea Ungurului → Aninoasa, ~12 km" },
+        { label: "Difficulty", value: "moderate" },
+        { label: "Landmarks", value: "Sf. Nicolae Monastery, Cascada Ungurului waterfall, the Valea Ungurului Sphinx, ruins" },
+        { label: "Built", value: "2022, Pro Montana + Vulcan Town Hall + Salvamont Hunedoara" }
+      ]
+    }
   }
 ];
 
@@ -926,6 +1031,74 @@ window.SITE_HERITAGE = [
         { label: "Reopened", value: "2021, after restoration" }
       ]
     }
+  },
+  {
+    id: "mina-petrila",
+    name: "Mina Petrila (Planeta Petrila)",
+    category: { ro: "Ansamblu industrial istoric", en: "Historic industrial site" },
+    area: "Petrila",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cea mai veche exploatare din Valea Jiului, azi transformată într-un muzeu în aer liber.",
+      description: [
+        "Mina Petrila și-a încheiat activitatea în 2015, după peste un secol de exploatare a cărbunelui, și a fost clasată în același an ca monument istoric de valoare națională excepțională. Ansamblul, cumpărat de Consiliul Județean Hunedoara în 2022, cuprinde atelierele mecanice, clădirea compresoarelor, termocentrala cu șornul ei caracteristic, Puțul Nou cu schip și Puțul Central, pe o suprafață de aproape 164.000 mp.",
+        "Cunoscută drept „Planeta Petrila”, fosta mină găzduiește tururi ghidate, proiecții de film și festivalul internațional Opera Nights, într-un proiect de regenerare urbană finanțat prin PNRR care urmărește introducerea ei permanentă în circuitul turistic."
+      ],
+      facts: [
+        { label: "Închidere/clasare monument", value: "2015" },
+        { label: "Suprafață ansamblu", value: "~163.855 mp" },
+        { label: "Ce se vede", value: "atelierele mecanice, termocentrala, Puțul Nou și Puțul Central" },
+        { label: "Vizitare", value: "tururi ghidate; festivalul Opera Nights" }
+      ]
+    },
+    en: {
+      tagline: "The oldest mine in Valea Jiului, now turned into an open-air museum.",
+      description: [
+        "Petrila Mine closed in 2015, after more than a century of coal extraction, and was listed the same year as a historic monument of exceptional national value. The complex, bought by Hunedoara County Council in 2022, includes the mechanical workshops, the compressor building, the power plant with its distinctive chimney, the New Shaft with its cage lift and the Central Shaft, covering nearly 164,000 sqm.",
+        "Known as \"Planet Petrila\", the former mine now hosts guided tours, film screenings and the international Opera Nights festival, part of a PNRR-funded urban regeneration project aiming to bring it permanently into the tourist circuit."
+      ],
+      facts: [
+        { label: "Closed / listed as monument", value: "2015" },
+        { label: "Site area", value: "~163,855 sqm" },
+        { label: "What to see", value: "mechanical workshops, power plant, New Shaft and Central Shaft" },
+        { label: "Visiting", value: "guided tours; Opera Nights festival" }
+      ]
+    }
+  },
+  {
+    id: "crucea-eroilor-lupeni",
+    name: "Crucea Eroilor Lupeni",
+    category: { ro: "Monument", en: "Memorial" },
+    area: "Lupeni",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Monument ridicat în memoria celor 82 de mineri morți în explozia de la Mina Aurelia, 1922.",
+      description: [
+        "Crucea Eroilor din Lupeni comemorează cei 82 de mineri uciși pe 27 aprilie 1922, într-o explozie de gaz metan la Mina Aurelia — unul dintre cele mai grave accidente miniere din istoria Văii Jiului. În urma tragediei, regele Ferdinand a vizitat zona și a acordat sprijin financiar celor 94 de orfani și văduve rămași în urma dezastrului.",
+        "Monumentul rămâne astăzi un punct de reper pentru memoria minerească a orașului, alături de Palatul Cultural „Minerul”, ridicat din inițiativa regelui Ferdinand I și dat în folosință în 1927."
+      ],
+      facts: [
+        { label: "Eveniment comemorat", value: "explozia de la Mina Aurelia, 27 aprilie 1922" },
+        { label: "Victime", value: "82 de mineri" },
+        { label: "Context", value: "vizita regelui Ferdinand; sprijin pentru 94 de orfani și văduve" }
+      ]
+    },
+    en: {
+      tagline: "A memorial to the 82 miners killed in the 1922 explosion at Aurelia Mine.",
+      description: [
+        "The Heroes' Cross in Lupeni commemorates the 82 miners killed on 27 April 1922 in a methane gas explosion at Aurelia Mine — one of the worst mining disasters in the history of Valea Jiului. Following the tragedy, King Ferdinand visited the area and provided financial support to the 94 orphans and widows left behind.",
+        "The monument remains a landmark of the town's mining memory today, alongside the \"Minerul\" Cultural Palace, built on the initiative of King Ferdinand I and opened in 1927."
+      ],
+      facts: [
+        { label: "Event commemorated", value: "Aurelia Mine explosion, 27 April 1922" },
+        { label: "Victims", value: "82 miners" },
+        { label: "Context", value: "King Ferdinand's visit; support for 94 orphans and widows" }
+      ]
+    }
   }
 ];
 
@@ -1003,7 +1176,7 @@ window.SITE_TOWNS = [
     area: "Valea Jiului",
     coords: [45.4166, 23.3733],
     hasReviews: false,
-    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Petrila", "Uricani", "Vulcan", "Lupeni"],
+    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Petrila", "Uricani", "Vulcan", "Lupeni", "Aninoasa"],
     images: ["images/petrosani-panorama.jpg"],
     photoCredit: { author: "Eduard Gergely", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrosani_Town.jpg" },
     ro: {
@@ -1196,30 +1369,37 @@ window.SITE_NEWS = [
 
 window.SITE_BUSINESSES = [
   {
-    id: "exemplu-restaurant-local",
-    name: "Exemplu · Restaurant local",
-    category: { ro: "Restaurant", en: "Restaurant" },
+    id: "conacul-radacinilor",
+    name: "Conacul Rădăcinilor",
+    category: { ro: "Hotel & restaurant", en: "Hotel & restaurant" },
     area: "Petrila",
-    coords: [45.4530, 23.4160],
-    example: true,
     hasReviews: true,
+    season: "tot-anul",
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "EXEMPLU de local. Pune un restaurant / bistro real.",
-      description: ["Aici vor veni: tipul bucătăriei, specialități, interval de preț, dacă e nevoie de rezervare."],
+      tagline: "Complex hotelier de tip conac, deschis în 2023 în Cheile Jietului, cu spa, restaurant și drumeții ghidate.",
+      description: [
+        "Conacul Rădăcinilor este un complex hotelier, restaurant și agrement deschis în 2023 pe strada Jiet (DN7A), în Cheile Jietului, pe teritoriul orașului Petrila, în drum spre Transalpina. Arhitectura rustică, cu lemn masiv și vegetație, adăpostește peste 25 de camere, o zonă de wellness & spa cu jacuzzi și saună încălzită, o cameră de salinoterapie, restaurant, „Green Bar”, terasă și spații pentru evenimente și conferințe.",
+        "Complexul organizează drumeții montane ghidate și are un parteneriat cu un centru ecvestru din apropiere (Keops Horses), fiind un punct de plecare potrivit atât pentru un weekend de relaxare, cât și pentru vizitarea Cheilor Jiețului și a platoului Parâng."
+      ],
       facts: [
-        { label: "Adresă", value: "Petrila, centru" },
-        { label: "Program", value: "12:00–23:00" },
-        { label: "Website", value: "De completat" }
+        { label: "Locație", value: "Str. Jiet, DN7A, Cheile Jietului, Petrila" },
+        { label: "Deschis", value: "2023" },
+        { label: "Facilități", value: "peste 25 de camere, spa, jacuzzi, saună, salină, restaurant, terasă" },
+        { label: "Contact", value: "tel. 0738 777 711 · conaculradacinilor.ro" }
       ]
     },
     en: {
-      tagline: "EXAMPLE eatery. Add a real restaurant / bistro.",
-      description: ["This will hold: type of cuisine, signature dishes, price range, whether booking is needed."],
+      tagline: "A manor-style hotel complex opened in 2023 in the Jieț gorge, with a spa, restaurant and guided hikes.",
+      description: [
+        "Conacul Rădăcinilor (\"Manor of Roots\") is a hotel, restaurant and leisure complex opened in 2023 on Jiet street (DN7A), in the Cheile Jietului gorge, within Petrila town, on the way to the Transalpina road. Its rustic architecture, built with solid wood and greenery, houses over 25 rooms, a wellness & spa area with a jacuzzi and heated sauna, a salt therapy room, a restaurant, a \"Green Bar\", a terrace, and event and conference spaces.",
+        "The complex runs guided mountain hikes and partners with a nearby equestrian centre (Keops Horses), making it a good base both for a relaxing weekend and for exploring the Jieț gorge and the Parâng plateau."
+      ],
       facts: [
-        { label: "Address", value: "Petrila, town centre" },
-        { label: "Hours", value: "12:00–23:00" },
-        { label: "Website", value: "To be filled in" }
+        { label: "Location", value: "Jiet street, DN7A, Cheile Jietului, Petrila" },
+        { label: "Opened", value: "2023" },
+        { label: "Facilities", value: "25+ rooms, spa, jacuzzi, sauna, salt room, restaurant, terrace" },
+        { label: "Contact", value: "phone +40 738 777 711 · conaculradacinilor.ro" }
       ]
     }
   },
