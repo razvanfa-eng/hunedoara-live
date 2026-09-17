@@ -1345,6 +1345,111 @@ window.SITE_HERITAGE = [
         { label: "What to see", value: "aircraft models, gear, pieces from the aircraft that crashed in 1913" }
       ]
     }
+  },
+  {
+    id: "muzeul-aurului-brad",
+    name: "Muzeul Aurului din Brad",
+    category: { ro: "Muzeu", en: "Museum" },
+    area: "Brad",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cea mai mare colecție de aur nativ din Europa, cu exponate neprelucrate de niciun bijutier.",
+      description: [
+        "Muzeul Aurului din Brad funcționează din 1896, pornind de la colecțiile de minerale și unelte miniere ale societăților care exploatau zăcămintele aurifere din Munții Metaliferi. Astăzi adăpostește peste 2.000 de exponate — minerale și piese de aur nativ, niciuna prelucrată de vreun bijutier —, considerată una dintre cele mai importante colecții de acest fel din lume.",
+        "Printre piesele cele mai cunoscute, vizitatorii au dat nume proprii unor formațiuni native, precum „Balerina”, un cristal cu douăsprezece fețe unic în lume, sau șopârlele de aur, dintre care una a fost asigurată cu 500.000 de euro la un transport pentru expunere într-un muzeu german. Muzeul se află pe strada Independenței nr. 3 și e deschis zilnic."
+      ],
+      facts: [
+        { label: "Înființat", value: "1896" },
+        { label: "Colecție", value: "peste 2.000 de exponate (minerale și aur nativ)" },
+        { label: "Piesă unică", value: "„Balerina” — cristal de aur cu 12 fețe, unic în lume" },
+        { label: "Program", value: "zilnic, 9:00–17:00" }
+      ]
+    },
+    en: {
+      tagline: "The largest collection of native gold in Europe, with pieces untouched by any jeweller.",
+      description: [
+        "The Gold Museum in Brad has operated since 1896, growing out of the mineral and mining-tool collections of the companies that worked the gold deposits of the Metaliferi Mountains. Today it holds over 2,000 exhibits — minerals and native gold pieces, none of them reworked by a jeweller — regarded as one of the most important collections of its kind in the world.",
+        "Among its best-known pieces, visitors have given proper names to native gold formations, such as \"The Ballerina\", a twelve-faced crystal unique in the world, and the gold \"lizards\", one of which was insured for €500,000 during transport for display at a German museum. The museum stands on Independenței Street no. 3 and is open daily."
+      ],
+      facts: [
+        { label: "Founded", value: "1896" },
+        { label: "Collection", value: "over 2,000 exhibits (minerals and native gold)" },
+        { label: "Unique piece", value: "\"The Ballerina\" — a 12-faced gold crystal, unique in the world" },
+        { label: "Hours", value: "daily, 9:00 AM-5:00 PM" }
+      ]
+    }
+  },
+  {
+    id: "treptele-romane-ruda-brad",
+    name: "Treptele Romane (Ruda-Brad)",
+    category: { ro: "Sit arheologic minier", en: "Archaeological mining site" },
+    area: "Brad",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Una dintre puținele galerii miniere romane păstrate în Munții Apuseni, săpată acum aproape 2.000 de ani.",
+      description: [
+        "Treptele Romane este o galerie minieră săpată în stâncă la marginea satului Ruda, lângă Brad, în secolele II–III d.Hr., pentru extragerea aurului din zăcămintele Munților Metaliferi. Galeria, lungă de circa 200 de metri, își ia numele de la treptele tăiate în piatră la capătul tunelului săpat manual, cu târnăcopul, de mineri din perioada ocupației romane a Daciei.",
+        "Zona a fost exploatată aurifer încă din perioada dacică și a rămas în folosință secole la rând, fiind una dintre puținele mărturii vizibile ale tehnicii miniere romane din Dacia. Din motive de siguranță, intrarea în galerie este momentan închisă cu o ușă metalică, iar vizitatorii pot vedea doar pavilionul construit la intrare; autoritățile locale au în plan amenajarea zonei pentru vizitare."
+      ],
+      facts: [
+        { label: "Perioadă", value: "secolele II–III d.Hr. (epoca romană)" },
+        { label: "Lungime galerie", value: "~200 m" },
+        { label: "Localizare", value: "satul Ruda, lângă Brad" },
+        { label: "Acces", value: "doar pavilionul de la intrare — galeria e închisă publicului din motive de siguranță" }
+      ]
+    },
+    en: {
+      tagline: "One of the few Roman-era mining galleries preserved in the Apuseni Mountains, dug nearly 2,000 years ago.",
+      description: [
+        "Treptele Romane (\"the Roman Steps\") is a mining gallery cut into the rock at the edge of Ruda village, near Brad, in the 2nd-3rd centuries AD, to extract gold from the deposits of the Metaliferi Mountains. The gallery, about 200 metres long, takes its name from the steps cut into stone at the end of the tunnel, dug by hand with pickaxes by miners during the Roman occupation of Dacia.",
+        "The area had been worked for gold since Dacian times and stayed in use for centuries afterward, making it one of the few visible traces of Roman mining technique in Dacia. For safety reasons, the gallery entrance is currently closed with a metal door, and visitors can only see the pavilion built at the entrance; local authorities plan to open the area up for visiting."
+      ],
+      facts: [
+        { label: "Period", value: "2nd-3rd century AD (Roman era)" },
+        { label: "Gallery length", value: "~200 m" },
+        { label: "Location", value: "Ruda village, near Brad" },
+        { label: "Access", value: "entrance pavilion only — the gallery is closed to the public for safety reasons" }
+      ]
+    }
+  },
+  {
+    id: "biserica-criscior",
+    name: "Biserica „Adormirea Maicii Domnului” din Crișcior",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Brad",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Biserică din secolele XIV–XV, ctitorită de voievodul Bâlea, cu picturi murale bizantine unice în zonă.",
+      description: [
+        "Biserica „Adormirea Maicii Domnului” din Crișcior, la câțiva kilometri de Brad, a fost ridicată în secolele XIV–XV, din piatră, pe locul unei biserici de lemn mai vechi, cu turn-clopotniță pe latura de vest. Ctitori au fost voievodul local Bâlea și soția sa, Vișa, atestați documentar în 1404.",
+        "În interior s-au păstrat picturi murale din secolul al XV-lea, printre cele mai valoroase din zonă — un tablou votiv cu familia ctitorilor, scene din viața lui Iisus (Spălarea picioarelor, Cina cea de Taină, Drumul crucii) și chipurile unor sfinți militari și ale celor trei regi sfinți ai Ungariei. Biserica e clasată monument istoric de valoare națională, cu codul LMI HD-II-m-A-03303."
+      ],
+      facts: [
+        { label: "Construcție", value: "secolele XIV–XV" },
+        { label: "Ctitori", value: "voievodul Bâlea și soția sa, Vișa (atestați 1404)" },
+        { label: "Picturi murale", value: "secolul XV — tablou votiv, scene biblice, sfinți militari" },
+        { label: "Cod LMI", value: "HD-II-m-A-03303" }
+      ]
+    },
+    en: {
+      tagline: "A 14th-15th century church founded by voivode Bâlea, with Byzantine murals unique to the area.",
+      description: [
+        "The \"Dormition of the Mother of God\" church in Crișcior, a few kilometres from Brad, was built in stone in the 14th-15th centuries on the site of an older wooden church, with a bell tower on its western side. Its founders were the local voivode Bâlea and his wife Vișa, documented in 1404.",
+        "Inside, 15th-century murals have survived — among the most valuable in the area — including a votive painting of the founders' family, scenes from the life of Christ (the Washing of the Feet, the Last Supper, the Way of the Cross) and depictions of warrior saints and the three sainted kings of Hungary. The church is listed as a historic monument of national value, LMI code HD-II-m-A-03303."
+      ],
+      facts: [
+        { label: "Built", value: "14th-15th century" },
+        { label: "Founders", value: "voivode Bâlea and his wife Vișa (documented 1404)" },
+        { label: "Murals", value: "15th century — votive painting, biblical scenes, warrior saints" },
+        { label: "LMI code", value: "HD-II-m-A-03303" }
+      ]
+    }
   }
 ];
 
@@ -1587,6 +1692,7 @@ window.SITE_TOWNS = [
     area: "Munții Metaliferi",
     coords: [46.1294, 22.7900],
     hasReviews: false,
+    relatedAreas: ["Brad"],
     images: ["images/brad-skyline.jpg"],
     photoCredit: { author: "Sthadrian", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Brad_Skyline.jpg" },
     ro: {
