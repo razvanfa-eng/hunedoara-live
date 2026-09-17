@@ -532,6 +532,44 @@ window.SITE_NATURE = [
     }
   },
   {
+    id: "lacul-cincis",
+    name: "Lacul Cinciș",
+    category: { ro: "Lac de acumulare", en: "Reservoir lake" },
+    area: "Hunedoara",
+    coords: [45.69, 22.86],
+    hasReviews: true,
+    season: "vara",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Lac de acumulare lângă Hunedoara, cu plaje, pescuit și una dintre cele mai mari suprafețe de apă artificiale din Transilvania.",
+      description: [
+        "Lacul Cinciș este un lac de acumulare format pe cursul râului Cerna, lângă satul Teliucu Inferior, la circa 15 km de Hunedoara, printr-un baraj construit la începutul anilor 1960 pentru alimentarea cu apă a combinatului siderurgic și a orașului. Cu o suprafață de circa 867 ha și o adâncime maximă de 48 m, este unul dintre cele mai mari lacuri artificiale din Transilvania.",
+        "Malul nordic, cu plaje, contrastează cu malul sudic, împădurit și deluros. Zona s-a dezvoltat ca stațiune de interes local, cu campinguri, moteluri și pensiuni, iar lacul rămâne căutat pentru pescuit (crap, știucă, amur, șalău, caras) și înot în sezonul cald (iunie–august)."
+      ],
+      facts: [
+        { label: "Râu / baraj", value: "Lac de acumulare pe Cerna, amenajat la începutul anilor 1960" },
+        { label: "Suprafață", value: "~867 ha (8,67 km²)" },
+        { label: "Adâncime maximă", value: "48 m" },
+        { label: "Sezon turistic", value: "iunie–august, temperatura apei ~18°C" },
+        { label: "Pești", value: "crap, știucă, amur, șalău, caras" }
+      ]
+    },
+    en: {
+      tagline: "A reservoir lake near Hunedoara, with beaches, fishing and one of Transylvania's largest artificial water surfaces.",
+      description: [
+        "Lacul Cinciș is a reservoir lake formed on the Cerna river near the village of Teliucu Inferior, about 15 km from Hunedoara, after a dam was built there in the early 1960s to supply water to the steel works and the city. Covering around 867 ha with a maximum depth of 48 m, it is one of the largest artificial lakes in Transylvania.",
+        "The northern shore, lined with beaches, contrasts with the wooded, hilly southern shore. The area developed into a local resort, with campsites, motels and guesthouses, and the lake remains popular for fishing (carp, pike, amur, pike-perch, crucian carp) and swimming in the warm season (June–August)."
+      ],
+      facts: [
+        { label: "River / dam", value: "Reservoir lake on the Cerna, built in the early 1960s" },
+        { label: "Surface area", value: "~867 ha (8.67 km²)" },
+        { label: "Maximum depth", value: "48 m" },
+        { label: "Tourist season", value: "June–August, water temperature ~18°C" },
+        { label: "Fish species", value: "carp, pike, amur, pike-perch, crucian carp" }
+      ]
+    }
+  },
+  {
     id: "padurea-bejan",
     name: "Pădurea Bejan",
     category: { ro: "Rezervație naturală", en: "Nature reserve" },
@@ -1450,7 +1488,81 @@ window.SITE_HERITAGE = [
         { label: "LMI code", value: "HD-II-m-A-03303" }
       ]
     }
-  }
+  },
+  {
+    id: "castelul-corvinilor",
+    name: "Castelul Corvinilor",
+    category: { ro: "Castel medieval", en: "Medieval castle" },
+    area: "Hunedoara",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Sala Cavalerilor, Sala Dietei și fântâna săpată de prizonieri turci — detaliile din spatele celui mai vizitat castel al țării.",
+      description: [
+        "Ridicat de Iancu de Hunedoara după 1440 pe temeliile unei fortificații din secolul al XIV-lea și extins în stil renascentist de fiul său, regele Matia Corvin, între 1458 și 1480, castelul păstrează Sala Cavalerilor — sala de recepție cu bolți gotice, care poartă o inscripție în latină, „Hoc opus fecit fieri Magnificus Johannes de Hunyadi”, datată 1452 — și Sala Dietei, decorată cu medalioane pictate, printre care portretele domnitorilor Matei Basarab și Vasile Lupu.",
+        "Curtea interioară adăpostește fântâna despre care legenda spune că a fost săpată timp de 15 ani de trei prizonieri otomani, cărora li s-ar fi promis libertatea dacă găsesc apă; promisiunea nu ar fi fost respectată, iar inscripția rămasă pe pereții fântânii are o interpretare încă disputată de istorici. Castelul se vizitează tot anul (luni 12:00–20:00, marți–duminică 9:00–20:00, în sezonul aprilie–septembrie 2026), biletul de adult costând 55 de lei în 2026."
+      ],
+      facts: [
+        { label: "Construcție inițială", value: "După 1440, de Iancu de Hunedoara, pe o fortificație din secolul XIV" },
+        { label: "Extindere renascentistă", value: "1458–1480, sub regele Matia Corvin" },
+        { label: "Săli principale", value: "Sala Cavalerilor (inscripție din 1452), Sala Dietei" },
+        { label: "Program (2026)", value: "Luni 12:00–20:00, marți–duminică 9:00–20:00 (aprilie–septembrie)" },
+        { label: "Bilet adult (2026)", value: "55 lei" }
+      ]
+    },
+    en: {
+      tagline: "The Knights' Hall, the Diet Hall and a well dug by Turkish prisoners — the details behind Romania's most visited castle.",
+      description: [
+        "Built by John Hunyadi (Iancu de Hunedoara) after 1440 on the foundations of a 14th-century fortification and expanded in Renaissance style by his son, King Matthias Corvinus, between 1458 and 1480, the castle preserves the Knights' Hall — a Gothic-vaulted reception room bearing a Latin inscription, \"Hoc opus fecit fieri Magnificus Johannes de Hunyadi\", dated 1452 — and the Diet Hall, decorated with painted medallions, including portraits of Wallachian prince Matei Basarab and Moldavian prince Vasile Lupu.",
+        "The inner courtyard holds the well that, according to legend, three Ottoman prisoners spent 15 years digging in search of water after being promised freedom if they succeeded; the promise was reportedly broken, and an inscription said to remain on the well's walls has a meaning historians still dispute. The castle is open year-round (Mondays 12:00–8:00 PM, Tuesday–Sunday 9:00 AM–8:00 PM in the April–September 2026 season), with an adult ticket costing 55 lei in 2026."
+      ],
+      facts: [
+        { label: "Original construction", value: "After 1440, by John Hunyadi, on a 14th-century fortification" },
+        { label: "Renaissance expansion", value: "1458–1480, under King Matthias Corvinus" },
+        { label: "Main halls", value: "Knights' Hall (1452 inscription), Diet Hall" },
+        { label: "Hours (2026)", value: "Mon 12:00–8:00 PM, Tue–Sun 9:00 AM–8:00 PM (April–September)" },
+        { label: "Adult ticket (2026)", value: "55 lei" }
+      ]
+    }
+  },
+  {
+    id: "furnalul-govajdia",
+    name: "Furnalul de la Govăjdia",
+    category: { ro: "Ansamblu industrial istoric", en: "Historic industrial site" },
+    area: "Hunedoara",
+    hasReviews: false,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Furnal din 1810, primul cu flux continuu din Europa — vestigiu al tradiției siderurgice din care a crescut Hunedoara industrială.",
+      description: [
+        "Construit între 1806 și 1810 lângă satul Govăjdia (comuna Ghelari, la circa 20 km de Hunedoara), furnalul a fost, la data punerii în funcțiune, primul furnal cu flux continuu din Europa și al doilea din lume, topind minereu de fier adus din Munții Poiana Ruscă. A funcționat până în 1924, fiind unul dintre punctele de plecare ale tradiției siderurgice care avea să facă din Hunedoara un centru metalurgic important.",
+        "Declarat monument de arhitectură industrială în anul 2000, ansamblul se află într-o stare avansată de degradare, în ciuda includerii, din 2021, într-un program național de restaurare. Rămâne totuși un reper de patrimoniu industrial unic în peisajul metalurgic românesc."
+      ],
+      facts: [
+        { label: "Construit", value: "1806–1810" },
+        { label: "Statut", value: "Monument de arhitectură industrială (Legea 5/2000), cod HD-II-m-A-03322" },
+        { label: "Particularitate tehnică", value: "Primul furnal cu flux continuu din Europa (al doilea din lume), la data punerii în funcțiune" },
+        { label: "Închidere", value: "1924" },
+        { label: "Locație", value: "Satul Govăjdia, comuna Ghelari, ~20 km de Hunedoara" }
+      ]
+    },
+    en: {
+      tagline: "A furnace from 1810, Europe's first continuous-flow blast furnace — a relic of the iron-making tradition that grew into industrial Hunedoara.",
+      description: [
+        "Built between 1806 and 1810 near the village of Govăjdia (Ghelari commune, about 20 km from Hunedoara), the furnace was, when it went into operation, the first continuous-flow blast furnace in Europe and the second in the world, smelting iron ore brought from the Poiana Ruscă Mountains. It operated until 1924, marking one of the starting points of the iron-making tradition that would later turn Hunedoara into a major steel centre.",
+        "Listed as an industrial architecture monument in 2000, the complex is now in an advanced state of disrepair, despite being included, since 2021, in a national restoration programme. It remains, nonetheless, a unique piece of industrial heritage on the Romanian metallurgical landscape."
+      ],
+      facts: [
+        { label: "Built", value: "1806–1810" },
+        { label: "Status", value: "Industrial architecture monument (Law 5/2000), code HD-II-m-A-03322" },
+        { label: "Technical distinction", value: "First continuous-flow blast furnace in Europe (second in the world) at the time" },
+        { label: "Closed", value: "1924" },
+        { label: "Location", value: "Govăjdia village, Ghelari commune, ~20 km from Hunedoara" }
+      ]
+    }
+  },
 ];
 
 window.SITE_TOWNS = [
@@ -1496,6 +1608,7 @@ window.SITE_TOWNS = [
     area: "Culoarul Mureșului",
     coords: [45.7697, 22.9203],
     hasReviews: false,
+    relatedAreas: ["Hunedoara"],
     images: ["images/hunedoara-corvin-castle.jpg"],
     photoCredit: { author: "Andrei Stroe", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Corvin_castle.jpg" },
     ro: {
