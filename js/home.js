@@ -1,14 +1,22 @@
 /* Logica paginii de start: statistici reale (din datele existente),
    grid-ul celor 8 secțiuni și ultimele știri. */
 (function () {
+  // Foto tile-uri (folosite doar decorativ, în grid-ul "Explorează județul"):
+  // majoritatea sunt poze deja existente în images/ (vezi js/data.js -> photoCredit
+  // pentru autor/licență/sursă a fiecăreia). Singura poză nouă e cea de la "stiri":
+  //   images/home-tile-stiri.jpg — Palatul Administrativ (Prefectura) Deva,
+  //   autor Codrinb, licență CC BY-SA 3.0 RO, sursă:
+  //   https://commons.wikimedia.org/wiki/File:Deva_Prefecture_2011-4.jpg
+  // "contact" rămâne fără fundal foto (nu are un subiect vizual firesc) — folosește
+  // un stil distinct (accent), vezi .tile--accent în css/style.css.
   var SECTIONS = [
-    { key: "destinatii", page: "destinatii.html" },
-    { key: "orase", page: "orase.html" },
-    { key: "natura", page: "natura.html" },
-    { key: "turismActiv", page: "turism-activ.html" },
-    { key: "mostenire", page: "mostenire.html" },
-    { key: "afaceri", page: "afaceri.html" },
-    { key: "stiri", page: "stiri.html" },
+    { key: "destinatii", page: "destinatii.html", img: "images/cetatile-dacice-ansamblu.jpg" },
+    { key: "orase", page: "orase.html", img: "images/hunedoara-corvin-castle.jpg" },
+    { key: "natura", page: "natura.html", img: "images/retezat-bucura.jpg" },
+    { key: "turismActiv", page: "turism-activ.html", img: "images/partii-parang.jpg" },
+    { key: "mostenire", page: "mostenire.html", img: "images/prislop-manastire.jpg" },
+    { key: "afaceri", page: "afaceri.html", img: "images/pensiunea-retezat.jpg" },
+    { key: "stiri", page: "stiri.html", img: "images/home-tile-stiri.jpg" },
     { key: "contact", page: "contact.html" }
   ];
 
@@ -34,7 +42,9 @@
     var gridEl = document.getElementById("explore-grid");
     if (gridEl) {
       gridEl.innerHTML = SECTIONS.map(function (s) {
-        return '<a class="tile" href="' + s.page + '">' +
+        var cls = "tile" + (s.img ? " tile--photo" : " tile--accent");
+        var bg = s.img ? ' style="background-image:url(&quot;' + s.img + '&quot;)"' : "";
+        return '<a class="' + cls + '" href="' + s.page + '"' + bg + '>' +
           '<span class="tile__mark">' + window.RL.esc(s.key.charAt(0).toUpperCase()) + "</span>" +
           '<span class="tile__title">' + window.RL.esc(window.I18N.t("sec." + s.key + ".name")) + "</span>" +
           '<span class="tile__desc">' + window.RL.esc(window.I18N.t("sec." + s.key + ".desc")) + "</span>" +
