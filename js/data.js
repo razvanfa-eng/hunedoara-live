@@ -26,41 +26,125 @@
 
 window.SITE_DESTINATIONS = [
   {
-    id: "exemplu-valea-jiului",
-    name: "Exemplu · Valea Jiului",
-    category: { ro: "Zonă montană", en: "Mountain zone" },
-    area: "Vest",
-    example: true,
+    id: "valea-jiului",
+    name: "Valea Jiului",
+    category: { ro: "Zonă montană și minieră", en: "Mining & mountain zone" },
+    area: "Sud-Vest",
     hasReviews: false,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "EXEMPLU de destinație/zonă. Șase orașe miniere, la poalele Parângului și Retezatului.",
-      description: ["Aici va veni o prezentare a zonei: ce o definește, ce orașe/locuri cuprinde, de ce merită un weekend întreg."],
-      facts: [{ label: "Orașe incluse", value: "De completat" }]
+      tagline: "Bazinul carbonifer al Văii Jiului — șase orașe miniere la poalele Parângului, Retezatului și Vâlcanului.",
+      description: [
+        "Valea Jiului cuprinde șase localități urbane — Petroșani, Petrila, Vulcan, Lupeni, Uricani și Aninoasa — construite în jurul exploatării cărbunelui, într-o vale înconjurată de trei masive muntoase.",
+        "Astăzi zona combină patrimoniul industrial (mine, muzee, foste colonii muncitorești) cu accesul direct spre trasee montane și stațiunea Parâng, la câțiva kilometri de Petroșani."
+      ],
+      facts: [
+        { label: "Orașe incluse", value: "Petroșani, Petrila, Vulcan, Lupeni, Uricani, Aninoasa" },
+        { label: "Munți din apropiere", value: "Parâng, Retezat, Vâlcan" }
+      ]
     },
     en: {
-      tagline: "EXAMPLE destination/zone. Six mining towns, at the foot of the Parâng and Retezat mountains.",
-      description: ["This will hold a presentation of the zone: what defines it, which towns/places it covers, why it deserves a whole weekend."],
-      facts: [{ label: "Towns included", value: "To be filled in" }]
+      tagline: "The Jiu Valley coal basin — six mining towns at the foot of the Parâng, Retezat and Vâlcan massifs.",
+      description: [
+        "Valea Jiului comprises six towns — Petroșani, Petrila, Vulcan, Lupeni, Uricani and Aninoasa — built around coal mining, in a valley surrounded by three mountain massifs.",
+        "Today the area combines industrial heritage (mines, museums, former workers' colonies) with direct access to mountain trails and the Parâng resort, a few kilometres from Petroșani."
+      ],
+      facts: [
+        { label: "Towns included", value: "Petroșani, Petrila, Vulcan, Lupeni, Uricani, Aninoasa" },
+        { label: "Nearby mountains", value: "Parâng, Retezat, Vâlcan" }
+      ]
     }
   },
   {
-    id: "exemplu-tara-hategului",
-    name: "Exemplu · Țara Hațegului",
-    category: { ro: "Zonă istorică", en: "Historic zone" },
+    id: "tara-hategului",
+    name: "Țara Hațegului",
+    category: { ro: "Zonă naturală și istorică", en: "Natural & historic zone" },
     area: "Sud",
-    example: true,
     hasReviews: false,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "EXEMPLU de destinație. Cetăți dacice, parc dinozauri, sate tradiționale.",
-      description: ["Descriere reală de completat împreună."],
-      facts: [{ label: "Puncte de interes", value: "De completat" }]
+      tagline: "Ținutul dinozaurilor pitici, al bisericilor de piatră și al celui mai vechi parc național din România.",
+      description: [
+        "Țara Hațegului este depresiunea din sud-vestul județului, cunoscută în lumea științifică pentru fosilele de dinozauri pitici descoperite aici — astăzi protejată ca Geoparcul UNESCO Țara Hațegului (parte a rețelei globale din 2005, Geoparc UNESCO din 2015).",
+        "Tot aici se află Parcul Național Retezat, înființat în 1935 — cel mai vechi parc național din România — și sate cu biserici medievale de piatră, printre care biserica din Densuș, una dintre cele mai vechi biserici de piatră aflate încă în uz din țară."
+      ],
+      facts: [
+        { label: "Puncte de interes", value: "Parcul Național Retezat, Geoparcul Țara Hațegului, biserica din Densuș" },
+        { label: "Oraș principal", value: "Hațeg" }
+      ]
     },
     en: {
-      tagline: "EXAMPLE destination. Dacian fortresses, dinosaur geopark, traditional villages.",
-      description: ["Real description to be filled in together."],
-      facts: [{ label: "Points of interest", value: "To be filled in" }]
+      tagline: "The land of dwarf dinosaurs, stone churches and Romania's oldest national park.",
+      description: [
+        "Țara Hațegului is the depression in the county's south-west, known worldwide for the dwarf dinosaur fossils discovered here — today protected as the Hațeg Country UNESCO Global Geopark (part of the global network since 2005, UNESCO Global Geopark since 2015).",
+        "It is also home to Retezat National Park, established in 1935 — Romania's oldest national park — and villages with medieval stone churches, including the Densuș church, one of the oldest stone churches in the country still in use."
+      ],
+      facts: [
+        { label: "Points of interest", value: "Retezat National Park, Hațeg Country Geopark, Densuș church" },
+        { label: "Main town", value: "Hațeg" }
+      ]
+    }
+  },
+  {
+    id: "cetatile-dacice",
+    name: "Zona Cetăților Dacice",
+    category: { ro: "Zonă istorică", en: "Historic zone" },
+    area: "Nord",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Munții Orăștiei — nucleul fortificat al Regatului Dac, patrimoniu UNESCO din 1999.",
+      description: [
+        "În Munții Orăștiei se află cinci dintre cele șase cetăți dacice incluse pe lista patrimoniului mondial UNESCO (a șasea, Căpâlna, e în județul Alba): Sarmizegetusa Regia — capitala regatului lui Decebal —, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie și Bănița.",
+        "Zona se vizitează dinspre Orăștie, poarta de acces spre traseele care urcă la ruinele fortificațiilor, construite în celebra tehnică a \"murus dacicus\"."
+      ],
+      facts: [
+        { label: "Cetăți în județ", value: "Sarmizegetusa Regia, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie, Bănița" },
+        { label: "Statut", value: "Patrimoniu mondial UNESCO din 1999" },
+        { label: "Oraș principal", value: "Orăștie" }
+      ]
+    },
+    en: {
+      tagline: "The Orăștie Mountains — the fortified core of the Dacian Kingdom, UNESCO heritage since 1999.",
+      description: [
+        "The Orăștie Mountains hold five of the six Dacian fortresses on the UNESCO World Heritage list (the sixth, Căpâlna, is in Alba county): Sarmizegetusa Regia — the capital of Decebalus's kingdom —, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie and Bănița.",
+        "The area is visited from Orăștie, the gateway town to the trails leading up to the fortress ruins, built in the famous \"murus dacicus\" technique."
+      ],
+      facts: [
+        { label: "Fortresses in the county", value: "Sarmizegetusa Regia, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie, Bănița" },
+        { label: "Status", value: "UNESCO World Heritage since 1999" },
+        { label: "Main town", value: "Orăștie" }
+      ]
+    }
+  },
+  {
+    id: "culoarul-muresului",
+    name: "Culoarul Mureșului",
+    category: { ro: "Zonă mixtă", en: "Mixed zone" },
+    area: "Centru",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Coridorul Deva–Simeria–Orăștie, de-a lungul Mureșului — orașe, cetăți și cel mai vechi parc dendrologic din România.",
+      description: [
+        "Culoarul Mureșului leagă principalele orașe ale județului și adăpostește Parcul Dendrologic de la Simeria, deschis la mijlocul secolului al XVIII-lea — cel mai vechi și una dintre cele mai bogate colecții dendrologice din România, cu peste 2.100 de specii și forme de arbori și arbuști.",
+        "Zona e un bun punct de plecare pentru restul județului, fiind traversată de principalele căi rutiere și feroviare."
+      ],
+      facts: [
+        { label: "Reper", value: "Parcul Dendrologic Simeria (cca. 70 ha, peste 2.100 de taxoni)" },
+        { label: "Orașe incluse", value: "Deva, Simeria, Orăștie" }
+      ]
+    },
+    en: {
+      tagline: "The Deva–Simeria–Orăștie corridor along the Mureș river — towns, fortresses and Romania's oldest dendrological park.",
+      description: [
+        "The Mureș corridor links the county's main towns and is home to the Simeria Dendrological Park, opened in the mid-18th century — the oldest and one of the richest dendrological collections in Romania, with over 2,100 tree and shrub taxa.",
+        "The area is a good starting point for the rest of the county, crossed by the main road and rail routes."
+      ],
+      facts: [
+        { label: "Landmark", value: "Simeria Dendrological Park (approx. 70 ha, over 2,100 taxa)" },
+        { label: "Towns included", value: "Deva, Simeria, Orăștie" }
+      ]
     }
   }
 ];
@@ -207,30 +291,188 @@ window.SITE_HERITAGE = [
 
 window.SITE_TOWNS = [
   {
-    id: "exemplu-petrosani",
-    name: "Exemplu · Petroșani",
+    id: "deva",
+    name: "Deva",
     category: { ro: "Municipiu", en: "Municipality" },
-    area: "Valea Jiului",
-    coords: [45.4166, 23.3733],
-    example: true,
+    area: "Culoarul Mureșului",
+    coords: [45.8781, 22.9144],
     hasReviews: false,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "EXEMPLU de pagină de oraș. Conținutul real îl scriem împreună.",
-      description: ["Aici va veni prezentarea orașului: poziție, specific, ce merită vizitat, cum ajungi."],
+      tagline: "Reședința județului Hunedoara, dominată de Cetatea Deva, pe un deal vulcanic în mijlocul orașului.",
+      description: [
+        "Deva este centrul administrativ al județului, așezat pe Mureș. Simbolul orașului este Cetatea Deva, ruine medievale aflate pe un deal vulcanic chiar în centrul orașului, accesibile pe jos sau cu o telecabină funcțională din 2003.",
+        "În centrul istoric se află Magna Curia (Palatul Bethlen, 1621), care găzduiește azi Muzeul Civilizației Dacice și Romane. Deva e cunoscută și ca centru național al gimnasticii românești."
+      ],
       facts: [
-        { label: "Populație", value: "De completat" },
-        { label: "Altitudine", value: "De completat" },
-        { label: "Prima atestare", value: "De completat" }
+        { label: "Populație", value: "53.113 locuitori (recensământ 2021)" },
+        { label: "Reper", value: "Cetatea Deva, cu telecabină (din 2003)" },
+        { label: "Muzeu", value: "Magna Curia — Muzeul Civilizației Dacice și Romane" }
       ]
     },
     en: {
-      tagline: "EXAMPLE town page. We'll write the real content together.",
-      description: ["This will hold the town's overview: location, character, what's worth visiting, how to get there."],
+      tagline: "The seat of Hunedoara county, overlooked by Deva Citadel on a volcanic hill right in the city centre.",
+      description: [
+        "Deva is the county's administrative centre, on the Mureș river. The city's landmark is Deva Citadel, medieval ruins on a volcanic hill in the middle of town, reachable on foot or by a cable car running since 2003.",
+        "The old centre holds Magna Curia (Bethlen Castle, 1621), now home to the Museum of Dacian and Roman Civilisation. Deva is also known as a national centre for Romanian gymnastics."
+      ],
       facts: [
-        { label: "Population", value: "To be filled in" },
-        { label: "Altitude", value: "To be filled in" },
-        { label: "First mentioned", value: "To be filled in" }
+        { label: "Population", value: "53,113 (2021 census)" },
+        { label: "Landmark", value: "Deva Citadel, with cable car (since 2003)" },
+        { label: "Museum", value: "Magna Curia — Museum of Dacian and Roman Civilisation" }
+      ]
+    }
+  },
+  {
+    id: "hunedoara",
+    name: "Hunedoara",
+    category: { ro: "Municipiu", en: "Municipality" },
+    area: "Culoarul Mureșului",
+    coords: [45.7697, 22.9203],
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Orașul Castelului Corvinilor, unul dintre cele mai mari castele medievale din Europa.",
+      description: [
+        "Hunedoara a fost multă vreme un important centru siderurgic, dar rămâne cunoscută în primul rând pentru Castelul Corvinilor (Castelul Huniazilor), ridicat în secolul al XV-lea de Iancu de Hunedoara — unul dintre cele mai mari castele gotico-renascentiste din Europa și unul dintre cele „7 minuni ale României”.",
+        "Castelul, cu Sala Cavalerilor, Sala Dietei și turnurile sale, se vizitează pe tot parcursul anului și este iluminat seara."
+      ],
+      facts: [
+        { label: "Populație", value: "50.457 locuitori (recensământ 2021)" },
+        { label: "Reper", value: "Castelul Corvinilor (secolul XV)" }
+      ]
+    },
+    en: {
+      tagline: "Home to Corvin Castle, one of Europe's largest medieval castles.",
+      description: [
+        "Hunedoara was long an important steel-industry centre, but is best known for Corvin Castle (Hunyadi Castle), built in the 15th century by John Hunyadi — one of the largest Gothic-Renaissance castles in Europe and one of the \"7 Wonders of Romania\".",
+        "The castle, with its Knights' Hall, Diet Hall and towers, can be visited year-round and is lit up in the evening."
+      ],
+      facts: [
+        { label: "Population", value: "50,457 (2021 census)" },
+        { label: "Landmark", value: "Corvin Castle (15th century)" }
+      ]
+    }
+  },
+  {
+    id: "petrosani",
+    name: "Petroșani",
+    category: { ro: "Municipiu", en: "Municipality" },
+    area: "Valea Jiului",
+    coords: [45.4166, 23.3733],
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Orașul universitar al Văii Jiului și poarta spre platoul Parâng.",
+      description: [
+        "Petroșani este orașul principal al Văii Jiului, centru al bazinului carbonifer și sediul Universității din Petroșani — continuatoarea Institutului de Mine, care funcționează aici din 1948.",
+        "Din oraș pornește telescaunul care urcă spre platoul Parâng, una dintre cele mai apropiate zone de schi și drumeție din județ."
+      ],
+      facts: [
+        { label: "Populație", value: "31.044 locuitori (recensământ 2021)" },
+        { label: "Reper", value: "Universitatea din Petroșani (din 1948, fost Institut de Mine)" },
+        { label: "Poartă spre", value: "Platoul Parâng (telescaun)" }
+      ]
+    },
+    en: {
+      tagline: "The university town of Valea Jiului and the gateway to the Parâng plateau.",
+      description: [
+        "Petroșani is the main town of Valea Jiului, the centre of the coal basin and home to the University of Petroșani — successor of the Mining Institute, operating here since 1948.",
+        "A chairlift from the town goes up to the Parâng plateau, one of the county's closest ski and hiking areas."
+      ],
+      facts: [
+        { label: "Population", value: "31,044 (2021 census)" },
+        { label: "Landmark", value: "University of Petroșani (since 1948, formerly the Mining Institute)" },
+        { label: "Gateway to", value: "Parâng plateau (chairlift)" }
+      ]
+    }
+  },
+  {
+    id: "orastie",
+    name: "Orăștie",
+    category: { ro: "Municipiu", en: "Municipality" },
+    area: "Zona cetăților dacice",
+    coords: [45.8500, 23.2000],
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Poarta de acces spre Cetățile dacice din Munții Orăștiei, patrimoniu UNESCO.",
+      description: [
+        "Orăștie este orașul de la poalele Munților Orăștiei, cel mai apropiat punct de plecare spre cetățile dacice — printre care Sarmizegetusa Regia, capitala regatului lui Decebal — incluse pe lista patrimoniului mondial UNESCO din 1999."
+      ],
+      facts: [
+        { label: "Populație", value: "16.825 locuitori (recensământ 2021)" },
+        { label: "Reper", value: "Poartă spre cetățile dacice (UNESCO)" }
+      ]
+    },
+    en: {
+      tagline: "The gateway to the Dacian Fortresses of the Orăștie Mountains, a UNESCO World Heritage site.",
+      description: [
+        "Orăștie sits at the foot of the Orăștie Mountains, the closest starting point for the Dacian fortresses — including Sarmizegetusa Regia, the capital of Decebalus's kingdom — listed as UNESCO World Heritage since 1999."
+      ],
+      facts: [
+        { label: "Population", value: "16,825 (2021 census)" },
+        { label: "Landmark", value: "Gateway to the Dacian fortresses (UNESCO)" }
+      ]
+    }
+  },
+  {
+    id: "hateg",
+    name: "Hațeg",
+    category: { ro: "Oraș", en: "Town" },
+    area: "Țara Hațegului",
+    coords: [45.6075, 22.9500],
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Poarta spre Parcul Național Retezat și Geoparcul Dinozaurilor din Țara Hațegului.",
+      description: [
+        "Hațeg este orașul central al Țării Hațegului, cel mai bun punct de plecare spre Parcul Național Retezat — înființat în 1935, cel mai vechi din România — și spre Geoparcul UNESCO Țara Hațegului, cunoscut pentru fosilele de dinozauri pitici."
+      ],
+      facts: [
+        { label: "Populație", value: "8.793 locuitori (recensământ 2021)" },
+        { label: "Reper", value: "Poartă spre Parcul Național Retezat (1935) și Geoparcul Țara Hațegului" }
+      ]
+    },
+    en: {
+      tagline: "The gateway to Retezat National Park and the Hațeg Country Dinosaurs Geopark.",
+      description: [
+        "Hațeg is the central town of Țara Hațegului, the best starting point for Retezat National Park — established in 1935, the oldest in Romania — and for the Hațeg Country UNESCO Global Geopark, known for its dwarf dinosaur fossils."
+      ],
+      facts: [
+        { label: "Population", value: "8,793 (2021 census)" },
+        { label: "Landmark", value: "Gateway to Retezat National Park (1935) and the Hațeg Country Geopark" }
+      ]
+    }
+  },
+  {
+    id: "brad",
+    name: "Brad",
+    category: { ro: "Municipiu", en: "Municipality" },
+    area: "Munții Metaliferi",
+    coords: [46.1294, 22.7900],
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Orașul aurului — istoric centru minier, cu propriul muzeu al aurului.",
+      description: [
+        "Brad este centrul istoric al mineritului aurifer din Munții Metaliferi. Găzduiește Muzeul Aurului, unul dintre puținele muzee de acest tip din lume, iar în apropiere se află Săcărâmb, localitate cunoscută în mineralogie ca loc de descoperire (1835) a silvanitului, un mineral rar de aur și argint."
+      ],
+      facts: [
+        { label: "Populație", value: "12.690 locuitori (recensământ 2021)" },
+        { label: "Reper", value: "Muzeul Aurului" },
+        { label: "În apropiere", value: "Săcărâmb — localitate-tip pentru mineralul silvanit (1835)" }
+      ]
+    },
+    en: {
+      tagline: "The city of gold — a historic mining centre, with its own gold museum.",
+      description: [
+        "Brad is the historic centre of gold mining in the Metaliferi Mountains. It houses the Gold Museum, one of the few museums of its kind in the world, and nearby lies Săcărâmb, known in mineralogy as the discovery site (1835) of sylvanite, a rare gold-silver mineral."
+      ],
+      facts: [
+        { label: "Population", value: "12,690 (2021 census)" },
+        { label: "Landmark", value: "Gold Museum" },
+        { label: "Nearby", value: "Săcărâmb — type locality of sylvanite (1835)" }
       ]
     }
   }

@@ -50,10 +50,10 @@ function load(file, query = "") {
   const w1 = await load("destinatii.html");
   const d1 = w1.document;
   ok(!w1.__err, "destinatii: fără erori JS" + (w1.__err ? " — " + w1.__err : ""));
-  ok(d1.querySelectorAll("#grid .card").length === 2, "destinatii: 2 carduri (exemple)");
+  ok(d1.querySelectorAll("#grid .card").length === 4, "destinatii: 4 carduri (conținut real)");
   ok([...d1.querySelectorAll("#grid .card")].every((a) => /^destinatie\.html\?id=[a-z-]+$/.test(a.getAttribute("href"))), "destinatii: href-uri carduri valide");
 
-  const w2 = await load("destinatie.html", "?id=exemplu-valea-jiului");
+  const w2 = await load("destinatie.html", "?id=valea-jiului");
   const d2 = w2.document;
   ok(!w2.__err, "destinatie: fără erori JS" + (w2.__err ? " — " + w2.__err : ""));
   ok(/Valea Jiului/.test(d2.querySelector("#detail-title")?.textContent || ""), "destinatie: titlu randat");
@@ -110,7 +110,7 @@ function load(file, query = "") {
 /* -------- restul secțiunilor: randare fără erori + numărul corect de carduri -------- */
 {
   const pairs = [
-    ["turism-activ.html", 1], ["mostenire.html", 2], ["orase.html", 1], ["stiri.html", 1]
+    ["turism-activ.html", 1], ["mostenire.html", 2], ["orase.html", 6], ["stiri.html", 1]
   ];
   for (const [file, count] of pairs) {
     const w = await load(file);
@@ -120,7 +120,7 @@ function load(file, query = "") {
   const details = [
     ["activitate.html", "exemplu-traseu-parang", "Traseu"],
     ["mostenire-articol.html", "exemplu-cetate-dacica", "Cetate"],
-    ["oras.html", "exemplu-petrosani", "Petroșani"],
+    ["oras.html", "petrosani", "Petroșani"],
     ["stire.html", "exemplu-eveniment-local", "eveniment"]
   ];
   for (const [file, id, needle] of details) {
@@ -137,7 +137,7 @@ function load(file, query = "") {
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
   const w = await load("credite.html");
-  ok(w.document.querySelectorAll(".credit-card").length === 11, "credite: 11 intrări (2+2+1+2+1+1+2, toate secțiunile)");
+  ok(w.document.querySelectorAll(".credit-card").length === 18, "credite: 18 intrări (4+2+1+2+6+1+2, toate secțiunile)");
 }
 
 /* -------- fișiere prezente -------- */
