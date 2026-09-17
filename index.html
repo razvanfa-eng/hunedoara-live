@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hunedoara Live</title>
-  <meta name="description" content="Locuri, orașe, activități, istorie, știri și afaceri din tot județul Hunedoara — ghidul digital al județului.">
+  <meta name="description" content="Destinații, orașe, natură, turism activ, moștenire culturală, știri și afaceri din tot județul Hunedoara — ghidul digital al județului.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,16 +15,22 @@
     <div class="container site-header__inner">
       <a class="brand" href="index.html" data-i18n="site.name">Hunedoara Live</a>
       <nav class="site-nav">
-        <a href="locuri.html" data-i18n="nav.locuri">Locuri</a>
-        <a href="activitati.html" data-i18n="nav.activitati">Activități</a>
-        <a href="istorie.html" data-i18n="nav.istorie">Istorie</a>
+        <a href="destinatii.html" data-i18n="nav.destinatii">Destinații</a>
         <a href="orase.html" data-i18n="nav.orase">Orașe</a>
-        <a href="stiri.html" data-i18n="nav.stiri">Știri</a>
+        <a href="natura.html" data-i18n="nav.natura">Natură</a>
+        <a href="turism-activ.html" data-i18n="nav.turismActiv">Turism activ</a>
+        <a href="mostenire.html" data-i18n="nav.mostenire">Moștenire culturală</a>
         <a href="afaceri.html" data-i18n="nav.afaceri">Afaceri</a>
-        <a href="utile.html" data-i18n="nav.utile">Utile</a>
+        <a href="stiri.html" data-i18n="nav.stiri">Știri</a>
         <a href="contact.html" data-i18n="nav.contact">Contact</a>
-        <button id="lang-toggle" class="lang-toggle" type="button" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria">EN</button>
       </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-i18n-attr="aria-label:nav.search.aria" aria-label="Căutare">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button id="lang-toggle" class="lang-toggle" type="button" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria">EN</button>
+        <span class="ai-pill" data-i18n="nav.ai">Întreabă-ne</span>
+      </div>
     </div>
   </header>
 
@@ -32,10 +38,23 @@
     <section class="hero">
       <span class="hero__eyebrow" data-i18n="home.hero.eyebrow">Ghidul digital al județului Hunedoara</span>
       <h1 data-i18n="site.name">Hunedoara Live</h1>
-      <p data-i18n="site.tagline">Locuri, orașe, activități, istorie și afaceri din tot județul Hunedoara — la zi.</p>
+      <p data-i18n="site.tagline">Destinații, orașe, natură, turism activ, moștenire culturală, știri și afaceri din tot județul Hunedoara.</p>
       <div class="hero__cta">
-        <a class="btn btn--primary" href="locuri.html" data-i18n="home.hero.cta.primary">Descoperă locuri</a>
-        <a class="btn btn--outline" href="stiri.html" data-i18n="home.hero.cta.secondary">Ce e nou săptămâna asta</a>
+        <a class="btn btn--primary" href="destinatii.html" data-i18n="home.hero.cta.primary">Explorează destinații</a>
+        <a class="btn btn--outline" href="orase.html" data-i18n="home.hero.cta.secondary">Vezi harta interactivă</a>
+      </div>
+      <div class="hero__apps">
+        <span class="hero__apps-label" data-i18n="home.hero.apps.label">Disponibil și ca aplicație</span>
+        <span class="app-badges">
+          <span class="badge-app">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+            <span data-i18n="footer.apps.appstore">App Store</span>
+          </span>
+          <span class="badge-app">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+            <span data-i18n="footer.apps.googleplay">Google Play</span>
+          </span>
+        </span>
       </div>
     </section>
 
@@ -54,11 +73,22 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container site-footer__inner">
+    <div class="container site-footer__top">
       <div>
         <a class="brand" href="index.html" data-i18n="site.name">Hunedoara Live</a>
         <div class="footer-tagline" data-i18n="footer.tagline">ghidul digital al județului Hunedoara</div>
       </div>
+      <nav class="footer-nav">
+        <a href="destinatii.html" data-i18n="nav.destinatii">Destinații</a>
+        <a href="orase.html" data-i18n="nav.orase">Orașe</a>
+        <a href="natura.html" data-i18n="nav.natura">Natură</a>
+        <a href="turism-activ.html" data-i18n="nav.turismActiv">Turism activ</a>
+        <a href="mostenire.html" data-i18n="nav.mostenire">Moștenire culturală</a>
+        <a href="afaceri.html" data-i18n="nav.afaceri">Afaceri</a>
+        <a href="stiri.html" data-i18n="nav.stiri">Știri</a>
+        <a href="utile.html" data-i18n="nav.utile">Utile</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
       <div class="newsletter">
         <span class="newsletter-label" data-i18n="footer.newsletter.heading">Abonează-te la noutăți</span>
         <form class="newsletter-row" onsubmit="return false;">
@@ -67,7 +97,20 @@
         </form>
       </div>
     </div>
-    <div class="container"><p class="footer-note" data-i18n="footer.note">Proiect independent, necomercial.</p></div>
+    <div class="container site-footer__bottom">
+      <span class="footer-note" data-i18n="footer.note">Proiect independent, necomercial.</span>
+      <div class="app-badges">
+        <span class="badge-app">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+          <span data-i18n="footer.apps.appstore">App Store</span>
+        </span>
+        <span class="badge-app">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+          <span data-i18n="footer.apps.googleplay">Google Play</span>
+        </span>
+      </div>
+      <div class="social-row"><span>Fb</span><span>Ig</span><span>Yt</span></div>
+    </div>
   </footer>
 
   <script src="js/data.js"></script>

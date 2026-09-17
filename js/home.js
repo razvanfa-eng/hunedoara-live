@@ -2,13 +2,13 @@
    grid-ul celor 8 secțiuni și ultimele știri. */
 (function () {
   var SECTIONS = [
-    { key: "locuri", page: "locuri.html" },
-    { key: "activitati", page: "activitati.html" },
-    { key: "istorie", page: "istorie.html" },
+    { key: "destinatii", page: "destinatii.html" },
     { key: "orase", page: "orase.html" },
-    { key: "stiri", page: "stiri.html" },
+    { key: "natura", page: "natura.html" },
+    { key: "turismActiv", page: "turism-activ.html" },
+    { key: "mostenire", page: "mostenire.html" },
     { key: "afaceri", page: "afaceri.html" },
-    { key: "utile", page: "utile.html" },
+    { key: "stiri", page: "stiri.html" },
     { key: "contact", page: "contact.html" }
   ];
 
@@ -18,7 +18,7 @@
     var statsEl = document.getElementById("home-stats");
     if (statsEl) {
       var towns = window.RL.dataArray("SITE_TOWNS").length;
-      var places = window.RL.dataArray("SITE_PLACES").length;
+      var places = window.RL.dataArray("SITE_DESTINATIONS").length;
       var trails = window.RL.dataArray("SITE_ACTIVITIES").length;
       statsEl.innerHTML = [
         [towns, window.I18N.t("home.stats.towns")],

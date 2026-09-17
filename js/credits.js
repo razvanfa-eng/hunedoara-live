@@ -1,6 +1,6 @@
 /* Listează sloturile de imagini pentru fiecare intrare, din toate cele 6 secțiuni. */
 (function () {
-  var DATA_KEYS = ["SITE_PLACES", "SITE_ACTIVITIES", "SITE_HISTORY", "SITE_TOWNS", "SITE_NEWS", "SITE_BUSINESSES"];
+  var DATA_KEYS = ["SITE_DESTINATIONS", "SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_TOWNS", "SITE_NEWS", "SITE_BUSINESSES"];
   var root = document.getElementById("credits-list");
 
   function render() {

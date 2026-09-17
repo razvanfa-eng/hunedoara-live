@@ -7,7 +7,7 @@
   <meta name="description" content="Cum se adaugă imaginile și unde se trec creditele foto.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,16 +15,22 @@
     <div class="container site-header__inner">
       <a class="brand" href="index.html" data-i18n="site.name">Hunedoara Live</a>
       <nav class="site-nav">
-        <a href="locuri.html" data-i18n="nav.locuri">Locuri</a>
-        <a href="activitati.html" data-i18n="nav.activitati">Activități</a>
-        <a href="istorie.html" data-i18n="nav.istorie">Istorie</a>
+        <a href="destinatii.html" data-i18n="nav.destinatii">Destinații</a>
         <a href="orase.html" data-i18n="nav.orase">Orașe</a>
-        <a href="stiri.html" data-i18n="nav.stiri">Știri</a>
+        <a href="natura.html" data-i18n="nav.natura">Natură</a>
+        <a href="turism-activ.html" data-i18n="nav.turismActiv">Turism activ</a>
+        <a href="mostenire.html" data-i18n="nav.mostenire">Moștenire culturală</a>
         <a href="afaceri.html" data-i18n="nav.afaceri">Afaceri</a>
-        <a href="utile.html" data-i18n="nav.utile">Utile</a>
+        <a href="stiri.html" data-i18n="nav.stiri">Știri</a>
         <a href="contact.html" data-i18n="nav.contact">Contact</a>
-        <button id="lang-toggle" class="lang-toggle" type="button" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria">EN</button>
       </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-i18n-attr="aria-label:nav.search.aria" aria-label="Căutare">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button id="lang-toggle" class="lang-toggle" type="button" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria">EN</button>
+        <span class="ai-pill" data-i18n="nav.ai">Întreabă-ne</span>
+      </div>
     </div>
   </header>
 
@@ -40,7 +46,9 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container"><p class="footer-note" data-i18n="footer.note">Proiect independent, necomercial.</p></div>
+    <div class="container site-footer__bottom">
+      <span class="footer-note" data-i18n="footer.note">Proiect independent, necomercial.</span>
+    </div>
   </footer>
 
   <script src="js/data.js"></script>

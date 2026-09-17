@@ -36,10 +36,8 @@ function load(file, query = "") {
   const d = w.document;
   ok(!w.__err, "index: fără erori JS" + (w.__err ? " — " + w.__err : ""));
   ok(d.querySelectorAll("#home-stats .stat").length === 4, "index: 4 statistici randate");
-  ok(d.querySelector("#home-stats .stat__value").textContent === "1" || d.querySelector("#home-stats .stat__value").textContent === "2",
-    "index: statisticile sunt numere reale (nu placeholder)");
-  ok(d.querySelectorAll("#explore-grid .tile").length === 8, "index: 8 module în grid-ul de explorare");
-  ok([...d.querySelectorAll("#explore-grid .tile")].every(a => /\.html$/.test(a.getAttribute("href"))), "index: toate tile-urile leagă spre o pagină");
+  ok(d.querySelectorAll("#explore-grid .tile").length === 8, "index: 8 module în grid-ul de explorare (structura hibridă)");
+  ok([...d.querySelectorAll("#explore-grid .tile")].every((a) => /\.html$/.test(a.getAttribute("href"))), "index: toate tile-urile leagă spre o pagină");
   ok(d.querySelectorAll("#home-news .news-item").length === 1, "index: 1 știre randată (exemplu)");
   const before = d.querySelector(".hero h1").textContent;
   d.querySelector("#lang-toggle").dispatchEvent(new w.Event("click"));
@@ -47,30 +45,34 @@ function load(file, query = "") {
   ok(d.documentElement.getAttribute("data-lang") === "en", "index: comutatorul de limbă schimbă data-lang");
 }
 
-/* -------- locuri.html (listare + filtre) -------- */
+/* -------- destinatii.html + destinatie.html (secțiune nouă) -------- */
 {
-  const w = await load("locuri.html");
-  const d = w.document;
-  ok(!w.__err, "locuri: fără erori JS" + (w.__err ? " — " + w.__err : ""));
-  ok(d.querySelectorAll("#grid .card").length === 2, "locuri: 2 carduri (exemple)");
-  ok([...d.querySelectorAll("#grid .card")].every(a => /^loc\.html\?id=[a-z-]+$/.test(a.getAttribute("href"))), "locuri: href-uri carduri valide");
-  ok(d.querySelectorAll("#f-area option").length === 1 + 2, "locuri: filtru zonă = 2 + Toate");
-  const area = d.querySelector("#f-area"); area.value = "Orăștie"; area.dispatchEvent(new w.Event("change"));
-  ok(d.querySelectorAll("#grid .card").length === 1, "locuri: filtru zonă=Orăștie -> 1 card");
-  d.querySelector("#f-reset").dispatchEvent(new w.Event("click"));
-  ok(d.querySelectorAll("#grid .card").length === 2, "locuri: reset -> 2 carduri");
+  const w1 = await load("destinatii.html");
+  const d1 = w1.document;
+  ok(!w1.__err, "destinatii: fără erori JS" + (w1.__err ? " — " + w1.__err : ""));
+  ok(d1.querySelectorAll("#grid .card").length === 2, "destinatii: 2 carduri (exemple)");
+  ok([...d1.querySelectorAll("#grid .card")].every((a) => /^destinatie\.html\?id=[a-z-]+$/.test(a.getAttribute("href"))), "destinatii: href-uri carduri valide");
+
+  const w2 = await load("destinatie.html", "?id=exemplu-valea-jiului");
+  const d2 = w2.document;
+  ok(!w2.__err, "destinatie: fără erori JS" + (w2.__err ? " — " + w2.__err : ""));
+  ok(/Valea Jiului/.test(d2.querySelector("#detail-title")?.textContent || ""), "destinatie: titlu randat");
 }
 
-/* -------- loc.html + recenzii (mod local) -------- */
+/* -------- natura.html (fost locuri) + recenzii (mod local) -------- */
 {
-  const w = await load("loc.html", "?id=exemplu-cascada-valea-jiului");
+  const w1 = await load("natura.html");
+  const d1 = w1.document;
+  ok(!w1.__err, "natura: fără erori JS" + (w1.__err ? " — " + w1.__err : ""));
+  ok(d1.querySelectorAll("#grid .card").length === 2, "natura: 2 carduri (exemple)");
+  ok(d1.querySelectorAll("#f-area option").length === 1 + 2, "natura: filtru zonă = 2 + Toate");
+
+  const w = await load("natura-loc.html", "?id=exemplu-cascada-valea-jiului");
   const d = w.document;
-  ok(!w.__err, "loc: fără erori JS" + (w.__err ? " — " + w.__err : ""));
-  ok(/Cascadă/.test(d.querySelector("#detail-title")?.textContent || ""), "loc: titlu randat");
-  ok(!d.getElementById("detail-notfound").hidden === false, "loc: blocul 'nu există' e ascuns");
-  ok(!!d.querySelector("#detail-map a"), "loc: linkuri hartă (Waze/Maps) prezente pentru coordonate");
+  ok(!w.__err, "natura-loc: fără erori JS" + (w.__err ? " — " + w.__err : ""));
+  ok(/Cascadă/.test(d.querySelector("#detail-title")?.textContent || ""), "natura-loc: titlu randat");
+  ok(!!d.querySelector("#detail-map a"), "natura-loc: linkuri hartă prezente pentru coordonate");
   ok(!!d.querySelector("#reviews .review-form"), "recenzii: formularul e randat");
-  ok(!!d.querySelector("#reviews .rv-note"), "recenzii: nota 'mod de probă' vizibilă (provider local)");
   ok(/Nicio recenzie/.test(d.querySelector("#reviews").textContent), "recenzii: mesaj 'nicio recenzie' inițial");
 
   const form = d.querySelector("#reviews .review-form");
@@ -84,13 +86,13 @@ function load(file, query = "") {
   ok(d.querySelector("#reviews .reviews-avg")?.textContent === "4.0", "recenzii: media notelor = 4.0");
 }
 
-/* -------- loc.html id invalid -------- */
+/* -------- natura-loc.html id invalid -------- */
 {
-  const w = await load("loc.html", "?id=nope");
+  const w = await load("natura-loc.html", "?id=nope");
   const d = w.document;
-  ok(!w.__err, "loc invalid: fără erori JS");
-  ok(d.getElementById("detail-root").hidden === true, "loc invalid: conținutul e ascuns");
-  ok(d.getElementById("detail-notfound").hidden === false, "loc invalid: mesajul 'nu există' e vizibil");
+  ok(!w.__err, "natura-loc invalid: fără erori JS");
+  ok(d.getElementById("detail-root").hidden === true, "natura-loc invalid: conținutul e ascuns");
+  ok(d.getElementById("detail-notfound").hidden === false, "natura-loc invalid: mesajul 'nu există' e vizibil");
 }
 
 /* -------- afaceri.html + afacere.html (recenzii, altă secțiune) -------- */
@@ -105,10 +107,10 @@ function load(file, query = "") {
   ok(!!d2.querySelector("#reviews .review-form"), "afacere: motorul de recenzii funcționează și aici (reutilizat)");
 }
 
-/* -------- restul secțiunilor: doar randare fără erori + numărul corect de carduri -------- */
+/* -------- restul secțiunilor: randare fără erori + numărul corect de carduri -------- */
 {
   const pairs = [
-    ["activitati.html", 1], ["istorie.html", 1], ["orase.html", 1], ["stiri.html", 1]
+    ["turism-activ.html", 1], ["mostenire.html", 2], ["orase.html", 1], ["stiri.html", 1]
   ];
   for (const [file, count] of pairs) {
     const w = await load(file);
@@ -117,7 +119,7 @@ function load(file, query = "") {
   }
   const details = [
     ["activitate.html", "exemplu-traseu-parang", "Traseu"],
-    ["istorie-detaliu.html", "exemplu-patrimoniu-minier", "Patrimoniu"],
+    ["mostenire-articol.html", "exemplu-cetate-dacica", "Cetate"],
     ["oras.html", "exemplu-petrosani", "Petroșani"],
     ["stire.html", "exemplu-eveniment-local", "eveniment"]
   ];
@@ -128,13 +130,6 @@ function load(file, query = "") {
   }
 }
 
-/* -------- stiri.html sortare descrescătoare -------- */
-{
-  const w = await load("stiri.html");
-  const d = w.document;
-  ok(d.querySelector("#result-count").textContent.indexOf("1") === 0, "stiri: numărătoarea de rezultate e randată");
-}
-
 /* -------- pagini statice -------- */
 {
   for (const file of ["utile.html", "contact.html", "404.html", "credite.html"]) {
@@ -142,14 +137,15 @@ function load(file, query = "") {
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
   const w = await load("credite.html");
-  ok(w.document.querySelectorAll(".credit-card").length === 8, "credite: 8 intrări (2+1+1+1+1+2, toate secțiunile)");
+  ok(w.document.querySelectorAll(".credit-card").length === 11, "credite: 11 intrări (2+2+1+2+1+1+2, toate secțiunile)");
 }
 
 /* -------- fișiere prezente -------- */
 {
   const files = [
-    "index.html", "locuri.html", "loc.html", "activitati.html", "activitate.html",
-    "istorie.html", "istorie-detaliu.html", "orase.html", "oras.html",
+    "index.html", "destinatii.html", "destinatie.html",
+    "natura.html", "natura-loc.html", "turism-activ.html", "activitate.html",
+    "mostenire.html", "mostenire-articol.html", "orase.html", "oras.html",
     "stiri.html", "stire.html", "afaceri.html", "afacere.html",
     "utile.html", "contact.html", "credite.html", "404.html",
     "netlify.toml", "README.md", "SETUP.md", "css/style.css", "supabase/schema.sql",

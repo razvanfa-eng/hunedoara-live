@@ -1,9 +1,10 @@
 /*
  * DATELE SITE-ULUI / SITE DATA
  * =====================================================================
- * Toate cele 6 secțiuni de conținut (Locuri, Activități, Istorie, Orașe,
- * Știri, Afaceri) folosesc aceeași formă de înregistrare, ca să poată fi
- * afișate cu același motor generic (js/listing.js + js/detail.js):
+ * Toate cele 7 secțiuni de conținut (Destinații, Orașe, Natură, Turism
+ * activ, Moștenire culturală, Știri, Afaceri) folosesc aceeași formă de
+ * înregistrare, ca să poată fi afișate cu același motor generic
+ * (js/listing.js + js/detail.js):
  *
  *   id          text unic, doar litere mici și cratime (folosit în URL)
  *   name        numele afișat
@@ -23,7 +24,48 @@
  * real pe măsură ce alegem locurile, orașele și afacerile din tot județul.
  */
 
-window.SITE_PLACES = [
+window.SITE_DESTINATIONS = [
+  {
+    id: "exemplu-valea-jiului",
+    name: "Exemplu · Valea Jiului",
+    category: { ro: "Zonă montană", en: "Mountain zone" },
+    area: "Vest",
+    example: true,
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "EXEMPLU de destinație/zonă. Șase orașe miniere, la poalele Parângului și Retezatului.",
+      description: ["Aici va veni o prezentare a zonei: ce o definește, ce orașe/locuri cuprinde, de ce merită un weekend întreg."],
+      facts: [{ label: "Orașe incluse", value: "De completat" }]
+    },
+    en: {
+      tagline: "EXAMPLE destination/zone. Six mining towns, at the foot of the Parâng and Retezat mountains.",
+      description: ["This will hold a presentation of the zone: what defines it, which towns/places it covers, why it deserves a whole weekend."],
+      facts: [{ label: "Towns included", value: "To be filled in" }]
+    }
+  },
+  {
+    id: "exemplu-tara-hategului",
+    name: "Exemplu · Țara Hațegului",
+    category: { ro: "Zonă istorică", en: "Historic zone" },
+    area: "Sud",
+    example: true,
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "EXEMPLU de destinație. Cetăți dacice, parc dinozauri, sate tradiționale.",
+      description: ["Descriere reală de completat împreună."],
+      facts: [{ label: "Puncte de interes", value: "De completat" }]
+    },
+    en: {
+      tagline: "EXAMPLE destination. Dacian fortresses, dinosaur geopark, traditional villages.",
+      description: ["Real description to be filled in together."],
+      facts: [{ label: "Points of interest", value: "To be filled in" }]
+    }
+  }
+];
+
+window.SITE_NATURE = [
   {
     id: "exemplu-cascada-valea-jiului",
     name: "Exemplu · Cascadă",
@@ -57,29 +99,23 @@ window.SITE_PLACES = [
     }
   },
   {
-    id: "exemplu-cetate-dacica",
-    name: "Exemplu · Cetate dacică",
-    category: { ro: "Monument istoric", en: "Historic monument" },
-    area: "Orăștie",
-    coords: [45.6122, 23.2761],
+    id: "exemplu-pestera",
+    name: "Exemplu · Peșteră",
+    category: { ro: "Peșteră", en: "Cave" },
+    area: "Băița",
+    coords: [46.0500, 22.7500],
     example: true,
     hasReviews: true,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "EXEMPLU de cetate din zona Munților Orăștiei. Înlocuiește cu un obiectiv real.",
-      description: ["Aici va veni istoricul locului, ce se poate vizita, program și taxă de acces, dacă e nevoie de ghid."],
-      facts: [
-        { label: "Zonă", value: "Munții Orăștiei" },
-        { label: "Cum ajungi", value: "De completat — drum auto + traseu pietonal." }
-      ]
+      tagline: "EXEMPLU de peșteră. Înlocuiește cu una reală, cu galerii vizitabile sau nu.",
+      description: ["Aici va veni: lungime, dacă e amenajată pentru vizitare, ce se poate vedea, recomandări de echipament."],
+      facts: [{ label: "Acces", value: "De completat" }]
     },
     en: {
-      tagline: "EXAMPLE fortress in the Orăștie Mountains area. Replace with a real sight.",
-      description: ["This will hold the site's history, what can be visited, opening hours and entry fee, whether a guide is needed."],
-      facts: [
-        { label: "Area", value: "Orăștie Mountains" },
-        { label: "Getting there", value: "To be filled in — road access + walking trail." }
-      ]
+      tagline: "EXAMPLE cave. Replace with a real one, whether open for visits or not.",
+      description: ["This will hold: length, whether it's arranged for visits, what can be seen, equipment recommendations."],
+      facts: [{ label: "Access", value: "To be filled in" }]
     }
   }
 ];
@@ -115,7 +151,7 @@ window.SITE_ACTIVITIES = [
   }
 ];
 
-window.SITE_HISTORY = [
+window.SITE_HERITAGE = [
   {
     id: "exemplu-patrimoniu-minier",
     name: "Exemplu · Patrimoniu minier",
@@ -139,6 +175,32 @@ window.SITE_HISTORY = [
         "We'll write it together — perhaps with period photos and testimonies, if we have access to them."
       ],
       facts: [{ label: "Period", value: "To be filled in" }]
+    }
+  },
+  {
+    id: "exemplu-cetate-dacica",
+    name: "Exemplu · Cetate dacică",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Orăștie",
+    coords: [45.6122, 23.2761],
+    example: true,
+    hasReviews: true,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "EXEMPLU de cetate din zona Munților Orăștiei. Înlocuiește cu un obiectiv real.",
+      description: ["Aici va veni istoricul locului, ce se poate vizita, program și taxă de acces, dacă e nevoie de ghid."],
+      facts: [
+        { label: "Zonă", value: "Munții Orăștiei" },
+        { label: "Cum ajungi", value: "De completat — drum auto + traseu pietonal." }
+      ]
+    },
+    en: {
+      tagline: "EXAMPLE fortress in the Orăștie Mountains area. Replace with a real sight.",
+      description: ["This will hold the site's history, what can be visited, opening hours and entry fee, whether a guide is needed."],
+      facts: [
+        { label: "Area", value: "Orăștie Mountains" },
+        { label: "Getting there", value: "To be filled in — road access + walking trail." }
+      ]
     }
   }
 ];

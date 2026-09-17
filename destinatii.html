@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Afacere — Hunedoara Live</title>
+  <title>Destinații — Hunedoara Live</title>
+  <meta name="description" content="Zonele și regiunile turistice ale județului Hunedoara, dintr-o privire.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
@@ -14,12 +15,12 @@
     <div class="container site-header__inner">
       <a class="brand" href="index.html" data-i18n="site.name">Hunedoara Live</a>
       <nav class="site-nav">
-        <a href="destinatii.html" data-i18n="nav.destinatii">Destinații</a>
+        <a href="destinatii.html" aria-current="page" data-i18n="nav.destinatii">Destinații</a>
         <a href="orase.html" data-i18n="nav.orase">Orașe</a>
         <a href="natura.html" data-i18n="nav.natura">Natură</a>
         <a href="turism-activ.html" data-i18n="nav.turismActiv">Turism activ</a>
         <a href="mostenire.html" data-i18n="nav.mostenire">Moștenire culturală</a>
-        <a href="afaceri.html" aria-current="page" data-i18n="nav.afaceri">Afaceri</a>
+        <a href="afaceri.html" data-i18n="nav.afaceri">Afaceri</a>
         <a href="stiri.html" data-i18n="nav.stiri">Știri</a>
         <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
@@ -33,26 +34,30 @@
     </div>
   </header>
 
-  <main class="container detail">
-    <div id="detail-root">
-      <a id="detail-back" class="detail-back" href="afaceri.html">← Toate afacerile</a>
-      <div class="detail-badge" id="detail-badge"></div>
-      <h1 class="detail-title" id="detail-title"></h1>
-      <p class="detail-tagline" id="detail-tagline"></p>
-      <div class="gallery" id="detail-gallery"></div>
-      <div class="detail-body">
-        <div class="detail-description" id="detail-description"></div>
-        <aside>
-          <div class="detail-facts" id="detail-facts"></div>
-          <div class="detail-map" id="detail-map"></div>
-        </aside>
+  <main class="container">
+    <section class="hero" style="padding-bottom:0;">
+      <h1 data-i18n="nav.destinatii">Destinații</h1>
+      <p data-i18n="sec.destinatii.desc">Zonele și regiunile turistice ale județului, dintr-o privire.</p>
+    </section>
+
+    <section class="filters" aria-labelledby="filters-h">
+      <h2 id="filters-h" data-i18n="filters.heading">Caută și filtrează</h2>
+      <div class="filters__row">
+        <div class="field field--search">
+          <label for="f-search" data-i18n="filters.search">Caută după nume</label>
+          <input id="f-search" type="search" autocomplete="off" data-i18n-attr="placeholder:filters.search.placeholder" placeholder="ex. Petroșani, Deva, cetate…">
+        </div>
+        <div class="field">
+          <label for="f-category" data-i18n="filters.category">Categorie</label>
+          <select id="f-category"></select>
+        </div>
+        <button id="f-reset" class="btn-reset" type="button" data-i18n="filters.reset">Resetează</button>
       </div>
-    </div>
-    <div id="detail-notfound" class="not-found" hidden>
-      <p data-i18n="detail.notFound">Rezultatul căutat nu există.</p>
-      <a href="afaceri.html" data-i18n="detail.notFound.link">← Înapoi</a>
-    </div>
-    <div id="reviews"></div>
+    </section>
+
+    <div class="results-bar"><span id="result-count">—</span></div>
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <p id="empty" class="empty" hidden data-i18n="filters.none">Niciun rezultat nu se potrivește cu filtrele alese.</p>
   </main>
 
   <footer class="site-footer">
@@ -82,10 +87,9 @@
   <script src="js/config.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/common.js"></script>
-  <script src="js/reviews.js"></script>
   <script>
-    window.DETAIL_CONFIG = { dataKey: "SITE_BUSINESSES", backPage: "afaceri.html", backLabelKey: "detail.back.afaceri" };
+    window.LISTING_CONFIG = { dataKey: "SITE_DESTINATIONS", detailPage: "destinatie.html" };
   </script>
-  <script src="js/detail.js"></script>
+  <script src="js/listing.js"></script>
 </body>
 </html>
