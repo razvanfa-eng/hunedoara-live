@@ -110,7 +110,7 @@ function load(file, query = "") {
 /* -------- restul secțiunilor: randare fără erori + numărul corect de carduri -------- */
 {
   const pairs = [
-    ["turism-activ.html", 5], ["mostenire.html", 4], ["orase.html", 6], ["stiri.html", 2]
+    ["turism-activ.html", 9], ["mostenire.html", 4], ["orase.html", 6], ["stiri.html", 2]
   ];
   for (const [file, count] of pairs) {
     const w = await load(file);
@@ -136,7 +136,7 @@ function load(file, query = "") {
   ok(!w.__err, "oras petrosani: fără erori JS" + (w.__err ? " — " + w.__err : ""));
   const rel = w.document.querySelector("#detail-related");
   ok(!!rel && !rel.hidden, "oras petrosani: #detail-related vizibil");
-  ok(rel.querySelectorAll(".card").length === 14, "oras petrosani: 14 obiective din zonă");
+  ok(rel.querySelectorAll(".card").length === 18, "oras petrosani: 18 obiective din zonă");
   ok(rel.querySelectorAll(".related-group__title").length >= 3, "oras petrosani: grupate pe cel puțin 3 sezoane");
 }
 
@@ -147,7 +147,7 @@ function load(file, query = "") {
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
   const w = await load("credite.html");
-  ok(w.document.querySelectorAll(".credit-card").length === 34, "credite: 34 intrări (4+10+5+4+6+2+3, toate secțiunile)");
+  ok(w.document.querySelectorAll(".credit-card").length === 38, "credite: 38 intrări (4+10+9+4+6+2+3, toate secțiunile)");
 }
 
 /* -------- fișiere prezente -------- */

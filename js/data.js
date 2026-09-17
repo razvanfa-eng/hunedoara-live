@@ -50,7 +50,8 @@ window.SITE_DESTINATIONS = [
       ],
       facts: [
         { label: "Orașe incluse", value: "Petroșani, Petrila, Vulcan, Lupeni, Uricani, Aninoasa" },
-        { label: "Munți din apropiere", value: "Parâng, Retezat, Vâlcan" }
+        { label: "Munți din apropiere", value: "Parâng, Retezat, Vâlcan" },
+        { label: "Bazine de înot didactice", value: "Petroșani, Petrila, Vulcan și Lupeni au fiecare un bazin didactic propriu" }
       ]
     },
     en: {
@@ -61,7 +62,8 @@ window.SITE_DESTINATIONS = [
       ],
       facts: [
         { label: "Towns included", value: "Petroșani, Petrila, Vulcan, Lupeni, Uricani, Aninoasa" },
-        { label: "Nearby mountains", value: "Parâng, Retezat, Vâlcan" }
+        { label: "Nearby mountains", value: "Parâng, Retezat, Vâlcan" },
+        { label: "Educational swimming pools", value: "Petroșani, Petrila, Vulcan and Lupeni each have their own" }
       ]
     }
   },
@@ -662,6 +664,138 @@ window.SITE_ACTIVITIES = [
         { label: "Best season", value: "spring, for the snowdrop bloom" }
       ]
     }
+  },
+  {
+    id: "bazin-inot-petrosani",
+    name: "Bazinul Didactic de Înot „Avram Iancu” Petroșani",
+    category: { ro: "Bazin de înot didactic", en: "Educational swimming pool" },
+    area: "Petroșani",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Bazin semiolimpic acoperit, redeschis în 2025 după modernizare, în cartierul Aeroport.",
+      description: [
+        "Bazinul Didactic de Înot „Avram Iancu” din Petroșani este un bazin semiolimpic de 12,5 × 25 m, cu adâncime variabilă între 1,20 și 1,80 m, situat pe strada Oituz, în cartierul Aeroport. Facilitatea include saună, vestiare și o masă de tenis de masă, fiind folosită atât pentru cursuri de înot pentru elevi, cât și pentru înot liber.",
+        "După lucrări de modernizare (centrală termică, acoperiș, ventilație), bazinul s-a redeschis publicului pe 20 octombrie 2025."
+      ],
+      facts: [
+        { label: "Dimensiuni", value: "12,5 × 25 m, adâncime 1,20–1,80 m" },
+        { label: "Program", value: "Luni–Vineri, 09:00–21:00" },
+        { label: "Adresă", value: "Str. Oituz, cartier Aeroport, Petroșani" }
+      ]
+    },
+    en: {
+      tagline: "A covered semi-Olympic pool, reopened in 2025 after modernisation, in the Aeroport district.",
+      description: [
+        "The \"Avram Iancu\" Educational Swimming Pool in Petroșani is a semi-Olympic pool measuring 12.5 × 25 m, with variable depth between 1.20 and 1.80 m, located on Oituz street, in the Aeroport district. The facility includes a sauna, changing rooms and a table-tennis table, used both for swimming lessons for pupils and for open swimming.",
+        "After modernisation works (heating plant, roof, ventilation), the pool reopened to the public on 20 October 2025."
+      ],
+      facts: [
+        { label: "Dimensions", value: "12.5 × 25 m, 1.20–1.80 m depth" },
+        { label: "Hours", value: "Monday–Friday, 09:00–21:00" },
+        { label: "Address", value: "Oituz street, Aeroport district, Petroșani" }
+      ]
+    }
+  },
+  {
+    id: "bazin-inot-petrila",
+    name: "Bazinul de Înot Didactic Petrila",
+    category: { ro: "Bazin de înot didactic", en: "Educational swimming pool" },
+    area: "Petrila",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Bazin didactic de 25×12,5 m, cu 5 culoare, lângă Școala nr. 5.",
+      description: [
+        "Bazinul de înot de la Petrila, deschis publicului din ianuarie 2022, are 25 × 12,5 m, adâncime variabilă între 1,20 și 1,80 m și 5 culoare de înot, cu blocuri de start la capătul mai adânc — folosit atât pentru cursuri școlare, cât și pentru acces public.",
+        "Este situat pe strada 8 Martie, lângă Școala Gimnazială nr. 5. Bazinul e închis lunea pentru curățenie și dezinfecție."
+      ],
+      facts: [
+        { label: "Program", value: "Marți–Sâmbătă 09:00–21:00 (ultima intrare 19:00), Duminică 12:00–20:00 (ultima intrare 18:00), închis lunea" },
+        { label: "Tarife", value: "16 lei adulți / 8 lei elevi-studenți, ședință de 2 ore" },
+        { label: "Adresă", value: "Str. 8 Martie, lângă Școala nr. 5, Petrila" }
+      ]
+    },
+    en: {
+      tagline: "A 25×12.5 m educational pool with 5 lanes, next to School No. 5.",
+      description: [
+        "The swimming pool in Petrila, open to the public since January 2022, measures 25 × 12.5 m, with variable depth between 1.20 and 1.80 m and 5 swimming lanes, with starting blocks at the deeper end — used both for school lessons and public access.",
+        "It's located on 8 Martie street, next to School No. 5. The pool is closed on Mondays for cleaning and disinfection."
+      ],
+      facts: [
+        { label: "Hours", value: "Tuesday–Saturday 09:00–21:00 (last entry 19:00), Sunday 12:00–20:00 (last entry 18:00), closed Mondays" },
+        { label: "Prices", value: "16 lei adults / 8 lei pupils-students, 2-hour session" },
+        { label: "Address", value: "8 Martie street, next to School No. 5, Petrila" }
+      ]
+    }
+  },
+  {
+    id: "bazin-inot-vulcan",
+    name: "Bazinul Didactic de Înot Vulcan",
+    category: { ro: "Bazin de înot didactic", en: "Educational swimming pool" },
+    area: "Vulcan",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Bazin semiolimpic în centrul orașului, între Minimax și biserica de lângă Primărie.",
+      description: [
+        "Bazinul Didactic de Înot din Vulcan, dat în folosință în 2022, este un bazin semiolimpic de 25 × 12,5 m, cu adâncime între 1,20 și 1,80 m și apă încălzită la 24,6–26°C. E dedicat în primul rând elevilor din municipiu, care fac aici cursuri de înot, dar are program și pentru publicul larg.",
+        "Se află pe strada Platoului, între magazinul Minimax și biserica de lângă Primărie."
+      ],
+      facts: [
+        { label: "Program", value: "Luni–Vineri 09:00–21:00, Sâmbătă–Duminică 09:00–17:00" },
+        { label: "Temperatura apei", value: "24,6–26°C" },
+        { label: "Adresă", value: "Str. Platoului, Vulcan" }
+      ]
+    },
+    en: {
+      tagline: "A semi-Olympic pool in the town centre, between the Minimax store and the church by the town hall.",
+      description: [
+        "The Educational Swimming Pool in Vulcan, opened in 2022, is a semi-Olympic pool measuring 25 × 12.5 m, with depth between 1.20 and 1.80 m and water heated to 24.6–26°C. It's primarily meant for the town's pupils, who take swimming lessons there, but it's also open to the general public.",
+        "It's located on Platoului street, between the Minimax store and the church next to the town hall."
+      ],
+      facts: [
+        { label: "Hours", value: "Monday–Friday 09:00–21:00, Saturday–Sunday 09:00–17:00" },
+        { label: "Water temperature", value: "24.6–26°C" },
+        { label: "Address", value: "Platoului street, Vulcan" }
+      ]
+    }
+  },
+  {
+    id: "bazin-inot-lupeni",
+    name: "Bazinul Didactic de Înot Lupeni",
+    category: { ro: "Bazin de înot didactic", en: "Educational swimming pool" },
+    area: "Lupeni",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cel mai nou bazin didactic din Valea Jiului, inaugurat în decembrie 2025 la poalele Străjii.",
+      description: [
+        "Bazinul didactic de înot din Lupeni, al patrulea de acest tip din Valea Jiului, a fost inaugurat pe 5 decembrie 2025, după o investiție de peste 12 milioane de lei și circa trei ani de lucrări. Se află la poalele stațiunii Straja, deservind atât localnicii, cât și turiștii cazați la munte.",
+        "Pe lângă înot liber și cursuri, bazinul oferă saună și pachete combinate înot+saună."
+      ],
+      facts: [
+        { label: "Program", value: "Luni–Joi 10:00–21:00, Vineri–Duminică 12:00–22:00" },
+        { label: "Tarife", value: "20 lei adulți / 10 lei preșcolari-elevi, ședință de max. 90 min" },
+        { label: "Deschis", value: "5 decembrie 2025" }
+      ]
+    },
+    en: {
+      tagline: "The newest educational pool in Valea Jiului, opened in December 2025 at the foot of Straja.",
+      description: [
+        "The educational swimming pool in Lupeni, the fourth of its kind in Valea Jiului, opened on 5 December 2025, after an investment of over 12 million lei and about three years of works. It sits at the foot of the Straja resort, serving both locals and tourists staying in the mountains.",
+        "Besides open swimming and lessons, the pool offers a sauna and combined swim+sauna packages."
+      ],
+      facts: [
+        { label: "Hours", value: "Monday–Thursday 10:00–21:00, Friday–Sunday 12:00–22:00" },
+        { label: "Prices", value: "20 lei adults / 10 lei preschoolers-pupils, session up to 90 min" },
+        { label: "Opened", value: "5 December 2025" }
+      ]
+    }
   }
 ];
 
@@ -869,7 +1003,7 @@ window.SITE_TOWNS = [
     area: "Valea Jiului",
     coords: [45.4166, 23.3733],
     hasReviews: false,
-    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Petrila", "Uricani"],
+    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Petrila", "Uricani", "Vulcan", "Lupeni"],
     images: ["images/petrosani-panorama.jpg"],
     photoCredit: { author: "Eduard Gergely", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrosani_Town.jpg" },
     ro: {
