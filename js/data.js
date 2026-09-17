@@ -604,7 +604,43 @@ window.SITE_NATURE = [
         { label: "Access", value: "DJ708E, near Deva" }
       ]
     }
-  }
+  },
+  {
+    id: "parcul-dendrologic-simeria",
+    name: "Parcul Dendrologic Simeria",
+    category: { ro: "Parc dendrologic", en: "Dendrological park" },
+    area: "Simeria",
+    coords: [45.8569, 23.0110],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cel mai vechi și mai mare parc dendrologic din România, cu peste 2.100 de specii de arbori și arbuști pe cca 70 de hectare.",
+      description: [
+        "Arboretumul Simeria s-a dezvoltat din parcul conacului familiei Gyulay, documentat din 1763, pe malul stâng al Mureșului. După naționalizare, în 1949 a fost transformat oficial în parc dendrologic și dat în administrarea unei stațiuni de cercetare silvică, funcție păstrată și azi.",
+        "Colecția, adunată din Europa, America de Nord și Asia, este considerată una dintre cele mai valoroase din România și cuprinde exemplare rare, printre care arbori seculari. Parcul e monument al naturii și se vizitează cu bilet de intrare, pe alei amenajate."
+      ],
+      facts: [
+        { label: "Suprafață", value: "cca 70 ha" },
+        { label: "Specii", value: "peste 2.100 de specii de arbori și arbuști" },
+        { label: "Documentat din", value: "1763 (parcul conacului Gyulay)" },
+        { label: "Devenit parc dendrologic", value: "1949" }
+      ]
+    },
+    en: {
+      tagline: "Romania's oldest and largest dendrological park, with over 2,100 tree and shrub species on about 70 hectares.",
+      description: [
+        "Simeria Arboretum grew out of the Gyulay family manor park, documented since 1763, on the left bank of the Mureș river. After nationalisation, it was officially turned into a dendrological park in 1949 and placed under a forestry research station, a role it still holds today.",
+        "The collection, gathered from Europe, North America and Asia, is considered one of Romania's most valuable and includes rare specimens, among them centuries-old trees. The park is a protected natural monument and is visited on marked paths with an entrance ticket."
+      ],
+      facts: [
+        { label: "Area", value: "about 70 ha" },
+        { label: "Species", value: "over 2,100 tree and shrub species" },
+        { label: "Documented since", value: "1763 (the Gyulay manor park)" },
+        { label: "Became a dendrological park", value: "1949" }
+      ]
+    }
+  },
 ];
 
 window.SITE_ACTIVITIES = [
@@ -1563,6 +1599,40 @@ window.SITE_HERITAGE = [
       ]
     }
   },
+  {
+    id: "castelul-bela-fay-simeria",
+    name: "Castelul Béla Fáy",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Simeria",
+    coords: [45.8569, 23.0110],
+    hasReviews: false,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Conacul familiilor Gyulay, Kun, Fáy și Ocskay, în inima Arboretumului Simeria.",
+      description: [
+        "Castelul, aflat pe strada Biscaria, în incinta Parcului Dendrologic Simeria, a aparținut de-a lungul secolelor XIX–XX mai multor familii nobiliare — Gyulay, Kun, Fáy și Ocskay — care au amenajat treptat și parcul din jur. Din 1918 proprietar a fost Béla Fáy, naturalist și membru al Academiei Maghiare de Științe.",
+        "Din 1954, clădirea găzduiește Stațiunea de Cercetare și Experimentare Silvică Simeria, care administrează și astăzi arboretumul din jur. Este inclus pe Lista Monumentelor Istorice din județul Hunedoara."
+      ],
+      facts: [
+        { label: "Datare", value: "secolul XIX" },
+        { label: "Proprietari istorici", value: "Gyulay, Kun, Fáy, Ocskay" },
+        { label: "Astăzi", value: "sediul Stațiunii de Cercetare și Experimentare Silvică Simeria" }
+      ]
+    },
+    en: {
+      tagline: "The manor of the Gyulay, Kun, Fáy and Ocskay families, at the heart of the Simeria Arboretum.",
+      description: [
+        "The manor, on Biscaria street inside the Simeria Dendrological Park, belonged over the 19th–20th centuries to several noble families — Gyulay, Kun, Fáy and Ocskay — who gradually laid out the surrounding park. From 1918 its owner was Béla Fáy, a naturalist and member of the Hungarian Academy of Sciences.",
+        "Since 1954, the building has housed the Simeria Forest Research and Experimentation Station, which still manages the surrounding arboretum today. It is listed on Hunedoara county's List of Historic Monuments."
+      ],
+      facts: [
+        { label: "Dating", value: "19th century" },
+        { label: "Historic owners", value: "Gyulay, Kun, Fáy, Ocskay" },
+        { label: "Today", value: "home to the Simeria Forest Research and Experimentation Station" }
+      ]
+    }
+  },
 ];
 
 window.SITE_TOWNS = [
@@ -1631,6 +1701,42 @@ window.SITE_TOWNS = [
       facts: [
         { label: "Population", value: "50,457 (2021 census)" },
         { label: "Landmark", value: "Corvin Castle (15th century)" }
+      ]
+    }
+  },
+  {
+    id: "simeria",
+    name: "Simeria",
+    category: { ro: "Oraș", en: "Town" },
+    area: "Culoarul Mureșului",
+    coords: [45.8514, 23.0139],
+    hasReviews: false,
+    relatedAreas: ["Simeria"],
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Oraș născut din prima cale ferată a Transilvaniei, cu cel mai vechi și mai mare parc dendrologic din România.",
+      description: [
+        "Simeria a apărut ca o colonie a constructorilor de cale ferată în 1866–1867 și a crescut odată cu linia Arad–Alba Iulia — prima cale ferată din Transilvania, deschisă în 1868 — devenind un nod feroviar important, cu ramificația spre Valea Jiului inaugurată în 1870. S-a desprins administrativ de comuna Biscaria în 1891 și a primit statut de oraș în 1952.",
+        "Pe teritoriul orașului se află Arboretumul Simeria (Parcul Dendrologic Simeria), fostul parc al conacului familiei Gyulay, documentat din 1763 și transformat în 1949 în parc dendrologic — azi una dintre cele mai valoroase colecții de arbori și arbuști din România."
+      ],
+      facts: [
+        { label: "Populație", value: "11.268 locuitori (recensământ 2021)" },
+        { label: "Statut", value: "oraș (din 1952)" },
+        { label: "Reper", value: "Arboretumul Simeria — Parcul Dendrologic Simeria" },
+        { label: "Nod feroviar", value: "pe prima cale ferată din Transilvania (Arad–Alba Iulia, 1868)" }
+      ]
+    },
+    en: {
+      tagline: "A town born out of Transylvania's first railway, home to Romania's oldest and largest dendrological park.",
+      description: [
+        "Simeria began as a railway workers' colony in 1866–1867 and grew alongside the Arad–Alba Iulia line — Transylvania's first railway, opened in 1868 — becoming an important railway junction once the branch line to Valea Jiului opened in 1870. It split administratively from Biscaria commune in 1891 and gained town status in 1952.",
+        "The town also holds the Simeria Arboretum (Simeria Dendrological Park), the former park of the Gyulay family manor, documented since 1763 and turned into a dendrological park in 1949 — today one of Romania's most valuable collections of trees and shrubs."
+      ],
+      facts: [
+        { label: "Population", value: "11,268 (2021 census)" },
+        { label: "Status", value: "town (since 1952)" },
+        { label: "Landmark", value: "Simeria Arboretum — Simeria Dendrological Park" },
+        { label: "Railway junction", value: "on Transylvania's first railway (Arad–Alba Iulia, 1868)" }
       ]
     }
   },
