@@ -151,55 +151,124 @@ window.SITE_DESTINATIONS = [
 
 window.SITE_NATURE = [
   {
-    id: "exemplu-cascada-valea-jiului",
-    name: "Exemplu · Cascadă",
-    category: { ro: "Cascadă", en: "Waterfall" },
-    area: "Petroșani",
-    coords: [45.4166, 23.3733],
-    example: true,
+    id: "parcul-national-retezat",
+    name: "Parcul Național Retezat",
+    category: { ro: "Parc național", en: "National park" },
+    area: "Țara Hațegului",
+    coords: [45.3583, 22.8750],
     hasReviews: true,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "Loc de tip EXEMPLU. Înlocuiește-l cu un obiectiv real din județ.",
+      tagline: "Cel mai vechi parc național din România (1935), cu peste 80 de lacuri glaciare.",
       description: [
-        "Acesta este un loc de probă, pus doar ca să vezi cum arată o pagină de detaliu. Șterge-l din js/data.js și adaugă obiectivele tale.",
-        "Descrierea reală o scriem împreună după ce alegi locurile: istoric, ce se vede, cât stai, sfaturi practice."
+        "Retezat a fost declarat parc național în 1935, fiind cel mai vechi din țară. Adăpostește Lacul Bucura — cel mai mare lac glaciar din România (2.030 m altitudine) — și Vârful Peleaga (2.509 m), cel mai înalt punct al masivului.",
+        "Zona centrală e rezervație științifică strictă; traseele de creastă și cele spre lacurile glaciare sunt printre cele mai spectaculoase din Carpați."
       ],
       facts: [
-        { label: "Adresă", value: "Petroșani, jud. Hunedoara" },
-        { label: "Cel mai bun moment", value: "Primăvara și toamna, după ploi." }
+        { label: "Înființat", value: "1935 (cel mai vechi parc național din România)" },
+        { label: "Cel mai mare lac", value: "Lacul Bucura, 2.030 m altitudine" },
+        { label: "Cel mai înalt vârf", value: "Vf. Peleaga, 2.509 m" }
       ]
     },
     en: {
-      tagline: "This is an EXAMPLE place. Replace it with a real sight in the county.",
+      tagline: "Romania's oldest national park (1935), with over 80 glacial lakes.",
       description: [
-        "This is a sample entry, here only to show how a detail page looks. Delete it from js/data.js and add your own sights.",
-        "We'll write the real description together once you pick the places: history, what to see, how long to stay, practical tips."
+        "Retezat was declared a national park in 1935, the oldest in the country. It holds Bucura Lake — Romania's largest glacial lake (2,030 m altitude) — and Peleaga Peak (2,509 m), the massif's highest point.",
+        "The core area is a strict scientific reserve; the ridge trails and those leading to the glacial lakes are among the most spectacular in the Carpathians."
       ],
       facts: [
-        { label: "Address", value: "Petroșani, Hunedoara county" },
-        { label: "Best time", value: "Spring and autumn, after rain." }
+        { label: "Established", value: "1935 (Romania's oldest national park)" },
+        { label: "Largest lake", value: "Bucura Lake, 2,030 m altitude" },
+        { label: "Highest peak", value: "Peleaga Peak, 2,509 m" }
       ]
     }
   },
   {
-    id: "exemplu-pestera",
-    name: "Exemplu · Peșteră",
+    id: "pestera-bolii",
+    name: "Peștera Bolii",
     category: { ro: "Peșteră", en: "Cave" },
-    area: "Băița",
-    coords: [46.0500, 22.7500],
-    example: true,
+    area: "Petrila",
+    coords: [45.4539, 23.3183],
     hasReviews: true,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "EXEMPLU de peșteră. Înlocuiește cu una reală, cu galerii vizitabile sau nu.",
-      description: ["Aici va veni: lungime, dacă e amenajată pentru vizitare, ce se poate vedea, recomandări de echipament."],
-      facts: [{ label: "Acces", value: "De completat" }]
+      tagline: "Peșteră-râu de 455 m, amenajată cu iluminat electric, la marginea Parcului Natural Grădiștea Muncelului-Cioclovina.",
+      description: [
+        "Peștera Bolii se traversează pe jos, urmând pârâul Galbina care iese printr-un portal impresionant, de 20 m lățime și 10 m înălțime. E una dintre puținele peșteri din județ complet vizitabile de-a lungul cursului de apă.",
+        "Se află la câțiva kilometri de Petroșani, în apropierea Cheilor Băniței."
+      ],
+      facts: [
+        { label: "Lungime", value: "455 m" },
+        { label: "Portal", value: "20 m lățime, 10 m înălțime" },
+        { label: "Amenajare", value: "Iluminat electric, traversabilă pe cursul râului Galbina" }
+      ]
     },
     en: {
-      tagline: "EXAMPLE cave. Replace with a real one, whether open for visits or not.",
-      description: ["This will hold: length, whether it's arranged for visits, what can be seen, equipment recommendations."],
-      facts: [{ label: "Access", value: "To be filled in" }]
+      tagline: "A 455 m river cave with electric lighting, on the edge of the Grădiștea Muncelului-Cioclovina Natural Park.",
+      description: [
+        "Bolii Cave is walked through following the Galbina creek, which exits through an impressive 20 m wide, 10 m high portal. It's one of the few caves in the county that can be fully walked along its watercourse.",
+        "It lies a few kilometres from Petroșani, near the Bănița Gorges."
+      ],
+      facts: [
+        { label: "Length", value: "455 m" },
+        { label: "Portal", value: "20 m wide, 10 m high" },
+        { label: "Facilities", value: "Electric lighting, walkable along the Galbina stream" }
+      ]
+    }
+  },
+  {
+    id: "cheile-banitei",
+    name: "Cheile Băniței",
+    category: { ro: "Chei", en: "Gorge" },
+    area: "Bănița",
+    hasReviews: true,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Defileu îngust săpat de râul Bănița, traversat de DN66 și de calea ferată Simeria–Petroșani.",
+      description: [
+        "Cheile Băniței sunt un defileu calcaros pe drumul dintre Petroșani și restul județului, chiar în zona Peșterii Bolii. Pereții abrupți și drumul/calea ferată care șerpuiesc prin chei fac din traseu unul dintre cele mai spectaculoase din județ, chiar și văzut din mașină sau tren."
+      ],
+      facts: [
+        { label: "Acces", value: "DN66 Simeria–Petroșani, în apropierea Peșterii Bolii" }
+      ]
+    },
+    en: {
+      tagline: "A narrow gorge cut by the Bănița river, crossed by the DN66 road and the Simeria–Petroșani railway.",
+      description: [
+        "Cheile Băniței is a limestone gorge on the road between Petroșani and the rest of the county, right by Bolii Cave. The steep walls and the road/railway winding through the gorge make it one of the county's most spectacular routes, even seen from a car or train."
+      ],
+      facts: [
+        { label: "Access", value: "DN66 Simeria–Petroșani, near Bolii Cave" }
+      ]
+    }
+  },
+  {
+    id: "parangul-mare",
+    name: "Vârful Parângul Mare",
+    category: { ro: "Vârf montan", en: "Mountain peak" },
+    area: "Parâng",
+    coords: [45.3411, 23.5406],
+    hasReviews: true,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "2.519 m — cel mai înalt vârf din Munții Parâng, accesibil cu telescaunul din Petroșani plus un traseu pe creastă.",
+      description: [
+        "Parângul Mare este acoperișul masivului Parâng și un punct de belvedere spre Retezat, Șureanu și Valea Jiului. Telescaunul din Petroșani urcă spre platoul Parâng, de unde pornește traseul de creastă spre vârf."
+      ],
+      facts: [
+        { label: "Altitudine", value: "2.519 m" },
+        { label: "Cum ajungi", value: "Telescaun din Petroșani + traseu de creastă" }
+      ]
+    },
+    en: {
+      tagline: "2,519 m — the highest peak in the Parâng Mountains, reachable by the Petroșani chairlift plus a ridge trail.",
+      description: [
+        "Parângul Mare is the roof of the Parâng massif and a viewpoint over Retezat, Șureanu and Valea Jiului. The chairlift from Petroșani goes up to the Parâng plateau, from where the ridge trail to the peak starts."
+      ],
+      facts: [
+        { label: "Altitude", value: "2,519 m" },
+        { label: "Getting there", value: "Chairlift from Petroșani + ridge trail" }
+      ]
     }
   }
 ];
@@ -237,53 +306,124 @@ window.SITE_ACTIVITIES = [
 
 window.SITE_HERITAGE = [
   {
-    id: "exemplu-patrimoniu-minier",
-    name: "Exemplu · Patrimoniu minier",
-    category: { ro: "Patrimoniu industrial", en: "Industrial heritage" },
-    area: "Valea Jiului",
-    example: true,
-    hasReviews: false,
-    images: ["images/placeholder.svg"],
-    ro: {
-      tagline: "EXEMPLU de poveste despre istoria minieră a Văii Jiului.",
-      description: [
-        "Aici va veni povestea reală: începuturile mineritului, viața minerilor, ce a rămas astăzi din acest patrimoniu.",
-        "O completăm împreună — poate cu fotografii de epocă și mărturii, dacă avem acces la ele."
-      ],
-      facts: [{ label: "Perioadă", value: "De completat" }]
-    },
-    en: {
-      tagline: "EXAMPLE story about the mining history of Valea Jiului.",
-      description: [
-        "This will hold the real story: the beginnings of mining, miners' life, what remains today of this heritage.",
-        "We'll write it together — perhaps with period photos and testimonies, if we have access to them."
-      ],
-      facts: [{ label: "Period", value: "To be filled in" }]
-    }
-  },
-  {
-    id: "exemplu-cetate-dacica",
-    name: "Exemplu · Cetate dacică",
-    category: { ro: "Monument istoric", en: "Historic monument" },
-    area: "Orăștie",
-    coords: [45.6122, 23.2761],
-    example: true,
+    id: "sarmizegetusa-regia",
+    name: "Sarmizegetusa Regia",
+    category: { ro: "Sit arheologic UNESCO", en: "UNESCO archaeological site" },
+    area: "Munții Orăștiei",
+    coords: [45.6219, 23.3093],
     hasReviews: true,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "EXEMPLU de cetate din zona Munților Orăștiei. Înlocuiește cu un obiectiv real.",
-      description: ["Aici va veni istoricul locului, ce se poate vizita, program și taxă de acces, dacă e nevoie de ghid."],
+      tagline: "Capitala regatului dac, pe un vârf la 1.200 m altitudine — patrimoniu mondial UNESCO din 1999.",
+      description: [
+        "Sarmizegetusa Regia a fost centrul politic și religios al regatului dac timp de peste un secol și jumătate, ajungând la apogeu sub Decebal. Fortificația, construită în tehnica \"murus dacicus\" pe cinci terase, ocupă aproape 30.000 m².",
+        "Zona sacră din apropiere cuprinde temple rectangulare și celebrul sanctuar circular — un \"calendar\" din stâlpi de lemn și piatră, una dintre cele mai discutate construcții din arheologia românească."
+      ],
       facts: [
-        { label: "Zonă", value: "Munții Orăștiei" },
-        { label: "Cum ajungi", value: "De completat — drum auto + traseu pietonal." }
+        { label: "Statut", value: "Patrimoniu mondial UNESCO din 1999" },
+        { label: "Altitudine", value: "cca. 1.200 m" },
+        { label: "Tehnică de construcție", value: "Murus dacicus (blocuri de piatră fasonate)" }
       ]
     },
     en: {
-      tagline: "EXAMPLE fortress in the Orăștie Mountains area. Replace with a real sight.",
-      description: ["This will hold the site's history, what can be visited, opening hours and entry fee, whether a guide is needed."],
+      tagline: "The capital of the Dacian kingdom, on a 1,200 m summit — UNESCO World Heritage since 1999.",
+      description: [
+        "Sarmizegetusa Regia was the political and religious centre of the Dacian kingdom for over a century and a half, reaching its peak under Decebalus. The fortress, built in the \"murus dacicus\" technique across five terraces, covers almost 30,000 m².",
+        "The nearby sacred area holds rectangular temples and the famous circular sanctuary — a wood-and-stone \"calendar\", one of the most discussed structures in Romanian archaeology."
+      ],
       facts: [
-        { label: "Area", value: "Orăștie Mountains" },
-        { label: "Getting there", value: "To be filled in — road access + walking trail." }
+        { label: "Status", value: "UNESCO World Heritage since 1999" },
+        { label: "Altitude", value: "approx. 1,200 m" },
+        { label: "Construction technique", value: "Murus dacicus (fitted stone blocks)" }
+      ]
+    }
+  },
+  {
+    id: "biserica-densus",
+    name: "Biserica din Densuș",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Țara Hațegului",
+    coords: [45.5819, 22.8047],
+    hasReviews: true,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Una dintre cele mai vechi biserici de piatră din România aflate încă în uz, ridicată din materiale romane refolosite.",
+      description: [
+        "Datată în jurul secolelor XII–XIII, biserica din Densuș a fost construită în bună parte din piatră și elemente arhitecturale romane recuperate din ruinele apropiate. Forma sa neobișnuită și vechimea o fac unul dintre cele mai vizitate monumente din Țara Hațegului."
+      ],
+      facts: [
+        { label: "Datare", value: "Cca. secolele XII–XIII" },
+        { label: "Particularitate", value: "Construită din piatră romană refolosită" }
+      ]
+    },
+    en: {
+      tagline: "One of the oldest stone churches in Romania still in use, built from reused Roman materials.",
+      description: [
+        "Dated to around the 12th–13th centuries, the Densuș church was largely built from Roman stone and architectural elements recovered from nearby ruins. Its unusual shape and age make it one of the most visited monuments in Țara Hațegului."
+      ],
+      facts: [
+        { label: "Dating", value: "Approx. 12th–13th centuries" },
+        { label: "Distinctive feature", value: "Built from reused Roman stone" }
+      ]
+    }
+  },
+  {
+    id: "manastirea-prislop",
+    name: "Mănăstirea Prislop",
+    category: { ro: "Mănăstire", en: "Monastery" },
+    area: "Silvașu de Sus, Țara Hațegului",
+    coords: [45.6317, 22.8503],
+    hasReviews: true,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Ctitorie din 1564, loc de pelerinaj legat de părintele Arsenie Boca.",
+      description: [
+        "Biserica actuală a fost ridicată în 1564 de Domnița Zamfira. Mănăstirea a devenit un important loc de pelerinaj după ce părintele Arsenie Boca a fost stareț aici din 1948 până la moartea sa, în 1989 — este înmormântat în incinta mănăstirii, care primește anual mii de pelerini."
+      ],
+      facts: [
+        { label: "Ctitorire biserică", value: "1564, de Domnița Zamfira" },
+        { label: "Legătură", value: "Mormântul părintelui Arsenie Boca (stareț 1948–1989)" }
+      ]
+    },
+    en: {
+      tagline: "Founded in 1564, a pilgrimage site linked to Father Arsenie Boca.",
+      description: [
+        "The current church was built in 1564 by Princess Zamfira. The monastery became a major pilgrimage site after Father Arsenie Boca served as its abbot from 1948 until his death in 1989 — he is buried on the monastery grounds, which receive thousands of pilgrims every year."
+      ],
+      facts: [
+        { label: "Church founded", value: "1564, by Princess Zamfira" },
+        { label: "Connection", value: "Grave of Father Arsenie Boca (abbot 1948–1989)" }
+      ]
+    }
+  },
+  {
+    id: "muzeul-mineritului-petrosani",
+    name: "Muzeul Mineritului din Petroșani",
+    category: { ro: "Muzeu", en: "Museum" },
+    area: "Petroșani",
+    coords: [45.4166, 23.3733],
+    hasReviews: true,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Singurul muzeu din România dedicat exclusiv tehnicii miniere a cărbunelui.",
+      description: [
+        "Înființat în 1961, muzeul funcționează din 1966 într-o clădire din 1920, fostă locuință pentru angajați, azi monument istoric. Colecția, de circa 1.500 de piese (utilaje, unelte, documente, echipament de mină), a fost redeschisă publicului în 2021 după restaurare."
+      ],
+      facts: [
+        { label: "Înființat", value: "1961" },
+        { label: "Colecție", value: "cca. 1.500 de piese legate de minerit" },
+        { label: "Redeschis", value: "2021, după restaurare" }
+      ]
+    },
+    en: {
+      tagline: "The only museum in Romania dedicated exclusively to coal-mining technology.",
+      description: [
+        "Founded in 1961, the museum has operated since 1966 in a 1920 building, formerly staff housing, now a historic monument. The collection of about 1,500 items (equipment, tools, documents, mining gear) reopened to the public in 2021 after restoration."
+      ],
+      facts: [
+        { label: "Founded", value: "1961" },
+        { label: "Collection", value: "approx. 1,500 mining-related items" },
+        { label: "Reopened", value: "2021, after restoration" }
       ]
     }
   }

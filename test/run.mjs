@@ -64,13 +64,13 @@ function load(file, query = "") {
   const w1 = await load("natura.html");
   const d1 = w1.document;
   ok(!w1.__err, "natura: fără erori JS" + (w1.__err ? " — " + w1.__err : ""));
-  ok(d1.querySelectorAll("#grid .card").length === 2, "natura: 2 carduri (exemple)");
-  ok(d1.querySelectorAll("#f-area option").length === 1 + 2, "natura: filtru zonă = 2 + Toate");
+  ok(d1.querySelectorAll("#grid .card").length === 4, "natura: 4 carduri (conținut real)");
+  ok(d1.querySelectorAll("#f-area option").length === 1 + 4, "natura: filtru zonă = 4 + Toate");
 
-  const w = await load("natura-loc.html", "?id=exemplu-cascada-valea-jiului");
+  const w = await load("natura-loc.html", "?id=pestera-bolii");
   const d = w.document;
   ok(!w.__err, "natura-loc: fără erori JS" + (w.__err ? " — " + w.__err : ""));
-  ok(/Cascadă/.test(d.querySelector("#detail-title")?.textContent || ""), "natura-loc: titlu randat");
+  ok(/Bolii/.test(d.querySelector("#detail-title")?.textContent || ""), "natura-loc: titlu randat");
   ok(!!d.querySelector("#detail-map a"), "natura-loc: linkuri hartă prezente pentru coordonate");
   ok(!!d.querySelector("#reviews .review-form"), "recenzii: formularul e randat");
   ok(/Nicio recenzie/.test(d.querySelector("#reviews").textContent), "recenzii: mesaj 'nicio recenzie' inițial");
@@ -110,7 +110,7 @@ function load(file, query = "") {
 /* -------- restul secțiunilor: randare fără erori + numărul corect de carduri -------- */
 {
   const pairs = [
-    ["turism-activ.html", 1], ["mostenire.html", 2], ["orase.html", 6], ["stiri.html", 1]
+    ["turism-activ.html", 1], ["mostenire.html", 4], ["orase.html", 6], ["stiri.html", 1]
   ];
   for (const [file, count] of pairs) {
     const w = await load(file);
@@ -119,7 +119,7 @@ function load(file, query = "") {
   }
   const details = [
     ["activitate.html", "exemplu-traseu-parang", "Traseu"],
-    ["mostenire-articol.html", "exemplu-cetate-dacica", "Cetate"],
+    ["mostenire-articol.html", "sarmizegetusa-regia", "Sarmizegetusa"],
     ["oras.html", "petrosani", "Petroșani"],
     ["stire.html", "exemplu-eveniment-local", "eveniment"]
   ];
@@ -137,7 +137,7 @@ function load(file, query = "") {
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
   const w = await load("credite.html");
-  ok(w.document.querySelectorAll(".credit-card").length === 18, "credite: 18 intrări (4+2+1+2+6+1+2, toate secțiunile)");
+  ok(w.document.querySelectorAll(".credit-card").length === 22, "credite: 22 intrări (4+4+1+4+6+1+2, toate secțiunile)");
 }
 
 /* -------- fișiere prezente -------- */
