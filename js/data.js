@@ -1240,6 +1240,111 @@ window.SITE_HERITAGE = [
         { label: "Collections", value: "archaeology, ethnography, numismatics, natural sciences; the Lapidarium (100+ pieces)" }
       ]
     }
+  },
+  {
+    id: "muzeul-etnografie-orastie",
+    name: "Muzeul de Etnografie și Artă Populară Orăștie",
+    category: { ro: "Muzeu", en: "Museum" },
+    area: "Orăștie",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Colecție de etnografie și artă populară de aproape 8.000 de piese, într-o clădire-monument istoric din centrul orașului.",
+      description: [
+        "Muzeul a fost înființat în 1952, din inițiativa unui grup de entuziaști locali care au strâns primele colecții. În 1974, profilul instituției s-a reorientat spre artă populară, iar din 1991 funcționează ca secție a Muzeului Civilizației Dacice și Romane Deva. Clădirea în care funcționează, din prima jumătate a secolului XX, este ea însăși monument istoric.",
+        "Colecția, de circa 8.000 de bunuri culturale, cuprinde piese de etnografie și artă populară (unelte, ceramică, costume, icoane pe lemn și sticlă), alături de fonduri de istorie, arheologie și numismatică, plus o bibliotecă documentară de aproximativ 5.000 de volume."
+      ],
+      facts: [
+        { label: "Adresă", value: "Piața Aurel Vlaicu nr. 1, Orăștie" },
+        { label: "Program", value: "Mar–Dum 10:00–18:00 (mar–oct), 9:00–17:00 (nov–feb); luni închis" },
+        { label: "Înființat", value: "1952" },
+        { label: "Colecție", value: "~8.000 de piese (etnografie, istorie, arheologie, numismatică)" }
+      ]
+    },
+    en: {
+      tagline: "A collection of nearly 8,000 ethnographic and folk-art items, in a historic-monument building downtown.",
+      description: [
+        "The museum was founded in 1952, on the initiative of a group of local enthusiasts who assembled its first collections. In 1974 its focus shifted toward folk art, and since 1991 it has operated as a section of the Museum of Dacian and Roman Civilisation in Deva. The building it occupies, dating from the first half of the 20th century, is itself a listed historic monument.",
+        "The collection, of about 8,000 cultural items, includes ethnographic and folk-art pieces (tools, ceramics, costumes, icons on wood and glass), alongside history, archaeology and numismatics holdings, plus a documentary library of roughly 5,000 volumes."
+      ],
+      facts: [
+        { label: "Address", value: "Piața Aurel Vlaicu no. 1, Orăștie" },
+        { label: "Hours", value: "Tue–Sun 10:00–18:00 (Mar–Oct), 9:00–17:00 (Nov–Feb); closed Mondays" },
+        { label: "Founded", value: "1952" },
+        { label: "Collection", value: "~8,000 items (ethnography, history, archaeology, numismatics)" }
+      ]
+    }
+  },
+  {
+    id: "cetatea-medievala-orastie",
+    name: "Cetatea medievală a Orăștiei",
+    category: { ro: "Cetate medievală", en: "Medieval fortress" },
+    area: "Orăștie",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Fortificație săsească din secolul XII, redeschisă publicului în 2024 după trei ani de restaurare.",
+      description: [
+        "Cetatea medievală a Orăștiei datează din secolul XII, de la sosirea primilor coloniști sași, și a servit drept reședință a unor grafi (conducători) ai comunității săsești locale. De-a lungul secolelor a trecut prin numeroase asedii, incendii și refaceri: a fost prădată de tătari la mijlocul secolului XIII și devastată de turci la începutul secolului XV și din nou la mijlocul secolului XVII.",
+        "Restaurată între toamna anului 2021 și septembrie 2024, cu fonduri europene, cetatea și-a redeschis porțile chiar în anul în care Orăștie a marcat 800 de ani de la prima atestare documentară. În incinta ei se află o rotondă din piatră veche de aproape 1.000 de ani — una dintre cele mai vechi construcții de acest tip din România —, două biserici istorice (reformată și evanghelică) și un muzeu dedicat civilizației dacice, amenajat într-o clădire din secolul XIX, fostul spital al orașului."
+      ],
+      facts: [
+        { label: "Vechime", value: "secolul XII (cca. 8 secole)" },
+        { label: "Restaurare", value: "2021–2024 (3 ani, fonduri europene)" },
+        { label: "Redeschidere", value: "septembrie 2024, la 800 de ani de atestare documentară a Orăștiei" },
+        { label: "Ce cuprinde", value: "rotondă de cca. 1.000 de ani, biserica reformată, biserica evanghelică, muzeu dacic" }
+      ]
+    },
+    en: {
+      tagline: "A 12th-century Saxon fortification, reopened to the public in 2024 after three years of restoration.",
+      description: [
+        "The medieval fortress of Orăștie dates from the 12th century, from the arrival of the first Saxon colonists, and served as the seat of local Saxon community leaders (\"graefs\"). Over the centuries it went through numerous sieges, fires and rebuildings: it was plundered by the Tatars in the mid-13th century and devastated by the Ottomans in the early 15th century and again in the mid-17th century.",
+        "Restored between autumn 2021 and September 2024 with EU funding, the fortress reopened its gates in the very year Orăștie marked 800 years since its first documentary mention. Inside stands a nearly 1,000-year-old stone rotunda — one of the oldest structures of its kind in Romania —, two historic churches (Reformed and Evangelical) and a museum dedicated to Dacian civilisation, set up in a 19th-century building that once served as the town's hospital."
+      ],
+      facts: [
+        { label: "Age", value: "12th century (approx. 8 centuries)" },
+        { label: "Restoration", value: "2021–2024 (3 years, EU funding)" },
+        { label: "Reopened", value: "September 2024, marking 800 years since Orăștie's first documentary mention" },
+        { label: "What to see", value: "~1,000-year-old rotunda, Reformed church, Evangelical church, Dacian museum" }
+      ]
+    }
+  },
+  {
+    id: "casa-memoriala-aurel-vlaicu",
+    name: "Complexul Memorial „Aurel Vlaicu”",
+    category: { ro: "Casă memorială", en: "Memorial house" },
+    area: "Aurel Vlaicu",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Casa natală și muzeul dedicat inventatorului și aviatorului Aurel Vlaicu, în satul de lângă Orăștie care îi poartă azi numele.",
+      description: [
+        "Satul Binținți, lângă Orăștie (comuna Geoagiu), a fost redenumit Aurel Vlaicu în cinstea inventatorului și aviatorului născut aici. Complexul memorial cuprinde trei componente: casa memorială, deschisă publicului în 1952, muzeul memorial amenajat lângă casă în 1982 și un bust-monument ridicat în 1933.",
+        "Expoziția muzeului include machete ale aparatelor de zbor construite de Vlaicu, unelte și obiecte personale, casca și echipamentul purtate în ultimul zbor, piese recuperate din avionul în care s-a prăbușit la 13 septembrie 1913, precum și scrisori, ziare de epocă și distincții internaționale primite de-a lungul carierei sale."
+      ],
+      facts: [
+        { label: "Adresă", value: "str. Aurel Vlaicu nr. 177, satul Aurel Vlaicu, comuna Geoagiu" },
+        { label: "Program", value: "Mar–Dum 9:00–17:00 (iarna), 10:00–18:00 (vara); luni închis" },
+        { label: "Componente", value: "casa memorială (1952), muzeul memorial (1982), bust-monument (1933)" },
+        { label: "Ce se vede", value: "machete de aparate de zbor, echipament, piese din avionul accidentat în 1913" }
+      ]
+    },
+    en: {
+      tagline: "The birthplace and museum of inventor and aviator Aurel Vlaicu, in the village near Orăștie that now bears his name.",
+      description: [
+        "The village of Binținți, near Orăștie (Geoagiu commune), was renamed Aurel Vlaicu in honour of the inventor and aviator born there. The memorial complex has three parts: the memorial house, opened to the public in 1952, the memorial museum built next to it in 1982, and a bust-monument erected in 1933.",
+        "The museum's exhibits include models of the aircraft Vlaicu built, tools and personal belongings, the helmet and gear worn on his final flight, pieces recovered from the aircraft in which he crashed on 13 September 1913, as well as letters, period newspapers and international awards received during his career."
+      ],
+      facts: [
+        { label: "Address", value: "Str. Aurel Vlaicu no. 177, Aurel Vlaicu village, Geoagiu commune" },
+        { label: "Hours", value: "Tue–Sun 9:00–17:00 (winter), 10:00–18:00 (summer); closed Mondays" },
+        { label: "Components", value: "memorial house (1952), memorial museum (1982), bust-monument (1933)" },
+        { label: "What to see", value: "aircraft models, gear, pieces from the aircraft that crashed in 1913" }
+      ]
+    }
   }
 ];
 
@@ -1421,6 +1526,7 @@ window.SITE_TOWNS = [
     area: "Zona cetăților dacice",
     coords: [45.8500, 23.2000],
     hasReviews: false,
+    relatedAreas: ["Orăștie", "Munții Orăștiei", "Aurel Vlaicu"],
     images: ["images/orastie-cetate.jpg"],
     photoCredit: { author: "Roamata", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Cetatea_orastie.JPG" },
     ro: {
@@ -1572,6 +1678,41 @@ window.SITE_NEWS = [
         { label: "Dates", value: "29–30 August 2026" },
         { label: "Location", value: "Corvin Castle, Hunedoara" },
         { label: "Participants", value: "18 historical re-enactment groups, from Romania and abroad" }
+      ]
+    }
+  },
+  {
+    id: "zilele-orastie-2026",
+    name: "Zilele Municipiului Orăștie — ediția 2026",
+    category: { ro: "Festival", en: "Festival" },
+    area: "Orăștie",
+    date: "2026-07-19",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Trei zile de concerte, tradiții locale și parc de distracții la Arena Park, în cea mai recentă ediție a sărbătorii orașului.",
+      description: [
+        "Între 17 și 19 iulie 2026, Arena Park din Orăștie a găzduit ediția din acest an a Zilelor Municipiului Orăștie, organizată de Primăria și Consiliul Local Orăștie în parteneriat cu Autentic Events. Timp de trei zile, scena a adus artiști de muzică populară și ușoară, alături de ansambluri folclorice și formații locale de tineret.",
+        "Pe lângă programul artistic, vizitatorii au avut la dispoziție un parc de distracții cu atracții pentru toate vârstele și o zonă cu produse tradiționale și food-truck-uri. Intrarea a fost liberă, iar evenimentul revine an de an ca o sărbătoare a comunității și a tradițiilor locale."
+      ],
+      facts: [
+        { label: "Perioadă", value: "17–19 iulie 2026" },
+        { label: "Loc", value: "Arena Park, Orăștie" },
+        { label: "Intrare", value: "liberă" },
+        { label: "Organizatori", value: "Primăria și Consiliul Local Orăștie, în parteneriat cu Autentic Events" }
+      ]
+    },
+    en: {
+      tagline: "Three days of concerts, local tradition and an amusement park at Arena Park, in the town's most recent annual celebration.",
+      description: [
+        "From 17 to 19 July 2026, Arena Park in Orăștie hosted this year's edition of Zilele Municipiului Orăștie (\"Orăștie Municipality Days\"), organised by Orăștie City Hall and Local Council in partnership with Autentic Events. Over three days, the stage featured folk and pop artists alongside folklore ensembles and local youth groups.",
+        "Besides the artistic programme, visitors had access to an amusement park with rides for all ages and an area with traditional food and food trucks. Admission was free, and the event returns every year as a celebration of the community and its local traditions."
+      ],
+      facts: [
+        { label: "Dates", value: "17–19 July 2026" },
+        { label: "Location", value: "Arena Park, Orăștie" },
+        { label: "Admission", value: "free" },
+        { label: "Organisers", value: "Orăștie City Hall and Local Council, in partnership with Autentic Events" }
       ]
     }
   }
