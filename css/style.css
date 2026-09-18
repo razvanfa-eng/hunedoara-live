@@ -380,6 +380,8 @@ p { margin: 0 0 12px; }
   align-items: center; flex-wrap: wrap; gap: 14px;
 }
 .footer-note { font-size: 12px; color: var(--fainter); }
+.footer-email { font-size: 12px; color: var(--faint); text-decoration: none; }
+.footer-email:hover { color: var(--accent); }
 .social-row { display: flex; gap: 10px; }
 .social-row span {
   width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--border-strong);
@@ -392,6 +394,9 @@ p { margin: 0 0 12px; }
 .prose h2 { font-size: 19px; margin: 32px 0 10px; }
 .prose ul { padding-left: 20px; }
 .prose li { margin-bottom: 6px; }
+.contact-email-line { font-size: 14px; color: var(--muted); }
+.contact-email-line a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.contact-email-line a:hover { text-decoration: underline; }
 .contact-form { display: flex; flex-direction: column; gap: 14px; max-width: 480px; margin-top: 24px; }
 .contact-form label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
 .contact-form input, .contact-form textarea {
