@@ -2133,7 +2133,8 @@ window.SITE_HERITAGE = [
     area: "Petrila",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/mina-petrila.jpg"],
+    photoCredit: { author: "Loraine", license: "CC BY 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrila_view.jpg" },
     ro: {
       tagline: "Cea mai veche exploatare din Valea Jiului, azi transformată într-un muzeu în aer liber.",
       description: [
@@ -2487,7 +2488,8 @@ window.SITE_HERITAGE = [
     area: "Hunedoara",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/castelul-corvinilor.jpg"],
+    photoCredit: { author: "Giuseppe Milo", license: "CC BY 2.0", source: "https://commons.wikimedia.org/wiki/File:Corvin_Castle_-_Hunedoara,_Romania_-_Travel_photography_(36729360851).jpg" },
     ro: {
       tagline: "Sala Cavalerilor, Sala Dietei și fântâna săpată de prizonieri turci — detaliile din spatele celui mai vizitat castel al țării.",
       description: [
@@ -2563,7 +2565,8 @@ window.SITE_HERITAGE = [
     coords: [45.8569, 23.0110],
     hasReviews: false,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/castelul-bela-fay-simeria.jpg"],
+    photoCredit: { author: "Seldon92", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Castelul_Bela_Fay.JPG" },
     ro: {
       tagline: "Conacul familiilor Gyulay, Kun, Fáy și Ocskay, în inima Arboretumului Simeria.",
       description: [
