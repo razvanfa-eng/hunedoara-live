@@ -573,7 +573,8 @@ window.SITE_NATURE = [
     area: "Uricani",
     hasReviews: true,
     season: "vara",
-    images: ["images/placeholder.svg"],
+    images: ["images/drum-transmontan-uricani-runcu.jpg"],
+    photoCredit: { author: "Nicu Farcaș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Cheile_Sohodolului.JPG" },
     ro: {
       tagline: "Drum montan nou-asfaltat care leagă Uricani de Gorj prin Cheile Sohodolului, la 830 m altitudine.",
       description: [
