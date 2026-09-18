@@ -2683,7 +2683,7 @@ window.SITE_TOWNS = [
     area: "Valea Jiului",
     coords: [45.4166, 23.3733],
     hasReviews: false,
-    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Petrila", "Uricani", "Vulcan", "Lupeni", "Aninoasa"],
+    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Uricani", "Aninoasa"],
     images: ["images/petrosani-panorama.jpg"],
     photoCredit: { author: "Eduard Gergely", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrosani_Town.jpg" },
     ro: {
@@ -2776,6 +2776,43 @@ window.SITE_TOWNS = [
         { label: "Population", value: "19,772 (2021 census)" },
         { label: "Status", value: "municipality (since 2003)" },
         { label: "Landmark", value: "Devil's Cave; Vulcan Pass (1,621 m)" }
+      ]
+    }
+  },
+  {
+    id: "lupeni",
+    name: "Lupeni",
+    category: { ro: "Municipiu", en: "Municipality" },
+    area: "Valea Jiului",
+    coords: [45.3603, 23.2383],
+    hasReviews: false,
+    relatedAreas: ["Lupeni", "Vâlcan"],
+    images: ["images/lupeni-panorama.jpg"],
+    photoCredit: { author: "Mitasim", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Panoram%C4%83_a_municipiului_Lupeni,_Hunedoara.jpg" },
+    ro: {
+      tagline: "Cel mai vestic oraș al Văii Jiului, poartă spre stațiunea Straja și scenă a marilor greve miniere.",
+      description: [
+        "Lupeni este atestat documentar din 1770, a primit rangul de oraș în 1960 și e municipiu din 2003 — al treilea ca mărime din Valea Jiului, la circa 18 km de Petroșani. S-a dezvoltat ca centru minier și a rămas legat de istoria mișcării muncitorești din zonă, fiind scena Grevei de la Lupeni din 1929 și a Grevei mineriilor din Valea Jiului din 1977.",
+        "De la Lupeni pornește drumul spre stațiunea de schi Straja, aflată la aproximativ 9 km, situată pe versanții Munților Vâlcan."
+      ],
+      facts: [
+        { label: "Populație", value: "18.699 locuitori (recensământ 2021)" },
+        { label: "Atestare documentară", value: "1770" },
+        { label: "Statut", value: "municipiu (din 2003, oraș din 1960)" },
+        { label: "Poartă spre", value: "Stațiunea Straja (cca. 9 km)" }
+      ]
+    },
+    en: {
+      tagline: "The westernmost town of Valea Jiului, gateway to the Straja resort and the stage of major miners' strikes.",
+      description: [
+        "Lupeni is first documented in 1770, was granted town status in 1960 and has been a municipality since 2003 — the third-largest town in Valea Jiului, about 18 km from Petroșani. It grew as a coal-mining centre and remains tied to the region's labour history, having been the site of the 1929 Lupeni strike and the 1977 Jiu Valley miners' strike.",
+        "The road from Lupeni leads to the Straja ski resort, about 9 km away, on the slopes of the Vâlcan Mountains."
+      ],
+      facts: [
+        { label: "Population", value: "18,699 (2021 census)" },
+        { label: "First documented", value: "1770" },
+        { label: "Status", value: "municipality (since 2003, town since 1960)" },
+        { label: "Gateway to", value: "Straja resort (approx. 9 km)" }
       ]
     }
   },
