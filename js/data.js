@@ -1223,7 +1223,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parcul Național Retezat",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/traseu-lacul-gales.jpg"],
+    photoCredit: { author: "Olario~commonswiki", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:LaculGalesusiVarfulRetezatvazutedepeVarfulMare.JPG" },
     ro: {
       tagline: "Legătură scurtă dinspre valea Râușorului (Lacul Galeș) spre Șaua Pelegii, în versantul nordic al Retezatului.",
       description: [
@@ -1288,7 +1289,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parcul Național Retezat",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/traseu-varful-retezat.jpg"],
+    photoCredit: { author: "Dezidor", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:V%C3%A2rful_Retezat.jpg" },
     ro: {
       tagline: "Ascensiune lungă dinspre sud, din satul Râu de Mori, direct spre Vârful Retezat.",
       description: [
@@ -1352,7 +1354,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parcul Național Retezat",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/traseu-lacul-bucura.jpg"],
+    photoCredit: { author: "Gugalcrom123", license: "CC BY 4.0", source: "https://commons.wikimedia.org/wiki/File:Lake_Bucura_01.jpg" },
     ro: {
       tagline: "Tur circular de o zi în jurul zonei Lacului Bucura, cel mai mare lac glaciar din România.",
       description: [
