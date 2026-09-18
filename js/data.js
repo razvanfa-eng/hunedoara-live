@@ -3030,6 +3030,41 @@ window.SITE_NEWS = [
         { label: "Organisers", value: "Orăștie City Hall and Local Council, in partnership with Autentic Events" }
       ]
     }
+  },
+  {
+    id: "ziua-curateniei-nationale-2026",
+    name: "Ziua de Curățenie Națională, ediția a 13-a — și în Hunedoara",
+    category: { ro: "Eveniment civic", en: "Community event" },
+    area: "Județul Hunedoara",
+    date: "2026-09-19",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Sâmbătă, 19 septembrie 2026, de la ora 10:00 — 64 de puncte de întâlnire în 59 de localități din județ, sub tema „Tu ce lași în urma ta?”.",
+      description: [
+        "Județul Hunedoara se alătură ediției a 13-a a Zilei de Curățenie Națională, parte din campania globală „Let's Do It, Romania!”, care are loc simultan în aproape 190 de țări. Acțiunea e organizată local de Instituția Prefectului – Județul Hunedoara și Consiliul Județean Hunedoara, alături de coordonatorii naționali ai campaniei, cu sprijinul Agenției pentru Protecția Mediului, al Gărzii de Mediu, al Sistemului Integrat de Gestionare a Deșeurilor, al Supercom, al Direcției Silvice, al Parcului Național Retezat, al poliției și al pompierilor.",
+        "Voluntari — persoane singure, familii, elevi, firme și instituții — sunt așteptați de la ora 10:00 în cele 64 de puncte de întâlnire stabilite în 59 de localități hunedorene, pentru a strânge deșeurile abandonate din zonele afectate. Înscrierea se face prin platforma oficială a campaniei. De la lansarea ei în România, în 2010, campania a mobilizat peste 2,9 milioane de voluntari; doar în 2025, peste 270.000 de participanți au strâns peste 427.000 de saci cu deșeuri la nivel național."
+      ],
+      facts: [
+        { label: "Dată", value: "sâmbătă, 19 septembrie 2026, ora 10:00" },
+        { label: "Amploare", value: "64 de puncte de întâlnire, în 59 de localități din județ" },
+        { label: "Organizatori", value: "Instituția Prefectului – Județul Hunedoara, Consiliul Județean Hunedoara, „Let's Do It, Romania!”" },
+        { label: "Înscriere", value: "app.letsdoitromania.ro" }
+      ]
+    },
+    en: {
+      tagline: "Saturday, 19 September 2026, from 10:00 — 64 meeting points across 59 towns and villages in the county, under the theme \"What will you leave behind?\".",
+      description: [
+        "Hunedoara county is joining the 13th edition of Romania's National Cleanup Day, part of the global \"Let's Do It, Romania!\" campaign, held simultaneously in nearly 190 countries. The local action is organised by the Hunedoara County Prefect's Office and County Council, together with the campaign's national coordinators, with support from the Environmental Protection Agency, the Environmental Guard, the county's integrated waste management system, Supercom, the Forestry Directorate, Retezat National Park, the police and the fire service.",
+        "Volunteers — individuals, families, students, companies and institutions — are expected from 10:00 at the 64 meeting points set up across 59 towns and villages in the county, to clear abandoned waste from affected areas. Registration is through the campaign's official platform. Since launching in Romania in 2010, the campaign has mobilised over 2.9 million volunteers; in 2025 alone, more than 270,000 participants collected over 427,000 bags of waste nationwide."
+      ],
+      facts: [
+        { label: "Date", value: "Saturday, 19 September 2026, 10:00" },
+        { label: "Scale", value: "64 meeting points, across 59 towns and villages in the county" },
+        { label: "Organisers", value: "Hunedoara County Prefect's Office, Hunedoara County Council, \"Let's Do It, Romania!\"" },
+        { label: "Registration", value: "app.letsdoitromania.ro" }
+      ]
+    }
   }
 ];
 

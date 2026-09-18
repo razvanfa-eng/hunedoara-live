@@ -147,7 +147,7 @@ function load(file, query = "") {
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
   const w = await load("credite.html");
-  ok(w.document.querySelectorAll(".credit-card").length === 122, "credite: 122 intrări (6+14+39+17+10+3+33, toate secțiunile)");
+  ok(w.document.querySelectorAll(".credit-card").length === 123, "credite: 123 intrări (6+14+39+17+10+4+33, toate secțiunile)");
 }
 
 /* -------- fișiere prezente -------- */
