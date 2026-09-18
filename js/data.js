@@ -1930,7 +1930,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parâng",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/lacul-verde-parang.jpg"],
+    photoCredit: { author: "Cioboata Andrei", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Lacul_Verde_-_panoramio.jpg" },
     ro: {
       tagline: "Traseu dinspre Cabana Groapa Seacă spre Lacurile Verzi, în versantul hunedorean al Parângului.",
       description: [
@@ -2265,7 +2266,8 @@ window.SITE_HERITAGE = [
     area: "Orăștie",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/muzeul-etnografie-orastie.jpg"],
+    photoCredit: { author: "Mihai Stancu", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Muzeul_de_Etnografie_si_Arta_Populara_Orastie.jpg" },
     ro: {
       tagline: "Colecție de etnografie și artă populară de aproape 8.000 de piese, într-o clădire-monument istoric din centrul orașului.",
       description: [
@@ -2372,7 +2374,8 @@ window.SITE_HERITAGE = [
     area: "Brad",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/muzeul-aurului-brad.jpg"],
+    photoCredit: { author: "Andrei Stroe", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Brad_gold_museum.JPG" },
     ro: {
       tagline: "Cea mai mare colecție de aur nativ din Europa, cu exponate neprelucrate de niciun bijutier.",
       description: [
