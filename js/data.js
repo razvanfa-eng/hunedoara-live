@@ -2683,7 +2683,7 @@ window.SITE_TOWNS = [
     area: "Valea Jiului",
     coords: [45.4166, 23.3733],
     hasReviews: false,
-    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Uricani", "Aninoasa"],
+    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Uricani", "Aninoasa", "Bănița"],
     images: ["images/petrosani-panorama.jpg"],
     photoCredit: { author: "Eduard Gergely", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrosani_Town.jpg" },
     ro: {
@@ -2854,7 +2854,7 @@ window.SITE_TOWNS = [
     area: "Țara Hațegului",
     coords: [45.6075, 22.9500],
     hasReviews: false,
-    relatedAreas: ["Hațeg", "Țara Hațegului", "Parcul Național Retezat", "Bănița", "Silvașu de Sus, Țara Hațegului"],
+    relatedAreas: ["Hațeg", "Țara Hațegului", "Parcul Național Retezat", "Silvașu de Sus, Țara Hațegului"],
     images: ["images/hateg-panorama.jpg"],
     photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Hateg_2015_(1).JPG" },
     ro: {

@@ -136,7 +136,7 @@ function load(file, query = "") {
   ok(!w.__err, "oras petrosani: fără erori JS" + (w.__err ? " — " + w.__err : ""));
   const rel = w.document.querySelector("#detail-related");
   ok(!!rel && !rel.hidden, "oras petrosani: #detail-related vizibil");
-  ok(rel.querySelectorAll(".card").length === 29, "oras petrosani: 29 obiective din zonă");
+  ok(rel.querySelectorAll(".card").length === 30, "oras petrosani: 30 obiective din zonă");
   ok(rel.querySelectorAll(".related-group__title").length >= 3, "oras petrosani: grupate pe cel puțin 3 sezoane");
 }
 
