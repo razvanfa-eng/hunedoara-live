@@ -2942,7 +2942,8 @@ window.SITE_NEWS = [
     area: "Costești, Orăștioara de Sus",
     date: "2026-09-18",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/cetatea-costesti-cetatuie.jpg"],
+    photoCredit: { author: "Levente Nuber", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Cetatea_dacic%C4%83_Coste%C8%99ti-Cet%C4%83%C8%9Buie_1.jpg" },
     ro: {
       tagline: "În weekendul 18–20 septembrie 2026, lângă cetățile dacice — concerte, marș folcloric și artizanat local.",
       description: [
@@ -2975,7 +2976,8 @@ window.SITE_NEWS = [
     area: "Hunedoara",
     date: "2026-08-29",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/curtea-castelul-corvinilor.jpg"],
+    photoCredit: { author: "Munteanu Anca", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Castelul_Corvinilor,_municipiul_Hunedoara_04.JPG" },
     ro: {
       tagline: "18 grupuri de reconstituire istorică din țară și străinătate au adus Evul Mediu la Castelul Corvinilor.",
       description: [
@@ -3008,7 +3010,8 @@ window.SITE_NEWS = [
     area: "Orăștie",
     date: "2026-07-19",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/primaria-orastie.jpg"],
+    photoCredit: { author: "Roamata", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Primaria_orastie.JPG" },
     ro: {
       tagline: "Trei zile de concerte, tradiții locale și parc de distracții la Arena Park, în cea mai recentă ediție a sărbătorii orașului.",
       description: [
