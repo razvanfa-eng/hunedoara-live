@@ -9,6 +9,18 @@
   //   https://commons.wikimedia.org/wiki/File:Deva_Prefecture_2011-4.jpg
   // "contact" rămâne fără fundal foto (nu are un subiect vizual firesc) — folosește
   // un stil distinct (accent), vezi .tile--accent în css/style.css.
+  // Câteva repere emblematice ale județului, afișate cu poză mare pe prima
+  // pagină — sunt intrări deja existente în seturile de date (aceleași poze
+  // și credite foto ca pe paginile lor de detaliu, fără duplicare de conținut).
+  var HIGHLIGHTS = [
+    { dataKey: "SITE_TOWNS", id: "deva", page: "oras.html" },
+    { dataKey: "SITE_TOWNS", id: "hunedoara", page: "oras.html" },
+    { dataKey: "SITE_ACTIVITIES", id: "statiunea-straja", page: "activitate.html" },
+    { dataKey: "SITE_HERITAGE", id: "sarmizegetusa-regia", page: "mostenire-articol.html" },
+    { dataKey: "SITE_NATURE", id: "parcul-national-retezat", page: "natura-loc.html" },
+    { dataKey: "SITE_HERITAGE", id: "manastirea-prislop", page: "mostenire-articol.html" }
+  ];
+
   var SECTIONS = [
     { key: "destinatii", page: "destinatii.html", img: "images/cetatile-dacice-ansamblu.jpg" },
     { key: "orase", page: "orase.html", img: "images/hunedoara-corvin-castle.jpg" },
@@ -48,6 +60,24 @@
           '<span class="tile__mark">' + window.RL.esc(s.key.charAt(0).toUpperCase()) + "</span>" +
           '<span class="tile__title">' + window.RL.esc(window.I18N.t("sec." + s.key + ".name")) + "</span>" +
           '<span class="tile__desc">' + window.RL.esc(window.I18N.t("sec." + s.key + ".desc")) + "</span>" +
+        "</a>";
+      }).join("");
+    }
+
+    var highlightsEl = document.getElementById("home-highlights");
+    if (highlightsEl) {
+      highlightsEl.innerHTML = HIGHLIGHTS.map(function (h) {
+        var e = window.RL.entryById(h.dataKey, h.id);
+        if (!e) return "";
+        var l = window.RL.loc(e, lang);
+        var img = (e.images && e.images[0]) || "images/placeholder.svg";
+        return '<a class="card" href="' + h.page + "?id=" + encodeURIComponent(e.id) + '">' +
+          '<div class="card__media"><img src="' + window.RL.esc(img) + '" alt="" loading="lazy" onerror="RL.imgError(this)"></div>' +
+          '<div class="card__body">' +
+            '<span class="card__cat">' + window.RL.esc(window.RL.categoryLabel(e, lang)) + "</span>" +
+            '<h3 class="card__title">' + window.RL.esc(e.name) + "</h3>" +
+            '<p class="card__tagline">' + window.RL.esc(l.tagline || "") + "</p>" +
+          "</div>" +
         "</a>";
       }).join("");
     }
