@@ -607,7 +607,8 @@ window.SITE_NATURE = [
     coords: [45.69, 22.86],
     hasReviews: true,
     season: "vara",
-    images: ["images/placeholder.svg"],
+    images: ["images/lacul-cincis.jpg"],
+    photoCredit: { author: "Raydu18", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Lake_Cincis.jpg" },
     ro: {
       tagline: "Lac de acumulare lângă Hunedoara, cu plaje, pescuit și una dintre cele mai mari suprafețe de apă artificiale din Transilvania.",
       description: [
@@ -681,7 +682,8 @@ window.SITE_NATURE = [
     coords: [45.8569, 23.0110],
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/parcul-dendrologic-simeria.jpg"],
+    photoCredit: { author: "Roxana Stamate", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Lacul_din_parcul_dendrologic_Simeria.jpg" },
     ro: {
       tagline: "Cel mai vechi și mai mare parc dendrologic din România, cu peste 2.100 de specii de arbori și arbuști pe cca 70 de hectare.",
       description: [
@@ -1087,7 +1089,8 @@ window.SITE_ACTIVITIES = [
     area: "Deva",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/parcul-cetatii-deva.jpg"],
+    photoCredit: { author: "Carmen buzan", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Parcul_Cetatii_Deva.JPG" },
     ro: {
       tagline: "Parcul de la poalele Cetății Deva — punctul de plecare pentru potecile pietonale, telecabină și minibuzul electric spre platoul cetății.",
       description: [
@@ -1861,7 +1864,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parâng",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/varful-carja.jpg"],
+    photoCredit: { author: "Thalpha", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Parang_mountain_Carja_peak_1.jpg" },
     ro: {
       tagline: "Traseu mai scurt decât cel spre Parângul Mare, spre Vârful Cârja (2.407 m).",
       description: [
@@ -1893,7 +1897,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parâng",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/lacul-calcescu.jpg"],
+    photoCredit: { author: "Cioboata Andrei", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Lacul_C%C3%A2lcescu_-_panoramio.jpg" },
     ro: {
       tagline: "Traseu spre Lacul Câlcescu, cel mai mare lac glaciar din Munții Parâng.",
       description: [
@@ -1957,7 +1962,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parâng",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/lacul-rosiile.jpg"],
+    photoCredit: { author: "Cioboata Andrei", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Lacul_Rosiile_-_panoramio_(1).jpg" },
     ro: {
       tagline: "Traseu scurt de la Șaua Gruiul spre Lacul Roșiile și Refugiul Agățat.",
       description: [
@@ -2223,7 +2229,8 @@ window.SITE_HERITAGE = [
     area: "Deva",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/muzeul-civilizatiei-dacice-deva.jpg"],
+    photoCredit: { author: "Andrei kokelburg", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Deva_Magna_curia_(1).jpg" },
     ro: {
       tagline: "Palatul baroc Magna Curia, în centrul Devei, găzduiește colecțiile de istorie ale Muzeului Civilizației Dacice și Romane și un lapidariu cu peste o sută de piese arheologice.",
       description: [
@@ -2293,7 +2300,8 @@ window.SITE_HERITAGE = [
     area: "Orăștie",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/orastie-cetate.jpg"],
+    photoCredit: { author: "Roamata", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Cetatea_orastie.JPG" },
     ro: {
       tagline: "Fortificație săsească din secolul XII, redeschisă publicului în 2024 după trei ani de restaurare.",
       description: [
@@ -2328,7 +2336,8 @@ window.SITE_HERITAGE = [
     area: "Aurel Vlaicu",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/casa-memoriala-aurel-vlaicu.jpg"],
+    photoCredit: { author: "Nicu Farcaș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Casa_natal%C4%83_Aurel_Vlaicu.JPG" },
     ro: {
       tagline: "Casa natală și muzeul dedicat inventatorului și aviatorului Aurel Vlaicu, în satul de lângă Orăștie care îi poartă azi numele.",
       description: [
@@ -2433,7 +2442,8 @@ window.SITE_HERITAGE = [
     area: "Brad",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/biserica-criscior.jpg"],
+    photoCredit: { author: "Nicu Farcaș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Biserica_%E2%80%9EAdormirea_Maicii_Domnului%E2%80%9D_din_Cri%C8%99cior.JPG" },
     ro: {
       tagline: "Biserică din secolele XIV–XV, ctitorită de voievodul Bâlea, cu picturi murale bizantine unice în zonă.",
       description: [
@@ -2648,7 +2658,8 @@ window.SITE_TOWNS = [
     coords: [45.8514, 23.0139],
     hasReviews: false,
     relatedAreas: ["Simeria"],
-    images: ["images/placeholder.svg"],
+    images: ["images/simeria-panorama.jpg"],
+    photoCredit: { author: "Razvanus", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Gara_din_Simeria.JPG" },
     ro: {
       tagline: "Oraș născut din prima cale ferată a Transilvaniei, cu cel mai vechi și mai mare parc dendrologic din România.",
       description: [
@@ -2719,7 +2730,8 @@ window.SITE_TOWNS = [
     coords: [45.4530, 23.4160],
     hasReviews: false,
     relatedAreas: ["Petrila", "Parâng"],
-    images: ["images/placeholder.svg"],
+    images: ["images/petrila-panorama.jpg"],
+    photoCredit: { author: "Loraine", license: "CC BY 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrila_view.jpg" },
     ro: {
       tagline: "Cel mai vechi oraș minier al Văii Jiului, azi poartă spre Cheile Jiețului și fosta mină devenită muzeu.",
       description: [
@@ -2753,7 +2765,8 @@ window.SITE_TOWNS = [
     coords: [45.3833, 23.2667],
     hasReviews: false,
     relatedAreas: ["Vulcan", "Vâlcan"],
-    images: ["images/placeholder.svg"],
+    images: ["images/vulcan-panorama.jpg"],
+    photoCredit: { author: "Bogdan Muraru", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Prim%C4%83ria_Vulcan.jpg" },
     ro: {
       tagline: "A doua localitate ca mărime din Valea Jiului, poartă spre Pasul Vâlcan și Peștera Dracului.",
       description: [
