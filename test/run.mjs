@@ -110,7 +110,7 @@ function load(file, query = "") {
 /* -------- restul secțiunilor: randare fără erori + numărul corect de carduri -------- */
 {
   const pairs = [
-    ["turism-activ.html", 9], ["mostenire.html", 4], ["orase.html", 6], ["stiri.html", 2]
+    ["turism-activ.html", 39], ["mostenire.html", 4], ["orase.html", 6], ["stiri.html", 2]
   ];
   for (const [file, count] of pairs) {
     const w = await load(file);
@@ -147,7 +147,7 @@ function load(file, query = "") {
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
   const w = await load("credite.html");
-  ok(w.document.querySelectorAll(".credit-card").length === 38, "credite: 38 intrări (4+10+9+4+6+2+3, toate secțiunile)");
+  ok(w.document.querySelectorAll(".credit-card").length === 121, "credite: 121 intrări (6+14+39+17+9+3+33, toate secțiunile)");
 }
 
 /* -------- fișiere prezente -------- */

@@ -1115,6 +1115,874 @@ window.SITE_ACTIVITIES = [
       ]
     }
   }
+,
+  {
+    id: "traseu-pui-rausor",
+    name: "Traseul Pui – Baza Salvamont Râușor",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parcul Național Retezat",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu lung de acces dinspre Pui spre baza Salvamont Râușor, la poalele nordice ale Retezatului.",
+      description: [
+        "Traseul, marcat cu bandă roșie, leagă satul Pui de baza Salvamont Râușor, punct de plecare pentru mai multe trasee spre creasta principală a Retezatului.",
+        "Cu o durată de 15–16 ore, e parcurs de regulă în etape, nu într-o singură zi."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Pui" },
+        { label: "Marcaj", value: "Bandă roșie" },
+        { label: "Durată", value: "15–16 ore" }
+      ]
+    },
+    en: {
+      tagline: "Long access route from Pui to the Râușor Salvamont base, on the northern edge of the Retezat massif.",
+      description: [
+        "Marked with a red band, the trail connects the village of Pui to the Râușor Salvamont base, a starting point for several routes toward the main Retezat ridge.",
+        "At 15–16 hours, it is usually covered in stages rather than in a single day."
+      ],
+      facts: [
+        { label: "Starting point", value: "Pui" },
+        { label: "Marking", value: "Red band" },
+        { label: "Duration", value: "15–16 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-pietrele-varful-mare",
+    name: "Traseul Cabana Pietrele – Vârful Mare (Retezat)",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parcul Național Retezat",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Urcare de o zi de la Cabana Pietrele la Vârful Mare, unul dintre vârfurile secundare importante ale masivului.",
+      description: [
+        "Marcat cu triunghi roșu (cu tronsoane pe punct roșu), traseul pornește de la Cabana Pietrele (1.480 m) și urcă în circa 4 ore spre Vârful Mare.",
+        "Face parte din rețeaua de trasee care converg spre Cabana Pietrele, cel mai folosit punct de acces în partea nordică a Parcului Național Retezat."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Cabana Pietrele (1.480 m)" },
+        { label: "Marcaj", value: "Triunghi roșu / punct roșu" },
+        { label: "Durată", value: "cca. 4 ore" }
+      ]
+    },
+    en: {
+      tagline: "A day climb from Cabana Pietrele to Vârful Mare, one of the massif's important secondary peaks.",
+      description: [
+        "Marked with a red triangle (with red-dot sections), the trail starts at Cabana Pietrele (1,480 m) and climbs for about 4 hours to Vârful Mare.",
+        "It's part of the network of trails converging on Cabana Pietrele, the busiest access point in the northern part of Retezat National Park."
+      ],
+      facts: [
+        { label: "Starting point", value: "Cabana Pietrele (1,480 m)" },
+        { label: "Marking", value: "Red triangle / red dot" },
+        { label: "Duration", value: "about 4 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-pietrele-saua-pelegii",
+    name: "Traseul Cabana Pietrele – Șaua Pelegii",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parcul Național Retezat",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu de creastă de la Cabana Pietrele la Șaua Pelegii, punct de legătură spre mai multe văi ale Retezatului.",
+      description: [
+        "Marcat cu triunghi galben, traseul urcă de la Cabana Pietrele (1.480 m) la Șaua Pelegii în circa 3 ore.",
+        "Șaua Pelegii e un nod important de trasee, unde se întâlnesc rutele dinspre Lacul Galeș și dinspre Baleia."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Cabana Pietrele (1.480 m)" },
+        { label: "Marcaj", value: "Triunghi galben" },
+        { label: "Durată", value: "cca. 3 ore" }
+      ]
+    },
+    en: {
+      tagline: "A ridge route from Cabana Pietrele to Șaua Pelegii, a junction point for several Retezat valleys.",
+      description: [
+        "Marked with a yellow triangle, the trail climbs from Cabana Pietrele (1,480 m) to Șaua Pelegii in about 3 hours.",
+        "Șaua Pelegii is a major trail junction, where routes from Lacul Galeș and from Baleia meet."
+      ],
+      facts: [
+        { label: "Starting point", value: "Cabana Pietrele (1,480 m)" },
+        { label: "Marking", value: "Yellow triangle" },
+        { label: "Duration", value: "about 3 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-lacul-gales-saua-pelegii",
+    name: "Traseul Lacul Galeș – Șaua Pelegii",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parcul Național Retezat",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Legătură scurtă dinspre valea Râușorului (Lacul Galeș) spre Șaua Pelegii, în versantul nordic al Retezatului.",
+      description: [
+        "Marcat cu cruce roșie, traseul leagă Lacul Galeș, în valea Râușorului, de Șaua Pelegii, în circa 2 ore.",
+        "E un traseu scurt, folosit mai ales ca variantă de acces dinspre Baza Salvamont Râușor."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Lacul Galeș (valea Râușorului)" },
+        { label: "Marcaj", value: "Cruce roșie" },
+        { label: "Durată", value: "cca. 2 ore" }
+      ]
+    },
+    en: {
+      tagline: "A short link from the Râușor valley (Lacul Galeș) to Șaua Pelegii, on the northern slope of Retezat.",
+      description: [
+        "Marked with a red cross, the trail connects Lacul Galeș, in the Râușor valley, to Șaua Pelegii, in about 2 hours.",
+        "It's a short route, mostly used as an access variant from the Râușor Salvamont base."
+      ],
+      facts: [
+        { label: "Starting point", value: "Lacul Galeș (Râușor valley)" },
+        { label: "Marking", value: "Red cross" },
+        { label: "Duration", value: "about 2 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-cetatea-colt",
+    name: "Traseul Valea Nucșoara – Cetatea Colț",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Râu de Mori",
+    hasReviews: true,
+    images: ["images/cetatea-colt.jpg"],
+    photoCredit: { author: "Razvan Socol", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Col%C8%9B.JPG" },
+    ro: {
+      tagline: "Cel mai scurt și accesibil traseu marcat la marginea Retezatului: o oră până la ruinele Cetății Colț.",
+      description: [
+        "Marcat cu triunghi albastru, traseul urcă din valea Nucșoara până la Cetatea Colț, ruinele unei cetăți medievale ridicate de familia nobiliară română Cândea în secolul al XIV-lea, pe o stâncă ce domină satul Suseni.",
+        "Cu doar o oră de mers, e unul dintre puținele trasee din zona Retezatului potrivit și pentru familii cu copii."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Valea Nucșoara" },
+        { label: "Marcaj", value: "Triunghi albastru" },
+        { label: "Durată", value: "cca. 1 oră" }
+      ]
+    },
+    en: {
+      tagline: "The shortest, most accessible marked trail at the edge of Retezat: an hour up to the Colț Citadel ruins.",
+      description: [
+        "Marked with a blue triangle, the trail climbs from the Nucșoara valley to Cetatea Colț, the ruins of a medieval fortress built by the Romanian noble Cândea family in the 14th century, on a rock overlooking the village of Suseni.",
+        "At only an hour long, it's one of the few trails around Retezat also suitable for families with children."
+      ],
+      facts: [
+        { label: "Starting point", value: "Nucșoara valley" },
+        { label: "Marking", value: "Blue triangle" },
+        { label: "Duration", value: "about 1 hour" }
+      ]
+    }
+  },
+  {
+    id: "traseu-rau-de-mori-varful-retezat",
+    name: "Traseul Râu de Mori – Vârful Retezat",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parcul Național Retezat",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Ascensiune lungă dinspre sud, din satul Râu de Mori, direct spre Vârful Retezat.",
+      description: [
+        "Marcat cu triunghi roșu, traseul urcă din Râu de Mori spre Vârful Retezat în 7–8 ore, pe versantul sudic al masivului, mai puțin umblat decât rutele dinspre Cabana Pietrele.",
+        "E o variantă solicitantă pentru cei care vor să evite aglomerația din nordul parcului."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Râu de Mori" },
+        { label: "Marcaj", value: "Triunghi roșu" },
+        { label: "Durată", value: "7–8 ore" }
+      ]
+    },
+    en: {
+      tagline: "A long ascent from the south, starting in the village of Râu de Mori, straight up to Vârful Retezat.",
+      description: [
+        "Marked with a red triangle, the trail climbs from Râu de Mori to Vârful Retezat in 7–8 hours, on the massif's southern slope, quieter than the routes from Cabana Pietrele.",
+        "It's a demanding alternative for those wanting to avoid the crowds in the northern part of the park."
+      ],
+      facts: [
+        { label: "Starting point", value: "Râu de Mori" },
+        { label: "Marking", value: "Red triangle" },
+        { label: "Duration", value: "7–8 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-gura-zlata-lacul-bucura",
+    name: "Traseul Cabana Gura Zlata – Lacul Bucura",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parcul Național Retezat",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Ruta de acces dinspre vest, prin Cabana Gura Zlata, spre Lacul Bucura.",
+      description: [
+        "Marcat cu triunghi roșu, traseul pornește de la Cabana Gura Zlata (775 m), în partea vestică a masivului, și ajunge la Lacul Bucura în circa 8 ore.",
+        "E cel mai lung dintre traseele principale de acces spre Bucura, dar traversează o zonă mai puțin circulată a parcului."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Cabana Gura Zlata (775 m)" },
+        { label: "Marcaj", value: "Triunghi roșu" },
+        { label: "Durată", value: "cca. 8 ore" }
+      ]
+    },
+    en: {
+      tagline: "The western access route, via Cabana Gura Zlata, up to Bucura Lake.",
+      description: [
+        "Marked with a red triangle, the trail starts at Cabana Gura Zlata (775 m), on the western side of the massif, and reaches Bucura Lake in about 8 hours.",
+        "It's the longest of the main access routes to Bucura, but crosses a quieter part of the park."
+      ],
+      facts: [
+        { label: "Starting point", value: "Cabana Gura Zlata (775 m)" },
+        { label: "Marking", value: "Red triangle" },
+        { label: "Duration", value: "about 8 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-lacul-bucura-circuit",
+    name: "Traseul circular al Lacului Bucura",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parcul Național Retezat",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Tur circular de o zi în jurul zonei Lacului Bucura, cel mai mare lac glaciar din România.",
+      description: [
+        "Marcat cu punct roșu, circuitul de 11 ore ocolește zona lacurilor din jurul Bucurei, cu priveliști spre principalele vârfuri din jur.",
+        "E potrivit celor care înnoptează în zonă (cort sau refugiu) și vor să exploreze bazinul glaciar fără să se limiteze la un singur vârf."
+      ],
+      facts: [
+        { label: "Zonă", value: "Lacul Bucura" },
+        { label: "Marcaj", value: "Punct roșu" },
+        { label: "Durată", value: "cca. 11 ore" }
+      ]
+    },
+    en: {
+      tagline: "A day-long loop around the Bucura Lake area, Romania's largest glacial lake.",
+      description: [
+        "Marked with a red dot, the 11-hour circuit loops around the lake basin near Bucura, with views of the surrounding main peaks.",
+        "It suits those camping or staying in a refuge nearby who want to explore the glacial basin rather than just reach a single peak."
+      ],
+      facts: [
+        { label: "Area", value: "Bucura Lake" },
+        { label: "Marking", value: "Red dot" },
+        { label: "Duration", value: "about 11 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-baru-varful-tulisa",
+    name: "Traseul Baru – Vârful Tulișa",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Baru Mare",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu din partea sudică a Retezatului, dinspre Baru, spre Vârful Tulișa.",
+      description: [
+        "Marcat cu cruce galbenă, traseul pornește din Baru și urcă spre Vârful Tulișa în 4–5 ore.",
+        "E o rută mai puțin cunoscută decât cele dinspre Cabana Pietrele, potrivită celor care pornesc din zona Hațeg–Baru Mare."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Baru" },
+        { label: "Marcaj", value: "Cruce galbenă" },
+        { label: "Durată", value: "4–5 ore" }
+      ]
+    },
+    en: {
+      tagline: "A trail from the southern side of Retezat, from Baru up to Vârful Tulișa.",
+      description: [
+        "Marked with a yellow cross, the trail starts in Baru and climbs to Vârful Tulișa in 4–5 hours.",
+        "It's a lesser-known route than those from Cabana Pietrele, suited to those starting from the Hațeg–Baru Mare area."
+      ],
+      facts: [
+        { label: "Starting point", value: "Baru" },
+        { label: "Marking", value: "Yellow cross" },
+        { label: "Duration", value: "4–5 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-cheile-butii-cabana-buta",
+    name: "Traseul Cheile Buții – Cabana Buta",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Vâlcan",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu lung prin Munții Vâlcan, de la Cheile Buții la Cabana Buta, peste vârfurile Pleșa și Piule.",
+      description: [
+        "Marcat cu bandă galbenă, traseul pornește de la complexul turistic Cheile Buții și trece prin Dâlma Mare, Vârful Pleșa și Vârful Piule înainte de a coborî la Cabana Buta, prin Șaua Scorota.",
+        "Cu o durată de 8–9 ore, leagă practic zona Cheilor Buții de rețeaua de trasee din Retezat."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Complex turistic Cheile Buții" },
+        { label: "Marcaj", value: "Bandă galbenă" },
+        { label: "Durată", value: "8–9 ore" }
+      ]
+    },
+    en: {
+      tagline: "A long route through the Vâlcan Mountains, from Cheile Buții to Cabana Buta, over Pleșa and Piule peaks.",
+      description: [
+        "Marked with a yellow band, the trail starts at the Cheile Buții tourist complex and passes Dâlma Mare, Vârful Pleșa and Vârful Piule before descending to Cabana Buta via Șaua Scorota.",
+        "At 8–9 hours, it effectively links the Buții Gorge area to the Retezat trail network."
+      ],
+      facts: [
+        { label: "Starting point", value: "Cheile Buții tourist complex" },
+        { label: "Marking", value: "Yellow band" },
+        { label: "Duration", value: "8–9 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-campusel-saua-scorota",
+    name: "Traseul Câmpușel – Șaua Scorota – Cabana Buta",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Vâlcan",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Variantă mai scurtă de acces la Cabana Buta, dinspre Câmpușel, prin Șaua Scorota.",
+      description: [
+        "Marcat cu punct galben, traseul urcă din Câmpușel prin Scocul Scorotei și Stâna Scorota până la Șaua Scorota, apoi la Cabana Buta, în 4–5 ore.",
+        "E alternativa mai rapidă la traseul dinspre Cheile Buții, pentru cei care pornesc direct din Câmpușel."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Câmpușel" },
+        { label: "Marcaj", value: "Punct galben" },
+        { label: "Durată", value: "4–5 ore" }
+      ]
+    },
+    en: {
+      tagline: "A shorter access route to Cabana Buta, from Câmpușel via Șaua Scorota.",
+      description: [
+        "Marked with a yellow dot, the trail climbs from Câmpușel through Scocul Scorotei and Stâna Scorota up to Șaua Scorota, then on to Cabana Buta, in 4–5 hours.",
+        "It's the faster alternative to the Cheile Buții route, for those starting directly from Câmpușel."
+      ],
+      facts: [
+        { label: "Starting point", value: "Câmpușel" },
+        { label: "Marking", value: "Yellow dot" },
+        { label: "Duration", value: "4–5 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-culmea-branu-varful-gugu",
+    name: "Traseul Culmea Branu – Vârful Gugu – Lacul lui Iovan",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Godeanu",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traversare lungă și solicitantă prin Munții Godeanu, cu un tronson parțial nemarcat.",
+      description: [
+        "Marcat cu cruce roșie, traseul pornește de la Lacul Gura Apei, urcă pe Culmea Branu spre Vârful Gugu și Vârful Moraru, apoi coboară prin Șaua Mâțului spre Lacul lui Iovan, în 12–13 ore.",
+        "Atenție: potrivit Salvamont Hunedoara, tronsonul dintre Vârful Gugu și Vârful Bulzului este parțial nemarcat — recomandat doar cu hartă/GPS și experiență montană."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Lacul Gura Apei" },
+        { label: "Marcaj", value: "Cruce roșie (parțial nemarcat între Vf. Gugu și Vf. Bulzului)" },
+        { label: "Durată", value: "12–13 ore" }
+      ]
+    },
+    en: {
+      tagline: "A long, demanding traverse through the Godeanu Mountains, with a partly unmarked section.",
+      description: [
+        "Marked with a red cross, the trail starts at Lacul Gura Apei, climbs the Branu ridge to Vârful Gugu and Vârful Moraru, then descends via Șaua Mâțului to Lacul lui Iovan, in 12–13 hours.",
+        "Caution: according to Salvamont Hunedoara, the stretch between Vârful Gugu and Vârful Bulzului is partly unmarked — recommended only with a map/GPS and mountain experience."
+      ],
+      facts: [
+        { label: "Starting point", value: "Lacul Gura Apei" },
+        { label: "Marking", value: "Red cross (partly unmarked between Vf. Gugu and Vf. Bulzului)" },
+        { label: "Duration", value: "12–13 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-creasta-valcan-straja-oslea",
+    name: "Traseul de creastă Vâlcan – Straja – Oslea",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Vâlcan",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traversarea de creastă a Munților Vâlcan, pe la Vârful Straja, cel mai lung traseu marcat din zonă.",
+      description: [
+        "Marcat cu bandă roșie, traseul urmărește creasta principală a Munților Vâlcan de la Gambrinus (Lupeni), peste vârfurile Drăgoiu, Straja, Mutu, Muncel, Siglăul Mic și Mare, Arcanu și Nedeița, până la Coada Oslei și Câmpușel.",
+        "Cu 24–25 de ore de mers, e parcurs de regulă în mai multe etape; trece chiar pe lângă Vârful Straja, cunoscut mai ales pentru stațiunea de schi de pe versantul opus."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Gambrinus (Lupeni)" },
+        { label: "Marcaj", value: "Bandă roșie" },
+        { label: "Durată", value: "24–25 ore (mai multe etape)" }
+      ]
+    },
+    en: {
+      tagline: "The Vâlcan Mountains ridge traverse, past Vârful Straja — the longest marked trail in the area.",
+      description: [
+        "Marked with a red band, the trail follows the main ridge of the Vâlcan Mountains from Gambrinus (Lupeni), over Drăgoiu, Straja, Mutu, Muncel, Siglăul Mic and Mare, Arcanu and Nedeița peaks, to Coada Oslei and Câmpușel.",
+        "At 24–25 hours, it's usually covered in several stages; it passes right by Vârful Straja, better known for the ski resort on its opposite slope."
+      ],
+      facts: [
+        { label: "Starting point", value: "Gambrinus (Lupeni)" },
+        { label: "Marking", value: "Red band" },
+        { label: "Duration", value: "24–25 hours (multiple stages)" }
+      ]
+    }
+  },
+  {
+    id: "traseu-hunedoara-lacul-cincis-cheile-cernei",
+    name: "Traseul Hunedoara – Lacul Cinciș – Cheile Cernei",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Poiana Ruscă",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu de mai multe zile prin Munții Poiana Ruscă, pornind chiar din centrul Hunedoarei.",
+      description: [
+        "Marcat cu bandă și triunghi albastru, traseul pornește de la Centrul de Informare Turistică din Hunedoara, trece pe la Castelul Corvinilor și Lacul Cinciș, apoi urcă prin Cheile Cernei în Munții Poiana Ruscă.",
+        "Cu 18–20 de ore de mers (2–3 zile), e cel mai lung dintre cele trei trasee marcate care pornesc din Hunedoara spre Poiana Ruscă."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Centrul de Informare Turistică Hunedoara" },
+        { label: "Marcaj", value: "Bandă și triunghi albastru" },
+        { label: "Durată", value: "18–20 ore (2–3 zile)" }
+      ]
+    },
+    en: {
+      tagline: "A multi-day route through the Poiana Ruscă Mountains, starting right in downtown Hunedoara.",
+      description: [
+        "Marked with a blue band and triangle, the trail starts at the Hunedoara Tourist Information Centre, passes Corvin Castle and Lacul Cinciș, then climbs through the Cerna Gorge into the Poiana Ruscă Mountains.",
+        "At 18–20 hours (2–3 days), it's the longest of the three marked trails starting in Hunedoara toward Poiana Ruscă."
+      ],
+      facts: [
+        { label: "Starting point", value: "Hunedoara Tourist Information Centre" },
+        { label: "Marking", value: "Blue band and triangle" },
+        { label: "Duration", value: "18–20 hours (2–3 days)" }
+      ]
+    }
+  },
+  {
+    id: "traseu-hunedoara-varful-rusca",
+    name: "Traseul Hunedoara – Lacul Cinciș – Vârful Rusca",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Poiana Ruscă",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu marcat din Hunedoara spre Vârful Rusca, cel mai înalt punct al masivului cu același nume.",
+      description: [
+        "Marcat cu bandă roșie, traseul pornește tot din centrul Hunedoarei, trece pe la Castelul Corvinilor și Lacul Cinciș, apoi urcă spre Vârful Rusca, în 14–16 ore.",
+        "E varianta de mijloc ca durată dintre cele trei trasee marcate spre Poiana Ruscă pornite din Hunedoara."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Centrul de Informare Turistică Hunedoara" },
+        { label: "Marcaj", value: "Bandă roșie" },
+        { label: "Durată", value: "14–16 ore" }
+      ]
+    },
+    en: {
+      tagline: "A marked trail from Hunedoara up to Vârful Rusca, the highest point of the massif bearing its name.",
+      description: [
+        "Marked with a red band, the trail also starts in downtown Hunedoara, passes Corvin Castle and Lacul Cinciș, then climbs to Vârful Rusca in 14–16 hours.",
+        "It's the medium-length option among the three marked trails to Poiana Ruscă starting from Hunedoara."
+      ],
+      facts: [
+        { label: "Starting point", value: "Hunedoara Tourist Information Centre" },
+        { label: "Marking", value: "Red band" },
+        { label: "Duration", value: "14–16 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-hunedoara-dobra",
+    name: "Traseul Hunedoara – Lacul Cinciș – Dobra",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Poiana Ruscă",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cel mai lung traseu marcat din Poiana Ruscă pornit din Hunedoara, cu ieșire la Dobra.",
+      description: [
+        "Marcat cu bandă galbenă, traseul pornește din centrul Hunedoarei, trece pe la Castelul Corvinilor și Lacul Cinciș, traversează Munții Poiana Ruscă și coboară la Dobra, în 22–24 ore.",
+        "E o traversare completă a masivului, parcursă în mai multe etape."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Centrul de Informare Turistică Hunedoara" },
+        { label: "Marcaj", value: "Bandă galbenă" },
+        { label: "Durată", value: "22–24 ore (mai multe etape)" }
+      ]
+    },
+    en: {
+      tagline: "The longest marked trail through Poiana Ruscă starting from Hunedoara, ending at Dobra.",
+      description: [
+        "Marked with a yellow band, the trail starts in downtown Hunedoara, passes Corvin Castle and Lacul Cinciș, crosses the Poiana Ruscă Mountains and descends to Dobra, in 22–24 hours.",
+        "It's a full traverse of the massif, covered in several stages."
+      ],
+      facts: [
+        { label: "Starting point", value: "Hunedoara Tourist Information Centre" },
+        { label: "Marking", value: "Yellow band" },
+        { label: "Duration", value: "22–24 hours (multiple stages)" }
+      ]
+    }
+  },
+  {
+    id: "traseu-ohaba-ponor-cioclovina",
+    name: "Traseul Ohaba Ponor – Peștera Ponorici-Cioclovina",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Șureanu",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu prin Cheile Șura Mare spre sistemul carstic Ponorici-Cioclovina, cea mai lungă peșteră din Munții Șureanu.",
+      description: [
+        "Marcat cu bandă roșie, traseul pornește din Ohaba Ponor, trece prin Cheile Șura Mare pe la Peștera Ponorici și Peștera Cioclovina, apoi ajunge la Luncani și Boșorod, în 7–8 ore.",
+        "Peștera Cioclovina e cunoscută pentru descoperirea, în 1941, a unui craniu uman fosil de peste 29.000 de ani."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Ohaba Ponor" },
+        { label: "Marcaj", value: "Bandă roșie" },
+        { label: "Durată", value: "7–8 ore" }
+      ]
+    },
+    en: {
+      tagline: "A trail through the Șura Mare Gorge to the Ponorici-Cioclovina karst system, the longest cave in the Șureanu Mountains.",
+      description: [
+        "Marked with a red band, the trail starts in Ohaba Ponor, passes through the Șura Mare Gorge by the Ponorici and Cioclovina caves, then reaches Luncani and Boșorod, in 7–8 hours.",
+        "Cioclovina Cave is known for the 1941 discovery of a fossil human skull over 29,000 years old."
+      ],
+      facts: [
+        { label: "Starting point", value: "Ohaba Ponor" },
+        { label: "Marking", value: "Red band" },
+        { label: "Duration", value: "7–8 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-baru-varful-lola-porumbelu",
+    name: "Traseul Baru – Vârful Lola – Vârful Porumbelu Mare",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Șureanu",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu de creastă în Munții Șureanu, pe Valea Streiului, peste vârfurile Lola și Porumbelu Mare.",
+      description: [
+        "Marcat cu bandă roșie, traseul pornește din Baru, urcă pe Valea Streiului și trece pe la Vârful Lola și Vârful Porumbelu Mare, în 7–8 ore.",
+        "Oferă acces spre partea sud-vestică a Munților Șureanu, mai puțin circulată decât zona cetăților dacice."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Baru" },
+        { label: "Marcaj", value: "Bandă roșie" },
+        { label: "Durată", value: "7–8 ore" }
+      ]
+    },
+    en: {
+      tagline: "A ridge trail in the Șureanu Mountains, along the Strei valley, over Vârful Lola and Vârful Porumbelu Mare.",
+      description: [
+        "Marked with a red band, the trail starts in Baru, climbs the Strei valley and passes Vârful Lola and Vârful Porumbelu Mare, in 7–8 hours.",
+        "It gives access to the south-western part of the Șureanu Mountains, quieter than the Dacian fortress area."
+      ],
+      facts: [
+        { label: "Starting point", value: "Baru" },
+        { label: "Marking", value: "Red band" },
+        { label: "Duration", value: "7–8 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-costesti-sarmizegetusa-regia-varful-godeanu",
+    name: "Traseul Costești – Sarmizegetusa Regia – Vârful Godeanu (Șureanu)",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Șureanu",
+    hasReviews: true,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseul marcat care leagă satul Costești de capitala regatului dac, Sarmizegetusa Regia, și de Vârful Godeanu.",
+      description: [
+        "Marcat cu cruce roșie, traseul urcă din Costești prin Valea Grădiștei și Dealul Grădiștei până la Cetatea Sarmizegetusa Regia, apoi continuă spre Vârful Muncel și Vârful Godeanu, în 10–11 ore.",
+        "Atenție: acest Vârf Godeanu se află în Munții Șureanu, lângă cetățile dacice — nu trebuie confundat cu Munții Godeanu, masivul de lângă Retezat."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Costești" },
+        { label: "Marcaj", value: "Cruce roșie" },
+        { label: "Durată", value: "10–11 ore" }
+      ]
+    },
+    en: {
+      tagline: "The marked trail linking the village of Costești to the Dacian capital, Sarmizegetusa Regia, and to Vârful Godeanu.",
+      description: [
+        "Marked with a red cross, the trail climbs from Costești through the Grădiștei valley and hill up to Sarmizegetusa Regia fortress, then continues to Vârful Muncel and Vârful Godeanu, in 10–11 hours.",
+        "Note: this Vârful Godeanu is in the Șureanu Mountains, near the Dacian fortresses — not to be confused with the Godeanu Mountains near Retezat."
+      ],
+      facts: [
+        { label: "Starting point", value: "Costești" },
+        { label: "Marking", value: "Red cross" },
+        { label: "Duration", value: "10–11 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-costesti-cetatea-blidaru-varful-godeanu",
+    name: "Traseul Costești – Cetatea Blidaru – Vârful Godeanu",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Șureanu",
+    hasReviews: true,
+    images: ["images/cetatea-blidaru.jpg"],
+    photoCredit: { author: "Oroles", license: "Domeniu public", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Blidaru.JPG" },
+    ro: {
+      tagline: "Traseu lung prin zona cetăților dacice, de la Costești, pe la Cetatea Blidaru, până pe Vârful Godeanu.",
+      description: [
+        "Marcat cu bandă albastră, traseul pornește din Costești, trece pe la Cetatea Blidaru — a doua ca mărime dintre fortificațiile dacice din zonă, ridicată pe un vârf stâncos — apoi continuă prin Leurdana, Târsa, Poiana Omului, Vârful Rudii și Culmea Meleia până la Vârful Godeanu.",
+        "Cu 14–15 ore de mers, e cel mai lung dintre traseele care pornesc din Costești."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Costești" },
+        { label: "Marcaj", value: "Bandă albastră" },
+        { label: "Durată", value: "14–15 ore" }
+      ]
+    },
+    en: {
+      tagline: "A long trail through the Dacian fortress area, from Costești, past Cetatea Blidaru, up to Vârful Godeanu.",
+      description: [
+        "Marked with a blue band, the trail starts in Costești, passes Cetatea Blidaru — the second-largest of the Dacian fortifications in the area, built atop a rocky peak — then continues through Leurdana, Târsa, Poiana Omului, Vârful Rudii and the Meleia ridge up to Vârful Godeanu.",
+        "At 14–15 hours, it's the longest of the trails starting from Costești."
+      ],
+      facts: [
+        { label: "Starting point", value: "Costești" },
+        { label: "Marking", value: "Blue band" },
+        { label: "Duration", value: "14–15 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-cetatea-fetele-albe",
+    name: "Traseul Podul Gerosu – Cetatea Fețele Albe",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Șureanu",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cel mai scurt traseu marcat din zona cetăților dacice, spre ruinele mai puțin vizitate de la Fețele Albe.",
+      description: [
+        "Marcat cu triunghi albastru, traseul urcă din zona Podul Gerosu, peste Dealul Muncelului, până la Cetatea Fețele Albe, apoi coboară pe Valea Albă, în doar 3 ore.",
+        "Fețele Albe e una dintre fortificațiile dacice mai puțin cunoscute din sistemul din jurul Sarmizegetusei Regia."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Podul Gerosu" },
+        { label: "Marcaj", value: "Triunghi albastru" },
+        { label: "Durată", value: "cca. 3 ore" }
+      ]
+    },
+    en: {
+      tagline: "The shortest marked trail in the Dacian fortress area, to the lesser-visited Fețele Albe ruins.",
+      description: [
+        "Marked with a blue triangle, the trail climbs from the Podul Gerosu area, over Dealul Muncelului, up to Cetatea Fețele Albe, then descends via Valea Albă, in just 3 hours.",
+        "Fețele Albe is one of the lesser-known Dacian fortifications in the system around Sarmizegetusa Regia."
+      ],
+      facts: [
+        { label: "Starting point", value: "Podul Gerosu" },
+        { label: "Marking", value: "Blue triangle" },
+        { label: "Duration", value: "about 3 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-gradistea-cetatea-piatra-rosie-cioclovina",
+    name: "Traseul Grădiștea de Munte – Cetatea Piatra Roșie – Peștera Cioclovina",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Șureanu",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu care leagă Sarmizegetusa Regia de Cetatea Piatra Roșie și de Peștera Cioclovina.",
+      description: [
+        "Marcat cu triunghi roșu, traseul pornește din Grădiștea de Munte, trece prin Prihodiște și Poiana Omului până la Cetatea Piatra Roșie, apoi coboară pe Valea Roșia spre Cioclovina, în 7–8 ore.",
+        "Piatra Roșie e a treia mare fortificație dacică din zonă, alături de Sarmizegetusa Regia și Blidaru."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Grădiștea de Munte" },
+        { label: "Marcaj", value: "Triunghi roșu" },
+        { label: "Durată", value: "7–8 ore" }
+      ]
+    },
+    en: {
+      tagline: "A trail linking Sarmizegetusa Regia to Cetatea Piatra Roșie and to Cioclovina Cave.",
+      description: [
+        "Marked with a red triangle, the trail starts in Grădiștea de Munte, passes through Prihodiște and Poiana Omului to Cetatea Piatra Roșie, then descends via Valea Roșia toward Cioclovina, in 7–8 hours.",
+        "Piatra Roșie is the third major Dacian fortification in the area, alongside Sarmizegetusa Regia and Blidaru."
+      ],
+      facts: [
+        { label: "Starting point", value: "Grădiștea de Munte" },
+        { label: "Marking", value: "Red triangle" },
+        { label: "Duration", value: "7–8 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-telescaun-parangul-mare",
+    name: "Traseul Telescaun Parâng – Vârful Parângul Mare",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parâng",
+    hasReviews: true,
+    images: ["images/varful-parangul-mare.jpg"],
+    photoCredit: { author: "Cioboata Andrei", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Varful_Parangul_Mare_(2519m)_-_panoramio.jpg" },
+    ro: {
+      tagline: "Cel mai direct traseu spre Vârful Parângul Mare (2.519 m), al doilea cel mai înalt vârf din Carpații Meridionali.",
+      description: [
+        "Marcat cu bandă roșie, traseul pornește de la capătul telescaunului din stațiunea Parâng (1.685 m) și urcă spre Vârful Parângul Mare în 4–5 ore.",
+        "Telescaunul (accesibil în circa 1 oră și jumătate de la baza pârtiei) scurtează considerabil apropierea, fiind cea mai populară cale de a ajunge pe creasta Parângului dinspre Petroșani."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Capătul telescaunului, stațiunea Parâng (1.685 m)" },
+        { label: "Marcaj", value: "Bandă roșie" },
+        { label: "Durată", value: "4–5 ore" }
+      ]
+    },
+    en: {
+      tagline: "The most direct trail to Vârful Parângul Mare (2,519 m), the second-highest peak in the Southern Carpathians.",
+      description: [
+        "Marked with a red band, the trail starts at the chairlift landing in the Parâng resort (1,685 m) and climbs to Vârful Parângul Mare in 4–5 hours.",
+        "The chairlift (about 1.5 hours from the base) considerably shortens the approach, making this the most popular way to reach the Parâng ridge from Petroșani."
+      ],
+      facts: [
+        { label: "Starting point", value: "Chairlift landing, Parâng resort (1,685 m)" },
+        { label: "Marking", value: "Red band" },
+        { label: "Duration", value: "4–5 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-telescaun-varful-carja",
+    name: "Traseul Telescaun Parâng – Vârful Cârja",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parâng",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu mai scurt decât cel spre Parângul Mare, spre Vârful Cârja (2.407 m).",
+      description: [
+        "Marcat cu bandă roșie, traseul pornește tot de la capătul telescaunului din stațiunea Parâng (1.685 m) și urcă spre Vârful Cârja în circa 2 ore și jumătate.",
+        "E o variantă mai accesibilă pentru cei care vor o ieșire pe creastă fără să meargă până pe Parângul Mare."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Capătul telescaunului, stațiunea Parâng (1.685 m)" },
+        { label: "Marcaj", value: "Bandă roșie" },
+        { label: "Durată", value: "cca. 2 ore 30 min" }
+      ]
+    },
+    en: {
+      tagline: "A shorter trail than the one to Parângul Mare, up to Vârful Cârja (2,407 m).",
+      description: [
+        "Marked with a red band, the trail also starts at the chairlift landing in the Parâng resort (1,685 m) and climbs to Vârful Cârja in about 2.5 hours.",
+        "It's a more accessible option for those wanting a ridge outing without going all the way to Parângul Mare."
+      ],
+      facts: [
+        { label: "Starting point", value: "Chairlift landing, Parâng resort (1,685 m)" },
+        { label: "Marking", value: "Red band" },
+        { label: "Duration", value: "about 2h30" }
+      ]
+    }
+  },
+  {
+    id: "traseu-lacul-calcescu",
+    name: "Traseul spre Lacul Câlcescu (Parâng)",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parâng",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu spre Lacul Câlcescu, cel mai mare lac glaciar din Munții Parâng.",
+      description: [
+        "Marcat cu bandă și cruce roșie, traseul pornește de la capătul telescaunului din stațiunea Parâng și ajunge la Lacul Câlcescu în 6–7 ore.",
+        "E cel mai lung dintre traseele obișnuite dinspre stațiunea Parâng, potrivit celor care vor să vadă lacul fără să continue spre Obârșia Lotrului."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Capătul telescaunului, stațiunea Parâng" },
+        { label: "Marcaj", value: "Bandă și cruce roșie" },
+        { label: "Durată", value: "6–7 ore" }
+      ]
+    },
+    en: {
+      tagline: "A trail to Lacul Câlcescu, the largest glacial lake in the Parâng Mountains.",
+      description: [
+        "Marked with a red band and cross, the trail starts at the chairlift landing in the Parâng resort and reaches Lacul Câlcescu in 6–7 hours.",
+        "It's the longest of the usual routes from the Parâng resort, suited to those who want to see the lake without continuing on to Obârșia Lotrului."
+      ],
+      facts: [
+        { label: "Starting point", value: "Chairlift landing, Parâng resort" },
+        { label: "Marking", value: "Red band and cross" },
+        { label: "Duration", value: "6–7 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-lacurile-verzi-parang",
+    name: "Traseul spre Lacurile Verzi (Parâng)",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parâng",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu dinspre Cabana Groapa Seacă spre Lacurile Verzi, în versantul hunedorean al Parângului.",
+      description: [
+        "Marcat cu cruce galbenă, traseul pleacă de la Cabana Groapa Seacă și ajunge la Lacurile Verzi în 3–4 ore.",
+        "Cabana Groapa Seacă se atinge, la rândul ei, printr-un traseu marcat cu bandă și punct roșu de la Șaua Gruiul, punct de legătură cu traseele dinspre telescaun."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Cabana Groapa Seacă" },
+        { label: "Marcaj", value: "Cruce galbenă" },
+        { label: "Durată", value: "3–4 ore" }
+      ]
+    },
+    en: {
+      tagline: "A trail from Cabana Groapa Seacă to Lacurile Verzi, on the Hunedoara side of the Parâng massif.",
+      description: [
+        "Marked with a yellow cross, the trail leaves from Cabana Groapa Seacă and reaches Lacurile Verzi in 3–4 hours.",
+        "Cabana Groapa Seacă is itself reached via a trail marked with a red band and dot from Șaua Gruiul, a junction with the routes from the chairlift."
+      ],
+      facts: [
+        { label: "Starting point", value: "Cabana Groapa Seacă" },
+        { label: "Marking", value: "Yellow cross" },
+        { label: "Duration", value: "3–4 hours" }
+      ]
+    }
+  },
+  {
+    id: "traseu-refugiul-agatat-lacul-rosiile",
+    name: "Traseul spre Lacul Roșiile și Refugiul Agățat (Parâng)",
+    category: { ro: "Drumeție montană", en: "Mountain hiking" },
+    area: "Parâng",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Traseu scurt de la Șaua Gruiul spre Lacul Roșiile și Refugiul Agățat.",
+      description: [
+        "Marcat cu punct roșu, traseul leagă Șaua Gruiul de Lacul Roșiile și Refugiul Agățat în doar 1–1,5 ore.",
+        "E una dintre cele mai scurte variante de ieșire pe creasta Parângului dinspre zona telescaunului."
+      ],
+      facts: [
+        { label: "Punct de plecare", value: "Șaua Gruiul" },
+        { label: "Marcaj", value: "Punct roșu" },
+        { label: "Durată", value: "1–1,5 ore" }
+      ]
+    },
+    en: {
+      tagline: "A short trail from Șaua Gruiul to Lacul Roșiile and Refugiul Agățat.",
+      description: [
+        "Marked with a red dot, the trail links Șaua Gruiul to Lacul Roșiile and Refugiul Agățat in just 1–1.5 hours.",
+        "It's one of the shortest ridge outings from the chairlift area."
+      ],
+      facts: [
+        { label: "Starting point", value: "Șaua Gruiul" },
+        { label: "Marking", value: "Red dot" },
+        { label: "Duration", value: "1–1.5 hours" }
+      ]
+    }
+  }
 ];
 
 window.SITE_HERITAGE = [
