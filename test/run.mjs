@@ -98,7 +98,7 @@ function load(file, query = "") {
 /* -------- afaceri.html + afacere.html (recenzii, altă secțiune) -------- */
 {
   const w1 = await load("afaceri.html");
-  ok(w1.document.querySelectorAll("#grid .card").length === 3, "afaceri: 3 carduri");
+  ok(w1.document.querySelectorAll("#grid .card").length === 33, "afaceri: 33 carduri");
 
   const w2 = await load("afacere.html", "?id=exemplu-restaurant-local");
   const d2 = w2.document;

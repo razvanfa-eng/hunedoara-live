@@ -2789,5 +2789,375 @@ window.SITE_BUSINESSES = [
         { label: "Contact", value: "phone +40 722 538 551 · office@pensiunearetezat.com · pensiunearetezat.com" }
       ]
     }
+  },
+  {
+    id: "hotel-rusu-parang",
+    name: "Hotel Rusu",
+    category: { ro: "Hotel & restaurant", en: "Hotel & restaurant" },
+    area: "Parâng, Petroșani",
+    coords: [45.390162, 23.4377853],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Hotel de altitudine (1.168 m) în stațiunea Parâng, la cca. 10 km de Petroșani.",
+      description: [
+        "Hotel Rusu este situat direct în masivul Parâng, la altitudinea de 1.168 m, la aproximativ 10 km de municipiul Petroșani. Oferă acces facil la pârtiile de schi din zonă și dispune de o zonă de wellness cu ciubăr și saună.",
+        "Poziția izolată, în mijlocul pădurii de munte, îl recomandă atât pentru sejururi de schi iarna, cât și pentru drumeții vara."
+      ],
+      facts: [
+        { label: "Altitudine", value: "1.168 m, Masivul Parâng" },
+        { label: "Contact", value: "tel. 0742 087 221 · info@hotelrusu.ro · hotelrusu.ro" }
+      ]
+    },
+    en: {
+      tagline: "A mountain hotel at 1,168 m altitude in the Parâng resort, about 10 km from Petroșani.",
+      description: [
+        "Hotel Rusu is located directly in the Parâng massif, at an altitude of 1,168 m, about 10 km from the city of Petroșani. It offers easy access to the area's ski slopes and has a wellness area with a hot tub and sauna.",
+        "Its secluded position, in the middle of the mountain forest, makes it suitable both for winter ski stays and summer hikes."
+      ],
+      facts: [
+        { label: "Altitude", value: "1,168 m, Parâng massif" },
+        { label: "Contact", value: "phone +40 742 087 221 · info@hotelrusu.ro · hotelrusu.ro" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-bujor-de-munte-petrosani",
+    name: "Pensiunea Bujor de Munte",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Parâng, Petroșani",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune 3 stele la poalele Parângului, cu 17 camere și 2 apartamente.",
+      description: [
+        "Pensiunea Bujor de Munte este situată pe Strada Bujorului, în stațiunea Parâng, la aproximativ 12 km de Petroșani. Oferă 17 camere duble și 2 apartamente, toate cu internet, minibar și baie proprie.",
+        "Dispune de restaurant-bar pentru 45 de persoane și sală de conferințe pentru 50 de persoane, fiind potrivită atât pentru sejururi turistice, cât și pentru evenimente de grup."
+      ],
+      facts: [
+        { label: "Locație", value: "Strada Bujorului, stațiunea Parâng, cca. 12 km de Petroșani" },
+        { label: "Camere", value: "17 camere duble + 2 apartamente" },
+        { label: "Contact", value: "tel. 0254 549 060 / 0735 553 140 · rezervari@bujordemunte.ro · bujordemunte.ro" }
+      ]
+    },
+    en: {
+      tagline: "A 3-star guesthouse at the foot of the Parâng mountains, with 17 rooms and 2 apartments.",
+      description: [
+        "Pensiunea Bujor de Munte is located on Strada Bujorului, in the Parâng resort, about 12 km from Petroșani. It offers 17 double rooms and 2 apartments, all with internet, a minibar and a private bathroom.",
+        "It has a restaurant-bar for 45 people and a conference room for 50 people, making it suitable both for tourist stays and group events."
+      ],
+      facts: [
+        { label: "Location", value: "Strada Bujorului, Parâng resort, about 12 km from Petroșani" },
+        { label: "Rooms", value: "17 double rooms + 2 apartments" },
+        { label: "Contact", value: "phone +40 254 549 060 / +40 735 553 140 · rezervari@bujordemunte.ro · bujordemunte.ro" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-floare-de-colt-petrosani",
+    name: "Pensiunea Floare de Colț",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Petroșani",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune la intrarea în Defileul Jiului, pe strada Livezeni.",
+      description: [
+        "Pensiunea Floare de Colț este situată pe strada Livezeni nr. 36, într-un cadru pitoresc, chiar la intrarea dinspre Petroșani în Defileul Jiului."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Livezeni nr. 36, Petroșani" }
+      ]
+    },
+    en: {
+      tagline: "A guesthouse at the entrance to the Jiu Gorge, on Strada Livezeni.",
+      description: [
+        "Pensiunea Floare de Colț is located on Strada Livezeni no. 36, in a picturesque setting right at the entrance to the Jiu Gorge from Petroșani."
+      ],
+      facts: [
+        { label: "Address", value: "Str. Livezeni no. 36, Petroșani" }
+      ]
+    }
+  },
+  {
+    id: "complex-turistic-valea-mosului-petrosani",
+    name: "Complex Turistic Valea Moșului",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Parâng, Petroșani",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Complex turistic în mijlocul naturii, la poalele Parângului.",
+      description: [
+        "Complex Turistic Valea Moșului este situat pe strada Dărănești nr. 73C, într-o locație liniștită, la poalele masivului Parâng."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Dărănești nr. 73C, Petroșani" }
+      ]
+    },
+    en: {
+      tagline: "A tourist complex surrounded by nature, at the foot of the Parâng mountains.",
+      description: [
+        "Complex Turistic Valea Moșului is located on Strada Dărănești no. 73C, in a quiet setting at the foot of the Parâng massif."
+      ],
+      facts: [
+        { label: "Address", value: "Str. Dărănești no. 73C, Petroșani" }
+      ]
+    }
+  },
+  {
+    id: "cabana-la-cassian-vulcan",
+    name: "Cabana la Cassian",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Vulcan",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cabană pe strada Decebal, în orașul Vulcan.",
+      description: [
+        "Cabana la Cassian este situată pe strada Decebal nr. 153, în orașul Vulcan, aproape de accesul spre stațiunea Straja."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Decebal nr. 153, Vulcan" }
+      ]
+    },
+    en: {
+      tagline: "A mountain cabin on Strada Decebal, in the town of Vulcan.",
+      description: [
+        "Cabana la Cassian is located on Strada Decebal no. 153, in the town of Vulcan, close to the access road to the Straja resort."
+      ],
+      facts: [
+        { label: "Address", value: "Str. Decebal no. 153, Vulcan" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-paradisul-verde-vulcan",
+    name: "Pensiunea Paradisul Verde",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Vulcan",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune pe strada Socănească, în Vulcan, la cca. 15 km de Straja.",
+      description: [
+        "Pensiunea Paradisul Verde este situată pe strada Socănească nr. 8, în municipiul Vulcan, la aproximativ 15 km de stațiunea Straja. Oferă bucătărie tradițională și servicii de restaurant."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Socănească nr. 8, Vulcan" }
+      ]
+    },
+    en: {
+      tagline: "A guesthouse on Strada Socănească, in Vulcan, about 15 km from Straja.",
+      description: [
+        "Pensiunea Paradisul Verde is located on Strada Socănească no. 8, in the town of Vulcan, about 15 km from the Straja resort. It offers traditional cuisine and restaurant service."
+      ],
+      facts: [
+        { label: "Address", value: "Str. Socănească no. 8, Vulcan" }
+      ]
+    }
+  },
+  {
+    id: "cabana-casa-ozon-vulcan",
+    name: "Cabana Casa Ozon",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Vulcan",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cabană pe strada Dealul Babii, în Vulcan.",
+      description: [
+        "Cabana Casa Ozon este situată pe strada Dealul Babii nr. 18C, în orașul Vulcan, aproape de traseul Dealul Babii și de accesul spre Straja."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Dealul Babii nr. 18C, Vulcan" }
+      ]
+    },
+    en: {
+      tagline: "A cabin on Strada Dealul Babii, in Vulcan.",
+      description: [
+        "Cabana Casa Ozon is located on Strada Dealul Babii no. 18C, in the town of Vulcan, close to the Dealul Babii trail and the access road to Straja."
+      ],
+      facts: [
+        { label: "Address", value: "Str. Dealul Babii no. 18C, Vulcan" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-dor-de-munte-lupeni",
+    name: "Pensiunea Dor de Munte",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Lupeni",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune renovată recent în Lupeni, lângă un parc de aventură.",
+      description: [
+        "Pensiunea Dor de Munte, din Lupeni, oferă camere spațioase cu baie proprie și televizor smart, cu o capacitate totală de 54 de locuri în 21 de spații de cazare.",
+        "La aproximativ 50 m se află un parc de aventură cu perete de cățărare, iar la 100 m sunt mai multe pârtii de schi și snowboard."
+      ],
+      facts: [
+        { label: "Locație", value: "Lupeni, lângă parcul de aventură" },
+        { label: "Capacitate", value: "21 spații de cazare, 54 locuri" }
+      ]
+    },
+    en: {
+      tagline: "A recently renovated guesthouse in Lupeni, next to an adventure park.",
+      description: [
+        "Pensiunea Dor de Munte, in Lupeni, offers spacious rooms with private bathroom and smart TV, with a total capacity of 54 beds across 21 accommodation units.",
+        "About 50 m away there is an adventure park with a climbing wall, and 100 m away there are several ski and snowboard slopes."
+      ],
+      facts: [
+        { label: "Location", value: "Lupeni, next to the adventure park" },
+        { label: "Capacity", value: "21 accommodation units, 54 beds" }
+      ]
+    }
+  },
+  {
+    id: "complexul-montana-lupeni",
+    name: "Complexul Montana",
+    category: { ro: "Hotel & restaurant", en: "Hotel & restaurant" },
+    area: "Munții Vâlcan, Lupeni",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Complex 3 stele în Munții Vâlcan, la 1.367 m altitudine.",
+      description: [
+        "Complexul Montana este situat direct în Munții Vâlcan, la o altitudine de 1.367 m, în apropierea orașului Lupeni. Oferă cazare de 3 stele și acces facil la trasee montane."
+      ],
+      facts: [
+        { label: "Altitudine", value: "1.367 m, Munții Vâlcan" }
+      ]
+    },
+    en: {
+      tagline: "A 3-star complex in the Vâlcan Mountains, at 1,367 m altitude.",
+      description: [
+        "Complexul Montana is located directly in the Vâlcan Mountains, at an altitude of 1,367 m, near the town of Lupeni. It offers 3-star accommodation and easy access to mountain trails."
+      ],
+      facts: [
+        { label: "Altitude", value: "1,367 m, Vâlcan Mountains" }
+      ]
+    }
+  },
+  {
+    id: "vila-casa-cu-tei-lupeni",
+    name: "Vila Casa cu Tei",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Lupeni",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Vilă cu piscină, pe strada Calea Brăii, în Lupeni.",
+      description: [
+        "Vila Casa cu Tei este situată pe strada Calea Brăii nr. 116, în orașul Lupeni, și dispune de piscină proprie."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Calea Brăii nr. 116, Lupeni" },
+        { label: "Facilități", value: "piscină" }
+      ]
+    },
+    en: {
+      tagline: "A villa with a pool, on Strada Calea Brăii, in Lupeni.",
+      description: [
+        "Vila Casa cu Tei is located on Strada Calea Brăii no. 116, in the town of Lupeni, and has its own swimming pool."
+      ],
+      facts: [
+        { label: "Address", value: "Str. Calea Brăii no. 116, Lupeni" },
+        { label: "Facilities", value: "swimming pool" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-izvorul-maleii-petrila",
+    name: "Pensiunea Izvorul Maleii",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Jieț, Petrila",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Pensiune bine cotată în valea Jieț, lângă un teleschi, în Petrila.",
+      description: [
+        "Pensiunea Izvorul Maleii este situată pe strada Jieț nr. 1T, în zona de munte a orașului Petrila, aproape de un teleschi."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Jieț nr. 1T, Petrila" }
+      ]
+    },
+    en: {
+      tagline: "A well-rated guesthouse in the Jieț valley, next to a ski lift, in Petrila.",
+      description: [
+        "Pensiunea Izvorul Maleii is located on Strada Jieț no. 1T, in the mountain area of Petrila, close to a ski lift."
+      ],
+      facts: [
+        { label: "Address", value: "Str. Jieț no. 1T, Petrila" }
+      ]
+    }
+  },
+  {
+    id: "cabana-brazihouse-petrila",
+    name: "Cabana Brazihouse",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Jileț, Petrila",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cabană de munte lângă Munții Parâng, în zona Jileț a Petrilei.",
+      description: [
+        "Cabana Brazihouse este situată pe strada Jileț nr. 2T, în zona de munte a orașului Petrila, aproape de Munții Parâng."
+      ],
+      facts: [
+        { label: "Adresă", value: "Jileț nr. 2T, Petrila" }
+      ]
+    },
+    en: {
+      tagline: "A mountain cabin near the Parâng Mountains, in Petrila's Jileț area.",
+      description: [
+        "Cabana Brazihouse is located on Jileț no. 2T, in the mountain area of Petrila, close to the Parâng Mountains."
+      ],
+      facts: [
+        { label: "Address", value: "Jileț no. 2T, Petrila" }
+      ]
+    }
+  },
+  {
+    id: "cabana-taia-parang-sureanu-petrila",
+    name: "Cabana Taia Parâng-Șureanu",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Taia, Petrila",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cabană montană cu șemineu, pe strada Taia, în Petrila.",
+      description: [
+        "Cabana Taia Parâng-Șureanu este situată pe strada Taia nr. 53B, în zona de munte a orașului Petrila, și dispune de șemineu."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Taia nr. 53B, Petrila" },
+        { label: "Facilități", value: "șemineu" }
+      ]
+    },
+    en: {
+      tagline: "A mountain cabin with a fireplace, on Strada Taia, in Petrila.",
+      description: [
+        "Cabana Taia Parâng-Șureanu is located on Strada Taia no. 53B, in the mountain area of Petrila, and has a fireplace."
+      ],
+      facts: [
+        { label: "Address", value: "Str. Taia no. 53B, Petrila" },
+        { label: "Facilities", value: "fireplace" }
+      ]
+    }
   }
 ];
