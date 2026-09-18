@@ -168,7 +168,8 @@ window.SITE_DESTINATIONS = [
     category: { ro: "Zonă montană și minieră", en: "Mining & mountain zone" },
     area: "Nord-Vest",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/muntii-metaliferi.jpg"],
+    photoCredit: { author: "SorinNistor1980", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Apus_Muntii_Metaliferi.jpg" },
     ro: {
       tagline: "Partea hunedoreană a „patrulaterului aurifer” — Brad, Săcărâmb și Crișcior, minerit neîntrerupt din perioada romană până în secolul XX.",
       description: [
@@ -202,7 +203,8 @@ window.SITE_DESTINATIONS = [
     category: { ro: "Zonă etnografică și montană", en: "Ethnographic & mountain zone" },
     area: "Vest",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/furnalul-govajdia.jpg"],
+    photoCredit: { author: "RudolfHanzelik", license: "CC0 (domeniu public)", source: "https://commons.wikimedia.org/wiki/File:Blast_furnace_of_Govajdia.jpg" },
     ro: {
       tagline: "Zonă etno-folclorică arhaică pe valea Cernei Hunedorene — 40 de sate risipite pe culmi, tradiție siderurgică și port popular încă purtat la sărbători.",
       description: [
