@@ -2524,7 +2524,8 @@ window.SITE_HERITAGE = [
     area: "Hunedoara",
     hasReviews: false,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/furnalul-govajdia.jpg"],
+    photoCredit: { author: "RudolfHanzelik", license: "CC0 (domeniu public)", source: "https://commons.wikimedia.org/wiki/File:Blast_furnace_of_Govajdia.jpg" },
     ro: {
       tagline: "Furnal din 1810, primul cu flux continuu din Europa — vestigiu al tradiției siderurgice din care a crescut Hunedoara industrială.",
       description: [
