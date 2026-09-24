@@ -88,6 +88,13 @@ Scriptul face, în ordine:
    — Facebook și Google îl văd fără JavaScript. În browser, `js/detail.js` preia
    pagina (limba EN, recenzii etc.). Intrările șterse din `data.js` își pierd și
    pagina generată.
+   Fiecare pagină are și **date structurate** (JSON-LD, schema.org), derivate
+   din `data.js`: `Hotel` / `Restaurant` / `LodgingBusiness` (afaceri — adresa din
+   faptul „Adresă”/„Locație”, telefonul și site-ul din „Contact”), `City` (orașe),
+   `Museum` / `TouristAttraction` (restul), `Event` / `Festival` (știrile din
+   categoria Concert/Festival/Spectacol cu `date` = data începerii și un fapt „Loc”)
+   sau `NewsArticle`, plus `BreadcrumbList`. `index.html` are `WebSite` + `Organization`.
+   Verificare: https://search.google.com/test/rich-results
 3. **Blocul SEO** (`<!-- SEO ... -->`) din paginile principale: canonical, Open Graph,
    Twitter card. Textele vin din `js/i18n.js` (`page.title.*`, `page.meta.*`).
 4. **`sitemap.xml`** (toate paginile publice + toate intrările) și **`robots.txt`**.

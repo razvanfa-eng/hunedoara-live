@@ -222,6 +222,28 @@ function load(file, query = "", urlPath = file) {
   });
   ok(badImg.length === 0, "generate: toate fișierele css/js/imagini referite există" + (badImg.length ? " — " + badImg.map((x) => x.file).join(", ") : ""));
 
+  // date structurate (JSON-LD): exact un bloc valid, cu entitatea paginii + breadcrumb
+  const ldOf = (file) => {
+    const h = fs.readFileSync(path.join(ROOT, file), "utf8");
+    const m = [...h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+    if (m.length !== 1) return null;
+    try { return JSON.parse(m[0][1]); } catch (e) { return null; }
+  };
+  const badLd = all.filter((x) => {
+    const ld = x.file && fs.existsSync(path.join(ROOT, x.file)) && ldOf(x.file);
+    if (!ld || ld["@context"] !== "https://schema.org" || !Array.isArray(ld["@graph"])) return true;
+    const [main, crumbs] = ld["@graph"];
+    const url = "https://gohd.ro/" + x.dir + "/" + x.e.id + "/";
+    return !main || !main["@type"] || main.name !== x.e.name || main.url !== url ||
+      !crumbs || crumbs["@type"] !== "BreadcrumbList" || crumbs.itemListElement.length !== 3 || crumbs.itemListElement[2].item !== url ||
+      (main.sameAs && /booking|facebook|@/.test(main.sameAs));
+  });
+  ok(badLd.length === 0, "generate: JSON-LD valid (entitate + breadcrumb) pe toate paginile" + (badLd.length ? " — greșite: " + badLd.map((x) => x.file).join(", ") : ""));
+  const ldTypes = new Set(all.map((x) => { const ld = ldOf(x.file); return ld && ld["@graph"][0]["@type"]; }));
+  ok(["City", "Hotel", "Restaurant", "LodgingBusiness", "TouristAttraction", "Event", "NewsArticle"].every((ty) => ldTypes.has(ty)), "generate: JSON-LD folosește tipurile potrivite (" + [...ldTypes].join(", ") + ")");
+  const homeLd = ldOf("index.html");
+  ok(!!homeLd && homeLd["@graph"].some((n) => n["@type"] === "WebSite") && homeLd["@graph"].some((n) => n["@type"] === "Organization"), "index.html: JSON-LD WebSite + Organization");
+
   // randare în „browser”: pagina Petroșani (cu obiective din zonă) și una fără poză
   const w = await load("orase/petrosani/index.html", "", "orase/petrosani/");
   const d = w.document;

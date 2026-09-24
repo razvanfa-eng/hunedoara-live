@@ -69,7 +69,7 @@ function ogImage(src) {
   const base = info ? info.base : RL.imgInfo(DEFAULT_IMAGE).base;
   return SITE + "/images/og/" + base + ".jpg";
 }
-function seoBlock({ title, desc, url, image, imageAlt, type = "website", noindex = false, withDesc = true, extra = "" }) {
+function seoBlock({ title, desc, url, image, imageAlt, type = "website", noindex = false, withDesc = true, extra = "", ld = null }) {
   const L = [SEO_START];
   if (withDesc && desc) L.push(`<meta name="description" content="${esc(desc)}">`);
   if (noindex) L.push(`<meta name="robots" content="noindex">`);
@@ -94,9 +94,111 @@ function seoBlock({ title, desc, url, image, imageAlt, type = "website", noindex
     `<meta name="twitter:title" content="${esc(title)}">`
   );
   if (desc) L.push(`<meta name="twitter:description" content="${esc(desc)}">`);
-  L.push(`<meta name="twitter:image" content="${esc(image)}">`, SEO_END);
+  L.push(`<meta name="twitter:image" content="${esc(image)}">`);
+  if (ld) L.push(ldScript(ld));
+  L.push(SEO_END);
   return L.map((l) => "  " + l).join("\n");
 }
+
+/* ---------- date structurate (schema.org, JSON-LD) ----------
+ * Google le citește ca să înțeleagă ce e pagina (hotel, restaurant, obiectiv
+ * turistic, eveniment, articol) și poate afișa detalii în plus în căutare.
+ * Totul e derivat din js/data.js — nu inventăm câmpuri care nu există acolo. */
+const ORG = { "@type": "Organization", name: SITE_NAME, url: SITE + "/", logo: SITE + "/icons/icon-512.png", email: "hunedoaragohd@gmail.com" };
+const REGION = { "@type": "AdministrativeArea", name: "Județul Hunedoara" };
+function ldScript(data) {
+  // „<” escapat, ca un text din data.js să nu poată închide tag-ul <script>
+  return '<script type="application/ld+json">' + JSON.stringify(data).replace(/</g, "\\u003c") + "</script>";
+}
+const factOf = (l, re) => ((l.facts || []).find((f) => re.test(f.label)) || {}).value || "";
+const PHONE_RE = /(?:\+40|0)\s?[237]\d{1,2}[\s.]?\d{3}[\s.]?\d{3,4}/;
+const EMAIL_RE = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/i;
+const WEB_RE = /(?<![@\w.-])(?:https?:\/\/)?((?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:ro|com|eu|net|org))\b/i;
+// platformele de rezervări nu sunt site-ul afacerii
+const NOT_OWN_SITE = /(^|\.)(booking|agoda|tripadvisor|trip|airbnb|facebook|instagram|google|travelminit|tichete-de-vacanta)\.[a-z]+$/i;
+const TOWN_NAMES = new Set((ctx.SITE_TOWNS || []).map((e) => e.name));
+
+function ldAddress(entry, l) {
+  const street = factOf(l, /^(Adresă|Locație|Loc|Localizare|Amplasare)$/);
+  const a = { "@type": "PostalAddress", addressRegion: "Hunedoara", addressCountry: "RO" };
+  if (street) a.streetAddress = street;
+  if (TOWN_NAMES.has(entry.area)) a.addressLocality = entry.area;
+  return a;
+}
+function ldPlaceBits(entry, l, img) {
+  const o = {};
+  if (img) o.image = img;
+  o.address = ldAddress(entry, l);
+  if (entry.coords) o.geo = { "@type": "GeoCoordinates", latitude: entry.coords[0], longitude: entry.coords[1] };
+  return o;
+}
+const EVENT_CATS = /^(Concert|Festival|Spectacol)$/;
+function ldEntity(key, entry, l, url, desc, img) {
+  const cat = (entry.category && entry.category.ro) || "";
+  const base = { "@id": url + "#main", name: entry.name, description: desc, url };
+  if (key === "SITE_BUSINESSES") {
+    const type = cat === "Restaurant" ? "Restaurant" : cat === "Hotel & restaurant" ? "Hotel" : "LodgingBusiness";
+    const o = { "@type": type, ...base, ...ldPlaceBits(entry, l, img) };
+    const contact = factOf(l, /^(Contact|Rezervări)$/);
+    const phone = contact.match(PHONE_RE);
+    if (phone) o.telephone = phone[0].replace(/\s+/g, " ");
+    const email = contact.match(EMAIL_RE);
+    if (email) o.email = email[0];
+    const web = contact.replace(EMAIL_RE, " ").match(WEB_RE);
+    if (web && !NOT_OWN_SITE.test(web[1])) o.sameAs = "https://" + web[1].toLowerCase();
+    return o;
+  }
+  if (key === "SITE_TOWNS") {
+    const o = { "@type": "City", ...base, containedInPlace: REGION };
+    if (img) o.image = img;
+    if (entry.coords) o.geo = { "@type": "GeoCoordinates", latitude: entry.coords[0], longitude: entry.coords[1] };
+    return o;
+  }
+  if (key === "SITE_NEWS") {
+    const where = factOf(l, /^(Loc|Locație)$/);
+    if (EVENT_CATS.test(cat) && entry.date && where) {
+      const o = {
+        "@type": cat === "Festival" ? "Festival" : "Event", ...base, startDate: entry.date,
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        location: { "@type": "Place", name: where.split(",")[0].trim(), address: ldAddress(entry, { facts: [{ label: "Adresă", value: where }] }) }
+      };
+      if (img) o.image = img;
+      return o;
+    }
+    const o = { "@type": "NewsArticle", ...base, headline: clip(entry.name, 110), author: ORG, publisher: ORG, mainEntityOfPage: url };
+    if (entry.date) o.datePublished = entry.date;
+    if (img) o.image = img;
+    return o;
+  }
+  // destinații, natură, turism activ, moștenire culturală
+  const type = key === "SITE_HERITAGE" && /^(Muzeu|Casă memorială)$/.test(cat) ? "Museum" : "TouristAttraction";
+  return { "@type": type, ...base, ...ldPlaceBits(entry, l, img) };
+}
+function ldForEntry(key, entry, l, url, desc, img) {
+  const sec = SECTIONS[key];
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      ldEntity(key, entry, l, url, desc, img),
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Acasă", item: SITE + "/" },
+          { "@type": "ListItem", position: 2, name: t("nav." + SECTION_META[key].key), item: SITE + "/" + sec.listing },
+          { "@type": "ListItem", position: 3, name: entry.name, item: url }
+        ]
+      }
+    ]
+  };
+}
+const LD_HOME = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebSite", "@id": SITE + "/#website", name: SITE_NAME, url: SITE + "/", inLanguage: ["ro", "en"], publisher: { "@id": SITE + "/#org" } },
+    { ...ORG, "@id": SITE + "/#org", areaServed: REGION }
+  ]
+};
 // pune/înlocuiește blocul SEO în <head> (după meta description sau după <title>)
 function withoutSeo(html) {
   const a = html.indexOf("  " + SEO_START), b = html.indexOf(SEO_END);
@@ -149,7 +251,7 @@ for (const p of TOP_PAGES) {
   let html = read(p.file);
   const block = seoBlock({
     title: p.title, desc: p.desc, url: p.url, image: ogImage(p.image || DEFAULT_IMAGE),
-    noindex: p.noindex, withDesc: !hasOwnDesc(html)
+    noindex: p.noindex, withDesc: !hasOwnDesc(html), ld: p.file === "index.html" ? LD_HOME : null
   });
   html = setSeo(html, block);
   if (write(p.file, html)) changed++;
@@ -200,7 +302,8 @@ for (const key of Object.keys(SECTIONS)) {
       title: out.docTitle, desc, url,
       image: ogImage(hasPhoto ? img : null), imageAlt: hasPhoto ? entry.name : SITE_NAME,
       type: key === "SITE_NEWS" ? "article" : "website",
-      extra: key === "SITE_NEWS" && entry.date ? `<meta property="article:published_time" content="${esc(entry.date)}">` : ""
+      extra: key === "SITE_NEWS" && entry.date ? `<meta property="article:published_time" content="${esc(entry.date)}">` : "",
+      ld: ldForEntry(key, entry, l, url, desc, hasPhoto ? SITE + "/" + img : null)
     }));
     html = html.replace('<div id="detail-root">', '<div id="detail-root" data-prerendered="ro">');
     html = html.replace(/<a id="detail-back" class="detail-back" href="[^"]*">[^<]*<\/a>/,
