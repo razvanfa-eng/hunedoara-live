@@ -132,6 +132,8 @@
      Adaugă pe ecranul principal”; sunt ascunse dacă site-ul rulează deja ca aplicație
      sau dacă browserul nu permite instalarea. */
 (function () {
+  // rulat și de scripts/build-pages.mjs într-un „browser” minimal, fără navigator/location
+  if (typeof navigator === "undefined" || typeof location === "undefined" || !window.addEventListener) return;
   if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
     window.addEventListener("load", function () {
       navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch(function () {});

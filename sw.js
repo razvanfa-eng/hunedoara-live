@@ -24,7 +24,7 @@ var PRECACHE = [
   OFFLINE_URL,
   "/css/style.css",
   "/js/data.js", "/js/config.js", "/js/i18n.js", "/js/common.js", "/js/search.js",
-  "/js/home.js", "/js/listing.js", "/js/detail.js", "/js/reviews.js", "/js/credits.js",
+  "/js/home.js", "/js/listing.js", "/js/detail.js", "/js/reviews.js", "/js/credits.js", "/js/images.js",
   "/images/placeholder.svg",
   "/manifest.webmanifest",
   "/icons/icon-192.png", "/icons/favicon.svg"
