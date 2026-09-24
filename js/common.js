@@ -124,3 +124,63 @@
     absUrl: absUrl, imgInfo: imgInfo, imgVariant: imgVariant, imgHtml: imgHtml
   };
 })();
+
+/* Aplicație instalabilă (PWA) / Installable app.
+   - înregistrează service worker-ul (/sw.js) pe toate paginile care încarcă common.js;
+   - butoanele [data-pwa-install-btn] (pe index.html): pe Android/Chrome/Edge folosesc
+     evenimentul beforeinstallprompt; pe iPhone/iPad arată indicația „Partajează →
+     Adaugă pe ecranul principal”; sunt ascunse dacă site-ul rulează deja ca aplicație
+     sau dacă browserul nu permite instalarea. */
+(function () {
+  if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch(function () {});
+    });
+  }
+
+  function isStandalone() {
+    return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) ||
+      window.navigator.standalone === true;
+  }
+  function isIOS() {
+    var ua = navigator.userAgent || "";
+    return /iphone|ipad|ipod/i.test(ua) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1); // iPadOS
+  }
+
+  var deferredPrompt = null;
+  function show(on) {
+    document.querySelectorAll("[data-pwa-install]").forEach(function (b) { b.hidden = !on; });
+  }
+
+  if (isStandalone()) return;   // rulează deja ca aplicație instalată: nu arătăm nimic
+  var ios = isIOS();
+
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault();
+    deferredPrompt = e;
+    show(true);
+  });
+  window.addEventListener("appinstalled", function () {
+    deferredPrompt = null;
+    show(false);
+  });
+
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest && e.target.closest("[data-pwa-install-btn]");
+    if (!btn) return;
+    if (deferredPrompt) {
+      var p = deferredPrompt;
+      deferredPrompt = null;
+      show(false);            // reapare dacă browserul trimite din nou beforeinstallprompt
+      p.prompt();
+      if (p.userChoice) p.userChoice.catch(function () {});
+    } else if (ios) {
+      var hint = btn.parentNode && btn.parentNode.querySelector("[data-pwa-ios-hint]");
+      if (hint) hint.hidden = !hint.hidden;
+    }
+  });
+
+  // iOS nu are beforeinstallprompt: arătăm butonul, care deschide indicația
+  if (ios) show(true);
+})();

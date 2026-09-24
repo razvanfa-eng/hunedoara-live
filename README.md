@@ -141,6 +141,13 @@ npm i -g netlify-cli
 netlify dev
 ```
 
+## Aplicație instalabilă (PWA)
+
+- `manifest.webmanifest` + `icons/` (generate cu sharp: monograma „HL” pe teal #0E7C86).
+- `sw.js`: paginile HTML și `js/data.js` vin întâi din rețea (conținutul nou apare imediat), CSS/JS/imaginile din cache cu reîmprospătare în fundal; fără rețea se deschid paginile deja vizitate sau `offline.html`. Nu interceptează POST-urile (Netlify Forms), `/.netlify/...` și alte domenii.
+- Înregistrarea și butonul „Instalează aplicația” (index.html) sunt în `js/common.js`; textele în `js/i18n.js` (`pwa.*`).
+- Când schimbi lista de fișiere precache-uite sau strategia din `sw.js`, crește `VERSION` din `sw.js`.
+
 ## Ce urmează
 
 1. **Conținutul:** `js/data.js` are doar exemple (`example: true`) în toate cele

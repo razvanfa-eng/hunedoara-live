@@ -1,0 +1,20 @@
+{
+  "name": "Hunedoara Live",
+  "short_name": "Hunedoara",
+  "description": "Ghidul digital al județului Hunedoara: destinații, orașe, natură, turism activ, moștenire culturală, știri și afaceri.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "ro",
+  "dir": "ltr",
+  "theme_color": "#0E7C86",
+  "background_color": "#FFFFFF",
+  "categories": ["travel", "news", "lifestyle"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
