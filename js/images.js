@@ -20,6 +20,7 @@ window.SITE_IMAGES = {
   "images/cetatea-piatra-rosie.jpg": [1600, 1202],
   "images/cetatile-dacice-ansamblu.jpg": [1600, 1200],
   "images/creasta-valcan-straja.jpg": [1600, 1067],
+  "images/crucea-eroilor-straja.jpg": [1600, 1200],
   "images/culoarul-muresului-simeria.jpg": [800, 600],
   "images/curtea-castelul-corvinilor.jpg": [1600, 1200],
   "images/densus-biserica.jpg": [918, 1224],

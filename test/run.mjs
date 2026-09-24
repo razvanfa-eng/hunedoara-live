@@ -44,14 +44,14 @@ function prep(html) {
   html = html.replace(/<head>/, `<head><script>window.addEventListener("error",e=>{window.__err=(window.__err||"")+String(e.message||e.error)+" | ";});</script>`);
   html = html.replace(/<link[^>]+href="https?:\/\/[^"]*"[^>]*>/g, "");
   html = html.replace(/<script[^>]+src="https?:\/\/[^"]*"[^>]*><\/script>/g, "");
-  html = html.replace(/<script src="(js\/[^"]+)"><\/script>/g, (_, src) =>
+  html = html.replace(/<script src="\/?(js\/[^"]+)"><\/script>/g, (_, src) =>
     "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>");
   return html;
 }
-function load(file, query = "") {
+function load(file, query = "", urlPath = file) {
   const dom = new JSDOM(prep(fs.readFileSync(path.join(ROOT, file), "utf8")), {
     runScripts: "dangerously", pretendToBeVisual: true,
-    url: "http://localhost:5175/" + file + query
+    url: "http://localhost:5175/" + urlPath + query
   });
   return new Promise((res) => {
     const w = dom.window;
@@ -86,7 +86,7 @@ function load(file, query = "") {
   ok(!w1.__err, "destinatii: fără erori JS" + (w1.__err ? " — " + w1.__err : ""));
   const nDest = DATA[dataKeyOf("destinatii.html")].length;
   ok(d1.querySelectorAll("#grid .card").length === nDest, "destinatii: " + nDest + " carduri (câte sunt în data.js)");
-  ok([...d1.querySelectorAll("#grid .card")].every((a) => /^destinatie\.html\?id=[a-z-]+$/.test(a.getAttribute("href"))), "destinatii: href-uri carduri valide");
+  ok([...d1.querySelectorAll("#grid .card")].every((a) => /^\/destinatii\/[a-z0-9-]+\/$/.test(a.getAttribute("href"))), "destinatii: href-uri carduri valide");
 
   const w2 = await load("destinatie.html", "?id=valea-jiului");
   const d2 = w2.document;
@@ -197,6 +197,65 @@ function load(file, query = "") {
   ok(w.document.querySelectorAll(".credit-card").length === total, "credite: " + total + " intrări (" + counts.join("+") + ", toate secțiunile)");
 }
 
+/* -------- pagini statice generate: /<secțiune>/<id>/ (scripts/build-pages.mjs) -------- */
+{
+  const vm = await import("vm");
+  const ctx = { window: {} };
+  vm.runInNewContext(fs.readFileSync(path.join(ROOT, "js/data.js"), "utf8"), ctx);
+  const DIRS = { SITE_DESTINATIONS: "destinatii", SITE_TOWNS: "orase", SITE_NATURE: "natura", SITE_ACTIVITIES: "turism-activ",
+    SITE_HERITAGE: "mostenire", SITE_NEWS: "stiri", SITE_BUSINESSES: "afaceri" };
+  const all = Object.entries(DIRS).flatMap(([k, dir]) => ctx.window[k].map((e) => ({ e, dir, file: dir + "/" + e.id + "/index.html" })));
+  const missing = all.filter((x) => !fs.existsSync(path.join(ROOT, x.file)));
+  ok(missing.length === 0, "generate: câte o pagină pentru fiecare din cele " + all.length + " intrări" + (missing.length ? " — lipsesc: " + missing.map((x) => x.file).join(", ") + " (rulează node scripts/build-pages.mjs)" : ""));
+  const badHead = all.filter((x) => {
+    if (!fs.existsSync(path.join(ROOT, x.file))) return false;
+    const h = fs.readFileSync(path.join(ROOT, x.file), "utf8");
+    const url = "https://gohd.ro/" + x.dir + "/" + x.e.id + "/";
+    return !(h.includes('<link rel="canonical" href="' + url + '">') && h.includes('<meta property="og:url" content="' + url + '">') &&
+      /<meta property="og:image" content="https:\/\/gohd\.ro\/images\/og\/[a-z0-9-]+\.jpg">/.test(h) &&
+      /<meta name="description" content="[^"]{20,}">/.test(h) && !/noindex/.test(h) && h.includes('id: "' + x.e.id + '"'));
+  });
+  ok(badHead.length === 0, "generate: canonical + og:url/og:image + description + id în config pe toate" + (badHead.length ? " — greșite: " + badHead.map((x) => x.file).join(", ") : ""));
+  const badImg = all.filter((x) => {
+    const h = fs.existsSync(path.join(ROOT, x.file)) ? fs.readFileSync(path.join(ROOT, x.file), "utf8") : "";
+    return [...h.matchAll(/(?:src|href)="(\/[^"]*\.(?:css|js|jpg|webp|svg))"/g)].some((m) => !fs.existsSync(path.join(ROOT, m[1])));
+  });
+  ok(badImg.length === 0, "generate: toate fișierele css/js/imagini referite există" + (badImg.length ? " — " + badImg.map((x) => x.file).join(", ") : ""));
+
+  // randare în „browser”: pagina Petroșani (cu obiective din zonă) și una fără poză
+  const w = await load("orase/petrosani/index.html", "", "orase/petrosani/");
+  const d = w.document;
+  ok(!w.__err, "generat /orase/petrosani/: fără erori JS" + (w.__err ? " — " + w.__err : ""));
+  ok(/Petroșani/.test(d.querySelector("#detail-title").textContent) && d.title.startsWith("Petroșani"), "generat /orase/petrosani/: titlu + <title> corecte");
+  const pAreas = byId("SITE_TOWNS", "petrosani").relatedAreas || [];
+  const pRel = RELATED_KEYS.flatMap((k) => DATA[k].filter((e) => !e.example && pAreas.includes(e.area))).length;
+  ok(pRel > 0 && d.querySelectorAll("#detail-related .card").length === pRel, "generat /orase/petrosani/: " + pRel + " obiective din zonă (pre-randate)");
+  ok(d.querySelector("#detail-gallery img").getAttribute("srcset").includes(".webp 800w"), "generat /orase/petrosani/: poza principală are srcset webp");
+  const roTag = d.querySelector("#detail-tagline").textContent;
+  d.querySelector("#lang-toggle").dispatchEvent(new w.Event("click"));
+  ok(d.querySelector("#detail-tagline").textContent !== roTag && d.querySelector("#detail-back").textContent === "← All towns", "generat /orase/petrosani/: comutatorul EN re-randează conținutul");
+  ok(d.querySelector("#detail-back").getAttribute("href") === "/orase.html", "generat /orase/petrosani/: linkul înapoi e absolut");
+
+  const nophoto = all.find((x) => x.e.images && x.e.images[0] === "images/placeholder.svg" && x.e.hasReviews);
+  if (nophoto) {
+    const w2 = await load(nophoto.file, "", nophoto.dir + "/" + nophoto.e.id + "/");
+    ok(!w2.__err, "generat " + nophoto.file + " (fără poză, cu recenzii): fără erori JS" + (w2.__err ? " — " + w2.__err : ""));
+    ok(!!w2.document.querySelector("#reviews .review-form"), "generat " + nophoto.file + ": formularul de recenzii e randat");
+    ok(/og\/hunedoara-corvin-castle\.jpg/.test(fs.readFileSync(path.join(ROOT, nophoto.file), "utf8")), "generat " + nophoto.file + ": og:image implicit (fără poză proprie)");
+  }
+
+  // sitemap.xml: bine format, fiecare URL are fișier real
+  const sm = fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8");
+  const doc = new JSDOM(sm, { contentType: "application/xml" }).window.document;
+  ok(!doc.querySelector("parsererror"), "sitemap.xml: XML valid");
+  const locs = [...doc.getElementsByTagName("loc")].map((n) => n.textContent);
+  const toFile = (u) => { const p = u.replace("https://gohd.ro/", ""); return p === "" ? "index.html" : p.endsWith("/") ? p + "index.html" : p; };
+  const deadLocs = locs.filter((u) => !fs.existsSync(path.join(ROOT, toFile(u))));
+  ok(locs.length === all.length + 11 && deadLocs.length === 0, "sitemap.xml: " + locs.length + " URL-uri, toate cu fișier real" + (deadLocs.length ? " — lipsă: " + deadLocs.join(", ") : ""));
+  ok(!locs.some((u) => /multumim|404|oras\.html|destinatie\.html/.test(u)), "sitemap.xml: fără multumim/404/șabloane");
+  ok(/Sitemap: https:\/\/gohd\.ro\/sitemap\.xml/.test(fs.readFileSync(path.join(ROOT, "robots.txt"), "utf8")), "robots.txt: indică sitemap.xml");
+}
+
 /* -------- fișiere prezente -------- */
 {
   const files = [
@@ -208,7 +267,8 @@ function load(file, query = "") {
     "netlify.toml", "README.md", "SETUP.md", "css/style.css", "supabase/schema.sql",
     "netlify/functions/submit-review.mjs", "images/placeholder.svg",
     "js/config.js", "js/data.js", "js/i18n.js", "js/common.js", "js/reviews.js",
-    "js/listing.js", "js/detail.js", "js/home.js", "js/credits.js"
+    "js/listing.js", "js/detail.js", "js/home.js", "js/credits.js", "js/images.js",
+    "scripts/build-pages.mjs", "scripts/build-images.mjs", "sitemap.xml", "robots.txt"
   ];
   const missing = files.filter((f) => !fs.existsSync(path.join(ROOT, f)));
   ok(missing.length === 0, "toate fișierele există" + (missing.length ? ": lipsesc " + missing.join(", ") : ""));

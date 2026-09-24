@@ -33,10 +33,81 @@
     return '<span class="stars" aria-hidden="true">' + out + '</span>';
   }
 
+  /* ---------- URL-uri curate pentru intrări ----------
+   * Fiecare intrare are o pagină statică proprie, generată de
+   * scripts/build-pages.mjs: /<secțiune>/<id>/ (ex. /orase/deva/).
+   * Paginile vechi (oras.html?id=deva) redirecționează 301 spre ele (netlify.toml). */
+  var SECTIONS = {
+    SITE_DESTINATIONS: { dir: "destinatii", listing: "destinatii.html", template: "destinatie.html" },
+    SITE_TOWNS: { dir: "orase", listing: "orase.html", template: "oras.html" },
+    SITE_NATURE: { dir: "natura", listing: "natura.html", template: "natura-loc.html" },
+    SITE_ACTIVITIES: { dir: "turism-activ", listing: "turism-activ.html", template: "activitate.html" },
+    SITE_HERITAGE: { dir: "mostenire", listing: "mostenire.html", template: "mostenire-articol.html" },
+    SITE_NEWS: { dir: "stiri", listing: "stiri.html", template: "stire.html" },
+    SITE_BUSINESSES: { dir: "afaceri", listing: "afaceri.html", template: "afacere.html" }
+  };
+  function entryUrl(key, id) {
+    var s = SECTIONS[key];
+    return s ? "/" + s.dir + "/" + encodeURIComponent(id) + "/" : "#";
+  }
+
+  /* ---------- Imagini optimizate ----------
+   * Pentru fiecare images/<nume>.jpg există (generate de scripts/build-images.mjs):
+   * images/800/<nume>.webp, images/1600/<nume>.webp (dacă originalul are > 800 px)
+   * și images/og/<nume>.jpg; dimensiunile originale sunt în js/images.js. */
+  var PLACEHOLDER = "/images/placeholder.svg";
+  var SIZES = {
+    card: "(max-width: 560px) calc(100vw - 48px), (max-width: 960px) calc(50vw - 32px), 280px",
+    hero: "(max-width: 1160px) calc(100vw - 48px), 1112px"
+  };
+  function absUrl(src) { return /^(https?:)?\/\//.test(src) || src.charAt(0) === "/" ? src : "/" + src; }
+  function imgInfo(src) {
+    var m = src && window.SITE_IMAGES && window.SITE_IMAGES[src.replace(/^\//, "")];
+    if (!m) return null;
+    var base = src.replace(/^\/?images\//, "").replace(/\.jpe?g$/i, "");
+    var w = m[0], h = m[1];
+    var list = [{ url: "/images/800/" + base + ".webp", w: Math.min(w, 800) }];
+    if (w > 800) list.push({ url: "/images/1600/" + base + ".webp", w: Math.min(w, 1600) });
+    var big = list[list.length - 1];
+    return { list: list, width: big.w, height: Math.round(h * big.w / w), base: base };
+  }
+  // URL-ul unei variante webp (ex. fundal CSS); fallback: originalul.
+  function imgVariant(src, width) {
+    var info = imgInfo(src);
+    if (!info) return absUrl(src || PLACEHOLDER);
+    // cea mai mică variantă cel puțin la fel de lată ca `width`, altfel cea mai mare
+    for (var i = 0; i < info.list.length; i++) if (info.list[i].w >= width) return info.list[i].url;
+    return info.list[info.list.length - 1].url;
+  }
+  /* <img> cu srcset webp + width/height (fără salt de layout).
+   * opts: { sizes: "card" | "hero" | "<valoare sizes>", eager: bool, alt: text } */
+  function imgHtml(src, opts) {
+    opts = opts || {};
+    src = src || PLACEHOLDER;
+    var info = imgInfo(src);
+    var attrs = ' alt="' + esc(opts.alt || "") + '"';
+    if (info) {
+      attrs = ' src="' + esc(absUrl(src)) + '"' +
+        ' srcset="' + info.list.map(function (v) { return esc(v.url) + " " + v.w + "w"; }).join(", ") + '"' +
+        ' sizes="' + esc(SIZES[opts.sizes] || opts.sizes || SIZES.card) + '"' +
+        ' width="' + info.width + '" height="' + info.height + '"' + attrs;
+    } else {
+      attrs = ' src="' + esc(absUrl(src)) + '"' + attrs;
+    }
+    attrs += opts.eager ? ' fetchpriority="high"' : ' loading="lazy"';
+    return "<img" + attrs + ' decoding="async" onerror="RL.imgError(this)">';
+  }
+
+  // 1) webp-ul lipsește -> încearcă originalul .jpg; 2) nici acesta -> placeholder
   function imgError(img) {
+    if (img.hasAttribute("srcset")) {
+      img.removeAttribute("srcset");
+      img.removeAttribute("sizes");
+      return;
+    }
     if (img.dataset.fallback === "1") return;
     img.dataset.fallback = "1";
-    img.src = "images/placeholder.svg";
+    img.src = PLACEHOLDER;
     img.classList.add("is-placeholder");
   }
 
@@ -48,6 +119,8 @@
     wazeUrl: wazeUrl, gmapsDirUrl: gmapsDirUrl, gmapsViewUrl: gmapsViewUrl,
     dataArray: dataArray, entryById: entryById,
     loc: loc, categoryLabel: categoryLabel, esc: esc, starsHtml: starsHtml, imgError: imgError,
-    qs: qs
+    qs: qs,
+    SECTIONS: SECTIONS, entryUrl: entryUrl,
+    absUrl: absUrl, imgInfo: imgInfo, imgVariant: imgVariant, imgHtml: imgHtml
   };
 })();

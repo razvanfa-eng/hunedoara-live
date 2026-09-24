@@ -18,9 +18,13 @@ const TYPES = {
 
 http.createServer((req, res) => {
   let urlPath = decodeURIComponent(req.url.split("?")[0]);
-  if (urlPath === "/") urlPath = "/index.html";
+  if (urlPath.endsWith("/")) urlPath += "index.html"; // /orase/deva/ -> /orase/deva/index.html
   const filePath = path.join(ROOT, path.normalize(urlPath));
   if (!filePath.startsWith(ROOT)) { res.writeHead(403); return res.end("Forbidden"); }
+  // ca pe Netlify: /orase/deva -> /orase/deva/
+  if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
+    res.writeHead(301, { Location: urlPath + "/" }); return res.end();
+  }
   fs.readFile(filePath, (err, buf) => {
     if (err) { res.writeHead(404, { "Content-Type": "text/plain" }); return res.end("404 " + urlPath); }
     res.writeHead(200, { "Content-Type": TYPES[path.extname(filePath).toLowerCase()] || "application/octet-stream" });

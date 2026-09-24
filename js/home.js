@@ -13,12 +13,12 @@
   // pagină — sunt intrări deja existente în seturile de date (aceleași poze
   // și credite foto ca pe paginile lor de detaliu, fără duplicare de conținut).
   var HIGHLIGHTS = [
-    { dataKey: "SITE_TOWNS", id: "deva", page: "oras.html" },
-    { dataKey: "SITE_TOWNS", id: "hunedoara", page: "oras.html" },
-    { dataKey: "SITE_ACTIVITIES", id: "statiunea-straja", page: "activitate.html" },
-    { dataKey: "SITE_HERITAGE", id: "sarmizegetusa-regia", page: "mostenire-articol.html" },
-    { dataKey: "SITE_NATURE", id: "parcul-national-retezat", page: "natura-loc.html" },
-    { dataKey: "SITE_HERITAGE", id: "manastirea-prislop", page: "mostenire-articol.html" }
+    { dataKey: "SITE_TOWNS", id: "deva" },
+    { dataKey: "SITE_TOWNS", id: "hunedoara" },
+    { dataKey: "SITE_ACTIVITIES", id: "statiunea-straja" },
+    { dataKey: "SITE_HERITAGE", id: "sarmizegetusa-regia" },
+    { dataKey: "SITE_NATURE", id: "parcul-national-retezat" },
+    { dataKey: "SITE_HERITAGE", id: "manastirea-prislop" }
   ];
 
   var SECTIONS = [
@@ -55,7 +55,8 @@
     if (gridEl) {
       gridEl.innerHTML = SECTIONS.map(function (s) {
         var cls = "tile" + (s.img ? " tile--photo" : " tile--accent");
-        var bg = s.img ? ' style="background-image:url(&quot;' + s.img + '&quot;)"' : "";
+        // fundal: varianta webp de ~800 px (tile-urile au max. ~560 px lățime pe ecran)
+        var bg = s.img ? ' style="background-image:url(&quot;' + window.RL.imgVariant(s.img, 800) + '&quot;)"' : "";
         return '<a class="' + cls + '" href="' + s.page + '"' + bg + '>' +
           '<span class="tile__mark">' + window.RL.esc(s.key.charAt(0).toUpperCase()) + "</span>" +
           '<span class="tile__title">' + window.RL.esc(window.I18N.t("sec." + s.key + ".name")) + "</span>" +
@@ -66,13 +67,13 @@
 
     var highlightsEl = document.getElementById("home-highlights");
     if (highlightsEl) {
-      highlightsEl.innerHTML = HIGHLIGHTS.map(function (h) {
+      highlightsEl.innerHTML = HIGHLIGHTS.map(function (h, i) {
         var e = window.RL.entryById(h.dataKey, h.id);
         if (!e) return "";
         var l = window.RL.loc(e, lang);
-        var img = (e.images && e.images[0]) || "images/placeholder.svg";
-        return '<a class="card" href="' + h.page + "?id=" + encodeURIComponent(e.id) + '">' +
-          '<div class="card__media"><img src="' + window.RL.esc(img) + '" alt="" loading="lazy" onerror="RL.imgError(this)"></div>' +
+        var img = (e.images && e.images[0]) || "";
+        return '<a class="card" href="' + window.RL.entryUrl(h.dataKey, e.id) + '">' +
+          '<div class="card__media">' + window.RL.imgHtml(img, { sizes: "card", eager: i < 2 }) + "</div>" +
           '<div class="card__body">' +
             '<span class="card__cat">' + window.RL.esc(window.RL.categoryLabel(e, lang)) + "</span>" +
             '<h3 class="card__title">' + window.RL.esc(e.name) + "</h3>" +
@@ -90,7 +91,7 @@
       newsEl.innerHTML = news.length
         ? news.map(function (n) {
             var l = window.RL.loc(n, lang);
-            return '<a class="news-item" href="stire.html?id=' + encodeURIComponent(n.id) + '">' +
+            return '<a class="news-item" href="' + window.RL.entryUrl("SITE_NEWS", n.id) + '">' +
               '<span class="news-item__date">' + window.RL.esc(n.date || "") + "</span>" +
               '<span class="news-item__title">' + window.RL.esc(n.name) + "</span>" +
               '<span class="news-item__tagline">' + window.RL.esc(l.tagline || "") + "</span>" +

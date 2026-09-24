@@ -83,7 +83,7 @@
       return;
     }
     resultsEl.innerHTML = matches.map(function (m) {
-      return '<a class="search-result" href="' + m.src.page + "?id=" + encodeURIComponent(m.entry.id) + '">' +
+      return '<a class="search-result" href="' + window.RL.entryUrl(m.src.key, m.entry.id) + '">' +
         '<span class="search-result__type">' + window.RL.esc(labelFor(m.src)) + "</span>" +
         '<span class="search-result__title">' + window.RL.esc(m.entry.name) + "</span>" +
         '<span class="search-result__tagline">' + window.RL.esc(m.loc.tagline || "") + "</span>" +

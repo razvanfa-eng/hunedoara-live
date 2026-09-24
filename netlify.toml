@@ -8,6 +8,113 @@
 [functions]
   node_bundler = "esbuild"
 
+# URL-uri vechi ale paginilor de detaliu (pagina.html?id=X) -> pagina statică
+# /<secțiune>/X/ generată de scripts/build-pages.mjs. 301 permanent.
+# force = true: șablonul (ex. oras.html) există ca fișier, altfel Netlify l-ar servi
+# pe el și ar ignora regula („shadowing”).
+# Netlify potrivește regula doar dacă URL-ul are EXACT parametrii din `query` —
+# de aceea o regulă și pentru linkurile deschise din Facebook (?id=X&fbclid=...).
+# Orice altă combinație de parametri cade pe șablon, care randează intrarea tot
+# din ?id= (js/detail.js), deci linkul merge oricum.
+
+[[redirects]]
+  from = "/destinatie.html"
+  to = "/destinatii/:id/"
+  status = 301
+  force = true
+  query = { id = ":id", fbclid = ":fbclid" }
+
+[[redirects]]
+  from = "/destinatie.html"
+  to = "/destinatii/:id/"
+  status = 301
+  force = true
+  query = { id = ":id" }
+
+[[redirects]]
+  from = "/oras.html"
+  to = "/orase/:id/"
+  status = 301
+  force = true
+  query = { id = ":id", fbclid = ":fbclid" }
+
+[[redirects]]
+  from = "/oras.html"
+  to = "/orase/:id/"
+  status = 301
+  force = true
+  query = { id = ":id" }
+
+[[redirects]]
+  from = "/natura-loc.html"
+  to = "/natura/:id/"
+  status = 301
+  force = true
+  query = { id = ":id", fbclid = ":fbclid" }
+
+[[redirects]]
+  from = "/natura-loc.html"
+  to = "/natura/:id/"
+  status = 301
+  force = true
+  query = { id = ":id" }
+
+[[redirects]]
+  from = "/activitate.html"
+  to = "/turism-activ/:id/"
+  status = 301
+  force = true
+  query = { id = ":id", fbclid = ":fbclid" }
+
+[[redirects]]
+  from = "/activitate.html"
+  to = "/turism-activ/:id/"
+  status = 301
+  force = true
+  query = { id = ":id" }
+
+[[redirects]]
+  from = "/mostenire-articol.html"
+  to = "/mostenire/:id/"
+  status = 301
+  force = true
+  query = { id = ":id", fbclid = ":fbclid" }
+
+[[redirects]]
+  from = "/mostenire-articol.html"
+  to = "/mostenire/:id/"
+  status = 301
+  force = true
+  query = { id = ":id" }
+
+[[redirects]]
+  from = "/stire.html"
+  to = "/stiri/:id/"
+  status = 301
+  force = true
+  query = { id = ":id", fbclid = ":fbclid" }
+
+[[redirects]]
+  from = "/stire.html"
+  to = "/stiri/:id/"
+  status = 301
+  force = true
+  query = { id = ":id" }
+
+[[redirects]]
+  from = "/afacere.html"
+  to = "/afaceri/:id/"
+  status = 301
+  force = true
+  query = { id = ":id", fbclid = ":fbclid" }
+
+[[redirects]]
+  from = "/afacere.html"
+  to = "/afaceri/:id/"
+  status = 301
+  force = true
+  query = { id = ":id" }
+
 # Pagina 404 personalizată
 [[redirects]]
   from = "/*"

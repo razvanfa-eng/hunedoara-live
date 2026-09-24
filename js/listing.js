@@ -7,7 +7,7 @@
  *
  *   window.LISTING_CONFIG = {
  *     dataKey: "SITE_PLACES",   // cheia din js/data.js
- *     detailPage: "loc.html",   // pagina de detaliu (?id=...)
+ *     (linkurile spre detalii: RL.entryUrl -> /<secțiune>/<id>/)
  *     sortByDateDesc: false     // true pentru Știri
  *   };
  *
@@ -56,13 +56,14 @@
       } catch (e) { return iso; }
     }
 
-    function cardHtml(e) {
+    function cardHtml(e, i) {
       var l = window.RL.loc(e, lang);
-      var img = (e.images && e.images[0]) || "images/placeholder.svg";
+      var img = (e.images && e.images[0]) || "";
       var badge = e.example ? '<span class="badge badge--example">' + window.RL.esc(window.I18N.t("badge.example")) + "</span>" : "";
       var meta = window.RL.esc(window.RL.categoryLabel(e, lang)) + (e.date ? " · " + window.RL.esc(fmtDate(e.date)) : "");
-      return '<a class="card" href="' + cfg.detailPage + "?id=" + encodeURIComponent(e.id) + '">' +
-        '<div class="card__media"><img src="' + window.RL.esc(img) + '" alt="" loading="lazy" onerror="RL.imgError(this)">' + badge + "</div>" +
+      // primele carduri sunt de regulă vizibile fără scroll -> fără lazy-load
+      return '<a class="card" href="' + window.RL.entryUrl(cfg.dataKey, e.id) + '">' +
+        '<div class="card__media">' + window.RL.imgHtml(img, { sizes: "card", eager: i < 2 }) + badge + "</div>" +
         '<div class="card__body">' +
           '<span class="card__cat">' + meta + "</span>" +
           '<h3 class="card__title">' + window.RL.esc(e.name) + "</h3>" +
