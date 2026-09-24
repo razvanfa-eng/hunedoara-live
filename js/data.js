@@ -1161,7 +1161,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parcul Național Retezat",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/traseu-varful-mare.jpg"],
+    photoCredit: { author: "Harabagiu Dan (Hardsr)", license: "Domeniu public", source: "https://commons.wikimedia.org/wiki/File:Vf-mare1.jpg" },
     ro: {
       tagline: "Urcare de o zi de la Cabana Pietrele la Vârful Mare, unul dintre vârfurile secundare importante ale masivului.",
       description: [
@@ -1193,7 +1194,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parcul Național Retezat",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/traseu-saua-pelegii.jpg"],
+    photoCredit: { author: "Horia Varlan", license: "CC BY 2.0", source: "https://commons.wikimedia.org/wiki/File:Bucura_and_Ana.jpg" },
     ro: {
       tagline: "Traseu de creastă de la Cabana Pietrele la Șaua Pelegii, punct de legătură spre mai multe văi ale Retezatului.",
       description: [
@@ -1324,7 +1326,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parcul Național Retezat",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/cabana-gura-zlata.jpg"],
+    photoCredit: { author: "Dezidor", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Gura_Zlata.jpg" },
     ro: {
       tagline: "Ruta de acces dinspre vest, prin Cabana Gura Zlata, spre Lacul Bucura.",
       description: [
@@ -1485,7 +1488,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Godeanu",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/muntii-godeanu.jpg"],
+    photoCredit: { author: "Dezidor", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Godeanu_(3).jpg" },
     ro: {
       tagline: "Traversare lungă și solicitantă prin Munții Godeanu, cu un tronson parțial nemarcat.",
       description: [
@@ -1517,7 +1521,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Vâlcan",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/creasta-valcan-straja.jpg"],
+    photoCredit: { author: "Vlad Fara", license: "CC0", source: "https://commons.wikimedia.org/wiki/File:Straja,_Lupeni,_Romania_(Unsplash).jpg" },
     ro: {
       tagline: "Traversarea de creastă a Munților Vâlcan, pe la Vârful Straja, cel mai lung traseu marcat din zonă.",
       description: [
@@ -1549,7 +1554,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Poiana Ruscă",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/lacul-cincis-panorama.jpg"],
+    photoCredit: { author: "magdalena from romania", license: "CC BY 2.0", source: "https://commons.wikimedia.org/wiki/File:Cincis_Lake.jpg" },
     ro: {
       tagline: "Traseu de mai multe zile prin Munții Poiana Ruscă, pornind chiar din centrul Hunedoarei.",
       description: [
@@ -1581,7 +1587,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Poiana Ruscă",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/muntii-poiana-rusca.jpg"],
+    photoCredit: { author: "Compactforever", license: "CC BY 2.5", source: "https://commons.wikimedia.org/wiki/File:Poiana_Rusca.jpg" },
     ro: {
       tagline: "Traseu marcat din Hunedoara spre Vârful Rusca, cel mai înalt punct al masivului cu același nume.",
       description: [
@@ -1613,7 +1620,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Poiana Ruscă",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/dobra-panorama.jpg"],
+    photoCredit: { author: "Krokodilu", license: "Domeniu public", source: "https://commons.wikimedia.org/wiki/File:Dobra_Hunedoara.jpg" },
     ro: {
       tagline: "Cel mai lung traseu marcat din Poiana Ruscă pornit din Hunedoara, cu ieșire la Dobra.",
       description: [
@@ -1645,7 +1653,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/bosorod-sureanu.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Bo%C8%99orod_(4).jpg" },
     ro: {
       tagline: "Traseu prin Cheile Șura Mare spre sistemul carstic Ponorici-Cioclovina, cea mai lungă peșteră din Munții Șureanu.",
       description: [
@@ -1709,7 +1718,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
     hasReviews: true,
-    images: ["images/placeholder.svg"],
+    images: ["images/sarmizegetusa-zona-sacra.jpg"],
+    photoCredit: { author: "Cosmin Stefanescu", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Sarmisegetusa_Regia_-_Zona_sacra_%E2%80%93_Gradistea_Muntelui,_Muntii_Sureanu,_Hunedoara,_Romania_21.JPG" },
     ro: {
       tagline: "Traseul marcat care leagă satul Costești de capitala regatului dac, Sarmizegetusa Regia, și de Vârful Godeanu.",
       description: [
@@ -1774,7 +1784,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/cetatea-fetele-albe.jpg"],
+    photoCredit: { author: "România de vis", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Ziduri_ale_Cet%C4%83%C5%A3ii_Fe%C5%A3ele-Albe_0298.JPG" },
     ro: {
       tagline: "Cel mai scurt traseu marcat din zona cetăților dacice, spre ruinele mai puțin vizitate de la Fețele Albe.",
       description: [
@@ -1806,7 +1817,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/cetatea-piatra-rosie.jpg"],
+    photoCredit: { author: "Korinna", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Piatra_Rosie_drum_pavat.jpg" },
     ro: {
       tagline: "Traseu care leagă Sarmizegetusa Regia de Cetatea Piatra Roșie și de Peștera Cioclovina.",
       description: [
