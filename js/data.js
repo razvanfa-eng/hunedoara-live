@@ -2963,40 +2963,6 @@ window.SITE_TOWNS = [
 
 window.SITE_NEWS = [
   {
-    id: "istorie-natura-cultura-costesti-2026",
-    name: "„Istorie, Natură, Cultură” — ediția a 55-a, la Costești",
-    category: { ro: "Festival", en: "Festival" },
-    area: "Costești, Orăștioara de Sus",
-    date: "2026-09-18",
-    hasReviews: false,
-    images: ["images/cetatea-costesti-cetatuie.jpg"],
-    photoCredit: { author: "Levente Nuber", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Cetatea_dacic%C4%83_Coste%C8%99ti-Cet%C4%83%C8%9Buie_1.jpg" },
-    ro: {
-      tagline: "În weekendul 18–20 septembrie 2026, lângă cetățile dacice — concerte, marș folcloric și artizanat local.",
-      description: [
-        "Festivalul „Istorie, Natură, Cultură” ajunge la ediția a 55-a, în comuna Orăștioara de Sus, în apropierea cetăților dacice din Munții Orăștiei. Organizat de GAL Sargeția, Asociația Culturală Valea Dacilor și Parcul Natural Grădiștea Muncelului-Cioclovina, alături de instituții locale.",
-        "Programul include concerte de muzică ușoară și populară cu artiști cunoscuți, un marș folcloric cu ansambluri din tot județul, foc de artificii la apus, o paradă de costume istorice și populare, plus produse de la producători și meșteșugari locali."
-      ],
-      facts: [
-        { label: "Perioadă", value: "18–20 septembrie 2026" },
-        { label: "Loc", value: "Costești, comuna Orăștioara de Sus" },
-        { label: "Organizatori", value: "GAL Sargeția, Asociația Culturală Valea Dacilor, Parcul Natural Grădiștea Muncelului-Cioclovina" }
-      ]
-    },
-    en: {
-      tagline: "On the weekend of 18–20 September 2026, near the Dacian fortresses — concerts, a folklore march and local crafts.",
-      description: [
-        "The \"Istorie, Natură, Cultură\" festival reaches its 55th edition, in the Orăștioara de Sus commune, near the Dacian fortresses in the Orăștie Mountains. Organised by the GAL Sargeția local action group, the Valea Dacilor Cultural Association and the Grădiștea Muncelului-Cioclovina Natural Park, together with local institutions.",
-        "The programme includes pop and folk music concerts with well-known artists, a folklore march with ensembles from across the county, a sunset fireworks display, a parade of historical and traditional costumes, plus products from local producers and craftspeople."
-      ],
-      facts: [
-        { label: "Dates", value: "18–20 September 2026" },
-        { label: "Location", value: "Costești, Orăștioara de Sus commune" },
-        { label: "Organisers", value: "GAL Sargeția, Valea Dacilor Cultural Association, Grădiștea Muncelului-Cioclovina Natural Park" }
-      ]
-    }
-  },
-  {
     id: "castelul-corvinilor-restaurat-2026",
     name: "Castelul Corvinilor, restaurat integral — prima restaurare completă după mai bine de un secol",
     category: { ro: "Patrimoniu", en: "Heritage" },
@@ -3177,39 +3143,177 @@ window.SITE_NEWS = [
     }
   },
   {
-    id: "ziua-curateniei-nationale-2026",
-    name: "Ziua de Curățenie Națională, ediția a 13-a — și în Hunedoara",
-    category: { ro: "Eveniment civic", en: "Community event" },
-    area: "Județul Hunedoara",
-    date: "2026-09-19",
+    id: "sarmizegetusa-regia-program-toamna-2026",
+    name: "Sarmizegetusa Regia se vizitează doar în weekend, până la 31 octombrie",
+    category: { ro: "Patrimoniu", en: "Heritage" },
+    area: "Munții Orăștiei",
+    date: "2026-09-25",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/sarmizegetusa-regia-sanctuar.jpg"],
+    photoCredit: { author: "Eliza Palos", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Sarmizegetusa_Regia-Sanctuarul_mare_circular_(Zona_sacr%C4%83).jpg" },
     ro: {
-      tagline: "Aproape 5.000 de voluntari au strâns peste 4.600 de saci cu deșeuri pe 19 septembrie 2026, în 59 de localități din județ.",
+      tagline: "Între 25 septembrie și 31 octombrie 2026, situl e deschis doar sâmbăta și duminica, din cauza lucrărilor de restaurare de la Terasa a X-a.",
       description: [
-        "Județul Hunedoara s-a alăturat ediției a 13-a a Zilei de Curățenie Națională, parte din campania globală „Let's Do It, Romania!”, desfășurată simultan în aproape 190 de țări, sub tema „Tu ce lași în urma ta?”. Acțiunea a fost organizată local de Instituția Prefectului – Județul Hunedoara și Consiliul Județean Hunedoara, alături de coordonatorii naționali ai campaniei, cu sprijinul Agenției pentru Protecția Mediului, al Gărzii de Mediu, al Sistemului Integrat de Gestionare a Deșeurilor, al Supercom, al Direcției Silvice, al Parcului Național Retezat, al poliției și al pompierilor.",
-        "Voluntarii (persoane singure, familii, elevi, firme și instituții) s-au adunat de la ora 10:00 în cele 64 de puncte de întâlnire din 59 de localități hunedorene. Potrivit datelor provizorii centralizate sâmbătă după-amiază, 4.923 de voluntari au strâns 4.606 saci cu deșeuri, iar organizatorii se așteptau ca numărul voluntarilor să treacă de 5.000 după centralizarea tuturor punctelor. Ediția din 2026 a fost a doua de când Ziua de Curățenie Națională e zi oficială, prin Legea 266/2024."
+        "Fosta capitală a regatului dac are un program redus în această toamnă: între 25 septembrie și 31 octombrie 2026, Sarmizegetusa Regia se poate vizita doar sâmbăta și duminica, iar de luni până vineri situl e închis. Motivul sunt lucrările de restaurare și conservare de la Terasa a X-a. Și în restul lunii septembrie situl fusese deschis doar de vineri până duminică, din același motiv.",
+        "În weekend, programul e 9:00–20:00 în septembrie și 9:00–18:00 în octombrie. Biletul costă 30 de lei pentru adulți și 10 lei pentru elevi, studenți și pensionari, iar un tur ghidat (maximum 30 de persoane) costă 100 de lei în română sau 150 de lei în engleză. Situl e administrat de Muzeul Civilizației Dacice și Romane Deva."
       ],
       facts: [
-        { label: "Dată", value: "sâmbătă, 19 septembrie 2026" },
-        { label: "Voluntari", value: "4.923 (date provizorii)" },
-        { label: "Deșeuri strânse", value: "4.606 saci (date provizorii)" },
-        { label: "Amploare", value: "64 de puncte de întâlnire, în 59 de localități din județ" },
-        { label: "Organizatori", value: "Instituția Prefectului – Județul Hunedoara, Consiliul Județean Hunedoara, „Let's Do It, Romania!”" }
+        { label: "Perioadă", value: "25 septembrie – 31 octombrie 2026" },
+        { label: "Program", value: "sâmbătă–duminică, 9:00–20:00 (septembrie) și 9:00–18:00 (octombrie); luni–vineri închis" },
+        { label: "Bilet", value: "30 lei adulți; 10 lei elevi, studenți, pensionari" },
+        { label: "Motiv", value: "lucrări de restaurare și conservare la Terasa a X-a" }
       ]
     },
     en: {
-      tagline: "Nearly 5,000 volunteers collected over 4,600 bags of waste on 19 September 2026, across 59 towns and villages in the county.",
+      tagline: "From 25 September to 31 October 2026, the site is open only on Saturdays and Sundays, because of restoration works on Terrace X.",
       description: [
-        "Hunedoara county joined the 13th edition of Romania's National Cleanup Day, part of the global \"Let's Do It, Romania!\" campaign, held simultaneously in nearly 190 countries under the theme \"What will you leave behind?\". The local action was organised by the Hunedoara County Prefect's Office and County Council, together with the campaign's national coordinators, with support from the Environmental Protection Agency, the Environmental Guard, the county's integrated waste management system, Supercom, the Forestry Directorate, Retezat National Park, the police and the fire service.",
-        "Volunteers (individuals, families, students, companies and institutions) gathered from 10:00 at 64 meeting points across 59 towns and villages in the county. According to provisional figures compiled on Saturday afternoon, 4,923 volunteers collected 4,606 bags of waste, and the organisers expected the number of volunteers to pass 5,000 once all meeting points had reported. The 2026 edition was the second since National Cleanup Day became an official day under Law 266/2024."
+        "The former capital of the Dacian kingdom has reduced opening hours this autumn: from 25 September to 31 October 2026, Sarmizegetusa Regia can only be visited on Saturdays and Sundays, and the site is closed Monday to Friday. The reason is the restoration and conservation work on Terrace X. For the rest of September, the site had already been open only Friday to Sunday, for the same reason.",
+        "At weekends, it is open 9:00–20:00 in September and 9:00–18:00 in October. Tickets cost 30 lei for adults and 10 lei for pupils, students and pensioners, and a guided tour (up to 30 people) costs 100 lei in Romanian or 150 lei in English. The site is managed by the Museum of Dacian and Roman Civilisation in Deva."
       ],
       facts: [
-        { label: "Date", value: "Saturday, 19 September 2026" },
-        { label: "Volunteers", value: "4,923 (provisional figures)" },
-        { label: "Waste collected", value: "4,606 bags (provisional figures)" },
-        { label: "Scale", value: "64 meeting points, across 59 towns and villages in the county" },
-        { label: "Organisers", value: "Hunedoara County Prefect's Office, Hunedoara County Council, \"Let's Do It, Romania!\"" }
+        { label: "Period", value: "25 September – 31 October 2026" },
+        { label: "Opening hours", value: "Saturday–Sunday, 9:00–20:00 (September) and 9:00–18:00 (October); closed Monday–Friday" },
+        { label: "Tickets", value: "30 lei adults; 10 lei pupils, students, pensioners" },
+        { label: "Reason", value: "restoration and conservation works on Terrace X" }
+      ]
+    }
+  },
+  {
+    id: "traseu-tematic-cetatea-banita-2026",
+    name: "Cetatea dacică Bănița, redată turiștilor printr-un traseu tematic nou",
+    category: { ro: "Turism", en: "Tourism" },
+    area: "Bănița",
+    date: "2026-08-01",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Din 1 august 2026, cetatea UNESCO de lângă Cheile Băniței are un traseu marcat și amenajat: 570 m, circa 40 de minute la urcare.",
+      description: [
+        "Cetatea dacică de la Bănița, una dintre cetățile din Munții Orăștiei incluse în patrimoniul mondial UNESCO, poate fi vizitată din 1 august 2026 pe traseul tematic „Cetatea Bănița”, marcat și amenajat. Traseul traversează Cheile Băniței, apoi continuă prin pădure, pe un drum în pantă.",
+        "Are 570 m lungime, o diferență de nivel de 104 m și o dificultate medie; urcarea durează aproximativ 40 de minute. Organizatorii recomandă echipament de drumeție, respectarea marcajelor și a indicațiilor și protejarea patrimoniului cultural și a naturii. Traseul a fost pus la dispoziția publicului de Muzeul Civilizației Dacice și Romane Deva, împreună cu Primăria Bănița, Parcul Natural Grădiștea Muncelului-Cioclovina, Romsilva și Salvamont Hunedoara."
+      ],
+      facts: [
+        { label: "Deschis din", value: "1 august 2026" },
+        { label: "Lungime", value: "570 m, diferență de nivel 104 m" },
+        { label: "Durată", value: "cca. 40 de minute, la urcare" },
+        { label: "Dificultate", value: "medie" }
+      ]
+    },
+    en: {
+      tagline: "Since 1 August 2026, the UNESCO-listed fortress by the Bănița Gorge has a marked, improved trail: 570 m, about 40 minutes uphill.",
+      description: [
+        "The Dacian fortress at Bănița, one of the Orăștie Mountains fortresses on the UNESCO World Heritage list, can be visited since 1 August 2026 on the marked and improved \"Cetatea Bănița\" themed trail. The route crosses the Bănița Gorge, then continues through the forest on a steep track.",
+        "It is 570 m long, with a 104 m height difference and medium difficulty; the climb takes about 40 minutes. The organisers recommend proper hiking gear, following the markings and signs, and respecting the cultural heritage and nature. The trail was opened to the public by the Museum of Dacian and Roman Civilisation in Deva, together with Bănița town hall, the Grădiștea Muncelului-Cioclovina Natural Park, Romsilva and Salvamont Hunedoara."
+      ],
+      facts: [
+        { label: "Open since", value: "1 August 2026" },
+        { label: "Length", value: "570 m, 104 m height difference" },
+        { label: "Duration", value: "about 40 minutes, uphill" },
+        { label: "Difficulty", value: "medium" }
+      ]
+    }
+  },
+  {
+    id: "bilet-parcul-national-retezat-online-sms-2026",
+    name: "Biletul pentru Parcul Național Retezat se poate plăti online sau prin SMS",
+    category: { ro: "Info utile", en: "Practical info" },
+    area: "Parcul Național Retezat",
+    date: "2026-09-08",
+    hasReviews: false,
+    images: ["images/retezat-bucura.jpg"],
+    photoCredit: { author: "Daniel Ighișan", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Retezat_View_over_Bucura_lake.jpg" },
+    ro: {
+      tagline: "Tariful de vizitare e de 10 lei de persoană și e valabil 7 zile; se poate achita pe iaBilet.ro, Easy2Visit sau prin SMS la 7494.",
+      description: [
+        "Turiștii care merg în Retezat pot plăti tariful de vizitare al parcului și dinainte: online, pe iaBilet.ro și Easy2Visit, sau prin SMS la numărul 7494, cu textul PNR1 pentru o persoană, PNR2 pentru două persoane și așa mai departe, până la PNR5. Prin SMS, prețul e de 2 euro + TVA pentru fiecare bilet.",
+        "Tariful e de 10 lei de persoană, cu TVA inclus, iar biletul e valabil șapte zile. Se poate cumpăra în continuare și la punctele de acces în parc, la Centrul de vizitare Nucșoara sau de la personalul autorizat. Banii susțin activitățile de conservare și protejare ale parcului."
+      ],
+      facts: [
+        { label: "Tarif", value: "10 lei de persoană (TVA inclus), valabil 7 zile" },
+        { label: "Online", value: "iaBilet.ro, Easy2Visit" },
+        { label: "SMS", value: "la 7494, textul PNR1…PNR5 (1–5 persoane); 2 euro + TVA/bilet" },
+        { label: "La fața locului", value: "punctele de acces, Centrul de vizitare Nucșoara" }
+      ]
+    },
+    en: {
+      tagline: "The visitor fee is 10 lei per person and valid for 7 days; you can pay on iaBilet.ro, Easy2Visit or by text message to 7494.",
+      description: [
+        "Visitors heading to the Retezat mountains can now pay the park's visitor fee in advance: online, on iaBilet.ro and Easy2Visit, or by text message to 7494 (Romanian mobile networks), sending PNR1 for one person, PNR2 for two people and so on, up to PNR5. By SMS, the price is €2 + VAT per ticket.",
+        "The fee is 10 lei per person, VAT included, and the ticket is valid for seven days. It can still be bought at the park's access points, at the Nucșoara visitor centre or from authorised staff. The money supports the park's conservation and protection work."
+      ],
+      facts: [
+        { label: "Fee", value: "10 lei per person (VAT included), valid for 7 days" },
+        { label: "Online", value: "iaBilet.ro, Easy2Visit" },
+        { label: "SMS", value: "to 7494, text PNR1…PNR5 (1–5 people); €2 + VAT per ticket" },
+        { label: "On site", value: "park access points, Nucșoara visitor centre" }
+      ]
+    }
+  },
+  {
+    id: "vivaldi-rocks-deva-2026",
+    name: "Vivaldi Rocks — legendele rockului, în variantă simfonică, la Deva",
+    category: { ro: "Concert", en: "Concert" },
+    area: "Deva",
+    date: "2026-10-31",
+    hasReviews: false,
+    images: ["images/deva-cetate.jpg"],
+    photoCredit: { author: "Bogdan.onis", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Deva.jpg" },
+    ro: {
+      tagline: "Sâmbătă, 31 octombrie 2026, de la 19:30, la Centrul Cultural „Drăgan Muntean”: piese Metallica, Queen, Led Zeppelin sau Bon Jovi, în aranjamente simfonice.",
+      description: [
+        "Centrul Cultural „Drăgan Muntean” din Deva găzduiește, în premieră, spectacolul Vivaldi Rocks 2026, o întâlnire între muzica simfonică și energia rockului. Pe scenă urcă Orchestra Simfonică București și Vivaldi Rocks, cu piese inspirate de legende ale rockului precum Metallica, Queen, Led Zeppelin sau Bon Jovi, reorchestrate și cântate pe instrumente electrice.",
+        "Biletele se găsesc online, pe vivaldirocks.com și iabilet.ro; organizatorii recomandă cumpărarea lor din timp, pentru că locurile sunt limitate. Informații la Centrul Cultural: 0354 408 907."
+      ],
+      facts: [
+        { label: "Dată", value: "sâmbătă, 31 octombrie 2026, ora 19:30" },
+        { label: "Loc", value: "Centrul Cultural „Drăgan Muntean”, Piața Victoriei nr. 7, Deva" },
+        { label: "Bilete", value: "vivaldirocks.com, iabilet.ro" }
+      ]
+    },
+    en: {
+      tagline: "Saturday, 31 October 2026, from 19:30, at the \"Drăgan Muntean\" Cultural Centre: Metallica, Queen, Led Zeppelin or Bon Jovi songs in symphonic arrangements.",
+      description: [
+        "The \"Drăgan Muntean\" Cultural Centre in Deva hosts, for the first time, the Vivaldi Rocks 2026 show, where symphonic music meets rock energy. On stage are the Bucharest Symphony Orchestra (Orchestra Simfonică București) and Vivaldi Rocks, playing pieces inspired by rock legends such as Metallica, Queen, Led Zeppelin and Bon Jovi, re-orchestrated and performed on electric instruments.",
+        "Tickets are sold online at vivaldirocks.com and iabilet.ro; the organisers recommend buying early, as seating is limited. Information from the Cultural Centre: +40 354 408 907."
+      ],
+      facts: [
+        { label: "Date", value: "Saturday, 31 October 2026, 19:30" },
+        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Piața Victoriei 7, Deva" },
+        { label: "Tickets", value: "vivaldirocks.com, iabilet.ro" }
+      ]
+    }
+  },
+  {
+    id: "spargatorul-de-nuci-deva-2026",
+    name: "„Spărgătorul de nuci”, cu Balletto Nazionale Italiano, la Deva",
+    category: { ro: "Spectacol", en: "Performance" },
+    area: "Deva",
+    date: "2026-11-19",
+    hasReviews: false,
+    images: ["images/parcul-cetatii-deva.jpg"],
+    photoCredit: { author: "Carmen buzan", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Parcul_Cetatii_Deva.JPG" },
+    ro: {
+      tagline: "Joi, 19 noiembrie 2026, de la 19:00, baletul lui Ceaikovski ajunge la Centrul Cultural „Drăgan Muntean”, cu balerina Oksana Bondareva.",
+      description: [
+        "Balletto Nazionale Italiano aduce la Deva „Spărgătorul de nuci”, baletul clasic pe muzica lui Piotr Ilici Ceaikovski, cu balerina Oksana Bondareva. Spectacolul promite decoruri impresionante, costume spectaculoase și momente coregrafice de mare forță vizuală, îmbinând rafinamentul baletului clasic cu elemente de scenografie contemporană.",
+        "Biletele se cumpără prin TicketStore.ro; informații la 0721 055 037."
+      ],
+      facts: [
+        { label: "Dată", value: "joi, 19 noiembrie 2026, ora 19:00" },
+        { label: "Loc", value: "Centrul Cultural „Drăgan Muntean”, Piața Victoriei nr. 7, Deva" },
+        { label: "Bilete", value: "TicketStore.ro · tel. 0721 055 037" }
+      ]
+    },
+    en: {
+      tagline: "Thursday, 19 November 2026, from 19:00, Tchaikovsky's ballet comes to the \"Drăgan Muntean\" Cultural Centre, with ballerina Oksana Bondareva.",
+      description: [
+        "Balletto Nazionale Italiano brings \"The Nutcracker\" to Deva — the classic ballet set to Pyotr Ilyich Tchaikovsky's music, with ballerina Oksana Bondareva. The production promises impressive sets, spectacular costumes and visually powerful choreography, blending classical ballet with contemporary staging.",
+        "Tickets are sold through TicketStore.ro; information on +40 721 055 037."
+      ],
+      facts: [
+        { label: "Date", value: "Thursday, 19 November 2026, 19:00" },
+        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Piața Victoriei 7, Deva" },
+        { label: "Tickets", value: "TicketStore.ro · phone +40 721 055 037" }
       ]
     }
   }
