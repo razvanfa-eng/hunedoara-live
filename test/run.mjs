@@ -3,11 +3,42 @@ import { JSDOM } from "jsdom";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import vm from "vm";
 
 const DIR = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(DIR, "..");
 let pass = 0, fail = 0;
 const ok = (c, m) => { (c ? pass++ : fail++); console.log((c ? "  ok  " : " FAIL ") + m); };
+
+/* Valorile așteptate se calculează din js/data.js (nu sunt scrise de mână), ca testele
+   să nu se strice de fiecare dată când adăugăm sau scoatem conținut. */
+const DATA = (() => {
+  const ctx = { window: {} };
+  vm.createContext(ctx);
+  vm.runInContext(fs.readFileSync(path.join(ROOT, "js/data.js"), "utf8"), ctx);
+  return ctx.window;
+})();
+const SECTION_KEYS = ["SITE_DESTINATIONS", "SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_TOWNS", "SITE_NEWS", "SITE_BUSINESSES"];
+const RELATED_KEYS = ["SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_BUSINESSES"];
+const uniq = (a) => [...new Set(a.filter(Boolean))];
+const dataKeyOf = (file) => (fs.readFileSync(path.join(ROOT, file), "utf8").match(/dataKey:\s*"([A-Z_]+)"/) || [])[1];
+const byId = (key, id) => DATA[key].find((e) => e.id === id);
+
+/* -------- data.js: integritate -------- */
+for (const k of SECTION_KEYS) ok(Array.isArray(DATA[k]) && DATA[k].length > 0, "data.js: " + k + " are intrări (" + (DATA[k] || []).length + ")");
+{
+  const ids = SECTION_KEYS.flatMap((k) => DATA[k].map((e) => k + "/" + e.id));
+  ok(ids.length === new Set(ids).size, "data.js: id-uri unice în fiecare secțiune");
+  const bad = SECTION_KEYS.flatMap((k) => DATA[k].filter((e) => !e.ro || !e.en || !e.ro.tagline || !e.en.tagline ||
+    (e.ro.description || []).length !== (e.en.description || []).length ||
+    (e.ro.facts || []).length !== (e.en.facts || []).length).map((e) => e.id));
+  ok(bad.length === 0, "data.js: toate intrările sunt bilingve (RO/EN aliniate)" + (bad.length ? " — " + bad.join(", ") : ""));
+  const missingImg = SECTION_KEYS.flatMap((k) => DATA[k].flatMap((e) => (e.images || []).filter((i) => !fs.existsSync(path.join(ROOT, i)))));
+  ok(missingImg.length === 0, "data.js: toate imaginile referite există" + (missingImg.length ? " — lipsesc " + missingImg.join(", ") : ""));
+  const badCredit = SECTION_KEYS.flatMap((k) => DATA[k].filter((e) => e.photoCredit &&
+    !(e.photoCredit.author && e.photoCredit.license && e.photoCredit.source)).map((e) => e.id));
+  ok(badCredit.length === 0, "data.js: creditele foto sunt complete (autor, licență, sursă)" + (badCredit.length ? " — " + badCredit.join(", ") : ""));
+}
 
 function prep(html) {
   html = html.replace(/<head>/, `<head><script>window.addEventListener("error",e=>{window.__err=(window.__err||"")+String(e.message||e.error)+" | ";});</script>`);
@@ -38,7 +69,10 @@ function load(file, query = "") {
   ok(d.querySelectorAll("#home-stats .stat").length === 4, "index: 4 statistici randate");
   ok(d.querySelectorAll("#explore-grid .tile").length === 8, "index: 8 module în grid-ul de explorare (structura hibridă)");
   ok([...d.querySelectorAll("#explore-grid .tile")].every((a) => /\.html$/.test(a.getAttribute("href"))), "index: toate tile-urile leagă spre o pagină");
-  ok(d.querySelectorAll("#home-news .news-item").length === 3, "index: 3 știri randate (conținut real)");
+  const expNews = Math.min(3, DATA.SITE_NEWS.length);
+  ok(d.querySelectorAll("#home-news .news-item").length === expNews, "index: " + expNews + " știri randate (cele mai recente)");
+  const newest = DATA.SITE_NEWS.slice().sort((a, b) => (b.date || "").localeCompare(a.date || ""))[0];
+  ok(d.querySelector("#home-news .news-item .news-item__title")?.textContent === newest.name, "index: prima știre e cea mai recentă");
   const before = d.querySelector(".hero h1").textContent;
   d.querySelector("#lang-toggle").dispatchEvent(new w.Event("click"));
   ok(d.querySelector(".hero h1").textContent === before, "index: numele site-ului nu se traduce (Hunedoara Live rămâne la fel)");
@@ -50,7 +84,8 @@ function load(file, query = "") {
   const w1 = await load("destinatii.html");
   const d1 = w1.document;
   ok(!w1.__err, "destinatii: fără erori JS" + (w1.__err ? " — " + w1.__err : ""));
-  ok(d1.querySelectorAll("#grid .card").length === 4, "destinatii: 4 carduri (conținut real)");
+  const nDest = DATA[dataKeyOf("destinatii.html")].length;
+  ok(d1.querySelectorAll("#grid .card").length === nDest, "destinatii: " + nDest + " carduri (câte sunt în data.js)");
   ok([...d1.querySelectorAll("#grid .card")].every((a) => /^destinatie\.html\?id=[a-z-]+$/.test(a.getAttribute("href"))), "destinatii: href-uri carduri valide");
 
   const w2 = await load("destinatie.html", "?id=valea-jiului");
@@ -64,8 +99,15 @@ function load(file, query = "") {
   const w1 = await load("natura.html");
   const d1 = w1.document;
   ok(!w1.__err, "natura: fără erori JS" + (w1.__err ? " — " + w1.__err : ""));
-  ok(d1.querySelectorAll("#grid .card").length === 10, "natura: 10 carduri (conținut real)");
-  ok(d1.querySelectorAll("#f-area option").length === 1 + 6, "natura: filtru zonă = 6 + Toate");
+  const nat = DATA[dataKeyOf("natura.html")];
+  ok(d1.querySelectorAll("#grid .card").length === nat.length, "natura: " + nat.length + " carduri (câte sunt în data.js)");
+  const nAreas = uniq(nat.map((e) => e.area)).length;
+  ok(d1.querySelectorAll("#f-area option").length === 1 + nAreas, "natura: filtru zonă = " + nAreas + " + Toate");
+  const firstArea = nat[0].area;
+  const sel = d1.getElementById("f-area");
+  sel.value = firstArea; sel.dispatchEvent(new w1.Event("change"));
+  const expArea = nat.filter((e) => e.area === firstArea).length;
+  ok(d1.querySelectorAll("#grid .card").length === expArea, "natura: filtrul de zonă „" + firstArea + "” lasă " + expArea + " carduri");
 
   const w = await load("natura-loc.html", "?id=pestera-bolii");
   const d = w.document;
@@ -97,36 +139,36 @@ function load(file, query = "") {
 
 /* -------- afaceri.html + afacere.html (recenzii, altă secțiune) -------- */
 {
+  const biz = DATA[dataKeyOf("afaceri.html")];
   const w1 = await load("afaceri.html");
-  ok(w1.document.querySelectorAll("#grid .card").length === 33, "afaceri: 33 carduri");
+  ok(w1.document.querySelectorAll("#grid .card").length === biz.length, "afaceri: " + biz.length + " carduri (câte sunt în data.js)");
 
-  const w2 = await load("afacere.html", "?id=exemplu-restaurant-local");
+  // o afacere reală, cu recenzii activate
+  const b = biz.find((e) => e.hasReviews);
+  ok(!!b, "afaceri: există cel puțin o afacere cu recenzii");
+  const w2 = await load("afacere.html", "?id=" + encodeURIComponent(b.id));
   const d2 = w2.document;
   ok(!w2.__err, "afacere: fără erori JS" + (w2.__err ? " — " + w2.__err : ""));
-  ok(/Restaurant/.test(d2.querySelector("#detail-title")?.textContent || ""), "afacere: titlu randat");
+  ok((d2.querySelector("#detail-title")?.textContent || "") === b.name, "afacere: titlu randat (" + b.name + ")");
   ok(!!d2.querySelector("#reviews .review-form"), "afacere: motorul de recenzii funcționează și aici (reutilizat)");
 }
 
 /* -------- restul secțiunilor: randare fără erori + numărul corect de carduri -------- */
 {
-  const pairs = [
-    ["turism-activ.html", 39], ["mostenire.html", 4], ["orase.html", 10], ["stiri.html", 7]
-  ];
+  const pairs = ["turism-activ.html", "mostenire.html", "orase.html", "stiri.html"]
+    .map((f) => [f, DATA[dataKeyOf(f)].length]);
   for (const [file, count] of pairs) {
     const w = await load(file);
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
     ok(w.document.querySelectorAll("#grid .card").length === count, file + ": " + count + " card(uri) randate");
   }
-  const details = [
-    ["activitate.html", "traseu-pietrele-bucura-peleaga", "Pietrele"],
-    ["mostenire-articol.html", "sarmizegetusa-regia", "Sarmizegetusa"],
-    ["oras.html", "petrosani", "Petroșani"],
-    ["stire.html", "istorie-natura-cultura-costesti-2026", "Costești"]
-  ];
-  for (const [file, id, needle] of details) {
-    const w = await load(file, "?id=" + id);
+  // pentru fiecare pagină de detaliu: prima intrare din secțiunea ei (știrile se schimbă des)
+  const details = ["activitate.html", "mostenire-articol.html", "oras.html", "stire.html"]
+    .map((f) => [f, DATA[dataKeyOf(f)][0]]);
+  for (const [file, entry] of details) {
+    const w = await load(file, "?id=" + encodeURIComponent(entry.id));
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
-    ok(new RegExp(needle, "i").test(w.document.querySelector("#detail-title")?.textContent || ""), file + ": titlu randat corect");
+    ok((w.document.querySelector("#detail-title")?.textContent || "") === entry.name, file + ": titlu randat corect (" + entry.id + ")");
   }
 }
 
@@ -136,8 +178,11 @@ function load(file, query = "") {
   ok(!w.__err, "oras petrosani: fără erori JS" + (w.__err ? " — " + w.__err : ""));
   const rel = w.document.querySelector("#detail-related");
   ok(!!rel && !rel.hidden, "oras petrosani: #detail-related vizibil");
-  ok(rel.querySelectorAll(".card").length === 31, "oras petrosani: 31 obiective din zonă");
-  ok(rel.querySelectorAll(".related-group__title").length >= 3, "oras petrosani: grupate pe cel puțin 3 sezoane");
+  const areas = byId("SITE_TOWNS", "petrosani").relatedAreas || [];
+  const relItems = RELATED_KEYS.flatMap((k) => DATA[k].filter((e) => !e.example && areas.includes(e.area)));
+  const relSeasons = uniq(relItems.map((e) => e.season || "tot-anul"));
+  ok(relItems.length > 0 && rel.querySelectorAll(".card").length === relItems.length, "oras petrosani: " + relItems.length + " obiective din zonă");
+  ok(rel.querySelectorAll(".related-group__title").length === relSeasons.length && relSeasons.length >= 2, "oras petrosani: grupate pe " + relSeasons.length + " sezoane");
 }
 
 /* -------- pagini statice -------- */
@@ -147,7 +192,9 @@ function load(file, query = "") {
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
   const w = await load("credite.html");
-  ok(w.document.querySelectorAll(".credit-card").length === 126, "credite: 126 intrări (6+14+39+17+10+7+33, toate secțiunile)");
+  const counts = SECTION_KEYS.map((k) => DATA[k].length);
+  const total = counts.reduce((a, b) => a + b, 0);
+  ok(w.document.querySelectorAll(".credit-card").length === total, "credite: " + total + " intrări (" + counts.join("+") + ", toate secțiunile)");
 }
 
 /* -------- fișiere prezente -------- */
