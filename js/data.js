@@ -2990,72 +2990,182 @@ window.SITE_NEWS = [
     }
   },
   {
-    id: "festivalul-medieval-ioan-de-hunedoara-2026",
-    name: "Festivalul Medieval „Ioan de Hunedoara” — ediția 2026",
-    category: { ro: "Festival", en: "Festival" },
+    id: "castelul-corvinilor-restaurat-2026",
+    name: "Castelul Corvinilor, restaurat integral — prima restaurare completă după mai bine de un secol",
+    category: { ro: "Patrimoniu", en: "Heritage" },
     area: "Hunedoara",
-    date: "2026-08-29",
+    date: "2026-09-02",
     hasReviews: false,
-    images: ["images/curtea-castelul-corvinilor.jpg"],
-    photoCredit: { author: "Munteanu Anca", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Castelul_Corvinilor,_municipiul_Hunedoara_04.JPG" },
+    images: ["images/castelul-corvinilor.jpg"],
+    photoCredit: { author: "Giuseppe Milo", license: "CC BY 2.0", source: "https://commons.wikimedia.org/wiki/File:Corvin_Castle_-_Hunedoara,_Romania_-_Travel_photography_(36729360851).jpg" },
     ro: {
-      tagline: "18 grupuri de reconstituire istorică din țară și străinătate au adus Evul Mediu la Castelul Corvinilor.",
+      tagline: "Lucrările de 11,6 milioane de euro s-au încheiat: turnuri, pod, acoperișuri și săli reabilitate, plus spații noi deschise vizitatorilor.",
       description: [
-        "Pe 29–30 august 2026, Castelul Corvinilor și Pietonala Corvin din Hunedoara au găzduit Festivalul Medieval „Ioan de Hunedoara”, cu reconstituiri de bătălii istorice, ateliere interactive, demonstrații de tir cu arcul și lupte medievale.",
-        "Ediția din acest an a adus 18 grupuri de reconstituire istorică din România, Cehia, Slovacia și Ungaria, plus concerte susținute de trupele Iris și Peregrinii."
+        "Proiectul de reabilitare a Castelului Corvinilor s-a încheiat la finalul lui august 2026, după două etape finanțate din fonduri europene: 5 milioane de euro prin Programul Operațional Regional (2018–2023) și 6,6 milioane de euro prin PNRR. Este prima restaurare integrală a monumentului de la cea făcută între 1868 și 1914.",
+        "Au fost restaurate, printre altele, Turnul Buzdugan și „Cavalerul” din vârful lui, podul de acces din zona vechiului Turn al Porții, acoperișurile, Sala Dietei și Sala Cavalerilor. În Loggia Matia a fost refăcută fresca cu blazoanele marilor familii nobiliare, printre care cele ale regelui Vladislav Jagello și ale lui Iancu de Hunedoara. Vizitatorii au acces acum și la spații noi, precum Groapa Urșilor, Podul Capelei și zona „Între Ziduri”.",
+        "Primăria Hunedoara pregătește deja etapele următoare, de peste 15 milioane de euro: reabilitarea Curții Husarilor și a podului circular, plus un Muzeu Etnografic al Pădurenilor, pe 8.000 m²."
       ],
       facts: [
-        { label: "Perioadă", value: "29–30 august 2026" },
-        { label: "Loc", value: "Castelul Corvinilor, Hunedoara" },
-        { label: "Participanți", value: "18 grupuri de reconstituire istorică, din țară și din străinătate" }
+        { label: "Cost total", value: "11,6 milioane de euro (POR + PNRR)" },
+        { label: "Finalizare", value: "august 2026 (anunțată pe 2 septembrie 2026)" },
+        { label: "Spații noi pentru vizitatori", value: "Groapa Urșilor, Podul Capelei, „Între Ziduri”" }
       ]
     },
     en: {
-      tagline: "18 historical re-enactment groups from Romania and abroad brought the Middle Ages back to Corvin Castle.",
+      tagline: "The €11.6 million works are finished: towers, bridge, roofs and halls restored, plus new areas opened to visitors.",
       description: [
-        "On 29–30 August 2026, Corvin Castle and the Corvin pedestrian street in Hunedoara hosted the \"Ioan de Hunedoara\" Medieval Festival, with historical battle re-enactments, interactive workshops, archery demonstrations and medieval combat.",
-        "This year's edition brought 18 historical re-enactment groups from Romania, the Czech Republic, Slovakia and Hungary, plus concerts by the bands Iris and Peregrinii."
+        "The Corvin Castle restoration project was completed at the end of August 2026, after two EU-funded phases: €5 million through the Regional Operational Programme (2018–2023) and €6.6 million through Romania's Recovery and Resilience Plan (PNRR). It is the monument's first complete restoration since the works carried out between 1868 and 1914.",
+        "The restored parts include the Buzdugan (Mace) Tower and the \"Cavalier\" at its top, the access bridge by the old Gate Tower, the roofs, the Diet Hall and the Knights' Hall. In the Matia Loggia, the fresco with the coats of arms of the great noble families, including those of King Vladislaus Jagiellon and John Hunyadi (Iancu de Hunedoara), has been recreated. Visitors can now also enter new areas such as the Bears' Pit, the Chapel Bridge and the \"Between the Walls\" space.",
+        "Hunedoara City Hall is already preparing the next phases, worth over €15 million: restoring the Hussars' Courtyard and the circular bridge, plus an 8,000 m² Ethnographic Museum of the Pădureni region."
       ],
       facts: [
-        { label: "Dates", value: "29–30 August 2026" },
-        { label: "Location", value: "Corvin Castle, Hunedoara" },
-        { label: "Participants", value: "18 historical re-enactment groups, from Romania and abroad" }
+        { label: "Total cost", value: "€11.6 million (ROP + PNRR)" },
+        { label: "Completed", value: "August 2026 (announced on 2 September 2026)" },
+        { label: "New visitor areas", value: "Bears' Pit, Chapel Bridge, \"Between the Walls\"" }
       ]
     }
   },
   {
-    id: "zilele-orastie-2026",
-    name: "Zilele Municipiului Orăștie — ediția 2026",
-    category: { ro: "Festival", en: "Festival" },
-    area: "Orăștie",
-    date: "2026-07-19",
+    id: "acorduri-renascentiste-castelul-corvinilor-2026",
+    name: "„Acorduri renascentiste” — concert de muzică veche la Castelul Corvinilor",
+    category: { ro: "Concert", en: "Concert" },
+    area: "Hunedoara",
+    date: "2026-09-25",
     hasReviews: false,
-    images: ["images/primaria-orastie.jpg"],
-    photoCredit: { author: "Roamata", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Primaria_orastie.JPG" },
+    images: ["images/curtea-castelul-corvinilor.jpg"],
+    photoCredit: { author: "Munteanu Anca", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Castelul_Corvinilor,_municipiul_Hunedoara_04.JPG" },
     ro: {
-      tagline: "Trei zile de concerte, tradiții locale și parc de distracții la Arena Park, în cea mai recentă ediție a sărbătorii orașului.",
+      tagline: "Vineri, 25 septembrie 2026, de la ora 19:00: muzică renascentistă cântată pe instrumente de epocă, cu intrare liberă.",
       description: [
-        "Între 17 și 19 iulie 2026, Arena Park din Orăștie a găzduit ediția din acest an a Zilelor Municipiului Orăștie, organizată de Primăria și Consiliul Local Orăștie în parteneriat cu Autentic Events. Timp de trei zile, scena a adus artiști de muzică populară și ușoară, alături de ansambluri folclorice și formații locale de tineret.",
-        "Pe lângă programul artistic, vizitatorii au avut la dispoziție un parc de distracții cu atracții pentru toate vârstele și o zonă cu produse tradiționale și food-truck-uri. Intrarea a fost liberă, iar evenimentul revine an de an ca o sărbătoare a comunității și a tradițiilor locale."
+        "Castelul Corvinilor găzduiește o etapă a Turneului Național „ITER MUSICUM EUROPAE”, un program de muzică veche interpretată în stil istoric, pe instrumente specifice Renașterii. Pentru public e o ocazie rară de a asculta muzica de curte a epocii chiar într-un castel din acea perioadă.",
+        "Cântă Caius Hera (dirijor și lăută), soprana Eszter Gyüdi, Emese Szilágyi (flaut drept), Alina Rotaru (virginal) și Arthur Balogh (viola da gamba). Intrarea e liberă, în limita locurilor disponibile."
       ],
       facts: [
-        { label: "Perioadă", value: "17–19 iulie 2026" },
-        { label: "Loc", value: "Arena Park, Orăștie" },
-        { label: "Intrare", value: "liberă" },
-        { label: "Organizatori", value: "Primăria și Consiliul Local Orăștie, în parteneriat cu Autentic Events" }
+        { label: "Dată", value: "vineri, 25 septembrie 2026, ora 19:00" },
+        { label: "Loc", value: "Castelul Corvinilor, Hunedoara" },
+        { label: "Intrare", value: "liberă, în limita locurilor disponibile" },
+        { label: "Face parte din", value: "Turneul Național „ITER MUSICUM EUROPAE”" }
       ]
     },
     en: {
-      tagline: "Three days of concerts, local tradition and an amusement park at Arena Park, in the town's most recent annual celebration.",
+      tagline: "Friday, 25 September 2026, from 19:00: Renaissance music played on period instruments, with free admission.",
       description: [
-        "From 17 to 19 July 2026, Arena Park in Orăștie hosted this year's edition of Zilele Municipiului Orăștie (\"Orăștie Municipality Days\"), organised by Orăștie City Hall and Local Council in partnership with Autentic Events. Over three days, the stage featured folk and pop artists alongside folklore ensembles and local youth groups.",
-        "Besides the artistic programme, visitors had access to an amusement park with rides for all ages and an area with traditional food and food trucks. Admission was free, and the event returns every year as a celebration of the community and its local traditions."
+        "Corvin Castle hosts a stop of the \"ITER MUSICUM EUROPAE\" national tour, a programme of early music performed in historical style on Renaissance-era instruments. It's a rare chance to hear the court music of the period inside a castle from that very era.",
+        "Performers: Caius Hera (director and lute), soprano Eszter Gyüdi, Emese Szilágyi (recorder), Alina Rotaru (virginal) and Arthur Balogh (viola da gamba). Admission is free, subject to available seating."
       ],
       facts: [
-        { label: "Dates", value: "17–19 July 2026" },
-        { label: "Location", value: "Arena Park, Orăștie" },
-        { label: "Admission", value: "free" },
-        { label: "Organisers", value: "Orăștie City Hall and Local Council, in partnership with Autentic Events" }
+        { label: "Date", value: "Friday, 25 September 2026, 19:00" },
+        { label: "Location", value: "Corvin Castle, Hunedoara" },
+        { label: "Admission", value: "free, subject to available seating" },
+        { label: "Part of", value: "the \"ITER MUSICUM EUROPAE\" national tour" }
+      ]
+    }
+  },
+  {
+    id: "adunarea-momarlanilor-petrosani-2026",
+    name: "Adunarea Momârlanilor — trei zile de tradiții la Petroșani",
+    category: { ro: "Festival", en: "Festival" },
+    area: "Petroșani",
+    date: "2026-09-25",
+    hasReviews: false,
+    images: ["images/petrosani-panorama.jpg"],
+    photoCredit: { author: "Eduard Gergely", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrosani_Town.jpg" },
+    ro: {
+      tagline: "25–27 septembrie 2026, în centrul Petroșaniului: muzică populară, dansuri tradiționale și 1.500 de porții gratuite de mâncare tradițională.",
+      description: [
+        "Primăria Municipiului Petroșani, alături de Mioritic Concept și comunitatea momârlanilor, organizează Adunarea Momârlanilor, o sărbătoare a tradițiilor și obiceiurilor din Valea Jiului. Scena e amenajată în centrul orașului, lângă Teatrul Dramatic „Ion D. Sîrbu”.",
+        "Timp de trei zile urcă pe scenă ansambluri locale, precum Asociația Culturală Lirica Petroșani și „Rapsodia Munților”, alături de interpreți de muzică populară precum Nelu Ban Fântână, Sidorel sau Marius Ciprian Pop cu Ceterașii de la Cluj. Sâmbătă, 26 septembrie, de la ora 12:00, se împart gratuit 1.500 de porții de tocană de oaie cu piure și varză. Organizatorii speră să fie cea mai mare masă tradițională din județul Hunedoara."
+      ],
+      facts: [
+        { label: "Perioadă", value: "25–27 septembrie 2026" },
+        { label: "Loc", value: "centrul Petroșaniului, lângă Teatrul Dramatic „Ion D. Sîrbu”" },
+        { label: "Masa tradițională", value: "sâmbătă, 26 septembrie, ora 12:00: 1.500 de porții gratuite" },
+        { label: "Organizatori", value: "Primăria Municipiului Petroșani, Mioritic Concept" }
+      ]
+    },
+    en: {
+      tagline: "25–27 September 2026, in central Petroșani: folk music, traditional dances and 1,500 free portions of traditional food.",
+      description: [
+        "Petroșani City Hall, together with Mioritic Concept and the local momârlani community (the Jiu Valley's traditional highland people), is organising the Momârlani Gathering, a celebration of the valley's traditions and customs. The stage is set up in the town centre, next to the \"Ion D. Sîrbu\" Drama Theatre.",
+        "Over three days, local ensembles such as the Lirica Petroșani Cultural Association and \"Rapsodia Munților\" share the stage with folk singers including Nelu Ban Fântână, Sidorel and Marius Ciprian Pop with the Ceterașii de la Cluj fiddlers. On Saturday, 26 September, from 12:00, 1,500 free portions of mutton stew with mashed potatoes and cabbage will be served. The organisers hope it will be the largest traditional meal in Hunedoara county."
+      ],
+      facts: [
+        { label: "Dates", value: "25–27 September 2026" },
+        { label: "Location", value: "central Petroșani, next to the \"Ion D. Sîrbu\" Drama Theatre" },
+        { label: "Traditional meal", value: "Saturday, 26 September, 12:00: 1,500 free portions" },
+        { label: "Organisers", value: "Petroșani City Hall, Mioritic Concept" }
+      ]
+    }
+  },
+  {
+    id: "festivalul-umor-liviu-oros-2026",
+    name: "Festivalul Național de Umor „Liviu Oros” — ediția a XXV-a, la Deva",
+    category: { ro: "Festival", en: "Festival" },
+    area: "Deva",
+    date: "2026-10-09",
+    hasReviews: false,
+    images: ["images/parcul-cetatii-deva.jpg"],
+    photoCredit: { author: "Carmen buzan", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Parcul_Cetatii_Deva.JPG" },
+    ro: {
+      tagline: "9–10 octombrie 2026: ediție aniversară, cu un concurs internațional de epigramă și unul național de caricatură.",
+      description: [
+        "Primăria Municipiului Deva și Centrul Cultural „Drăgan Muntean” organizează ediția a XXV-a a Festivalului Național de Umor „Liviu Oros”, dedicat creatorilor de umor scris și desenat.",
+        "Ediția aniversară are două concursuri: Concursul Internațional de Epigramă „Epigramissima” (ediția a VI-a) și Concursul Național de Umor Grafic (caricatură). Umoriștii și caricaturiștii se pot înscrie până pe 30 septembrie 2026. Regulamentele sunt pe site-ul Centrului Cultural, iar informații suplimentare se pot obține de la secretariat, la 0354 408 907."
+      ],
+      facts: [
+        { label: "Perioadă", value: "9–10 octombrie 2026" },
+        { label: "Loc", value: "Deva" },
+        { label: "Înscrieri în concurs", value: "până pe 30 septembrie 2026" },
+        { label: "Organizatori", value: "Primăria Municipiului Deva, Centrul Cultural „Drăgan Muntean”" }
+      ]
+    },
+    en: {
+      tagline: "9–10 October 2026: an anniversary edition with an international epigram contest and a national cartoon contest.",
+      description: [
+        "Deva City Hall and the \"Drăgan Muntean\" Cultural Centre are organising the 25th edition of the \"Liviu Oros\" National Humour Festival, dedicated to creators of written and drawn humour.",
+        "The anniversary edition has two contests: the \"Epigramissima\" International Epigram Contest (6th edition) and the National Graphic Humour (cartoon) Contest. Humorists and cartoonists can enter until 30 September 2026. The rules are on the Cultural Centre's website, and more information is available from its office on +40 354 408 907."
+      ],
+      facts: [
+        { label: "Dates", value: "9–10 October 2026" },
+        { label: "Location", value: "Deva" },
+        { label: "Contest entries", value: "until 30 September 2026" },
+        { label: "Organisers", value: "Deva City Hall, \"Drăgan Muntean\" Cultural Centre" }
+      ]
+    }
+  },
+  {
+    id: "stelele-cetatii-deva-2026",
+    name: "„Stelele Cetății” Deva — festival-concurs de muzică ușoară, ediția a XLIII-a",
+    category: { ro: "Festival", en: "Festival" },
+    area: "Deva",
+    date: "2026-10-24",
+    hasReviews: false,
+    images: ["images/deva-cetate.jpg"],
+    photoCredit: { author: "Bogdan.onis", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Deva.jpg" },
+    ro: {
+      tagline: "24–25 octombrie 2026: concurs național pentru tineri interpreți între 15 și 23 de ani, cu un trofeu de 5.000 de lei.",
+      description: [
+        "Festivalul-Concurs Național de Muzică Ușoară „Stelele Cetății”, organizat de Primăria Municipiului Deva și Centrul Cultural „Drăgan Muntean”, ajunge la ediția a XLIII-a. Scopul lui e să descopere și să promoveze tineri interpreți și creația muzicală românească.",
+        "Concursul e deschis tinerilor între 15 și 23 de ani. Înscrierile se fac până pe 8 octombrie 2026, la centrulculturaldeva@gmail.com, iar rezultatele preselecției se anunță pe 12 octombrie, pe site-ul și pagina de Facebook a Centrului Cultural. Trofeul „Stelele Cetății” e de 5.000 de lei. Urmează premiul I (4.000 de lei), premiul II (3.000 de lei), premiul III (2.000 de lei) și patru mențiuni de câte 1.000 de lei."
+      ],
+      facts: [
+        { label: "Perioadă", value: "24–25 octombrie 2026" },
+        { label: "Loc", value: "Centrul Cultural „Drăgan Muntean”, Deva" },
+        { label: "Participanți", value: "interpreți între 15 și 23 de ani" },
+        { label: "Înscrieri", value: "până pe 8 octombrie 2026, la centrulculturaldeva@gmail.com" }
+      ]
+    },
+    en: {
+      tagline: "24–25 October 2026: a national contest for young singers aged 15 to 23, with a 5,000-lei trophy.",
+      description: [
+        "The \"Stelele Cetății\" (\"Stars of the Fortress\") National Pop Music Festival and Contest, organised by Deva City Hall and the \"Drăgan Muntean\" Cultural Centre, reaches its 43rd edition. Its aim is to discover and promote young performers and Romanian music.",
+        "The contest is open to young people aged 15 to 23. Entries close on 8 October 2026 (centrulculturaldeva@gmail.com), and the pre-selection results are announced on 12 October on the Cultural Centre's website and Facebook page. The \"Stelele Cetății\" trophy is worth 5,000 lei, followed by first prize (4,000 lei), second prize (3,000 lei), third prize (2,000 lei) and four honourable mentions of 1,000 lei each."
+      ],
+      facts: [
+        { label: "Dates", value: "24–25 October 2026" },
+        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Deva" },
+        { label: "Who can enter", value: "singers aged 15 to 23" },
+        { label: "Entries", value: "until 8 October 2026, at centrulculturaldeva@gmail.com" }
       ]
     }
   },
@@ -3068,29 +3178,31 @@ window.SITE_NEWS = [
     hasReviews: false,
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "Sâmbătă, 19 septembrie 2026, de la ora 10:00 — 64 de puncte de întâlnire în 59 de localități din județ, sub tema „Tu ce lași în urma ta?”.",
+      tagline: "Aproape 5.000 de voluntari au strâns peste 4.600 de saci cu deșeuri pe 19 septembrie 2026, în 59 de localități din județ.",
       description: [
-        "Județul Hunedoara se alătură ediției a 13-a a Zilei de Curățenie Națională, parte din campania globală „Let's Do It, Romania!”, care are loc simultan în aproape 190 de țări. Acțiunea e organizată local de Instituția Prefectului – Județul Hunedoara și Consiliul Județean Hunedoara, alături de coordonatorii naționali ai campaniei, cu sprijinul Agenției pentru Protecția Mediului, al Gărzii de Mediu, al Sistemului Integrat de Gestionare a Deșeurilor, al Supercom, al Direcției Silvice, al Parcului Național Retezat, al poliției și al pompierilor.",
-        "Voluntari — persoane singure, familii, elevi, firme și instituții — sunt așteptați de la ora 10:00 în cele 64 de puncte de întâlnire stabilite în 59 de localități hunedorene, pentru a strânge deșeurile abandonate din zonele afectate. Înscrierea se face prin platforma oficială a campaniei. De la lansarea ei în România, în 2010, campania a mobilizat peste 2,9 milioane de voluntari; doar în 2025, peste 270.000 de participanți au strâns peste 427.000 de saci cu deșeuri la nivel național."
+        "Județul Hunedoara s-a alăturat ediției a 13-a a Zilei de Curățenie Națională, parte din campania globală „Let's Do It, Romania!”, desfășurată simultan în aproape 190 de țări, sub tema „Tu ce lași în urma ta?”. Acțiunea a fost organizată local de Instituția Prefectului – Județul Hunedoara și Consiliul Județean Hunedoara, alături de coordonatorii naționali ai campaniei, cu sprijinul Agenției pentru Protecția Mediului, al Gărzii de Mediu, al Sistemului Integrat de Gestionare a Deșeurilor, al Supercom, al Direcției Silvice, al Parcului Național Retezat, al poliției și al pompierilor.",
+        "Voluntarii (persoane singure, familii, elevi, firme și instituții) s-au adunat de la ora 10:00 în cele 64 de puncte de întâlnire din 59 de localități hunedorene. Potrivit datelor provizorii centralizate sâmbătă după-amiază, 4.923 de voluntari au strâns 4.606 saci cu deșeuri, iar organizatorii se așteptau ca numărul voluntarilor să treacă de 5.000 după centralizarea tuturor punctelor. Ediția din 2026 a fost a doua de când Ziua de Curățenie Națională e zi oficială, prin Legea 266/2024."
       ],
       facts: [
-        { label: "Dată", value: "sâmbătă, 19 septembrie 2026, ora 10:00" },
+        { label: "Dată", value: "sâmbătă, 19 septembrie 2026" },
+        { label: "Voluntari", value: "4.923 (date provizorii)" },
+        { label: "Deșeuri strânse", value: "4.606 saci (date provizorii)" },
         { label: "Amploare", value: "64 de puncte de întâlnire, în 59 de localități din județ" },
-        { label: "Organizatori", value: "Instituția Prefectului – Județul Hunedoara, Consiliul Județean Hunedoara, „Let's Do It, Romania!”" },
-        { label: "Înscriere", value: "app.letsdoitromania.ro" }
+        { label: "Organizatori", value: "Instituția Prefectului – Județul Hunedoara, Consiliul Județean Hunedoara, „Let's Do It, Romania!”" }
       ]
     },
     en: {
-      tagline: "Saturday, 19 September 2026, from 10:00 — 64 meeting points across 59 towns and villages in the county, under the theme \"What will you leave behind?\".",
+      tagline: "Nearly 5,000 volunteers collected over 4,600 bags of waste on 19 September 2026, across 59 towns and villages in the county.",
       description: [
-        "Hunedoara county is joining the 13th edition of Romania's National Cleanup Day, part of the global \"Let's Do It, Romania!\" campaign, held simultaneously in nearly 190 countries. The local action is organised by the Hunedoara County Prefect's Office and County Council, together with the campaign's national coordinators, with support from the Environmental Protection Agency, the Environmental Guard, the county's integrated waste management system, Supercom, the Forestry Directorate, Retezat National Park, the police and the fire service.",
-        "Volunteers — individuals, families, students, companies and institutions — are expected from 10:00 at the 64 meeting points set up across 59 towns and villages in the county, to clear abandoned waste from affected areas. Registration is through the campaign's official platform. Since launching in Romania in 2010, the campaign has mobilised over 2.9 million volunteers; in 2025 alone, more than 270,000 participants collected over 427,000 bags of waste nationwide."
+        "Hunedoara county joined the 13th edition of Romania's National Cleanup Day, part of the global \"Let's Do It, Romania!\" campaign, held simultaneously in nearly 190 countries under the theme \"What will you leave behind?\". The local action was organised by the Hunedoara County Prefect's Office and County Council, together with the campaign's national coordinators, with support from the Environmental Protection Agency, the Environmental Guard, the county's integrated waste management system, Supercom, the Forestry Directorate, Retezat National Park, the police and the fire service.",
+        "Volunteers (individuals, families, students, companies and institutions) gathered from 10:00 at 64 meeting points across 59 towns and villages in the county. According to provisional figures compiled on Saturday afternoon, 4,923 volunteers collected 4,606 bags of waste, and the organisers expected the number of volunteers to pass 5,000 once all meeting points had reported. The 2026 edition was the second since National Cleanup Day became an official day under Law 266/2024."
       ],
       facts: [
-        { label: "Date", value: "Saturday, 19 September 2026, 10:00" },
+        { label: "Date", value: "Saturday, 19 September 2026" },
+        { label: "Volunteers", value: "4,923 (provisional figures)" },
+        { label: "Waste collected", value: "4,606 bags (provisional figures)" },
         { label: "Scale", value: "64 meeting points, across 59 towns and villages in the county" },
-        { label: "Organisers", value: "Hunedoara County Prefect's Office, Hunedoara County Council, \"Let's Do It, Romania!\"" },
-        { label: "Registration", value: "app.letsdoitromania.ro" }
+        { label: "Organisers", value: "Hunedoara County Prefect's Office, Hunedoara County Council, \"Let's Do It, Romania!\"" }
       ]
     }
   }

@@ -38,7 +38,7 @@ function load(file, query = "") {
   ok(d.querySelectorAll("#home-stats .stat").length === 4, "index: 4 statistici randate");
   ok(d.querySelectorAll("#explore-grid .tile").length === 8, "index: 8 module în grid-ul de explorare (structura hibridă)");
   ok([...d.querySelectorAll("#explore-grid .tile")].every((a) => /\.html$/.test(a.getAttribute("href"))), "index: toate tile-urile leagă spre o pagină");
-  ok(d.querySelectorAll("#home-news .news-item").length === 2, "index: 2 știri randate (conținut real)");
+  ok(d.querySelectorAll("#home-news .news-item").length === 3, "index: 3 știri randate (conținut real)");
   const before = d.querySelector(".hero h1").textContent;
   d.querySelector("#lang-toggle").dispatchEvent(new w.Event("click"));
   ok(d.querySelector(".hero h1").textContent === before, "index: numele site-ului nu se traduce (Hunedoara Live rămâne la fel)");
@@ -110,7 +110,7 @@ function load(file, query = "") {
 /* -------- restul secțiunilor: randare fără erori + numărul corect de carduri -------- */
 {
   const pairs = [
-    ["turism-activ.html", 39], ["mostenire.html", 4], ["orase.html", 10], ["stiri.html", 2]
+    ["turism-activ.html", 39], ["mostenire.html", 4], ["orase.html", 10], ["stiri.html", 7]
   ];
   for (const [file, count] of pairs) {
     const w = await load(file);
@@ -147,7 +147,7 @@ function load(file, query = "") {
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
   const w = await load("credite.html");
-  ok(w.document.querySelectorAll(".credit-card").length === 123, "credite: 123 intrări (6+14+39+17+10+4+33, toate secțiunile)");
+  ok(w.document.querySelectorAll(".credit-card").length === 126, "credite: 126 intrări (6+14+39+17+10+7+33, toate secțiunile)");
 }
 
 /* -------- fișiere prezente -------- */
