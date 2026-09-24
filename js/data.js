@@ -2881,8 +2881,8 @@ window.SITE_TOWNS = [
     coords: [45.6075, 22.9500],
     hasReviews: false,
     relatedAreas: ["Hațeg", "Țara Hațegului", "Parcul Național Retezat", "Silvașu de Sus, Țara Hațegului"],
-    images: ["images/hateg-panorama.jpg"],
-    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Hateg_2015_(1).JPG" },
+    images: ["images/hateg-rezervatia-zimbri.jpg"],
+    photoCredit: { author: "Radu Niculița", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:14-18-hateg-zimbrii-2.jpg" },
     ro: {
       tagline: "Poarta spre Parcul Național Retezat și Geoparcul Dinozaurilor din Țara Hațegului.",
       description: [
