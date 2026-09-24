@@ -2222,12 +2222,13 @@ window.SITE_HERITAGE = [
       tagline: "Alee cu 15 busturi de bronz, inaugurată în 2008 la poalele Cetății Deva, dedicată gimnastelor și antrenorilor care au făcut din Deva un centru mondial al gimnasticii.",
       description: [
         "Aleea Gimnastelor a fost inaugurată în 2008 la baza Cetății Deva, chiar în fața sălii unde se antrenează lotul național feminin de gimnastică, lângă stația de plecare a telecabinei. Aleea are 15 busturi de bronz de circa 42-43 cm, turnate la o fabrică din București și așezate pe socluri de granit înalte de 1,80 m.",
-        "Ansamblul cuprinde patru busturi de antrenori — cuplurile Marta și Bela Karolyi, respectiv Maria Bitang și Octavian Belu — și 11 busturi de gimnaste, printre care Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu și Andreea Răducan. Aleea marchează palmaresul școlii de gimnastică de la Deva, unde s-a mutat lotul național în 1978, de la Onești."
+        "Ansamblul cuprinde patru busturi de antrenori — cuplurile Marta și Bela Karolyi, respectiv Mariana Bitang și Octavian Bellu — și 11 busturi de gimnaste, printre care Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu și Andreea Răducan. Aleea marchează palmaresul școlii de gimnastică de la Deva, unde s-a mutat lotul național în 1978, de la Onești.",
+        "În aprilie 2026, Consiliul Local Deva a aprobat amplasarea a încă trei busturi — ale gimnastelor Sandra Izbașa și Cătălina Ponor și al antrenorului Nicolae Forminte —, care vor completa ansamblul."
       ],
       facts: [
         { label: "Inaugurare", value: "2008" },
         { label: "Compoziție", value: "15 busturi de bronz (4 antrenori + 11 gimnaste)" },
-        { label: "Antrenori comemorați", value: "Marta și Bela Karolyi, Maria Bitang și Octavian Belu" },
+        { label: "Antrenori comemorați", value: "Marta și Bela Karolyi, Mariana Bitang și Octavian Bellu" },
         { label: "Amplasare", value: "la poalele Cetății Deva, lângă stația telecabinei" }
       ]
     },
@@ -2235,12 +2236,13 @@ window.SITE_HERITAGE = [
       tagline: "A row of 15 bronze busts, unveiled in 2008 at the foot of Deva Citadel, honouring the gymnasts and coaches who made Deva a world centre of gymnastics.",
       description: [
         "Aleea Gimnastelor (\"the gymnasts' walk\") was unveiled in 2008 at the base of Deva Citadel, right in front of the hall where the national women's gymnastics team trains, next to the cable car's lower station. The walk has 15 bronze busts about 42-43 cm tall, cast at a foundry in Bucharest and set on 1.80 m granite pedestals.",
-        "The ensemble includes four busts of coaches — the couples Marta and Bela Karolyi, and Maria Bitang and Octavian Belu — and 11 busts of gymnasts, including Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu and Andreea Răducan. The walk marks the record of Deva's gymnastics school, where the national team moved in 1978, from Onești."
+        "The ensemble includes four busts of coaches — the couples Marta and Bela Karolyi, and Mariana Bitang and Octavian Bellu — and 11 busts of gymnasts, including Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu and Andreea Răducan. The walk marks the record of Deva's gymnastics school, where the national team moved in 1978, from Onești.",
+        "In April 2026, Deva Local Council approved three more busts — of gymnasts Sandra Izbașa and Cătălina Ponor and of coach Nicolae Forminte — which will be added to the ensemble."
       ],
       facts: [
         { label: "Unveiled", value: "2008" },
         { label: "Composition", value: "15 bronze busts (4 coaches + 11 gymnasts)" },
-        { label: "Coaches honoured", value: "Marta and Bela Karolyi, Maria Bitang and Octavian Belu" },
+        { label: "Coaches honoured", value: "Marta and Bela Karolyi, Mariana Bitang and Octavian Bellu" },
         { label: "Location", value: "at the foot of Deva Citadel, by the cable car station" }
       ]
     }
@@ -3593,23 +3595,23 @@ window.SITE_BUSINESSES = [
     season: "tot-anul",
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "Restaurant cu bucătărie mediteraneeană, pe strada Viilor din Hațeg.",
+      tagline: "Restaurant cu bucătărie mediteraneeană, pe strada Tudor Arghezi din Hațeg.",
       description: [
-        "Avy Wine & Dine este un restaurant situat pe strada Viilor nr. 2, în Hațeg, cu un meniu de inspirație mediteraneeană, cu influențe italiene și franțuzești, alături de o listă de vinuri dedicată. Este unul dintre restaurantele cele mai bine cotate din oraș pe platformele de recenzii."
+        "Avy Wine & Dine este un restaurant situat pe strada Tudor Arghezi nr. 28, în Hațeg, cu un meniu de inspirație mediteraneeană, cu influențe italiene și franțuzești, alături de o listă de vinuri dedicată. Este unul dintre restaurantele cele mai bine cotate din oraș pe platformele de recenzii."
       ],
       facts: [
-        { label: "Adresă", value: "Str. Viilor nr. 2, Hațeg" },
+        { label: "Adresă", value: "Str. Tudor Arghezi nr. 28, Hațeg" },
         { label: "Specific", value: "bucătărie mediteraneeană, italiană și franțuzească, listă de vinuri" },
         { label: "Contact", value: "tel. 0786 725 000 · restaurant-avy.ro" }
       ]
     },
     en: {
-      tagline: "A restaurant with Mediterranean cuisine, on Viilor street in Hațeg.",
+      tagline: "A restaurant with Mediterranean cuisine, on Tudor Arghezi street in Hațeg.",
       description: [
-        "Avy Wine & Dine is a restaurant at 2 Viilor street in Hațeg, with a Mediterranean-inspired menu carrying Italian and French influences, alongside a dedicated wine list. It is one of the highest-rated restaurants in town on review platforms."
+        "Avy Wine & Dine is a restaurant at 28 Tudor Arghezi street in Hațeg, with a Mediterranean-inspired menu carrying Italian and French influences, alongside a dedicated wine list. It is one of the highest-rated restaurants in town on review platforms."
       ],
       facts: [
-        { label: "Address", value: "2 Viilor street, Hațeg" },
+        { label: "Address", value: "28 Tudor Arghezi street, Hațeg" },
         { label: "Cuisine", value: "Mediterranean, Italian and French, wine list" },
         { label: "Contact", value: "phone +40 786 725 000 · restaurant-avy.ro" }
       ]
@@ -4177,26 +4179,28 @@ window.SITE_BUSINESSES = [
     id: "pensiunea-izvorul-maleii-petrila",
     name: "Pensiunea Izvorul Maleii",
     category: { ro: "Cazare", en: "Accommodation" },
-    area: "Jieț, Petrila",
+    area: "Parâng",
     hasReviews: true,
     season: "tot-anul",
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "Pensiune bine cotată în valea Jieț, lângă un teleschi, în Petrila.",
+      tagline: "Pensiune bine cotată în stațiunea Parâng, la 1.100 m, la circa 150 m de telescaun.",
       description: [
-        "Pensiunea Izvorul Maleii este situată pe strada Jieț nr. 1T, în zona de munte a orașului Petrila, aproape de un teleschi."
+        "Pensiunea Izvorul Maleii se află în stațiunea Parâng (pe teritoriul orașului Petrila), la aproximativ 1.100 m altitudine, într-o zonă liniștită lângă pârâul Maleia, la circa 150 m de telescaun și la aproximativ 8 km de Petroșani."
       ],
       facts: [
-        { label: "Adresă", value: "Str. Jieț nr. 1T, Petrila" }
+        { label: "Adresă", value: "Jieț (zona telescaun) nr. 1T, stațiunea Parâng, Petrila" },
+        { label: "Altitudine", value: "cca. 1.100 m" }
       ]
     },
     en: {
-      tagline: "A well-rated guesthouse in the Jieț valley, next to a ski lift, in Petrila.",
+      tagline: "A well-rated guesthouse in the Parâng resort, at 1,100 m, about 150 m from the chairlift.",
       description: [
-        "Pensiunea Izvorul Maleii is located on Strada Jieț no. 1T, in the mountain area of Petrila, close to a ski lift."
+        "Pensiunea Izvorul Maleii is in the Parâng resort (within the town of Petrila), at about 1,100 m, in a quiet spot by the Maleia stream, roughly 150 m from the chairlift and about 8 km from Petroșani."
       ],
       facts: [
-        { label: "Address", value: "Str. Jieț no. 1T, Petrila" }
+        { label: "Address", value: "Jieț (chairlift area) no. 1T, Parâng resort, Petrila" },
+        { label: "Altitude", value: "about 1,100 m" }
       ]
     }
   },
