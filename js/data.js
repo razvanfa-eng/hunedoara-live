@@ -2216,7 +2216,8 @@ window.SITE_HERITAGE = [
     area: "Deva",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/aleea-gimnastelor-deva.jpg"],
+    photoCredit: { author: "Leontin l", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Deva_2019_(8).jpg" },
     ro: {
       tagline: "Alee cu 15 busturi de bronz, inaugurată în 2008 la poalele Cetății Deva, dedicată gimnastelor și antrenorilor care au făcut din Deva un centru mondial al gimnasticii.",
       description: [
