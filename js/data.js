@@ -406,7 +406,8 @@ window.SITE_NATURE = [
     area: "Vâlcan",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pasul-vulcan-statiune.jpg"],
+    photoCredit: { author: "Manolache Alex", license: "CC BY 2.0", source: "https://www.flickr.com/photos/118306345@N06/12672007465", sourceLabel: "Flickr" },
     ro: {
       tagline: "Trecătoare istorică de 1.621 m care leagă Valea Jiului de Oltenia.",
       description: [
