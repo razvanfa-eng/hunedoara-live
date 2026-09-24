@@ -2178,34 +2178,39 @@ window.SITE_HERITAGE = [
   },
   {
     id: "crucea-eroilor-lupeni",
-    name: "Crucea Eroilor Lupeni",
+    name: "Crucea Eroilor de pe Muntele Straja",
     category: { ro: "Monument", en: "Memorial" },
     area: "Lupeni",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/crucea-eroilor-straja.jpg"],
+    photoCredit: { author: "Bogdan Muraru", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Cruz_Straja.jpg" },
     ro: {
-      tagline: "Monument ridicat în memoria celor 82 de mineri morți în explozia de la Mina Aurelia, 1922.",
+      tagline: "Cruce de oțel înaltă de 18,6 m, la 1.485 m pe Muntele Straja, în memoria celor 800 de militari români căzuți în 1916 în luptele din Defileul Jiului.",
       description: [
-        "Crucea Eroilor din Lupeni comemorează cei 82 de mineri uciși pe 27 aprilie 1922, într-o explozie de gaz metan la Mina Aurelia — unul dintre cele mai grave accidente miniere din istoria Văii Jiului. În urma tragediei, regele Ferdinand a vizitat zona și a acordat sprijin financiar celor 94 de orfani și văduve rămași în urma dezastrului.",
-        "Monumentul rămâne astăzi un punct de reper pentru memoria minerească a orașului, alături de Palatul Cultural „Minerul”, ridicat din inițiativa regelui Ferdinand I și dat în folosință în 1927."
+        "Crucea Eroilor de pe Muntele Straja, deasupra Lupeniului, este un monument comemorativ dedicat celor 800 de militari români care au căzut în toamna anului 1916, în luptele din Defileul Jiului, în Primul Război Mondial. Crucea, din oțel, are 18,6 m și se află la altitudinea de 1.485 m. A fost sfințită pe 30 octombrie 1996 de starețul Mănăstirii Lainici, Ioachim Pârvulescu, și a fost ridicată din donații private, în mare parte ale omului de afaceri Emil Ilie Părău. Lângă ea a fost construit, începând din 1999, Schitul Straja.",
+        "Se ajunge din Lupeni pe o șosea asfaltată de circa 10 km, până în stațiunea Straja. Din 2000, în Vinerea Mare se organizează anual o procesiune asemănătoare Drumului Crucii.",
+        "Nu trebuie confundată cu memorialul minerilor morți în explozia de gaz metan de la Mina Aurelia, pe 27 aprilie 1922 — cea mai gravă tragedie din istoria mineritului din Valea Jiului, soldată cu 82 de morți, 62 de văduve și 124 de orfani, după care regele Ferdinand I a venit la Lupeni. Monumentul de piatră dedicat lor se află în cimitirul din Lupeni, unde la aniversarea tragediei, pe 27 aprilie, au loc slujbe de pomenire."
       ],
       facts: [
-        { label: "Eveniment comemorat", value: "explozia de la Mina Aurelia, 27 aprilie 1922" },
-        { label: "Victime", value: "82 de mineri" },
-        { label: "Context", value: "vizita regelui Ferdinand; sprijin pentru 94 de orfani și văduve" }
+        { label: "Comemorează", value: "cei 800 de militari români căzuți în 1916 în Defileul Jiului" },
+        { label: "Dimensiuni", value: "cruce de oțel de 18,6 m, la 1.485 m altitudine" },
+        { label: "Sfințire", value: "30 octombrie 1996" },
+        { label: "Acces", value: "șosea asfaltată de circa 10 km din Lupeni, până în stațiunea Straja" }
       ]
     },
     en: {
-      tagline: "A memorial to the 82 miners killed in the 1922 explosion at Aurelia Mine.",
+      tagline: "An 18.6 m steel cross at 1,485 m on Mount Straja, honouring the 800 Romanian soldiers who fell in 1916 in the battles of the Jiu Gorge.",
       description: [
-        "The Heroes' Cross in Lupeni commemorates the 82 miners killed on 27 April 1922 in a methane gas explosion at Aurelia Mine — one of the worst mining disasters in the history of Valea Jiului. Following the tragedy, King Ferdinand visited the area and provided financial support to the 94 orphans and widows left behind.",
-        "The monument remains a landmark of the town's mining memory today, alongside the \"Minerul\" Cultural Palace, built on the initiative of King Ferdinand I and opened in 1927."
+        "The Heroes' Cross on Mount Straja, above Lupeni, is a memorial to the 800 Romanian soldiers who fell in the autumn of 1916 in the battles of the Jiu Gorge, during the First World War. The steel cross is 18.6 m tall and stands at an altitude of 1,485 m. It was consecrated on 30 October 1996 by the abbot of Lainici Monastery, Ioachim Pârvulescu, and was built from private donations, mostly from businessman Emil Ilie Părău. The Straja hermitage (Schitul Straja) was built next to it from 1999 onwards.",
+        "It is reached from Lupeni on a paved road of about 10 km, up to the Straja resort. Since 2000, a procession similar to the Way of the Cross has been held here every year on Good Friday.",
+        "It should not be confused with the memorial to the miners killed in the methane explosion at Aurelia Mine on 27 April 1922 — the worst disaster in the Jiu Valley's mining history, which left 82 dead, 62 widows and 124 orphans, and after which King Ferdinand I came to Lupeni. Their stone monument stands in the Lupeni cemetery, where memorial services are held on the anniversary, 27 April."
       ],
       facts: [
-        { label: "Event commemorated", value: "Aurelia Mine explosion, 27 April 1922" },
-        { label: "Victims", value: "82 miners" },
-        { label: "Context", value: "King Ferdinand's visit; support for 94 orphans and widows" }
+        { label: "Commemorates", value: "the 800 Romanian soldiers who fell in 1916 in the Jiu Gorge" },
+        { label: "Size", value: "18.6 m steel cross, at 1,485 m altitude" },
+        { label: "Consecrated", value: "30 October 1996" },
+        { label: "Access", value: "paved road of about 10 km from Lupeni, up to the Straja resort" }
       ]
     }
   },
@@ -2221,9 +2226,9 @@ window.SITE_HERITAGE = [
     ro: {
       tagline: "Alee cu 15 busturi de bronz, inaugurată în 2008 la poalele Cetății Deva, dedicată gimnastelor și antrenorilor care au făcut din Deva un centru mondial al gimnasticii.",
       description: [
-        "Aleea Gimnastelor a fost inaugurată în 2008 la baza Cetății Deva, chiar în fața sălii unde se antrenează lotul național feminin de gimnastică, lângă stația de plecare a telecabinei. Aleea are 15 busturi de bronz de circa 42-43 cm, turnate la o fabrică din București și așezate pe socluri de granit înalte de 1,80 m.",
+        "Aleea Gimnastelor a fost inaugurată în 2008 la baza Cetății Deva, chiar în fața sălii unde se antrenează lotul național feminin de gimnastică, lângă stația de plecare a telecabinei. Aleea are 15 busturi de bronz de circa 42-43 cm, realizate de artistul plastic Ioan Șeu, turnate la o fabrică din București și așezate pe socluri de granit înalte de 1,80 m.",
         "Ansamblul cuprinde patru busturi de antrenori — cuplurile Marta și Bela Karolyi, respectiv Mariana Bitang și Octavian Bellu — și 11 busturi de gimnaste, printre care Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu și Andreea Răducan. Aleea marchează palmaresul școlii de gimnastică de la Deva, unde s-a mutat lotul național în 1978, de la Onești.",
-        "În aprilie 2026, Consiliul Local Deva a aprobat amplasarea a încă trei busturi — ale gimnastelor Sandra Izbașa și Cătălina Ponor și al antrenorului Nicolae Forminte —, care vor completa ansamblul."
+        "Pe 22 aprilie 2026, Consiliul Local Deva a aprobat amplasarea a încă trei busturi, din marmură — ale gimnastelor Sandra Izbașa și Cătălina Ponor și al antrenorului Nicolae Forminte —, care vor completa ansamblul. Până la sfârșitul lui septembrie 2026 nu fusese anunțată o dată pentru dezvelirea lor."
       ],
       facts: [
         { label: "Inaugurare", value: "2008" },
@@ -2235,9 +2240,9 @@ window.SITE_HERITAGE = [
     en: {
       tagline: "A row of 15 bronze busts, unveiled in 2008 at the foot of Deva Citadel, honouring the gymnasts and coaches who made Deva a world centre of gymnastics.",
       description: [
-        "Aleea Gimnastelor (\"the gymnasts' walk\") was unveiled in 2008 at the base of Deva Citadel, right in front of the hall where the national women's gymnastics team trains, next to the cable car's lower station. The walk has 15 bronze busts about 42-43 cm tall, cast at a foundry in Bucharest and set on 1.80 m granite pedestals.",
+        "Aleea Gimnastelor (\"the gymnasts' walk\") was unveiled in 2008 at the base of Deva Citadel, right in front of the hall where the national women's gymnastics team trains, next to the cable car's lower station. The walk has 15 bronze busts about 42-43 cm tall, made by the artist Ioan Șeu, cast at a foundry in Bucharest and set on 1.80 m granite pedestals.",
         "The ensemble includes four busts of coaches — the couples Marta and Bela Karolyi, and Mariana Bitang and Octavian Bellu — and 11 busts of gymnasts, including Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu and Andreea Răducan. The walk marks the record of Deva's gymnastics school, where the national team moved in 1978, from Onești.",
-        "In April 2026, Deva Local Council approved three more busts — of gymnasts Sandra Izbașa and Cătălina Ponor and of coach Nicolae Forminte — which will be added to the ensemble."
+        "On 22 April 2026, Deva Local Council approved three more busts, in marble — of gymnasts Sandra Izbașa and Cătălina Ponor and of coach Nicolae Forminte — which will be added to the ensemble. As of late September 2026, no date had been announced for their unveiling."
       ],
       facts: [
         { label: "Unveiled", value: "2008" },
@@ -3729,27 +3734,27 @@ window.SITE_BUSINESSES = [
     season: "tot-anul",
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "Pensiune mai mare, cu 19 camere, pe strada Avram Iancu din Brad.",
+      tagline: "Pensiune de 3 stele cu restaurant și 19 camere, pe strada Avram Iancu din Brad.",
       description: [
-        "Pensiunea Ana Maria este situată pe strada Avram Iancu nr. 52, în Brad, și oferă 43 de locuri de cazare în 19 camere (16 duble și 3 triple), cu servicii de masă pentru oaspeți. Este una dintre cele mai mari unități de cazare din oraș, potrivită și pentru grupuri."
+        "Pensiunea Ana Maria este situată pe strada Avram Iancu nr. 54, în Brad, la aproximativ 1 km de Muzeul Aurului. Are 19 camere și restaurant propriu, cu bucătărie tradițională românească, fiind una dintre cele mai mari unități de cazare din oraș, potrivită și pentru grupuri sau evenimente."
       ],
       facts: [
-        { label: "Adresă", value: "Str. Avram Iancu nr. 52, Brad" },
-        { label: "Camere", value: "19 camere (16 duble, 3 triple), 43 de locuri" },
-        { label: "Facilități", value: "servicii de masă pentru oaspeți" },
-        { label: "Rezervări", value: "prin platforme online (Booking.com, Agoda)" }
+        { label: "Adresă", value: "Str. Avram Iancu nr. 54, Brad" },
+        { label: "Camere", value: "19 camere, clasificare 3 stele" },
+        { label: "Facilități", value: "restaurant, parcare" },
+        { label: "Rezervări", value: "direct sau prin platforme online (Booking.com, Agoda)" }
       ]
     },
     en: {
-      tagline: "A larger, 19-room guesthouse on Avram Iancu street in Brad.",
+      tagline: "A 3-star guesthouse with a restaurant and 19 rooms, on Avram Iancu street in Brad.",
       description: [
-        "Pensiunea Ana Maria is located at 52 Avram Iancu street, in Brad, and offers 43 beds across 19 rooms (16 double and 3 triple), with meal service for guests. It is one of the largest accommodation units in town, also suited to groups."
+        "Pensiunea Ana Maria is at 54 Avram Iancu street, in Brad, about 1 km from the Gold Museum. It has 19 rooms and its own restaurant serving traditional Romanian food, making it one of the largest places to stay in town, also suited to groups and events."
       ],
       facts: [
-        { label: "Address", value: "52 Avram Iancu street, Brad" },
-        { label: "Rooms", value: "19 rooms (16 double, 3 triple), 43 beds" },
-        { label: "Facilities", value: "meal service for guests" },
-        { label: "Booking", value: "via online platforms (Booking.com, Agoda)" }
+        { label: "Address", value: "54 Avram Iancu street, Brad" },
+        { label: "Rooms", value: "19 rooms, 3-star rating" },
+        { label: "Facilities", value: "restaurant, parking" },
+        { label: "Booking", value: "directly or via online platforms (Booking.com, Agoda)" }
       ]
     }
   },
@@ -3962,21 +3967,27 @@ window.SITE_BUSINESSES = [
     season: "tot-anul",
     images: ["images/placeholder.svg"],
     ro: {
-      tagline: "Pensiune la intrarea în Defileul Jiului, pe strada Livezeni.",
+      tagline: "Pensiune cu restaurant la ieșirea din Petroșani spre Defileul Jiului, pe strada Livezeni (DN66).",
       description: [
-        "Pensiunea Floare de Colț este situată pe strada Livezeni nr. 36, într-un cadru pitoresc, chiar la intrarea dinspre Petroșani în Defileul Jiului."
+        "Pensiunea Floare de Colț este situată pe strada Livezeni nr. 36, la ieșirea din Petroșani spre Defileul Jiului, pe DN66 — un punct de plecare comod spre Parâng, Straja sau Defileu.",
+        "Are camere duble, twin, triple și cvadruple, plus restaurant propriu cu preparate tradiționale și internaționale, grădină și o sală pentru evenimente de familie."
       ],
       facts: [
-        { label: "Adresă", value: "Str. Livezeni nr. 36, Petroșani" }
+        { label: "Adresă", value: "Str. Livezeni nr. 36, Petroșani" },
+        { label: "Facilități", value: "restaurant, grădină, sală de evenimente" },
+        { label: "Contact", value: "tel. 0254 548 563 · floaredecolthd.ro" }
       ]
     },
     en: {
-      tagline: "A guesthouse at the entrance to the Jiu Gorge, on Strada Livezeni.",
+      tagline: "A guesthouse with a restaurant on the way out of Petroșani towards the Jiu Gorge, on Strada Livezeni (DN66).",
       description: [
-        "Pensiunea Floare de Colț is located on Strada Livezeni no. 36, in a picturesque setting right at the entrance to the Jiu Gorge from Petroșani."
+        "Pensiunea Floare de Colț is at Strada Livezeni no. 36, where Petroșani ends and the road (DN66) enters the Jiu Gorge — a handy base for Parâng, Straja or the gorge itself.",
+        "It has double, twin, triple and quadruple rooms, plus its own restaurant serving Romanian and international dishes, a garden and a hall for family events."
       ],
       facts: [
-        { label: "Address", value: "Str. Livezeni no. 36, Petroșani" }
+        { label: "Address", value: "Str. Livezeni no. 36, Petroșani" },
+        { label: "Facilities", value: "restaurant, garden, event hall" },
+        { label: "Contact", value: "phone +40 254 548 563 · floaredecolthd.ro" }
       ]
     }
   },
