@@ -1023,7 +1023,8 @@ window.SITE_ACTIVITIES = [
     area: "Vulcan",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/cascada-dracului-vulcan.jpg"],
+    photoCredit: { author: "Bogdan Muraru", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Cascada_Vulcan.jpg" },
     ro: {
       tagline: "Traseu tematic ușor-mediu prin munții de lângă Vulcan, cu Peștera și Cascada Dracului.",
       description: [
