@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0E7C86">
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
   <title>Hunedoara Live</title>
   <meta name="description" content="Destinații, orașe, natură, turism activ, moștenire culturală, știri și afaceri din tot județul Hunedoara — ghidul digital al județului." data-i18n-attr="content:page.meta.home">
   <!-- SEO: generat de scripts/build-pages.mjs -->
@@ -60,18 +64,13 @@
         <a class="btn btn--primary" href="destinatii.html" data-i18n="home.hero.cta.primary">Explorează destinații</a>
         <a class="btn btn--outline" href="orase.html" data-i18n="home.hero.cta.secondary">Vezi harta interactivă</a>
       </div>
-      <div class="hero__apps">
-        <span class="hero__apps-label" data-i18n="home.hero.apps.label">Disponibil și ca aplicație</span>
-        <span class="app-badges">
-          <span class="badge-app">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
-            <span data-i18n="footer.apps.appstore">App Store</span>
-          </span>
-          <span class="badge-app">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
-            <span data-i18n="footer.apps.googleplay">Google Play</span>
-          </span>
-        </span>
+      <div class="hero__apps" data-pwa-install hidden>
+        <button class="badge-app" type="button" data-pwa-install-btn>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+          <span data-i18n="pwa.install">Instalează aplicația</span>
+        </button>
+        <span class="hero__apps-label" data-i18n="pwa.label">Pe telefon, direct din browser — fără magazin de aplicații</span>
+        <p class="pwa-hint" data-pwa-ios-hint hidden data-i18n="pwa.ios.hint">Pe iPhone sau iPad: apasă butonul Partajează (pătratul cu săgeată), apoi „Adaugă pe ecranul principal”.</p>
       </div>
     </section>
 
@@ -122,18 +121,12 @@
     <div class="container site-footer__bottom">
       <span class="footer-note" data-i18n="footer.note">Proiect independent, necomercial.</span>
       <a class="footer-email" href="mailto:hunedoaragohd@gmail.com">hunedoaragohd@gmail.com</a>
-      <div class="footer-apps">
-        <span class="footer-apps-label" data-i18n="footer.apps.label">În curând</span>
-        <div class="app-badges">
-          <span class="badge-app">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
-            <span data-i18n="footer.apps.appstore">App Store</span>
-          </span>
-          <span class="badge-app">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
-            <span data-i18n="footer.apps.googleplay">Google Play</span>
-          </span>
-        </div>
+      <div class="footer-apps" data-pwa-install hidden>
+        <button class="badge-app" type="button" data-pwa-install-btn>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+          <span data-i18n="pwa.install">Instalează aplicația</span>
+        </button>
+        <p class="pwa-hint" data-pwa-ios-hint hidden data-i18n="pwa.ios.hint">Pe iPhone sau iPad: apasă butonul Partajează (pătratul cu săgeată), apoi „Adaugă pe ecranul principal”.</p>
       </div>
       <div class="social-row"><span>Fb</span><span>Ig</span><span>Yt</span></div>
     </div>

@@ -268,10 +268,111 @@ function load(file, query = "", urlPath = file) {
     "netlify/functions/submit-review.mjs", "images/placeholder.svg",
     "js/config.js", "js/data.js", "js/i18n.js", "js/common.js", "js/reviews.js",
     "js/listing.js", "js/detail.js", "js/home.js", "js/credits.js", "js/images.js",
-    "scripts/build-pages.mjs", "scripts/build-images.mjs", "sitemap.xml", "robots.txt"
+    "scripts/build-pages.mjs", "scripts/build-images.mjs", "sitemap.xml", "robots.txt",
+    "manifest.webmanifest", "sw.js", "offline.html", "icons/apple-touch-icon.png", "icons/favicon.svg"
   ];
   const missing = files.filter((f) => !fs.existsSync(path.join(ROOT, f)));
   ok(missing.length === 0, "toate fișierele există" + (missing.length ? ": lipsesc " + missing.join(", ") : ""));
+}
+
+/* -------- PWA: manifest, etichete în <head>, buton de instalare, service worker -------- */
+{
+  let man = null;
+  try { man = JSON.parse(fs.readFileSync(path.join(ROOT, "manifest.webmanifest"), "utf8")); } catch (e) {}
+  ok(!!man, "pwa: manifest.webmanifest e JSON valid");
+  ok(man && man.name === "Hunedoara Live" && man.start_url === "/" && man.display === "standalone" &&
+    /^#0e7c86$/i.test(man.theme_color) && /^#fff(fff)?$/i.test(man.background_color) && man.lang === "ro",
+    "pwa: manifest are name, start_url, display, culori, lang");
+  const icons = (man && man.icons) || [];
+  ok(["192x192", "512x512"].every((sz) => icons.some((i) => i.sizes === sz && /any/.test(i.purpose || "any"))) &&
+    icons.some((i) => /maskable/.test(i.purpose || "")), "pwa: iconițe 192 + 512 + maskable");
+  ok(icons.every((i) => fs.existsSync(path.join(ROOT, i.src.replace(/^\//, "")))), "pwa: fișierele iconițelor există");
+
+  const pages = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html"));
+  const noHead = pages.filter((f) => {
+    const h = fs.readFileSync(path.join(ROOT, f), "utf8");
+    return !/<link rel="manifest" href="\/manifest\.webmanifest">/.test(h) || !/<meta name="theme-color"/.test(h) ||
+      !/<link rel="apple-touch-icon"/.test(h);
+  });
+  ok(noHead.length === 0, "pwa: toate paginile (" + pages.length + ") au manifest, theme-color, apple-touch-icon" + (noHead.length ? " — lipsesc în " + noHead.join(", ") : ""));
+
+  const w = await load("index.html");
+  const d = w.document;
+  ok(!/App Store|Google Play|În curând/.test(d.body.textContent), "pwa: index nu mai promite App Store / Google Play");
+  const boxes = [...d.querySelectorAll("[data-pwa-install]")];
+  ok(boxes.length >= 1 && boxes.every((b) => b.hidden), "pwa: butonul „Instalează aplicația” e ascuns până când browserul permite instalarea");
+  const ev = new w.Event("beforeinstallprompt", { cancelable: true });
+  let prompted = 0;
+  ev.prompt = () => { prompted++; return Promise.resolve(); };
+  ev.userChoice = Promise.resolve({ outcome: "accepted" });
+  w.dispatchEvent(ev);
+  ok(boxes.every((b) => !b.hidden) && ev.defaultPrevented, "pwa: beforeinstallprompt arată butonul");
+  d.querySelector("[data-pwa-install-btn]").dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+  ok(prompted === 1, "pwa: click pe buton deschide dialogul de instalare");
+  d.querySelector("#lang-toggle").dispatchEvent(new w.Event("click"));
+  ok(d.querySelector("[data-pwa-install-btn] [data-i18n]").textContent === "Install the app", "pwa: textul butonului e tradus (EN)");
+
+  // service worker rulat într-un mediu simulat (cache + rețea false)
+  const ORIGIN = "https://gohd.ro";
+  const stores = new Map();
+  const keyOf = (r, ignoreSearch) => { const u = new URL(typeof r === "string" ? r : r.url, ORIGIN); if (ignoreSearch) u.search = ""; return u.href; };
+  const mkCache = () => {
+    const m = new Map();
+    return {
+      match: async (r, o) => { if (!(o && o.ignoreSearch)) return m.get(keyOf(r)); for (const [k, v] of m) if (keyOf(k, true) === keyOf(r, true)) return v; },
+      put: async (r, res) => { m.set(keyOf(r), res); }, keys: async () => [...m.keys()], delete: async (k) => m.delete(keyOf(k))
+    };
+  };
+  const caches = {
+    open: async (n) => { if (!stores.has(n)) stores.set(n, mkCache()); return stores.get(n); },
+    match: async (r, o) => { for (const c of stores.values()) { const hit = await c.match(r, o); if (hit) return hit; } },
+    keys: async () => [...stores.keys()], delete: async (n) => stores.delete(n)
+  };
+  let online = true, fetched = [];
+  const fetchMock = async (r) => {
+    fetched.push(typeof r === "string" ? r : r.url);
+    if (!online) throw new TypeError("offline");
+    const res = new Response("net:" + new URL(typeof r === "string" ? r : r.url, ORIGIN).pathname, { status: 200 });
+    Object.defineProperty(res, "type", { value: "basic" });
+    return res;
+  };
+  const handlers = {};
+  const swSelf = { location: new URL(ORIGIN + "/sw.js"), addEventListener: (t, fn) => { handlers[t] = fn; },
+    skipWaiting: async () => {}, clients: { claim: async () => {} } };
+  const ctx = { self: swSelf, caches, fetch: fetchMock, URL, Response, Promise, Request: function (u, o) { return Object.assign({ url: new URL(u, ORIGIN).href, method: "GET" }, o); }, console };
+  vm.createContext(ctx);
+  let swOk = true;
+  try { vm.runInContext(fs.readFileSync(path.join(ROOT, "sw.js"), "utf8"), ctx); } catch (e) { swOk = false; }
+  ok(swOk && handlers.install && handlers.activate && handlers.fetch, "pwa: sw.js se încarcă și ascultă install/activate/fetch");
+  const fire = async (req) => {
+    let p = null;
+    handlers.fetch({ request: Object.assign({ method: "GET", mode: "cors", destination: "" }, req), respondWith: (x) => { p = x; } });
+    return p ? await p : null;
+  };
+  // install: precache (inclusiv offline.html)
+  let waits = [];
+  handlers.install({ waitUntil: (x) => waits.push(x) });
+  await Promise.all(waits);
+  ok(!!(await caches.match(ORIGIN + "/offline.html")) && !!(await caches.match(ORIGIN + "/js/data.js")), "pwa: la instalare se salvează offline.html și resursele de bază");
+
+  ok((await fire({ url: ORIGIN + "/contact.html", method: "POST", mode: "navigate" })) === null, "pwa: cererile POST (Netlify Forms) nu trec prin service worker");
+  ok((await fire({ url: ORIGIN + "/.netlify/functions/submit-review" })) === null &&
+    (await fire({ url: ORIGIN + "/.netlify/functions/reviews?id=x", mode: "navigate" })) === null &&
+    (await fire({ url: ORIGIN + "/.netlify/functions/x.js" })) === null, "pwa: /.netlify/functions nu trece prin service worker");
+  ok((await fire({ url: "https://fonts.googleapis.com/css2?family=Inter" })) === null, "pwa: cererile către alte domenii nu sunt interceptate");
+
+  fetched = [];
+  const r1 = await fire({ url: ORIGIN + "/stire.html?id=abc", mode: "navigate", destination: "document" });
+  ok(r1 && (await r1.text()) === "net:/stire.html" && fetched.length === 1, "pwa: paginile HTML vin întâi din rețea (network-first)");
+  online = false;
+  const r2 = await fire({ url: ORIGIN + "/stire.html?id=alt-id", mode: "navigate", destination: "document" });
+  ok(r2 && (await r2.text()) === "net:/stire.html", "pwa: offline, o pagină de detaliu deja vizitată se deschide din cache (alt ?id=)");
+  const r3 = await fire({ url: ORIGIN + "/pagina-nevizitata.html", mode: "navigate", destination: "document" });
+  ok(r3 && (await r3.text()) === "net:/offline.html", "pwa: offline, o pagină nevizitată afișează offline.html");
+  const r4 = await fire({ url: ORIGIN + "/css/style.css", destination: "style" });
+  ok(r4 && (await r4.text()) === "net:/css/style.css", "pwa: CSS servit din cache când nu e rețea");
+  const r5 = await fire({ url: ORIGIN + "/images/nu-exista.jpg", destination: "image" });
+  ok(r5 && (await r5.text()) === "net:/images/placeholder.svg", "pwa: imagine lipsă offline -> placeholder");
 }
 
 console.log(`\n${pass} pass, ${fail} fail`);
