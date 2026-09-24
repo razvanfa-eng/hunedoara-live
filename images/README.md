@@ -16,3 +16,9 @@ vedea acolo toate numele de fișiere de care ai nevoie.
 
 Sunt separate: vizitatorii le încarcă prin formular, iar în modul „remote" ajung
 în Supabase Storage (bucket `review-photos`), nu în acest folder.
+
+## Variante optimizate (generate automat)
+
+După ce adaugi sau înlocuiești o poză, rulează `node scripts/build-pages.mjs`: creează
+`800/<nume>.webp`, `1600/<nume>.webp` (folosite de site prin `srcset`) și `og/<nume>.jpg`
+(1200×630, previzualizarea pe Facebook). Nu edita manual aceste foldere.
