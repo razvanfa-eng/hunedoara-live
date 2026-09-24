@@ -288,7 +288,8 @@ function load(file, query = "", urlPath = file) {
     icons.some((i) => /maskable/.test(i.purpose || "")), "pwa: iconițe 192 + 512 + maskable");
   ok(icons.every((i) => fs.existsSync(path.join(ROOT, i.src.replace(/^\//, "")))), "pwa: fișierele iconițelor există");
 
-  const pages = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html"));
+  const pages = fs.readdirSync(ROOT, { recursive: true }).map((f) => String(f).split(path.sep).join("/"))
+    .filter((f) => f.endsWith(".html") && !f.startsWith("node_modules/") && !f.startsWith(".git/"));
   const noHead = pages.filter((f) => {
     const h = fs.readFileSync(path.join(ROOT, f), "utf8");
     return !/<link rel="manifest" href="\/manifest\.webmanifest">/.test(h) || !/<meta name="theme-color"/.test(h) ||
