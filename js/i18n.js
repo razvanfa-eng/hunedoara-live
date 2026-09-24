@@ -146,6 +146,12 @@
       "contact.form.subject": "Subiect",
       "contact.form.message": "Mesajul tău",
       "contact.form.submit": "Trimite mesajul",
+      "thanks.heading": "Mulțumim, mesajul a fost trimis!",
+      "thanks.text": "L-am primit și îți vom răspunde cât mai curând la adresa de e-mail pe care ai lăsat-o.",
+      "thanks.note": "Dacă nu primești un răspuns în câteva zile, verifică și folderul Spam sau scrie-ne direct la",
+      "thanks.home": "Înapoi la pagina principală",
+      "thanks.explore": "Descoperă destinațiile",
+      "thanks.again": "Trimite alt mesaj",
 
       "page.meta.home": "Destinații, orașe, natură, turism activ, moștenire culturală, știri și afaceri din tot județul Hunedoara — ghidul digital al județului.",
       "page.title.destinatii": "Destinații — Hunedoara Live",
@@ -173,6 +179,7 @@
       "page.meta.utile": "Transport, hărți, contacte utile și informații practice pentru județul Hunedoara.",
       "page.title.contact": "Contact — Hunedoara Live",
       "page.meta.contact": "Scrie-ne, propune un loc sau raportează o informație greșită pe Hunedoara Live.",
+      "page.title.thanks": "Mesaj trimis — Hunedoara Live",
       "page.title.credite": "Imagini & credite — Hunedoara Live",
       "page.meta.credite": "Cum se adaugă imaginile și unde se trec creditele foto."
     },
@@ -321,6 +328,12 @@
       "contact.form.subject": "Subject",
       "contact.form.message": "Your message",
       "contact.form.submit": "Send message",
+      "thanks.heading": "Thank you, your message has been sent!",
+      "thanks.text": "We've received it and will reply as soon as possible to the e-mail address you left.",
+      "thanks.note": "If you don't hear back within a few days, please check your Spam folder or write to us directly at",
+      "thanks.home": "Back to the home page",
+      "thanks.explore": "Discover destinations",
+      "thanks.again": "Send another message",
 
       "page.meta.home": "Destinations, towns, nature, active tourism, cultural heritage, news and businesses from across Hunedoara county — the county's digital guide.",
       "page.title.destinatii": "Destinations — Hunedoara Live",
@@ -348,6 +361,7 @@
       "page.meta.utile": "Transport, maps, useful contacts and practical information for Hunedoara county.",
       "page.title.contact": "Contact — Hunedoara Live",
       "page.meta.contact": "Write to us, suggest a place or report a mistake on Hunedoara Live.",
+      "page.title.thanks": "Message sent — Hunedoara Live",
       "page.title.credite": "Images & credits — Hunedoara Live",
       "page.meta.credite": "How images are added and where photo credits are listed."
     }

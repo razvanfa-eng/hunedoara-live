@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-i18n="page.title.contact">Contact — Hunedoara Live</title>
-  <meta name="description" content="Scrie-ne, propune un loc sau raportează o informație greșită pe Hunedoara Live." data-i18n-attr="content:page.meta.contact">
+  <title data-i18n="page.title.thanks">Mesaj trimis — Hunedoara Live</title>
+  <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
@@ -34,35 +34,21 @@
     </div>
   </header>
 
-  <main class="container prose">
-    <h1 data-i18n="contact.heading">Contact</h1>
-    <p data-i18n="contact.intro">Ai o întrebare, o sugestie sau vrei să propui un loc? Scrie-ne.</p>
-    <p class="contact-email-line">
-      <span data-i18n="contact.email.label">Sau scrie-ne direct la</span>
+  <main class="container prose thanks">
+    <div class="thanks__icon" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <h1 data-i18n="thanks.heading">Mulțumim, mesajul a fost trimis!</h1>
+    <p class="thanks__text" data-i18n="thanks.text">L-am primit și îți vom răspunde cât mai curând la adresa de e-mail pe care ai lăsat-o.</p>
+    <div class="thanks__actions">
+      <a class="btn btn--primary" href="index.html" data-i18n="thanks.home">Înapoi la pagina principală</a>
+      <a class="btn btn--outline" href="destinatii.html" data-i18n="thanks.explore">Descoperă destinațiile</a>
+    </div>
+    <p class="contact-email-line thanks__note">
+      <span data-i18n="thanks.note">Dacă nu primești un răspuns în câteva zile, verifică și folderul Spam sau scrie-ne direct la</span>
       <a href="mailto:hunedoaragohd@gmail.com">hunedoaragohd@gmail.com</a>
     </p>
-
-    <form class="contact-form" name="contact" method="POST" action="/multumim.html" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contact">
-      <p hidden><label>Nu completa acest câmp: <input name="bot-field"></label></p>
-      <label>
-        <span data-i18n="contact.form.name">Numele tău</span>
-        <input type="text" name="name" required maxlength="80">
-      </label>
-      <label>
-        <span data-i18n="contact.form.email">Adresa ta de e-mail</span>
-        <input type="email" name="email" required>
-      </label>
-      <label>
-        <span data-i18n="contact.form.subject">Subiect</span>
-        <input type="text" name="subject" maxlength="140">
-      </label>
-      <label>
-        <span data-i18n="contact.form.message">Mesajul tău</span>
-        <textarea name="message" rows="5" required maxlength="4000"></textarea>
-      </label>
-      <button class="btn btn--primary" type="submit" data-i18n="contact.form.submit">Trimite mesajul</button>
-    </form>
+    <p class="thanks__again"><a href="contact.html" data-i18n="thanks.again">Trimite alt mesaj</a></p>
   </main>
 
   <footer class="site-footer">

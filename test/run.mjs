@@ -142,7 +142,7 @@ function load(file, query = "") {
 
 /* -------- pagini statice -------- */
 {
-  for (const file of ["utile.html", "contact.html", "404.html", "credite.html"]) {
+  for (const file of ["utile.html", "contact.html", "multumim.html", "404.html", "credite.html"]) {
     const w = await load(file);
     ok(!w.__err, file + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   }
@@ -157,7 +157,7 @@ function load(file, query = "") {
     "natura.html", "natura-loc.html", "turism-activ.html", "activitate.html",
     "mostenire.html", "mostenire-articol.html", "orase.html", "oras.html",
     "stiri.html", "stire.html", "afaceri.html", "afacere.html",
-    "utile.html", "contact.html", "credite.html", "404.html",
+    "utile.html", "contact.html", "multumim.html", "credite.html", "404.html",
     "netlify.toml", "README.md", "SETUP.md", "css/style.css", "supabase/schema.sql",
     "netlify/functions/submit-review.mjs", "images/placeholder.svg",
     "js/config.js", "js/data.js", "js/i18n.js", "js/common.js", "js/reviews.js",
