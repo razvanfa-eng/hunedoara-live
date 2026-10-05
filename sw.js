@@ -10,9 +10,12 @@
  * - NU se ating: cererile non-GET (formularul de contact -> Netlify Forms),
  *   /.netlify/... (funcțiile pentru recenzii) și cererile către alte domenii.
  *
+ * - Versiunea în engleză (/en/...) e tratată la fel: paginile vizitate rămân
+ *   disponibile offline; prima pagină EN (/en/) e salvată de la instalare.
+ *
  * La orice schimbare a listei de mai jos sau a strategiei, crește VERSION.
  */
-var VERSION = "v1";
+var VERSION = "v2";
 var STATIC_CACHE = "hl-static-" + VERSION;
 var PAGES_CACHE = "hl-pages-" + VERSION;
 var IMG_CACHE = "hl-img-" + VERSION;
@@ -20,7 +23,7 @@ var IMG_LIMIT = 120;
 var OFFLINE_URL = "/offline.html";
 
 var PRECACHE = [
-  "/", "/index.html",
+  "/", "/index.html", "/en/",
   OFFLINE_URL,
   "/css/style.css",
   "/js/data.js", "/js/config.js", "/js/i18n.js", "/js/common.js", "/js/search.js",

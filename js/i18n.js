@@ -1,4 +1,5 @@
-/* Interfață bilingvă RO / EN. Limba se ține în localStorage. */
+/* Interfață bilingvă RO / EN. Pe paginile cu pereche RO/EN limba e dată de URL
+   (/en/...); pe celelalte, de preferința din localStorage (vezi getLang()). */
 (function () {
   var STRINGS = {
     ro: {
@@ -27,6 +28,7 @@
       "home.stats.trails": "trasee montane",
       "home.stats.history": "de istorie și tradiție",
       "home.stats.history.value": "sute de ani",
+      "home.stats.aria": "Statistici",
       "home.explore.heading": "Explorează județul",
       "home.highlights.heading": "Locuri emblematice",
       "home.news.heading": "Ultimele știri",
@@ -208,6 +210,7 @@
       "home.stats.trails": "mountain trails",
       "home.stats.history": "of history and tradition",
       "home.stats.history.value": "centuries",
+      "home.stats.aria": "Key figures",
       "home.explore.heading": "Explore the county",
       "home.highlights.heading": "Iconic landmarks",
       "home.news.heading": "Latest news",
@@ -373,16 +376,48 @@
     if (_t) { STRINGS.ro["site.tagline"] = _t.ro; STRINGS.en["site.tagline"] = _t.en; }
   } catch (e) {}
 
+  /* Limba paginii.
+   * - Paginile cu pereche RO <-> EN (generate de scripts/build-pages.mjs: /,
+   *   /natura.html, /natura/<id>/ ... și /en/, /en/natura.html, /en/natura/<id>/ ...)
+   *   au <html data-page-lang="ro|en">: limba e dată de URL, indiferent de
+   *   preferința salvată, iar preferința se actualizează la limba paginii.
+   *   Comutatorul #lang-toggle e acolo un link <a href hreflang> spre pagina pereche.
+   * - Paginile fără pereche (șabloanele cu ?id=, 404) folosesc preferința din
+   *   localStorage, iar comutatorul (<button>) schimbă textul pe loc. */
   var LANG_KEY = "hl-lang";
+  var PAGE_LANG = (function () {
+    try {
+      var a = document.documentElement && document.documentElement.getAttribute("data-page-lang");
+      if (a === "ro" || a === "en") return a;
+      if (typeof location !== "undefined" && /^\/en(\/|$)/.test(location.pathname)) return "en";
+    } catch (e) {}
+    return null;
+  })();
 
+  function store(lang) {
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+  }
   function getLang() {
+    if (PAGE_LANG) return PAGE_LANG;
     var stored = null;
     try { stored = localStorage.getItem(LANG_KEY); } catch (e) {}
     return (stored === "ro" || stored === "en") ? stored : "ro";
   }
+  // adresa paginii pereche în limba `lang` (linkul comutatorului) sau null
+  function pairUrl(lang) {
+    var a = document.getElementById("lang-toggle");
+    if (!a || a.tagName !== "A" || a.getAttribute("hreflang") !== lang) return null;
+    return a.getAttribute("href");
+  }
   function setLang(lang) {
     if (lang !== "ro" && lang !== "en") return;
-    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+    store(lang);
+    if (PAGE_LANG) {
+      // limba e fixată de URL: altă limbă = altă pagină
+      var url = lang !== PAGE_LANG && pairUrl(lang);
+      if (url) window.I18N.navigate(url);
+      return;
+    }
     applyLang(lang);
   }
   function t(key, lang) {
@@ -408,15 +443,24 @@
 
   window.I18N = {
     get lang() { return getLang(); },
+    pageLang: PAGE_LANG,
     set: setLang,
     t: t,
     apply: applyLang,
+    pairUrl: pairUrl,
+    navigate: function (url) { location.href = url; },
     toggle: function () { setLang(getLang() === "ro" ? "en" : "ro"); }
   };
 
   document.addEventListener("DOMContentLoaded", function () {
+    if (PAGE_LANG) store(PAGE_LANG);   // preferința rămâne consecventă cu URL-ul
     applyLang(getLang());
     var btn = document.getElementById("lang-toggle");
-    if (btn) btn.addEventListener("click", function () { window.I18N.toggle(); });
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      // <a> spre pagina pereche: doar salvăm preferința, browserul urmează linkul
+      if (btn.tagName === "A") { store(btn.getAttribute("hreflang")); return; }
+      window.I18N.toggle();
+    });
   });
 })();

@@ -57,7 +57,7 @@
         var cls = "tile" + (s.img ? " tile--photo" : " tile--accent");
         // fundal: varianta webp de ~800 px (tile-urile au max. ~560 px lățime pe ecran)
         var bg = s.img ? ' style="background-image:url(&quot;' + window.RL.imgVariant(s.img, 800) + '&quot;)"' : "";
-        return '<a class="' + cls + '" href="' + s.page + '"' + bg + '>' +
+        return '<a class="' + cls + '" href="' + window.RL.pageUrl(s.page, lang) + '"' + bg + '>' +
           '<span class="tile__mark">' + window.RL.esc(s.key.charAt(0).toUpperCase()) + "</span>" +
           '<span class="tile__title">' + window.RL.esc(window.I18N.t("sec." + s.key + ".name")) + "</span>" +
           '<span class="tile__desc">' + window.RL.esc(window.I18N.t("sec." + s.key + ".desc")) + "</span>" +

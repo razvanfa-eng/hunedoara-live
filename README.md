@@ -86,8 +86,9 @@ Scriptul face, în ordine:
    meta description, Open Graph (`og:image` = `images/og/...`; intrările fără poză
    primesc Castelul Corvinilor), canonical și conținutul în română direct în HTML
    — Facebook și Google îl văd fără JavaScript. În browser, `js/detail.js` preia
-   pagina (limba EN, recenzii etc.). Intrările șterse din `data.js` își pierd și
-   pagina generată.
+   pagina (recenzii etc.). Fiecare intrare are și **versiunea în engleză** la
+   `/en/<secțiune>/<id>/` (ex. `/en/orase/deva/`), cu textele `en` din `data.js`.
+   Intrările șterse din `data.js` își pierd ambele pagini generate.
    Fiecare pagină are și **date structurate** (JSON-LD, schema.org), derivate
    din `data.js`: `Hotel` / `Restaurant` / `LodgingBusiness` (afaceri — adresa din
    faptul „Adresă”/„Locație”, telefonul și site-ul din „Contact”), `City` (orașe),
@@ -97,7 +98,18 @@ Scriptul face, în ordine:
    Verificare: https://search.google.com/test/rich-results
 3. **Blocul SEO** (`<!-- SEO ... -->`) din paginile principale: canonical, Open Graph,
    Twitter card. Textele vin din `js/i18n.js` (`page.title.*`, `page.meta.*`).
-4. **`sitemap.xml`** (toate paginile publice + toate intrările) și **`robots.txt`**.
+   Paginile principale (home, cele 7 listări, utile, contact, credite, multumim) au
+   copii EN generate în `en/` (`en/index.html` = `/en/`, `en/natura.html`…), cu
+   textele `data-i18n` deja traduse în HTML și linkurile interne spre `/en/`.
+   Nu edita fișierele din `en/` — editează pagina RO și rulează scriptul.
+4. **`sitemap.xml`** (toate paginile publice + toate intrările, RO și EN, cu
+   `xhtml:link` hreflang pentru fiecare pereche) și **`robots.txt`**.
+
+**Limbile.** Fiecare pereche RO ↔ EN e legată prin `<link rel="alternate" hreflang="ro|en|x-default">`
+(x-default = RO). Pe paginile cu pereche limba e dată de URL (`<html data-page-lang>`),
+iar comutatorul RO/EN e un link spre pagina pereche (preferința din localStorage se
+actualizează la limba paginii). Paginile fără pereche (șabloanele cu `?id=`, 404) păstrează
+vechiul comportament: comutatorul schimbă textul pe loc, după preferința salvată.
 
 **URL-urile vechi** (`oras.html?id=deva`, inclusiv cu `&fbclid=...` de la Facebook)
 redirecționează 301 spre `/orase/deva/` — regulile sunt în `netlify.toml`. Orice altă

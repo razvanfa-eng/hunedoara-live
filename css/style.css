@@ -104,7 +104,9 @@ p { margin: 0 0 12px; }
   color: var(--faint); cursor: pointer;
 }
 .icon-btn:hover { color: var(--accent); }
+/* <button> pe paginile fără pereche, <a href> spre pagina RO/EN pereche în rest */
 .lang-toggle {
+  display: inline-block; line-height: normal; text-decoration: none;
   font-family: var(--sans); font-weight: 600; font-size: 12px;
   color: var(--muted); background: transparent; border: 1px solid var(--border);
   border-radius: 999px; padding: 6px 13px; cursor: pointer;

@@ -124,6 +124,13 @@
   to = "/stiri.html"
   status = 301
 
+# La fel pentru versiunea în engleză (/en/stiri/<id>/ -> listarea EN a știrilor).
+# Paginile EN nu au avut niciodată URL-uri vechi cu ?id=, deci nu au alte redirect-uri.
+[[redirects]]
+  from = "/en/stiri/*"
+  to = "/en/stiri.html"
+  status = 301
+
 # Pagina 404 personalizată
 [[redirects]]
   from = "/*"

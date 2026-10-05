@@ -46,9 +46,18 @@
     SITE_NEWS: { dir: "stiri", listing: "stiri.html", template: "stire.html" },
     SITE_BUSINESSES: { dir: "afaceri", listing: "afaceri.html", template: "afacere.html" }
   };
-  function entryUrl(key, id) {
+  /* Versiunea în engleză a fiecărei pagini stă sub /en/, cu aceleași nume:
+   * /en/orase/deva/, /en/orase.html, /en/ (home). `lang` lipsă = limba paginii curente. */
+  function curLang(lang) { return lang || (window.I18N && window.I18N.lang) || "ro"; }
+  function entryUrl(key, id, lang) {
     var s = SECTIONS[key];
-    return s ? "/" + s.dir + "/" + encodeURIComponent(id) + "/" : "#";
+    return s ? (curLang(lang) === "en" ? "/en/" : "/") + s.dir + "/" + encodeURIComponent(id) + "/" : "#";
+  }
+  // pagină principală ("natura.html", "/natura.html", "index.html") -> URL-ul ei în limba dată
+  function pageUrl(file, lang) {
+    var f = String(file || "").replace(/^\//, "");
+    if (f === "index.html") f = "";
+    return (curLang(lang) === "en" ? "/en/" : "/") + f;
   }
 
   /* ---------- Imagini optimizate ----------
@@ -120,7 +129,7 @@
     dataArray: dataArray, entryById: entryById,
     loc: loc, categoryLabel: categoryLabel, esc: esc, starsHtml: starsHtml, imgError: imgError,
     qs: qs,
-    SECTIONS: SECTIONS, entryUrl: entryUrl,
+    SECTIONS: SECTIONS, entryUrl: entryUrl, pageUrl: pageUrl,
     absUrl: absUrl, imgInfo: imgInfo, imgVariant: imgVariant, imgHtml: imgHtml
   };
 })();
@@ -155,7 +164,14 @@
     document.querySelectorAll("[data-pwa-install]").forEach(function (b) { b.hidden = !on; });
   }
 
-  if (isStandalone()) return;   // rulează deja ca aplicație instalată: nu arătăm nimic
+  if (isStandalone()) {
+    // aplicația instalată pornește mereu din "/" (start_url): dacă utilizatorul a
+    // ales engleza, o deschidem direct pe /en/ (doar în aplicație, nu și în browser)
+    var pref = null;
+    try { pref = localStorage.getItem("hl-lang"); } catch (e) {}
+    if (pref === "en" && location.pathname === "/" && location.replace) location.replace("/en/");
+    return;                     // rulează deja ca aplicație instalată: nu arătăm butonul
+  }
   var ios = isIOS();
 
   window.addEventListener("beforeinstallprompt", function (e) {

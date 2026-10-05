@@ -15,7 +15,8 @@
  * Paginile statice /<secțiune>/<id>/ sunt generate de scripts/build-pages.mjs
  * din șabloanele natura-loc.html, oras.html etc.: conținutul în română e deja
  * în HTML (pentru Google/Facebook), marcat cu data-prerendered="ro" pe
- * #detail-root; aici îl re-randăm doar când limba diferă (EN).
+ * #detail-root; aici îl re-randăm doar când limba diferă. Versiunile EN,
+ * /en/<secțiune>/<id>/, sunt generate la fel, cu data-prerendered="en".
  * Șabloanele merg în continuare și direct, cu ?id= (fallback).
  *
  * Markup-ul așteptat pe pagină (vezi natura-loc.html): #detail-root,
@@ -42,7 +43,7 @@
     var out = {};
 
     out.docTitle = entry.name + (siteName ? " — " + siteName : "");
-    out.backHref = cfg.backPage;
+    out.backHref = RL.pageUrl(cfg.backPage, lang);   // EN -> /en/<listare>.html
     out.backLabel = t(cfg.backLabelKey);
     out.badge = RL.esc(RL.categoryLabel(entry, lang)) +
       (entry.example ? ' <span class="badge badge--example">' + RL.esc(t("badge.example")) + "</span>" : "");
@@ -83,7 +84,7 @@
     function relatedCardHtml(pair) {
       var it = pair.item, l2 = RL.loc(it, lang);
       var img = (it.images && it.images[0]) || "";
-      return '<a class="card" href="' + RL.entryUrl(pair.key, it.id) + '">' +
+      return '<a class="card" href="' + RL.entryUrl(pair.key, it.id, lang) + '">' +
         '<div class="card__media">' + RL.imgHtml(img, { sizes: "card" }) + "</div>" +
         '<div class="card__body">' +
           '<span class="card__cat">' + RL.esc(RL.categoryLabel(it, lang)) + "</span>" +

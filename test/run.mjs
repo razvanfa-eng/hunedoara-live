@@ -48,10 +48,12 @@ function prep(html) {
     "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>");
   return html;
 }
-function load(file, query = "", urlPath = file) {
+// pref: preferința de limbă salvată deja în localStorage ("ro" / "en") la încărcare
+function load(file, query = "", urlPath = file, pref = null) {
   const dom = new JSDOM(prep(fs.readFileSync(path.join(ROOT, file), "utf8")), {
     runScripts: "dangerously", pretendToBeVisual: true,
-    url: "http://localhost:5175/" + urlPath + query
+    url: "http://localhost:5175/" + urlPath + query,
+    beforeParse(w) { if (pref) w.localStorage.setItem("hl-lang", pref); }
   });
   return new Promise((res) => {
     const w = dom.window;
@@ -74,9 +76,16 @@ function load(file, query = "", urlPath = file) {
   const newest = DATA.SITE_NEWS.slice().sort((a, b) => (b.date || "").localeCompare(a.date || ""))[0];
   ok(d.querySelector("#home-news .news-item .news-item__title")?.textContent === newest.name, "index: prima știre e cea mai recentă");
   const before = d.querySelector(".hero h1").textContent;
-  d.querySelector("#lang-toggle").dispatchEvent(new w.Event("click"));
-  ok(d.querySelector(".hero h1").textContent === before, "index: numele site-ului nu se traduce (Hunedoara Live rămâne la fel)");
-  ok(d.documentElement.getAttribute("data-lang") === "en", "index: comutatorul de limbă schimbă data-lang");
+  const lt = d.querySelector("#lang-toggle");
+  ok(lt.tagName === "A" && lt.getAttribute("href") === "/en/" && lt.getAttribute("hreflang") === "en", "index: comutatorul de limbă e link spre /en/");
+  const we = await load("en/index.html", "", "en/");
+  const de = we.document;
+  ok(!we.__err, "en/index: fără erori JS" + (we.__err ? " — " + we.__err : ""));
+  ok(de.querySelector(".hero h1").textContent === before, "index: numele site-ului nu se traduce (Hunedoara Live rămâne la fel)");
+  ok(de.documentElement.getAttribute("data-lang") === "en", "en/index: pagina /en/ e randată în engleză (data-lang)");
+  ok([...de.querySelectorAll("#explore-grid .tile")].every((a) => /^\/en\/[a-z-]+\.html$/.test(a.getAttribute("href"))) &&
+    [...de.querySelectorAll("#home-highlights .card, #home-news .news-item")].every((a) => /^\/en\/[a-z-]+\/[a-z0-9-]+\/$/.test(a.getAttribute("href"))),
+    "en/index: tile-urile, reperele și știrile leagă spre paginile /en/");
 }
 
 /* -------- destinatii.html + destinatie.html (secțiune nouă) -------- */
@@ -254,9 +263,15 @@ function load(file, query = "", urlPath = file) {
   ok(pRel > 0 && d.querySelectorAll("#detail-related .card").length === pRel, "generat /orase/petrosani/: " + pRel + " obiective din zonă (pre-randate)");
   ok(d.querySelector("#detail-gallery img").getAttribute("srcset").includes(".webp 800w"), "generat /orase/petrosani/: poza principală are srcset webp");
   const roTag = d.querySelector("#detail-tagline").textContent;
-  d.querySelector("#lang-toggle").dispatchEvent(new w.Event("click"));
-  ok(d.querySelector("#detail-tagline").textContent !== roTag && d.querySelector("#detail-back").textContent === "← All towns", "generat /orase/petrosani/: comutatorul EN re-randează conținutul");
+  ok(d.querySelector("#lang-toggle").getAttribute("href") === "/en/orase/petrosani/", "generat /orase/petrosani/: comutatorul EN duce la /en/orase/petrosani/");
   ok(d.querySelector("#detail-back").getAttribute("href") === "/orase.html", "generat /orase/petrosani/: linkul înapoi e absolut");
+  const we = await load("en/orase/petrosani/index.html", "", "en/orase/petrosani/");
+  const de = we.document;
+  ok(!we.__err, "generat /en/orase/petrosani/: fără erori JS" + (we.__err ? " — " + we.__err : ""));
+  ok(de.querySelector("#detail-tagline").textContent !== roTag && de.querySelector("#detail-back").textContent === "← All towns" &&
+    de.querySelector("#detail-back").getAttribute("href") === "/en/orase.html", "generat /en/orase/petrosani/: conținut EN, înapoi spre /en/orase.html");
+  ok(de.querySelectorAll("#detail-related .card").length === pRel &&
+    [...de.querySelectorAll("#detail-related .card")].every((a) => a.getAttribute("href").startsWith("/en/")), "generat /en/orase/petrosani/: obiectivele din zonă leagă spre /en/");
 
   const nophoto = all.find((x) => x.e.images && x.e.images[0] === "images/placeholder.svg" && x.e.hasReviews);
   if (nophoto) {
@@ -273,9 +288,138 @@ function load(file, query = "", urlPath = file) {
   const locs = [...doc.getElementsByTagName("loc")].map((n) => n.textContent);
   const toFile = (u) => { const p = u.replace("https://gohd.ro/", ""); return p === "" ? "index.html" : p.endsWith("/") ? p + "index.html" : p; };
   const deadLocs = locs.filter((u) => !fs.existsSync(path.join(ROOT, toFile(u))));
-  ok(locs.length === all.length + 11 && deadLocs.length === 0, "sitemap.xml: " + locs.length + " URL-uri, toate cu fișier real" + (deadLocs.length ? " — lipsă: " + deadLocs.join(", ") : ""));
+  ok(locs.length === 2 * (all.length + 11) && deadLocs.length === 0, "sitemap.xml: " + locs.length + " URL-uri (RO + EN), toate cu fișier real" + (deadLocs.length ? " — lipsă: " + deadLocs.join(", ") : ""));
   ok(!locs.some((u) => /multumim|404|oras\.html|destinatie\.html/.test(u)), "sitemap.xml: fără multumim/404/șabloane");
   ok(/Sitemap: https:\/\/gohd\.ro\/sitemap\.xml/.test(fs.readFileSync(path.join(ROOT, "robots.txt"), "utf8")), "robots.txt: indică sitemap.xml");
+}
+
+/* -------- versiunea în engleză: /en/... + hreflang + comutatorul de limbă -------- */
+{
+  const SITE = "https://gohd.ro";
+  const DIRS = { SITE_DESTINATIONS: "destinatii", SITE_TOWNS: "orase", SITE_NATURE: "natura", SITE_ACTIVITIES: "turism-activ",
+    SITE_HERITAGE: "mostenire", SITE_NEWS: "stiri", SITE_BUSINESSES: "afaceri" };
+  const LISTINGS = Object.values(DIRS).map((d) => d + ".html");
+  const htmlEsc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  const readF = (f) => fs.existsSync(path.join(ROOT, f)) ? fs.readFileSync(path.join(ROOT, f), "utf8") : "";
+  // perechile RO <-> EN: [cale RO, fișier RO, fișier EN]
+  const entryPairs = Object.entries(DIRS).flatMap(([k, dir]) => DATA[k].map((e) => ({ k, e, ro: "/" + dir + "/" + e.id + "/" })));
+  const topPairs = ["index.html", ...LISTINGS, "utile.html", "contact.html", "credite.html"]
+    .map((f) => ({ ro: f === "index.html" ? "/" : "/" + f, roFile: f, enFile: "en/" + f }));
+  const pairs = [
+    ...topPairs,
+    ...entryPairs.map((x) => ({ ro: x.ro, roFile: x.ro.slice(1) + "index.html", enFile: "en" + x.ro + "index.html", x }))
+  ].map((p) => ({ ...p, en: "/en" + p.ro }));
+
+  // câte o pagină EN pentru fiecare intrare, în fiecare secțiune
+  for (const [k, dir] of Object.entries(DIRS)) {
+    const missing = DATA[k].filter((e) => !fs.existsSync(path.join(ROOT, "en", dir, e.id, "index.html")));
+    ok(missing.length === 0, "en: /en/" + dir + "/<id>/ există pentru toate cele " + DATA[k].length + " intrări" + (missing.length ? " — lipsesc: " + missing.map((e) => e.id).join(", ") : ""));
+  }
+  const missingTop = topPairs.filter((p) => !fs.existsSync(path.join(ROOT, p.enFile)));
+  ok(missingTop.length === 0 && fs.existsSync(path.join(ROOT, "en/multumim.html")), "en: paginile principale au versiune EN (" + (topPairs.length + 1) + ")" + (missingTop.length ? " — lipsesc: " + missingTop.map((p) => p.enFile).join(", ") : ""));
+
+  // <html lang="en">, canonical spre ea însăși, og:locale, hreflang reciproc (ro, en, x-default = RO)
+  const links = (h, lang) => [
+    '<link rel="alternate" hreflang="ro" href="' + SITE + lang.ro + '">',
+    '<link rel="alternate" hreflang="en" href="' + SITE + lang.en + '">',
+    '<link rel="alternate" hreflang="x-default" href="' + SITE + lang.ro + '">'
+  ].every((l) => h.includes(l));
+  const badLang = pairs.filter((p) => !/<html lang="en" data-page-lang="en">/.test(readF(p.enFile)) || !/<html lang="ro" data-page-lang="ro">/.test(readF(p.roFile)));
+  ok(badLang.length === 0, "en: toate paginile EN au <html lang=\"en\">, perechile RO au lang=\"ro\" (" + pairs.length + " perechi)" + (badLang.length ? " — greșite: " + badLang.map((p) => p.enFile).join(", ") : ""));
+  const badHreflang = pairs.filter((p) => {
+    const ro = readF(p.roFile), en = readF(p.enFile);
+    return !links(ro, p) || !links(en, p) ||
+      !ro.includes('<link rel="canonical" href="' + SITE + p.ro + '">') || !en.includes('<link rel="canonical" href="' + SITE + p.en + '">') ||
+      !en.includes('<meta property="og:url" content="' + SITE + p.en + '">') || !en.includes('<meta property="og:locale" content="en_GB">');
+  });
+  ok(badHreflang.length === 0, "en: hreflang ro/en/x-default reciproc + canonical propriu + og:locale pe ambele versiuni" + (badHreflang.length ? " — greșite: " + badHreflang.slice(0, 5).map((p) => p.ro).join(", ") : ""));
+  ok(!/hreflang/.test(readF("natura-loc.html")) && !/hreflang/.test(readF("404.html")), "en: paginile fără pereche (șabloane, 404) nu au hreflang");
+
+  // title / description / JSON-LD în engleză
+  const badText = entryPairs.filter(({ k, e, ro }) => {
+    const h = readF("en" + ro + "index.html");
+    const desc = (h.match(/<meta name="description" content="([^"]*)">/) || [])[1] || "";
+    const ld = JSON.parse((h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/) || [, "{}"])[1]);
+    const g = ld["@graph"] || [];
+    const page = g.find((n) => n["@type"] === "WebPage");
+    const crumbs = g.find((n) => n["@type"] === "BreadcrumbList");
+    return !h.includes("<title>" + htmlEsc(e.name) + " — Hunedoara Live</title>") ||
+      !desc.startsWith(htmlEsc(e.en.tagline).slice(0, 30)) ||
+      !h.includes('id="detail-tagline">' + htmlEsc(e.en.tagline) + "</p>") ||
+      !page || page.inLanguage !== "en" || page.url !== SITE + "/en" + ro ||
+      g[0].description !== desc.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&") ||
+      !crumbs || crumbs.itemListElement[0].item !== SITE + "/en/" || crumbs.itemListElement[0].name !== "Home" ||
+      !crumbs.itemListElement[1].item.startsWith(SITE + "/en/");
+  });
+  ok(badText.length === 0, "en: <title>, description, conținut și JSON-LD (inLanguage, breadcrumb /en/) în engleză pe toate intrările" + (badText.length ? " — greșite: " + badText.slice(0, 5).map((x) => x.ro).join(", ") : ""));
+  const enHome = readF("en/index.html");
+  ok(/<meta property="og:title" content="Hunedoara Live — the digital guide/.test(enHome) && /"inLanguage":"en"/.test(enHome) &&
+    /<h2 id="highlights-h" data-i18n="home.highlights.heading">[A-Za-z ]+<\/h2>/.test(enHome), "en/index.html: titlu OG, JSON-LD și textele statice în engleză");
+
+  // linkurile interne din paginile EN duc spre paginile EN (în afară de comutatorul de limbă)
+  const roPathRe = new RegExp('href="/(?:|index\\.html|(?:' + [...LISTINGS, "utile.html", "contact.html", "credite.html", "multumim.html"].join("|").replace(/\./g, "\\.") +
+    ')|(?:' + Object.values(DIRS).join("|") + ')/[^"/]+/)"');
+  const badLinks = pairs.filter((p) => {
+    const h = readF(p.enFile).replace(/<a id="lang-toggle"[^>]*>/, "");
+    return roPathRe.test(h);
+  });
+  ok(badLinks.length === 0, "en: linkurile interne (meniu, breadcrumb, înapoi, carduri) din paginile EN duc spre /en/" + (badLinks.length ? " — greșite: " + badLinks.slice(0, 5).map((p) => p.enFile).join(", ") : ""));
+  ok(readF("en/contact.html").includes('action="/en/multumim.html"'), "en/contact.html: formularul trimite spre /en/multumim.html");
+
+  // comutatorul de limbă: link spre pagina pereche pe ambele versiuni
+  const toggleOf = (h) => (h.match(/<a id="lang-toggle" class="lang-toggle" href="([^"]*)" hreflang="(ro|en)"/) || []).slice(1);
+  const badToggle = pairs.filter((p) => {
+    const [roHref, roHl] = toggleOf(readF(p.roFile)), [enHref, enHl] = toggleOf(readF(p.enFile));
+    return roHref !== p.en || roHl !== "en" || enHref !== p.ro || enHl !== "ro";
+  });
+  ok(badToggle.length === 0, "en: comutatorul de limbă leagă fiecare pagină de perechea ei (RO -> /en/..., EN -> RO)" + (badToggle.length ? " — greșite: " + badToggle.slice(0, 5).map((p) => p.ro).join(", ") : ""));
+
+  // în browser: o pagină /en/ rămâne în engleză chiar dacă preferința salvată e RO (și invers)
+  const ex = entryPairs.find((x) => x.k === "SITE_NATURE").e;
+  const w1 = await load("en/natura/" + ex.id + "/index.html", "", "en/natura/" + ex.id + "/", "ro");
+  ok(!w1.__err && w1.I18N.lang === "en" && w1.document.documentElement.getAttribute("data-lang") === "en" &&
+    w1.document.querySelector("#detail-tagline").textContent === ex.en.tagline && w1.document.querySelector("#lang-toggle").textContent === "RO",
+    "en: /en/natura/" + ex.id + "/ e afișată în engleză deși preferința salvată e RO");
+  ok(w1.localStorage.getItem("hl-lang") === "en", "en: vizitarea unei pagini /en/ salvează preferința EN");
+  let went = null;
+  w1.I18N.navigate = (u) => { went = u; };
+  w1.I18N.toggle();
+  ok(went === "/natura/" + ex.id + "/" && w1.localStorage.getItem("hl-lang") === "ro", "en: comutatorul de pe pagina EN duce la URL-ul RO pereche și salvează RO");
+  const w2 = await load("natura/" + ex.id + "/index.html", "", "natura/" + ex.id + "/", "en");
+  ok(!w2.__err && w2.I18N.lang === "ro" && w2.document.querySelector("#detail-tagline").textContent === ex.ro.tagline, "en: pagina RO rămâne în română deși preferința salvată e EN");
+  went = null;
+  w2.I18N.navigate = (u) => { went = u; };
+  w2.document.querySelector("#lang-toggle").dispatchEvent(new w2.Event("click"));
+  ok(w2.localStorage.getItem("hl-lang") === "en", "en: click pe comutatorul RO salvează preferința EN (browserul urmează linkul)");
+  w2.I18N.toggle();
+  ok(went === "/en/natura/" + ex.id + "/", "en: I18N.toggle() pe pagina RO duce la /en/natura/" + ex.id + "/");
+  // listarea EN: carduri spre /en/<secțiune>/<id>/
+  const w3 = await load("en/natura.html", "", "en/natura.html");
+  ok(!w3.__err && w3.document.querySelectorAll("#grid .card").length === DATA.SITE_NATURE.length &&
+    [...w3.document.querySelectorAll("#grid .card")].every((a) => /^\/en\/natura\/[a-z0-9-]+\/$/.test(a.getAttribute("href"))), "en/natura.html: cardurile leagă spre /en/natura/<id>/");
+  // pagină fără pereche (șablon cu ?id=): comutatorul schimbă în continuare limba pe loc
+  const w4 = await load("natura-loc.html", "?id=" + ex.id);
+  w4.document.querySelector("#lang-toggle").dispatchEvent(new w4.Event("click"));
+  ok(w4.document.querySelector("#lang-toggle").tagName === "BUTTON" && w4.document.documentElement.getAttribute("data-lang") === "en" &&
+    w4.document.querySelector("#detail-tagline").textContent === ex.en.tagline && w4.document.querySelector("#detail-back").getAttribute("href") === "/en/natura.html",
+    "en: pe paginile fără pereche (natura-loc.html?id=) comutatorul schimbă limba pe loc, ca înainte");
+
+  // sitemap.xml: URL-urile EN + xhtml:link hreflang pentru fiecare pereche
+  const sm = readF("sitemap.xml");
+  const doc = new JSDOM(sm, { contentType: "application/xml" }).window.document;
+  ok(doc.documentElement.getAttribute("xmlns:xhtml") === "http://www.w3.org/1999/xhtml", "sitemap.xml: declară namespace-ul xmlns:xhtml");
+  const urlEls = [...doc.getElementsByTagName("url")];
+  const byLoc = new Map(urlEls.map((u) => [u.getElementsByTagName("loc")[0].textContent,
+    [...u.getElementsByTagName("xhtml:link")].map((l) => l.getAttribute("hreflang") + "=" + l.getAttribute("href")).sort().join(" ")]));
+  const expAlt = (p) => ["en=" + SITE + p.en, "ro=" + SITE + p.ro, "x-default=" + SITE + p.ro].sort().join(" ");
+  const badSm = pairs.filter((p) => byLoc.get(SITE + p.ro) !== expAlt(p) || byLoc.get(SITE + p.en) !== expAlt(p));
+  ok(badSm.length === 0, "sitemap.xml: toate cele " + pairs.length + " perechi au URL RO + EN, fiecare cu xhtml:link ro/en/x-default" + (badSm.length ? " — greșite: " + badSm.slice(0, 5).map((p) => p.ro).join(", ") : ""));
+  ok([...byLoc.keys()].filter((u) => u.startsWith(SITE + "/en/")).length === pairs.length, "sitemap.xml: " + pairs.length + " URL-uri EN");
+
+  // netlify.toml: știrile EN dispărute -> listarea EN, înainte de regula 404
+  const toml = readF("netlify.toml").replace(/\r/g, "");
+  const iEn = toml.indexOf('from = "/en/stiri/*"\n  to = "/en/stiri.html"\n  status = 301'), i404 = toml.indexOf('from = "/*"');
+  ok(iEn > 0 && iEn < i404, "netlify.toml: /en/stiri/* -> /en/stiri.html (301), înainte de regula 404");
 }
 
 /* -------- fișiere prezente -------- */
@@ -332,8 +476,8 @@ function load(file, query = "", urlPath = file) {
   ok(boxes.every((b) => !b.hidden) && ev.defaultPrevented, "pwa: beforeinstallprompt arată butonul");
   d.querySelector("[data-pwa-install-btn]").dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
   ok(prompted === 1, "pwa: click pe buton deschide dialogul de instalare");
-  d.querySelector("#lang-toggle").dispatchEvent(new w.Event("click"));
-  ok(d.querySelector("[data-pwa-install-btn] [data-i18n]").textContent === "Install the app", "pwa: textul butonului e tradus (EN)");
+  const wEn = await load("en/index.html", "", "en/");
+  ok(wEn.document.querySelector("[data-pwa-install-btn] [data-i18n]").textContent === "Install the app", "pwa: textul butonului e tradus (EN)");
 
   // service worker rulat într-un mediu simulat (cache + rețea false)
   const ORIGIN = "https://gohd.ro";
@@ -377,6 +521,7 @@ function load(file, query = "", urlPath = file) {
   handlers.install({ waitUntil: (x) => waits.push(x) });
   await Promise.all(waits);
   ok(!!(await caches.match(ORIGIN + "/offline.html")) && !!(await caches.match(ORIGIN + "/js/data.js")), "pwa: la instalare se salvează offline.html și resursele de bază");
+  ok(!!(await caches.match(ORIGIN + "/en/")), "pwa: la instalare se salvează și prima pagină EN (/en/)");
 
   ok((await fire({ url: ORIGIN + "/contact.html", method: "POST", mode: "navigate" })) === null, "pwa: cererile POST (Netlify Forms) nu trec prin service worker");
   ok((await fire({ url: ORIGIN + "/.netlify/functions/submit-review" })) === null &&
@@ -392,6 +537,12 @@ function load(file, query = "", urlPath = file) {
   ok(r2 && (await r2.text()) === "net:/stire.html", "pwa: offline, o pagină de detaliu deja vizitată se deschide din cache (alt ?id=)");
   const r3 = await fire({ url: ORIGIN + "/pagina-nevizitata.html", mode: "navigate", destination: "document" });
   ok(r3 && (await r3.text()) === "net:/offline.html", "pwa: offline, o pagină nevizitată afișează offline.html");
+  online = true;
+  await fire({ url: ORIGIN + "/en/natura/x/", mode: "navigate", destination: "document" });
+  await new Promise((r) => setTimeout(r, 10));
+  online = false;
+  const rEn = await fire({ url: ORIGIN + "/en/natura/x/", mode: "navigate", destination: "document" });
+  ok(rEn && (await rEn.text()) === "net:/en/natura/x/", "pwa: offline, o pagină EN deja vizitată se deschide din cache");
   const r4 = await fire({ url: ORIGIN + "/css/style.css", destination: "style" });
   ok(r4 && (await r4.text()) === "net:/css/style.css", "pwa: CSS servit din cache când nu e rețea");
   const r5 = await fire({ url: ORIGIN + "/images/nu-exista.jpg", destination: "image" });
