@@ -25,6 +25,8 @@ window.SITE_IMAGES = {
   "images/curtea-castelul-corvinilor.jpg": [1600, 1200],
   "images/densus-biserica.jpg": [918, 1224],
   "images/deva-cetate.jpg": [1600, 1200],
+  "images/deva-dealul-cetatii.jpg": [1600, 1093],
+  "images/deva-piata-unirii.jpg": [1600, 1200],
   "images/dobra-panorama.jpg": [1029, 579],
   "images/drum-transmontan-uricani-runcu.jpg": [1600, 1200],
   "images/furnalul-govajdia.jpg": [1600, 2133],

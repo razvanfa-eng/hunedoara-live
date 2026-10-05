@@ -2999,74 +2999,74 @@ window.SITE_NEWS = [
     }
   },
   {
-    id: "acorduri-renascentiste-castelul-corvinilor-2026",
-    name: "„Acorduri renascentiste” — concert de muzică veche la Castelul Corvinilor",
-    category: { ro: "Concert", en: "Concert" },
+    id: "castelul-corvinilor-program-iarna-2026",
+    name: "Castelul Corvinilor a trecut la programul de iarnă: se vizitează până la ora 17:00",
+    category: { ro: "Info utile", en: "Practical info" },
     area: "Hunedoara",
-    date: "2026-09-25",
+    date: "2026-10-01",
     hasReviews: false,
-    images: ["images/curtea-castelul-corvinilor.jpg"],
-    photoCredit: { author: "Munteanu Anca", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Castelul_Corvinilor,_municipiul_Hunedoara_04.JPG" },
+    images: ["images/hunedoara-corvin-castle.jpg"],
+    photoCredit: { author: "Andrei Stroe", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Corvin_castle.jpg" },
     ro: {
-      tagline: "Vineri, 25 septembrie 2026, de la ora 19:00: muzică renascentistă cântată pe instrumente de epocă, cu intrare liberă.",
+      tagline: "Între 1 octombrie 2026 și 31 martie 2027, castelul e deschis luni între 12:00 și 17:00, iar de marți până duminică între 9:00 și 17:00.",
       description: [
-        "Castelul Corvinilor găzduiește o etapă a Turneului Național „ITER MUSICUM EUROPAE”, un program de muzică veche interpretată în stil istoric, pe instrumente specifice Renașterii. Pentru public e o ocazie rară de a asculta muzica de curte a epocii chiar într-un castel din acea perioadă.",
-        "Cântă Caius Hera (dirijor și lăută), soprana Eszter Gyüdi, Emese Szilágyi (flaut drept), Alina Rotaru (virginal) și Arthur Balogh (viola da gamba). Intrarea e liberă, în limita locurilor disponibile."
+        "De la 1 octombrie, Muzeul Castelul Corvinilor funcționează după programul de iarnă, valabil până pe 31 martie 2027: luni între 12:00 și 17:00, iar de marți până duminică între 9:00 și 17:00. Față de sezonul de vară, când castelul era deschis până la 20:00, vizitatorii trebuie să-și planifice drumul mai devreme în zi.",
+        "Tarifele pentru 2026 sunt: 55 de lei pentru adulți, 30 de lei pentru pensionari și 15 lei pentru elevi și studenți (cu carnet sau legitimație vizată). Biletul include Muzeul Castelul Corvinilor, Casa Breslelor și Expoziția de arheologie. Pentru grupurile de minimum 20 de persoane există tarife reduse, iar un ghid costă 60 de lei în limba română și 100 de lei într-o limbă străină. Accesul cu animale de companie nu e permis."
       ],
       facts: [
-        { label: "Dată", value: "vineri, 25 septembrie 2026, ora 19:00" },
-        { label: "Loc", value: "Castelul Corvinilor, Hunedoara" },
-        { label: "Intrare", value: "liberă, în limita locurilor disponibile" },
-        { label: "Face parte din", value: "Turneul Național „ITER MUSICUM EUROPAE”" }
+        { label: "Perioadă", value: "1 octombrie 2026 – 31 martie 2027" },
+        { label: "Program", value: "luni 12:00–17:00; marți–duminică 9:00–17:00" },
+        { label: "Bilet", value: "55 lei adulți; 30 lei pensionari; 15 lei elevi și studenți" },
+        { label: "Biletul include", value: "Muzeul Castelul Corvinilor, Casa Breslelor, Expoziția de arheologie" }
       ]
     },
     en: {
-      tagline: "Friday, 25 September 2026, from 19:00: Renaissance music played on period instruments, with free admission.",
+      tagline: "From 1 October 2026 to 31 March 2027, the castle is open on Mondays from 12:00 to 17:00 and Tuesday to Sunday from 9:00 to 17:00.",
       description: [
-        "Corvin Castle hosts a stop of the \"ITER MUSICUM EUROPAE\" national tour, a programme of early music performed in historical style on Renaissance-era instruments. It's a rare chance to hear the court music of the period inside a castle from that very era.",
-        "Performers: Caius Hera (director and lute), soprano Eszter Gyüdi, Emese Szilágyi (recorder), Alina Rotaru (virginal) and Arthur Balogh (viola da gamba). Admission is free, subject to available seating."
+        "Since 1 October, the Corvin Castle Museum has been on its winter schedule, which runs until 31 March 2027: Mondays from 12:00 to 17:00 and Tuesday to Sunday from 9:00 to 17:00. Compared with the summer season, when the castle stayed open until 20:00, visitors should plan to arrive earlier in the day.",
+        "The 2026 ticket prices are 55 lei for adults, 30 lei for pensioners and 15 lei for pupils and students (with a valid ID). The ticket covers the Corvin Castle Museum, the Guilds' House (Casa Breslelor) and the archaeology exhibition. Groups of at least 20 people get reduced rates, and a guide costs 60 lei in Romanian or 100 lei in a foreign language. Pets are not allowed."
       ],
       facts: [
-        { label: "Date", value: "Friday, 25 September 2026, 19:00" },
-        { label: "Location", value: "Corvin Castle, Hunedoara" },
-        { label: "Admission", value: "free, subject to available seating" },
-        { label: "Part of", value: "the \"ITER MUSICUM EUROPAE\" national tour" }
+        { label: "Period", value: "1 October 2026 – 31 March 2027" },
+        { label: "Opening hours", value: "Monday 12:00–17:00; Tuesday–Sunday 9:00–17:00" },
+        { label: "Tickets", value: "55 lei adults; 30 lei pensioners; 15 lei pupils and students" },
+        { label: "Ticket covers", value: "Corvin Castle Museum, Guilds' House, archaeology exhibition" }
       ]
     }
   },
   {
-    id: "adunarea-momarlanilor-petrosani-2026",
-    name: "Adunarea Momârlanilor — trei zile de tradiții la Petroșani",
-    category: { ro: "Festival", en: "Festival" },
-    area: "Petroșani",
-    date: "2026-09-25",
+    id: "concert-stagiunea-iancu-de-hunedoara-castelul-corvinilor-2026",
+    name: "Concert de muzică sacră și de cameră la Castelul Corvinilor, în Stagiunea „Iancu de Hunedoara”",
+    category: { ro: "Concert", en: "Concert" },
+    area: "Hunedoara",
+    date: "2026-10-09",
     hasReviews: false,
-    images: ["images/petrosani-panorama.jpg"],
-    photoCredit: { author: "Eduard Gergely", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrosani_Town.jpg" },
+    images: ["images/curtea-castelul-corvinilor.jpg"],
+    photoCredit: { author: "Munteanu Anca", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Castelul_Corvinilor,_municipiul_Hunedoara_04.JPG" },
     ro: {
-      tagline: "25–27 septembrie 2026, în centrul Petroșaniului: muzică populară, dansuri tradiționale și 1.500 de porții gratuite de mâncare tradițională.",
+      tagline: "Vineri, 9 octombrie 2026, de la ora 18:00: soprana Georgeta Plută, pianistul Andrei Dragomir și Cvartetul de coarde al județului Alba, cu intrare liberă.",
       description: [
-        "Primăria Municipiului Petroșani, alături de Mioritic Concept și comunitatea momârlanilor, organizează Adunarea Momârlanilor, o sărbătoare a tradițiilor și obiceiurilor din Valea Jiului. Scena e amenajată în centrul orașului, lângă Teatrul Dramatic „Ion D. Sîrbu”.",
-        "Timp de trei zile urcă pe scenă ansambluri locale, precum Asociația Culturală Lirica Petroșani și „Rapsodia Munților”, alături de interpreți de muzică populară precum Nelu Ban Fântână, Sidorel sau Marius Ciprian Pop cu Ceterașii de la Cluj. Sâmbătă, 26 septembrie, de la ora 12:00, se împart gratuit 1.500 de porții de tocană de oaie cu piure și varză. Organizatorii speră să fie cea mai mare masă tradițională din județul Hunedoara."
+        "Castelul Corvinilor găzduiește un nou concert al Stagiunii muzicale „Iancu de Hunedoara”, un proiect care propune redescoperirea patrimoniului prin recitaluri de muzică sacră, meditativă și de cameră. Concertul face parte din programul dedicat Anului Iancu de Hunedoara și marchează 570 de ani de la victoria de la Belgrad și de la moartea lui Iancu de Hunedoara.",
+        "Cântă soprana Georgeta Plută, pianistul Andrei Dragomir și Cvartetul de coarde al județului Alba: Dan-Liviu Cernat și Mădălin Danciu (vioară), Mădălina Gherman-Neag (violă) și Cătălina Craiu (violoncel). Organizator este Centrul de Cultură „Augustin Bena” din Alba. Intrarea e liberă, în limita locurilor disponibile."
       ],
       facts: [
-        { label: "Perioadă", value: "25–27 septembrie 2026" },
-        { label: "Loc", value: "centrul Petroșaniului, lângă Teatrul Dramatic „Ion D. Sîrbu”" },
-        { label: "Masa tradițională", value: "sâmbătă, 26 septembrie, ora 12:00: 1.500 de porții gratuite" },
-        { label: "Organizatori", value: "Primăria Municipiului Petroșani, Mioritic Concept" }
+        { label: "Dată", value: "vineri, 9 octombrie 2026, ora 18:00" },
+        { label: "Loc", value: "Castelul Corvinilor, Hunedoara" },
+        { label: "Intrare", value: "liberă, în limita locurilor disponibile" },
+        { label: "Organizator", value: "Centrul de Cultură „Augustin Bena”" }
       ]
     },
     en: {
-      tagline: "25–27 September 2026, in central Petroșani: folk music, traditional dances and 1,500 free portions of traditional food.",
+      tagline: "Friday, 9 October 2026, from 18:00: soprano Georgeta Plută, pianist Andrei Dragomir and the Alba County String Quartet, with free admission.",
       description: [
-        "Petroșani City Hall, together with Mioritic Concept and the local momârlani community (the Jiu Valley's traditional highland people), is organising the Momârlani Gathering, a celebration of the valley's traditions and customs. The stage is set up in the town centre, next to the \"Ion D. Sîrbu\" Drama Theatre.",
-        "Over three days, local ensembles such as the Lirica Petroșani Cultural Association and \"Rapsodia Munților\" share the stage with folk singers including Nelu Ban Fântână, Sidorel and Marius Ciprian Pop with the Ceterașii de la Cluj fiddlers. On Saturday, 26 September, from 12:00, 1,500 free portions of mutton stew with mashed potatoes and cabbage will be served. The organisers hope it will be the largest traditional meal in Hunedoara county."
+        "Corvin Castle hosts another concert of the \"Iancu de Hunedoara\" music season, a project that invites audiences to rediscover heritage through recitals of sacred, meditative and chamber music. The concert is part of the programme for the Year of Iancu de Hunedoara (John Hunyadi) and marks 570 years since his victory at Belgrade and his death.",
+        "Performers: soprano Georgeta Plută, pianist Andrei Dragomir and the Alba County String Quartet — Dan-Liviu Cernat and Mădălin Danciu (violin), Mădălina Gherman-Neag (viola) and Cătălina Craiu (cello). The concert is organised by the \"Augustin Bena\" Culture Centre in Alba. Admission is free, subject to available seating."
       ],
       facts: [
-        { label: "Dates", value: "25–27 September 2026" },
-        { label: "Location", value: "central Petroșani, next to the \"Ion D. Sîrbu\" Drama Theatre" },
-        { label: "Traditional meal", value: "Saturday, 26 September, 12:00: 1,500 free portions" },
-        { label: "Organisers", value: "Petroșani City Hall, Mioritic Concept" }
+        { label: "Date", value: "Friday, 9 October 2026, 18:00" },
+        { label: "Location", value: "Corvin Castle, Hunedoara" },
+        { label: "Admission", value: "free, subject to available seating" },
+        { label: "Organiser", value: "\"Augustin Bena\" Culture Centre" }
       ]
     }
   },
@@ -3080,29 +3080,67 @@ window.SITE_NEWS = [
     images: ["images/parcul-cetatii-deva.jpg"],
     photoCredit: { author: "Carmen buzan", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Parcul_Cetatii_Deva.JPG" },
     ro: {
-      tagline: "9–10 octombrie 2026: ediție aniversară, cu un concurs internațional de epigramă și unul național de caricatură.",
+      tagline: "9–10 octombrie 2026: portrete desenate pe loc, lansări de carte, premierea concursurilor și Salonul de caricatură „Remember Liviu Oros 40”. Intrarea e liberă.",
       description: [
-        "Primăria Municipiului Deva și Centrul Cultural „Drăgan Muntean” organizează ediția a XXV-a a Festivalului Național de Umor „Liviu Oros”, dedicat creatorilor de umor scris și desenat.",
-        "Ediția aniversară are două concursuri: Concursul Internațional de Epigramă „Epigramissima” (ediția a VI-a) și Concursul Național de Umor Grafic (caricatură). Umoriștii și caricaturiștii se pot înscrie până pe 30 septembrie 2026. Regulamentele sunt pe site-ul Centrului Cultural, iar informații suplimentare se pot obține de la secretariat, la 0354 408 907."
+        "Primăria Municipiului Deva și Centrul Cultural „Drăgan Muntean” organizează ediția a XXV-a a Festivalului Național de Umor „Liviu Oros”, dedicat creatorilor de umor scris și desenat. Intrarea e liberă la toate evenimentele.",
+        "Vineri, 9 octombrie, de la ora 10:00, caricaturiștii Victor Eugen Mihai, Liviu Stănilă, Cristinel Vecerdea și Radu Clețiu țin atelierul „Ucenicul cartoonist” pentru elevii Liceului de Arte „Sigismund Toduță”, iar de la 17:30, în Piața Unirii, Cristinel Vecerdea și Radu Clețiu desenează portrete. Sâmbătă, 10 octombrie, de la 12:00, sesiunea de portrete continuă în Parcul Municipal „Cetate”.",
+        "Sâmbătă, de la 18:00, în Amfiteatrul „Liviu Oros” al Centrului Cultural au loc lansări de carte (printre autori, Nicolae Băciuț, Gavril Moisa, Valentin David și Horia Crișan) și premierea concursurilor de caricatură și de epigramă. De la 19:00, în Holul Mare, se deschide Salonul de caricatură „Remember Liviu Oros 40”. Premiul I la umor grafic a revenit lui Constantin Pavel (Focșani), iar la Concursul Internațional de Epigramă „Epigramissima”, lui Vasile Bordianu (Prăjeni, Botoșani)."
       ],
       facts: [
         { label: "Perioadă", value: "9–10 octombrie 2026" },
-        { label: "Loc", value: "Deva" },
-        { label: "Înscrieri în concurs", value: "până pe 30 septembrie 2026" },
-        { label: "Organizatori", value: "Primăria Municipiului Deva, Centrul Cultural „Drăgan Muntean”" }
+        { label: "Loc", value: "Centrul Cultural „Drăgan Muntean”, Piața Unirii și Parcul „Cetate”, Deva" },
+        { label: "Momentul principal", value: "sâmbătă, 10 octombrie: 18:00 premierea, 19:00 Salonul de caricatură" },
+        { label: "Intrare", value: "liberă" }
       ]
     },
     en: {
-      tagline: "9–10 October 2026: an anniversary edition with an international epigram contest and a national cartoon contest.",
+      tagline: "9–10 October 2026: live portrait drawing, book launches, the contest awards and the \"Remember Liviu Oros 40\" cartoon exhibition. Free admission.",
       description: [
-        "Deva City Hall and the \"Drăgan Muntean\" Cultural Centre are organising the 25th edition of the \"Liviu Oros\" National Humour Festival, dedicated to creators of written and drawn humour.",
-        "The anniversary edition has two contests: the \"Epigramissima\" International Epigram Contest (6th edition) and the National Graphic Humour (cartoon) Contest. Humorists and cartoonists can enter until 30 September 2026. The rules are on the Cultural Centre's website, and more information is available from its office on +40 354 408 907."
+        "Deva City Hall and the \"Drăgan Muntean\" Cultural Centre are organising the 25th edition of the \"Liviu Oros\" National Humour Festival, dedicated to creators of written and drawn humour. All events are free to attend.",
+        "On Friday, 9 October, from 10:00, cartoonists Victor Eugen Mihai, Liviu Stănilă, Cristinel Vecerdea and Radu Clețiu run the \"Apprentice Cartoonist\" workshop for students of the \"Sigismund Toduță\" Arts High School, and from 17:30 Cristinel Vecerdea and Radu Clețiu draw portraits in Piața Unirii (Union Square). On Saturday, 10 October, from 12:00, the portrait session continues in the \"Cetate\" Municipal Park.",
+        "On Saturday from 18:00, the Cultural Centre's \"Liviu Oros\" Amphitheatre hosts book launches (authors include Nicolae Băciuț, Gavril Moisa, Valentin David and Horia Crișan) and the awards for the cartoon and epigram contests. At 19:00, the \"Remember Liviu Oros 40\" cartoon exhibition opens in the Great Hall. First prize for graphic humour went to Constantin Pavel (Focșani), and first prize in the \"Epigramissima\" International Epigram Contest to Vasile Bordianu (Prăjeni, Botoșani)."
       ],
       facts: [
         { label: "Dates", value: "9–10 October 2026" },
-        { label: "Location", value: "Deva" },
-        { label: "Contest entries", value: "until 30 September 2026" },
-        { label: "Organisers", value: "Deva City Hall, \"Drăgan Muntean\" Cultural Centre" }
+        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Piața Unirii and \"Cetate\" Park, Deva" },
+        { label: "Main event", value: "Saturday, 10 October: 18:00 awards, 19:00 cartoon exhibition" },
+        { label: "Admission", value: "free" }
+      ]
+    }
+  },
+  {
+    id: "violoncellissimo-deva-2026",
+    name: "Violoncellissimo la Deva — concert în turneul aniversar „Marin Cazacu 70”",
+    category: { ro: "Concert", en: "Concert" },
+    area: "Deva",
+    date: "2026-10-18",
+    hasReviews: false,
+    images: ["images/deva-cetate.jpg"],
+    photoCredit: { author: "Bogdan.onis", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Deva.jpg" },
+    ro: {
+      tagline: "Duminică, 18 octombrie 2026, de la ora 19:00, la Centrul Cultural „Drăgan Muntean”: de la baroc la Piazzolla, cu ansamblul de violonceliști condus de Marin Cazacu.",
+      description: [
+        "Ansamblul Violoncellissimo, sub conducerea muzicală a violoncelistului Marin Cazacu, oprește la Deva în cadrul ediției a VIII-a a Turneului Național „Clasic la puterea a treia”, dedicată aniversării a 70 de ani a fondatorului și mentorului ansamblului.",
+        "Programul străbate muzica barocă, clasică, jazzul și creația contemporană, cu lucrări de Constantin Dimitrescu, David Popper și Astor Piazzolla, plus teme cunoscute din repertoriul internațional, în aranjamente speciale. Accesul se face pe bază de invitație; invitațiile se ridică de la Centrul Cultural „Drăgan Muntean”, de luni până vineri, între 9:00 și 16:00. Organizatori: Primăria Municipiului Deva și Centrul Cultural „Drăgan Muntean”."
+      ],
+      facts: [
+        { label: "Dată", value: "duminică, 18 octombrie 2026, ora 19:00" },
+        { label: "Loc", value: "Centrul Cultural „Drăgan Muntean” (Sala Mare), Piața Victoriei nr. 7, Deva" },
+        { label: "Acces", value: "pe bază de invitație, ridicată de la Centrul Cultural (luni–vineri, 9:00–16:00)" },
+        { label: "Informații", value: "tel. 0354 408 907" }
+      ]
+    },
+    en: {
+      tagline: "Sunday, 18 October 2026, from 19:00, at the \"Drăgan Muntean\" Cultural Centre: from Baroque to Piazzolla, with the cello ensemble led by Marin Cazacu.",
+      description: [
+        "The Violoncellissimo ensemble, under the musical direction of cellist Marin Cazacu, stops in Deva on the 8th edition of the \"Clasic la puterea a treia\" (\"Classical to the Power of Three\") national tour, dedicated to the 70th birthday of the ensemble's founder and mentor.",
+        "The programme spans Baroque, classical, jazz and contemporary music, with works by Constantin Dimitrescu, David Popper and Astor Piazzolla, plus well-known international themes in special arrangements. Entry is by invitation; invitations can be collected from the \"Drăgan Muntean\" Cultural Centre, Monday to Friday, 9:00–16:00. Organisers: Deva City Hall and the \"Drăgan Muntean\" Cultural Centre."
+      ],
+      facts: [
+        { label: "Date", value: "Sunday, 18 October 2026, 19:00" },
+        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre (Great Hall), Piața Victoriei 7, Deva" },
+        { label: "Entry", value: "by invitation, collected from the Cultural Centre (Monday–Friday, 9:00–16:00)" },
+        { label: "Information", value: "phone +40 354 408 907" }
       ]
     }
   },
@@ -3314,6 +3352,80 @@ window.SITE_NEWS = [
         { label: "Date", value: "Thursday, 19 November 2026, 19:00" },
         { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Piața Victoriei 7, Deva" },
         { label: "Tickets", value: "TicketStore.ro · phone +40 721 055 037" }
+      ]
+    }
+  },
+  {
+    id: "telecabina-cetatea-deva-oprita-2026",
+    name: "Telecabina de pe Dealul Cetății Deva rămâne oprită; la cetate se ajunge cu autobuzul electric sau pe jos",
+    category: { ro: "Info utile", en: "Practical info" },
+    area: "Deva",
+    date: "2026-09-29",
+    hasReviews: false,
+    images: ["images/deva-dealul-cetatii.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Cetatea_Devei_2018_(1).jpg" },
+    ro: {
+      tagline: "Instalația de aproape 4 milioane de euro nu mai funcționează din noiembrie 2025; în octombrie, specialiștii unei firme străine vin să caute o soluție.",
+      description: [
+        "Telecabina care urcă pe Dealul Cetății din Deva e oprită din noiembrie 2025, din cauza defecțiunilor apărute la mai multe echipamente. Instalația, cu cabine de 30 de locuri, a costat aproape 4 milioane de euro din bugetul local. A fost inaugurată în forma actuală la sfârșitul lui martie 2024, dar a fost oprită din motive tehnice la o zi după punerea în funcțiune și a mai fost închisă pentru reparații între ianuarie și mai 2025.",
+        "Potrivit primarului Lucian Rus, specialiștii unei firme străine au acceptat să se întâlnească în octombrie cu un grup de lucru al Primăriei Deva, ca să identifice problemele și să propună o soluție. Constructorul român a înlocuit deja unele componente, dar telecabina nu va fi repornită fără avizul experților. Primarul speră ca instalația să funcționeze din primăvara anului viitor.",
+        "Până atunci, turiștii pot ajunge la Poarta 1 a Cetății Deva cu un autobuz electric sau pot urca pe jos, pe unul dintre cele trei trasee marcate de pe Dealul Cetății."
+      ],
+      facts: [
+        { label: "Oprită din", value: "noiembrie 2025" },
+        { label: "Investiție", value: "aproape 4 milioane de euro (buget local), cabine de 30 de locuri" },
+        { label: "Termen estimat", value: "primăvara lui 2027, potrivit primarului (neconfirmat)" },
+        { label: "Acces la cetate", value: "autobuz electric până la Poarta 1 sau trei trasee marcate, pe jos" }
+      ]
+    },
+    en: {
+      tagline: "The nearly €4 million installation has been out of service since November 2025; in October, specialists from a foreign company are coming to look for a fix.",
+      description: [
+        "The cable car up Deva's Citadel Hill has been stopped since November 2025 because of faults in several pieces of equipment. The installation, with 30-seat cabins, cost almost €4 million from the city budget. It was inaugurated in its current form at the end of March 2024, but was shut down for technical reasons one day after it opened, and was closed again for repairs between January and May 2025.",
+        "According to mayor Lucian Rus, specialists from a foreign company have agreed to meet a Deva City Hall working group in October to identify the problems and propose a solution. The Romanian contractor has already replaced some components, but the cable car will not be restarted without the experts' approval. The mayor hopes it will be running again by next spring.",
+        "Until then, visitors can reach Gate 1 of Deva Citadel by electric bus, or walk up one of the three marked trails on Citadel Hill."
+      ],
+      facts: [
+        { label: "Out of service since", value: "November 2025" },
+        { label: "Investment", value: "almost €4 million (city budget), 30-seat cabins" },
+        { label: "Expected", value: "spring 2027, according to the mayor (not confirmed)" },
+        { label: "Getting to the citadel", value: "electric bus to Gate 1, or three marked walking trails" }
+      ]
+    }
+  },
+  {
+    id: "targul-de-craciun-deva-2026",
+    name: "Târgul de Crăciun Deva 2026 se deschide pe 1 decembrie, în Piața Unirii",
+    category: { ro: "Târg", en: "Fair" },
+    area: "Deva",
+    date: "2026-12-01",
+    hasReviews: false,
+    images: ["images/deva-piata-unirii.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Deva_Piata_Unirii_(8).jpg" },
+    ro: {
+      tagline: "Între 1 decembrie 2026 și 10 ianuarie 2027, căsuțe de lemn cu produse de sezon, meșteșuguri, preparate tradiționale și băuturi calde, în centrul Devei.",
+      description: [
+        "Primăria Municipiului Deva organizează Târgul de Crăciun Deva 2026 în Piața Unirii, între 1 decembrie 2026 și 10 ianuarie 2027. Comercianții vor vinde din căsuțe de lemn puse la dispoziție de primărie, cu prioritate pentru articolele de Crăciun și decorațiunile de sezon, obiectele artizanale, produsele tradiționale, mâncarea și băuturile calde.",
+        "Termenul pentru comercianții care vor să participe a fost prelungit până pe 15 octombrie 2026; cererile se depun la registratura primăriei sau pe e-mail, la serviciul.adpp@primariadeva.ro. Programul zilnic și programul artistic nu au fost încă anunțate. La ediția trecută, târgul a fost deschis zilnic între 10:00 și 22:00, cu concerte de colinde și luminile de sărbătoare aprinse în seara de 1 Decembrie."
+      ],
+      facts: [
+        { label: "Perioadă", value: "1 decembrie 2026 – 10 ianuarie 2027" },
+        { label: "Loc", value: "Piața Unirii, Deva" },
+        { label: "Organizator", value: "Primăria Municipiului Deva" },
+        { label: "Înscrieri comercianți", value: "până pe 15 octombrie 2026, la serviciul.adpp@primariadeva.ro" }
+      ]
+    },
+    en: {
+      tagline: "From 1 December 2026 to 10 January 2027: wooden stalls with seasonal goods, crafts, traditional food and hot drinks in central Deva.",
+      description: [
+        "Deva City Hall is organising the 2026 Deva Christmas Market in Piața Unirii (Union Square), from 1 December 2026 to 10 January 2027. Traders will sell from wooden chalets provided by the city, with priority given to Christmas items and seasonal decorations, handicrafts, traditional products, food and hot drinks.",
+        "The deadline for traders who want to take part has been extended to 15 October 2026; applications go to the City Hall registry or by email to serviciul.adpp@primariadeva.ro. Daily opening hours and the entertainment programme have not been announced yet. Last year, the market was open every day from 10:00 to 22:00, with carol concerts and the festive lights switched on on the evening of 1 December, Romania's National Day."
+      ],
+      facts: [
+        { label: "Dates", value: "1 December 2026 – 10 January 2027" },
+        { label: "Location", value: "Piața Unirii, Deva" },
+        { label: "Organiser", value: "Deva City Hall" },
+        { label: "Trader applications", value: "until 15 October 2026, at serviciul.adpp@primariadeva.ro" }
       ]
     }
   }

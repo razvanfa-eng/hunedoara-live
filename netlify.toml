@@ -115,6 +115,15 @@
   force = true
   query = { id = ":id" }
 
+# Știri scoase din js/data.js (evenimente trecute): build-pages.mjs le șterge
+# pagina statică, iar linkurile vechi (ex. din postări Facebook) duc la listarea
+# știrilor în loc de 404. Fără force: paginile /stiri/<id>/ care există încă au
+# prioritate („shadowing”), deci regula se aplică doar celor dispărute.
+[[redirects]]
+  from = "/stiri/*"
+  to = "/stiri.html"
+  status = 301
+
 # Pagina 404 personalizată
 [[redirects]]
   from = "/*"
