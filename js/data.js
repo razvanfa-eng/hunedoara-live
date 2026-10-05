@@ -2228,7 +2228,7 @@ window.SITE_HERITAGE = [
       description: [
         "Aleea Gimnastelor a fost inaugurată în 2008 la baza Cetății Deva, chiar în fața sălii unde se antrenează lotul național feminin de gimnastică, lângă stația de plecare a telecabinei. Aleea are 15 busturi de bronz de circa 42-43 cm, realizate de artistul plastic Ioan Șeu, turnate la o fabrică din București și așezate pe socluri de granit înalte de 1,80 m.",
         "Ansamblul cuprinde patru busturi de antrenori — cuplurile Marta și Bela Karolyi, respectiv Mariana Bitang și Octavian Bellu — și 11 busturi de gimnaste, printre care Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu și Andreea Răducan. Aleea marchează palmaresul școlii de gimnastică de la Deva, unde s-a mutat lotul național în 1978, de la Onești.",
-        "Pe 22 aprilie 2026, Consiliul Local Deva a aprobat amplasarea a încă trei busturi, din marmură — ale gimnastelor Sandra Izbașa și Cătălina Ponor și al antrenorului Nicolae Forminte —, care vor completa ansamblul. Până la sfârșitul lui septembrie 2026 nu fusese anunțată o dată pentru dezvelirea lor."
+        "Pe 22 aprilie 2026, Consiliul Local Deva a aprobat amplasarea a încă trei busturi, din marmură — ale gimnastelor Sandra Izbașa și Cătălina Ponor și al antrenorului Nicolae Forminte —, care vor completa ansamblul. Până la începutul lui octombrie 2026 nu fusese anunțată o dată pentru dezvelirea lor."
       ],
       facts: [
         { label: "Inaugurare", value: "2008" },
@@ -2242,7 +2242,7 @@ window.SITE_HERITAGE = [
       description: [
         "Aleea Gimnastelor (\"the gymnasts' walk\") was unveiled in 2008 at the base of Deva Citadel, right in front of the hall where the national women's gymnastics team trains, next to the cable car's lower station. The walk has 15 bronze busts about 42-43 cm tall, made by the artist Ioan Șeu, cast at a foundry in Bucharest and set on 1.80 m granite pedestals.",
         "The ensemble includes four busts of coaches — the couples Marta and Bela Karolyi, and Mariana Bitang and Octavian Bellu — and 11 busts of gymnasts, including Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu and Andreea Răducan. The walk marks the record of Deva's gymnastics school, where the national team moved in 1978, from Onești.",
-        "On 22 April 2026, Deva Local Council approved three more busts, in marble — of gymnasts Sandra Izbașa and Cătălina Ponor and of coach Nicolae Forminte — which will be added to the ensemble. As of late September 2026, no date had been announced for their unveiling."
+        "On 22 April 2026, Deva Local Council approved three more busts, in marble — of gymnasts Sandra Izbașa and Cătălina Ponor and of coach Nicolae Forminte — which will be added to the ensemble. As of early October 2026, no date had been announced for their unveiling."
       ],
       facts: [
         { label: "Unveiled", value: "2008" },
@@ -3846,7 +3846,8 @@ window.SITE_BUSINESSES = [
         { label: "Adresă", value: "Str. Avram Iancu nr. 54, Brad" },
         { label: "Camere", value: "19 camere, clasificare 3 stele" },
         { label: "Facilități", value: "restaurant, parcare" },
-        { label: "Rezervări", value: "direct sau prin platforme online (Booking.com, Agoda)" }
+        { label: "Rezervări", value: "direct sau prin platforme online (Booking.com, Agoda)" },
+        { label: "Contact", value: "tel. 0736 658 589" }
       ]
     },
     en: {
@@ -3858,7 +3859,8 @@ window.SITE_BUSINESSES = [
         { label: "Address", value: "54 Avram Iancu street, Brad" },
         { label: "Rooms", value: "19 rooms, 3-star rating" },
         { label: "Facilities", value: "restaurant, parking" },
-        { label: "Booking", value: "directly or via online platforms (Booking.com, Agoda)" }
+        { label: "Booking", value: "directly or via online platforms (Booking.com, Agoda)" },
+        { label: "Contact", value: "phone +40 736 658 589" }
       ]
     }
   },
@@ -4079,7 +4081,7 @@ window.SITE_BUSINESSES = [
       facts: [
         { label: "Adresă", value: "Str. Livezeni nr. 36, Petroșani" },
         { label: "Facilități", value: "restaurant, grădină, sală de evenimente" },
-        { label: "Contact", value: "tel. 0254 548 563 · floaredecolthd.ro" }
+        { label: "Contact", value: "tel. 0254 548 563 / 0744 584 813 · pensiune@floaredecolthd.ro · floaredecolthd.ro" }
       ]
     },
     en: {
@@ -4091,7 +4093,7 @@ window.SITE_BUSINESSES = [
       facts: [
         { label: "Address", value: "Str. Livezeni no. 36, Petroșani" },
         { label: "Facilities", value: "restaurant, garden, event hall" },
-        { label: "Contact", value: "phone +40 254 548 563 · floaredecolthd.ro" }
+        { label: "Contact", value: "phone +40 254 548 563 / +40 744 584 813 · pensiune@floaredecolthd.ro · floaredecolthd.ro" }
       ]
     }
   },
