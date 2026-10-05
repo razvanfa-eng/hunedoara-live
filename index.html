@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ro" data-page-lang="ro">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,8 +11,12 @@
   <meta name="description" content="Destinații, orașe, natură, turism activ, moștenire culturală, știri și afaceri din tot județul Hunedoara — ghidul digital al județului." data-i18n-attr="content:page.meta.home">
   <!-- SEO: generat de scripts/build-pages.mjs -->
   <link rel="canonical" href="https://gohd.ro/">
+  <link rel="alternate" hreflang="ro" href="https://gohd.ro/">
+  <link rel="alternate" hreflang="en" href="https://gohd.ro/en/">
+  <link rel="alternate" hreflang="x-default" href="https://gohd.ro/">
   <meta property="og:site_name" content="Hunedoara Live">
   <meta property="og:locale" content="ro_RO">
+  <meta property="og:locale:alternate" content="en_GB">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Hunedoara Live — ghidul digital al județului Hunedoara">
   <meta property="og:description" content="Destinații, orașe, natură, turism activ, moștenire culturală, știri și afaceri din tot județul Hunedoara — ghidul digital al județului.">
@@ -25,7 +29,7 @@
   <meta name="twitter:title" content="Hunedoara Live — ghidul digital al județului Hunedoara">
   <meta name="twitter:description" content="Destinații, orașe, natură, turism activ, moștenire culturală, știri și afaceri din tot județul Hunedoara — ghidul digital al județului.">
   <meta name="twitter:image" content="https://gohd.ro/images/og/hunedoara-corvin-castle.jpg">
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://gohd.ro/#website","name":"Hunedoara Live","url":"https://gohd.ro/","inLanguage":["ro","en"],"publisher":{"@id":"https://gohd.ro/#org"}},{"@type":"Organization","name":"Hunedoara Live","url":"https://gohd.ro/","logo":"https://gohd.ro/icons/icon-512.png","email":"hunedoaragohd@gmail.com","@id":"https://gohd.ro/#org","areaServed":{"@type":"AdministrativeArea","name":"Județul Hunedoara"}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://gohd.ro/#website","name":"Hunedoara Live","url":"https://gohd.ro/","inLanguage":["ro","en"],"publisher":{"@id":"https://gohd.ro/#org"}},{"@type":"Organization","name":"Hunedoara Live","url":"https://gohd.ro/","logo":"https://gohd.ro/icons/icon-512.png","email":"hunedoaragohd@gmail.com","@id":"https://gohd.ro/#org","areaServed":{"@type":"AdministrativeArea","name":"Județul Hunedoara"}},{"@type":"WebPage","@id":"https://gohd.ro/","url":"https://gohd.ro/","name":"Hunedoara Live — ghidul digital al județului Hunedoara","inLanguage":"ro","isPartOf":{"@id":"https://gohd.ro/#website"}}]}</script>
   <!-- /SEO -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +54,7 @@
         <button class="icon-btn" type="button" id="global-search-btn" data-i18n-attr="aria-label:nav.search.aria" aria-label="Căutare">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </button>
-        <button id="lang-toggle" class="lang-toggle" type="button" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria">EN</button>
+        <a id="lang-toggle" class="lang-toggle" href="/en/" hreflang="en" lang="en" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria" aria-label="Switch to English">EN</a>
         <a href="mailto:hunedoaragohd@gmail.com" class="ai-pill" data-i18n="nav.ai">Întreabă-ne</a>
       </div>
     </div>
@@ -80,7 +84,7 @@
       <div class="grid" id="home-highlights"></div>
     </section>
 
-    <section class="stats" id="home-stats" aria-label="Statistici"></section>
+    <section class="stats" id="home-stats" data-i18n-attr="aria-label:home.stats.aria" aria-label="Statistici"></section>
 
     <section class="section" aria-labelledby="explore-h">
       <h2 id="explore-h" data-i18n="home.explore.heading">Explorează județul</h2>

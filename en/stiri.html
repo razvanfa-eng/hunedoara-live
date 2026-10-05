@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- GENERAT de scripts/build-pages.mjs din stiri.html (versiunea EN) — nu edita manual -->
+<html lang="en" data-page-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0E7C86">
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <title data-i18n="page.title.stiri">News — Hunedoara Live</title>
+  <!-- SEO: generat de scripts/build-pages.mjs -->
+  <meta name="description" content="What&#39;s happening in Hunedoara county — events, announcements and updates.">
+  <link rel="canonical" href="https://gohd.ro/en/stiri.html">
+  <link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri.html">
+  <link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri.html">
+  <link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri.html">
+  <meta property="og:site_name" content="Hunedoara Live">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="News — Hunedoara Live">
+  <meta property="og:description" content="What&#39;s happening in Hunedoara county — events, announcements and updates.">
+  <meta property="og:url" content="https://gohd.ro/en/stiri.html">
+  <meta property="og:image" content="https://gohd.ro/images/og/home-tile-stiri.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="News — Hunedoara Live">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="News — Hunedoara Live">
+  <meta name="twitter:description" content="What&#39;s happening in Hunedoara county — events, announcements and updates.">
+  <meta name="twitter:image" content="https://gohd.ro/images/og/home-tile-stiri.jpg">
+  <!-- /SEO -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="/en/" data-i18n="site.name">Hunedoara Live</a>
+      <nav class="site-nav">
+        <a href="/en/destinatii.html" data-i18n="nav.destinatii">Destinations</a>
+        <a href="/en/orase.html" data-i18n="nav.orase">Towns</a>
+        <a href="/en/natura.html" data-i18n="nav.natura">Nature</a>
+        <a href="/en/turism-activ.html" data-i18n="nav.turismActiv">Active tourism</a>
+        <a href="/en/mostenire.html" data-i18n="nav.mostenire">Cultural heritage</a>
+        <a href="/en/afaceri.html" data-i18n="nav.afaceri">Businesses</a>
+        <a href="/en/stiri.html" aria-current="page" data-i18n="nav.stiri">News</a>
+        <a href="/en/contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" id="global-search-btn" data-i18n-attr="aria-label:nav.search.aria" aria-label="Search">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a id="lang-toggle" class="lang-toggle" href="/stiri.html" hreflang="ro" lang="ro" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria" aria-label="Comută pe română">RO</a>
+        <a href="mailto:hunedoaragohd@gmail.com" class="ai-pill" data-i18n="nav.ai">Ask us</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding-bottom:0;">
+      <h1 data-i18n="nav.stiri">News</h1>
+      <p data-i18n="sec.stiri.desc">What&#39;s happening in the county — events and updates.</p>
+    </section>
+
+    <section class="filters" aria-labelledby="filters-h">
+      <h2 id="filters-h" data-i18n="filters.heading">Search and filter</h2>
+      <div class="filters__row">
+        <div class="field field--search">
+          <label for="f-search" data-i18n="filters.search">Search by name</label>
+          <input id="f-search" type="search" autocomplete="off" data-i18n-attr="placeholder:filters.search.placeholder" placeholder="e.g. Petroșani, Deva, fortress…">
+        </div>
+        <div class="field">
+          <label for="f-category" data-i18n="filters.category">Category</label>
+          <select id="f-category"></select>
+        </div>
+        <div class="field">
+          <label for="f-area" data-i18n="filters.area">Area / town</label>
+          <select id="f-area"></select>
+        </div>
+        <button id="f-reset" class="btn-reset" type="button" data-i18n="filters.reset">Reset</button>
+      </div>
+    </section>
+
+    <div class="results-bar"><span id="result-count">—</span></div>
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <p id="empty" class="empty" hidden data-i18n="filters.none">No result matches the chosen filters.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__top">
+      <div>
+        <a class="brand" href="/en/" data-i18n="site.name">Hunedoara Live</a>
+        <div class="footer-tagline" data-i18n="footer.tagline">the digital guide to Hunedoara county</div>
+      </div>
+      <nav class="footer-nav">
+        <a href="/en/destinatii.html" data-i18n="nav.destinatii">Destinations</a>
+        <a href="/en/orase.html" data-i18n="nav.orase">Towns</a>
+        <a href="/en/natura.html" data-i18n="nav.natura">Nature</a>
+        <a href="/en/turism-activ.html" data-i18n="nav.turismActiv">Active tourism</a>
+        <a href="/en/mostenire.html" data-i18n="nav.mostenire">Cultural heritage</a>
+        <a href="/en/afaceri.html" data-i18n="nav.afaceri">Businesses</a>
+        <a href="/en/stiri.html" data-i18n="nav.stiri">News</a>
+        <a href="/en/utile.html" data-i18n="nav.utile">Useful</a>
+        <a href="/en/contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+    <div class="container site-footer__bottom">
+      <span class="footer-note" data-i18n="footer.note">Independent, non-commercial project. The texts are original; images are uploaded by the site team.</span>
+      <a class="footer-email" href="mailto:hunedoaragohd@gmail.com">hunedoaragohd@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="/js/data.js"></script>
+  <script src="/js/config.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/images.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/search.js"></script>
+  <script>
+    window.LISTING_CONFIG = { dataKey: "SITE_NEWS", sortByDateDesc: true };
+  </script>
+  <script src="/js/listing.js"></script>
+</body>
+</html>
