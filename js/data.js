@@ -715,6 +715,126 @@ window.SITE_NATURE = [
       ]
     }
   },
+  {
+    id: "geoparcul-tara-hategului",
+    name: "Geoparcul UNESCO Țara Hațegului",
+    category: { ro: "Geoparc UNESCO", en: "UNESCO Global Geopark" },
+    area: "Țara Hațegului",
+    coords: [45.6103, 22.9477],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/geoparc-hateg-magyarosaurus.jpg"],
+    photoCredit: { author: "N.Cayla", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Magyarosaurus_dacus.jpg" },
+    ro: {
+      tagline: "Geoparcul dinozaurilor pitici: peste 1.000 km² din Țara Hațegului, recunoscut internațional din 2005 și Geoparc Global UNESCO din 2015.",
+      description: [
+        "Geoparcul cuprinde teritoriul orașului Hațeg și al comunelor Baru, Densuș, General Berthelot, Pui, Răchitova, Râu de Mori, Sarmizegetusa, Sălașu de Sus, Sântămăria-Orlea și Totești. A fost declarat arie protejată în 2004, a intrat în 2005 în Rețeaua Europeană și în Rețeaua Globală a Geoparcurilor — primul geoparc din Sud-Estul Europei cu acest statut — și este Geoparc Global UNESCO din 2015. Este administrat de Universitatea din București.",
+        "Vedetele geoparcului sunt dinozaurii pitici din Cretacicul târziu, de acum circa 70 de milioane de ani, când zona era o insulă — „Insula Hațegului”. Aici au fost găsite cuiburi cu ouă și embrioni de dinozauri, mamifere contemporane cu dinozaurii și reptila zburătoare Hatzegopteryx. Primele oase de dinozaur au fost descoperite în 1895 pe domeniul familiei Nopcsa, iar baronul Franz Nopcsa a formulat pornind de la ele teoria nanismului insular.",
+        "Geoparcul se vizitează prin „casele geoparcului”, centre de vizitare și interpretare: Casa Geoparcului din Hațeg (cu reconstituirea dinozaurului Balaur bondoc), Casa pentru Știință și Artă din General Berthelot (cu un Magyarosaurus dacus în mărime naturală în curte și cuiburi originale cu ouă de dinozaur), Casa Dinozaurilor Pitici din Sânpetru și Casa Vulcanilor din Densuș. Programul diferă în funcție de sezon, iar unele case se vizitează doar cu programare."
+      ],
+      facts: [
+        { label: "Statut", value: "Geoparc Global UNESCO (2015); în rețelele europeană și globală a geoparcurilor din 2005" },
+        { label: "Suprafață", value: "peste 1.000 km² — orașul Hațeg și 10 comune" },
+        { label: "Administrator", value: "Universitatea din București" },
+        { label: "Fosile celebre", value: "Magyarosaurus, Balaur bondoc, Hatzegopteryx, cuiburi cu ouă de dinozaur" },
+        { label: "Centre de vizitare", value: "Hațeg, General Berthelot, Sânpetru, Densuș" }
+      ]
+    },
+    en: {
+      tagline: "The dwarf dinosaur geopark: over 1,000 km² of Țara Hațegului, internationally recognised since 2005 and a UNESCO Global Geopark since 2015.",
+      description: [
+        "The geopark covers the town of Hațeg and the communes of Baru, Densuș, General Berthelot, Pui, Răchitova, Râu de Mori, Sarmizegetusa, Sălașu de Sus, Sântămăria-Orlea and Totești. It was declared a protected area in 2004, joined the European and Global Geoparks Networks in 2005 — the first geopark in South-East Europe to do so — and has been a UNESCO Global Geopark since 2015. It is managed by the University of Bucharest.",
+        "Its stars are the dwarf dinosaurs of the Late Cretaceous, some 70 million years ago, when the area was an island — \"Hațeg Island\". Finds here include dinosaur nests with eggs and embryos, mammals that lived alongside the dinosaurs and the flying reptile Hatzegopteryx. The first dinosaur bones were discovered in 1895 on the Nopcsa family estate, and Baron Franz Nopcsa built on them his theory of insular dwarfism.",
+        "The geopark is explored through its \"geopark houses\", visitor and interpretation centres: the Geopark House in Hațeg (with a reconstruction of the dinosaur Balaur bondoc), the House of Science and Art in General Berthelot (with a life-size Magyarosaurus dacus in the yard and original nests with dinosaur eggs), the House of Dwarf Dinosaurs in Sânpetru and the House of Volcanoes in Densuș. Opening hours vary with the season, and some houses can only be visited by appointment."
+      ],
+      facts: [
+        { label: "Status", value: "UNESCO Global Geopark (2015); in the European and Global Geoparks Networks since 2005" },
+        { label: "Area", value: "over 1,000 km² — the town of Hațeg and 10 communes" },
+        { label: "Managed by", value: "University of Bucharest" },
+        { label: "Famous fossils", value: "Magyarosaurus, Balaur bondoc, Hatzegopteryx, dinosaur egg nests" },
+        { label: "Visitor centres", value: "Hațeg, General Berthelot, Sânpetru, Densuș" }
+      ]
+    }
+  },
+  {
+    id: "lacul-gura-apelor",
+    name: "Lacul Gura Apelor",
+    category: { ro: "Lac de acumulare", en: "Reservoir lake" },
+    area: "Parcul Național Retezat",
+    coords: [45.3392, 22.7217],
+    hasReviews: true,
+    season: "vara",
+    images: ["images/lacul-gura-apelor.jpg"],
+    photoCredit: { author: "Dezidor", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Lacul_Gura_Apei.jpg" },
+    ro: {
+      tagline: "Lacul de munte din spatele celui mai înalt baraj din România (168 m), la intrarea în Parcul Național Retezat.",
+      description: [
+        "Lacul Gura Apelor s-a format în spatele barajului cu același nume, construit între 1975 și 1986 pe Râul Mare, la confluența cu Lăpușnicul Mare, Lăpușnicul Mic și râul Șes, la aproximativ 40 de km de Hațeg. Barajul, din anrocamente cu nucleu de argilă, are 168 m înălțime și este cel mai înalt din România.",
+        "Lacul are o suprafață de circa 390 ha și un volum de circa 210 milioane m³. Apa lui este dusă printr-o aducțiune subterană la hidrocentrala Retezat (335 MW), parte a amenajării hidroenergetice Râul Mare–Retezat. Drumul spre baraj urcă pe valea Râului Mare dinspre Râu de Mori."
+      ],
+      facts: [
+        { label: "Baraj", value: "168 m înălțime — cel mai înalt din România" },
+        { label: "Construcție", value: "1975–1986" },
+        { label: "Suprafața lacului", value: "~390 ha" },
+        { label: "Volum", value: "~210 milioane m³" },
+        { label: "Folosință", value: "Hidrocentrala Retezat (335 MW)" }
+      ]
+    },
+    en: {
+      tagline: "The mountain lake behind Romania's tallest dam (168 m), at the entrance to Retezat National Park.",
+      description: [
+        "Lacul Gura Apelor formed behind the dam of the same name, built between 1975 and 1986 on the Râul Mare river, where it meets the Lăpușnicul Mare, Lăpușnicul Mic and Șes streams, about 40 km from Hațeg. The rock-fill dam with a clay core is 168 m high, the tallest in Romania.",
+        "The lake covers about 390 ha and holds some 210 million m³ of water, carried through an underground conduit to the Retezat hydropower plant (335 MW), part of the Râul Mare–Retezat hydro scheme. The road to the dam climbs the Râul Mare valley from Râu de Mori."
+      ],
+      facts: [
+        { label: "Dam", value: "168 m high — the tallest in Romania" },
+        { label: "Built", value: "1975–1986" },
+        { label: "Lake area", value: "~390 ha" },
+        { label: "Volume", value: "~210 million m³" },
+        { label: "Purpose", value: "Retezat hydropower plant (335 MW)" }
+      ]
+    }
+  },
+  {
+    id: "pestera-cioclovina",
+    name: "Peștera Cioclovina",
+    category: { ro: "Peșteră", en: "Cave" },
+    area: "Șureanu",
+    coords: [45.5753, 23.1360],
+    hasReviews: true,
+    season: "vara",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Peștera în care a fost găsit craniul „Cioclovina 1”, unul dintre cei mai vechi oameni moderni din Europa Centrală și de Sud-Est.",
+      description: [
+        "Peștera Cioclovina Uscată se află lângă satul Cioclovina (comuna Boșorod), în Munții Șureanu, pe teritoriul Parcului Natural Grădiștea Muncelului–Cioclovina, unde complexul carstic Ponorâci–Cioclovina este rezervație naturală. Este o galerie carstică de circa 2 km, cercetată încă din anii 1880; peștera vecină, Cioclovina cu Apă, este accesibilă doar speologilor.",
+        "Peștera a fost exploatată pentru guanofosfat — „fosfatul de Cioclovina”, un îngrășământ natural format din depozitele lăsate de lilieci. În timpul acestor lucrări a fost găsit, în 1941, craniul „Cioclovina 1”, datat cu radiocarbon la 28.000–29.000 de ani; analizele ADN au confirmat că a aparținut unui Homo sapiens. Între 1911 și 1921 au fost scoase de aici și numeroase fosile de urs de peșteră, iar în 1931 a fost descris din această peșteră un mineral nou, ardealitul, numit după Ardeal.",
+        "Până la peșteră se ajunge din satul Cioclovina, de unde mai sunt circa 6 km. Zona e străbătută și de traseul marcat Ohaba Ponor – Peștera Ponorici – Peștera Cioclovina – Boșorod."
+      ],
+      facts: [
+        { label: "Lungime", value: "~2 km (Peștera Cioclovina Uscată)" },
+        { label: "Descoperire", value: "craniul „Cioclovina 1” (1941), 28.000–29.000 de ani (radiocarbon)" },
+        { label: "Mineral", value: "localitatea-tip a ardealitului (descris în 1931)" },
+        { label: "Arie protejată", value: "Parcul Natural Grădiștea Muncelului–Cioclovina" },
+        { label: "Acces", value: "~6 km din satul Cioclovina (comuna Boșorod)" }
+      ]
+    },
+    en: {
+      tagline: "The cave where the \"Cioclovina 1\" skull was found — one of the oldest modern humans in Central and South-East Europe.",
+      description: [
+        "Peștera Cioclovina Uscată (the \"dry\" Cioclovina Cave) lies near the village of Cioclovina (Boșorod commune), in the Șureanu Mountains, inside the Grădiștea Muncelului–Cioclovina Natural Park, where the Ponorâci–Cioclovina karst complex is a nature reserve. It is a karst gallery about 2 km long, studied since the 1880s; the neighbouring Cioclovina cu Apă (\"wet\") cave is open only to cavers.",
+        "The cave was mined for guano phosphate — \"Cioclovina phosphate\", a natural fertiliser formed from bat deposits. During this work, in 1941, the \"Cioclovina 1\" skull was found, radiocarbon-dated to 28,000–29,000 years; DNA analysis confirmed it belonged to a Homo sapiens. Numerous cave bear fossils were also recovered here between 1911 and 1921, and in 1931 a new mineral, ardealite — named after Ardeal, the Romanian name for Transylvania — was described from this cave.",
+        "The cave is reached from the village of Cioclovina, about 6 km away. The area is also crossed by the marked Ohaba Ponor – Ponorici Cave – Cioclovina Cave – Boșorod trail."
+      ],
+      facts: [
+        { label: "Length", value: "~2 km (Peștera Cioclovina Uscată)" },
+        { label: "Discovery", value: "the \"Cioclovina 1\" skull (1941), 28,000–29,000 years old (radiocarbon)" },
+        { label: "Mineral", value: "type locality of ardealite (described in 1931)" },
+        { label: "Protected area", value: "Grădiștea Muncelului–Cioclovina Natural Park" },
+        { label: "Access", value: "~6 km from Cioclovina village (Boșorod commune)" }
+      ]
+    }
+  },
 ];
 
 window.SITE_ACTIVITIES = [
@@ -2009,7 +2129,86 @@ window.SITE_ACTIVITIES = [
         { label: "Duration", value: "1–1.5 hours" }
       ]
     }
-  }
+  },
+  {
+    id: "statiunea-geoagiu-bai",
+    name: "Stațiunea Geoagiu-Băi",
+    category: { ro: "Stațiune balneară", en: "Spa resort" },
+    area: "Orăștie",
+    coords: [45.9353, 23.1633],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/geoagiu-bai-cascada.jpg"],
+    photoCredit: { author: "mihai moise", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Cascada_Geoagiu_-_panoramio_(1).jpg" },
+    ro: {
+      tagline: "Stațiune balneoclimaterică permanentă, cu ape termale, ștrand cu bazin olimpic și terme romane vechi de aproape două milenii.",
+      description: [
+        "Geoagiu-Băi este o stațiune balneoclimaterică permanentă, parte a orașului Geoagiu, situată la circa 18 km nord de Orăștie, la 350 m altitudine, într-o zonă deluroasă de la poalele Munților Metaliferi. Apele mezotermale și termale (29–32 °C) sunt alcaline, ușor sulfuroase, bicarbonatate și magneziene și sunt folosite mai ales pentru afecțiuni ale aparatului locomotor, ginecologice, metabolice și dermatologice.",
+        "Ștrandul cu apă termală are trei bazine, printre care un bazin olimpic, cu apă de 32–33 °C. În stațiune se pot vizita și termele romane Germisara, o porțiune bine păstrată de drum roman și cascada, iar în apropiere, la Geoagiu, rotonda romanică din secolele XI–XII. În nordul stațiunii se află rezervația naturală „Apele mezotermale Geoagiu-Băi” (8 ha), care protejează pădurea din jurul izvoarelor.",
+        "În 2008, Geoagiu-Băi a fost clasificată stațiune turistică de interes național, iar în 2010 a fost desemnată Destinație Europeană de Excelență (EDEN) a României, la tema turism acvatic."
+      ],
+      facts: [
+        { label: "Altitudine", value: "350 m" },
+        { label: "Distanțe", value: "~18 km de Orăștie, ~46 km de Deva" },
+        { label: "Ape", value: "mezotermale și termale, 29–32 °C" },
+        { label: "Ștrand", value: "3 bazine cu apă termală (32–33 °C), inclusiv bazin olimpic" },
+        { label: "Distincții", value: "stațiune de interes național (2008), EDEN 2010" }
+      ]
+    },
+    en: {
+      tagline: "A year-round spa resort with thermal waters, an outdoor pool complex with an Olympic pool, and Roman baths almost two millennia old.",
+      description: [
+        "Geoagiu-Băi is a year-round spa and climatic resort, part of the town of Geoagiu, about 18 km north of Orăștie, at 350 m altitude, in hilly country at the foot of the Metaliferi Mountains. Its mesothermal and thermal waters (29–32 °C) are alkaline, slightly sulphurous, bicarbonated and magnesian, used mainly for locomotor, gynaecological, metabolic and skin conditions.",
+        "The thermal outdoor pool complex has three pools, including an Olympic-size one, with water at 32–33 °C. Also in the resort are the Germisara Roman baths, a well-preserved stretch of Roman road and a waterfall, while nearby Geoagiu has an 11th–12th century Romanesque rotunda. The north of the resort holds the \"Geoagiu-Băi mesothermal waters\" nature reserve (8 ha), which protects the forest around the springs.",
+        "In 2008 Geoagiu-Băi was classified as a tourist resort of national interest, and in 2010 it was named Romania's European Destination of Excellence (EDEN) for aquatic tourism."
+      ],
+      facts: [
+        { label: "Altitude", value: "350 m" },
+        { label: "Distances", value: "~18 km from Orăștie, ~46 km from Deva" },
+        { label: "Waters", value: "mesothermal and thermal, 29–32 °C" },
+        { label: "Outdoor pools", value: "3 thermal-water pools (32–33 °C), including an Olympic pool" },
+        { label: "Awards", value: "resort of national interest (2008), EDEN 2010" }
+      ]
+    }
+  },
+  {
+    id: "baile-vata-de-jos",
+    name: "Băile Vața de Jos (Vața Băi)",
+    category: { ro: "Stațiune balneară", en: "Spa resort" },
+    area: "Brad",
+    coords: [46.1833, 22.6000],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Stațiune cu ape termale de 36–38 °C în valea Crișului Alb, redeschisă după mai bine de un deceniu de abandon.",
+      description: [
+        "Stațiunea se află în comuna Vața de Jos, în valea Crișului Alb, la poalele Munților Zarandului, la circa 19 km de Brad. Apele termale, folosite într-o stațiune funcțională încă de la mijlocul secolului al XIX-lea, ies la suprafață la circa 36–38 °C și conțin calciu, sulf, sodiu și magneziu.",
+        "În anii 1970, complexul a fost extins ca bază de tratament pentru afecțiuni ale aparatului locomotor și ale sistemului nervos periferic. Închis și pus în conservare în 2010, a fost cumpărat de investitori privați și redeschis după mai bine de un deceniu, cu bazine cu apă termală, cazare și centru de tratament.",
+        "În aceeași comună, în satul Vața de Sus, s-a născut în 1910 părintele Arsenie Boca, înmormântat la Mănăstirea Prislop."
+      ],
+      facts: [
+        { label: "Distanțe", value: "~19 km de Brad, ~58 km de Deva" },
+        { label: "Apă termală", value: "36–38 °C, cu calciu, sulf, sodiu și magneziu" },
+        { label: "Istoric", value: "stațiune funcțională de la mijlocul secolului al XIX-lea" },
+        { label: "Stare", value: "închisă în 2010, redeschisă de investitori privați" }
+      ]
+    },
+    en: {
+      tagline: "A thermal spa with 36–38 °C waters in the Crișul Alb valley, reopened after more than a decade of neglect.",
+      description: [
+        "The resort lies in Vața de Jos commune, in the Crișul Alb valley at the foot of the Zarand Mountains, about 19 km from Brad. Its thermal waters, used by a working spa since the mid-19th century, emerge at about 36–38 °C and contain calcium, sulphur, sodium and magnesium.",
+        "In the 1970s the complex was expanded into a treatment centre for locomotor and peripheral nervous system conditions. Closed and mothballed in 2010, it was bought by private investors and reopened more than a decade later, with thermal-water pools, accommodation and a treatment centre.",
+        "In the same commune, in the village of Vața de Sus, Father Arsenie Boca was born in 1910; he is buried at Prislop Monastery."
+      ],
+      facts: [
+        { label: "Distances", value: "~19 km from Brad, ~58 km from Deva" },
+        { label: "Thermal water", value: "36–38 °C, with calcium, sulphur, sodium and magnesium" },
+        { label: "History", value: "a working spa since the mid-19th century" },
+        { label: "Status", value: "closed in 2010, reopened by private investors" }
+      ]
+    }
+  },
 ];
 
 window.SITE_HERITAGE = [
@@ -2614,6 +2813,285 @@ window.SITE_HERITAGE = [
       ]
     }
   },
+  {
+    id: "termele-romane-germisara",
+    name: "Termele romane Germisara",
+    category: { ro: "Sit arheologic roman", en: "Roman archaeological site" },
+    area: "Orăștie",
+    coords: [45.9358, 23.1619],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/germisara-terme-romane.jpg"],
+    photoCredit: { author: "Luthonium (Laurențiu Angheluță)", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Germisara_thermal_baths.jpg" },
+    ro: {
+      tagline: "Băile romane din Geoagiu-Băi, cu bazine săpate în stâncă, unde se aduceau ofrande din aur divinităților apelor calde.",
+      description: [
+        "Numele Germisara este de origine dacică, înseamnă „apă caldă” și apare pe Tabula Peutingeriana și la geograful Ptolemeu. Termele se află în centrul stațiunii Geoagiu-Băi, pe un promontoriu circular cu diametrul de 90–95 m, unde se văd și azi bazinele săpate în stâncă, canalele de scurgere și urmele unor construcții de cult. Băile au funcționat în două faze, ca Germisara și apoi ca Thermae Dodonae.",
+        "În 1935, la săparea unui bazin al ștrandului, au fost descoperite statuile lui Esculap și Hygeea. În 1986–1987 au ieșit la iveală altare și statui votive închinate Nimfelor și Dianei, precum și șapte plăcuțe votive din aur, lucrate în tehnica au repoussé — cinci cu inscripții, două cu imaginea Dianei și a trei nimfe. Plăcuțele se află astăzi în patrimoniul Muzeului Civilizației Dacice și Romane din Deva.",
+        "La circa 5 km sud de stațiune, lângă satul Cigmău, se află ruinele castrului roman Germisara, care supraveghea valea Mureșului."
+      ],
+      facts: [
+        { label: "Nume", value: "Germisara — „apă caldă” (de origine dacică)" },
+        { label: "Amplasare", value: "promontoriu circular de 90–95 m, în centrul stațiunii Geoagiu-Băi" },
+        { label: "Descoperiri", value: "statuile lui Esculap și Hygeea (1935); 7 plăcuțe votive din aur (1986–1987)" },
+        { label: "Unde vezi descoperirile", value: "Muzeul Civilizației Dacice și Romane, Deva" }
+      ]
+    },
+    en: {
+      tagline: "The Roman baths of Geoagiu-Băi, with pools cut into the rock, where gold offerings were made to the deities of the warm springs.",
+      description: [
+        "The name Germisara is of Dacian origin, means \"hot water\" and appears on the Tabula Peutingeriana and in the geographer Ptolemy. The baths lie in the centre of the Geoagiu-Băi resort, on a circular promontory 90–95 m across, where the rock-cut pools, drainage channels and traces of cult buildings are still visible. The baths were used in two phases, as Germisara and later as Thermae Dodonae.",
+        "In 1935, while a pool of the modern lido was being dug, statues of Aesculapius and Hygieia were found. In 1986–1987, altars and votive statues dedicated to the Nymphs and to Diana came to light, along with seven gold votive plaques made in the repoussé technique — five with inscriptions, two showing Diana and a group of three nymphs. The plaques now belong to the Museum of Dacian and Roman Civilisation in Deva.",
+        "About 5 km south of the resort, near the village of Cigmău, lie the ruins of the Roman fort of Germisara, which guarded the Mureș valley."
+      ],
+      facts: [
+        { label: "Name", value: "Germisara — \"hot water\" (of Dacian origin)" },
+        { label: "Setting", value: "circular promontory 90–95 m across, in the centre of Geoagiu-Băi" },
+        { label: "Finds", value: "statues of Aesculapius and Hygieia (1935); 7 gold votive plaques (1986–1987)" },
+        { label: "Where to see the finds", value: "Museum of Dacian and Roman Civilisation, Deva" }
+      ]
+    }
+  },
+  {
+    id: "biserica-strei",
+    name: "Biserica „Adormirea Maicii Domnului” din Strei",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Țara Hațegului",
+    coords: [45.7165, 22.9889],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-strei.jpg"],
+    photoCredit: { author: "Valyemil81", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_%E2%80%9EAdormirea_Maicii_Domnului%E2%80%9D_-_Strei,_Humedoara.jpg" },
+    ro: {
+      tagline: "Biserică de piatră din jurul anului 1300, cu turn-clopotniță romanic și picturi murale medievale — una dintre cele mai vechi din Transilvania.",
+      description: [
+        "Biserica ortodoxă din satul Strei, aparținător orașului Călan, este unul dintre cele mai vechi și mai reprezentative monumente de arhitectură medievală din Transilvania. Fostă capelă de curte a familiei cneziale locale, îmbină forme romanice — turnul masiv cu coif de piatră, ferestrele înguste — cu elemente ale goticului timpuriu, precum altarul boltit în cruce pe ogive și portalul vestic în arc frânt. Datarea e discutată: sfârșitul secolului al XIII-lea sau a doua jumătate a secolului al XIV-lea.",
+        "De mici dimensiuni și construită din piatră brută, biserica are un turn-clopotniță pe fațada de vest, o navă scurtă și un altar dreptunghiular. La baza turnului se văd două stele funerare romane refolosite, iar cimitirul din jur se suprapune parțial peste o „villa rustica” romană.",
+        "Interiorul păstrează un valoros ansamblu de picturi murale medievale — în altar „Iisus în slavă” și cortegiul apostolilor, în navă „Buna Vestire” și Sfântul Nicolae —, legat de numele meșterului Grozie, pomenit într-o inscripție din altar. Pictura a fost restaurată în 1970–1972 de pictorul Nicolae Sava."
+      ],
+      facts: [
+        { label: "Datare", value: "sfârșitul sec. XIII – sec. XIV" },
+        { label: "Localizare", value: "satul Strei, orașul Călan" },
+        { label: "Pictură murală", value: "medievală, restaurată în 1970–1972" },
+        { label: "Cod LMI", value: "HD-II-m-A-03452" }
+      ]
+    },
+    en: {
+      tagline: "A stone church from around 1300, with a Romanesque bell tower and medieval murals — one of the oldest in Transylvania.",
+      description: [
+        "The Orthodox church in the village of Strei, part of the town of Călan, is one of the oldest and most representative medieval buildings in Transylvania. Once the court chapel of the local knez family, it blends Romanesque forms — the massive tower with its stone spire, the narrow windows — with early Gothic features such as the rib-vaulted sanctuary and the pointed west portal. Its dating is debated: the late 13th century or the second half of the 14th century.",
+        "Small and built of rough stone, the church has a bell tower on its west front, a short nave and a rectangular sanctuary. Two reused Roman funerary stelae can be seen at the base of the tower, and the surrounding graveyard partly overlies a Roman villa rustica.",
+        "Inside survives a valuable set of medieval murals — Christ in Glory and the procession of apostles in the sanctuary, the Annunciation and Saint Nicholas in the nave — linked to the master painter Grozie, named in an inscription in the sanctuary. The murals were restored in 1970–1972 by the painter Nicolae Sava."
+      ],
+      facts: [
+        { label: "Dating", value: "late 13th – 14th century" },
+        { label: "Location", value: "Strei village, town of Călan" },
+        { label: "Murals", value: "medieval, restored in 1970–1972" },
+        { label: "Monument code (LMI)", value: "HD-II-m-A-03452" }
+      ]
+    }
+  },
+  {
+    id: "biserica-santamaria-orlea",
+    name: "Biserica reformată din Sântămăria-Orlea",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Țara Hațegului",
+    coords: [45.5906, 22.9699],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-santamaria-orlea.jpg"],
+    photoCredit: { author: "Zsolt deak", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_cnezilor_C%C3%A2ndea,_azi_Biserica_reformat%C4%83.JPG" },
+    ro: {
+      tagline: "Biserica cnezilor Cândea, ridicată în jurul anului 1280 — una dintre cele mai vechi biserici din spațiul românesc, cu picturi murale datate 1311.",
+      description: [
+        "Biserica se află în Sântămăria-Orlea, la sud de Hațeg, pe malul drept al Râului Mare, pe un mic platou aproape de vechiul castel al familiei Kendeffy. A fost ridicată spre sfârșitul secolului al XIII-lea, în jurul anului 1280, este cunoscută ca biserica cnezilor Cândea și, inițial catolică, aparține astăzi cultului reformat (calvin). Satul e atestat documentar din 1331, ca „villa Sancte Marie”.",
+        "Construită din piatră brută, cu muchii din piatră fățuită, are o navă dreptunghiulară tăvănită, un turn pătrat cu cinci niveluri pe fațada de vest, cu portal romanic bogat sculptat, și un altar boltit în cruce pe ogive. Formele ei ilustrează trecerea de la romanic la goticul timpuriu în Transilvania.",
+        "În interior se păstrează fragmente importante dintr-un ansamblu de pictură murală, scos de sub var începând din 1869. Etapa principală de pictură este datată printr-o inscripție latină în anul 1311."
+      ],
+      facts: [
+        { label: "Datare", value: "cca. 1280" },
+        { label: "Pictură murală", value: "etapa principală datată 1311 (inscripție latină)" },
+        { label: "Cult actual", value: "reformat (calvin); inițial catolică" },
+        { label: "Cod LMI", value: "HD-II-m-A-03445" }
+      ]
+    },
+    en: {
+      tagline: "The church of the Cândea knezes, built around 1280 — one of the oldest churches in the Romanian lands, with murals dated 1311.",
+      description: [
+        "The church stands in Sântămăria-Orlea, south of Hațeg on the right bank of the Râul Mare, on a small plateau near the old Kendeffy family manor. Built towards the end of the 13th century, around 1280, it is known as the church of the Cândea knezes; originally Catholic, it now belongs to the Reformed (Calvinist) church. The village is first documented in 1331, as \"villa Sancte Marie\".",
+        "Built of rough stone with dressed-stone corners, it has a flat-ceilinged rectangular nave, a square five-storey tower on its west front with a richly carved Romanesque portal, and a rib-vaulted sanctuary. Its forms illustrate the transition from Romanesque to early Gothic in Transylvania.",
+        "Inside, significant fragments survive of a mural scheme uncovered from beneath whitewash from 1869 onwards. The main painting phase is dated by a Latin inscription to the year 1311."
+      ],
+      facts: [
+        { label: "Dating", value: "around 1280" },
+        { label: "Murals", value: "main phase dated 1311 (Latin inscription)" },
+        { label: "Denomination today", value: "Reformed (Calvinist); originally Catholic" },
+        { label: "Monument code (LMI)", value: "HD-II-m-A-03445" }
+      ]
+    }
+  },
+  {
+    id: "castelul-nopcsa-sacel",
+    name: "Castelul Nopcsa din Săcel",
+    category: { ro: "Castel", en: "Castle" },
+    area: "Țara Hațegului",
+    coords: [45.5615, 22.9277],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/castelul-nopcsa-sacel.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:CastelNopcsa_(9).JPG" },
+    ro: {
+      tagline: "Reședința familiei Nopcsa, legată de baronul-paleontolog Franz Nopcsa — restaurată și redeschisă publicului în 2025.",
+      description: [
+        "Castelul din satul Săcel (comuna Sântămăria-Orlea) a fost ridicat în forma actuală în jurul anului 1872 de Elek Nopcsa, după ce domeniul trecuse de la familia Naláczy la familia Nopcsa. Clădirea, pe două niveluri, are un fronton zimțat pe fațada de vest, un turn de colț dreptunghiular cu creneluri și un turnuleț octogonal. Elek Nopcsa a practicat aici o agricultură modernă, fiind primul care a adus o mașină de treierat în județul Hunedoara.",
+        "Castelul este legat de numele fiului său, Franz Nopcsa (1877–1933) — aventurier, albanolog și unul dintre pionierii paleobiologiei. În 1895, sora lui, Ilona, a găsit oase de dinozaur pe domeniul familiei, iar studiul lor l-a dus pe Nopcsa la teoria nanismului insular, care explică dinozaurii pitici ai Țării Hațegului.",
+        "După decenii de degradare, castelul, proprietatea Consiliului Județean Hunedoara, a fost restaurat și redeschis pentru vizitare la 1 septembrie 2025, împreună cu Muzeul Civilizației Dacice și Romane din Deva, cu expoziția „Castelul Nopcsa – O călătorie prin timp în Țara Hațegului”. Fotografia este din 2012, dinaintea restaurării."
+      ],
+      facts: [
+        { label: "Construcție", value: "cca. 1872, de Elek Nopcsa" },
+        { label: "Personalitate", value: "Franz Nopcsa (1877–1933), paleontolog și albanolog" },
+        { label: "Redeschis", value: "1 septembrie 2025, după restaurare" },
+        { label: "Administrare", value: "CJ Hunedoara și Muzeul Civilizației Dacice și Romane Deva" },
+        { label: "Cod LMI", value: "HD-II-a-B-03439" }
+      ]
+    },
+    en: {
+      tagline: "The Nopcsa family seat, linked to the paleontologist baron Franz Nopcsa — restored and reopened to the public in 2025.",
+      description: [
+        "The manor in the village of Săcel (Sântămăria-Orlea commune) took its present form around 1872 under Elek Nopcsa, after the estate passed from the Naláczy family to the Nopcsas. The two-storey building has a stepped gable on its west front, a rectangular crenellated corner tower and a small octagonal turret. Elek Nopcsa farmed the estate in a modern way and was the first to bring a threshing machine to Hunedoara county.",
+        "The manor is tied to the name of his son, Franz Nopcsa (1877–1933) — adventurer, Albanologist and one of the pioneers of paleobiology. In 1895 his sister Ilona found dinosaur bones on the family estate, and studying them led Nopcsa to the theory of insular dwarfism, which explains the dwarf dinosaurs of Țara Hațegului.",
+        "After decades of decay, the manor, owned by Hunedoara County Council, was restored and reopened to visitors on 1 September 2025, together with the Museum of Dacian and Roman Civilisation in Deva, with the exhibition \"Nopcsa Castle – A Journey Through Time in Țara Hațegului\". The photo dates from 2012, before the restoration."
+      ],
+      facts: [
+        { label: "Built", value: "around 1872, by Elek Nopcsa" },
+        { label: "Notable figure", value: "Franz Nopcsa (1877–1933), paleontologist and Albanologist" },
+        { label: "Reopened", value: "1 September 2025, after restoration" },
+        { label: "Managed by", value: "Hunedoara County Council and the Museum of Dacian and Roman Civilisation, Deva" },
+        { label: "Monument code (LMI)", value: "HD-II-a-B-03439" }
+      ]
+    }
+  },
+  {
+    id: "cetatea-malaiesti",
+    name: "Cetatea Mălăiești",
+    category: { ro: "Cetate medievală", en: "Medieval fortress" },
+    area: "Țara Hațegului",
+    coords: [45.4832, 22.9474],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/cetatea-malaiesti.jpg"],
+    photoCredit: { author: "Raimond Spekking", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Malaistii_fortress,_Romania-9103.jpg" },
+    ro: {
+      tagline: "Cetate nobiliară din secolul al XIV-lea, cu donjon și zid de incintă, restaurată cu fonduri europene, la poalele Retezatului.",
+      description: [
+        "Cetatea se află în satul Mălăiești, comuna Sălașu de Sus, în sudul Țării Hațegului, spre Munții Retezat. Ansamblul — un donjon înconjurat de un zid de incintă din piatră — datează din secolul al XIV-lea și a fost ridicat de nobilii locali; ulterior, incinta a fost întărită cu patru turnuri.",
+        "Donjonul, înalt de circa 11 m, cu ziduri groase de 1,5 m, avea mai multe niveluri, cele inferioare folosite pentru provizii. Cetatea a fost părăsită în secolul al XVII-lea, iar o parte din piatra ei a fost refolosită în 1907–1909 la construcția bisericii ortodoxe din sat.",
+        "Monumentul a fost reabilitat cu fonduri preponderent europene, cu drum de acces, parcare, iluminat arhitectural și un mic amfiteatru pentru evenimente."
+      ],
+      facts: [
+        { label: "Datare", value: "secolul al XIV-lea" },
+        { label: "Componente", value: "donjon, zid de incintă, patru turnuri adăugate ulterior" },
+        { label: "Donjon", value: "~11 m înălțime, ziduri de 1,5 m" },
+        { label: "Localizare", value: "satul Mălăiești, comuna Sălașu de Sus" }
+      ]
+    },
+    en: {
+      tagline: "A 14th-century noble fortress with a keep and curtain wall, restored with EU funds, at the foot of the Retezat.",
+      description: [
+        "The fortress stands in the village of Mălăiești, Sălașu de Sus commune, in the south of Țara Hațegului towards the Retezat Mountains. The complex — a keep surrounded by a stone curtain wall — dates from the 14th century and was built by local nobles; the enclosure was later strengthened with four towers.",
+        "The keep, about 11 m high with 1.5 m thick walls, had several levels, the lower ones used for provisions. The fortress was abandoned in the 17th century, and some of its stone was reused in 1907–1909 to build the village's Orthodox church.",
+        "The monument was rehabilitated mostly with European funds, with an access road, parking, architectural lighting and a small amphitheatre for events."
+      ],
+      facts: [
+        { label: "Dating", value: "14th century" },
+        { label: "Components", value: "keep, curtain wall, four towers added later" },
+        { label: "Keep", value: "~11 m high, 1.5 m thick walls" },
+        { label: "Location", value: "Mălăiești village, Sălașu de Sus commune" }
+      ]
+    }
+  },
+  {
+    id: "ulpia-traiana-sarmizegetusa",
+    name: "Ulpia Traiana Sarmizegetusa",
+    category: { ro: "Sit arheologic roman", en: "Roman archaeological site" },
+    area: "Țara Hațegului",
+    coords: [45.5168, 22.7866],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/ulpia-traiana-forum.jpg"],
+    photoCredit: { author: "Razvan Socol", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Ulpia_Traiana_Sarmizegetusa_(5).JPG" },
+    ro: {
+      tagline: "Capitala Daciei romane, întemeiată după cucerirea din 106 d.Hr. — for, amfiteatru și temple în satul Sarmizegetusa.",
+      description: [
+        "Colonia Ulpia Traiana Augusta Dacica Sarmizegetusa a fost întemeiată la porunca împăratului Traian de guvernatorul Decimus Terentius Scaurianus, la scurt timp după cucerirea Daciei (106 d.Hr.), pe locul unei tabere militare romane din Câmpia Hațegului. A fost capitala provinciei Dacia romană, iar sub împăratul Alexandru Sever (222–235) a primit titlul de metropolis.",
+        "Incinta fortificată, de circa 32 ha (600 × 540 m), avea forul în centru, la întretăierea celor două străzi principale; în afara zidurilor se aflau temple, locuințe, construcții publice și amfiteatrul, cu o capacitate de circa 5.000 de persoane. O mare parte din orașul antic nu a fost încă cercetată de arheologi.",
+        "Ruinele se vizitează în satul Sarmizegetusa, unde funcționează și Muzeul de Arheologie Sarmizegetusa, fondat în 1924, cu obiecte descoperite în săpături."
+      ],
+      facts: [
+        { label: "Întemeiere", value: "după 106 d.Hr., de guvernatorul Decimus Terentius Scaurianus" },
+        { label: "Rol", value: "capitala Daciei romane; metropolis sub Alexandru Sever" },
+        { label: "Incintă", value: "~32 ha (600 × 540 m)" },
+        { label: "Amfiteatru", value: "~5.000 de locuri" },
+        { label: "Muzeu", value: "Muzeul de Arheologie Sarmizegetusa (fondat în 1924)" }
+      ]
+    },
+    en: {
+      tagline: "The capital of Roman Dacia, founded after the conquest of 106 AD — forum, amphitheatre and temples in the village of Sarmizegetusa.",
+      description: [
+        "Colonia Ulpia Traiana Augusta Dacica Sarmizegetusa was founded on Emperor Trajan's orders by the governor Decimus Terentius Scaurianus, shortly after the conquest of Dacia (106 AD), on the site of a Roman military camp in the Hațeg plain. It was the capital of the province of Roman Dacia, and under Emperor Severus Alexander (222–235) it received the title of metropolis.",
+        "The walled area, about 32 ha (600 × 540 m), had the forum at its centre, where the two main streets crossed; outside the walls stood temples, houses, public buildings and the amphitheatre, which held about 5,000 people. Much of the ancient city has still not been excavated.",
+        "The ruins can be visited in the village of Sarmizegetusa, also home to the Sarmizegetusa Archaeological Museum, founded in 1924, with finds from the excavations."
+      ],
+      facts: [
+        { label: "Founded", value: "after 106 AD, by the governor Decimus Terentius Scaurianus" },
+        { label: "Role", value: "capital of Roman Dacia; metropolis under Severus Alexander" },
+        { label: "Walled area", value: "~32 ha (600 × 540 m)" },
+        { label: "Amphitheatre", value: "~5,000 seats" },
+        { label: "Museum", value: "Sarmizegetusa Archaeological Museum (founded 1924)" }
+      ]
+    }
+  },
+  {
+    id: "cetatea-colt",
+    name: "Cetatea Colț",
+    category: { ro: "Cetate medievală", en: "Medieval fortress" },
+    area: "Țara Hațegului",
+    coords: [45.4781, 22.8743],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/cetatea-colt-ruine.jpg"],
+    photoCredit: { author: "TudorTulok", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Coltz_Citadel_in_Romania_View_from_Above.jpg" },
+    ro: {
+      tagline: "Ruinele cetății cnezilor Cândea, pe o stâncă la intrarea în defileul Râușorului — posibila inspirație pentru „Castelul din Carpați” al lui Jules Verne.",
+      description: [
+        "Cetatea Colț a fost ridicată în secolul al XIV-lea de cneazul Cândea, ai cărui urmași au trecut la catolicism și și-au schimbat numele în Kendeffy. Se află pe teritoriul satului Suseni (comuna Râu de Mori), la circa 3 km de Râu de Mori, pe un colț de stâncă la intrarea în defileul Râușorului.",
+        "Construită în jurul unui turn pătrat, la care s-au adăugat un zid de incintă și alte turnuri, cetatea are un plan neregulat, adaptat stâncii. La mijlocul secolului al XVII-lea, călătorul otoman Evliya Çelebi o descria ca pe o cetate puternică, cu pante atât de abrupte încât era imposibil să te apropii de ea. Astăzi se mai păstrează doar ruinele zidurilor.",
+        "Datorită aspectului și toponimiei, se presupune că locul l-ar fi inspirat pe Jules Verne pentru romanul „Castelul din Carpați”. Până la ruine se ajunge pe un traseu marcat de circa o oră, din valea Nucșoara."
+      ],
+      facts: [
+        { label: "Datare", value: "secolul al XIV-lea" },
+        { label: "Ctitori", value: "cnezii Cândea (ulterior Kendeffy)" },
+        { label: "Localizare", value: "satul Suseni, comuna Râu de Mori" },
+        { label: "Acces", value: "traseu marcat cu triunghi albastru, cca. 1 oră" },
+        { label: "Stare", value: "ruină" }
+      ]
+    },
+    en: {
+      tagline: "The ruined fortress of the Cândea knezes, on a crag at the mouth of the Râușor gorge — a possible inspiration for Jules Verne's \"The Carpathian Castle\".",
+      description: [
+        "Cetatea Colț was built in the 14th century by the knez Cândea, whose descendants converted to Catholicism and changed their name to Kendeffy. It stands within the village of Suseni (Râu de Mori commune), about 3 km from Râu de Mori, on a rocky spur at the entrance to the Râușor gorge.",
+        "Built around a square tower, later joined by a curtain wall and further towers, the fortress has an irregular plan shaped by the rock. In the mid-17th century the Ottoman traveller Evliya Çelebi described it as a mighty stronghold whose slopes were so steep it was impossible to approach. Today only the ruined walls remain.",
+        "Because of its look and the local place names, the site is believed to have inspired Jules Verne's novel \"The Carpathian Castle\". The ruins are reached on a marked trail of about an hour from the Nucșoara valley."
+      ],
+      facts: [
+        { label: "Dating", value: "14th century" },
+        { label: "Founders", value: "the Cândea knezes (later Kendeffy)" },
+        { label: "Location", value: "Suseni village, Râu de Mori commune" },
+        { label: "Access", value: "trail marked with a blue triangle, about 1 hour" },
+        { label: "Condition", value: "ruin" }
+      ]
+    }
+  },
 ];
 
 window.SITE_TOWNS = [
@@ -2729,7 +3207,7 @@ window.SITE_TOWNS = [
     area: "Valea Jiului",
     coords: [45.4166, 23.3733],
     hasReviews: false,
-    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Uricani", "Aninoasa", "Bănița"],
+    relatedAreas: ["Petroșani", "Parâng", "Vâlcan", "Uricani", "Bănița"],
     images: ["images/petrosani-panorama.jpg"],
     photoCredit: { author: "Eduard Gergely", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrosani_Town.jpg" },
     ro: {
@@ -2861,6 +3339,44 @@ window.SITE_TOWNS = [
         { label: "First documented", value: "1770" },
         { label: "Status", value: "municipality (since 2003, town since 1960)" },
         { label: "Gateway to", value: "Straja resort (approx. 9 km)" }
+      ]
+    }
+  },
+  {
+    id: "aninoasa",
+    name: "Aninoasa",
+    category: { ro: "Oraș", en: "Town" },
+    area: "Valea Jiului",
+    coords: [45.4111, 23.3139],
+    hasReviews: false,
+    relatedAreas: ["Aninoasa"],
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Cel mai mic oraș al județului, crescut în jurul minei de cărbune, între Petroșani și Vulcan.",
+      description: [
+        "Aninoasa este un oraș din Valea Jiului, format din localitatea Aninoasa și satul Iscroni, întins de-a lungul pârâului Aninoasa, aproape de confluența Jiului de Vest cu Jiul de Est, la circa 7 km de Petroșani și 5 km de Vulcan. Numele vine de la anin (arin).",
+        "Localitatea s-a dezvoltat odată cu mineritul: exploatarea cărbunelui a început în anii 1880, când a fost construită și prima colonie muncitorească. Aninoasa a fost declarată oraș în 1989, când avea peste 6.000 de locuitori, iar mina a fost închisă definitiv în primăvara lui 2006, după un declin prelungit.",
+        "Din Vulcan, pe Valea Ungurului, coboară până în Aninoasa Traseul Ruinelor, o potecă tematică de circa 12 km, iar orașul se află și pe circuitul de drumeție Petroșani – Dealul Babii – Bănița."
+      ],
+      facts: [
+        { label: "Populație", value: "3.369 locuitori (recensământ 2021)" },
+        { label: "Oraș din", value: "1989" },
+        { label: "Mina Aninoasa", value: "exploatare începută în anii 1880, închisă în 2006" },
+        { label: "Localități componente", value: "Aninoasa, Iscroni" }
+      ]
+    },
+    en: {
+      tagline: "The county's smallest town, grown around its coal mine, between Petroșani and Vulcan.",
+      description: [
+        "Aninoasa is a Jiu Valley town made up of Aninoasa itself and the village of Iscroni, stretched along the Aninoasa stream near the confluence of the Western and Eastern Jiu rivers, about 7 km from Petroșani and 5 km from Vulcan. Its name comes from anin, the Romanian word for alder.",
+        "The town grew with mining: coal extraction began in the 1880s, when its first workers' colony was also built. Aninoasa was declared a town in 1989, when it had over 6,000 inhabitants, and the mine closed for good in spring 2006, after a long decline.",
+        "Traseul Ruinelor, a themed trail of about 12 km, runs from Vulcan down the Valea Ungurului to Aninoasa, and the town also lies on the Petroșani – Dealul Babii – Bănița hiking loop."
+      ],
+      facts: [
+        { label: "Population", value: "3,369 (2021 census)" },
+        { label: "Town since", value: "1989" },
+        { label: "Aninoasa mine", value: "mining began in the 1880s, closed in 2006" },
+        { label: "Component localities", value: "Aninoasa, Iscroni" }
       ]
     }
   },

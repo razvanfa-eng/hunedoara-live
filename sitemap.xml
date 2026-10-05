@@ -24,6 +24,7 @@
   <url><loc>https://gohd.ro/orase/petrila/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/orase/vulcan/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/orase/lupeni/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/orase/aninoasa/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/orase/orastie/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/orase/hateg/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/orase/brad/</loc><priority>0.6</priority></url>
@@ -41,6 +42,9 @@
   <url><loc>https://gohd.ro/natura/lacul-cincis/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/natura/padurea-bejan/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/natura/parcul-dendrologic-simeria/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/natura/geoparcul-tara-hategului/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/natura/lacul-gura-apelor/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/natura/pestera-cioclovina/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/turism-activ/traseu-pietrele-bucura-peleaga/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/turism-activ/partiile-parang/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/turism-activ/statiunea-straja/</loc><priority>0.6</priority></url>
@@ -80,6 +84,8 @@
   <url><loc>https://gohd.ro/turism-activ/traseu-lacul-calcescu/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/turism-activ/traseu-lacurile-verzi-parang/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/turism-activ/traseu-refugiul-agatat-lacul-rosiile/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/turism-activ/statiunea-geoagiu-bai/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/turism-activ/baile-vata-de-jos/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/mostenire/sarmizegetusa-regia/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/mostenire/biserica-densus/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/mostenire/manastirea-prislop/</loc><priority>0.6</priority></url>
@@ -97,6 +103,13 @@
   <url><loc>https://gohd.ro/mostenire/castelul-corvinilor/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/mostenire/furnalul-govajdia/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/mostenire/castelul-bela-fay-simeria/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/mostenire/termele-romane-germisara/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/mostenire/biserica-strei/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/mostenire/biserica-santamaria-orlea/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/mostenire/castelul-nopcsa-sacel/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/mostenire/cetatea-malaiesti/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/mostenire/ulpia-traiana-sarmizegetusa/</loc><priority>0.6</priority></url>
+  <url><loc>https://gohd.ro/mostenire/cetatea-colt/</loc><priority>0.6</priority></url>
   <url><loc>https://gohd.ro/stiri/castelul-corvinilor-restaurat-2026/</loc><lastmod>2026-09-02</lastmod><priority>0.5</priority></url>
   <url><loc>https://gohd.ro/stiri/castelul-corvinilor-program-iarna-2026/</loc><lastmod>2026-10-01</lastmod><priority>0.5</priority></url>
   <url><loc>https://gohd.ro/stiri/concert-stagiunea-iancu-de-hunedoara-castelul-corvinilor-2026/</loc><lastmod>2026-10-09</lastmod><priority>0.5</priority></url>
