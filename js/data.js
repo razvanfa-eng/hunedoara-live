@@ -1097,28 +1097,28 @@ window.SITE_ACTIVITIES = [
     images: ["images/parcul-cetatii-deva.jpg"],
     photoCredit: { author: "Carmen buzan", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Parcul_Cetatii_Deva.JPG" },
     ro: {
-      tagline: "Parcul de la poalele Cetății Deva — punctul de plecare pentru potecile pietonale, telecabină și minibuzul electric spre platoul cetății.",
+      tagline: "Parcul de la poalele Cetății Deva — punctul de plecare pentru potecile pietonale, minibuzul electric și telecabina (oprită momentan) spre platoul cetății.",
       description: [
         "Parcul Cetății se întinde la baza dealului vulcanic pe care se află Cetatea Deva și este punctul de plecare pentru mai multe poteci pietonale marcate spre platoul cetății, un urcuș de aproximativ 40 de minute, de dificultate medie, pe pietriș și trepte.",
-        "Telecabina, funcțională din 2003, are un traseu de 278 m lungime, o diferență de nivel de 158 m și cabine de 30 de locuri. Ca alternativă — inclusiv atunci când telecabina nu funcționează — circulă un minibuz electric de 22 de locuri, de regulă zilnic între 09:00 și 18:00, cu variații sezoniere. Parcarea la baza dealului este gratuită."
+        "Telecabina (prima instalație din 2003, modernizată și reinaugurată în martie 2024) are un traseu de 278 m lungime, o diferență de nivel de 158 m și cabine de 30 de locuri. Din noiembrie 2025 este oprită din cauza unor defecțiuni tehnice, iar repornirea depinde de avizul unor experți străini (estimare: primăvara lui 2027). Până atunci, la cetate se ajunge pe jos sau cu minibuzul electric de 22 de locuri, de regulă zilnic între 09:00 și 18:00, cu variații sezoniere. Parcarea la baza dealului este gratuită."
       ],
       facts: [
         { label: "Poteci pietonale", value: "~40 min, dificultate medie" },
-        { label: "Telecabină", value: "din 2003, 278 m lungime, diferență de nivel 158 m, cabine de 30 locuri" },
-        { label: "Minibuz electric (alternativ)", value: "22 locuri, de regulă 09:00–18:00" },
+        { label: "Telecabină", value: "OPRITĂ din noiembrie 2025; 278 m lungime, diferență de nivel 158 m, cabine de 30 locuri" },
+        { label: "Minibuz electric", value: "22 locuri, de regulă 09:00–18:00" },
         { label: "Parcare", value: "gratuită, la baza dealului" }
       ]
     },
     en: {
-      tagline: "The park at the foot of Deva Citadel — the starting point for the walking trails, cable car and electric minibus up to the citadel plateau.",
+      tagline: "The park at the foot of Deva Citadel — the starting point for the walking trails, the electric minibus and the cable car (currently out of service) up to the citadel plateau.",
       description: [
         "Parcul Cetății spreads at the base of the volcanic hill that Deva Citadel sits on, and is the starting point for several marked walking trails up to the citadel plateau, a climb of about 40 minutes, moderate difficulty, on gravel paths and steps.",
-        "The cable car, running since 2003, covers a 278 m route with a 158 m height difference, in 30-person cabins. As an alternative — including whenever the cable car is not running — a 22-seat electric minibus operates, generally daily between 09:00 and 18:00, with seasonal variations. Parking at the base of the hill is free."
+        "The cable car (first built in 2003, modernised and reopened in March 2024) covers a 278 m route with a 158 m height difference, in 30-person cabins. It has been out of service since November 2025 because of technical faults, and restarting it depends on the approval of foreign experts (estimate: spring 2027). Until then, visitors walk up or take the 22-seat electric minibus, which operates generally daily between 09:00 and 18:00, with seasonal variations. Parking at the base of the hill is free."
       ],
       facts: [
         { label: "Walking trails", value: "~40 min, moderate difficulty" },
-        { label: "Cable car", value: "since 2003, 278 m route, 158 m height difference, 30-seat cabins" },
-        { label: "Electric minibus (alternative)", value: "22 seats, generally 09:00–18:00" },
+        { label: "Cable car", value: "OUT OF SERVICE since November 2025; 278 m route, 158 m height difference, 30-seat cabins" },
+        { label: "Electric minibus", value: "22 seats, generally 09:00–18:00" },
         { label: "Parking", value: "free, at the base of the hill" }
       ]
     }
@@ -2630,24 +2630,24 @@ window.SITE_TOWNS = [
     ro: {
       tagline: "Reședința județului Hunedoara, dominată de Cetatea Deva, pe un deal vulcanic în mijlocul orașului.",
       description: [
-        "Deva este centrul administrativ al județului, așezat pe Mureș. Simbolul orașului este Cetatea Deva, ruine medievale aflate pe un deal vulcanic chiar în centrul orașului, accesibile pe jos sau cu o telecabină funcțională din 2003.",
+        "Deva este centrul administrativ al județului, așezat pe Mureș. Simbolul orașului este Cetatea Deva, ruine medievale aflate pe un deal vulcanic chiar în centrul orașului, accesibile pe jos sau cu minibuzul electric (telecabina este oprită din noiembrie 2025).",
         "În centrul istoric se află Magna Curia (Palatul Bethlen, 1621), care găzduiește azi Muzeul Civilizației Dacice și Romane. Deva e cunoscută și ca centru național al gimnasticii românești."
       ],
       facts: [
         { label: "Populație", value: "53.113 locuitori (recensământ 2021)" },
-        { label: "Reper", value: "Cetatea Deva, cu telecabină (din 2003)" },
+        { label: "Reper", value: "Cetatea Deva (acces pe jos sau cu minibuzul electric)" },
         { label: "Muzeu", value: "Magna Curia — Muzeul Civilizației Dacice și Romane" }
       ]
     },
     en: {
       tagline: "The seat of Hunedoara county, overlooked by Deva Citadel on a volcanic hill right in the city centre.",
       description: [
-        "Deva is the county's administrative centre, on the Mureș river. The city's landmark is Deva Citadel, medieval ruins on a volcanic hill in the middle of town, reachable on foot or by a cable car running since 2003.",
+        "Deva is the county's administrative centre, on the Mureș river. The city's landmark is Deva Citadel, medieval ruins on a volcanic hill in the middle of town, reachable on foot or by electric minibus (the cable car has been out of service since November 2025).",
         "The old centre holds Magna Curia (Bethlen Castle, 1621), now home to the Museum of Dacian and Roman Civilisation. Deva is also known as a national centre for Romanian gymnastics."
       ],
       facts: [
         { label: "Population", value: "53,113 (2021 census)" },
-        { label: "Landmark", value: "Deva Citadel, with cable car (since 2003)" },
+        { label: "Landmark", value: "Deva Citadel (on foot or by electric minibus)" },
         { label: "Museum", value: "Magna Curia — Museum of Dacian and Roman Civilisation" }
       ]
     }
