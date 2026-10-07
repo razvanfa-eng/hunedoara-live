@@ -21,7 +21,7 @@ const DATA = (() => {
 const SECTION_KEYS = ["SITE_DESTINATIONS", "SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_TOWNS", "SITE_NEWS", "SITE_BUSINESSES"];
 const RELATED_KEYS = ["SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_BUSINESSES"];
 const uniq = (a) => [...new Set(a.filter(Boolean))];
-const dataKeyOf = (file) => (fs.readFileSync(path.join(ROOT, file), "utf8").match(/dataKey:\s*"([A-Z_]+)"/) || [])[1];
+const dataKeyOf = (file) => (fs.readFileSync(path.join(ROOT, file), "utf8").match(/"?dataKey"?:\s*"([A-Z_]+)"/) || [])[1];
 const byId = (key, id) => DATA[key].find((e) => e.id === id);
 
 /* -------- data.js: integritate -------- */
@@ -222,7 +222,7 @@ function load(file, query = "", urlPath = file, pref = null) {
     const url = "https://gohd.ro/" + x.dir + "/" + x.e.id + "/";
     return !(h.includes('<link rel="canonical" href="' + url + '">') && h.includes('<meta property="og:url" content="' + url + '">') &&
       /<meta property="og:image" content="https:\/\/gohd\.ro\/images\/og\/[a-z0-9-]+\.jpg">/.test(h) &&
-      /<meta name="description" content="[^"]{20,}">/.test(h) && !/noindex/.test(h) && h.includes('id: "' + x.e.id + '"'));
+      /<meta name="description" content="[^"]{20,}">/.test(h) && !/noindex/.test(h) && h.includes('"id":"' + x.e.id + '"'));
   });
   ok(badHead.length === 0, "generate: canonical + og:url/og:image + description + id în config pe toate" + (badHead.length ? " — greșite: " + badHead.map((x) => x.file).join(", ") : ""));
   const badImg = all.filter((x) => {

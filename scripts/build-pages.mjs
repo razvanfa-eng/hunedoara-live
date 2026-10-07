@@ -389,9 +389,13 @@ let pages = 0;
 for (const key of Object.keys(SECTIONS)) {
   const sec = SECTIONS[key];
   const template = absolutize(read(sec.template));
-  const cfgMatch = template.match(/window\.DETAIL_CONFIG = (\{[^}]*\});/);
-  if (!cfgMatch) throw new Error(sec.template + ": lipsește window.DETAIL_CONFIG");
-  const cfg = vm.runInNewContext("(" + cfgMatch[1] + ")");
+  // configurația paginii e un bloc JSON (nu cod inline -> CSP fără 'unsafe-inline')
+  const cfgRe = /<script type="application\/json" id="detail-config">([^<]*)<\/script>/;
+  const cfgMatch = template.match(cfgRe);
+  if (!cfgMatch) throw new Error(sec.template + ': lipsește <script type="application/json" id="detail-config">');
+  const cfg = JSON.parse(cfgMatch[1]);
+  const cfgTag = (id) => '<script type="application/json" id="detail-config">' +
+    JSON.stringify(Object.assign({ id }, cfg)).replace(/</g, "\\u003c") + "</script>";
 
   for (const entry of RL.dataArray(key)) {
     const roPath = RL.entryUrl(key, entry.id, "ro");
@@ -435,7 +439,7 @@ for (const key of Object.keys(SECTIONS)) {
         html = html.replace('<section id="detail-related" class="section" hidden></section>',
           '<section id="detail-related" class="section">' + out.related + "</section>");
       }
-      html = html.replace("window.DETAIL_CONFIG = { ", "window.DETAIL_CONFIG = { id: " + JSON.stringify(entry.id) + ", ");
+      html = html.replace(cfgRe, () => cfgTag(entry.id));
       html = lang === "en" ? toEnglish(html, roPath) : markPaired(html, "ro", langPath(roPath, "en"));
 
       const dir = (lang === "en" ? EN_DIR + "/" : "") + sec.dir + "/" + entry.id;

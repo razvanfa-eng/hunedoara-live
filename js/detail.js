@@ -2,15 +2,14 @@
  * MOTOR GENERIC DE DETALIU / GENERIC DETAIL ENGINE
  * =====================================================================
  * Folosit de toate paginile de detaliu (destinație, oraș, natură,
- * activitate, moștenire, știre, afacere). Fiecare pagină setează un mic
- * obiect de configurare înainte de a încărca acest fișier:
+ * activitate, moștenire, știre, afacere). Fiecare pagină are un mic bloc
+ * JSON de configurare (date, nu cod — merge cu CSP fără 'unsafe-inline'):
  *
- *   window.DETAIL_CONFIG = {
- *     dataKey: "SITE_NATURE",
- *     backPage: "/natura.html",
- *     backLabelKey: "detail.back.natura",
- *     id: "pestera-bolii"        // opțional — altfel se citește ?id= din URL
- *   };
+ *   script type="application/json" id="detail-config", cu conținutul: {"dataKey":"SITE_NATURE",
+ *     "backPage":"/natura.html","backLabelKey":"detail.back.natura"}
+ *
+ *   + "id":"pestera-bolii" opțional — altfel se citește ?id= din URL.
+ *   (window.DETAIL_CONFIG = {...}, dacă e setat dintr-un fișier JS, are prioritate.)
  *
  * Paginile statice /<secțiune>/<id>/ sunt generate de scripts/build-pages.mjs
  * din șabloanele natura-loc.html, oras.html etc.: conținutul în română e deja
@@ -106,7 +105,7 @@
   var renderedLang = null;
 
   function render() {
-    var cfg = window.DETAIL_CONFIG;
+    var cfg = window.DETAIL_CONFIG || window.RL.pageConfig("detail-config");
     if (!cfg) return;
     var lang = window.I18N.lang;
     var id = cfg.id || window.RL.qs("id");

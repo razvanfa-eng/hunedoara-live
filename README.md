@@ -128,14 +128,14 @@ Toate cele 7 secțiuni de conținut au aceeași formă de înregistrare în `js/
 description + facts). O pagină de listare setează doar:
 
 ```html
-<script>window.LISTING_CONFIG = { dataKey: "SITE_NATURE" };</script>
+<script type="application/json" id="listing-config">{"dataKey":"SITE_NATURE"}</script>
 <script src="js/listing.js"></script>
 ```
 
 iar o pagină de detaliu:
 
 ```html
-<script>window.DETAIL_CONFIG = { dataKey: "SITE_NATURE", backPage: "/natura.html", backLabelKey: "detail.back.natura" };</script>
+<script type="application/json" id="detail-config">{"dataKey":"SITE_NATURE","backPage":"/natura.html","backLabelKey":"detail.back.natura"}</script>
 <script src="js/detail.js"></script>
 ```
 

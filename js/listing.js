@@ -2,14 +2,14 @@
  * MOTOR GENERIC DE LISTARE / GENERIC LISTING ENGINE
  * =====================================================================
  * Folosit de toate paginile de listare (locuri, activități, istorie,
- * orașe, știri, afaceri). Fiecare pagină setează un mic obiect de
- * configurare înainte de a încărca acest fișier:
+ * orașe, știri, afaceri). Fiecare pagină are un mic bloc JSON de
+ * configurare (date, nu cod — merge cu CSP fără 'unsafe-inline'):
  *
- *   window.LISTING_CONFIG = {
- *     dataKey: "SITE_PLACES",   // cheia din js/data.js
- *     (linkurile spre detalii: RL.entryUrl -> /<secțiune>/<id>/)
- *     sortByDateDesc: false     // true pentru Știri
- *   };
+ *   script type="application/json" id="listing-config", cu conținutul: {"dataKey":"SITE_NATURE"}
+ *
+ *   dataKey: cheia din js/data.js; "sortByDateDesc": true pentru Știri.
+ *   (linkurile spre detalii: RL.entryUrl -> /<secțiune>/<id>/)
+ *   (window.LISTING_CONFIG = {...}, dacă e setat dintr-un fișier JS, are prioritate.)
  *
  * Markup-ul așteptat pe pagină (vezi locuri.html):
  *   #f-search, #f-category, #f-area, #f-reset, #grid, #empty, #result-count
@@ -17,7 +17,7 @@
  */
 (function () {
   function render() {
-    var cfg = window.LISTING_CONFIG;
+    var cfg = window.LISTING_CONFIG || window.RL.pageConfig("listing-config");
     if (!cfg) return;
     var lang = window.I18N.lang;
     var all = window.RL.dataArray(cfg.dataKey);

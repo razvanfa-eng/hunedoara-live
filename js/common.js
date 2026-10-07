@@ -124,11 +124,21 @@
     return new URLSearchParams(window.location.search).get(name);
   }
 
+  /* Configurația paginii (motorul de listare / detaliu) stă într-un bloc
+   * script type="application/json" (id-ul dat), cu un obiect JSON: sunt doar date, nu cod,
+   * deci nu e nevoie de 'unsafe-inline' în Content-Security-Policy (netlify.toml). */
+  function pageConfig(id) {
+    if (typeof document === "undefined" || !document.getElementById) return null;
+    var el = document.getElementById(id);
+    if (!el) return null;
+    try { return JSON.parse(el.textContent); } catch (e) { return null; }
+  }
+
   window.RL = {
     wazeUrl: wazeUrl, gmapsDirUrl: gmapsDirUrl, gmapsViewUrl: gmapsViewUrl,
     dataArray: dataArray, entryById: entryById,
     loc: loc, categoryLabel: categoryLabel, esc: esc, starsHtml: starsHtml, imgError: imgError,
-    qs: qs,
+    qs: qs, pageConfig: pageConfig,
     SECTIONS: SECTIONS, entryUrl: entryUrl, pageUrl: pageUrl,
     absUrl: absUrl, imgInfo: imgInfo, imgVariant: imgVariant, imgHtml: imgHtml
   };
