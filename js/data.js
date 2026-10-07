@@ -5605,7 +5605,8 @@ window.SITE_BUSINESSES = [
     area: "Petrila",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/conacul-radacinilor.jpg"],
+    photoCredit: { author: "Conacul Rădăcinilor", license: "material promoțional al afacerii", source: "https://www.conaculradacinilor.ro", sourceLabel: "conaculradacinilor.ro" },
     ro: {
       tagline: "Complex hotelier de tip conac, deschis în 2023 în Cheile Jietului, cu spa, restaurant și drumeții ghidate.",
       description: [
@@ -5744,7 +5745,8 @@ window.SITE_BUSINESSES = [
     area: "Deva",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/casa-rustica-deva.jpg"],
+    photoCredit: { author: "Casa Rustică", license: "material promoțional al afacerii", source: "https://casarusticadeva.ro", sourceLabel: "casarusticadeva.ro" },
     ro: {
       tagline: "Bistro-pizzerie cu specific italian, vizavi de centrul comercial Ulpia din Deva.",
       description: [
@@ -5847,7 +5849,8 @@ window.SITE_BUSINESSES = [
     area: "Hunedoara",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/eden-by-werk-hunedoara.jpg"],
+    photoCredit: { author: "WERK Hotel & Spa", license: "material promoțional al afacerii", source: "https://hotelwerk.ro", sourceLabel: "hotelwerk.ro" },
     ro: {
       tagline: "Restaurant modern cu vedere spre Castelul Corvinilor, în cadrul complexului Werk Hotel & Spa.",
       description: [
@@ -5914,7 +5917,8 @@ window.SITE_BUSINESSES = [
     area: "Petroșani",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/complex-keops-petrosani.jpg"],
+    photoCredit: { author: "Complex Keops", license: "material promoțional al afacerii", source: "https://www.complexkeops.ro", sourceLabel: "complexkeops.ro" },
     ro: {
       tagline: "Restaurant și complex de agrement din 2005, cu centru ecvestru propriu, în Petroșani.",
       description: [
@@ -6121,7 +6125,8 @@ window.SITE_BUSINESSES = [
     area: "Brad",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-ana-maria-brad.jpg"],
+    photoCredit: { author: "Pensiunea Ana Maria", license: "material promoțional al afacerii", source: "https://pensiuneaanamaria.metro.rest", sourceLabel: "pensiuneaanamaria.metro.rest" },
     ro: {
       tagline: "Pensiune de 3 stele cu restaurant și 19 camere, pe strada Avram Iancu din Brad.",
       description: [
@@ -6292,7 +6297,8 @@ window.SITE_BUSINESSES = [
     coords: [45.390162, 23.4377853],
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/hotel-rusu-parang.jpg"],
+    photoCredit: { author: "Hotel Rusu", license: "material promoțional al afacerii", source: "https://www.hotelrusu.ro", sourceLabel: "hotelrusu.ro" },
     ro: {
       tagline: "Hotel de altitudine (1.168 m) în stațiunea Parâng, la cca. 10 km de Petroșani.",
       description: [
@@ -6391,7 +6397,8 @@ window.SITE_BUSINESSES = [
     area: "Petroșani",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/complex-turistic-valea-mosului-petrosani.jpg"],
+    photoCredit: { author: "Complex Valea Moșului", license: "material promoțional al afacerii", source: "https://www.valeamosului.ro", sourceLabel: "valeamosului.ro" },
     ro: {
       tagline: "Complex turistic în mijlocul naturii, la poalele Parângului.",
       description: [
