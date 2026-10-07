@@ -318,7 +318,8 @@ window.SITE_NATURE = [
     category: { ro: "Chei", en: "Gorge" },
     area: "Bănița",
     hasReviews: true,
-    images: ["images/placeholder.svg"],
+    images: ["images/cheile-banitei.jpg"],
+    photoCredit: { author: "Muzeul Civilizației Dacice și Romane Deva", license: "material de promovare al instituției", source: "https://www.facebook.com/photo/?fbid=1493112846164749", sourceLabel: "Facebook" },
     ro: {
       tagline: "Defileu calcaros de cca. 300 m, cu pereți de 10-15 m, traversat de DN66 și de calea ferată Simeria–Petroșani.",
       description: [
@@ -521,7 +522,8 @@ window.SITE_NATURE = [
     area: "Vâlcan",
     hasReviews: true,
     season: "vara",
-    images: ["images/placeholder.svg"],
+    images: ["images/cheile-buta.jpg"],
+    photoCredit: { author: "Complexul Turistic Cheile Butii", license: "material promoțional al afacerii", source: "https://www.facebook.com/profile.php?id=100057251688574", sourceLabel: "Facebook" },
     ro: {
       tagline: "Chei calcaroase spectaculoase, printre cele mai frumoase arii protejate din Munții Vâlcan.",
       description: [
@@ -1118,7 +1120,8 @@ window.SITE_ACTIVITIES = [
     area: "Petroșani",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/bazin-inot-petrosani.jpg"],
+    photoCredit: { author: "Bazin Înot Didactic „Iancu Avram” Petroșani", license: "material de promovare al instituției", source: "https://www.facebook.com/BazinInotDidacticIancuAvramPetrosani", sourceLabel: "Facebook" },
     ro: {
       tagline: "Bazin semiolimpic acoperit, redeschis în 2025 după modernizare, în cartierul Aeroport.",
       description: [
@@ -1186,7 +1189,8 @@ window.SITE_ACTIVITIES = [
     area: "Vulcan",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/bazin-inot-vulcan.jpg"],
+    photoCredit: { author: "Bazin de Înot Didactic Vulcan", license: "material de promovare al instituției", source: "https://www.facebook.com/profile.php?id=100085120656982", sourceLabel: "Facebook" },
     ro: {
       tagline: "Bazin semiolimpic în centrul orașului, între Minimax și biserica de lângă Primărie.",
       description: [
@@ -1220,7 +1224,8 @@ window.SITE_ACTIVITIES = [
     area: "Lupeni",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/bazin-inot-lupeni.jpg"],
+    photoCredit: { author: "Bazinul de Înot Didactic Lupeni", license: "material de promovare al instituției", source: "https://www.facebook.com/profile.php?id=61585943950211", sourceLabel: "Facebook" },
     ro: {
       tagline: "Cel mai nou bazin didactic din Valea Jiului, inaugurat în decembrie 2025 la poalele Străjii.",
       description: [
@@ -1291,7 +1296,8 @@ window.SITE_ACTIVITIES = [
     area: "Aninoasa",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/traseul-ruinelor-aninoasa.jpg"],
+    photoCredit: { author: "Organizația de Management al Destinației Valea Jiului", license: "material de promovare al instituției", source: "https://www.facebook.com/profile.php?id=61579481461946", sourceLabel: "Facebook" },
     ro: {
       tagline: "Traseu de 12 km de la Vulcan la Aninoasa, pe Valea Ungurului, cu mănăstire, cascadă și ruine.",
       description: [
@@ -1668,7 +1674,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Vâlcan",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/traseu-cheile-butii-cabana-buta.jpg"],
+    photoCredit: { author: "Complexul Turistic Cheile Butii", license: "material promoțional al afacerii", source: "https://www.facebook.com/profile.php?id=100057251688574", sourceLabel: "Facebook" },
     ro: {
       tagline: "Traseu lung prin Munții Vâlcan, de la Cheile Buții la Cabana Buta, peste vârfurile Pleșa și Piule.",
       description: [
@@ -2321,7 +2328,8 @@ window.SITE_ACTIVITIES = [
     coords: [46.1833, 22.6000],
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/baile-vata-de-jos.jpg"],
+    photoCredit: { author: "Complexul Vața Băi", license: "material promoțional al afacerii", source: "https://www.facebook.com/VataBai", sourceLabel: "Facebook" },
     ro: {
       tagline: "Stațiune cu ape termale de 36–38 °C în valea Crișului Alb, redeschisă după mai bine de un deceniu de abandon.",
       description: [
@@ -5385,7 +5393,8 @@ window.SITE_NEWS = [
     area: "Bănița",
     date: "2026-08-01",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/traseu-tematic-cetatea-banita-2026.jpg"],
+    photoCredit: { author: "Muzeul Civilizației Dacice și Romane Deva", license: "material de promovare al instituției", source: "https://www.facebook.com/photo/?fbid=1493113089498058", sourceLabel: "Facebook" },
     ro: {
       tagline: "Din 1 august 2026, cetatea UNESCO de lângă Cheile Băniței are un traseu marcat și amenajat: 570 m, circa 40 de minute la urcare.",
       description: [
@@ -5643,7 +5652,8 @@ window.SITE_BUSINESSES = [
     area: "Lupeni",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/casa-lupeni.jpg"],
+    photoCredit: { author: "Casa Lupeni", license: "material promoțional al afacerii", source: "https://www.booking.com/hotel/ro/casa-lupeni-lupeni1.html", sourceLabel: "Booking.com" },
     ro: {
       tagline: "Pensiune mică, cu 6 camere și jacuzzi în aer liber, pe strada Bărbăteni din Lupeni.",
       description: [
@@ -6607,7 +6617,8 @@ window.SITE_BUSINESSES = [
     area: "Parâng",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-izvorul-maleii-petrila.jpg"],
+    photoCredit: { author: "Izvorul Maleii", license: "material promoțional al afacerii", source: "https://www.booking.com/hotel/ro/izvorul-maleii.html", sourceLabel: "Booking.com" },
     ro: {
       tagline: "Pensiune bine cotată în stațiunea Parâng, la 1.100 m, la circa 150 m de telescaun.",
       description: [
@@ -6636,7 +6647,8 @@ window.SITE_BUSINESSES = [
     area: "Jileț, Petrila",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/cabana-brazihouse-petrila.jpg"],
+    photoCredit: { author: "BraziHouse", license: "material promoțional al afacerii", source: "https://www.booking.com/hotel/ro/brazihouse.html", sourceLabel: "Booking.com" },
     ro: {
       tagline: "Cabană de munte lângă Munții Parâng, în zona Jileț a Petrilei.",
       description: [
