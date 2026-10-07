@@ -353,7 +353,7 @@ function load(file, query = "", urlPath = file, pref = null) {
   });
   ok(badText.length === 0, "en: <title>, description, conținut și JSON-LD (inLanguage, breadcrumb /en/) în engleză pe toate intrările" + (badText.length ? " — greșite: " + badText.slice(0, 5).map((x) => x.ro).join(", ") : ""));
   const enHome = readF("en/index.html");
-  ok(/<meta property="og:title" content="Hunedoara Live — the digital guide/.test(enHome) && /"inLanguage":"en"/.test(enHome) &&
+  ok(/<meta property="og:title" content="Hunedoara Live — travel guide to Hunedoara County/.test(enHome) && /"inLanguage":"en"/.test(enHome) &&
     /<h2 id="highlights-h" data-i18n="home.highlights.heading">[A-Za-z ]+<\/h2>/.test(enHome), "en/index.html: titlu OG, JSON-LD și textele statice în engleză");
 
   // linkurile interne din paginile EN duc spre paginile EN (în afară de comutatorul de limbă)

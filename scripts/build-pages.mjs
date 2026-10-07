@@ -318,7 +318,7 @@ const SECTION_META = {
  * (+ hreflang, dacă are și pereche); sitemap: prioritatea în sitemap.xml. */
 const hasOwnDesc = (html) => /<meta name="description"/.test(withoutSeo(html));
 const TOP_PAGES = [
-  { file: "index.html", title: (l) => SITE_NAME + " — " + t("footer.tagline", l), desc: (l) => t("page.meta.home", l), image: DEFAULT_IMAGE, sitemap: "1.0", pair: true, canonical: true },
+  { file: "index.html", title: (l) => t("page.title.home", l), desc: (l) => t("page.meta.home", l), image: DEFAULT_IMAGE, sitemap: "1.0", pair: true, canonical: true },
   ...Object.keys(SECTIONS).map((k) => ({
     file: SECTIONS[k].listing,
     title: (l) => t("page.title." + SECTION_META[k].key, l), desc: (l) => t("page.meta." + SECTION_META[k].key, l),
