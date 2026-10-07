@@ -555,7 +555,8 @@ window.SITE_NATURE = [
     area: "Uricani",
     hasReviews: true,
     season: "vara",
-    images: ["images/placeholder.svg"],
+    images: ["images/valea-iarului.jpg"],
+    photoCredit: { author: "Camping Valea Iarului", license: "material promoțional al afacerii", source: "https://www.facebook.com/profile.php?id=100069745995452", sourceLabel: "Facebook" },
     ro: {
       tagline: "Vale montană retrasă lângă Câmpușel, punct de plecare pentru drumeții și camping montan.",
       description: [
@@ -1048,7 +1049,8 @@ window.SITE_ACTIVITIES = [
     area: "Vâlcan",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/sania-straja.jpg"],
+    photoCredit: { author: "Ski Straja", license: "material promoțional al afacerii", source: "https://skistraja.ro/baloo-coaster/", sourceLabel: "skistraja.ro" },
     ro: {
       tagline: "Prima sanie pe șine din Hunedoara, o coborâre cu adrenalină prin pădurea de la Straja.",
       description: [
@@ -5712,7 +5714,8 @@ window.SITE_BUSINESSES = [
     area: "Deva",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/cocosul-de-aur-deva.jpg"],
+    photoCredit: { author: "Cocoșul de Aur Deva", license: "material promoțional al afacerii", source: "https://www.facebook.com/cocosuldeaurdeva", sourceLabel: "Facebook" },
     ro: {
       tagline: "Restaurant cu specific românesc, lipit de Sinagoga din centrul Devei.",
       description: [
@@ -6021,7 +6024,8 @@ window.SITE_BUSINESSES = [
     area: "Orăștie",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-jorja-orastie.jpg"],
+    photoCredit: { author: "Pensiunea Jorja", license: "material promoțional al afacerii", source: "https://www.facebook.com/pensiuneajorja1", sourceLabel: "Facebook" },
     ro: {
       tagline: "Pensiune cu 14 camere în centrul Orăștiei, la 350 m de un magazin Lidl.",
       description: [
@@ -6056,7 +6060,8 @@ window.SITE_BUSINESSES = [
     area: "Orăștie",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/bistro-merinde-orastie.jpg"],
+    photoCredit: { author: "Bistro Merinde", license: "material promoțional al afacerii", source: "https://www.facebook.com/bistromerinde", sourceLabel: "Facebook" },
     ro: {
       tagline: "Bistro cu meniu românesc și internațional, într-una dintre casele vechi din Orăștie.",
       description: [
@@ -6161,7 +6166,8 @@ window.SITE_BUSINESSES = [
     area: "Simeria",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-phoenix-simeria.jpg"],
+    photoCredit: { author: "Pensiunea Phoenix", license: "material promoțional al afacerii", source: "https://www.facebook.com/profile.php?id=100051468775952", sourceLabel: "Facebook" },
     ro: {
       tagline: "Pensiune cu 8 camere duble, la marginea Simeriei, pe drumul spre Deva.",
       description: [
@@ -6194,7 +6200,8 @@ window.SITE_BUSINESSES = [
     area: "Vulcan",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/atrium-hotel-vulcan.jpg"],
+    photoCredit: { author: "Atrium Vulcan", license: "material promoțional al afacerii", source: "https://www.facebook.com/profile.php?id=61587211383992", sourceLabel: "Facebook" },
     ro: {
       tagline: "Hotel cu design modern, poziționat între stațiunile Straja și Parâng, în Vulcan.",
       description: [
@@ -6229,7 +6236,8 @@ window.SITE_BUSINESSES = [
     area: "Vulcan",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/heaven-inn-vulcan.jpg"],
+    photoCredit: { author: "Heaven INN", license: "material promoțional al afacerii", source: "https://www.facebook.com/BMDselect", sourceLabel: "Facebook" },
     ro: {
       tagline: "Restaurant deschis în 2022, cu bucătărie românească și internațională, în centrul Vulcanului.",
       description: [
@@ -6425,7 +6433,8 @@ window.SITE_BUSINESSES = [
     area: "Vulcan",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/cabana-la-cassian-vulcan.jpg"],
+    photoCredit: { author: "Cabana La Cassian", license: "material promoțional al afacerii", source: "https://www.facebook.com/CabanaLaCassian", sourceLabel: "Facebook" },
     ro: {
       tagline: "Cabană pe strada Decebal, în orașul Vulcan.",
       description: [
@@ -6452,7 +6461,8 @@ window.SITE_BUSINESSES = [
     area: "Vulcan",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-paradisul-verde-vulcan.jpg"],
+    photoCredit: { author: "Paradisul Verde", license: "material promoțional al afacerii", source: "https://www.facebook.com/paradisulverde.hd", sourceLabel: "Facebook" },
     ro: {
       tagline: "Pensiune pe strada Socănească, în Vulcan, la cca. 15 km de Straja.",
       description: [
@@ -6479,7 +6489,8 @@ window.SITE_BUSINESSES = [
     area: "Vulcan",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/cabana-casa-ozon-vulcan.jpg"],
+    photoCredit: { author: "Casa Ozon", license: "material promoțional al afacerii", source: "https://www.facebook.com/casaozon.ozon", sourceLabel: "Facebook" },
     ro: {
       tagline: "Cabană pe strada Dealul Babii, în Vulcan.",
       description: [
@@ -6506,7 +6517,8 @@ window.SITE_BUSINESSES = [
     area: "Lupeni",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-dor-de-munte-lupeni.jpg"],
+    photoCredit: { author: "Pensiunea Dor de Munte Straja", license: "material promoțional al afacerii", source: "https://www.facebook.com/DordeMunteStraja", sourceLabel: "Facebook" },
     ro: {
       tagline: "Pensiune renovată recent în Lupeni, lângă un parc de aventură.",
       description: [
@@ -6537,7 +6549,8 @@ window.SITE_BUSINESSES = [
     area: "Munții Vâlcan, Lupeni",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/complexul-montana-lupeni.jpg"],
+    photoCredit: { author: "Complex Montana - Straja", license: "material promoțional al afacerii", source: "https://www.facebook.com/Cabana.Montana", sourceLabel: "Facebook" },
     ro: {
       tagline: "Complex 3 stele în Munții Vâlcan, la 1.367 m altitudine.",
       description: [
@@ -6564,7 +6577,8 @@ window.SITE_BUSINESSES = [
     area: "Lupeni",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/vila-casa-cu-tei-lupeni.jpg"],
+    photoCredit: { author: "Vila Casa cu Tei", license: "material promoțional al afacerii", source: "https://www.facebook.com/profile.php?id=61553313236731", sourceLabel: "Facebook" },
     ro: {
       tagline: "Vilă cu piscină, pe strada Calea Brăii, în Lupeni.",
       description: [
@@ -6649,7 +6663,8 @@ window.SITE_BUSINESSES = [
     area: "Taia, Petrila",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/cabana-taia-parang-sureanu-petrila.jpg"],
+    photoCredit: { author: "Cabana Taia Parâng-Șureanu", license: "material promoțional al afacerii", source: "https://www.facebook.com/profile.php?id=100075600756903", sourceLabel: "Facebook" },
     ro: {
       tagline: "Cabană montană cu șemineu, pe strada Taia, în Petrila.",
       description: [
