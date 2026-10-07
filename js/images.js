@@ -4,6 +4,7 @@
  * images/og/<nume>.jpg (1200×630, pentru og:image). */
 window.SITE_IMAGES = {
   "images/aleea-gimnastelor-deva.jpg": [1600, 900],
+  "images/aninoasa-exploatarea-miniera.jpg": [523, 700],
   "images/biserica-criscior.jpg": [1920, 1440],
   "images/biserica-santamaria-orlea.jpg": [1600, 1066],
   "images/biserica-strei.jpg": [1600, 1067],

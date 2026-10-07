@@ -3350,7 +3350,8 @@ window.SITE_TOWNS = [
     coords: [45.4111, 23.3139],
     hasReviews: false,
     relatedAreas: ["Aninoasa"],
-    images: ["images/placeholder.svg"],
+    images: ["images/aninoasa-exploatarea-miniera.jpg"],
+    photoCredit: { author: "autor necunoscut (Muzeul Național de Istorie a României)", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Exploatarea_miniera_Aninoasa.JPG" },
     ro: {
       tagline: "Cel mai mic oraș al județului, crescut în jurul minei de cărbune, între Petroșani și Vulcan.",
       description: [
