@@ -8,6 +8,119 @@
 [functions]
   node_bundler = "esbuild"
 
+# =====================================================================
+# SECURITATE — antete HTTP
+# =====================================================================
+# Content-Security-Policy — sursele permise (inventariate din HTML/JS/CSS):
+#  - script: doar fișierele proprii (/js/...). Configurația paginilor e în blocuri
+#    <script type="application/json"> și JSON-LD (application/ld+json) — date, nu cod,
+#    deci nu cer 'unsafe-inline'. Singurele handlere inline permise, prin hash
+#    ('unsafe-hashes'): onerror="RL.imgError(this)" (imagini), onsubmit="return false;"
+#    (newsletter, index) și onclick="location.reload()" (offline.html).
+#    DACĂ SCHIMBI textul unuia dintre ele, recalculează hash-ul:
+#      printf '%s' 'RL.imgError(this)' | openssl dgst -sha256 -binary | base64
+#    challenges.cloudflare.com = captcha Turnstile (doar cu recenziile „remote”).
+#  - style: css/style.css + Google Fonts; 'unsafe-inline' doar pentru stiluri
+#    (atributele style="..." din pagini și fundalurile tile-urilor din home.js).
+#  - font: fonts.gstatic.com. img: proprii + data:/blob: (poza recenziei în modul
+#    local) + Supabase Storage (pozele recenziilor în modul „remote”).
+#  - connect: proprii (service worker, funcția de recenzii) + Supabase (citirea recenziilor).
+#  - form-action 'self': formularul de contact (Netlify Forms -> /multumim.html).
+#  - frame-ancestors 'none': site-ul nu poate fi încadrat în alt site (clickjacking).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-hashes' 'sha256-2ne4wUUWpzMxLwoazH2X92gegM2NRhGZ5oB3r3XyFgE=' 'sha256-2rvfFrggTCtyF5WOiTri1gDS8Boibj4Njn0e+VCBmDI=' 'sha256-9gOBGqEQINNDuds+tkXbNzih6klbz+KeCyxEj4KRLeM=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' https://*.supabase.co; frame-src https://challenges.cloudflare.com; worker-src 'self'; manifest-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    Cross-Origin-Opener-Policy = "same-origin"
+
+# Service worker-ul: mereu verificat la server (altfel actualizările site-ului întârzie).
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json; charset=utf-8"
+
+# =====================================================================
+# SECURITATE — fișiere care NU sunt parte din site
+# =====================================================================
+# Site-ul se publică din rădăcina repo-ului (publish = "."), deci fără regulile de
+# mai jos ar fi servite și sursele/uneltele proiectului. Le răspundem cu 404
+# (force = true: chiar dacă fișierul există). Primele în listă = prioritare.
+[[redirects]]
+  from = "/package.json"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/package-lock.json"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/README.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/SETUP.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/serve.js"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/scripts/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/test/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/supabase/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/node_modules/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
 # URL-uri vechi ale paginilor de detaliu (pagina.html?id=X) -> pagina statică
 # /<secțiune>/X/ generată de scripts/build-pages.mjs. 301 permanent.
 # force = true: șablonul (ex. oras.html) există ca fișier, altfel Netlify l-ar servi

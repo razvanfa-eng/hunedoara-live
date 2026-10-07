@@ -549,5 +549,34 @@ function load(file, query = "", urlPath = file, pref = null) {
   ok(r5 && (await r5.text()) === "net:/images/placeholder.svg", "pwa: imagine lipsă offline -> placeholder");
 }
 
+/* -------- securitate: CSP (netlify.toml) vs. paginile reale -------- */
+{
+  const { createHash } = await import("crypto");
+  const toml = fs.readFileSync(path.join(ROOT, "netlify.toml"), "utf8");
+  const csp = (toml.match(/Content-Security-Policy = "([^"]+)"/) || [])[1] || "";
+  const scriptSrc = (csp.match(/script-src ([^;]+)/) || [])[1] || "";
+  ok(!!csp && !/'unsafe-inline'|'unsafe-eval'/.test(scriptSrc), "csp: script-src fără 'unsafe-inline' / 'unsafe-eval'");
+  const htmlFiles = [];
+  (function walk(dir) {
+    for (const f of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (f.name === "node_modules" || f.name.startsWith(".")) continue;
+      const p = path.join(dir, f.name);
+      if (f.isDirectory()) walk(p); else if (f.name.endsWith(".html")) htmlFiles.push(p);
+    }
+  })(ROOT);
+  // <script> fără src și fără un type de date (JSON / JSON-LD) = cod inline -> blocat de CSP
+  const inline = htmlFiles.filter((f) => /<script(?![^>]*\bsrc=)(?![^>]*type="application\/(?:ld\+)?json")[^>]*>/.test(fs.readFileSync(f, "utf8")));
+  ok(inline.length === 0, "csp: nicio pagină nu are <script> inline executabil" + (inline.length ? " — " + inline.slice(0, 5).map((f) => path.relative(ROOT, f)).join(", ") : ""));
+  // fiecare handler inline (onerror=..., onclick=...) din pagini și din JS are hash-ul în CSP
+  const sources = [...htmlFiles, ...fs.readdirSync(path.join(ROOT, "js")).map((f) => path.join(ROOT, "js", f))];
+  const handlers = new Set();
+  for (const f of sources) for (const m of fs.readFileSync(f, "utf8").matchAll(/\son[a-z]+="([^"]*)"/g)) handlers.add(m[1]);
+  const missing = [...handlers].filter((h) => !scriptSrc.includes("'sha256-" + createHash("sha256").update(h).digest("base64") + "'"));
+  ok(handlers.size > 0 && missing.length === 0, "csp: hash pentru fiecare handler inline (" + handlers.size + ")" + (missing.length ? " — lipsesc: " + missing.join(" | ") : ""));
+  const blocked = ["/package.json", "/README.md", "/SETUP.md", "/serve.js", "/scripts/*", "/test/*", "/supabase/*", "/netlify/*"];
+  const notBlocked = blocked.filter((p) => !new RegExp('from = "' + p.replace(/[.*]/g, "\\$&") + '"\\s+to = "/404.html"\\s+status = 404\\s+force = true').test(toml));
+  ok(notBlocked.length === 0, "securitate: fișierele proiectului (surse, teste, configurări) răspund 404" + (notBlocked.length ? " — lipsesc: " + notBlocked.join(", ") : ""));
+}
+
 console.log(`\n${pass} pass, ${fail} fail`);
 process.exit(fail ? 1 : 0);
