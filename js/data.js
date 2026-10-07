@@ -55,9 +55,10 @@ window.SITE_DESTINATIONS = [
       ]
     },
     en: {
+      name: "Jiu Valley",
       tagline: "The Jiu Valley coal basin — six mining towns at the foot of the Parâng, Retezat and Vâlcan massifs.",
       description: [
-        "Valea Jiului comprises six towns — Petroșani, Petrila, Vulcan, Lupeni, Uricani and Aninoasa — built around coal mining, in a valley surrounded by three mountain massifs.",
+        "The Jiu Valley comprises six towns — Petroșani, Petrila, Vulcan, Lupeni, Uricani and Aninoasa — built around coal mining, in a valley surrounded by three mountain massifs.",
         "Today the area combines industrial heritage (mines, museums, former workers' colonies) with direct access to mountain trails and the Parâng resort, a few kilometres from Petroșani."
       ],
       facts: [
@@ -87,6 +88,7 @@ window.SITE_DESTINATIONS = [
       ]
     },
     en: {
+      name: "Hațeg Country",
       tagline: "The land of dwarf dinosaurs, stone churches and Romania's oldest national park.",
       description: [
         "Țara Hațegului is the depression in the county's south-west, known worldwide for the dwarf dinosaur fossils discovered here — today protected as the Hațeg Country UNESCO Global Geopark (part of the global network since 2005, UNESCO Global Geopark since 2015).",
@@ -119,6 +121,7 @@ window.SITE_DESTINATIONS = [
       ]
     },
     en: {
+      name: "Dacian Fortresses Area",
       tagline: "The Orăștie Mountains — the fortified core of the Dacian Kingdom, UNESCO heritage since 1999.",
       description: [
         "The Orăștie Mountains hold five of the six Dacian fortresses on the UNESCO World Heritage list (the sixth, Căpâlna, is in Alba county): Sarmizegetusa Regia — the capital of Decebalus's kingdom —, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie and Bănița.",
@@ -151,6 +154,7 @@ window.SITE_DESTINATIONS = [
       ]
     },
     en: {
+      name: "Mureș Corridor",
       tagline: "The Deva–Simeria–Orăștie corridor along the Mureș river — towns, fortresses and Romania's oldest dendrological park.",
       description: [
         "The Mureș corridor links the county's main towns and is home to the Simeria Dendrological Park, opened in the mid-18th century — the oldest and one of the richest dendrological collections in Romania, with over 2,100 tree and shrub taxa.",
@@ -184,6 +188,7 @@ window.SITE_DESTINATIONS = [
       ]
     },
     en: {
+      name: "Metaliferi Mountains",
       tagline: "The Hunedoara side of the \"gold quadrilateral\" — Brad, Săcărâmb and Crișcior, gold mining without interruption from Roman times to the 20th century.",
       description: [
         "The Metaliferi Mountains, in the county's north-west, hold the Hunedoara portion of the \"gold quadrilateral\" — one of Europe's richest gold-bearing regions. Brad is the area's historic centre, with its own Gold Museum; nearby lie Ruda-Brad, with a Roman mining gallery from the 2nd-3rd centuries AD, and Crișcior, with a 14th-15th century church.",
@@ -219,16 +224,17 @@ window.SITE_DESTINATIONS = [
       ]
     },
     en: {
+      name: "Pădureni Land",
       tagline: "An archaic ethno-folkloric zone on the Cerna Hunedoreană valley — 40 villages scattered across hilltops, an iron-making tradition and folk costume still worn at festivals.",
       description: [
         "Ținutul Pădurenilor (\"the Foresters' Land\") stretches along the Cerna Hunedoreană valley, bordered by the Mureș corridor to the north, Țara Hațegului to the south and the Poiana Ruscă Mountains to the west — an \"ethnographic island\" of about 40 villages and hamlets, most perched on deforested hilltops between 600 and 1,100 m altitude. Ghelari, the area's largest village, gave its name to the region's iron-ore mining tradition, smelted until 1924 at the nearby Govăjdia furnace — Europe's first continuous-flow blast furnace.",
-        "Near Teliucu Inferior lies Lacul Cinciș, a reservoir built on the Cerna in the early 1960s, with beaches and fishing. The area remains known for the traditional folk costume of the pădureni, still worn at festivals and events."
+        "Near Teliucu Inferior lies Lake Cinciș, a reservoir built on the Cerna in the early 1960s, with beaches and fishing. The area remains known for the traditional folk costume of the pădureni, still worn at festivals and events."
       ],
       facts: [
         { label: "Villages included", value: "Ghelari, Govăjdia, Teliucu Inferior and about 40 villages/hamlets" },
         { label: "Bordered by", value: "Mureș corridor (north), Țara Hațegului (south), Poiana Ruscă Mountains (west)" },
         { label: "Industrial landmark", value: "Govăjdia furnace (1806-1810)" },
-        { label: "Lake", value: "Lacul Cinciș (~867 ha)" }
+        { label: "Lake", value: "Lake Cinciș (~867 ha)" }
       ]
     }
   }
@@ -257,14 +263,15 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Retezat National Park",
       tagline: "Romania's oldest national park (1935), with over 80 glacial lakes.",
       description: [
-        "Retezat was declared a national park in 1935, the oldest in the country. It holds Bucura Lake — Romania's largest glacial lake (2,030 m altitude) — and Peleaga Peak (2,509 m), the massif's highest point.",
+        "Retezat was declared a national park in 1935, the oldest in the country. It holds Lake Bucura — Romania's largest glacial lake (2,030 m altitude) — and Peleaga Peak (2,509 m), the massif's highest point.",
         "The core area is a strict scientific reserve; the ridge trails and those leading to the glacial lakes are among the most spectacular in the Carpathians."
       ],
       facts: [
         { label: "Established", value: "1935 (Romania's oldest national park)" },
-        { label: "Largest lake", value: "Bucura Lake, 2,030 m altitude" },
+        { label: "Largest lake", value: "Lake Bucura, 2,030 m altitude" },
         { label: "Highest peak", value: "Peleaga Peak, 2,509 m" }
       ]
     }
@@ -292,6 +299,7 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Bolii Cave",
       tagline: "A 455 m river cave with electric lighting, on the edge of the Grădiștea Muncelului-Cioclovina Natural Park.",
       description: [
         "Bolii Cave is walked through following the Galbina creek, which exits through an impressive 20 m wide, 10 m high portal. It's one of the few caves in the county that can be fully walked along its watercourse.",
@@ -323,9 +331,10 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Bănița Gorge",
       tagline: "A limestone gorge about 300 m long, with 10-15 m walls, crossed by the DN66 road and the Simeria–Petroșani railway.",
       description: [
-        "Cheile Băniței is a limestone gorge on the road between Petroșani and the rest of the county, right by Bolii Cave. The steep walls and the road/railway winding through the gorge make it one of the county's most spectacular routes, even seen from a car or train.",
+        "The Bănița Gorge is a limestone gorge on the road between Petroșani and the rest of the county, right by Bolii Cave. The steep walls and the road/railway winding through the gorge make it one of the county's most spectacular routes, even seen from a car or train.",
         "On foot, the route through the gorge partly follows the riverbed — proper footwear is recommended, as the water usually reaches ankle height, sometimes knee height."
       ],
       facts: [
@@ -355,9 +364,10 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Parângul Mare Peak",
       tagline: "2,519 m — the highest peak in the Parâng Mountains, reachable by the Petroșani chairlift plus a ridge trail.",
       description: [
-        "Parângul Mare is the roof of the Parâng massif and a viewpoint over Retezat, Șureanu and Valea Jiului. The chairlift from Petroșani goes up to the Parâng plateau, from where the ridge trail to the peak starts."
+        "Parângul Mare is the roof of the Parâng massif and a viewpoint over Retezat, Șureanu and the Jiu Valley. The chairlift from Petroșani goes up to the Parâng plateau, from where the ridge trail to the peak starts."
       ],
       facts: [
         { label: "Altitude", value: "2,519 m" },
@@ -387,6 +397,7 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Two-Coloured Forest",
       tagline: "A hillside that looks cut in two colours, at the Tăia Gorges near Petrila — evergreen spruce on one side, golden beech on the other.",
       description: [
         "Pădurea Bicoloră (the \"Two-Coloured Forest\") formed nearly half a century ago, when one half of the slope was cleared and replanted with spruce, while the other half stayed natural beech forest. The line between the two kinds of vegetation stayed almost perfectly straight, from the hilltop down to the valley.",
@@ -421,6 +432,7 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Vulcan Pass",
       tagline: "A historic 1,621 m pass linking the Jiu Valley to Oltenia.",
       description: [
         "Vulcan Pass is a mountain pass at 1,621 m altitude, in the eastern Vâlcan Mountains, on the border between Hunedoara and Gorj counties. It connects the Petroșani Depression with the Târgu Jiu – Câmpu Mare sub-Carpathian depression, via county road DJ664 (Vulcan–Schela).",
@@ -455,15 +467,16 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Jieț Gorge – Groapa Seacă",
       tagline: "Wild gorges and the springs of the Jieț, a natural gateway into the Parâng massif.",
       description: [
-        "The Cheile Jiețului reserve is a nationally protected natural area (IUCN category IV), covering 10 ha, on the right slope of the Parâng Mountains, within the territory of Petrila town. Here the Jieț river has carved steep, narrow gorges with lichen-covered rock walls and mountain forest vegetation; the reserve was established in 1995 and officially declared in 2000.",
-        "Further upstream, Cabana Groapa Seacă (~1,220 m) is a well-known starting point for trails to Parângul Mare Peak, Lake Mija and other landmarks in the massif, one of the classic access gates into the Hunedoara side of the Parâng Mountains."
+        "The Jieț Gorge reserve is a nationally protected natural area (IUCN category IV), covering 10 ha, on the right slope of the Parâng Mountains, within the territory of Petrila town. Here the Jieț river has carved steep, narrow gorges with lichen-covered rock walls and mountain forest vegetation; the reserve was established in 1995 and officially declared in 2000.",
+        "Further upstream, Groapa Seacă Hut (~1,220 m) is a well-known starting point for trails to Parângul Mare Peak, Lake Mija and other landmarks in the massif, one of the classic access gates into the Hunedoara side of the Parâng Mountains."
       ],
       facts: [
         { label: "Reserve area", value: "10 ha" },
         { label: "Status", value: "protected area, IUCN category IV (since 1995/2000)" },
-        { label: "Cabana Groapa Seacă altitude", value: "~1,220 m" }
+        { label: "Groapa Seacă Hut altitude", value: "~1,220 m" }
       ]
     }
   },
@@ -522,13 +535,14 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Buta Gorges",
       tagline: "Spectacular limestone gorges, among the most beautiful protected areas in the Vâlcan Mountains.",
       description: [
-        "Cheile Buții (Buta Gorges) were carved by the Buta river (a tributary of the Jiul de Vest) through Jurassic limestone, on the Hunedoara–Gorj county border, in the Vâlcan Mountains. The steep walls, reaching about 100 m in height, shelter caves, springs and waterfalls, and the area is considered one of the most spectacular protected areas in this part of Europe.",
-        "The starting point for visiting the gorges is Cabana Buta, at 1,580 m altitude, on the Piule–Pleșa ridge, with views toward Oslea and the Vâlcan Mountains. The hike, marked with a red cross trail, takes about 4 hours from the DN66A road."
+        "The Buta Gorges (Cheile Buții) were carved by the Buta river (a tributary of the Jiul de Vest) through Jurassic limestone, on the Hunedoara–Gorj county border, in the Vâlcan Mountains. The steep walls, reaching about 100 m in height, shelter caves, springs and waterfalls, and the area is considered one of the most spectacular protected areas in this part of Europe.",
+        "The starting point for visiting the gorges is Buta Hut, at 1,580 m altitude, on the Piule–Pleșa ridge, with views toward Oslea and the Vâlcan Mountains. The hike, marked with a red cross trail, takes about 4 hours from the DN66A road."
       ],
       facts: [
-        { label: "Cabana Buta altitude", value: "1,580 m" },
+        { label: "Buta Hut altitude", value: "1,580 m" },
         { label: "Rock type", value: "Jurassic limestone" },
         { label: "Hiking access", value: "~4 hours from DN66A, red cross marking" }
       ]
@@ -555,6 +569,7 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Iarului Valley",
       tagline: "A secluded mountain valley near Câmpușel, a base for hiking and mountain camping.",
       description: [
         "Valea Iarului is a mountain valley in the Câmpușel area, about 29 km from the town of Uricani, on the Retezat side of the mountains in the county's south-west. The area is relatively wild and sparsely populated, reached via several marked trails of moderate to difficult grade.",
@@ -590,16 +605,17 @@ window.SITE_NATURE = [
       ]
     },
     en: {
-      tagline: "A newly-paved mountain road linking Uricani to Gorj county through Cheile Sohodolului, at 830 m altitude.",
+      name: "Uricani – Runcu mountain road",
+      tagline: "A newly-paved mountain road linking Uricani to Gorj county through the Sohodol Gorges, at 830 m altitude.",
       description: [
-        "Completed on the Hunedoara side in November 2025, the Uricani–Runcu mountain road links Hunedoara and Gorj counties through a mountain area with spectacular scenery, passing Cheile Sohodolului gorge and the Valea de Pești dam, at a maximum altitude of about 830 m. The works, worth over 44.4 million lei, were funded through the Anghel Saligny Programme, carried out by Uricani local authority in partnership with Hunedoara County Council.",
-        "On the Gorj side, works still need up to two years to finish, but the new access already opens the way to Cheile Sohodolului and Lake Valea de Pești, and has already drawn the area's first guesthouse and cabin investments."
+        "Completed on the Hunedoara side in November 2025, the Uricani–Runcu mountain road links Hunedoara and Gorj counties through a mountain area with spectacular scenery, passing the Sohodol Gorges and the Valea de Pești dam, at a maximum altitude of about 830 m. The works, worth over 44.4 million lei, were funded through the Anghel Saligny Programme, carried out by Uricani local authority in partnership with Hunedoara County Council.",
+        "On the Gorj side, works still need up to two years to finish, but the new access already opens the way to the Sohodol Gorges and Lake Valea de Pești, and has already drawn the area's first guesthouse and cabin investments."
       ],
       facts: [
         { label: "Connects", value: "Uricani (Hunedoara) – Runcu (Gorj)" },
         { label: "Maximum altitude", value: "~830 m" },
         { label: "Completed (HD side)", value: "November 2025" },
-        { label: "Access to", value: "Cheile Sohodolului gorge, Lake Valea de Pești" }
+        { label: "Access to", value: "The Sohodol Gorges, Lake Valea de Pești" }
       ]
     }
   },
@@ -628,9 +644,10 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Lake Cinciș",
       tagline: "A reservoir lake near Hunedoara, with beaches, fishing and one of Transylvania's largest artificial water surfaces.",
       description: [
-        "Lacul Cinciș is a reservoir lake formed on the Cerna river near the village of Teliucu Inferior, about 15 km from Hunedoara, after a dam was built there in the early 1960s to supply water to the steel works and the city. Covering around 867 ha with a maximum depth of 48 m, it is one of the largest artificial lakes in Transylvania.",
+        "Lake Cinciș is a reservoir lake formed on the Cerna river near the village of Teliucu Inferior, about 15 km from Hunedoara, after a dam was built there in the early 1960s to supply water to the steel works and the city. Covering around 867 ha with a maximum depth of 48 m, it is one of the largest artificial lakes in Transylvania.",
         "The northern shore, lined with beaches, contrasts with the wooded, hilly southern shore. The area developed into a local resort, with campsites, motels and guesthouses, and the lake remains popular for fishing (carp, pike, amur, pike-perch, crucian carp) and swimming in the warm season (June–August)."
       ],
       facts: [
@@ -665,6 +682,7 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Bejan Forest",
       tagline: "A 70 ha forest reserve near Deva, home to eight of Romania's nine native oak species growing side by side.",
       description: [
         "Pădurea Bejan is a forest-type nature reserve declared under Law no. 5 of 6 March 2000, covering 70 ha within Deva's administrative territory, on county road DJ708E from Almașu Sec. It is classified as IUCN category IV (habitat/species management area).",
@@ -702,6 +720,7 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Simeria Arboretum",
       tagline: "Romania's oldest and largest dendrological park, with over 2,100 tree and shrub species on about 70 hectares.",
       description: [
         "Simeria Arboretum grew out of the Gyulay family manor park, documented since 1763, on the left bank of the Mureș river. After nationalisation, it was officially turned into a dendrological park in 1949 and placed under a forestry research station, a role it still holds today.",
@@ -741,11 +760,12 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Hațeg Country UNESCO Geopark",
       tagline: "The dwarf dinosaur geopark: over 1,000 km² of Țara Hațegului, internationally recognised since 2005 and a UNESCO Global Geopark since 2015.",
       description: [
         "The geopark covers the town of Hațeg and the communes of Baru, Densuș, General Berthelot, Pui, Răchitova, Râu de Mori, Sarmizegetusa, Sălașu de Sus, Sântămăria-Orlea and Totești. It was declared a protected area in 2004, joined the European and Global Geoparks Networks in 2005 — the first geopark in South-East Europe to do so — and has been a UNESCO Global Geopark since 2015. It is managed by the University of Bucharest.",
         "Its stars are the dwarf dinosaurs of the Late Cretaceous, some 70 million years ago, when the area was an island — \"Hațeg Island\". Finds here include dinosaur nests with eggs and embryos, mammals that lived alongside the dinosaurs and the flying reptile Hatzegopteryx. The first dinosaur bones were discovered in 1895 on the Nopcsa family estate, and Baron Franz Nopcsa built on them his theory of insular dwarfism.",
-        "The geopark is explored through its \"geopark houses\", visitor and interpretation centres: the Geopark House in Hațeg (with a reconstruction of the dinosaur Balaur bondoc), the House of Science and Art in General Berthelot (with a life-size Magyarosaurus dacus in the yard and original nests with dinosaur eggs), the House of Dwarf Dinosaurs in Sânpetru and the House of Volcanoes in Densuș. Opening hours vary with the season, and some houses can only be visited by appointment."
+        "The geopark is explored through its \"geopark houses\", visitor and interpretation centres: The Geopark House in Hațeg (with a reconstruction of the dinosaur Balaur bondoc), the House of Science and Art in General Berthelot (with a life-size Magyarosaurus dacus in the yard and original nests with dinosaur eggs), the House of Dwarf Dinosaurs in Sânpetru and the House of Volcanoes in Densuș. Opening hours vary with the season, and some houses can only be visited by appointment."
       ],
       facts: [
         { label: "Status", value: "UNESCO Global Geopark (2015); in the European and Global Geoparks Networks since 2005" },
@@ -781,9 +801,10 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Lake Gura Apelor",
       tagline: "The mountain lake behind Romania's tallest dam (168 m), at the entrance to Retezat National Park.",
       description: [
-        "Lacul Gura Apelor formed behind the dam of the same name, built between 1975 and 1986 on the Râul Mare river, where it meets the Lăpușnicul Mare, Lăpușnicul Mic and Șes streams, about 40 km from Hațeg. The rock-fill dam with a clay core is 168 m high, the tallest in Romania.",
+        "Lake Gura Apelor formed behind the dam of the same name, built between 1975 and 1986 on the Râul Mare river, where it meets the Lăpușnicul Mare, Lăpușnicul Mic and Șes streams, about 40 km from Hațeg. The rock-fill dam with a clay core is 168 m high, the tallest in Romania.",
         "The lake covers about 390 ha and holds some 210 million m³ of water, carried through an underground conduit to the Retezat hydropower plant (335 MW), part of the Râul Mare–Retezat hydro scheme. The road to the dam climbs the Râul Mare valley from Râu de Mori."
       ],
       facts: [
@@ -820,6 +841,7 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Cioclovina Cave",
       tagline: "The cave where the \"Cioclovina 1\" skull was found — one of the oldest modern humans in Central and South-East Europe.",
       description: [
         "Peștera Cioclovina Uscată (the \"dry\" Cioclovina Cave) lies near the village of Cioclovina (Boșorod commune), in the Șureanu Mountains, inside the Grădiștea Muncelului–Cioclovina Natural Park, where the Ponorâci–Cioclovina karst complex is a nature reserve. It is a karst gallery about 2 km long, studied since the 1880s; the neighbouring Cioclovina cu Apă (\"wet\") cave is open only to cavers.",
@@ -859,6 +881,7 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Zeicu Cave",
       tagline: "A cave reserve in the Western Jiu valley, upstream of Câmpu lui Neag, with one of the largest stalactites in the country.",
       description: [
         "Zeicu Cave opens onto the Western Jiu valley upstream of Câmpu lui Neag, by the DN66A road, inside Retezat National Park. It was declared a speleological reserve for its wide variety of stalagmite formations and its rich palaeontological finds, including traces of cave bears.",
@@ -897,6 +920,7 @@ window.SITE_NATURE = [
       ]
     },
     en: {
+      name: "Lake Valea de Pești",
       tagline: "A 2.5 km mountain lake behind a 56 m dam near Câmpu lui Neag — the Jiu Valley's water reserve.",
       description: [
         "The Valea de Pești dam was built between 1967 and 1973 on the river of the same name, near Câmpu lui Neag, and stands 56 m high. Behind it lies a reservoir 2.5 km long, covering 31 ha and up to 53 m deep, at 830 m above sea level.",
@@ -936,13 +960,14 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "The classic Retezat route: from Cabana Pietrele (1,480 m), to Bucura Lake and Peleaga Peak (2,509 m).",
+      name: "Pietrele Hut – Lake Bucura – Peleaga Peak trail",
+      tagline: "The classic Retezat route: from Pietrele Hut (1,480 m), to Lake Bucura and Peleaga Peak (2,509 m).",
       description: [
-        "The trail starts at Cabana Pietrele and climbs to Bucura Lake, Romania's largest glacial lake — from there, the last stretch to Peleaga Peak takes around 2–2.5 hours and has sections of unstable scree.",
+        "The trail starts at Pietrele Hut and climbs to Lake Bucura, Romania's largest glacial lake — from there, the last stretch to Peleaga Peak takes around 2–2.5 hours and has sections of unstable scree.",
         "It's a demanding day hike, suitable only with proper mountain gear; the last stretch (Bucura–Peleaga) closes in winter due to avalanche risk."
       ],
       facts: [
-        { label: "Starting point", value: "Cabana Pietrele (1,480 m)" },
+        { label: "Starting point", value: "Pietrele Hut (1,480 m)" },
         { label: "Difficulty", value: "Medium–hard, scree sections" },
         { label: "Season", value: "The Bucura–Peleaga stretch closes in winter (avalanche risk)" }
       ]
@@ -969,6 +994,7 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Parâng ski slopes",
       tagline: "A ski area about 15 km from Petroșani, with a chairlift climbing from 950 to 1,650 m.",
       description: [
         "The Parâng resort has 9 slopes totalling about 8 km, served by 9 cable lifts. The chairlift climbs from the Petroșani area up to 1,650 m altitude, a 700 m difference in elevation."
@@ -1002,6 +1028,7 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Straja ski resort",
       tagline: "Declared a resort in 2002, with the county's largest ski area — about 26 km of slopes.",
       description: [
         "Straja sits at 1,440 m altitude, in the Vâlcan Mountains, reachable from Lupeni via an 8 km paved road or by gondola. The ski area covers about 26 km (20 km with artificial snow), 12 slopes and 11 cable lifts, between 1,130 and 1,868 m altitude (Straja Peak).",
@@ -1035,6 +1062,7 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Straja alpine coaster (Baloo Coaster)",
       tagline: "Hunedoara's first alpine coaster — an adrenaline ride through the forest at Straja.",
       description: [
         "The Baloo Coaster alpine coaster opened in late 2025 at the Straja resort, near Lupeni, at the foot of the Vâlcan Mountains. The installation was built through an investment of about €2.6 million, funded through the Just Transition Program.",
@@ -1068,9 +1096,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Dealul Babii trail",
       tagline: "A gentle ridge between Vulcan and Merișor, famous in spring for its carpet of snowdrops.",
       description: [
-        "Dealul Babii is a hilly area between the town of Vulcan and the village of Merișor, part of a hiking loop that starts in Petroșani, passes through Aninoasa, Vulcan, Dealu Babii, Pasul Dealu Babii, Merișor and Bănița, and loops back to Petroșani — a circuit of about 44 km, climbing from roughly 550 m to just over 900 m.",
+        "Dealul Babii is a hilly area between the town of Vulcan and the village of Merișor, part of a hiking loop that starts in Petroșani, passes through Aninoasa, Vulcan, Dealu Babii, Dealu Babii Pass, Merișor and Bănița, and loops back to Petroșani — a circuit of about 44 km, climbing from roughly 550 m to just over 900 m.",
         "The area is best known in spring, when snowdrops bloom across about 3 km of hillside, turning Dealul Babii into a white carpet — a favourite spot for locals and hikers in the Jiu Valley."
       ],
       facts: [
@@ -1101,15 +1130,16 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "\"Avram Iancu\" Educational Swimming Pool, Petroșani",
       tagline: "A covered semi-Olympic pool, reopened in 2025 after modernisation, in the Aeroport district.",
       description: [
-        "The \"Avram Iancu\" Educational Swimming Pool in Petroșani is a semi-Olympic pool measuring 12.5 × 25 m, with variable depth between 1.20 and 1.80 m, located on Oituz street, in the Aeroport district. The facility includes a sauna, changing rooms and a table-tennis table, used both for swimming lessons for pupils and for open swimming.",
+        "The \"Avram Iancu\" Educational Swimming Pool in Petroșani is a semi-Olympic pool measuring 12.5 × 25 m, with variable depth between 1.20 and 1.80 m, located on Oituz Street, in the Aeroport district. The facility includes a sauna, changing rooms and a table-tennis table, used both for swimming lessons for pupils and for open swimming.",
         "After modernisation works (heating plant, roof, ventilation), the pool reopened to the public on 20 October 2025."
       ],
       facts: [
         { label: "Dimensions", value: "12.5 × 25 m, 1.20–1.80 m depth" },
         { label: "Hours", value: "Monday–Friday, 09:00–21:00" },
-        { label: "Address", value: "Oituz street, Aeroport district, Petroșani" }
+        { label: "Address", value: "Oituz Street, Aeroport district, Petroșani" }
       ]
     }
   },
@@ -1134,15 +1164,16 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Educational Swimming Pool, Petrila",
       tagline: "A 25×12.5 m educational pool with 5 lanes, next to School No. 5.",
       description: [
         "The swimming pool in Petrila, open to the public since January 2022, measures 25 × 12.5 m, with variable depth between 1.20 and 1.80 m and 5 swimming lanes, with starting blocks at the deeper end — used both for school lessons and public access.",
-        "It's located on 8 Martie street, next to School No. 5. The pool is closed on Mondays for cleaning and disinfection."
+        "It's located on 8 Martie Street, next to School No. 5. The pool is closed on Mondays for cleaning and disinfection."
       ],
       facts: [
         { label: "Hours", value: "Tuesday–Saturday 09:00–21:00 (last entry 19:00), Sunday 12:00–20:00 (last entry 18:00), closed Mondays" },
         { label: "Prices", value: "16 lei adults / 8 lei pupils-students, 2-hour session" },
-        { label: "Address", value: "8 Martie street, next to School No. 5, Petrila" }
+        { label: "Address", value: "8 Martie Street, next to School No. 5, Petrila" }
       ]
     }
   },
@@ -1167,15 +1198,16 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Educational Swimming Pool, Vulcan",
       tagline: "A semi-Olympic pool in the town centre, between the Minimax store and the church by the town hall.",
       description: [
         "The Educational Swimming Pool in Vulcan, opened in 2022, is a semi-Olympic pool measuring 25 × 12.5 m, with depth between 1.20 and 1.80 m and water heated to 24.6–26°C. It's primarily meant for the town's pupils, who take swimming lessons there, but it's also open to the general public.",
-        "It's located on Platoului street, between the Minimax store and the church next to the town hall."
+        "It's located on Platoului Street, between the Minimax store and the church next to the town hall."
       ],
       facts: [
         { label: "Hours", value: "Monday–Friday 09:00–21:00, Saturday–Sunday 09:00–17:00" },
         { label: "Water temperature", value: "24.6–26°C" },
-        { label: "Address", value: "Platoului street, Vulcan" }
+        { label: "Address", value: "Platoului Street, Vulcan" }
       ]
     }
   },
@@ -1200,9 +1232,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "The newest educational pool in Valea Jiului, opened in December 2025 at the foot of Straja.",
+      name: "Educational Swimming Pool, Lupeni",
+      tagline: "The newest educational pool in the Jiu Valley, opened in December 2025 at the foot of Straja.",
       description: [
-        "The educational swimming pool in Lupeni, the fourth of its kind in Valea Jiului, opened on 5 December 2025, after an investment of over 12 million lei and about three years of works. It sits at the foot of the Straja resort, serving both locals and tourists staying in the mountains.",
+        "The educational swimming pool in Lupeni, the fourth of its kind in the Jiu Valley, opened on 5 December 2025, after an investment of over 12 million lei and about three years of works. It sits at the foot of the Straja resort, serving both locals and tourists staying in the mountains.",
         "Besides open swimming and lessons, the pool offers a sauna and combined swim+sauna packages."
       ],
       facts: [
@@ -1235,10 +1268,11 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Tunnels Trail",
       tagline: "An easy-to-moderate themed trail near Vulcan, leading to the Devil's Cave and Waterfall.",
       description: [
         "Traseul Tunelelor (\"the tunnels trail\") is one of five themed hiking trails set up in 2022 in the mountains near Vulcan, an initiative of the Pro Montana group, carried out by Vulcan Town Hall with support from Salvamont Hunedoara.",
-        "About 6 km long (3–4 hours round trip), easy to moderate in difficulty, the trail passes abandoned hydro-technical structures and leads to Peștera Dracului (Devil's Cave), Cascada Dracului (Devil's Waterfall) and the Baleia springs — it can be covered on foot, by bike or, in winter, on skis."
+        "About 6 km long (3–4 hours round trip), easy to moderate in difficulty, the trail passes abandoned hydro-technical structures and leads to the Devil's Cave (Peștera Dracului), the Devil's Waterfall (Cascada Dracului) and the Baleia springs — it can be covered on foot, by bike or, in winter, on skis."
       ],
       facts: [
         { label: "Length", value: "~6 km (3–4 hours round trip)" },
@@ -1270,6 +1304,7 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Ruins Trail",
       tagline: "A 12 km trail from Vulcan to Aninoasa along Valea Ungurului, with a monastery, waterfall and ruins.",
       description: [
         "Traseul Ruinelor (\"the ruins trail\") is the longest of five themed trails set up in 2022 near Vulcan (a Pro Montana project, with Vulcan Town Hall and Salvamont Hunedoara). It starts in Vulcan and follows the Valea Ungurului stream to Aninoasa, covering about 12 km at moderate difficulty.",
@@ -1306,6 +1341,7 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Citadel Park, Deva",
       tagline: "The park at the foot of Deva Citadel — the starting point for the walking trails, the electric minibus and the cable car (currently out of service) up to the citadel plateau.",
       description: [
         "Parcul Cetății spreads at the base of the volcanic hill that Deva Citadel sits on, and is the starting point for several marked walking trails up to the citadel plateau, a climb of about 40 minutes, moderate difficulty, on gravel paths and steps.",
@@ -1340,6 +1376,7 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Pui – Râușor Salvamont Base trail",
       tagline: "Long access route from Pui to the Râușor Salvamont base, on the northern edge of the Retezat massif.",
       description: [
         "Marked with a red band, the trail connects the village of Pui to the Râușor Salvamont base, a starting point for several routes toward the main Retezat ridge.",
@@ -1373,13 +1410,14 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A day climb from Cabana Pietrele to Vârful Mare, one of the massif's important secondary peaks.",
+      name: "Pietrele Hut – Vârful Mare trail (Retezat)",
+      tagline: "A day climb from Pietrele Hut to Vârful Mare, one of the massif's important secondary peaks.",
       description: [
-        "Marked with a red triangle (with red-dot sections), the trail starts at Cabana Pietrele (1,480 m) and climbs for about 4 hours to Vârful Mare.",
-        "It's part of the network of trails converging on Cabana Pietrele, the busiest access point in the northern part of Retezat National Park."
+        "Marked with a red triangle (with red-dot sections), the trail starts at Pietrele Hut (1,480 m) and climbs for about 4 hours to Vârful Mare.",
+        "It's part of the network of trails converging on Pietrele Hut, the busiest access point in the northern part of Retezat National Park."
       ],
       facts: [
-        { label: "Starting point", value: "Cabana Pietrele (1,480 m)" },
+        { label: "Starting point", value: "Pietrele Hut (1,480 m)" },
         { label: "Marking", value: "Red triangle / red dot" },
         { label: "Duration", value: "about 4 hours" }
       ]
@@ -1406,13 +1444,14 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A ridge route from Cabana Pietrele to Șaua Pelegii, a junction point for several Retezat valleys.",
+      name: "Pietrele Hut – Peleaga Saddle trail",
+      tagline: "A ridge route from Pietrele Hut to Peleaga Saddle, a junction point for several Retezat valleys.",
       description: [
-        "Marked with a yellow triangle, the trail climbs from Cabana Pietrele (1,480 m) to Șaua Pelegii in about 3 hours.",
-        "Șaua Pelegii is a major trail junction, where routes from Lacul Galeș and from Baleia meet."
+        "Marked with a yellow triangle, the trail climbs from Pietrele Hut (1,480 m) to Peleaga Saddle in about 3 hours.",
+        "Peleaga Saddle is a major trail junction, where routes from Lake Galeș and from Baleia meet."
       ],
       facts: [
-        { label: "Starting point", value: "Cabana Pietrele (1,480 m)" },
+        { label: "Starting point", value: "Pietrele Hut (1,480 m)" },
         { label: "Marking", value: "Yellow triangle" },
         { label: "Duration", value: "about 3 hours" }
       ]
@@ -1439,13 +1478,14 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A short link from the Râușor valley (Lacul Galeș) to Șaua Pelegii, on the northern slope of Retezat.",
+      name: "Lake Galeș – Peleaga Saddle trail",
+      tagline: "A short link from the Râușor valley (Lake Galeș) to Peleaga Saddle, on the northern slope of Retezat.",
       description: [
-        "Marked with a red cross, the trail connects Lacul Galeș, in the Râușor valley, to Șaua Pelegii, in about 2 hours.",
+        "Marked with a red cross, the trail connects Lake Galeș, in the Râușor valley, to Peleaga Saddle, in about 2 hours.",
         "It's a short route, mostly used as an access variant from the Râușor Salvamont base."
       ],
       facts: [
-        { label: "Starting point", value: "Lacul Galeș (Râușor valley)" },
+        { label: "Starting point", value: "Lake Galeș (Râușor valley)" },
         { label: "Marking", value: "Red cross" },
         { label: "Duration", value: "about 2 hours" }
       ]
@@ -1472,9 +1512,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Nucșoara Valley – Colț Fortress trail",
       tagline: "The shortest, most accessible marked trail at the edge of Retezat: an hour up to the Colț Citadel ruins.",
       description: [
-        "Marked with a blue triangle, the trail climbs from the Nucșoara valley to Cetatea Colț, the ruins of a medieval fortress built by the Romanian noble Cândea family in the 14th century, on a rock overlooking the village of Suseni.",
+        "Marked with a blue triangle, the trail climbs from the Nucșoara valley to Colț Fortress, the ruins of a medieval fortress built by the Romanian noble Cândea family in the 14th century, on a rock overlooking the village of Suseni.",
         "At only an hour long, it's one of the few trails around Retezat also suitable for families with children."
       ],
       facts: [
@@ -1505,9 +1546,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A long ascent from the south, starting in the village of Râu de Mori, straight up to Vârful Retezat.",
+      name: "Râu de Mori – Retezat Peak trail",
+      tagline: "A long ascent from the south, starting in the village of Râu de Mori, straight up to Retezat Peak.",
       description: [
-        "Marked with a red triangle, the trail climbs from Râu de Mori to Vârful Retezat in 7–8 hours, on the massif's southern slope, quieter than the routes from Cabana Pietrele.",
+        "Marked with a red triangle, the trail climbs from Râu de Mori to Retezat Peak in 7–8 hours, on the massif's southern slope, quieter than the routes from Pietrele Hut.",
         "It's a demanding alternative for those wanting to avoid the crowds in the northern part of the park."
       ],
       facts: [
@@ -1538,13 +1580,14 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "The western access route, via Cabana Gura Zlata, up to Bucura Lake.",
+      name: "Gura Zlata Hut – Lake Bucura trail",
+      tagline: "The western access route, via Gura Zlata Hut, up to Lake Bucura.",
       description: [
-        "Marked with a red triangle, the trail starts at Cabana Gura Zlata (775 m), on the western side of the massif, and reaches Bucura Lake in about 8 hours.",
+        "Marked with a red triangle, the trail starts at Gura Zlata Hut (775 m), on the western side of the massif, and reaches Lake Bucura in about 8 hours.",
         "It's the longest of the main access routes to Bucura, but crosses a quieter part of the park."
       ],
       facts: [
-        { label: "Starting point", value: "Cabana Gura Zlata (775 m)" },
+        { label: "Starting point", value: "Gura Zlata Hut (775 m)" },
         { label: "Marking", value: "Red triangle" },
         { label: "Duration", value: "about 8 hours" }
       ]
@@ -1571,13 +1614,14 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A day-long loop around the Bucura Lake area, Romania's largest glacial lake.",
+      name: "Lake Bucura loop trail",
+      tagline: "A day-long loop around the Lake Bucura area, Romania's largest glacial lake.",
       description: [
         "Marked with a red dot, the 11-hour circuit loops around the lake basin near Bucura, with views of the surrounding main peaks.",
         "It suits those camping or staying in a refuge nearby who want to explore the glacial basin rather than just reach a single peak."
       ],
       facts: [
-        { label: "Area", value: "Bucura Lake" },
+        { label: "Area", value: "Lake Bucura" },
         { label: "Marking", value: "Red dot" },
         { label: "Duration", value: "about 11 hours" }
       ]
@@ -1603,10 +1647,11 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A trail from the southern side of Retezat, from Baru up to Vârful Tulișa.",
+      name: "Baru – Tulișa Peak trail",
+      tagline: "A trail from the southern side of Retezat, from Baru up to Tulișa Peak.",
       description: [
-        "Marked with a yellow cross, the trail starts in Baru and climbs to Vârful Tulișa in 4–5 hours.",
-        "It's a lesser-known route than those from Cabana Pietrele, suited to those starting from the Hațeg–Baru Mare area."
+        "Marked with a yellow cross, the trail starts in Baru and climbs to Tulișa Peak in 4–5 hours.",
+        "It's a lesser-known route than those from Pietrele Hut, suited to those starting from the Hațeg–Baru Mare area."
       ],
       facts: [
         { label: "Starting point", value: "Baru" },
@@ -1635,9 +1680,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A long route through the Vâlcan Mountains, from Cheile Buții to Cabana Buta, over Pleșa and Piule peaks.",
+      name: "Buta Gorges – Buta Hut trail",
+      tagline: "A long route through the Vâlcan Mountains, from the Buta Gorges to Buta Hut, over Pleșa and Piule peaks.",
       description: [
-        "Marked with a yellow band, the trail starts at the Cheile Buții tourist complex and passes Dâlma Mare, Vârful Pleșa and Vârful Piule before descending to Cabana Buta via Șaua Scorota.",
+        "Marked with a yellow band, the trail starts at the Cheile Buții tourist complex and passes Dâlma Mare, Pleșa Peak and Piule Peak before descending to Buta Hut via Scorota Saddle.",
         "At 8–9 hours, it effectively links the Buții Gorge area to the Retezat trail network."
       ],
       facts: [
@@ -1667,10 +1713,11 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A shorter access route to Cabana Buta, from Câmpușel via Șaua Scorota.",
+      name: "Câmpușel – Scorota Saddle – Buta Hut trail",
+      tagline: "A shorter access route to Buta Hut, from Câmpușel via Scorota Saddle.",
       description: [
-        "Marked with a yellow dot, the trail climbs from Câmpușel through Scocul Scorotei and Stâna Scorota up to Șaua Scorota, then on to Cabana Buta, in 4–5 hours.",
-        "It's the faster alternative to the Cheile Buții route, for those starting directly from Câmpușel."
+        "Marked with a yellow dot, the trail climbs from Câmpușel through Scocul Scorotei and Stâna Scorota up to Scorota Saddle, then on to Buta Hut, in 4–5 hours.",
+        "It's the faster alternative to the Buta Gorges route, for those starting directly from Câmpușel."
       ],
       facts: [
         { label: "Starting point", value: "Câmpușel" },
@@ -1700,14 +1747,15 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Branu Ridge – Gugu Peak – Lake Iovan trail",
       tagline: "A long, demanding traverse through the Godeanu Mountains, with a partly unmarked section.",
       description: [
-        "Marked with a red cross, the trail starts at Lacul Gura Apei, climbs the Branu ridge to Vârful Gugu and Vârful Moraru, then descends via Șaua Mâțului to Lacul lui Iovan, in 12–13 hours.",
-        "Caution: according to Salvamont Hunedoara, the stretch between Vârful Gugu and Vârful Bulzului is partly unmarked — recommended only with a map/GPS and mountain experience."
+        "Marked with a red cross, the trail starts at Lake Gura Apei, climbs the Branu ridge to Gugu Peak and Moraru Peak, then descends via Mâțului Saddle to Lake Iovan, in 12–13 hours.",
+        "Caution: according to Salvamont Hunedoara, the stretch between Gugu Peak and Bulzului Peak is partly unmarked — recommended only with a map/GPS and mountain experience."
       ],
       facts: [
-        { label: "Starting point", value: "Lacul Gura Apei" },
-        { label: "Marking", value: "Red cross (partly unmarked between Vf. Gugu and Vf. Bulzului)" },
+        { label: "Starting point", value: "Lake Gura Apei" },
+        { label: "Marking", value: "Red cross (partly unmarked between Gugu Peak and Bulzului Peak)" },
         { label: "Duration", value: "12–13 hours" }
       ]
     }
@@ -1733,10 +1781,11 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "The Vâlcan Mountains ridge traverse, past Vârful Straja — the longest marked trail in the area.",
+      name: "Vâlcan – Straja – Oslea ridge trail",
+      tagline: "The Vâlcan Mountains ridge traverse, past Straja Peak — the longest marked trail in the area.",
       description: [
         "Marked with a red band, the trail follows the main ridge of the Vâlcan Mountains from Gambrinus (Lupeni), over Drăgoiu, Straja, Mutu, Muncel, Siglăul Mic and Mare, Arcanu and Nedeița peaks, to Coada Oslei and Câmpușel.",
-        "At 24–25 hours, it's usually covered in several stages; it passes right by Vârful Straja, better known for the ski resort on its opposite slope."
+        "At 24–25 hours, it's usually covered in several stages; it passes right by Straja Peak, better known for the ski resort on its opposite slope."
       ],
       facts: [
         { label: "Starting point", value: "Gambrinus (Lupeni)" },
@@ -1766,9 +1815,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Hunedoara – Lake Cinciș – Cerna Gorge trail",
       tagline: "A multi-day route through the Poiana Ruscă Mountains, starting right in downtown Hunedoara.",
       description: [
-        "Marked with a blue band and triangle, the trail starts at the Hunedoara Tourist Information Centre, passes Corvin Castle and Lacul Cinciș, then climbs through the Cerna Gorge into the Poiana Ruscă Mountains.",
+        "Marked with a blue band and triangle, the trail starts at the Hunedoara Tourist Information Centre, passes Corvin Castle and Lake Cinciș, then climbs through the Cerna Gorge into the Poiana Ruscă Mountains.",
         "At 18–20 hours (2–3 days), it's the longest of the three marked trails starting in Hunedoara toward Poiana Ruscă."
       ],
       facts: [
@@ -1799,9 +1849,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A marked trail from Hunedoara up to Vârful Rusca, the highest point of the massif bearing its name.",
+      name: "Hunedoara – Lake Cinciș – Rusca Peak trail",
+      tagline: "A marked trail from Hunedoara up to Rusca Peak, the highest point of the massif bearing its name.",
       description: [
-        "Marked with a red band, the trail also starts in downtown Hunedoara, passes Corvin Castle and Lacul Cinciș, then climbs to Vârful Rusca in 14–16 hours.",
+        "Marked with a red band, the trail also starts in downtown Hunedoara, passes Corvin Castle and Lake Cinciș, then climbs to Rusca Peak in 14–16 hours.",
         "It's the medium-length option among the three marked trails to Poiana Ruscă starting from Hunedoara."
       ],
       facts: [
@@ -1832,9 +1883,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Hunedoara – Lake Cinciș – Dobra trail",
       tagline: "The longest marked trail through Poiana Ruscă starting from Hunedoara, ending at Dobra.",
       description: [
-        "Marked with a yellow band, the trail starts in downtown Hunedoara, passes Corvin Castle and Lacul Cinciș, crosses the Poiana Ruscă Mountains and descends to Dobra, in 22–24 hours.",
+        "Marked with a yellow band, the trail starts in downtown Hunedoara, passes Corvin Castle and Lake Cinciș, crosses the Poiana Ruscă Mountains and descends to Dobra, in 22–24 hours.",
         "It's a full traverse of the massif, covered in several stages."
       ],
       facts: [
@@ -1865,6 +1917,7 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Ohaba Ponor – Ponorici-Cioclovina Cave trail",
       tagline: "A trail through the Șura Mare Gorge to the Ponorici-Cioclovina karst system, the longest cave in the Șureanu Mountains.",
       description: [
         "Marked with a red band, the trail starts in Ohaba Ponor, passes through the Șura Mare Gorge by the Ponorici and Cioclovina caves, then reaches Luncani and Boșorod, in 7–8 hours.",
@@ -1897,9 +1950,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A ridge trail in the Șureanu Mountains, along the Strei valley, over Vârful Lola and Vârful Porumbelu Mare.",
+      name: "Baru – Lola Peak – Porumbelu Mare Peak trail",
+      tagline: "A ridge trail in the Șureanu Mountains, along the Strei valley, over Lola Peak and Porumbelu Mare Peak.",
       description: [
-        "Marked with a red band, the trail starts in Baru, climbs the Strei valley and passes Vârful Lola and Vârful Porumbelu Mare, in 7–8 hours.",
+        "Marked with a red band, the trail starts in Baru, climbs the Strei valley and passes Lola Peak and Porumbelu Mare Peak, in 7–8 hours.",
         "It gives access to the south-western part of the Șureanu Mountains, quieter than the Dacian fortress area."
       ],
       facts: [
@@ -1930,10 +1984,11 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "The marked trail linking the village of Costești to the Dacian capital, Sarmizegetusa Regia, and to Vârful Godeanu.",
+      name: "Costești – Sarmizegetusa Regia – Godeanu Peak trail (Șureanu)",
+      tagline: "The marked trail linking the village of Costești to the Dacian capital, Sarmizegetusa Regia, and to Godeanu Peak.",
       description: [
-        "Marked with a red cross, the trail climbs from Costești through the Grădiștei valley and hill up to Sarmizegetusa Regia fortress, then continues to Vârful Muncel and Vârful Godeanu, in 10–11 hours.",
-        "Note: this Vârful Godeanu is in the Șureanu Mountains, near the Dacian fortresses — not to be confused with the Godeanu Mountains near Retezat."
+        "Marked with a red cross, the trail climbs from Costești through the Grădiștei valley and hill up to Sarmizegetusa Regia fortress, then continues to Muncel Peak and Godeanu Peak, in 10–11 hours.",
+        "Note: this Godeanu Peak is in the Șureanu Mountains, near the Dacian fortresses — not to be confused with the Godeanu Mountains near Retezat."
       ],
       facts: [
         { label: "Starting point", value: "Costești" },
@@ -1963,9 +2018,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A long trail through the Dacian fortress area, from Costești, past Cetatea Blidaru, up to Vârful Godeanu.",
+      name: "Costești – Blidaru Fortress – Godeanu Peak trail",
+      tagline: "A long trail through the Dacian fortress area, from Costești, past Blidaru Fortress, up to Godeanu Peak.",
       description: [
-        "Marked with a blue band, the trail starts in Costești, passes Cetatea Blidaru — the second-largest of the Dacian fortifications in the area, built atop a rocky peak — then continues through Leurdana, Târsa, Poiana Omului, Vârful Rudii and the Meleia ridge up to Vârful Godeanu.",
+        "Marked with a blue band, the trail starts in Costești, passes Blidaru Fortress — the second-largest of the Dacian fortifications in the area, built atop a rocky peak — then continues through Leurdana, Târsa, Poiana Omului, Rudii Peak and the Meleia ridge up to Godeanu Peak.",
         "At 14–15 hours, it's the longest of the trails starting from Costești."
       ],
       facts: [
@@ -1996,9 +2052,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Podul Gerosu – Fețele Albe Fortress trail",
       tagline: "The shortest marked trail in the Dacian fortress area, to the lesser-visited Fețele Albe ruins.",
       description: [
-        "Marked with a blue triangle, the trail climbs from the Podul Gerosu area, over Dealul Muncelului, up to Cetatea Fețele Albe, then descends via Valea Albă, in just 3 hours.",
+        "Marked with a blue triangle, the trail climbs from the Podul Gerosu area, over Dealul Muncelului, up to Fețele Albe Fortress, then descends via Valea Albă, in just 3 hours.",
         "Fețele Albe is one of the lesser-known Dacian fortifications in the system around Sarmizegetusa Regia."
       ],
       facts: [
@@ -2029,9 +2086,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A trail linking Sarmizegetusa Regia to Cetatea Piatra Roșie and to Cioclovina Cave.",
+      name: "Grădiștea de Munte – Piatra Roșie Fortress – Cioclovina Cave trail",
+      tagline: "A trail linking Sarmizegetusa Regia to Piatra Roșie Fortress and to Cioclovina Cave.",
       description: [
-        "Marked with a red triangle, the trail starts in Grădiștea de Munte, passes through Prihodiște and Poiana Omului to Cetatea Piatra Roșie, then descends via Valea Roșia toward Cioclovina, in 7–8 hours.",
+        "Marked with a red triangle, the trail starts in Grădiștea de Munte, passes through Prihodiște and Poiana Omului to Piatra Roșie Fortress, then descends via Valea Roșia toward Cioclovina, in 7–8 hours.",
         "Piatra Roșie is the third major Dacian fortification in the area, alongside Sarmizegetusa Regia and Blidaru."
       ],
       facts: [
@@ -2062,9 +2120,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "The most direct trail to Vârful Parângul Mare (2,519 m), the second-highest peak in the Southern Carpathians.",
+      name: "Parâng chairlift – Parângul Mare Peak trail",
+      tagline: "The most direct trail to Parângul Mare Peak (2,519 m), the second-highest peak in the Southern Carpathians.",
       description: [
-        "Marked with a red band, the trail starts at the chairlift landing in the Parâng resort (1,685 m) and climbs to Vârful Parângul Mare in 4–5 hours.",
+        "Marked with a red band, the trail starts at the chairlift landing in the Parâng resort (1,685 m) and climbs to Parângul Mare Peak in 4–5 hours.",
         "The chairlift (about 1.5 hours from the base) considerably shortens the approach, making this the most popular way to reach the Parâng ridge from Petroșani."
       ],
       facts: [
@@ -2095,9 +2154,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A shorter trail than the one to Parângul Mare, up to Vârful Cârja (2,407 m).",
+      name: "Parâng chairlift – Cârja Peak trail",
+      tagline: "A shorter trail than the one to Parângul Mare, up to Cârja Peak (2,407 m).",
       description: [
-        "Marked with a red band, the trail also starts at the chairlift landing in the Parâng resort (1,685 m) and climbs to Vârful Cârja in about 2.5 hours.",
+        "Marked with a red band, the trail also starts at the chairlift landing in the Parâng resort (1,685 m) and climbs to Cârja Peak in about 2.5 hours.",
         "It's a more accessible option for those wanting a ridge outing without going all the way to Parângul Mare."
       ],
       facts: [
@@ -2128,9 +2188,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A trail to Lacul Câlcescu, the largest glacial lake in the Parâng Mountains.",
+      name: "Trail to Lake Câlcescu (Parâng)",
+      tagline: "A trail to Lake Câlcescu, the largest glacial lake in the Parâng Mountains.",
       description: [
-        "Marked with a red band and cross, the trail starts at the chairlift landing in the Parâng resort and reaches Lacul Câlcescu in 6–7 hours.",
+        "Marked with a red band and cross, the trail starts at the chairlift landing in the Parâng resort and reaches Lake Câlcescu in 6–7 hours.",
         "It's the longest of the usual routes from the Parâng resort, suited to those who want to see the lake without continuing on to Obârșia Lotrului."
       ],
       facts: [
@@ -2161,13 +2222,14 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A trail from Cabana Groapa Seacă to Lacurile Verzi, on the Hunedoara side of the Parâng massif.",
+      name: "Trail to the Green Lakes (Parâng)",
+      tagline: "A trail from Groapa Seacă Hut to the Green Lakes, on the Hunedoara side of the Parâng massif.",
       description: [
-        "Marked with a yellow cross, the trail leaves from Cabana Groapa Seacă and reaches Lacurile Verzi in 3–4 hours.",
-        "Cabana Groapa Seacă is itself reached via a trail marked with a red band and dot from Șaua Gruiul, a junction with the routes from the chairlift."
+        "Marked with a yellow cross, the trail leaves from Groapa Seacă Hut and reaches the Green Lakes in 3–4 hours.",
+        "Groapa Seacă Hut is itself reached via a trail marked with a red band and dot from Gruiul Saddle, a junction with the routes from the chairlift."
       ],
       facts: [
-        { label: "Starting point", value: "Cabana Groapa Seacă" },
+        { label: "Starting point", value: "Groapa Seacă Hut" },
         { label: "Marking", value: "Yellow cross" },
         { label: "Duration", value: "3–4 hours" }
       ]
@@ -2194,13 +2256,14 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      tagline: "A short trail from Șaua Gruiul to Lacul Roșiile and Refugiul Agățat.",
+      name: "Trail to Lake Roșiile and the Agățat Refuge (Parâng)",
+      tagline: "A short trail from Gruiul Saddle to Lake Roșiile and the Agățat Refuge.",
       description: [
-        "Marked with a red dot, the trail links Șaua Gruiul to Lacul Roșiile and Refugiul Agățat in just 1–1.5 hours.",
+        "Marked with a red dot, the trail links Gruiul Saddle to Lake Roșiile and the Agățat Refuge in just 1–1.5 hours.",
         "It's one of the shortest ridge outings from the chairlift area."
       ],
       facts: [
-        { label: "Starting point", value: "Șaua Gruiul" },
+        { label: "Starting point", value: "Gruiul Saddle" },
         { label: "Marking", value: "Red dot" },
         { label: "Duration", value: "1–1.5 hours" }
       ]
@@ -2232,6 +2295,7 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Geoagiu-Băi spa resort",
       tagline: "A year-round spa resort with thermal waters, an outdoor pool complex with an Olympic pool, and Roman baths almost two millennia old.",
       description: [
         "Geoagiu-Băi is a year-round spa and climatic resort, part of the town of Geoagiu, about 18 km north of Orăștie, at 350 m altitude, in hilly country at the foot of the Metaliferi Mountains. Its mesothermal and thermal waters (29–32 °C) are alkaline, slightly sulphurous, bicarbonated and magnesian, used mainly for locomotor, gynaecological, metabolic and skin conditions.",
@@ -2271,6 +2335,7 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
+      name: "Vața de Jos thermal baths (Vața Băi)",
       tagline: "A thermal spa with 36–38 °C waters in the Crișul Alb valley, reopened after more than a decade of neglect.",
       description: [
         "The resort lies in Vața de Jos commune, in the Crișul Alb valley at the foot of the Zarand Mountains, about 19 km from Brad. Its thermal waters, used by a working spa since the mid-19th century, emerge at about 36–38 °C and contain calcium, sulphur, sodium and magnesium.",
@@ -2342,6 +2407,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Densuș Church",
       tagline: "One of the oldest stone churches in Romania still in use, built from reused Roman materials.",
       description: [
         "Dated to around the 12th–13th centuries, the Densuș church was largely built from Roman stone and architectural elements recovered from nearby ruins. Its unusual shape and age make it one of the most visited monuments in Țara Hațegului."
@@ -2372,6 +2438,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Prislop Monastery",
       tagline: "Founded in 1564, a pilgrimage site linked to Father Arsenie Boca.",
       description: [
         "The current church was built in 1564 by Princess Zamfira. The monastery became a major pilgrimage site after Father Arsenie Boca served as its abbot from 1948 until his death in 1989 — he is buried on the monastery grounds, which receive thousands of pilgrims every year."
@@ -2404,6 +2471,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Mining Museum, Petroșani",
       tagline: "The only museum in Romania dedicated exclusively to coal-mining technology.",
       description: [
         "Founded in 1961, the museum has operated since 1966 in a 1920 building, formerly staff housing, now a historic monument. The collection of about 1,500 items (equipment, tools, documents, mining gear) reopened to the public in 2021 after restoration."
@@ -2438,7 +2506,8 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
-      tagline: "The oldest mine in Valea Jiului, now turned into an open-air museum.",
+      name: "Petrila Mine (Planeta Petrila)",
+      tagline: "The oldest mine in the Jiu Valley, now turned into an open-air museum.",
       description: [
         "Petrila Mine closed in 2015, after more than a century of coal extraction, and was listed the same year as a historic monument of exceptional national value. The complex, bought by Hunedoara County Council in 2022, includes the mechanical workshops, the compressor building, the power plant with its distinctive chimney, the New Shaft with its cage lift and the Central Shaft, covering nearly 164,000 sqm.",
         "Known as \"Planet Petrila\", the former mine now hosts guided tours, film screenings and the international Opera Nights festival, part of a PNRR-funded urban regeneration project aiming to bring it permanently into the tourist circuit."
@@ -2475,6 +2544,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Heroes' Cross on Mount Straja",
       tagline: "An 18.6 m steel cross at 1,485 m on Mount Straja, honouring the 800 Romanian soldiers who fell in 1916 in the battles of the Jiu Gorge.",
       description: [
         "The Heroes' Cross on Mount Straja, above Lupeni, is a memorial to the 800 Romanian soldiers who fell in the autumn of 1916 in the battles of the Jiu Gorge, during the First World War. The steel cross is 18.6 m tall and stands at an altitude of 1,485 m. It was consecrated on 30 October 1996 by the abbot of Lainici Monastery, Ioachim Pârvulescu, and was built from private donations, mostly from businessman Emil Ilie Părău. The Straja hermitage (Schitul Straja) was built next to it from 1999 onwards.",
@@ -2513,6 +2583,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Gymnasts' Walk",
       tagline: "A row of 15 bronze busts, unveiled in 2008 at the foot of Deva Citadel, honouring the gymnasts and coaches who made Deva a world centre of gymnastics.",
       description: [
         "Aleea Gimnastelor (\"the gymnasts' walk\") was unveiled in 2008 at the base of Deva Citadel, right in front of the hall where the national women's gymnastics team trains, next to the cable car's lower station. The walk has 15 bronze busts about 42-43 cm tall, made by the artist Ioan Șeu, cast at a foundry in Bucharest and set on 1.80 m granite pedestals.",
@@ -2550,6 +2621,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Museum of Dacian and Roman Civilisation — Magna Curia",
       tagline: "The baroque Magna Curia palace, in central Deva, houses the history collections of the Museum of Dacian and Roman Civilisation and a lapidarium with over a hundred archaeological pieces.",
       description: [
         "Magna Curia is a category A historic monument, originally built as a residence for Transylvanian prince Gabriel Bethlen and his wife Susana, who substantially altered the building between 1614 and 1618. In the mid-18th century, Transylvania's governor Ioan Haller and his wife, Sofia Dániel, turned it into a baroque palace, an appearance preserved to this day. The building stands at 39, 1 Decembrie Boulevard.",
@@ -2586,6 +2658,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Museum of Ethnography and Folk Art, Orăștie",
       tagline: "A collection of nearly 8,000 ethnographic and folk-art items, in a historic-monument building downtown.",
       description: [
         "The museum was founded in 1952, on the initiative of a group of local enthusiasts who assembled its first collections. In 1974 its focus shifted toward folk art, and since 1991 it has operated as a section of the Museum of Dacian and Roman Civilisation in Deva. The building it occupies, dating from the first half of the 20th century, is itself a listed historic monument.",
@@ -2622,6 +2695,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Orăștie Medieval Citadel",
       tagline: "A 12th-century Saxon fortification, reopened to the public in 2024 after three years of restoration.",
       description: [
         "The medieval fortress of Orăștie dates from the 12th century, from the arrival of the first Saxon colonists, and served as the seat of local Saxon community leaders (\"graefs\"). Over the centuries it went through numerous sieges, fires and rebuildings: it was plundered by the Tatars in the mid-13th century and devastated by the Ottomans in the early 15th century and again in the mid-17th century.",
@@ -2658,6 +2732,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "\"Aurel Vlaicu\" Memorial Complex",
       tagline: "The birthplace and museum of inventor and aviator Aurel Vlaicu, in the village near Orăștie that now bears his name.",
       description: [
         "The village of Binținți, near Orăștie (Geoagiu commune), was renamed Aurel Vlaicu in honour of the inventor and aviator born there. The memorial complex has three parts: the memorial house, opened to the public in 1952, the memorial museum built next to it in 1982, and a bust-monument erected in 1933.",
@@ -2694,6 +2769,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Gold Museum, Brad",
       tagline: "The largest collection of native gold in Europe, with pieces untouched by any jeweller.",
       description: [
         "The Gold Museum in Brad has operated since 1896, growing out of the mineral and mining-tool collections of the companies that worked the gold deposits of the Metaliferi Mountains. Today it holds over 2,000 exhibits — minerals and native gold pieces, none of them reworked by a jeweller — regarded as one of the most important collections of its kind in the world.",
@@ -2729,6 +2805,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Roman Steps (Ruda-Brad)",
       tagline: "One of the few Roman-era mining galleries preserved in the Apuseni Mountains, dug nearly 2,000 years ago.",
       description: [
         "Treptele Romane (\"the Roman Steps\") is a mining gallery cut into the rock at the edge of Ruda village, near Brad, in the 2nd-3rd centuries AD, to extract gold from the deposits of the Metaliferi Mountains. The gallery, about 200 metres long, takes its name from the steps cut into stone at the end of the tunnel, dug by hand with pickaxes by miners during the Roman occupation of Dacia.",
@@ -2765,6 +2842,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Church of the Dormition, Crișcior",
       tagline: "A 14th-15th century church founded by voivode Bâlea, with Byzantine murals unique to the area.",
       description: [
         "The \"Dormition of the Mother of God\" church in Crișcior, a few kilometres from Brad, was built in stone in the 14th-15th centuries on the site of an older wooden church, with a bell tower on its western side. Its founders were the local voivode Bâlea and his wife Vișa, documented in 1404.",
@@ -2802,6 +2880,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Corvin Castle",
       tagline: "The Knights' Hall, the Diet Hall and a well dug by Turkish prisoners — the details behind Romania's most visited castle.",
       description: [
         "Built by John Hunyadi (Iancu de Hunedoara) after 1440 on the foundations of a 14th-century fortification and expanded in Renaissance style by his son, King Matthias Corvinus, between 1458 and 1480, the castle preserves the Knights' Hall — a Gothic-vaulted reception room bearing a Latin inscription, \"Hoc opus fecit fieri Magnificus Johannes de Hunyadi\", dated 1452 — and the Diet Hall, decorated with painted medallions, including portraits of Wallachian prince Matei Basarab and Moldavian prince Vasile Lupu.",
@@ -2840,6 +2919,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Govăjdia Blast Furnace",
       tagline: "A furnace from 1810, Europe's first continuous-flow blast furnace — a relic of the iron-making tradition that grew into industrial Hunedoara.",
       description: [
         "Built between 1806 and 1810 near the village of Govăjdia (Ghelari commune, about 20 km from Hunedoara), the furnace was, when it went into operation, the first continuous-flow blast furnace in Europe and the second in the world, smelting iron ore brought from the Poiana Ruscă Mountains. It operated until 1924, marking one of the starting points of the iron-making tradition that would later turn Hunedoara into a major steel centre.",
@@ -2877,9 +2957,10 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Béla Fáy Manor",
       tagline: "The manor of the Gyulay, Kun, Fáy and Ocskay families, at the heart of the Simeria Arboretum.",
       description: [
-        "The manor, on Biscaria street inside the Simeria Dendrological Park, belonged over the 19th–20th centuries to several noble families — Gyulay, Kun, Fáy and Ocskay — who gradually laid out the surrounding park. From 1918 its owner was Béla Fáy, a naturalist and member of the Hungarian Academy of Sciences.",
+        "The manor, on Biscaria Street inside the Simeria Dendrological Park, belonged over the 19th–20th centuries to several noble families — Gyulay, Kun, Fáy and Ocskay — who gradually laid out the surrounding park. From 1918 its owner was Béla Fáy, a naturalist and member of the Hungarian Academy of Sciences.",
         "Since 1954, the building has housed the Simeria Forest Research and Experimentation Station, which still manages the surrounding arboretum today. It is listed on Hunedoara county's List of Historic Monuments."
       ],
       facts: [
@@ -2914,6 +2995,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Germisara Roman Baths",
       tagline: "The Roman baths of Geoagiu-Băi, with pools cut into the rock, where gold offerings were made to the deities of the warm springs.",
       description: [
         "The name Germisara is of Dacian origin, means \"hot water\" and appears on the Tabula Peutingeriana and in the geographer Ptolemy. The baths lie in the centre of the Geoagiu-Băi resort, on a circular promontory 90–95 m across, where the rock-cut pools, drainage channels and traces of cult buildings are still visible. The baths were used in two phases, as Germisara and later as Thermae Dodonae.",
@@ -2953,6 +3035,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Church of the Dormition, Strei",
       tagline: "A stone church from around 1300, with a Romanesque bell tower and medieval murals — one of the oldest in Transylvania.",
       description: [
         "The Orthodox church in the village of Strei, part of the town of Călan, is one of the oldest and most representative medieval buildings in Transylvania. Once the court chapel of the local knez family, it blends Romanesque forms — the massive tower with its stone spire, the narrow windows — with early Gothic features such as the rib-vaulted sanctuary and the pointed west portal. Its dating is debated: the late 13th century or the second half of the 14th century.",
@@ -2992,6 +3075,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Reformed Church, Sântămăria-Orlea",
       tagline: "The church of the Cândea knezes, built around 1280 — one of the oldest churches in the Romanian lands, with murals dated 1311.",
       description: [
         "The church stands in Sântămăria-Orlea, south of Hațeg on the right bank of the Râul Mare, on a small plateau near the old Kendeffy family manor. Built towards the end of the 13th century, around 1280, it is known as the church of the Cândea knezes; originally Catholic, it now belongs to the Reformed (Calvinist) church. The village is first documented in 1331, as \"villa Sancte Marie\".",
@@ -3032,6 +3116,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Nopcsa Castle, Săcel",
       tagline: "The Nopcsa family seat, linked to the paleontologist baron Franz Nopcsa — restored and reopened to the public in 2025.",
       description: [
         "The manor in the village of Săcel (Sântămăria-Orlea commune) took its present form around 1872 under Elek Nopcsa, after the estate passed from the Naláczy family to the Nopcsas. The two-storey building has a stepped gable on its west front, a rectangular crenellated corner tower and a small octagonal turret. Elek Nopcsa farmed the estate in a modern way and was the first to bring a threshing machine to Hunedoara county.",
@@ -3072,6 +3157,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Mălăiești Fortress",
       tagline: "A 14th-century noble fortress with a keep and curtain wall, restored with EU funds, at the foot of the Retezat.",
       description: [
         "The fortress stands in the village of Mălăiești, Sălașu de Sus commune, in the south of Țara Hațegului towards the Retezat Mountains. The complex — a keep surrounded by a stone curtain wall — dates from the 14th century and was built by local nobles; the enclosure was later strengthened with four towers.",
@@ -3153,15 +3239,16 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Colț Fortress",
       tagline: "The ruined fortress of the Cândea knezes, on a crag at the mouth of the Râușor gorge — a possible inspiration for Jules Verne's \"The Carpathian Castle\".",
       description: [
-        "Cetatea Colț was built in the 14th century by the knez Cândea, whose descendants converted to Catholicism and changed their name to Kendeffy. It stands within the village of Suseni (Râu de Mori commune), about 3 km from Râu de Mori, on a rocky spur at the entrance to the Râușor gorge.",
+        "Colț Fortress was built in the 14th century by the knez Cândea, whose descendants converted to Catholicism and changed their name to Kendeffy. It stands within the village of Suseni (Râu de Mori commune), about 3 km from Râu de Mori, on a rocky spur at the entrance to the Râușor gorge.",
         "Built around a square tower, later joined by a curtain wall and further towers, the fortress has an irregular plan shaped by the rock. In the mid-17th century the Ottoman traveller Evliya Çelebi described it as a mighty stronghold whose slopes were so steep it was impossible to approach. Today only the ruined walls remain.",
         "Because of its look and the local place names, the site is believed to have inspired Jules Verne's novel \"The Carpathian Castle\". The ruins are reached on a marked trail of about an hour from the Nucșoara valley."
       ],
       facts: [
         { label: "Dating", value: "14th century" },
-        { label: "Founders", value: "the Cândea knezes (later Kendeffy)" },
+        { label: "Founders", value: "The Cândea knezes (later Kendeffy)" },
         { label: "Location", value: "Suseni village, Râu de Mori commune" },
         { label: "Access", value: "trail marked with a blue triangle, about 1 hour" },
         { label: "Condition", value: "ruin" }
@@ -3193,6 +3280,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Geoagiu Rotunda",
       tagline: "A circular Romanesque chapel, probably the oldest medieval church on Romanian territory.",
       description: [
         "The Rotunda — Geoagiu's Romanesque chapel — is a round church with an apse to the east, built almost entirely of reused Roman brick taken from an older building on the same spot. The nave is 5.5 m across inside and the whole building is 9.5 m long. It is thought to have been raised in the late 11th century by the Ákos noble family, who then held Geoagiu.",
@@ -3231,6 +3319,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Church of the Holy Archangels, Bozeș",
       tagline: "A former stone court chapel from the early 16th century, in a hill village near Geoagiu-Băi.",
       description: [
         "The village of Bozeș, part of the town of Geoagiu, keeps a stone church with a rectangular nave and a narrower five-sided apse, built — according to local tradition — in the early 16th century by one of the Romanian princes or boyars from south of the Carpathians who then held the Lower Geoagiu estate, Bozeș included.",
@@ -3269,6 +3358,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "St George's Church, Streisângeorgiu",
       tagline: "A Romanesque church from 1313–1314 with murals from three periods — one of Romania's oldest churches still in use.",
       description: [
         "On the edge of Călan, in Streisângeorgiu, stands one of the oldest medieval buildings in Transylvania still in use. A Slavonic-Romanian inscription found in the altar says the stone church was made in 1313–1314, \"with the help of Saint George\", for the forgiveness of the sins of the knez Balea and the priest Naneș, and that it was painted by Teofil the painter.",
@@ -3308,6 +3398,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Cândea Noble Court",
       tagline: "The ruins of the seat of the Cândea knezes — the most powerful Romanian family in the Hațeg Country — in the middle of Râu de Mori.",
       description: [
         "In the centre of Râu de Mori stand the ruins of the Cândea family's noble court: the residence, the court chapel and the enclosure wall. The complex was built in the 14th century over the ruins of Roman buildings; the earliest known member of the family, Nicolae Cândea, lived around 1300.",
@@ -3316,7 +3407,7 @@ window.SITE_HERITAGE = [
       facts: [
         { label: "Date", value: "14th–16th centuries, altered in the 17th–19th" },
         { label: "Complex", value: "residence, court chapel, enclosure wall" },
-        { label: "Family", value: "the Cândea knezes (later Kendeffy and Kenderessy)" },
+        { label: "Family", value: "The Cândea knezes (later Kendeffy and Kenderessy)" },
         { label: "Condition", value: "ruin, visible from the village" },
         { label: "LMI code", value: "HD-II-a-A-03428" }
       ]
@@ -3346,6 +3437,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Church of the Descent of the Holy Spirit, Ostrov",
       tagline: "One of the oldest Romanian stone churches in Transylvania, founded by local knezes in the 14th century.",
       description: [
         "Ostrov, in Râu de Mori commune, lies on the old Roman road between Sarmizegetusa and the point where the Strei leaves the basin, and takes its name (\"islet\") from its setting, surrounded by the Râul Mare and the Apa Borii. The Church of the Descent of the Holy Spirit, founded by local knezes, predates the mid-14th century; in 1360 Peter of Ostrov was the district's first known archpriest.",
@@ -3384,6 +3476,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Medieval Church, Peșteana",
       tagline: "A 13th-century stone church built with reused Roman blocks, a few kilometres from Densuș.",
       description: [
         "In the middle of Peșteana, recorded in 1360 through its priest \"Balk de Possana\", stands the Church of the Descent of the Holy Spirit, a witness to the old knez families of the Hațeg Country. It has a rectangular nave, a Romanesque-style altar and a bell tower on the west side, and was built with massive stone blocks taken from ruined Roman buildings.",
@@ -3423,6 +3516,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Red Bastion — Gabriel Bethlen's Birthplace",
       tagline: "The 1582 bastion of Ilia's border fortress, known as the birthplace of Prince Gabriel Bethlen.",
       description: [
         "After the Ottomans took the fortress of Lipova in 1552, Ilia became a border stronghold and was ringed with bastions. Farkas Bethlen, granted the estate by Prince Stephen Báthory, built the Red Bastion in 1582 — smaller and less exposed, designed from the start as a residence, with carved stone frames and painted decoration on the outside.",
@@ -3462,6 +3556,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Wooden Church, Bretea Mureșană",
       tagline: "A wooden church consecrated on 3 March 1653, with two inscriptions in Romanian written in Cyrillic letters.",
       description: [
         "The wooden church in the cemetery of Bretea Mureșană, dedicated to Saint Demetrius, was consecrated on 3 March 1653, according to its inscription, in the time of Prince George Rákóczi. The two inscriptions, in Romanian written in Cyrillic, name the founders — among them \"Eva, mother of the Giurgești\" — and the village priest, and the original bell, now in the bell tower of the new church, dates from 1665.",
@@ -3501,6 +3596,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Church of the Descent of the Holy Spirit, Ponor",
       tagline: "A stone church from 1769, painted in 1846, in the village below the Șureanu where the Ponori knezes lived.",
       description: [
         "Ponor, a village of Pui commune at the south-western foot of the Șureanu Mountains, was the seat of the Romanian knez family Ponori. The stone Church of the Descent of the Holy Spirit was built in 1769 on land at the edge of the village given to the community by the Reformed noble family Török, who wanted to build their own church on the site of the old one.",
@@ -3540,6 +3636,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Wooden Church, Șoimuș",
       tagline: "An oak-log church built in 1705, with an iconostasis of icons painted on glass in 1830.",
       description: [
         "The wooden St Nicholas Church in Șoimuș was built in 1705, the year carved into the lintel of the door to the nave. It is made of oak logs, with a rectangular plan and a polygonal apse in line with the nave; in the 19th century it was extended west with a narthex, topped by a low bell tower with a gallery and pyramidal spire.",
@@ -3579,6 +3676,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Wooden Church, Rădulești",
       tagline: "An 18th-century wooden church, enlarged in 1790 and painted throughout inside.",
       description: [
         "The wooden church of St Paraskeva in Rădulești, Dobra commune, was built in the 18th century; tradition and sources give different years for its construction. It originally had a polygonal altar, a modest nave and a low bell tower to the west.",
@@ -3618,6 +3716,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "St Paraskeva Church, Lăpușnic",
       tagline: "A 17th-century stone church with a vault painted in 1726 on a lining of wooden boards.",
       description: [
         "The village of Lăpușnic, at the northern foot of the Poiana Ruscă Mountains, keeps a stone church listed as a historic monument since 1948. The oldest part of the nave, from the mid-17th century, was originally a civil building donated by the widow Maria de Lazar.",
@@ -3657,6 +3756,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Wooden Church, Ciungani",
       tagline: "A wooden church from around 1600, with the tallest tower of any wooden church in Hunedoara county — 14 m.",
       description: [
         "On Zapoza hill in the village of Ciungani, in the Zarand Country, stands the wooden Church of the Annunciation, built by tradition around 1600 — a date its archaic plan supports. In 1755 it was described as \"wooden, old, unconsecrated\". The steep roof and the 14 m spire of its bell tower — the tallest among the county's wooden churches — are covered in shingles.",
@@ -3696,6 +3796,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Wooden Church, Birtin",
       tagline: "A wooden church from 1690, \"in the days of Michael Apafi, king of Transylvania\", with icons by Stan the Painter.",
       description: [
         "The wooden Church of the Annunciation in Birtin stands on one of the village's gentle hills. The inscription cut above the door to the nave reads: \"This holy church was made in the days of Michael Apafi, king of Transylvania, in the year of the Lord 1690, the 20th day of April, priest Lazăr\". The massive wall logs rest directly on the ground and are joined with dovetails.",
@@ -3703,7 +3804,7 @@ window.SITE_HERITAGE = [
       ],
       facts: [
         { label: "Built", value: "1690" },
-        { label: "Dedication", value: "the Annunciation" },
+        { label: "Dedication", value: "The Annunciation" },
         { label: "Painting", value: "royal doors 1740; iconostasis 1772 (Stan the Painter)" },
         { label: "Location", value: "Birtin village, Vața de Jos commune" },
         { label: "LMI code", value: "HD-II-m-A-03256" }
@@ -3735,6 +3836,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Kendeffy Castle",
       tagline: "The Kendeffy family's neo-Gothic castle from 1782, a former hotel, now closed — it can only be seen from outside.",
       description: [
         "The castle in Sântămăria-Orlea was built in 1782 by Count Elek Kendeffy, on the site of an older manor, as the family's residence in the Hațeg Country. A riding hall was added in the early 19th century, and in the second half of that century Árpád Kendeffy had it remodelled in neo-Gothic style to plans by architect József Schulz, with decoration by Ferenc Storno. The façade bears a Baroque plaque with the Kendeffy and Bethlen coats of arms and a Latin inscription from 1782.",
@@ -3774,6 +3876,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "St George's Church, Sânpetru",
       tagline: "A 14th-century knez church with Roman stones and an ancient bust set into its façade.",
       description: [
         "St George's Church in Sânpetru (Sântămăria-Orlea commune) is one of the oldest Romanian stone monuments in Transylvania. It has a 9 × 5.8 m rectangular nave and a cross-vaulted altar, with no bell tower, and its builders set several Roman stone pieces and an ancient bust into the west façade, giving it an unusual look.",
@@ -3813,6 +3916,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Church of the Annunciation, Trestia",
       tagline: "A massive stone church from 1674, founded by the mine-owning noble Francis Gyulay, with a Brâncoveanu-style iconostasis.",
       description: [
         "On a mountain spur at the edge of Trestia (Băița commune), recorded in 1439, a large stone church dedicated to the Annunciation was built in 1674. Its founder was the noble Francis Gyulay, a commander in the Habsburg army and a major mine owner, who in 1690 gave it two bells and a banner received from Emperor Leopold I.",
@@ -3852,6 +3956,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "St Nicholas' Church, Leșnic",
       tagline: "A small knez church from the late 14th century, with medieval murals in the nave.",
       description: [
         "St Nicholas' stone church in Leșnic, Vețel commune, on the left bank of the Mureș, is one of the old foundations of Romanian knezes in the Hunedoara area. It has a simple hall plan: a 5.6 × 5 m nave and a vaulted altar, later extended with a narthex topped by a wooden bell tower and a small porch.",
@@ -3891,6 +3996,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Gyulay Castle, Mintia",
       tagline: "The Gyulay family's castle from 1641, rebuilt in Classicist style in 1834, in a 5-hectare park by the Mureș.",
       description: [
         "The Gyulay family built their castle at Mintia, on the left bank of the Mureș, in 1641. Count Lajos Gyulay had it remodelled in Classicist style in 1834 to plans by the architect Stuller; the main façade is arcaded, and the rear gallery looks out over the park. The castle and its park of about 5 ha are listed together as a historic monument.",
@@ -3929,6 +4035,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Church of the Dormition, Beriu",
       tagline: "Beriu's village church, rebuilt in 1894–1897 after a fire, with a massive tower and a Baroque-style cap.",
       description: [
         "Beriu, the commune's seat, is recorded from 1332; Saxons were settled here, as at Sereca, in 1334. The Orthodox Church of the Dormition was rebuilt between 1894 and 1897 by the Orăștie architect Nicolae Părău, after the 18th-century stone church — painted in 1793, probably by the local painter Ioan of Beriu — was badly damaged by a fire in the summer of 1894.",
@@ -3966,6 +4073,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
+      name: "Church of the Holy Archangels, Căstău",
       tagline: "A large stone church built in 1868–1874 in the village of Căstău, on the site of an 18th-century chapel.",
       description: [
         "Căstău, a village of Beriu commune, has a large church dedicated to the Archangels Michael and Gabriel, built between 1868 and 1874 under the priests Aron and Ioan Dănilă. It replaced a small stone church recorded in the church censuses of 1733, 1750, 1761–1762, 1805 and 1829–1831.",
@@ -4076,7 +4184,7 @@ window.SITE_TOWNS = [
     en: {
       tagline: "A town born out of Transylvania's first railway, home to Romania's oldest and largest dendrological park.",
       description: [
-        "Simeria began as a railway workers' colony in 1866–1867 and grew alongside the Arad–Alba Iulia line — Transylvania's first railway, opened in 1868 — becoming an important railway junction once the branch line to Valea Jiului opened in 1870. It split administratively from Biscaria commune in 1891 and gained town status in 1952.",
+        "Simeria began as a railway workers' colony in 1866–1867 and grew alongside the Arad–Alba Iulia line — Transylvania's first railway, opened in 1868 — becoming an important railway junction once the branch line to the Jiu Valley opened in 1870. It split administratively from Biscaria commune in 1891 and gained town status in 1952.",
         "The town also holds the Simeria Arboretum (Simeria Dendrological Park), the former park of the Gyulay family manor, documented since 1763 and turned into a dendrological park in 1949 — today one of Romania's most valuable collections of trees and shrubs."
       ],
       facts: [
@@ -4110,9 +4218,9 @@ window.SITE_TOWNS = [
       ]
     },
     en: {
-      tagline: "The university town of Valea Jiului and the gateway to the Parâng plateau.",
+      tagline: "The university town of the Jiu Valley and the gateway to the Parâng plateau.",
       description: [
-        "Petroșani is the main town of Valea Jiului, the centre of the coal basin and home to the University of Petroșani — successor of the Mining Institute, operating here since 1948.",
+        "Petroșani is the main town of the Jiu Valley, the centre of the coal basin and home to the University of Petroșani — successor of the Mining Institute, operating here since 1948.",
         "A chairlift from the town goes up to the Parâng plateau, one of the county's closest ski and hiking areas."
       ],
       facts: [
@@ -4145,10 +4253,10 @@ window.SITE_TOWNS = [
       ]
     },
     en: {
-      tagline: "The oldest mining town of Valea Jiului, now a gateway to Cheile Jiețului and its former mine turned museum.",
+      tagline: "The oldest mining town of the Jiu Valley, now a gateway to the Jieț Gorge and its former mine turned museum.",
       description: [
         "Petrila is first documented in 1499 and grew from the 1840s as a mining centre, around the Lonea and Petrila mines. The mine, closed in 2015, was listed as a historic monument and gradually turned into \"Planet Petrila\" — an open-air museum with guided tours and the Opera Nights festival.",
-        "The town's territory also holds the Cheile Jiețului (10 ha) and Cheile Taia (2 ha) nature reserves, a starting point for the Parâng plateau, as well as Conacul Rădăcinilor, a hotel and leisure complex opened in 2023 in the Jieț gorge."
+        "The town's territory also holds the Jieț Gorge (10 ha) and the Taia Gorge (2 ha) nature reserves, a starting point for the Parâng plateau, as well as Conacul Rădăcinilor, a hotel and leisure complex opened in 2023 in the Jieț gorge."
       ],
       facts: [
         { label: "Population", value: "19,600 (2021 census)" },
@@ -4180,10 +4288,10 @@ window.SITE_TOWNS = [
       ]
     },
     en: {
-      tagline: "The second-largest town in Valea Jiului, gateway to Vulcan Pass and the Devil's Cave.",
+      tagline: "The second-largest town in the Jiu Valley, gateway to Vulcan Pass and the Devil's Cave.",
       description: [
-        "Vulcan is mentioned as far back as the Josephine Land Survey (1769–1773) and has been a municipality since 2003 — the second-largest town in Valea Jiului after Petroșani. Like its neighbours, it grew around coal mining, and today it's best known for Peștera Dracului (Devil's Cave), with its own waterfall, found on one of five themed trails built in the area in 2022.",
-        "From Vulcan, the road climbs to Vulcan Pass (1,621 m), which links Valea Jiului to northern Oltenia — historically crossed by Prince Michael the Brave in 1600, and the site of fighting during World War I."
+        "Vulcan is mentioned as far back as the Josephine Land Survey (1769–1773) and has been a municipality since 2003 — the second-largest town in the Jiu Valley after Petroșani. Like its neighbours, it grew around coal mining, and today it's best known for the Devil's Cave (Peștera Dracului), with its own waterfall, found on one of five themed trails built in the area in 2022.",
+        "From Vulcan, the road climbs to Vulcan Pass (1,621 m), which links the Jiu Valley to northern Oltenia — historically crossed by Prince Michael the Brave in 1600, and the site of fighting during World War I."
       ],
       facts: [
         { label: "Population", value: "19,772 (2021 census)" },
@@ -4216,9 +4324,9 @@ window.SITE_TOWNS = [
       ]
     },
     en: {
-      tagline: "The westernmost town of Valea Jiului, gateway to the Straja resort and the stage of major miners' strikes.",
+      tagline: "The westernmost town of the Jiu Valley, gateway to the Straja resort and the stage of major miners' strikes.",
       description: [
-        "Lupeni is first documented in 1770, was granted town status in 1960 and has been a municipality since 2003 — the third-largest town in Valea Jiului, about 18 km from Petroșani. It grew as a coal-mining centre and remains tied to the region's labour history, having been the site of the 1929 Lupeni strike and the 1977 Jiu Valley miners' strike.",
+        "Lupeni is first documented in 1770, was granted town status in 1960 and has been a municipality since 2003 — the third-largest town in the Jiu Valley, about 18 km from Petroșani. It grew as a coal-mining centre and remains tied to the region's labour history, having been the site of the 1929 Lupeni strike and the 1977 Jiu Valley miners' strike.",
         "The road from Lupeni leads to the Straja ski resort, about 9 km away, on the slopes of the Vâlcan Mountains."
       ],
       facts: [
@@ -4440,7 +4548,7 @@ window.SITE_TOWNS = [
       facts: [
         { label: "Population", value: "5,087 (2021 census)" },
         { label: "Villages", value: "Aurel Vlaicu, Băcâia, Bozeș, Cigmău, Gelmar, Geoagiu-Băi, Homorod, Mermezeu-Văleni, Renghet, Văleni" },
-        { label: "Landmark", value: "the Rotunda — Romanesque chapel (probably late 11th century)" },
+        { label: "Landmark", value: "The Rotunda — Romanesque chapel (probably late 11th century)" },
         { label: "Spa", value: "Geoagiu-Băi, thermal waters and the Roman baths of Germisara" }
       ]
     }
@@ -4642,7 +4750,7 @@ window.SITE_TOWNS = [
         { label: "Population", value: "3,144 (2021 census)" },
         { label: "Villages", value: "Ilia, Bacea, Brâznic, Bretea Mureșană, Cuieș, Dumbrăvița, Săcămaș, Sârbi, Valea Lungă" },
         { label: "First recorded", value: "1266; \"the market town of Ilia\" in 1350" },
-        { label: "Landmark", value: "the Red Bastion — Gabriel Bethlen's birthplace (1582), LMI code HD-II-m-A-03353" }
+        { label: "Landmark", value: "The Red Bastion — Gabriel Bethlen's birthplace (1582), LMI code HD-II-m-A-03353" }
       ]
     }
   },
@@ -4676,13 +4784,13 @@ window.SITE_TOWNS = [
       description: [
         "Pui is a commune in the east of the Hațeg Country, made up of Pui (the seat), Băiești, Federi, Fizești, Galați, Hobița, Ohaba-Ponor, Ponor, Râu Bărbat, Rușor, Șerel and Uric. Between 1918 and 1950 it was the seat of Pui district in Hunedoara county.",
         "In Ohaba-Ponor, in the Șureanu Mountains, lies Șura Mare Cave, a nature reserve with a monumental entrance almost 40 m high and more than 6.6 km of explored passages, home to Romania's second-largest bat colony after Huda lui Papară; the interior is recommended only for equipped cavers. Also at Ohaba-Ponor, the fossil site (a 10 ha reserve) has yielded Mousterian tools and three finger bones attributed to Neanderthal man.",
-        "The commune also has the Fânațele Pui botanical reserve (13 ha), part of the Hațeg Country Dinosaurs Geopark, the Roman fort at Râu Bărbat and the stone Church of the Pentecost in Ponor, built in 1769. The red-stripe trail to the Râușor mountain rescue base, in the Retezat, starts from Pui village."
+        "The commune also has the Fânațele Pui botanical reserve (13 ha), part of the Hațeg Country Dinosaurs Geopark, the Roman fort at Râu Bărbat and the stone Church of the Descent of the Holy Spirit in Ponor, built in 1769. The red-band trail to the Râușor mountain rescue base, in the Retezat, starts from Pui village."
       ],
       facts: [
         { label: "Population", value: "3,682 (2021 census)" },
         { label: "Villages", value: "Pui, Băiești, Federi, Fizești, Galați, Hobița, Ohaba-Ponor, Ponor, Râu Bărbat, Rușor, Șerel, Uric" },
         { label: "Nature reserves", value: "Șura Mare Cave, Ohaba-Ponor fossil site (10 ha), Fânațele Pui (13 ha)" },
-        { label: "Landmark", value: "Church of the Pentecost in Ponor (1769), LMI code HD-II-m-B-03416" }
+        { label: "Landmark", value: "Church of the Descent of the Holy Spirit in Ponor (1769), LMI code HD-II-m-B-03416" }
       ]
     }
   },
@@ -4834,7 +4942,7 @@ window.SITE_TOWNS = [
       description: [
         "Dobra is a commune in the west of the county, made up of 13 villages: Dobra (the seat), Abucea, Bujoru, Făgețel, Lăpușnic, Mihăiești, Panc, Panc-Săliște, Rădulești, Roșcani, Stâncești, Stâncești-Ohaba and Stretea. Dobra village lies on the DN68A, a few kilometres south of the Mureș, where the Mureș valley meets the Pădureni Country, on the Dobra-Bătrâna river, which rises near Rusca peak.",
         "First recorded in 1387, Dobra was an important trading centre in the Middle Ages, its fairs drawing merchants from Bohemia, Poland and Germany. A peasant uprising broke out here in 1721, and towards the end of the 18th century the village belonged to the military border region; the former hussar barracks later became the \"La husariu\" hotel.",
-        "The commune has listed wooden churches at Rădulești, Stâncești and Abucea, a 14th-century stone church at Roșcani and a 17th-century one at Lăpușnic. Dobra is also the end point of the yellow-stripe trail that crosses the Poiana Ruscă Mountains from Hunedoara."
+        "The commune has listed wooden churches at Rădulești, Stâncești and Abucea, a 14th-century stone church at Roșcani and a 17th-century one at Lăpușnic. Dobra is also the end point of the yellow-band trail that crosses the Poiana Ruscă Mountains from Hunedoara."
       ],
       facts: [
         { label: "Population", value: "3,203 (2021 census)" },
@@ -4899,13 +5007,13 @@ window.SITE_TOWNS = [
       tagline: "Comuna de lângă Hațeg cu castelul Kendeffy, o biserică de la 1300 și situl fosilifer cu dinozauri de la Sânpetru.",
       description: [
         "Sântămăria-Orlea este o comună din Țara Hațegului, formată din satele Sântămăria-Orlea (reședința), Balomir, Bărăștii Hațegului, Bucium-Orlea, Ciopeia, Săcel, Sânpetru, Subcetate și Vadu. Satul de reședință, atestat documentar din 1315, se află la 3 km sud-est de Hațeg, pe malul stâng al Streiului.",
-        "În sat se află biserica cnezilor Cândea, azi reformată, ridicată spre sfârșitul secolului al XIII-lea, cu picturi murale din 1311 și din jurul anului 1400, și castelul Kendeffy, construit în 1782 de contele Elek Kendeffy și transformat în stil neogotic în a doua jumătate a secolului al XIX-lea, înconjurat de un parc englezesc. Naționalizat după război, castelul a devenit hotel în anii 1980.",
+        "În sat se află biserica cnezilor Cândea, azi reformată, ridicată spre sfârșitul secolului al XIII-lea, cu picturi murale din 1311 și din jurul anului 1400, și castelul Kendeffy, construit în 1782 de contele Elek Kendeffy și transformat în stil neogotic în a doua jumătate a secolului al XIX-lea, înconjurat de un parc englezesc. Naționalizat după război, castelul a devenit hotel în anii 1980; azi e închis și nu se vizitează.",
         "Pe teritoriul comunei mai sunt castelul familiei Nopcsa de la Săcel, ruinele cetății regale a Hațegului de la Subcetate (secolul al XIII-lea), biserica „Sfântul Gheorghe” din Sânpetru (secolul al XIV-lea) și Locul fosilifer cu dinozauri Sânpetru, rezervație de 5 ha în Geoparcul Dinozaurilor „Țara Hațegului” — aici a făcut Franz Nopcsa, în 1895, primele sale descoperiri paleontologice."
       ],
       facts: [
         { label: "Populație", value: "3.132 locuitori (recensământ 2021)" },
         { label: "Sate", value: "Sântămăria-Orlea, Balomir, Bărăștii Hațegului, Bucium-Orlea, Ciopeia, Săcel, Sânpetru, Subcetate, Vadu" },
-        { label: "Castelul Kendeffy", value: "1782, azi hotel; cod LMI HD-II-a-A-03446" },
+        { label: "Castelul Kendeffy", value: "1782, fost hotel, azi închis; cod LMI HD-II-a-A-03446" },
         { label: "Rezervație", value: "Locul fosilifer cu dinozauri Sânpetru (5 ha)" }
       ]
     },
@@ -4913,13 +5021,13 @@ window.SITE_TOWNS = [
       tagline: "A commune near Hațeg with Kendeffy Castle, a church from around 1300 and the Sânpetru dinosaur fossil site.",
       description: [
         "Sântămăria-Orlea is a commune in the Hațeg Country, made up of Sântămăria-Orlea (the seat), Balomir, Bărăștii Hațegului, Bucium-Orlea, Ciopeia, Săcel, Sânpetru, Subcetate and Vadu. The seat, first recorded in 1315, lies 3 km south-east of Hațeg, on the left bank of the Strei.",
-        "The village has the church of the Cândea knezes, now Reformed, built towards the end of the 13th century, with mural paintings from 1311 and from around 1400, and Kendeffy Castle, built in 1782 by Count Elek Kendeffy and remodelled in Gothic Revival style in the second half of the 19th century, set in an English-style park. Nationalised after the war, the castle became a hotel in the 1980s.",
+        "The village has the church of the Cândea knezes, now Reformed, built towards the end of the 13th century, with mural paintings from 1311 and from around 1400, and Kendeffy Castle, built in 1782 by Count Elek Kendeffy and remodelled in Gothic Revival style in the second half of the 19th century, set in an English-style park. Nationalised after the war, the castle became a hotel in the 1980s; it is now closed and cannot be visited.",
         "The commune also holds the Nopcsa family manor at Săcel, the ruins of the royal fortress of Hațeg at Subcetate (13th century), Saint George's Church in Sânpetru (14th century) and the Sânpetru dinosaur fossil site, a 5 ha reserve in the Hațeg Country Dinosaurs Geopark — where Franz Nopcsa made his first palaeontological finds in 1895."
       ],
       facts: [
         { label: "Population", value: "3,132 (2021 census)" },
         { label: "Villages", value: "Sântămăria-Orlea, Balomir, Bărăștii Hațegului, Bucium-Orlea, Ciopeia, Săcel, Sânpetru, Subcetate, Vadu" },
-        { label: "Kendeffy Castle", value: "1782, now a hotel; LMI code HD-II-a-A-03446" },
+        { label: "Kendeffy Castle", value: "1782, former hotel, now closed; LMI code HD-II-a-A-03446" },
         { label: "Reserve", value: "Sânpetru dinosaur fossil site (5 ha)" }
       ]
     }
@@ -5030,6 +5138,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "Corvin Castle fully restored — its first complete restoration in more than a century",
       tagline: "The €11.6 million works are finished: towers, bridge, roofs and halls restored, plus new areas opened to visitors.",
       description: [
         "The Corvin Castle restoration project was completed at the end of August 2026, after two EU-funded phases: €5 million through the Regional Operational Programme (2018–2023) and €6.6 million through Romania's Recovery and Resilience Plan (PNRR). It is the monument's first complete restoration since the works carried out between 1868 and 1914.",
@@ -5066,6 +5175,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "Corvin Castle switches to winter hours: open until 5 pm",
       tagline: "From 1 October 2026 to 31 March 2027, the castle is open on Mondays from 12:00 to 17:00 and Tuesday to Sunday from 9:00 to 17:00.",
       description: [
         "Since 1 October, the Corvin Castle Museum has been on its winter schedule, which runs until 31 March 2027: Mondays from 12:00 to 17:00 and Tuesday to Sunday from 9:00 to 17:00. Compared with the summer season, when the castle stayed open until 20:00, visitors should plan to arrive earlier in the day.",
@@ -5102,6 +5212,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "Sacred and chamber music concert at Corvin Castle, in the \"Iancu de Hunedoara\" season",
       tagline: "Friday, 9 October 2026, from 18:00: soprano Georgeta Plută, pianist Andrei Dragomir and the Alba County String Quartet, with free admission.",
       description: [
         "Corvin Castle hosts another concert of the \"Iancu de Hunedoara\" music season, a project that invites audiences to rediscover heritage through recitals of sacred, meditative and chamber music. The concert is part of the programme for the Year of Iancu de Hunedoara (John Hunyadi) and marks 570 years since his victory at Belgrade and his death.",
@@ -5139,6 +5250,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "\"Liviu Oros\" National Humour Festival — 25th edition, in Deva",
       tagline: "9–10 October 2026: live portrait drawing, book launches, the contest awards and the \"Remember Liviu Oros 40\" cartoon exhibition. Free admission.",
       description: [
         "Deva City Hall and the \"Drăgan Muntean\" Cultural Centre are organising the 25th edition of the \"Liviu Oros\" National Humour Festival, dedicated to creators of written and drawn humour. All events are free to attend.",
@@ -5176,6 +5288,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "Violoncellissimo in Deva — a concert on the \"Marin Cazacu 70\" anniversary tour",
       tagline: "Sunday, 18 October 2026, from 19:00, at the \"Drăgan Muntean\" Cultural Centre: from Baroque to Piazzolla, with the cello ensemble led by Marin Cazacu.",
       description: [
         "The Violoncellissimo ensemble, under the musical direction of cellist Marin Cazacu, stops in Deva on the 8th edition of the \"Clasic la puterea a treia\" (\"Classical to the Power of Three\") national tour, dedicated to the 70th birthday of the ensemble's founder and mentor.",
@@ -5212,6 +5325,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "\"Stelele Cetății\" Deva — pop music festival and contest, 43rd edition",
       tagline: "24–25 October 2026: a national contest for young singers aged 15 to 23, with a 5,000-lei trophy.",
       description: [
         "The \"Stelele Cetății\" (\"Stars of the Fortress\") National Pop Music Festival and Contest, organised by Deva City Hall and the \"Drăgan Muntean\" Cultural Centre, reaches its 43rd edition. Its aim is to discover and promote young performers and Romanian music.",
@@ -5248,6 +5362,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "Sarmizegetusa Regia open at weekends only, until 31 October",
       tagline: "From 25 September to 31 October 2026, the site is open only on Saturdays and Sundays, because of restoration works on Terrace X.",
       description: [
         "The former capital of the Dacian kingdom has reduced opening hours this autumn: from 25 September to 31 October 2026, Sarmizegetusa Regia can only be visited on Saturdays and Sundays, and the site is closed Monday to Friday. The reason is the restoration and conservation work on Terrace X. For the rest of September, the site had already been open only Friday to Sunday, for the same reason.",
@@ -5283,9 +5398,10 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "Bănița Dacian fortress reopened to visitors with a new themed trail",
       tagline: "Since 1 August 2026, the UNESCO-listed fortress by the Bănița Gorge has a marked, improved trail: 570 m, about 40 minutes uphill.",
       description: [
-        "The Dacian fortress at Bănița, one of the Orăștie Mountains fortresses on the UNESCO World Heritage list, can be visited since 1 August 2026 on the marked and improved \"Cetatea Bănița\" themed trail. The route crosses the Bănița Gorge, then continues through the forest on a steep track.",
+        "The Dacian fortress at Bănița, one of the Orăștie Mountains fortresses on the UNESCO World Heritage list, can be visited since 1 August 2026 on the marked and improved \"Bănița Fortress\" themed trail. The route crosses the Bănița Gorge, then continues through the forest on a steep track.",
         "It is 570 m long, with a 104 m height difference and medium difficulty; the climb takes about 40 minutes. The organisers recommend proper hiking gear, following the markings and signs, and respecting the cultural heritage and nature. The trail was opened to the public by the Museum of Dacian and Roman Civilisation in Deva, together with Bănița town hall, the Grădiștea Muncelului-Cioclovina Natural Park, Romsilva and Salvamont Hunedoara."
       ],
       facts: [
@@ -5319,6 +5435,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "Retezat National Park tickets can now be paid online or by SMS",
       tagline: "The visitor fee is 10 lei per person and valid for 7 days; you can pay on iaBilet.ro, Easy2Visit or by text message to 7494.",
       description: [
         "Visitors heading to the Retezat mountains can now pay the park's visitor fee in advance: online, on iaBilet.ro and Easy2Visit, or by text message to 7494 (Romanian mobile networks), sending PNR1 for one person, PNR2 for two people and so on, up to PNR5. By SMS, the price is €2 + VAT per ticket.",
@@ -5354,6 +5471,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "Vivaldi Rocks — rock legends in a symphonic version, in Deva",
       tagline: "Saturday, 31 October 2026, from 19:30, at the \"Drăgan Muntean\" Cultural Centre: Metallica, Queen, Led Zeppelin or Bon Jovi songs in symphonic arrangements.",
       description: [
         "The \"Drăgan Muntean\" Cultural Centre in Deva hosts, for the first time, the Vivaldi Rocks 2026 show, where symphonic music meets rock energy. On stage are the Bucharest Symphony Orchestra (Orchestra Simfonică București) and Vivaldi Rocks, playing pieces inspired by rock legends such as Metallica, Queen, Led Zeppelin and Bon Jovi, re-orchestrated and performed on electric instruments.",
@@ -5388,6 +5506,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "\"The Nutcracker\" with Balletto Nazionale Italiano, in Deva",
       tagline: "Thursday, 19 November 2026, from 19:00, Tchaikovsky's ballet comes to the \"Drăgan Muntean\" Cultural Centre, with ballerina Oksana Bondareva.",
       description: [
         "Balletto Nazionale Italiano brings \"The Nutcracker\" to Deva — the classic ballet set to Pyotr Ilyich Tchaikovsky's music, with ballerina Oksana Bondareva. The production promises impressive sets, spectacular costumes and visually powerful choreography, blending classical ballet with contemporary staging.",
@@ -5424,6 +5543,7 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "Deva Citadel cable car stays closed; reach the citadel by electric bus or on foot",
       tagline: "The nearly €4 million installation has been out of service since November 2025; in October, specialists from a foreign company are coming to look for a fix.",
       description: [
         "The cable car up Deva's Citadel Hill has been stopped since November 2025 because of faults in several pieces of equipment. The installation, with 30-seat cabins, cost almost €4 million from the city budget. It was inaugurated in its current form at the end of March 2024, but was shut down for technical reasons one day after it opened, and was closed again for repairs between January and May 2025.",
@@ -5461,10 +5581,11 @@ window.SITE_NEWS = [
       ]
     },
     en: {
+      name: "Deva Christmas Market 2026 opens on 1 December in Piața Unirii",
       tagline: "From 1 December 2026 to 10 January 2027: wooden stalls with seasonal goods, crafts, traditional food and hot drinks in central Deva.",
       description: [
         "Deva City Hall is organising the 2026 Deva Christmas Market in Piața Unirii (Union Square), from 1 December 2026 to 10 January 2027. Traders will sell from wooden chalets provided by the city, with priority given to Christmas items and seasonal decorations, handicrafts, traditional products, food and hot drinks.",
-        "The deadline for traders who want to take part has been extended to 15 October 2026; applications go to the City Hall registry or by email to serviciul.adpp@primariadeva.ro. Daily opening hours and the entertainment programme have not been announced yet. Last year, the market was open every day from 10:00 to 22:00, with carol concerts and the festive lights switched on on the evening of 1 December, Romania's National Day."
+        "The deadline for traders who want to take part has been extended to 15 October 2026; applications go to the City Hall registry or by email to serviciul.adpp@primariadeva.ro. Daily opening hours and the entertainment programme have not been announced yet. Last year, the market was open every day from 10:00 to 22:00, with carol concerts, and the festive lights were turned on in the evening of 1 December, Romania's National Day."
       ],
       facts: [
         { label: "Dates", value: "1 December 2026 – 10 January 2027" },
@@ -5501,11 +5622,11 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A manor-style hotel complex opened in 2023 in the Jieț gorge, with a spa, restaurant and guided hikes.",
       description: [
-        "Conacul Rădăcinilor (\"Manor of Roots\") is a hotel, restaurant and leisure complex opened in 2023 on Jiet street (DN7A), in the Cheile Jietului gorge, within Petrila town, on the way to the Transalpina road. Its rustic architecture, built with solid wood and greenery, houses over 25 rooms, a wellness & spa area with a jacuzzi and heated sauna, a salt therapy room, a restaurant, a \"Green Bar\", a terrace, and event and conference spaces.",
+        "Conacul Rădăcinilor (\"Manor of Roots\") is a hotel, restaurant and leisure complex opened in 2023 on Jiet Street (DN7A), in the Jieț Gorge, within Petrila town, on the way to the Transalpina road. Its rustic architecture, built with solid wood and greenery, houses over 25 rooms, a wellness & spa area with a jacuzzi and heated sauna, a salt therapy room, a restaurant, a \"Green Bar\", a terrace, and event and conference spaces.",
         "The complex runs guided mountain hikes and partners with a nearby equestrian centre (Keops Horses), making it a good base both for a relaxing weekend and for exploring the Jieț gorge and the Parâng plateau."
       ],
       facts: [
-        { label: "Location", value: "Jiet street, DN7A, Cheile Jietului, Petrila" },
+        { label: "Location", value: "Jiet Street, DN7A, Jieț Gorge, Petrila" },
         { label: "Opened", value: "2023" },
         { label: "Facilities", value: "25+ rooms, spa, jacuzzi, sauna, salt room, restaurant, terrace" },
         { label: "Contact", value: "phone +40 738 777 711 · conaculradacinilor.ro" }
@@ -5534,13 +5655,13 @@ window.SITE_BUSINESSES = [
       ]
     },
     en: {
-      tagline: "A small 6-room guesthouse with an outdoor jacuzzi on Bărbăteni street in Lupeni.",
+      tagline: "A small 6-room guesthouse with an outdoor jacuzzi on Bărbăteni Street in Lupeni.",
       description: [
-        "Casa Lupeni is a small guesthouse on Bărbăteni street no. 58 in Lupeni, with 6 rooms (double, triple and a two-room apartment), each with a private bathroom. It offers free private parking with 10 video-monitored spaces, wi-fi in common areas and a garden.",
+        "Casa Lupeni is a small guesthouse on Bărbăteni Street no. 58 in Lupeni, with 6 rooms (double, triple and a two-room apartment), each with a private bathroom. It offers free private parking with 10 video-monitored spaces, wi-fi in common areas and a garden.",
         "The guesthouse's highlight is its outdoor jacuzzi, available for an extra fee, and the location is a convenient base for the Straja resort and the hiking trails of the Jiu Valley. There is no restaurant on site, so the listed rates do not include meals."
       ],
       facts: [
-        { label: "Address", value: "Bărbăteni street no. 58, Lupeni" },
+        { label: "Address", value: "Bărbăteni Street no. 58, Lupeni" },
         { label: "Rooms", value: "6 rooms (double, triple, apartment), private bathroom" },
         { label: "Facilities", value: "private parking, wi-fi, garden, outdoor jacuzzi (extra fee)" },
         { label: "Contact", value: "phone +40 364 431 808" }
@@ -5572,11 +5693,11 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A 3-star hotel with 117 rooms on Deva's main street, in the city centre.",
       description: [
-        "Hotel Sarmis is a 3-star hotel at 7 Mareșal Averescu street, in central Deva, less than a kilometre from the train and bus stations. It has 117 rooms and suites, most with a balcony, minibar and TV, plus its own restaurant serving Romanian and international dishes, indoors or on the terrace.",
+        "Hotel Sarmis is a 3-star hotel at 7 Mareșal Averescu Street, in central Deva, less than a kilometre from the train and bus stations. It has 117 rooms and suites, most with a balcony, minibar and TV, plus its own restaurant serving Romanian and international dishes, indoors or on the terrace.",
         "As one of the largest hotels in town, it is used for both tourist stays and business travel or events; the front desk is open 24 hours, and breakfast, parking and wi-fi are included in the rate."
       ],
       facts: [
-        { label: "Location", value: "7 Mareșal Averescu street, Deva" },
+        { label: "Location", value: "7 Mareșal Averescu Street, Deva" },
         { label: "Category", value: "3 stars, 117 rooms" },
         { label: "Facilities", value: "in-house restaurant, free parking, wi-fi, breakfast included" },
         { label: "Contact", value: "phone +40 254 214 731 · sarmis.deva@unita-turism.ro" }
@@ -5672,11 +5793,11 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A 10-room guesthouse with a garden, a few minutes' walk from Corvin Castle.",
       description: [
-        "Pensiunea La Fontaine is on Rotarilor street no. 4, in central Hunedoara, a few minutes' walk from Corvin Castle — some rooms have a direct view of the castle. It has 10 rooms (double, twin and family), its own restaurant, a bar and a landscaped garden for outdoor dining.",
+        "Pensiunea La Fontaine is on Rotarilor Street no. 4, in central Hunedoara, a few minutes' walk from Corvin Castle — some rooms have a direct view of the castle. It has 10 rooms (double, twin and family), its own restaurant, a bar and a landscaped garden for outdoor dining.",
         "The guesthouse offers free parking and wi-fi both in the rooms and in the garden, making it a good choice for a stay focused on the fortress and the old town."
       ],
       facts: [
-        { label: "Address", value: "4 Rotarilor street, Hunedoara" },
+        { label: "Address", value: "4 Rotarilor Street, Hunedoara" },
         { label: "Rooms", value: "10 rooms (double, twin, family)" },
         { label: "Facilities", value: "restaurant, bar, garden, free parking, wi-fi" },
         { label: "Contact", value: "phone +40 770 235 524 · rezervare@lafontaine.ro · lafontaine.ro" }
@@ -5708,11 +5829,11 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A former old inn, now a guesthouse and restaurant with traditional Hunedoara cuisine.",
       description: [
-        "Curtea Veche is an accommodation and restaurant complex set up in an old inn in Hunedoara, at 2 Cernei street, at the foot of Corvin Castle. The guesthouse offers single, double, triple and family rooms, while the restaurant serves traditional Hunedoara dishes — roasted meat with sides \"like grandmother used to make\", wood-fired oven pastries and stews slow-cooked in clay pots.",
+        "Curtea Veche is an accommodation and restaurant complex set up in an old inn in Hunedoara, at 2 Cernei Street, at the foot of Corvin Castle. The guesthouse offers single, double, triple and family rooms, while the restaurant serves traditional Hunedoara dishes — roasted meat with sides \"like grandmother used to make\", wood-fired oven pastries and stews slow-cooked in clay pots.",
         "The complex has a spacious courtyard with a wood-burning fireplace and event spaces, making it one of the few places in town that combines lodging and dining under one roof, right next to the fortress."
       ],
       facts: [
-        { label: "Address", value: "2 Cernei street, Hunedoara" },
+        { label: "Address", value: "2 Cernei Street, Hunedoara" },
         { label: "Cuisine", value: "traditional Hunedoara cuisine, wood-fired oven dishes" },
         { label: "Hours", value: "10:00 AM–10:00 PM, daily" },
         { label: "Contact", value: "guesthouse phone +40 772 028 207 · restaurant phone +40 770 123 333 · curteavechehunedoara.ro" }
@@ -5741,10 +5862,10 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A modern restaurant with a view of Corvin Castle, inside the Werk Hotel & Spa complex.",
       description: [
-        "Eden by Werk is the restaurant of the Werk Hotel & Spa complex, at 2A Voinei street in Hunedoara, a few minutes' walk from Corvin Castle, with a direct view of the fortress. The menu, created by an in-house chef, blends contemporary cooking with international influences in a modern setting."
+        "Eden by Werk is the restaurant of the Werk Hotel & Spa complex, at 2A Voinei Street in Hunedoara, a few minutes' walk from Corvin Castle, with a direct view of the fortress. The menu, created by an in-house chef, blends contemporary cooking with international influences in a modern setting."
       ],
       facts: [
-        { label: "Address", value: "2A Voinei street, Hunedoara" },
+        { label: "Address", value: "2A Voinei Street, Hunedoara" },
         { label: "Cuisine", value: "contemporary, chef's menu" },
         { label: "Landmark", value: "a few minutes from Corvin Castle, inside Werk Hotel & Spa" }
       ]
@@ -5775,11 +5896,11 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A central hotel, built in 1987, next to Petroșani's Central Park.",
       description: [
-        "Hotel Petroșani is located at 110 1 Decembrie 1918 street, in the city centre, right next to Central Park, a short walk from the town's main sights. Built in 1987, it offers twin, double and superior apartment rooms, with free wi-fi, a fitness room and a reception/lounge area.",
+        "Hotel Petroșani is located at 110 1 Decembrie 1918 Street, in the city centre, right next to Central Park, a short walk from the town's main sights. Built in 1987, it offers twin, double and superior apartment rooms, with free wi-fi, a fitness room and a reception/lounge area.",
         "Its central location makes it suitable both for sightseeing trips around the Jiu Valley and for business stays or as a stopover on the way to the Parâng and Straja ski resorts."
       ],
       facts: [
-        { label: "Address", value: "110 1 Decembrie 1918 street, Petroșani" },
+        { label: "Address", value: "110 1 Decembrie 1918 Street, Petroșani" },
         { label: "Opened", value: "1987" },
         { label: "Rooms", value: "twin, double, superior apartments" },
         { label: "Contact", value: "phone +40 721 205 023 · contact@hotelpetrosani.com · hotelpetrosani.com" }
@@ -5810,11 +5931,11 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A restaurant and leisure complex open since 2005, with its own equestrian centre, in Petroșani.",
       description: [
-        "Complex Keops has operated since 2005 at 137 1 Decembrie 1918 street in Petroșani, as a restaurant with a terrace and a club area, serving both traditional Romanian dishes and international cuisine, with catering services on request.",
+        "Complex Keops has operated since 2005 at 137 1 Decembrie 1918 Street in Petroșani, as a restaurant with a terrace and a club area, serving both traditional Romanian dishes and international cuisine, with catering services on request.",
         "The complex also includes its own equestrian centre (Keops Horses), with riding lessons and mountain trail rides, plus a children's play area — it is the close partner of the Conacul Rădăcinilor hotel in the Jieț gorge."
       ],
       facts: [
-        { label: "Address", value: "137 1 Decembrie 1918 street, Petroșani" },
+        { label: "Address", value: "137 1 Decembrie 1918 Street, Petroșani" },
         { label: "Opened", value: "2005" },
         { label: "Cuisine", value: "Romanian and international, catering, equestrian centre" },
         { label: "Contact", value: "phone +40 730 072 626" }
@@ -5878,12 +5999,12 @@ window.SITE_BUSINESSES = [
       ]
     },
     en: {
-      tagline: "A restaurant with Mediterranean cuisine, on Tudor Arghezi street in Hațeg.",
+      tagline: "A restaurant with Mediterranean cuisine, on Tudor Arghezi Street in Hațeg.",
       description: [
-        "Avy Wine & Dine is a restaurant at 28 Tudor Arghezi street in Hațeg, with a Mediterranean-inspired menu carrying Italian and French influences, alongside a dedicated wine list. It is one of the highest-rated restaurants in town on review platforms."
+        "Avy Wine & Dine is a restaurant at 28 Tudor Arghezi Street in Hațeg, with a Mediterranean-inspired menu carrying Italian and French influences, alongside a dedicated wine list. It is one of the highest-rated restaurants in town on review platforms."
       ],
       facts: [
-        { label: "Address", value: "28 Tudor Arghezi street, Hațeg" },
+        { label: "Address", value: "28 Tudor Arghezi Street, Hațeg" },
         { label: "Cuisine", value: "Mediterranean, Italian and French, wine list" },
         { label: "Contact", value: "phone +40 786 725 000 · restaurant-avy.ro" }
       ]
@@ -5947,10 +6068,10 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A bistro with a Romanian and international menu, in one of Orăștie's old houses.",
       description: [
-        "Bistro Merinde is located at 31 Octavian Goga street, on the ground floor of one of the oldest houses in Orăștie, with a contemporary design. The menu is inspired by Romanian and international cuisine, served in a casual setting suited both to a quick meal and to a longer stop for travellers on the A1 motorway between Sibiu and Lugoj."
+        "Bistro Merinde is located at 31 Octavian Goga Street, on the ground floor of one of the oldest houses in Orăștie, with a contemporary design. The menu is inspired by Romanian and international cuisine, served in a casual setting suited both to a quick meal and to a longer stop for travellers on the A1 motorway between Sibiu and Lugoj."
       ],
       facts: [
-        { label: "Address", value: "31 Octavian Goga street, Orăștie" },
+        { label: "Address", value: "31 Octavian Goga Street, Orăștie" },
         { label: "Cuisine", value: "contemporary Romanian and international" },
         { label: "Hours", value: "Mon–Fri 10:00 AM–9:00/10:00 PM, Sat 10:00 AM–6:00 PM, closed Sun" },
         { label: "Contact", value: "phone +40 728 653 798" }
@@ -5982,11 +6103,11 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A family guesthouse opened in 2001, with 5 double rooms, in Brad.",
       description: [
-        "Pensiunea Irina has operated since 2001 at 20 Vânătorilor street, in Brad, classified as a 2-star establishment by the Ministry of Tourism. It has 5 double rooms, with a total capacity of 10 guests, each with a private bathroom, air conditioning, LED TV and its own heating.",
+        "Pensiunea Irina has operated since 2001 at 20 Vânătorilor Street, in Brad, classified as a 2-star establishment by the Ministry of Tourism. It has 5 double rooms, with a total capacity of 10 guests, each with a private bathroom, air conditioning, LED TV and its own heating.",
         "The guesthouse has parking and a dining area with a kitchenette, making it a well-rated option for visiting the Gold Museum and the sights of the Metaliferi Mountains."
       ],
       facts: [
-        { label: "Address", value: "20 Vânătorilor street, Brad" },
+        { label: "Address", value: "20 Vânătorilor Street, Brad" },
         { label: "Opened", value: "2001, 2-star classification" },
         { label: "Rooms", value: "5 double rooms, 10 guests" },
         { label: "Contact", value: "phone +40 740 841 239 · contact@pensiuneairina.ro · pensiuneairina.ro" }
@@ -6015,12 +6136,12 @@ window.SITE_BUSINESSES = [
       ]
     },
     en: {
-      tagline: "A 3-star guesthouse with a restaurant and 19 rooms, on Avram Iancu street in Brad.",
+      tagline: "A 3-star guesthouse with a restaurant and 19 rooms, on Avram Iancu Street in Brad.",
       description: [
-        "Pensiunea Ana Maria is at 54 Avram Iancu street, in Brad, about 1 km from the Gold Museum. It has 19 rooms and its own restaurant serving traditional Romanian food, making it one of the largest places to stay in town, also suited to groups and events."
+        "Pensiunea Ana Maria is at 54 Avram Iancu Street, in Brad, about 1 km from the Gold Museum. It has 19 rooms and its own restaurant serving traditional Romanian food, making it one of the largest places to stay in town, also suited to groups and events."
       ],
       facts: [
-        { label: "Address", value: "54 Avram Iancu street, Brad" },
+        { label: "Address", value: "54 Avram Iancu Street, Brad" },
         { label: "Rooms", value: "19 rooms, 3-star rating" },
         { label: "Facilities", value: "restaurant, parking" },
         { label: "Booking", value: "directly or via online platforms (Booking.com, Agoda)" },
@@ -6085,11 +6206,11 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A modern-design hotel between the Straja and Parâng resorts, in Vulcan.",
       description: [
-        "Atrium Hotel is located at 44 Nicolae Titulescu street, in Vulcan, between the Straja and Parâng mountain resorts. It combines modern design with rustic mountain touches and has its own restaurant, bar and terrace, alongside deluxe rooms and executive apartments.",
+        "Atrium Hotel is located at 44 Nicolae Titulescu Street, in Vulcan, between the Straja and Parâng mountain resorts. It combines modern design with rustic mountain touches and has its own restaurant, bar and terrace, alongside deluxe rooms and executive apartments.",
         "Its position in the Jiu Valley makes it a good choice both for hikers and skiers heading to Straja or Parâng, and for anyone looking for a comfortable stop in the area."
       ],
       facts: [
-        { label: "Address", value: "44 Nicolae Titulescu street, Vulcan" },
+        { label: "Address", value: "44 Nicolae Titulescu Street, Vulcan" },
         { label: "Rooms", value: "deluxe rooms, executive apartments" },
         { label: "Facilities", value: "restaurant, bar, terrace" },
         { label: "Contact", value: "phone +40 728 244 511 · office@atriumhotel.ro · atriumhotel.ro" }
@@ -6219,11 +6340,11 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A 3-star guesthouse at the foot of the Parâng mountains, with 17 rooms and 2 apartments.",
       description: [
-        "Pensiunea Bujor de Munte is located on Strada Bujorului, in the Parâng resort, about 12 km from Petroșani. It offers 17 double rooms and 2 apartments, all with internet, a minibar and a private bathroom.",
+        "Pensiunea Bujor de Munte is located on Bujorului Street, in the Parâng resort, about 12 km from Petroșani. It offers 17 double rooms and 2 apartments, all with internet, a minibar and a private bathroom.",
         "It has a restaurant-bar for 45 people and a conference room for 50 people, making it suitable both for tourist stays and group events."
       ],
       facts: [
-        { label: "Location", value: "Strada Bujorului, Parâng resort, about 12 km from Petroșani" },
+        { label: "Location", value: "Bujorului Street, Parâng resort, about 12 km from Petroșani" },
         { label: "Rooms", value: "17 double rooms + 2 apartments" },
         { label: "Contact", value: "phone +40 254 549 060 / +40 735 553 140 · rezervari@bujordemunte.ro · bujordemunte.ro" }
       ]
@@ -6251,9 +6372,9 @@ window.SITE_BUSINESSES = [
       ]
     },
     en: {
-      tagline: "A guesthouse with a restaurant on the way out of Petroșani towards the Jiu Gorge, on Strada Livezeni (DN66).",
+      tagline: "A guesthouse with a restaurant on the way out of Petroșani towards the Jiu Gorge, on Livezeni Street (DN66).",
       description: [
-        "Pensiunea Floare de Colț is at Strada Livezeni no. 36, where Petroșani ends and the road (DN66) enters the Jiu Gorge — a handy base for Parâng, Straja or the gorge itself.",
+        "Pensiunea Floare de Colț is at Livezeni Street no. 36, where Petroșani ends and the road (DN66) enters the Jiu Gorge — a handy base for Parâng, Straja or the gorge itself.",
         "It has double, twin, triple and quadruple rooms, plus its own restaurant serving Romanian and international dishes, a garden and a hall for family events."
       ],
       facts: [
@@ -6283,7 +6404,7 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A tourist complex surrounded by nature, at the foot of the Parâng mountains.",
       description: [
-        "Complex Turistic Valea Moșului is located on Strada Dărănești no. 73C, in a quiet setting at the foot of the Parâng massif."
+        "Complex Turistic Valea Moșului is located on Dărănești Street no. 73C, in a quiet setting at the foot of the Parâng massif."
       ],
       facts: [
         { label: "Address", value: "Str. Dărănești no. 73C, Petroșani" }
@@ -6308,9 +6429,9 @@ window.SITE_BUSINESSES = [
       ]
     },
     en: {
-      tagline: "A mountain cabin on Strada Decebal, in the town of Vulcan.",
+      tagline: "A mountain cabin on Decebal Street, in the town of Vulcan.",
       description: [
-        "Cabana la Cassian is located on Strada Decebal no. 153, in the town of Vulcan, close to the access road to the Straja resort."
+        "Cabana la Cassian is located on Decebal Street no. 153, in the town of Vulcan, close to the access road to the Straja resort."
       ],
       facts: [
         { label: "Address", value: "Str. Decebal no. 153, Vulcan" }
@@ -6335,9 +6456,9 @@ window.SITE_BUSINESSES = [
       ]
     },
     en: {
-      tagline: "A guesthouse on Strada Socănească, in Vulcan, about 15 km from Straja.",
+      tagline: "A guesthouse on Socănească Street, in Vulcan, about 15 km from Straja.",
       description: [
-        "Pensiunea Paradisul Verde is located on Strada Socănească no. 8, in the town of Vulcan, about 15 km from the Straja resort. It offers traditional cuisine and restaurant service."
+        "Pensiunea Paradisul Verde is located on Socănească Street no. 8, in the town of Vulcan, about 15 km from the Straja resort. It offers traditional cuisine and restaurant service."
       ],
       facts: [
         { label: "Address", value: "Str. Socănească no. 8, Vulcan" }
@@ -6362,9 +6483,9 @@ window.SITE_BUSINESSES = [
       ]
     },
     en: {
-      tagline: "A cabin on Strada Dealul Babii, in Vulcan.",
+      tagline: "A cabin on Dealul Babii Street, in Vulcan.",
       description: [
-        "Cabana Casa Ozon is located on Strada Dealul Babii no. 18C, in the town of Vulcan, close to the Dealul Babii trail and the access road to Straja."
+        "Cabana Casa Ozon is located on Dealul Babii Street no. 18C, in the town of Vulcan, close to the Dealul Babii trail and the access road to Straja."
       ],
       facts: [
         { label: "Address", value: "Str. Dealul Babii no. 18C, Vulcan" }
@@ -6448,9 +6569,9 @@ window.SITE_BUSINESSES = [
       ]
     },
     en: {
-      tagline: "A villa with a pool, on Strada Calea Brăii, in Lupeni.",
+      tagline: "A villa with a pool, on Calea Brăii Street, in Lupeni.",
       description: [
-        "Vila Casa cu Tei is located on Strada Calea Brăii no. 116, in the town of Lupeni, and has its own swimming pool."
+        "Vila Casa cu Tei is located on Calea Brăii Street no. 116, in the town of Lupeni, and has its own swimming pool."
       ],
       facts: [
         { label: "Address", value: "Str. Calea Brăii no. 116, Lupeni" },
@@ -6533,9 +6654,9 @@ window.SITE_BUSINESSES = [
       ]
     },
     en: {
-      tagline: "A mountain cabin with a fireplace, on Strada Taia, in Petrila.",
+      tagline: "A mountain cabin with a fireplace, on Taia Street, in Petrila.",
       description: [
-        "Cabana Taia Parâng-Șureanu is located on Strada Taia no. 53B, in the mountain area of Petrila, and has a fireplace."
+        "Cabana Taia Parâng-Șureanu is located on Taia Street no. 53B, in the mountain area of Petrila, and has a fireplace."
       ],
       facts: [
         { label: "Address", value: "Str. Taia no. 53B, Petrila" },

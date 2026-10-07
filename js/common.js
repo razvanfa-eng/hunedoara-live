@@ -13,6 +13,11 @@
   }
 
   function loc(obj, lang) { return (obj && (obj[lang] || obj.ro)) || {}; }
+  // numele afișat: `en.name` (opțional) pe paginile EN, altfel numele de bază (românesc)
+  function entryName(entry, lang) { return (lang && lang !== "ro" && entry && entry.en && entry.en.name) || (entry && entry.name) || ""; }
+  // zonele regionale traduse pe paginile EN (numele de localități rămân la fel)
+  var AREA_EN = {"Centru":"Centre", "Nord":"North", "Nord-Vest":"North-West", "Sud":"South", "Sud-Vest":"South-West", "Vest":"West", "Culoarul Mureșului":"Mureș Corridor", "Munții Metaliferi":"Metaliferi Mountains", "Munții Orăștiei":"Orăștie Mountains", "Munții Vâlcan, Lupeni":"Vâlcan Mountains, Lupeni", "Parcul Național Retezat":"Retezat National Park", "Parâng":"Parâng Mountains", "Poiana Ruscă":"Poiana Ruscă Mountains", "Silvașu de Sus, Țara Hațegului":"Silvașu de Sus, Hațeg Country", "Valea Jiului":"Jiu Valley", "Valea Streiului":"Strei Valley", "Vâlcan":"Vâlcan Mountains", "Zona cetăților dacice":"Dacian fortresses area", "Șureanu":"Șureanu Mountains", "Țara Hațegului":"Hațeg Country", "Țara Zarandului":"Zarand Country", "Godeanu":"Godeanu Mountains"};
+  function areaLabel(area, lang) { return (lang && lang !== "ro" && AREA_EN[area]) || area || ""; }
   function categoryLabel(entry, lang) { return (entry.category && (entry.category[lang] || entry.category.ro)) || ""; }
 
   function esc(s) {
@@ -127,7 +132,7 @@
   window.RL = {
     wazeUrl: wazeUrl, gmapsDirUrl: gmapsDirUrl, gmapsViewUrl: gmapsViewUrl,
     dataArray: dataArray, entryById: entryById,
-    loc: loc, categoryLabel: categoryLabel, esc: esc, starsHtml: starsHtml, imgError: imgError,
+    loc: loc, entryName: entryName, areaLabel: areaLabel, categoryLabel: categoryLabel, esc: esc, starsHtml: starsHtml, imgError: imgError,
     qs: qs,
     SECTIONS: SECTIONS, entryUrl: entryUrl, pageUrl: pageUrl,
     absUrl: absUrl, imgInfo: imgInfo, imgVariant: imgVariant, imgHtml: imgHtml

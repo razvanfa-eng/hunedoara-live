@@ -168,7 +168,7 @@ function ldPlaceBits(entry, l, img) {
 const EVENT_CATS = /^(Concert|Festival|Spectacol)$/;
 function ldEntity(key, entry, l, url, desc, img, lang) {
   const cat = (entry.category && entry.category.ro) || "";
-  const base = { "@id": url + "#main", name: entry.name, description: desc, url };
+  const base = { "@id": url + "#main", name: RL.entryName(entry, lang), description: desc, url };
   if (key === "SITE_BUSINESSES") {
     const type = cat === "Restaurant" ? "Restaurant" : cat === "Hotel & restaurant" ? "Hotel" : "LodgingBusiness";
     const o = { "@type": type, ...base, ...ldPlaceBits(entry, l, img) };
@@ -199,7 +199,7 @@ function ldEntity(key, entry, l, url, desc, img, lang) {
       if (img) o.image = img;
       return o;
     }
-    const o = { "@type": "NewsArticle", ...base, inLanguage: lang, headline: clip(entry.name, 110), author: ORG, publisher: ORG, mainEntityOfPage: url };
+    const o = { "@type": "NewsArticle", ...base, inLanguage: lang, headline: clip(RL.entryName(entry, lang), 110), author: ORG, publisher: ORG, mainEntityOfPage: url };
     if (entry.date) o.datePublished = entry.date;
     if (img) o.image = img;
     return o;
@@ -224,7 +224,7 @@ function ldForEntry(key, entry, url, desc, img, lang, docTitle) {
         itemListElement: [
           { "@type": "ListItem", position: 1, name: HOME_NAME[lang], item: SITE + langPath("/", lang) },
           { "@type": "ListItem", position: 2, name: t("nav." + SECTION_META[key].key, lang), item: SITE + langPath("/" + sec.listing, lang) },
-          { "@type": "ListItem", position: 3, name: entry.name, item: url }
+          { "@type": "ListItem", position: 3, name: RL.entryName(entry, lang), item: url }
         ]
       },
       ldWebPage(url, docTitle, lang, url + "#main")
@@ -420,7 +420,7 @@ for (const key of Object.keys(SECTIONS)) {
       html = html.replace(/<title[^>]*>[^<]*<\/title>/, "<title>" + esc(out.docTitle) + "</title>");
       html = setSeo(html, seoBlock({
         lang, title: out.docTitle, desc, url, alternates,
-        image: ogImage(hasPhoto ? img : null), imageAlt: hasPhoto ? entry.name : SITE_NAME,
+        image: ogImage(hasPhoto ? img : null), imageAlt: hasPhoto ? RL.entryName(entry, lang) : SITE_NAME,
         type: key === "SITE_NEWS" ? "article" : "website",
         extra: key === "SITE_NEWS" && entry.date ? `<meta property="article:published_time" content="${esc(entry.date)}">` : "",
         ld: ldForEntry(key, entry, url, desc, hasPhoto ? SITE + "/" + img : null, lang, out.docTitle)

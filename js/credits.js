@@ -20,8 +20,8 @@
             ' (<a href="' + window.RL.esc(safeUrl(e.photoCredit.source)) + '" target="_blank" rel="noopener noreferrer">' +
             window.RL.esc(e.photoCredit.sourceLabel || "Wikimedia Commons") + "</a>)</p>"
           : "";
-        cards.push('<div class="credit-card"><h3>' + window.RL.esc(e.name) +
-          ' <span class="muted">· ' + window.RL.esc(e.area || "") + "</span></h3>" +
+        cards.push('<div class="credit-card"><h3>' + window.RL.esc(window.RL.entryName(e, lang)) +
+          ' <span class="muted">· ' + window.RL.esc(window.RL.areaLabel(e.area, lang)) + "</span></h3>" +
           '<p class="muted">' + window.RL.esc(window.RL.categoryLabel(e, lang)) + "</p>" +
           '<ul class="credit-files">' + rows + "</ul>" + credit + "</div>");
       });

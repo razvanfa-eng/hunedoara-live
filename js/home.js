@@ -76,7 +76,7 @@
           '<div class="card__media">' + window.RL.imgHtml(img, { sizes: "card", eager: i < 2 }) + "</div>" +
           '<div class="card__body">' +
             '<span class="card__cat">' + window.RL.esc(window.RL.categoryLabel(e, lang)) + "</span>" +
-            '<h3 class="card__title">' + window.RL.esc(e.name) + "</h3>" +
+            '<h3 class="card__title">' + window.RL.esc(window.RL.entryName(e, lang)) + "</h3>" +
             '<p class="card__tagline">' + window.RL.esc(l.tagline || "") + "</p>" +
           "</div>" +
         "</a>";
@@ -93,7 +93,7 @@
             var l = window.RL.loc(n, lang);
             return '<a class="news-item" href="' + window.RL.entryUrl("SITE_NEWS", n.id) + '">' +
               '<span class="news-item__date">' + window.RL.esc(n.date || "") + "</span>" +
-              '<span class="news-item__title">' + window.RL.esc(n.name) + "</span>" +
+              '<span class="news-item__title">' + window.RL.esc(window.RL.entryName(n, lang)) + "</span>" +
               '<span class="news-item__tagline">' + window.RL.esc(l.tagline || "") + "</span>" +
             "</a>";
           }).join("")

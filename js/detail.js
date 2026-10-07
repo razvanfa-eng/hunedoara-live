@@ -52,17 +52,18 @@
     var siteName = (window.SITE_CONFIG && window.SITE_CONFIG.siteName && window.SITE_CONFIG.siteName[lang]) || "";
     var out = {};
 
-    out.docTitle = entry.name + (siteName ? " — " + siteName : "");
+    var name = RL.entryName(entry, lang);
+    out.docTitle = name + (siteName ? " — " + siteName : "");
     out.backHref = RL.pageUrl(cfg.backPage, lang);   // EN -> /en/<listare>.html
     out.backLabel = t(cfg.backLabelKey);
     out.badge = RL.esc(RL.categoryLabel(entry, lang)) +
       (entry.example ? ' <span class="badge badge--example">' + RL.esc(t("badge.example")) + "</span>" : "");
-    out.title = entry.name;
+    out.title = name;
     out.tagline = l.tagline || "";
 
     var images = (entry.images && entry.images.length) ? entry.images : [""];
     out.gallery = images.map(function (src, i) {
-      return RL.imgHtml(src, { sizes: images.length === 1 ? "hero" : "card", eager: i === 0, alt: i === 0 ? entry.name : "" });
+      return RL.imgHtml(src, { sizes: images.length === 1 ? "hero" : "card", eager: i === 0, alt: i === 0 ? name : "" });
     }).join("");
 
     out.description = (l.description || []).map(function (p) { return "<p>" + RL.esc(p) + "</p>"; }).join("");
@@ -99,9 +100,9 @@
         '<div class="card__media">' + RL.imgHtml(img, { sizes: "card" }) + "</div>" +
         '<div class="card__body">' +
           '<span class="card__cat">' + RL.esc(RL.categoryLabel(it, lang)) + "</span>" +
-          '<h3 class="card__title">' + RL.esc(it.name) + "</h3>" +
+          '<h3 class="card__title">' + RL.esc(RL.entryName(it, lang)) + "</h3>" +
           '<p class="card__tagline">' + RL.esc(l2.tagline || "") + "</p>" +
-          (it.area ? '<span class="card__area">' + RL.esc(it.area) + "</span>" : "") +
+          (it.area ? '<span class="card__area">' + RL.esc(RL.areaLabel(it.area, lang)) + "</span>" : "") +
         "</div></a>";
     }
     out.related = seasons.length

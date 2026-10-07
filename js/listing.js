@@ -74,9 +74,9 @@
         '<div class="card__media">' + window.RL.imgHtml(img, { sizes: "card", eager: i < 2 }) + badge + "</div>" +
         '<div class="card__body">' +
           '<span class="card__cat">' + meta + "</span>" +
-          '<h3 class="card__title">' + window.RL.esc(e.name) + "</h3>" +
+          '<h3 class="card__title">' + window.RL.esc(window.RL.entryName(e, lang)) + "</h3>" +
           '<p class="card__tagline">' + window.RL.esc(l.tagline || "") + "</p>" +
-          (e.area ? '<span class="card__area">' + window.RL.esc(e.area) + "</span>" : "") +
+          (e.area ? '<span class="card__area">' + window.RL.esc(window.RL.areaLabel(e.area, lang)) + "</span>" : "") +
         "</div>" +
       "</a>";
     }
@@ -87,8 +87,8 @@
       var area = (areaEl && areaEl.value) || "";
       var list = all.filter(function (e) {
         if (cat && window.RL.categoryLabel(e, lang) !== cat) return false;
-        if (area && e.area !== area) return false;
-        if (q && e.name.toLowerCase().indexOf(q) < 0) return false;
+        if (area && window.RL.areaLabel(e.area, lang) !== area) return false;
+        if (q && (e.name + " " + window.RL.entryName(e, lang)).toLowerCase().indexOf(q) < 0) return false;
         return true;
       });
       if (cfg.sortByDateDesc) {
@@ -103,7 +103,7 @@
     }
 
     populateSelect(catEl, uniqueValues(function (e) { return window.RL.categoryLabel(e, lang); }));
-    populateSelect(areaEl, uniqueValues(function (e) { return e.area; }));
+    populateSelect(areaEl, uniqueValues(function (e) { return window.RL.areaLabel(e.area, lang); }));
 
     [searchEl, catEl, areaEl].forEach(function (el) {
       if (!el) return;

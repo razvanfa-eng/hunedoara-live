@@ -63,7 +63,7 @@
       all.forEach(function (e) {
         if (e.example) return;
         var l = window.RL.loc(e, lang);
-        var hay = norm(e.name) + " " + norm(l.tagline) + " " + norm(e.area);
+        var hay = norm(e.name) + " " + norm(window.RL.entryName(e, "en")) + " " + norm(l.tagline) + " " + norm(e.area) + " " + norm(window.RL.areaLabel(e.area, "en"));
         if (hay.indexOf(q) < 0) return;
         out.push({ entry: e, src: src, loc: l });
       });
@@ -85,7 +85,7 @@
     resultsEl.innerHTML = matches.map(function (m) {
       return '<a class="search-result" href="' + window.RL.entryUrl(m.src.key, m.entry.id) + '">' +
         '<span class="search-result__type">' + window.RL.esc(labelFor(m.src)) + "</span>" +
-        '<span class="search-result__title">' + window.RL.esc(m.entry.name) + "</span>" +
+        '<span class="search-result__title">' + window.RL.esc(window.RL.entryName(m.entry, window.I18N.lang)) + "</span>" +
         '<span class="search-result__tagline">' + window.RL.esc(m.loc.tagline || "") + "</span>" +
       "</a>";
     }).join("");
