@@ -112,7 +112,7 @@ window.SITE_DESTINATIONS = [
       tagline: "Munții Orăștiei — nucleul fortificat al Regatului Dac, patrimoniu UNESCO din 1999.",
       description: [
         "În Munții Orăștiei se află cinci dintre cele șase cetăți dacice incluse pe lista patrimoniului mondial UNESCO (a șasea, Căpâlna, e în județul Alba): Sarmizegetusa Regia — capitala regatului lui Decebal —, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie și Bănița.",
-        "Zona se vizitează dinspre Orăștie, poarta de acces spre traseele care urcă la ruinele fortificațiilor, construite în celebra tehnică a \"murus dacicus\"."
+        "Zona se vizitează dinspre Orăștie, poarta de acces spre traseele care urcă la ruinele fortificațiilor, construite în celebra tehnică a „murus dacicus”."
       ],
       facts: [
         { label: "Cetăți în județ", value: "Sarmizegetusa Regia, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie, Bănița" },
@@ -1120,7 +1120,7 @@ window.SITE_ACTIVITIES = [
     ro: {
       tagline: "Bazin semiolimpic acoperit, redeschis în 2025 după modernizare, în cartierul Aeroport.",
       description: [
-        "Bazinul Didactic de Înot „Avram Iancu” din Petroșani este un bazin semiolimpic de 12,5 × 25 m, cu adâncime variabilă între 1,20 și 1,80 m, situat pe strada Oituz, în cartierul Aeroport. Facilitatea include saună, vestiare și o masă de tenis de masă, fiind folosită atât pentru cursuri de înot pentru elevi, cât și pentru înot liber.",
+        "Bazinul Didactic de Înot „Avram Iancu” din Petroșani este un bazin semiolimpic de 12,5 × 25 m, cu adâncime variabilă între 1,20 și 1,80 m, situat pe strada Oituz, în cartierul Aeroport. Facilitatea include saună, vestiare și o masă de tenis, fiind folosită atât pentru cursuri de înot pentru elevi, cât și pentru înot liber.",
         "După lucrări de modernizare (centrală termică, acoperiș, ventilație), bazinul s-a redeschis publicului pe 20 octombrie 2025."
       ],
       facts: [
@@ -1806,7 +1806,7 @@ window.SITE_ACTIVITIES = [
       tagline: "Traseu de mai multe zile prin Munții Poiana Ruscă, pornind chiar din centrul Hunedoarei.",
       description: [
         "Marcat cu bandă și triunghi albastru, traseul pornește de la Centrul de Informare Turistică din Hunedoara, trece pe la Castelul Corvinilor și Lacul Cinciș, apoi urcă prin Cheile Cernei în Munții Poiana Ruscă.",
-        "Cu 18–20 de ore de mers (2–3 zile), e cel mai lung dintre cele trei trasee marcate care pornesc din Hunedoara spre Poiana Ruscă."
+        "Cu 18–20 de ore de mers (2–3 zile), e varianta de mijloc ca durată dintre cele trei trasee marcate care pornesc din Hunedoara spre Poiana Ruscă."
       ],
       facts: [
         { label: "Punct de plecare", value: "Centrul de Informare Turistică Hunedoara" },
@@ -1819,7 +1819,7 @@ window.SITE_ACTIVITIES = [
       tagline: "A multi-day route through the Poiana Ruscă Mountains, starting right in downtown Hunedoara.",
       description: [
         "Marked with a blue band and triangle, the trail starts at the Hunedoara Tourist Information Centre, passes Corvin Castle and Lake Cinciș, then climbs through the Cerna Gorge into the Poiana Ruscă Mountains.",
-        "At 18–20 hours (2–3 days), it's the longest of the three marked trails starting in Hunedoara toward Poiana Ruscă."
+        "At 18–20 hours (2–3 days), it's the medium-length option among the three marked trails starting in Hunedoara toward Poiana Ruscă."
       ],
       facts: [
         { label: "Starting point", value: "Hunedoara Tourist Information Centre" },
@@ -1840,7 +1840,7 @@ window.SITE_ACTIVITIES = [
       tagline: "Traseu marcat din Hunedoara spre Vârful Rusca, cel mai înalt punct al masivului cu același nume.",
       description: [
         "Marcat cu bandă roșie, traseul pornește tot din centrul Hunedoarei, trece pe la Castelul Corvinilor și Lacul Cinciș, apoi urcă spre Vârful Rusca, în 14–16 ore.",
-        "E varianta de mijloc ca durată dintre cele trei trasee marcate spre Poiana Ruscă pornite din Hunedoara."
+        "E cel mai scurt dintre cele trei trasee marcate spre Poiana Ruscă pornite din Hunedoara."
       ],
       facts: [
         { label: "Punct de plecare", value: "Centrul de Informare Turistică Hunedoara" },
@@ -1853,7 +1853,7 @@ window.SITE_ACTIVITIES = [
       tagline: "A marked trail from Hunedoara up to Rusca Peak, the highest point of the massif bearing its name.",
       description: [
         "Marked with a red band, the trail also starts in downtown Hunedoara, passes Corvin Castle and Lake Cinciș, then climbs to Rusca Peak in 14–16 hours.",
-        "It's the medium-length option among the three marked trails to Poiana Ruscă starting from Hunedoara."
+        "It's the shortest of the three marked trails to Poiana Ruscă starting from Hunedoara."
       ],
       facts: [
         { label: "Starting point", value: "Hunedoara Tourist Information Centre" },
@@ -1908,7 +1908,7 @@ window.SITE_ACTIVITIES = [
       tagline: "Traseu prin Cheile Șura Mare spre sistemul carstic Ponorici-Cioclovina, cea mai lungă peșteră din Munții Șureanu.",
       description: [
         "Marcat cu bandă roșie, traseul pornește din Ohaba Ponor, trece prin Cheile Șura Mare pe la Peștera Ponorici și Peștera Cioclovina, apoi ajunge la Luncani și Boșorod, în 7–8 ore.",
-        "Peștera Cioclovina e cunoscută pentru descoperirea, în 1941, a unui craniu uman fosil de peste 29.000 de ani."
+        "Peștera Cioclovina e cunoscută pentru descoperirea, în 1941, a unui craniu uman fosil datat la 28.000–29.000 de ani."
       ],
       facts: [
         { label: "Punct de plecare", value: "Ohaba Ponor" },
@@ -1921,7 +1921,7 @@ window.SITE_ACTIVITIES = [
       tagline: "A trail through the Șura Mare Gorge to the Ponorici-Cioclovina karst system, the longest cave in the Șureanu Mountains.",
       description: [
         "Marked with a red band, the trail starts in Ohaba Ponor, passes through the Șura Mare Gorge by the Ponorici and Cioclovina caves, then reaches Luncani and Boșorod, in 7–8 hours.",
-        "Cioclovina Cave is known for the 1941 discovery of a fossil human skull over 29,000 years old."
+        "Cioclovina Cave is known for the 1941 discovery of a fossil human skull dated to 28,000–29,000 years ago."
       ],
       facts: [
         { label: "Starting point", value: "Ohaba Ponor" },
@@ -2365,8 +2365,8 @@ window.SITE_HERITAGE = [
     ro: {
       tagline: "Capitala regatului dac, pe un vârf la 1.200 m altitudine — patrimoniu mondial UNESCO din 1999.",
       description: [
-        "Sarmizegetusa Regia a fost centrul politic și religios al regatului dac timp de peste un secol și jumătate, ajungând la apogeu sub Decebal. Fortificația, construită în tehnica \"murus dacicus\" pe cinci terase, ocupă aproape 30.000 m².",
-        "Zona sacră din apropiere cuprinde temple rectangulare și celebrul sanctuar circular — un \"calendar\" din stâlpi de lemn și piatră, una dintre cele mai discutate construcții din arheologia românească."
+        "Sarmizegetusa Regia a fost centrul politic și religios al regatului dac timp de peste un secol și jumătate, ajungând la apogeu sub Decebal. Fortificația, construită în tehnica „murus dacicus” pe cinci terase, ocupă aproape 30.000 m².",
+        "Zona sacră din apropiere cuprinde temple rectangulare și celebrul sanctuar circular — un „calendar” din stâlpi de lemn și piatră, una dintre cele mai discutate construcții din arheologia românească."
       ],
       facts: [
         { label: "Statut", value: "Patrimoniu mondial UNESCO din 1999" },
@@ -2533,14 +2533,14 @@ window.SITE_HERITAGE = [
       tagline: "Cruce de oțel înaltă de 18,6 m, la 1.485 m pe Muntele Straja, în memoria celor 800 de militari români căzuți în 1916 în luptele din Defileul Jiului.",
       description: [
         "Crucea Eroilor de pe Muntele Straja, deasupra Lupeniului, este un monument comemorativ dedicat celor 800 de militari români care au căzut în toamna anului 1916, în luptele din Defileul Jiului, în Primul Război Mondial. Crucea, din oțel, are 18,6 m și se află la altitudinea de 1.485 m. A fost sfințită pe 30 octombrie 1996 de starețul Mănăstirii Lainici, Ioachim Pârvulescu, și a fost ridicată din donații private, în mare parte ale omului de afaceri Emil Ilie Părău. Lângă ea a fost construit, începând din 1999, Schitul Straja.",
-        "Se ajunge din Lupeni pe o șosea asfaltată de circa 10 km, până în stațiunea Straja. Din 2000, în Vinerea Mare se organizează anual o procesiune asemănătoare Drumului Crucii.",
+        "Se ajunge din Lupeni pe o șosea asfaltată de circa 8 km, până în stațiunea Straja. Din 2000, în Vinerea Mare se organizează anual o procesiune asemănătoare Drumului Crucii.",
         "Nu trebuie confundată cu memorialul minerilor morți în explozia de gaz metan de la Mina Aurelia, pe 27 aprilie 1922 — cea mai gravă tragedie din istoria mineritului din Valea Jiului, soldată cu 82 de morți, 62 de văduve și 124 de orfani, după care regele Ferdinand I a venit la Lupeni. Monumentul de piatră dedicat lor se află în cimitirul din Lupeni, unde la aniversarea tragediei, pe 27 aprilie, au loc slujbe de pomenire."
       ],
       facts: [
         { label: "Comemorează", value: "cei 800 de militari români căzuți în 1916 în Defileul Jiului" },
         { label: "Dimensiuni", value: "cruce de oțel de 18,6 m, la 1.485 m altitudine" },
         { label: "Sfințire", value: "30 octombrie 1996" },
-        { label: "Acces", value: "șosea asfaltată de circa 10 km din Lupeni, până în stațiunea Straja" }
+        { label: "Acces", value: "șosea asfaltată de circa 8 km din Lupeni, până în stațiunea Straja" }
       ]
     },
     en: {
@@ -2548,14 +2548,14 @@ window.SITE_HERITAGE = [
       tagline: "An 18.6 m steel cross at 1,485 m on Mount Straja, honouring the 800 Romanian soldiers who fell in 1916 in the battles of the Jiu Gorge.",
       description: [
         "The Heroes' Cross on Mount Straja, above Lupeni, is a memorial to the 800 Romanian soldiers who fell in the autumn of 1916 in the battles of the Jiu Gorge, during the First World War. The steel cross is 18.6 m tall and stands at an altitude of 1,485 m. It was consecrated on 30 October 1996 by the abbot of Lainici Monastery, Ioachim Pârvulescu, and was built from private donations, mostly from businessman Emil Ilie Părău. The Straja hermitage (Schitul Straja) was built next to it from 1999 onwards.",
-        "It is reached from Lupeni on a paved road of about 10 km, up to the Straja resort. Since 2000, a procession similar to the Way of the Cross has been held here every year on Good Friday.",
+        "It is reached from Lupeni on a paved road of about 8 km, up to the Straja resort. Since 2000, a procession similar to the Way of the Cross has been held here every year on Good Friday.",
         "It should not be confused with the memorial to the miners killed in the methane explosion at Aurelia Mine on 27 April 1922 — the worst disaster in the Jiu Valley's mining history, which left 82 dead, 62 widows and 124 orphans, and after which King Ferdinand I came to Lupeni. Their stone monument stands in the Lupeni cemetery, where memorial services are held on the anniversary, 27 April."
       ],
       facts: [
         { label: "Commemorates", value: "the 800 Romanian soldiers who fell in 1916 in the Jiu Gorge" },
         { label: "Size", value: "18.6 m steel cross, at 1,485 m altitude" },
         { label: "Consecrated", value: "30 October 1996" },
-        { label: "Access", value: "paved road of about 10 km from Lupeni, up to the Straja resort" }
+        { label: "Access", value: "paved road of about 8 km from Lupeni, up to the Straja resort" }
       ]
     }
   },
@@ -2869,13 +2869,13 @@ window.SITE_HERITAGE = [
       tagline: "Sala Cavalerilor, Sala Dietei și fântâna săpată de prizonieri turci — detaliile din spatele celui mai vizitat castel al țării.",
       description: [
         "Ridicat de Iancu de Hunedoara după 1440 pe temeliile unei fortificații din secolul al XIV-lea și extins în stil renascentist de fiul său, regele Matia Corvin, între 1458 și 1480, castelul păstrează Sala Cavalerilor — sala de recepție cu bolți gotice, care poartă o inscripție în latină, „Hoc opus fecit fieri Magnificus Johannes de Hunyadi”, datată 1452 — și Sala Dietei, decorată cu medalioane pictate, printre care portretele domnitorilor Matei Basarab și Vasile Lupu.",
-        "Curtea interioară adăpostește fântâna despre care legenda spune că a fost săpată timp de 15 ani de trei prizonieri otomani, cărora li s-ar fi promis libertatea dacă găsesc apă; promisiunea nu ar fi fost respectată, iar inscripția rămasă pe pereții fântânii are o interpretare încă disputată de istorici. Castelul se vizitează tot anul (luni 12:00–20:00, marți–duminică 9:00–20:00, în sezonul aprilie–septembrie 2026), biletul de adult costând 55 de lei în 2026."
+        "Curtea interioară adăpostește fântâna despre care legenda spune că a fost săpată timp de 15 ani de trei prizonieri otomani, cărora li s-ar fi promis libertatea dacă găsesc apă; promisiunea nu ar fi fost respectată, iar inscripția rămasă pe pereții fântânii are o interpretare încă disputată de istorici. Castelul se vizitează tot anul; între 1 octombrie 2026 și 31 martie 2027 e în vigoare programul de iarnă (luni 12:00–17:00, marți–duminică 9:00–17:00), iar biletul de adult costă 55 de lei în 2026."
       ],
       facts: [
         { label: "Construcție inițială", value: "După 1440, de Iancu de Hunedoara, pe o fortificație din secolul XIV" },
         { label: "Extindere renascentistă", value: "1458–1480, sub regele Matia Corvin" },
         { label: "Săli principale", value: "Sala Cavalerilor (inscripție din 1452), Sala Dietei" },
-        { label: "Program (2026)", value: "Luni 12:00–20:00, marți–duminică 9:00–20:00 (aprilie–septembrie)" },
+        { label: "Program de iarnă", value: "1 oct. 2026 – 31 mar. 2027: luni 12:00–17:00, marți–duminică 9:00–17:00" },
         { label: "Bilet adult (2026)", value: "55 lei" }
       ]
     },
@@ -2884,13 +2884,13 @@ window.SITE_HERITAGE = [
       tagline: "The Knights' Hall, the Diet Hall and a well dug by Turkish prisoners — the details behind Romania's most visited castle.",
       description: [
         "Built by John Hunyadi (Iancu de Hunedoara) after 1440 on the foundations of a 14th-century fortification and expanded in Renaissance style by his son, King Matthias Corvinus, between 1458 and 1480, the castle preserves the Knights' Hall — a Gothic-vaulted reception room bearing a Latin inscription, \"Hoc opus fecit fieri Magnificus Johannes de Hunyadi\", dated 1452 — and the Diet Hall, decorated with painted medallions, including portraits of Wallachian prince Matei Basarab and Moldavian prince Vasile Lupu.",
-        "The inner courtyard holds the well that, according to legend, three Ottoman prisoners spent 15 years digging in search of water after being promised freedom if they succeeded; the promise was reportedly broken, and an inscription said to remain on the well's walls has a meaning historians still dispute. The castle is open year-round (Mondays 12:00–8:00 PM, Tuesday–Sunday 9:00 AM–8:00 PM in the April–September 2026 season), with an adult ticket costing 55 lei in 2026."
+        "The inner courtyard holds the well that, according to legend, three Ottoman prisoners spent 15 years digging in search of water after being promised freedom if they succeeded; the promise was reportedly broken, and an inscription said to remain on the well's walls has a meaning historians still dispute. The castle is open year-round; from 1 October 2026 to 31 March 2027 winter hours apply (Mondays 12:00–17:00, Tuesday–Sunday 9:00–17:00), and an adult ticket costs 55 lei in 2026."
       ],
       facts: [
         { label: "Original construction", value: "After 1440, by John Hunyadi, on a 14th-century fortification" },
         { label: "Renaissance expansion", value: "1458–1480, under King Matthias Corvinus" },
         { label: "Main halls", value: "Knights' Hall (1452 inscription), Diet Hall" },
-        { label: "Hours (2026)", value: "Mon 12:00–8:00 PM, Tue–Sun 9:00 AM–8:00 PM (April–September)" },
+        { label: "Winter hours", value: "1 Oct 2026 – 31 Mar 2027: Mon 12:00–17:00, Tue–Sun 9:00–17:00" },
         { label: "Adult ticket (2026)", value: "55 lei" }
       ]
     }
@@ -3063,7 +3063,7 @@ window.SITE_HERITAGE = [
     ro: {
       tagline: "Biserica cnezilor Cândea, ridicată în jurul anului 1280 — una dintre cele mai vechi biserici din spațiul românesc, cu picturi murale datate 1311.",
       description: [
-        "Biserica se află în Sântămăria-Orlea, la sud de Hațeg, pe malul drept al Râului Mare, pe un mic platou aproape de vechiul castel al familiei Kendeffy. A fost ridicată spre sfârșitul secolului al XIII-lea, în jurul anului 1280, este cunoscută ca biserica cnezilor Cândea și, inițial catolică, aparține astăzi cultului reformat (calvin). Satul e atestat documentar din 1331, ca „villa Sancte Marie”.",
+        "Biserica se află în Sântămăria-Orlea, la câțiva kilometri sud-est de Hațeg, pe un mic platou aproape de vechiul castel al familiei Kendeffy. A fost ridicată spre sfârșitul secolului al XIII-lea, în jurul anului 1280, este cunoscută ca biserica cnezilor Cândea și, inițial catolică, aparține astăzi cultului reformat (calvin). Satul apare în documente din 1315, iar în 1331 ca „villa Sancte Marie”.",
         "Construită din piatră brută, cu muchii din piatră fățuită, are o navă dreptunghiulară tăvănită, un turn pătrat cu cinci niveluri pe fațada de vest, cu portal romanic bogat sculptat, și un altar boltit în cruce pe ogive. Formele ei ilustrează trecerea de la romanic la goticul timpuriu în Transilvania.",
         "În interior se păstrează fragmente importante dintr-un ansamblu de pictură murală, scos de sub var începând din 1869. Etapa principală de pictură este datată printr-o inscripție latină în anul 1311."
       ],
@@ -3078,7 +3078,7 @@ window.SITE_HERITAGE = [
       name: "Reformed Church, Sântămăria-Orlea",
       tagline: "The church of the Cândea knezes, built around 1280 — one of the oldest churches in the Romanian lands, with murals dated 1311.",
       description: [
-        "The church stands in Sântămăria-Orlea, south of Hațeg on the right bank of the Râul Mare, on a small plateau near the old Kendeffy family manor. Built towards the end of the 13th century, around 1280, it is known as the church of the Cândea knezes; originally Catholic, it now belongs to the Reformed (Calvinist) church. The village is first documented in 1331, as \"villa Sancte Marie\".",
+        "The church stands in Sântămăria-Orlea, a few kilometres south-east of Hațeg, on a small plateau near the old Kendeffy family manor. Built towards the end of the 13th century, around 1280, it is known as the church of the Cândea knezes; originally Catholic, it now belongs to the Reformed (Calvinist) church. The village appears in records from 1315, and in 1331 as \"villa Sancte Marie\".",
         "Built of rough stone with dressed-stone corners, it has a flat-ceilinged rectangular nave, a square five-storey tower on its west front with a richly carved Romanesque portal, and a rib-vaulted sanctuary. Its forms illustrate the transition from Romanesque to early Gothic in Transylvania.",
         "Inside, significant fragments survive of a mural scheme uncovered from beneath whitewash from 1869 onwards. The main painting phase is dated by a Latin inscription to the year 1311."
       ],
@@ -4276,15 +4276,15 @@ window.SITE_TOWNS = [
     images: ["images/vulcan-panorama.jpg"],
     photoCredit: { author: "Bogdan Muraru", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Prim%C4%83ria_Vulcan.jpg" },
     ro: {
-      tagline: "A doua localitate ca mărime din Valea Jiului, poartă spre Pasul Vâlcan și Peștera Dracului.",
+      tagline: "A doua localitate ca mărime din Valea Jiului, poartă spre Pasul Vulcan și Peștera Dracului.",
       description: [
         "Vulcan apare menționat încă din Harta Iosefină (1769–1773) și este, din 2003, municipiu — a doua localitate ca mărime din Valea Jiului, după Petroșani. Orașul s-a dezvoltat tot în jurul mineritului cărbunelui, iar astăzi e cunoscut mai ales pentru Peștera Dracului, cu propria cascadă, aflată pe unul dintre cele cinci trasee tematice amenajate în zonă în 2022.",
-        "De la Vulcan pornește drumul spre Pasul Vâlcan (1.621 m), care leagă Valea Jiului de nordul Olteniei, traversat istoric de Mihai Viteazul în 1600 și loc de luptă în Primul Război Mondial."
+        "De la Vulcan pornește drumul spre Pasul Vulcan (1.621 m), care leagă Valea Jiului de nordul Olteniei, traversat istoric de Mihai Viteazul în 1600 și loc de luptă în Primul Război Mondial."
       ],
       facts: [
         { label: "Populație", value: "19.772 locuitori (recensământ 2021)" },
         { label: "Statut", value: "municipiu (din 2003)" },
-        { label: "Reper", value: "Peștera Dracului; Pasul Vâlcan (1.621 m)" }
+        { label: "Reper", value: "Peștera Dracului; Pasul Vulcan (1.621 m)" }
       ]
     },
     en: {
@@ -4311,29 +4311,29 @@ window.SITE_TOWNS = [
     images: ["images/lupeni-panorama.jpg"],
     photoCredit: { author: "Mitasim", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Panoram%C4%83_a_municipiului_Lupeni,_Hunedoara.jpg" },
     ro: {
-      tagline: "Cel mai vestic oraș al Văii Jiului, poartă spre stațiunea Straja și scenă a marilor greve miniere.",
+      tagline: "Oraș din vestul Văii Jiului, poartă spre stațiunea Straja și scenă a marilor greve miniere.",
       description: [
-        "Lupeni este atestat documentar din 1770, a primit rangul de oraș în 1960 și e municipiu din 2003 — al treilea ca mărime din Valea Jiului, la circa 18 km de Petroșani. S-a dezvoltat ca centru minier și a rămas legat de istoria mișcării muncitorești din zonă, fiind scena Grevei de la Lupeni din 1929 și a Grevei mineriilor din Valea Jiului din 1977.",
-        "De la Lupeni pornește drumul spre stațiunea de schi Straja, aflată la aproximativ 9 km, situată pe versanții Munților Vâlcan."
+        "Lupeni este atestat documentar din 1770, a primit rangul de oraș în 1960 și e municipiu din 2003 — al treilea ca mărime din Valea Jiului, la circa 18 km de Petroșani. S-a dezvoltat ca centru minier și a rămas legat de istoria mișcării muncitorești din zonă, fiind scena Grevei de la Lupeni din 1929 și a Grevei minerilor din Valea Jiului din 1977.",
+        "De la Lupeni pornește drumul spre stațiunea de schi Straja, aflată la aproximativ 8 km, situată pe versanții Munților Vâlcan."
       ],
       facts: [
         { label: "Populație", value: "18.699 locuitori (recensământ 2021)" },
         { label: "Atestare documentară", value: "1770" },
         { label: "Statut", value: "municipiu (din 2003, oraș din 1960)" },
-        { label: "Poartă spre", value: "Stațiunea Straja (cca. 9 km)" }
+        { label: "Poartă spre", value: "Stațiunea Straja (cca. 8 km)" }
       ]
     },
     en: {
-      tagline: "The westernmost town of the Jiu Valley, gateway to the Straja resort and the stage of major miners' strikes.",
+      tagline: "A town in the west of the Jiu Valley, gateway to the Straja resort and the stage of major miners' strikes.",
       description: [
         "Lupeni is first documented in 1770, was granted town status in 1960 and has been a municipality since 2003 — the third-largest town in the Jiu Valley, about 18 km from Petroșani. It grew as a coal-mining centre and remains tied to the region's labour history, having been the site of the 1929 Lupeni strike and the 1977 Jiu Valley miners' strike.",
-        "The road from Lupeni leads to the Straja ski resort, about 9 km away, on the slopes of the Vâlcan Mountains."
+        "The road from Lupeni leads to the Straja ski resort, about 8 km away, on the slopes of the Vâlcan Mountains."
       ],
       facts: [
         { label: "Population", value: "18,699 (2021 census)" },
         { label: "First documented", value: "1770" },
         { label: "Status", value: "municipality (since 2003, town since 1960)" },
-        { label: "Gateway to", value: "Straja resort (approx. 9 km)" }
+        { label: "Gateway to", value: "Straja resort (approx. 8 km)" }
       ]
     }
   },
@@ -4487,7 +4487,7 @@ window.SITE_TOWNS = [
       description: [
         "Uricani este ultimul oraș din Valea Jiului spre vest, așezat pe Jiul de Vest, la 650–750 m altitudine, între Munții Retezat și Munții Vâlcan. Orașul cuprinde localitățile Uricani, Câmpu lui Neag și Valea de Brazi și se întinde mult de-a lungul văii, pe drumul DN66A care vine dinspre Lupeni.",
         "Localitatea a crescut odată cu mineritul: în 1947 s-a deschis prima galerie, în Plaiu Balomir, iar exploatarea huilei a făcut din Uricani un oraș aproape monoindustrial, ridicat la rang de oraș în anii '60. La Câmpu lui Neag, în 1987, o parte din sat a fost demolată pentru o carieră de cărbune; după 1989 exploatarea s-a oprit, iar în locul ei a rămas un lac adânc.",
-        "Azi Uricani e una dintre porțile de intrare în Parcul Național Retezat: din Câmpu lui Neag pornesc traseele spre Cheile Butii și Retezatul calcaros, iar drumul transmontan spre Gorj trece pe lângă lacul de acumulare Valea de Pești."
+        "Azi Uricani e una dintre porțile de intrare în Parcul Național Retezat: din Câmpu lui Neag pornesc traseele spre Cheile Buții și Retezatul calcaros, iar drumul transmontan spre Gorj trece pe lângă lacul de acumulare Valea de Pești."
       ],
       facts: [
         { label: "Populație", value: "6.669 locuitori (recensământ 2021)" },
@@ -4968,13 +4968,13 @@ window.SITE_TOWNS = [
       description: [
         "Vața de Jos este o comună din valea Crișului Alb, în nord-vestul județului, formată din 13 sate: Vața de Jos (reședința), Basarabasa, Birtin, Brotuna, Căzănești, Ciungani, Ocișor, Ociu, Prăvăleni, Prihodiște, Tătărăștii de Criș, Târnava de Criș și Vața de Sus. În Vața de Sus s-a născut, la 29 septembrie 1910, părintele Arsenie Boca, înmormântat la Mănăstirea Prislop.",
         "Stațiunea Băile Vața, cu ape termale de 36–38 °C folosite încă de la mijlocul secolului al XIX-lea, a fost redeschisă după mai bine de un deceniu de abandon.",
-        "Comuna are numeroase biserici de lemn, între care cele din Căzănești, Basarabasa, Birtin, Ciungani, Ocișor și Ociu sunt monumente istorice. Biserica din Căzănești, din secolul al XVII-lea și mărită în secolul al XIX-lea, păstrează pictură din 1828, iar cea din Târnava de Criș, din 1824, amintește de luptele din 8 noiembrie 1848, când aici au fost uciși aproximativ 283 de români."
+        "Comuna are numeroase biserici de lemn, între care cele din Căzănești, Basarabasa, Birtin, Ciungani, Ocișor și Ociu sunt monumente istorice. Biserica din Căzănești, din secolul al XVII-lea (după lista monumentelor, al XVIII-lea) și mărită în secolul al XIX-lea, păstrează pictură din 1828, iar cea din Târnava de Criș, din 1824, amintește de luptele din 8 noiembrie 1848, când aici au fost uciși aproximativ 283 de români."
       ],
       facts: [
         { label: "Populație", value: "3.163 locuitori (recensământ 2021)" },
         { label: "Sate", value: "Vața de Jos, Basarabasa, Birtin, Brotuna, Căzănești, Ciungani, Ocișor, Ociu, Prăvăleni, Prihodiște, Tătărăștii de Criș, Târnava de Criș, Vața de Sus" },
         { label: "Personalitate", value: "Arsenie Boca (n. 1910, Vața de Sus)" },
-        { label: "Reper", value: "Biserica de lemn din Căzănești (sec. XVII), cod LMI HD-II-m-A-03287" }
+        { label: "Reper", value: "Biserica de lemn din Căzănești (sec. XVII–XVIII), cod LMI HD-II-m-A-03287" }
       ]
     },
     en: {
@@ -4982,13 +4982,13 @@ window.SITE_TOWNS = [
       description: [
         "Vața de Jos is a commune in the Crișul Alb valley, in the north-west of the county, made up of 13 villages: Vața de Jos (the seat), Basarabasa, Birtin, Brotuna, Căzănești, Ciungani, Ocișor, Ociu, Prăvăleni, Prihodiște, Tătărăștii de Criș, Târnava de Criș and Vața de Sus. Father Arsenie Boca, buried at Prislop Monastery, was born in Vața de Sus on 29 September 1910.",
         "The Băile Vața spa, with thermal water at 36–38 °C used since the mid-19th century, has reopened after more than a decade of neglect.",
-        "The commune has many wooden churches; those in Căzănești, Basarabasa, Birtin, Ciungani, Ocișor and Ociu are listed monuments. The Căzănești church, from the 17th century and enlarged in the 19th, keeps paintings from 1828, while the one in Târnava de Criș, from 1824, recalls the fighting of 8 November 1848, when about 283 Romanians were killed here."
+        "The commune has many wooden churches; those in Căzănești, Basarabasa, Birtin, Ciungani, Ocișor and Ociu are listed monuments. The Căzănești church, from the 17th century (18th according to the monuments list) and enlarged in the 19th, keeps paintings from 1828, while the one in Târnava de Criș, from 1824, recalls the fighting of 8 November 1848, when about 283 Romanians were killed here."
       ],
       facts: [
         { label: "Population", value: "3,163 (2021 census)" },
         { label: "Villages", value: "Vața de Jos, Basarabasa, Birtin, Brotuna, Căzănești, Ciungani, Ocișor, Ociu, Prăvăleni, Prihodiște, Tătărăștii de Criș, Târnava de Criș, Vața de Sus" },
         { label: "Notable native", value: "Arsenie Boca (born 1910, Vața de Sus)" },
-        { label: "Landmark", value: "Căzănești wooden church (17th century), LMI code HD-II-m-A-03287" }
+        { label: "Landmark", value: "Căzănești wooden church (17th–18th century), LMI code HD-II-m-A-03287" }
       ]
     }
   },
