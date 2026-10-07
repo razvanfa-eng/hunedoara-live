@@ -34,11 +34,6 @@
       "home.news.heading": "Ultimele știri",
       "home.news.cta": "Toate știrile",
       "home.news.empty": "Nicio știre publicată încă.",
-      "home.map.title": "Harta județului Hunedoara: orașele și câteva repere din ghid",
-      "home.map.legend.towns": "Orașe",
-      "home.map.legend.landmarks": "Repere",
-      "home.map.lm.corvin": "Castelul Corvinilor",
-      "home.map.credit": "Contur: © OpenStreetMap contributors",
 
       "sec.destinatii.name": "Destinații",
       "sec.destinatii.desc": "Zonele și regiunile turistice ale județului, dintr-o privire.",
@@ -221,11 +216,6 @@
       "home.news.heading": "Latest news",
       "home.news.cta": "All news",
       "home.news.empty": "No news published yet.",
-      "home.map.title": "Map of Hunedoara county: the towns and a few landmarks in the guide",
-      "home.map.legend.towns": "Towns",
-      "home.map.legend.landmarks": "Landmarks",
-      "home.map.lm.corvin": "Corvin Castle",
-      "home.map.credit": "Outline: © OpenStreetMap contributors",
 
       "sec.destinatii.name": "Destinations",
       "sec.destinatii.desc": "The county's tourist zones and regions, at a glance.",

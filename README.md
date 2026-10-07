@@ -52,7 +52,6 @@ netlify/functions/submit-review.mjs  Primește recenziile (captcha + moderare)
 netlify.toml                         Config Netlify (+ redirecturile 301 de la URL-urile vechi ?id=)
 scripts/build-pages.mjs              Generatorul paginilor statice + SEO + sitemap (vezi mai jos)
 scripts/build-images.mjs             Variantele optimizate ale pozelor (apelat de build-pages)
-scripts/build-map.mjs                Harta județului din prima pagină (contur OSM + orașele din data.js)
 sitemap.xml, robots.txt              GENERATE
 supabase/schema.sql                  Tabelul de recenzii + reguli
 
@@ -68,7 +67,6 @@ nouă, text schimbat, poză nouă în `images/`):
 
 ```bash
 npm i                              # o singură dată (sharp, pentru poze; jsdom, pentru teste)
-node scripts/build-map.mjs         # doar dacă s-au schimbat orașele (coords) — reface harta din index.html
 node scripts/build-pages.mjs       # regenerează tot ce ține de conținut
 node test/run.mjs                  # verificare
 git add -A && git commit -m "..."  # comite și fișierele generate
