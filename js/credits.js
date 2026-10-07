@@ -3,6 +3,9 @@
   var DATA_KEYS = ["SITE_DESTINATIONS", "SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_TOWNS", "SITE_NEWS", "SITE_BUSINESSES"];
   var root = document.getElementById("credits-list");
 
+  // doar linkuri http(s) — un „javascript:...” din date nu ajunge într-un href
+  function safeUrl(u) { return /^https?:\/\//i.test(String(u || "")) ? u : "#"; }
+
   function render() {
     var lang = window.I18N.lang;
     var cards = [];
@@ -14,7 +17,7 @@
         var credit = e.photoCredit
           ? '<p class="photo-credit">' + window.RL.esc(window.I18N.t("credits.photo")) + ": " +
             window.RL.esc(e.photoCredit.author) + " — " + window.RL.esc(e.photoCredit.license) +
-            ' (<a href="' + window.RL.esc(e.photoCredit.source) + '" target="_blank" rel="noopener">' +
+            ' (<a href="' + window.RL.esc(safeUrl(e.photoCredit.source)) + '" target="_blank" rel="noopener noreferrer">' +
             window.RL.esc(e.photoCredit.sourceLabel || "Wikimedia Commons") + "</a>)</p>"
           : "";
         cards.push('<div class="credit-card"><h3>' + window.RL.esc(e.name) +

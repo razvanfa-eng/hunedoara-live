@@ -73,8 +73,8 @@
       : "";
 
     out.map = entry.coords
-      ? '<a class="btn btn--outline" target="_blank" rel="noopener" href="' + RL.wazeUrl(entry.coords) + '">' + RL.esc(t("detail.waze")) + "</a>" +
-        '<a class="btn btn--outline" target="_blank" rel="noopener" href="' + RL.gmapsDirUrl(entry.coords) + '">' + RL.esc(t("detail.gmaps")) + "</a>"
+      ? '<a class="btn btn--outline" target="_blank" rel="noopener noreferrer" href="' + RL.wazeUrl(entry.coords) + '">' + RL.esc(t("detail.waze")) + "</a>" +
+        '<a class="btn btn--outline" target="_blank" rel="noopener noreferrer" href="' + RL.gmapsDirUrl(entry.coords) + '">' + RL.esc(t("detail.gmaps")) + "</a>"
       : "";
 
     var areas = entry.relatedAreas || [];
