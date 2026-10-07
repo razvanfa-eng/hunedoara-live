@@ -3905,6 +3905,80 @@ window.SITE_HERITAGE = [
       ]
     }
   },
+  {
+    id: "biserica-beriu",
+    name: "Biserica „Adormirea Maicii Domnului” din Beriu",
+    category: { ro: "Biserică", en: "Church" },
+    area: "Beriu",
+    coords: [45.7903, 23.191],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-beriu.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_Adormirea_Maicii_Domnuuli_din_Beriu_(1).jpg" },
+    ro: {
+      tagline: "Biserica satului Beriu, refăcută în 1894–1897 după un incendiu, cu turn masiv cu coif baroc.",
+      description: [
+        "Beriu, satul de reședință al comunei, e atestat documentar din 1332; aici, ca și la Sereca, au fost colonizați sași în 1334. Biserica ortodoxă „Adormirea Maicii Domnului” a fost reconstruită între 1894 și 1897 de arhitectul Nicolae Părău din Orăștie, după ce biserica de piatră din secolul al XVIII-lea — pictată în 1793, probabil de zugravul local Ioan din Beriu — fusese grav afectată de un incendiu în vara lui 1894.",
+        "Are plan dreptunghiular, cu absida poligonală, iar deasupra intrării de vest se ridică un turn masiv cu coif de inspirație barocă. Pictura interioară e din 1898–1899 și a fost reînnoită în 2000–2003 de Ligia Despina Crăciunescu."
+      ],
+      facts: [
+        { label: "Reconstruită", value: "1894–1897 (arh. Nicolae Părău, Orăștie)" },
+        { label: "Pictură", value: "1898–1899, reînnoită în 2000–2003" },
+        { label: "Biserica veche", value: "de piatră, sec. XVIII, afectată de incendiul din 1894" },
+        { label: "Localizare", value: "satul Beriu, comuna Beriu" }
+      ]
+    },
+    en: {
+      tagline: "Beriu's village church, rebuilt in 1894–1897 after a fire, with a massive tower and a Baroque-style cap.",
+      description: [
+        "Beriu, the commune's seat, is recorded from 1332; Saxons were settled here, as at Sereca, in 1334. The Orthodox Church of the Dormition was rebuilt between 1894 and 1897 by the Orăștie architect Nicolae Părău, after the 18th-century stone church — painted in 1793, probably by the local painter Ioan of Beriu — was badly damaged by a fire in the summer of 1894.",
+        "It has a rectangular plan with a polygonal apse, and a massive tower with a Baroque-inspired cap rises above the west entrance. The interior was painted in 1898–1899 and repainted in 2000–2003 by Ligia Despina Crăciunescu."
+      ],
+      facts: [
+        { label: "Rebuilt", value: "1894–1897 (architect Nicolae Părău, Orăștie)" },
+        { label: "Murals", value: "1898–1899, renewed 2000–2003" },
+        { label: "Earlier church", value: "stone, 18th century, damaged by the 1894 fire" },
+        { label: "Location", value: "Beriu village, Beriu commune" }
+      ]
+    }
+  },
+  {
+    id: "biserica-castau",
+    name: "Biserica „Sfinții Arhangheli” din Căstău",
+    category: { ro: "Biserică", en: "Church" },
+    area: "Beriu",
+    coords: [45.8135, 23.2112],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-castau.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_Sfin%C8%9Bii_Arhangheli_din_C%C4%83st%C4%83u_(1).jpg" },
+    ro: {
+      tagline: "Biserică mare de zid ridicată în 1868–1874 în satul Căstău, pe locul unei bisericuțe din secolul al XVIII-lea.",
+      description: [
+        "Căstău, sat al comunei Beriu, are o biserică de mari dimensiuni, închinată Sfinților Arhangheli Mihail și Gavriil, construită între 1868 și 1874, pe vremea preoților Aron și Ioan Dănilă. Ea a urmat unei bisericuțe de zid pomenite în conscripțiile din 1733, 1750, 1761–1762, 1805 și 1829–1831.",
+        "Are altar semicircular, o navă spațioasă împărțită în naos și pronaos și un turn-clopotniță pătrat deasupra intrării de vest. A fost renovată în 1921–1925, 1965, 1990 și 2005. Din fosta biserică greco-catolică a satului, ridicată din piatră în 1836, se mai vede azi doar fundația."
+      ],
+      facts: [
+        { label: "Construită", value: "1868–1874" },
+        { label: "Hram", value: "Sfinții Arhangheli Mihail și Gavriil" },
+        { label: "Renovări", value: "1921–1925, 1965, 1990, 2005" },
+        { label: "Localizare", value: "satul Căstău, comuna Beriu" }
+      ]
+    },
+    en: {
+      tagline: "A large stone church built in 1868–1874 in the village of Căstău, on the site of an 18th-century chapel.",
+      description: [
+        "Căstău, a village of Beriu commune, has a large church dedicated to the Archangels Michael and Gabriel, built between 1868 and 1874 under the priests Aron and Ioan Dănilă. It replaced a small stone church recorded in the church censuses of 1733, 1750, 1761–1762, 1805 and 1829–1831.",
+        "It has a semicircular altar, a spacious nave divided into naos and narthex, and a square bell tower above the west entrance. It was renovated in 1921–1925, 1965, 1990 and 2005. Of the village's former Greek Catholic church, built of stone in 1836, only the foundation can still be seen."
+      ],
+      facts: [
+        { label: "Built", value: "1868–1874" },
+        { label: "Dedication", value: "Archangels Michael and Gabriel" },
+        { label: "Renovations", value: "1921–1925, 1965, 1990, 2005" },
+        { label: "Location", value: "Căstău village, Beriu commune" }
+      ]
+    }
+  },
 ];
 
 window.SITE_TOWNS = [

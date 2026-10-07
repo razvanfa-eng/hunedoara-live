@@ -2059,6 +2059,34 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castelul-gyulay-mintia/"/>
   </url>
   <url>
+    <loc>https://gohd.ro/mostenire/biserica-beriu/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-beriu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-beriu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-beriu/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-beriu/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-beriu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-beriu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-beriu/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-castau/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-castau/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-castau/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-castau/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-castau/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-castau/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-castau/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-castau/"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/stiri/castelul-corvinilor-restaurat-2026/</loc>
     <lastmod>2026-09-02</lastmod>
     <priority>0.5</priority>
