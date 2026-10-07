@@ -27,6 +27,9 @@
  * (listă de nume de zone), afișează grupat pe sezon toate intrările din
  * Natură / Turism activ / Moștenire / Afaceri a căror `area` se regăsește
  * în acea listă — vezi Petroșani în js/data.js pentru un exemplu.
+ * `relatedIds` (opțional) adaugă intrări anume, după id — pentru obiective
+ * a căror `area` e o zonă mai largă (ex. Ulpia Traiana, cu area „Țara
+ * Hațegului”, pe pagina comunei Sarmizegetusa).
  *
  * build() e o funcție pură (fără DOM) — o folosește și generatorul Node,
  * ca HTML-ul pre-randat să fie identic cu cel randat în browser.
@@ -78,11 +81,12 @@
       : "";
 
     var areas = entry.relatedAreas || [];
+    var ids = entry.relatedIds || [];
     var groups = {};
     RELATED_KEYS.forEach(function (key) {
       if (key === cfg.dataKey) return;
       RL.dataArray(key).forEach(function (item) {
-        if (item.example || areas.indexOf(item.area) < 0) return;
+        if (item.example || (areas.indexOf(item.area) < 0 && ids.indexOf(item.id) < 0)) return;
         var season = item.season || "tot-anul";
         (groups[season] = groups[season] || []).push({ item: item, key: key });
       });

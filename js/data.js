@@ -3475,6 +3475,289 @@ window.SITE_TOWNS = [
         { label: "Nearby", value: "Săcărâmb — type locality of sylvanite (1835)" }
       ]
     }
+  },
+  {
+    id: "uricani",
+    name: "Uricani",
+    category: { ro: "Oraș", en: "Town" },
+    area: "Valea Jiului",
+    coords: [45.3364, 23.1525],
+    hasReviews: false,
+    relatedAreas: ["Uricani"],
+    relatedIds: ["traseu-campusel-saua-scorota"],
+    images: ["images/uricani-panorama.jpg"],
+    photoCredit: { author: "Lejereanu", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:3_iulie_07_(4).JPEG" },
+    ro: {
+      tagline: "Orașul din capătul vestic al Văii Jiului, întins pe Jiul de Vest la poalele Retezatului și ale Munților Vâlcan.",
+      description: [
+        "Uricani este ultimul oraș din Valea Jiului spre vest, așezat pe Jiul de Vest, la 650–750 m altitudine, între Munții Retezat și Munții Vâlcan. Orașul cuprinde localitățile Uricani, Câmpu lui Neag și Valea de Brazi și se întinde mult de-a lungul văii, pe drumul DN66A care vine dinspre Lupeni.",
+        "Localitatea a crescut odată cu mineritul: în 1947 s-a deschis prima galerie, în Plaiu Balomir, iar exploatarea huilei a făcut din Uricani un oraș aproape monoindustrial, ridicat la rang de oraș în anii '60. La Câmpu lui Neag, în 1987, o parte din sat a fost demolată pentru o carieră de cărbune; după 1989 exploatarea s-a oprit, iar în locul ei a rămas un lac adânc.",
+        "Azi Uricani e una dintre porțile de intrare în Parcul Național Retezat: din Câmpu lui Neag pornesc traseele spre Cheile Butii și Retezatul calcaros, iar drumul transmontan spre Gorj trece pe lângă lacul de acumulare Valea de Pești."
+      ],
+      facts: [
+        { label: "Populație", value: "6.669 locuitori (recensământ 2021)" },
+        { label: "Localități componente", value: "Uricani, Câmpu lui Neag, Valea de Brazi" },
+        { label: "Altitudine", value: "650–750 m, pe Jiul de Vest" },
+        { label: "Acces", value: "DN66A, prin Lupeni" },
+        { label: "Reper", value: "poartă spre Parcul Național Retezat (prin Câmpu lui Neag)" }
+      ]
+    },
+    en: {
+      tagline: "The town at the western end of the Jiu Valley, stretched along the Western Jiu at the foot of the Retezat and Vâlcan mountains.",
+      description: [
+        "Uricani is the westernmost town of the Jiu Valley, on the Western Jiu river at 650–750 m, between the Retezat and Vâlcan mountains. The town takes in Uricani, Câmpu lui Neag and Valea de Brazi and stretches a long way along the valley, on the DN66A road coming from Lupeni.",
+        "It grew with mining: the first gallery opened in 1947 at Plaiu Balomir, and hard-coal extraction made Uricani an almost single-industry place, given town status in the 1960s. At Câmpu lui Neag, part of the village was demolished in 1987 for an open-pit coal mine; mining stopped after 1989 and a deep lake now fills the pit.",
+        "Today Uricani is one of the gateways to Retezat National Park: from Câmpu lui Neag trails lead to the Buta Gorges and the limestone Retezat, and the mountain road to Gorj passes the Valea de Pești reservoir."
+      ],
+      facts: [
+        { label: "Population", value: "6,669 (2021 census)" },
+        { label: "Component localities", value: "Uricani, Câmpu lui Neag, Valea de Brazi" },
+        { label: "Altitude", value: "650–750 m, on the Western Jiu" },
+        { label: "Access", value: "DN66A, via Lupeni" },
+        { label: "Landmark", value: "gateway to Retezat National Park (via Câmpu lui Neag)" }
+      ]
+    }
+  },
+  {
+    id: "geoagiu",
+    name: "Geoagiu",
+    category: { ro: "Oraș", en: "Town" },
+    area: "Culoarul Mureșului",
+    coords: [45.92, 23.2],
+    hasReviews: false,
+    relatedAreas: ["Geoagiu", "Aurel Vlaicu"],
+    relatedIds: ["statiunea-geoagiu-bai", "termele-romane-germisara"],
+    images: ["images/geoagiu-rotonda.jpg"],
+    photoCredit: { author: "Thaler Tamas", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:AlgyogyFotoThalerTamas.jpg" },
+    ro: {
+      tagline: "Orașul de la vărsarea Geoagiului în Mureș, cu stațiunea Geoagiu-Băi și una dintre cele mai vechi biserici din România.",
+      description: [
+        "Geoagiu se află la vărsarea râului Geoagiu în Mureș, la poalele de sud-est ale Munților Metaliferi. Pe lângă orașul propriu-zis, cuprinde zece sate, între care stațiunea balneoclimaterică Geoagiu-Băi și satul Aurel Vlaicu, locul natal al pionierului aviației române.",
+        "În oraș se află Rotonda — capela romanică din Geoagiu, o biserică de plan circular zidită din cărămidă romană refolosită. Cercetările arheologice din 1993–2004 au găsit în jurul ei peste 200 de morminte, cele mai vechi de la sfârșitul secolului al XI-lea, ceea ce o face, probabil, cea mai veche biserică medievală de pe teritoriul României; azi se vizitează ca muzeu.",
+        "Alături stă biserica reformată, gotică (secolele XV–XVI), cu reliefuri romane zidite în pereții exteriori și o orgă din 1870 care funcționează și azi. În Geoagiu-Băi se pot vedea termele romane Germisara, iar la Aurel Vlaicu, casa memorială a inventatorului."
+      ],
+      facts: [
+        { label: "Populație", value: "5.087 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Aurel Vlaicu, Băcâia, Bozeș, Cigmău, Gelmar, Geoagiu-Băi, Homorod, Mermezeu-Văleni, Renghet, Văleni" },
+        { label: "Reper", value: "Rotonda — capela romanică (probabil sf. sec. XI)" },
+        { label: "Stațiune", value: "Geoagiu-Băi, ape termale și termele romane Germisara" }
+      ]
+    },
+    en: {
+      tagline: "The town where the Geoagiu meets the Mureș, with the Geoagiu-Băi spa and one of Romania's oldest churches.",
+      description: [
+        "Geoagiu lies where the Geoagiu river flows into the Mureș, at the south-eastern foot of the Metaliferi Mountains. Besides the town itself it takes in ten villages, including the Geoagiu-Băi spa resort and the village of Aurel Vlaicu, birthplace of the Romanian aviation pioneer.",
+        "The town has the Rotunda — Geoagiu's Romanesque chapel, a circular church built of reused Roman brick. Excavations in 1993–2004 found more than 200 graves around it, the oldest from the late 11th century, which probably makes it the oldest medieval church on Romanian territory; today it can be visited as a museum.",
+        "Next to it is the Gothic Reformed church (15th–16th centuries), with Roman reliefs set into its outer walls and an 1870 organ that still plays. Geoagiu-Băi has the Roman baths of Germisara, and Aurel Vlaicu village the inventor's memorial house."
+      ],
+      facts: [
+        { label: "Population", value: "5,087 (2021 census)" },
+        { label: "Villages", value: "Aurel Vlaicu, Băcâia, Bozeș, Cigmău, Gelmar, Geoagiu-Băi, Homorod, Mermezeu-Văleni, Renghet, Văleni" },
+        { label: "Landmark", value: "the Rotunda — Romanesque chapel (probably late 11th century)" },
+        { label: "Spa", value: "Geoagiu-Băi, thermal waters and the Roman baths of Germisara" }
+      ]
+    }
+  },
+  {
+    id: "calan",
+    name: "Călan",
+    category: { ro: "Oraș", en: "Town" },
+    area: "Valea Streiului",
+    coords: [45.7361, 23.0086],
+    hasReviews: false,
+    relatedAreas: ["Călan"],
+    relatedIds: ["biserica-strei"],
+    images: ["images/calan-biserica-streisangeorgiu.jpg"],
+    photoCredit: { author: "Alexandru Baboș (Albabos)", license: "CC BY-SA 3.0 / GFDL", source: "https://commons.wikimedia.org/wiki/File:Streisangeorgiu_HD.SE.jpg" },
+    ro: {
+      tagline: "Oraș siderurgic pe valea Streiului, cu băi romane și două dintre cele mai vechi biserici de piatră din Transilvania.",
+      description: [
+        "Călan se află pe valea Streiului, între Simeria și Hațeg. Atestat documentar în 1387, a fost în epoca romană Aquae, o așezare cunoscută pentru apele ei calde; băile romane de la Călan au rămas folosite până în vremurile moderne.",
+        "Orașul modern s-a născut în jurul uzinei de fier: fundația primului furnal a fost turnată în 1869, producția a început în 1870, iar după al Doilea Război Mondial Călanul a devenit un centru important al siderurgiei românești, cu Combinatul Siderurgic Victoria. Orașul Nou Călan a fost construit din 1959, pe terasa de lângă Streisângeorgiu.",
+        "Cele mai valoroase monumente sunt bisericile medievale din satele orașului: Biserica Sf. Gheorghe din Streisângeorgiu, zidită în 1313–1314 după inscripția din altar, cu pictură din 1313–1314, 1409 și 1743 și lespezi romane în ziduri, și biserica din Strei, din jurul anului 1300."
+      ],
+      facts: [
+        { label: "Populație", value: "10.055 locuitori (recensământ 2021)" },
+        { label: "Atestare", value: "1387; în epoca romană — Aquae" },
+        { label: "Industrie", value: "uzina de fier (primul furnal 1869–1870), apoi Combinatul Siderurgic Victoria" },
+        { label: "Reper", value: "Biserica Sf. Gheorghe din Streisângeorgiu (1313–1314), cod LMI HD-II-m-A-03454" },
+        { label: "Localități", value: "Călan, Streisângeorgiu și satele Batiz, Călanu Mic, Grid, Nădăștia de Jos, Nădăștia de Sus, Ohaba Streiului, Sâncrai, Sântămăria de Piatră, Strei, Strei-Săcel, Valea Sângeorgiului" }
+      ]
+    },
+    en: {
+      tagline: "A steel town in the Strei valley, with Roman baths and two of Transylvania's oldest stone churches.",
+      description: [
+        "Călan lies in the Strei valley, between Simeria and Hațeg. First recorded in 1387, it was the Roman settlement of Aquae, known for its warm springs; the Roman baths at Călan remained in use into modern times.",
+        "The modern town grew around the ironworks: the foundation of the first blast furnace was laid in 1869, production began in 1870, and after the Second World War Călan became an important centre of Romanian steelmaking, with the Victoria steel plant. The New Town of Călan was built from 1959 on the terrace by Streisângeorgiu.",
+        "Its finest monuments are the medieval churches in the town's villages: St George's Church in Streisângeorgiu, built in 1313–1314 according to the inscription in its altar, with murals from 1313–1314, 1409 and 1743 and Roman slabs in its walls, and the church in Strei, from around 1300."
+      ],
+      facts: [
+        { label: "Population", value: "10,055 (2021 census)" },
+        { label: "First recorded", value: "1387; in Roman times — Aquae" },
+        { label: "Industry", value: "ironworks (first blast furnace 1869–1870), later the Victoria steel plant" },
+        { label: "Landmark", value: "St George's Church, Streisângeorgiu (1313–1314), LMI code HD-II-m-A-03454" },
+        { label: "Localities", value: "Călan, Streisângeorgiu and the villages of Batiz, Călanu Mic, Grid, Nădăștia de Jos, Nădăștia de Sus, Ohaba Streiului, Sâncrai, Sântămăria de Piatră, Strei, Strei-Săcel, Valea Sângeorgiului" }
+      ]
+    }
+  },
+  {
+    id: "sarmizegetusa",
+    name: "Sarmizegetusa",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Hațegului",
+    coords: [45.5153, 22.7825],
+    hasReviews: false,
+    relatedAreas: ["Sarmizegetusa"],
+    relatedIds: ["ulpia-traiana-sarmizegetusa"],
+    images: ["images/sarmizegetusa-amfiteatru.jpg"],
+    photoCredit: { author: "Uhserban", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Amfiteatrul_de_la_Ulpia_Traiana_Sarmizegetusa.jpg" },
+    ro: {
+      tagline: "Comuna construită peste capitala Daciei romane, Ulpia Traiana Sarmizegetusa.",
+      description: [
+        "Sarmizegetusa este o comună din Țara Hațegului, formată din satele Sarmizegetusa (reședința), Breazova, Hobița-Grădiște, Păucinești și Zeicani. Localnicii îi spun și azi Grădiște — de la slavul grad, „cetate”, după ruinele romane — iar numele oficial de Sarmizegetusa l-a primit în 1941.",
+        "Satul stă chiar pe locul cetății Ulpia Traiana Sarmizegetusa, capitala Daciei romane întemeiată după 106 d.Hr.: forul, amfiteatrul de circa 5.000 de locuri și templele se vizitează în mijlocul satului, iar Muzeul de Arheologie păstrează descoperirile.",
+        "Pe teritoriul comunei se mai află cetatea dacică de la Zeicani și situl unei villa rustica romane la Breazova. Prin Zeicani trece drumul spre pasul Poarta de Fier a Transilvaniei și Banat."
+      ],
+      facts: [
+        { label: "Populație", value: "1.018 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Sarmizegetusa, Breazova, Hobița-Grădiște, Păucinești, Zeicani" },
+        { label: "Reper", value: "Ulpia Traiana Sarmizegetusa — capitala Daciei romane" },
+        { label: "Alte situri", value: "cetatea dacică de la Zeicani, villa rustica de la Breazova" }
+      ]
+    },
+    en: {
+      tagline: "The commune built over the capital of Roman Dacia, Ulpia Traiana Sarmizegetusa.",
+      description: [
+        "Sarmizegetusa is a commune in the Hațeg Country, made up of Sarmizegetusa (the seat), Breazova, Hobița-Grădiște, Păucinești and Zeicani. Locals still call it Grădiște — from the Slavic grad, \"fortress\", after the Roman ruins — and it received the official name Sarmizegetusa in 1941.",
+        "The village stands right on the site of Ulpia Traiana Sarmizegetusa, the capital of Roman Dacia founded after AD 106: the forum, the amphitheatre with about 5,000 seats and the temples can be visited in the middle of the village, and the Archaeology Museum holds the finds.",
+        "The commune also has the Dacian fortress at Zeicani and the site of a Roman villa rustica at Breazova. The road through Zeicani leads to the Iron Gates of Transylvania pass and on to the Banat."
+      ],
+      facts: [
+        { label: "Population", value: "1,018 (2021 census)" },
+        { label: "Villages", value: "Sarmizegetusa, Breazova, Hobița-Grădiște, Păucinești, Zeicani" },
+        { label: "Landmark", value: "Ulpia Traiana Sarmizegetusa — capital of Roman Dacia" },
+        { label: "Other sites", value: "Dacian fortress at Zeicani, villa rustica at Breazova" }
+      ]
+    }
+  },
+  {
+    id: "densus",
+    name: "Densuș",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Hațegului",
+    coords: [45.5802, 22.791],
+    hasReviews: false,
+    relatedAreas: ["Densuș"],
+    relatedIds: ["biserica-densus"],
+    images: ["images/densus-panorama.jpg"],
+    photoCredit: { author: "Alexandru Baboș (Albabos)", license: "CC BY 2.5", source: "https://commons.wikimedia.org/wiki/File:Densus.panorama_peste_sat.S.jpg" },
+    ro: {
+      tagline: "Sat hațegan cu vedere spre Retezat, celebru pentru biserica de piatră zidită din ruine romane.",
+      description: [
+        "Densuș este o comună din nord-vestul Țării Hațegului, formată din satele Densuș (reședința), Criva, Hățăgel, Peșteana, Peștenița, Poieni și Ștei. Dinspre sat, privirea se deschide spre sud, peste depresiune, până la culmile Retezatului.",
+        "Faima comunei e Biserica Sf. Nicolae din Densuș, una dintre cele mai vechi biserici din România în care slujba se ține neîntrerupt: ridicată în secolul al XIII-lea din pietre romane aduse de la ruinele din apropiere, are acoperiș din lespezi de piatră și fragmente de pictură din 1443, lucrate de zugravul Ștefan.",
+        "La Peșteana, în aceeași comună, se află o altă biserică de piatră din secolul al XIII-lea, „Pogorârea Sfântului Duh”, construită tot cu blocuri romane refolosite. În Densuș se află și bustul lui Ovid Densușianu."
+      ],
+      facts: [
+        { label: "Populație", value: "1.301 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Densuș, Criva, Hățăgel, Peșteana, Peștenița, Poieni, Ștei" },
+        { label: "Reper", value: "Biserica Sf. Nicolae (sec. XIII), din piatră romană refolosită" },
+        { label: "Alt monument", value: "Biserica „Pogorârea Sfântului Duh” din Peșteana (sec. XIII), cod LMI HD-II-m-A-03405" }
+      ]
+    },
+    en: {
+      tagline: "A Hațeg village looking out to the Retezat, famous for its stone church built from Roman ruins.",
+      description: [
+        "Densuș is a commune in the north-west of the Hațeg Country, made up of Densuș (the seat), Criva, Hățăgel, Peșteana, Peștenița, Poieni and Ștei. From the village the view opens south across the basin to the Retezat ridges.",
+        "The commune is famous for St Nicholas' Church in Densuș, one of the oldest churches in Romania still in continuous use: built in the 13th century from Roman stones taken from nearby ruins, it has a roof of stone slabs and fragments of murals from 1443 by the painter Ștefan.",
+        "Peșteana, in the same commune, has another 13th-century stone church, the Descent of the Holy Spirit, also built with reused Roman blocks. Densuș also has a bust of Ovid Densușianu."
+      ],
+      facts: [
+        { label: "Population", value: "1,301 (2021 census)" },
+        { label: "Villages", value: "Densuș, Criva, Hățăgel, Peșteana, Peștenița, Poieni, Ștei" },
+        { label: "Landmark", value: "St Nicholas' Church (13th century), built from reused Roman stone" },
+        { label: "Other monument", value: "Descent of the Holy Spirit Church, Peșteana (13th century), LMI code HD-II-m-A-03405" }
+      ]
+    }
+  },
+  {
+    id: "rau-de-mori",
+    name: "Râu de Mori",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Hațegului",
+    coords: [45.4975, 22.8544],
+    hasReviews: false,
+    relatedAreas: ["Râu de Mori"],
+    relatedIds: ["cetatea-colt", "lacul-gura-apelor", "traseu-rau-de-mori-varful-retezat", "traseu-gura-zlata-lacul-bucura"],
+    images: ["images/rau-de-mori-biserica-candea.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:RauDeMoriHD_(26).JPG" },
+    ro: {
+      tagline: "Vechiul centru al cnezilor Cândea, la poalele Retezatului — poartă spre Cetatea Colț și Valea Râului Mare.",
+      description: [
+        "Râu de Mori este o comună din sud-vestul Țării Hațegului, la poalele Retezatului, aproape de confluența Râușorului cu Râul Mare. Are 11 sate: Râu de Mori (reședința), Brazi, Clopotiva, Ohaba-Sibișel, Ostrov, Ostrovel, Ostrovu Mic, Sibișel, Suseni, Unciuc și Valea Dâljii.",
+        "Satul, atestat în 1359, a fost centrul Cândeștilor — cea mai puternică familie cnezială românească din comitatul Hunedoarei, din care s-au tras mai târziu Kendeffy. În centru se văd ruinele curții lor nobiliare (secolul al XIV-lea), iar în cimitirul din fața lor, biserica „Duminica Tuturor Sfinților”, fosta capelă de curte a Cândeștilor, cu turn-clopotniță masiv.",
+        "Mai sus, la Suseni, stau ruinele Cetății Colț și biserica-fortăreață a cnezilor Cândea, iar Valea Râului Mare urcă spre lacul Gura Apelor și intrările în Parcul Național Retezat."
+      ],
+      facts: [
+        { label: "Populație", value: "2.991 locuitori (recensământ 2021)" },
+        { label: "Atestare", value: "1359 (possessio Malomwyz)" },
+        { label: "Monumente", value: "curtea nobiliară a Cândeștilor (cod LMI HD-II-a-A-03428), biserica „Duminica Tuturor Sfinților” (HD-II-m-A-03429)" },
+        { label: "În apropiere", value: "Cetatea Colț (Suseni), Valea Râului Mare, lacul Gura Apelor" }
+      ]
+    },
+    en: {
+      tagline: "The old seat of the Cândea knezes at the foot of the Retezat — gateway to Colț Fortress and the Râul Mare valley.",
+      description: [
+        "Râu de Mori is a commune in the south-west of the Hațeg Country, at the foot of the Retezat, close to where the Râușor meets the Râul Mare. It has 11 villages: Râu de Mori (the seat), Brazi, Clopotiva, Ohaba-Sibișel, Ostrov, Ostrovel, Ostrovu Mic, Sibișel, Suseni, Unciuc and Valea Dâljii.",
+        "First recorded in 1359, the village was the seat of the Cândea family — the most powerful Romanian knez family in Hunedoara county, later known as the Kendeffy. In the centre you can see the ruins of their noble court (14th century), and in the cemetery in front of it the All Saints' Sunday Church, the Cândeas' former court chapel, with a massive bell tower.",
+        "Further up, at Suseni, stand the ruins of Colț Fortress and the fortified church of the Cândea knezes, while the Râul Mare valley climbs towards Lake Gura Apelor and the entrances to Retezat National Park."
+      ],
+      facts: [
+        { label: "Population", value: "2,991 (2021 census)" },
+        { label: "First recorded", value: "1359 (possessio Malomwyz)" },
+        { label: "Monuments", value: "Cândea noble court (LMI code HD-II-a-A-03428), All Saints' Sunday Church (HD-II-m-A-03429)" },
+        { label: "Nearby", value: "Colț Fortress (Suseni), Râul Mare valley, Lake Gura Apelor" }
+      ]
+    }
+  },
+  {
+    id: "ilia",
+    name: "Ilia",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.9344, 22.6499],
+    hasReviews: false,
+    relatedAreas: ["Ilia"],
+    images: ["images/ilia-bastionul-rosu.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:BastionulRosuIlia_(4).JPG" },
+    ro: {
+      tagline: "Vechiul târg de pe Mureș unde s-a născut Gabriel Bethlen, principele Transilvaniei.",
+      description: [
+        "Ilia este o comună pe malul drept al Mureșului, în vestul județului, formată din satele Ilia (reședința), Bacea, Brâznic, Bretea Mureșană, Cuieș, Dumbrăvița, Săcămaș, Sârbi și Valea Lungă — unele în lunca râului, altele la poalele Munților Poiana Ruscă și Metaliferi. Localitatea apare în documente din 1266, iar în 1350 ca „târgul Ilia”.",
+        "După ce turcii au ocupat cetatea Lipovei în 1552, Ilia a devenit cetate de graniță și a fost întărită cu un inel de bastioane. Farkas Bethlen, căruia principele Ștefan Báthory i-a dăruit domeniul, a ridicat în 1582 Bastionul Roșu. În turnul de locuință al cetății s-a născut, în 1580, fiul său Gabriel Bethlen, principe al Transilvaniei între 1613 și 1629.",
+        "În 1670 celelalte bastioane și zidurile au fost demolate. Bastionul Roșu, refăcut în stil romantic după 1850, e cunoscut azi drept Casa natală Gabriel Bethlen, iar castelul ridicat în jurul anului 1848 de baronul Bornemisza găzduiește spitalul."
+      ],
+      facts: [
+        { label: "Populație", value: "3.144 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Ilia, Bacea, Brâznic, Bretea Mureșană, Cuieș, Dumbrăvița, Săcămaș, Sârbi, Valea Lungă" },
+        { label: "Atestare", value: "1266; „târgul Ilia” în 1350" },
+        { label: "Reper", value: "Bastionul Roșu — Casa natală Gabriel Bethlen (1582), cod LMI HD-II-m-A-03353" }
+      ]
+    },
+    en: {
+      tagline: "The old market town on the Mureș where Gabriel Bethlen, Prince of Transylvania, was born.",
+      description: [
+        "Ilia is a commune on the right bank of the Mureș in the west of the county, made up of Ilia (the seat), Bacea, Brâznic, Bretea Mureșană, Cuieș, Dumbrăvița, Săcămaș, Sârbi and Valea Lungă — some in the river meadow, others at the foot of the Poiana Ruscă and Metaliferi mountains. It appears in records from 1266, and in 1350 as \"the market town of Ilia\".",
+        "After the Ottomans took the fortress of Lipova in 1552, Ilia became a border stronghold and was ringed with bastions. Farkas Bethlen, granted the estate by Prince Stephen Báthory, built the Red Bastion in 1582. His son Gabriel Bethlen, Prince of Transylvania from 1613 to 1629, was born in the fortress's residential tower in 1580.",
+        "In 1670 the other bastions and the walls were pulled down. The Red Bastion, rebuilt in Romantic style after 1850, is known today as Gabriel Bethlen's birthplace, and the manor built around 1848 by Baron Bornemisza now houses the hospital."
+      ],
+      facts: [
+        { label: "Population", value: "3,144 (2021 census)" },
+        { label: "Villages", value: "Ilia, Bacea, Brâznic, Bretea Mureșană, Cuieș, Dumbrăvița, Săcămaș, Sârbi, Valea Lungă" },
+        { label: "First recorded", value: "1266; \"the market town of Ilia\" in 1350" },
+        { label: "Landmark", value: "the Red Bastion — Gabriel Bethlen's birthplace (1582), LMI code HD-II-m-A-03353" }
+      ]
+    }
   }
 ];
 

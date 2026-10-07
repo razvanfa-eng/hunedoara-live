@@ -268,7 +268,7 @@ function load(file, query = "", urlPath = file, pref = null) {
   const we = await load("en/orase/petrosani/index.html", "", "en/orase/petrosani/");
   const de = we.document;
   ok(!we.__err, "generat /en/orase/petrosani/: fără erori JS" + (we.__err ? " — " + we.__err : ""));
-  ok(de.querySelector("#detail-tagline").textContent !== roTag && de.querySelector("#detail-back").textContent === "← All towns" &&
+  ok(de.querySelector("#detail-tagline").textContent !== roTag && de.querySelector("#detail-back").textContent === "← All towns and communes" &&
     de.querySelector("#detail-back").getAttribute("href") === "/en/orase.html", "generat /en/orase/petrosani/: conținut EN, înapoi spre /en/orase.html");
   ok(de.querySelectorAll("#detail-related .card").length === pRel &&
     [...de.querySelectorAll("#detail-related .card")].every((a) => a.getAttribute("href").startsWith("/en/")), "generat /en/orase/petrosani/: obiectivele din zonă leagă spre /en/");
