@@ -98,6 +98,16 @@ p { margin: 0 0 12px; }
 }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--accent); }
 .header-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+/* ecrane înguste de laptop: meniul („Orașe și comune”) încape pe un rând */
+@media (min-width: 961px) and (max-width: 1140px) {
+  .site-nav { gap: 9px; }
+  .header-actions { gap: 8px; }
+}
+@media (min-width: 961px) and (max-width: 1060px) {
+  .site-nav { gap: 7px; }
+  .site-nav a { font-size: 11.5px; }
+  .header-actions { gap: 6px; }
+}
 .icon-btn {
   display: inline-flex; align-items: center; justify-content: center;
   width: 32px; height: 32px; border-radius: 50%; border: none; background: transparent;

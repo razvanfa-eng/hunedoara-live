@@ -4,7 +4,7 @@
   var STRINGS = {
     ro: {
       "nav.destinatii": "Destinații",
-      "nav.orase": "Orașe",
+      "nav.orase": "Orașe și comune",
       "nav.natura": "Natură",
       "nav.turismActiv": "Turism activ",
       "nav.mostenire": "Moștenire culturală",
@@ -186,7 +186,7 @@
     },
     en: {
       "nav.destinatii": "Destinations",
-      "nav.orase": "Towns",
+      "nav.orase": "Towns & communes",
       "nav.natura": "Nature",
       "nav.turismActiv": "Active tourism",
       "nav.mostenire": "Cultural heritage",
