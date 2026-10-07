@@ -855,6 +855,34 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/pestera-cioclovina/"/>
   </url>
   <url>
+    <loc>https://gohd.ro/natura/pestera-zeicului/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/pestera-zeicului/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/pestera-zeicului/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/pestera-zeicului/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/pestera-zeicului/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/pestera-zeicului/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/pestera-zeicului/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/pestera-zeicului/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/natura/lacul-valea-de-pesti/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/lacul-valea-de-pesti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/lacul-valea-de-pesti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/lacul-valea-de-pesti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/lacul-valea-de-pesti/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/lacul-valea-de-pesti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/lacul-valea-de-pesti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/lacul-valea-de-pesti/"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/turism-activ/traseu-pietrele-bucura-peleaga/</loc>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/turism-activ/traseu-pietrele-bucura-peleaga/"/>
@@ -1765,6 +1793,272 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-colt/"/>
   </url>
   <url>
+    <loc>https://gohd.ro/mostenire/rotonda-geoagiu/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/rotonda-geoagiu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/rotonda-geoagiu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/rotonda-geoagiu/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/rotonda-geoagiu/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/rotonda-geoagiu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/rotonda-geoagiu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/rotonda-geoagiu/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-bozes/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-bozes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-bozes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-bozes/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-bozes/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-bozes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-bozes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-bozes/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-streisangeorgiu/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-streisangeorgiu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-streisangeorgiu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-streisangeorgiu/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-streisangeorgiu/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-streisangeorgiu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-streisangeorgiu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-streisangeorgiu/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/curtea-candestilor-rau-de-mori/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/curtea-candestilor-rau-de-mori/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/curtea-candestilor-rau-de-mori/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/curtea-candestilor-rau-de-mori/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/curtea-candestilor-rau-de-mori/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/curtea-candestilor-rau-de-mori/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/curtea-candestilor-rau-de-mori/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/curtea-candestilor-rau-de-mori/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-ostrov/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-ostrov/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-ostrov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-ostrov/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-ostrov/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-ostrov/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-ostrov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-ostrov/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-pesteana/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-pesteana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-pesteana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-pesteana/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-pesteana/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-pesteana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-pesteana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-pesteana/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/bastionul-rosu-ilia/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/bastionul-rosu-ilia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/bastionul-rosu-ilia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/bastionul-rosu-ilia/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/bastionul-rosu-ilia/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/bastionul-rosu-ilia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/bastionul-rosu-ilia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/bastionul-rosu-ilia/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-de-lemn-bretea-mureseana/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-de-lemn-bretea-mureseana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-de-lemn-bretea-mureseana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-de-lemn-bretea-mureseana/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-de-lemn-bretea-mureseana/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-de-lemn-bretea-mureseana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-de-lemn-bretea-mureseana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-de-lemn-bretea-mureseana/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-ponor/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-ponor/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-ponor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-ponor/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-ponor/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-ponor/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-ponor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-ponor/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-de-lemn-soimus/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-de-lemn-soimus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-de-lemn-soimus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-de-lemn-soimus/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-de-lemn-soimus/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-de-lemn-soimus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-de-lemn-soimus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-de-lemn-soimus/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-de-lemn-radulesti/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-de-lemn-radulesti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-de-lemn-radulesti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-de-lemn-radulesti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-de-lemn-radulesti/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-de-lemn-radulesti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-de-lemn-radulesti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-de-lemn-radulesti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-lapusnic/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-lapusnic/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-lapusnic/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-lapusnic/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-lapusnic/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-lapusnic/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-lapusnic/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-lapusnic/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-de-lemn-ciungani/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-de-lemn-ciungani/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-de-lemn-ciungani/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-de-lemn-ciungani/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-de-lemn-ciungani/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-de-lemn-ciungani/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-de-lemn-ciungani/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-de-lemn-ciungani/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-de-lemn-birtin/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-de-lemn-birtin/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-de-lemn-birtin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-de-lemn-birtin/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-de-lemn-birtin/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-de-lemn-birtin/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-de-lemn-birtin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-de-lemn-birtin/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/castelul-kendeffy/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/castelul-kendeffy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/castelul-kendeffy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castelul-kendeffy/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/castelul-kendeffy/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/castelul-kendeffy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/castelul-kendeffy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castelul-kendeffy/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-sanpetru/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-sanpetru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-sanpetru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-sanpetru/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-sanpetru/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-sanpetru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-sanpetru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-sanpetru/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-trestia/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-trestia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-trestia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-trestia/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-trestia/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-trestia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-trestia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-trestia/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-lesnic/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-lesnic/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-lesnic/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-lesnic/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-lesnic/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-lesnic/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-lesnic/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-lesnic/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/castelul-gyulay-mintia/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/castelul-gyulay-mintia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/castelul-gyulay-mintia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castelul-gyulay-mintia/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/castelul-gyulay-mintia/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/castelul-gyulay-mintia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/castelul-gyulay-mintia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castelul-gyulay-mintia/"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/stiri/castelul-corvinilor-restaurat-2026/</loc>
     <lastmod>2026-09-02</lastmod>
     <priority>0.5</priority>
@@ -2433,5 +2727,33 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/afaceri/cabana-taia-parang-sureanu-petrila/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/afaceri/cabana-taia-parang-sureanu-petrila/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/afaceri/cabana-taia-parang-sureanu-petrila/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/afaceri/hotel-germisara-geoagiu-bai/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/afaceri/hotel-germisara-geoagiu-bai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/afaceri/hotel-germisara-geoagiu-bai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/afaceri/hotel-germisara-geoagiu-bai/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/afaceri/hotel-germisara-geoagiu-bai/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/afaceri/hotel-germisara-geoagiu-bai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/afaceri/hotel-germisara-geoagiu-bai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/afaceri/hotel-germisara-geoagiu-bai/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/afaceri/pensiunea-sarmis-sarmizegetusa/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/afaceri/pensiunea-sarmis-sarmizegetusa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/afaceri/pensiunea-sarmis-sarmizegetusa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/afaceri/pensiunea-sarmis-sarmizegetusa/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/afaceri/pensiunea-sarmis-sarmizegetusa/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/afaceri/pensiunea-sarmis-sarmizegetusa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/afaceri/pensiunea-sarmis-sarmizegetusa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/afaceri/pensiunea-sarmis-sarmizegetusa/"/>
   </url>
 </urlset>

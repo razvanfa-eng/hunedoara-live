@@ -835,6 +835,82 @@ window.SITE_NATURE = [
       ]
     }
   },
+  {
+    id: "pestera-zeicului",
+    name: "Peștera Zeicului",
+    category: { ro: "Peșteră", en: "Cave" },
+    area: "Uricani",
+    coords: [45.281, 22.898],
+    hasReviews: true,
+    season: "vara",
+    images: ["images/pestera-zeicului.jpg"],
+    photoCredit: { author: "Petr Vodička", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Pestera_Zeicului.jpg" },
+    ro: {
+      tagline: "Rezervație speologică pe valea Jiului de Vest, în amonte de Câmpu lui Neag, cu una dintre cele mai mari stalactite din țară.",
+      description: [
+        "Peștera Zeicului se deschide pe valea Jiului de Vest, în amonte de Câmpu lui Neag, lângă drumul DN66A, pe teritoriul Parcului Național Retezat. A fost declarată rezervație naturală speologică pentru marea varietate de formațiuni stalagmitice și pentru bogatul material paleontologic găsit aici, inclusiv urme de urs de cavernă.",
+        "Localnicii foloseau prima ei porțiune ca adăpost pentru turme, iar legenda spune că aici s-ar fi ascuns haiducii lui Zeicu — în peșteră s-au găsit flinte ruginite. După prima sală urmează un horn de 12 m și o sală bogată în concrețiuni, din care pornește un puț adânc de 48 m, cu o stalactită de peste 12 m, una dintre cele mai mari din România. Fiind rezervație, interiorul nu e amenajat pentru vizitare."
+      ],
+      facts: [
+        { label: "Localizare", value: "valea Jiului de Vest, lângă DN66A, în amonte de Câmpu lui Neag (orașul Uricani)" },
+        { label: "Statut", value: "rezervație speologică, în Parcul Național Retezat" },
+        { label: "Reper", value: "puț de 48 m cu o stalactită de peste 12 m" },
+        { label: "Descoperiri", value: "urme de urs de cavernă (Ursus spelaeus)" }
+      ]
+    },
+    en: {
+      tagline: "A cave reserve in the Western Jiu valley, upstream of Câmpu lui Neag, with one of the largest stalactites in the country.",
+      description: [
+        "Zeicu Cave opens onto the Western Jiu valley upstream of Câmpu lui Neag, by the DN66A road, inside Retezat National Park. It was declared a speleological reserve for its wide variety of stalagmite formations and its rich palaeontological finds, including traces of cave bears.",
+        "Locals used its first section to shelter their flocks, and legend says the outlaws of Zeicu hid here — rusty flintlocks were found in the cave. Past the first chamber comes a 12 m chimney and a chamber rich in formations, from which a 48 m shaft drops, holding a stalactite more than 12 m long, one of the largest in Romania. As a reserve, the interior is not set up for visitors."
+      ],
+      facts: [
+        { label: "Location", value: "Western Jiu valley, by the DN66A, upstream of Câmpu lui Neag (Uricani town)" },
+        { label: "Status", value: "speleological reserve, in Retezat National Park" },
+        { label: "Highlight", value: "48 m shaft with a stalactite over 12 m long" },
+        { label: "Finds", value: "cave bear remains (Ursus spelaeus)" }
+      ]
+    }
+  },
+  {
+    id: "lacul-valea-de-pesti",
+    name: "Lacul Valea de Pești",
+    category: { ro: "Lac de acumulare", en: "Reservoir lake" },
+    area: "Uricani",
+    coords: [45.3003, 23.0588],
+    hasReviews: true,
+    season: "vara",
+    images: ["images/lacul-valea-de-pesti.jpg"],
+    photoCredit: { author: "Nicu Farcaș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Barajul_Valea_de_Pe%C8%99ti.JPG" },
+    ro: {
+      tagline: "Lac de munte de 2,5 km în spatele unui baraj de 56 m, lângă Câmpu lui Neag — rezerva de apă a Văii Jiului.",
+      description: [
+        "Barajul Valea de Pești a fost construit între 1967 și 1973 pe râul cu același nume, lângă Câmpu lui Neag, și are 56 m înălțime. În spatele lui s-a format un lac de acumulare lung de 2,5 km, cu o suprafață de 31 ha, adânc de până la 53 m, la 830 m altitudine.",
+        "Lacul alimentează cu apă Valea Jiului, iar la ape mari ajută la producerea de energie și la atenuarea viiturilor. În apele lui trăiesc știucă, somn, crap, mreană și clean. Pe lângă lac trece drumul transmontan nou spre Runcu (Gorj), prin Cheile Sohodolului."
+      ],
+      facts: [
+        { label: "Baraj", value: "56 m înălțime, construit 1967–1973" },
+        { label: "Lac", value: "31 ha, 2,5 km lungime, adâncime maximă 53 m" },
+        { label: "Altitudine", value: "830 m" },
+        { label: "Folosință", value: "alimentarea cu apă a Văii Jiului" },
+        { label: "Localizare", value: "lângă Câmpu lui Neag, orașul Uricani" }
+      ]
+    },
+    en: {
+      tagline: "A 2.5 km mountain lake behind a 56 m dam near Câmpu lui Neag — the Jiu Valley's water reserve.",
+      description: [
+        "The Valea de Pești dam was built between 1967 and 1973 on the river of the same name, near Câmpu lui Neag, and stands 56 m high. Behind it lies a reservoir 2.5 km long, covering 31 ha and up to 53 m deep, at 830 m above sea level.",
+        "The lake supplies water to the Jiu Valley, and at high water it also helps generate power and soften floods. Pike, catfish, carp, barbel and chub live in it. The new mountain road to Runcu (Gorj), through the Sohodol Gorges, runs past the lake."
+      ],
+      facts: [
+        { label: "Dam", value: "56 m high, built 1967–1973" },
+        { label: "Lake", value: "31 ha, 2.5 km long, up to 53 m deep" },
+        { label: "Altitude", value: "830 m" },
+        { label: "Use", value: "water supply for the Jiu Valley" },
+        { label: "Location", value: "near Câmpu lui Neag, Uricani town" }
+      ]
+    }
+  },
 ];
 
 window.SITE_ACTIVITIES = [
@@ -3089,6 +3165,743 @@ window.SITE_HERITAGE = [
         { label: "Location", value: "Suseni village, Râu de Mori commune" },
         { label: "Access", value: "trail marked with a blue triangle, about 1 hour" },
         { label: "Condition", value: "ruin" }
+      ]
+    }
+  },
+  {
+    id: "rotonda-geoagiu",
+    name: "Rotonda din Geoagiu",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Geoagiu",
+    coords: [45.920062, 23.20316],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/rotonda-geoagiu.jpg"],
+    photoCredit: { author: "Levente Nuber", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Capela_romanic%C4%83_din_Geoagiu_1.jpg" },
+    ro: {
+      tagline: "Capela romanică de plan circular, probabil cea mai veche biserică medievală de pe teritoriul României.",
+      description: [
+        "Rotonda — capela romanică din Geoagiu — este o biserică de plan circular, cu o absidă spre est, zidită aproape în întregime din cărămidă romană refolosită, luată de la o construcție mai veche aflată pe același loc. Nava are 5,5 m diametru în interior, iar întreaga clădire măsoară 9,5 m în lungime. Se crede că a fost ridicată spre sfârșitul secolului al XI-lea de familia nobiliară Ákos, care stăpânea atunci Geoagiul.",
+        "Săpăturile arheologice din 1993–2004, conduse de Gheorghe Petrov, au scos la lumină peste 200 de morminte în jurul și în interiorul bisericii; cele mai vechi datează din vremea regilor Ladislau I (1077–1095) și Coloman (1095–1116), deci rotonda exista deja la sfârșitul secolului al XI-lea. O legendă locală o leagă de cavalerii templieri. Azi nu se mai slujește în ea și se vizitează ca muzeu; la câțiva metri se află biserica reformată gotică, cu reliefuri romane în ziduri."
+      ],
+      facts: [
+        { label: "Datare", value: "probabil sfârșitul sec. XI" },
+        { label: "Plan", value: "circular, cu absidă; cărămidă romană refolosită" },
+        { label: "Cercetări", value: "1993–2004, peste 200 de morminte descoperite" },
+        { label: "Localizare", value: "orașul Geoagiu, lângă biserica reformată" },
+        { label: "Cod LMI", value: "HD-II-m-A-03316" }
+      ]
+    },
+    en: {
+      tagline: "A circular Romanesque chapel, probably the oldest medieval church on Romanian territory.",
+      description: [
+        "The Rotunda — Geoagiu's Romanesque chapel — is a round church with an apse to the east, built almost entirely of reused Roman brick taken from an older building on the same spot. The nave is 5.5 m across inside and the whole building is 9.5 m long. It is thought to have been raised in the late 11th century by the Ákos noble family, who then held Geoagiu.",
+        "Excavations in 1993–2004, led by Gheorghe Petrov, uncovered more than 200 graves around and inside the church; the oldest date from the reigns of kings Ladislaus I (1077–1095) and Coloman (1095–1116), so the rotunda already stood by the end of the 11th century. A local legend links it to the Knights Templar. Services are no longer held there and it is visited as a museum; a few metres away stands the Gothic Reformed church, with Roman reliefs in its walls."
+      ],
+      facts: [
+        { label: "Date", value: "probably late 11th century" },
+        { label: "Plan", value: "circular, with an apse; reused Roman brick" },
+        { label: "Research", value: "1993–2004, more than 200 graves found" },
+        { label: "Location", value: "Geoagiu town, next to the Reformed church" },
+        { label: "LMI code", value: "HD-II-m-A-03316" }
+      ]
+    }
+  },
+  {
+    id: "biserica-bozes",
+    name: "Biserica „Sfinții Arhangheli” din Bozeș",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Geoagiu",
+    coords: [45.977425, 23.171824],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-bozes.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Bozes_4.jpg" },
+    ro: {
+      tagline: "Fostă capelă de curte din piatră, de la începutul secolului al XVI-lea, într-un sat de deal de lângă Geoagiu-Băi.",
+      description: [
+        "În satul Bozeș, aparținător orașului Geoagiu, se păstrează o biserică de piatră cu plan dreptunghiular și absidă pentagonală decroșată, ridicată — potrivit tradiției locale — la începutul secolului al XVI-lea de unul dintre domnitorii sau boierii români de la sud de Carpați care stăpâneau atunci domeniul Geoagiului de Jos, din care făcea parte și Bozeșul.",
+        "Gândită la început ca o capelă de curte, biserica a fost pictată la sfârșitul secolului al XVIII-lea de un zugrav popular rămas anonim. Satul e aproape de stațiunea Geoagiu-Băi, așa că biserica se poate vizita ușor pornind de acolo."
+      ],
+      facts: [
+        { label: "Datare", value: "începutul sec. XVI (după tradiție)" },
+        { label: "Pictură", value: "sfârșitul sec. XVIII, zugrav anonim" },
+        { label: "Localizare", value: "satul Bozeș, orașul Geoagiu" },
+        { label: "Cod LMI", value: "HD-II-m-A-03262" }
+      ]
+    },
+    en: {
+      tagline: "A former stone court chapel from the early 16th century, in a hill village near Geoagiu-Băi.",
+      description: [
+        "The village of Bozeș, part of the town of Geoagiu, keeps a stone church with a rectangular nave and a narrower five-sided apse, built — according to local tradition — in the early 16th century by one of the Romanian princes or boyars from south of the Carpathians who then held the Lower Geoagiu estate, Bozeș included.",
+        "First intended as a court chapel, the church was painted in the late 18th century by an anonymous folk painter. The village is close to the Geoagiu-Băi spa, so the church makes an easy outing from the resort."
+      ],
+      facts: [
+        { label: "Date", value: "early 16th century (by tradition)" },
+        { label: "Murals", value: "late 18th century, anonymous painter" },
+        { label: "Location", value: "Bozeș village, Geoagiu town" },
+        { label: "LMI code", value: "HD-II-m-A-03262" }
+      ]
+    }
+  },
+  {
+    id: "biserica-streisangeorgiu",
+    name: "Biserica Sf. Gheorghe din Streisângeorgiu",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Călan",
+    coords: [45.7289, 23.0226],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-streisangeorgiu.jpg"],
+    photoCredit: { author: "Oguszt", license: "CC BY-SA 3.0 / GFDL", source: "https://commons.wikimedia.org/wiki/File:Sztrigyszentgy%C3%B6rgyi_ortodox_templom.jpg" },
+    ro: {
+      tagline: "Biserică romanică din 1313–1314, cu pictură din trei epoci — una dintre cele mai vechi biserici din România încă în folosință.",
+      description: [
+        "La marginea orașului Călan, în Streisângeorgiu, se află una dintre cele mai vechi construcții medievale din Transilvania aflate încă în funcțiune. O inscripție slavo-română descoperită în altar arată că biserica de zid a fost făcută în 1313–1314, „cu ajutorul sfântului Gheorghe”, pentru iertarea păcatelor cneazului Balea și ale popii Naneș, iar pictura a fost lucrată de Teofil zugravul.",
+        "Săpăturile au arătat că pe același loc a existat înainte o biserică de lemn, cu același plan, iar mormintele din jur datează din secolele XII–XIII. Pictura interioară se păstrează din trei etape — 1313–1314, 1409 și 1743 —, iar în zidurile bisericii se văd lespezi romane aduse de la o villa rustica din apropiere."
+      ],
+      facts: [
+        { label: "Datare", value: "1313–1314 (după inscripția din altar)" },
+        { label: "Ctitori", value: "cneazul Balea și popa Naneș; zugrav Teofil" },
+        { label: "Pictură", value: "1313–1314, 1409 și 1743" },
+        { label: "Localizare", value: "Streisângeorgiu, orașul Călan" },
+        { label: "Cod LMI", value: "HD-II-m-A-03454" }
+      ]
+    },
+    en: {
+      tagline: "A Romanesque church from 1313–1314 with murals from three periods — one of Romania's oldest churches still in use.",
+      description: [
+        "On the edge of Călan, in Streisângeorgiu, stands one of the oldest medieval buildings in Transylvania still in use. A Slavonic-Romanian inscription found in the altar says the stone church was made in 1313–1314, \"with the help of Saint George\", for the forgiveness of the sins of the knez Balea and the priest Naneș, and that it was painted by Teofil the painter.",
+        "Excavations showed that a wooden church with the same plan stood here earlier, and the graves around it date from the 12th–13th centuries. The murals survive from three stages — 1313–1314, 1409 and 1743 — and Roman slabs from a nearby villa rustica can be seen in the walls."
+      ],
+      facts: [
+        { label: "Date", value: "1313–1314 (from the altar inscription)" },
+        { label: "Founders", value: "knez Balea and priest Naneș; painter Teofil" },
+        { label: "Murals", value: "1313–1314, 1409 and 1743" },
+        { label: "Location", value: "Streisângeorgiu, Călan town" },
+        { label: "LMI code", value: "HD-II-m-A-03454" }
+      ]
+    }
+  },
+  {
+    id: "curtea-candestilor-rau-de-mori",
+    name: "Curtea nobiliară a Cândeștilor",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Râu de Mori",
+    coords: [45.495639, 22.853512],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/curtea-candestilor-rau-de-mori.jpg"],
+    photoCredit: { author: "Andrei kokelburg", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Rau_de_Mori_Curtea_(1).jpg" },
+    ro: {
+      tagline: "Ruinele reședinței cnezilor Cândea — cea mai puternică familie românească din Țara Hațegului — în centrul satului Râu de Mori.",
+      description: [
+        "În centrul satului Râu de Mori se văd ruinele curții nobiliare a familiei Cândea: clădirea de locuit, capela de curte și zidul de incintă. Ansamblul a fost ridicat în secolul al XIV-lea peste ruinele unor clădiri romane; cel mai vechi membru cunoscut al familiei, Nicolae Cândea, a trăit pe la 1300.",
+        "Cândeștii au ajuns să stăpânească, până la sfârșitul secolului al XV-lea, 30 de sate întregi sau părți de sate din Țara Hațegului, iar Iancu de Hunedoara le-a întărit în 1447 târgul Sântămăria-Orlea. Familia s-a împărțit apoi în două ramuri, Kendeffy și Kenderessy. În fața ruinelor, în cimitir, se află biserica „Duminica Tuturor Sfinților”, fosta capelă a Cândeștilor."
+      ],
+      facts: [
+        { label: "Datare", value: "sec. XIV–XVI, transformări în sec. XVII–XIX" },
+        { label: "Ansamblu", value: "curia, capela de curte, zidul de incintă" },
+        { label: "Familie", value: "cnezii Cândea (mai târziu Kendeffy și Kenderessy)" },
+        { label: "Stare", value: "ruină, vizibilă din sat" },
+        { label: "Cod LMI", value: "HD-II-a-A-03428" }
+      ]
+    },
+    en: {
+      tagline: "The ruins of the seat of the Cândea knezes — the most powerful Romanian family in the Hațeg Country — in the middle of Râu de Mori.",
+      description: [
+        "In the centre of Râu de Mori stand the ruins of the Cândea family's noble court: the residence, the court chapel and the enclosure wall. The complex was built in the 14th century over the ruins of Roman buildings; the earliest known member of the family, Nicolae Cândea, lived around 1300.",
+        "By the end of the 15th century the Cândeas held 30 whole or partial villages in the Hațeg Country, and in 1447 John Hunyadi confirmed them in possession of the market town of Sântămăria-Orlea. The family later split into two branches, the Kendeffy and the Kenderessy. In the cemetery in front of the ruins stands the All Saints' Sunday Church, the Cândeas' former chapel."
+      ],
+      facts: [
+        { label: "Date", value: "14th–16th centuries, altered in the 17th–19th" },
+        { label: "Complex", value: "residence, court chapel, enclosure wall" },
+        { label: "Family", value: "the Cândea knezes (later Kendeffy and Kenderessy)" },
+        { label: "Condition", value: "ruin, visible from the village" },
+        { label: "LMI code", value: "HD-II-a-A-03428" }
+      ]
+    }
+  },
+  {
+    id: "biserica-ostrov",
+    name: "Biserica „Pogorârea Sfântului Duh” din Ostrov",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Râu de Mori",
+    coords: [45.527888, 22.846511],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-ostrov.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:OstrovHD_(66).JPG" },
+    ro: {
+      tagline: "Una dintre cele mai vechi biserici românești de zid din Transilvania, ctitorie a cnezilor locali din secolul al XIV-lea.",
+      description: [
+        "Satul Ostrov, din comuna Râu de Mori, stă pe vechiul drum roman dintre Sarmizegetusa și ieșirea Streiului din depresiune și își are numele de la poziția sa, înconjurată de Râul Mare și Apa Borii. Biserica „Pogorârea Sfântului Duh”, ctitorită de cnezii locali, e anterioară mijlocului secolului al XIV-lea; în 1360, Petru de Ostrov era primul protopop cunoscut al districtului.",
+        "Din construcția inițială se mai păstrează doar pereții de sud și de vest ai navei; imaginea de azi e rezultatul transformărilor din a doua jumătate a secolului al XVIII-lea și de la începutul secolului al XIX-lea. Familia nobiliară a satului a trecut de la catolicism la calvinism, apoi biserica a fost greco-catolică, iar după 1948 ortodoxă. Cercetările arheologice din 1996 au stabilit etapele construcției."
+      ],
+      facts: [
+        { label: "Datare", value: "sec. XIV (înainte de 1360)" },
+        { label: "Păstrat din faza inițială", value: "pereții de sud și de vest ai navei" },
+        { label: "Localizare", value: "satul Ostrov, comuna Râu de Mori" },
+        { label: "Cod LMI", value: "HD-II-a-A-03400" }
+      ]
+    },
+    en: {
+      tagline: "One of the oldest Romanian stone churches in Transylvania, founded by local knezes in the 14th century.",
+      description: [
+        "Ostrov, in Râu de Mori commune, lies on the old Roman road between Sarmizegetusa and the point where the Strei leaves the basin, and takes its name (\"islet\") from its setting, surrounded by the Râul Mare and the Apa Borii. The Church of the Descent of the Holy Spirit, founded by local knezes, predates the mid-14th century; in 1360 Peter of Ostrov was the district's first known archpriest.",
+        "Only the south and west walls of the nave survive from the first building; today's appearance results from works in the second half of the 18th century and the early 19th. The village's noble family moved from Catholicism to Calvinism, the church later became Greek Catholic and, after 1948, Orthodox. Excavations in 1996 established its building phases."
+      ],
+      facts: [
+        { label: "Date", value: "14th century (before 1360)" },
+        { label: "Surviving from the first phase", value: "south and west walls of the nave" },
+        { label: "Location", value: "Ostrov village, Râu de Mori commune" },
+        { label: "LMI code", value: "HD-II-a-A-03400" }
+      ]
+    }
+  },
+  {
+    id: "biserica-pesteana",
+    name: "Biserica medievală din Peșteana",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Densuș",
+    coords: [45.54972, 22.82278],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-pesteana.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Biserica_din_Pesteana_(11).JPG" },
+    ro: {
+      tagline: "Biserică de piatră din secolul al XIII-lea, zidită cu blocuri romane refolosite, la câțiva kilometri de Densuș.",
+      description: [
+        "În mijlocul satului Peșteana, atestat în 1360 prin preotul „Balk de Possana”, se află biserica „Pogorârea Sfântului Duh”, martoră a vechilor familii cneziale din Țara Hațegului. Este alcătuită dintr-o navă dreptunghiulară, un altar de influență romanică și un turn-clopotniță pe latura de vest, iar la construcție s-au folosit blocuri masive de piatră luate din clădiri romane ruinate.",
+        "Săpăturile au pus în evidență două faze de construcție: o primă capelă de curte, cu altar semicircular, și o biserică mai mare, din secolul al XIII-lea, căreia îi aparține portalul de sub clopotniță. Restaurarea din 1925–1926, a arhitectului Rudolf Wagner, i-a schimbat mult înfățișarea — decorul de tencuială cu firide circulare și etajul turnului sunt de atunci."
+      ],
+      facts: [
+        { label: "Datare", value: "sec. XIII (faza a doua); prima fază mai veche" },
+        { label: "Material", value: "piatră, cu blocuri romane refolosite" },
+        { label: "Restaurare", value: "1925–1926 (arh. Rudolf Wagner)" },
+        { label: "Localizare", value: "satul Peșteana, comuna Densuș" },
+        { label: "Cod LMI", value: "HD-II-m-A-03405" }
+      ]
+    },
+    en: {
+      tagline: "A 13th-century stone church built with reused Roman blocks, a few kilometres from Densuș.",
+      description: [
+        "In the middle of Peșteana, recorded in 1360 through its priest \"Balk de Possana\", stands the Church of the Descent of the Holy Spirit, a witness to the old knez families of the Hațeg Country. It has a rectangular nave, a Romanesque-style altar and a bell tower on the west side, and was built with massive stone blocks taken from ruined Roman buildings.",
+        "Excavations revealed two building phases: a first court chapel with a semicircular altar, and a larger 13th-century church, to which the portal under the bell tower belongs. The 1925–1926 restoration by architect Rudolf Wagner changed its look considerably — the plaster decoration with round niches and the upper storey of the tower date from then."
+      ],
+      facts: [
+        { label: "Date", value: "13th century (second phase); first phase older" },
+        { label: "Material", value: "stone, with reused Roman blocks" },
+        { label: "Restoration", value: "1925–1926 (architect Rudolf Wagner)" },
+        { label: "Location", value: "Peșteana village, Densuș commune" },
+        { label: "LMI code", value: "HD-II-m-A-03405" }
+      ]
+    }
+  },
+  {
+    id: "bastionul-rosu-ilia",
+    name: "Bastionul Roșu — Casa natală Gabriel Bethlen",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Ilia",
+    coords: [45.934214, 22.651404],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/bastionul-rosu-ilia.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:BastionulRosuIlia_(9).JPG" },
+    ro: {
+      tagline: "Bastionul din 1582 al cetății de graniță de la Ilia, cunoscut drept locul de naștere al principelui Gabriel Bethlen.",
+      description: [
+        "După căderea cetății Lipova în mâinile turcilor (1552), Ilia a devenit cetate de graniță și a fost înconjurată cu un inel de bastioane. Farkas Bethlen, căruia principele Ștefan Báthory îi dăduse domeniul, a ridicat în 1582 Bastionul Roșu — mai mic și mai puțin expus, gândit de la început pentru locuit, cu ancadramente de piatră sculptată și pictură decorativă pe exterior.",
+        "Fiul lui Farkas, Gabriel Bethlen, principe al Transilvaniei între 1613 și 1629, s-a născut aici în 1580, de fapt în turnul de locuință al cetății, demolat ulterior. În 1670 celelalte bastioane și zidurile au fost dărâmate, iar Bastionul Roșu, refăcut în stil romantic după 1850, a ajuns să fie identificat cu locul nașterii principelui; placa comemorativă de azi a fost pusă după refacerea din 1909."
+      ],
+      facts: [
+        { label: "Construit", value: "1582, de Farkas Bethlen" },
+        { label: "Personalitate", value: "Gabriel Bethlen (1580–1629), principe al Transilvaniei 1613–1629" },
+        { label: "Refaceri", value: "după 1850 (stil romantic) și 1909" },
+        { label: "Localizare", value: "satul Ilia, comuna Ilia" },
+        { label: "Cod LMI", value: "HD-II-m-A-03353" }
+      ]
+    },
+    en: {
+      tagline: "The 1582 bastion of Ilia's border fortress, known as the birthplace of Prince Gabriel Bethlen.",
+      description: [
+        "After the Ottomans took the fortress of Lipova in 1552, Ilia became a border stronghold and was ringed with bastions. Farkas Bethlen, granted the estate by Prince Stephen Báthory, built the Red Bastion in 1582 — smaller and less exposed, designed from the start as a residence, with carved stone frames and painted decoration on the outside.",
+        "Farkas's son Gabriel Bethlen, Prince of Transylvania from 1613 to 1629, was born here in 1580 — in fact in the fortress's residential tower, later demolished. In 1670 the other bastions and the walls were pulled down, and the Red Bastion, rebuilt in Romantic style after 1850, came to be identified with the prince's birthplace; today's memorial plaque was put up after the 1909 restoration."
+      ],
+      facts: [
+        { label: "Built", value: "1582, by Farkas Bethlen" },
+        { label: "Notable person", value: "Gabriel Bethlen (1580–1629), Prince of Transylvania 1613–1629" },
+        { label: "Rebuilt", value: "after 1850 (Romantic style) and 1909" },
+        { label: "Location", value: "Ilia village, Ilia commune" },
+        { label: "LMI code", value: "HD-II-m-A-03353" }
+      ]
+    }
+  },
+  {
+    id: "biserica-de-lemn-bretea-mureseana",
+    name: "Biserica de lemn din Bretea Mureșană",
+    category: { ro: "Biserică de lemn", en: "Wooden church" },
+    area: "Ilia",
+    coords: [45.93611, 22.71306],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-de-lemn-bretea-mureseana.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_de_lemn_din_Bretea_Mure%C8%99an%C4%83.jpg" },
+    ro: {
+      tagline: "Biserică de lemn sfințită la 3 martie 1653, cu două pisanii în limba română scrise cu litere chirilice.",
+      description: [
+        "Biserica de lemn din cimitirul satului Bretea Mureșană, cu hramul Sfântul Dumitru, a fost sfințită, după pisanie, la 3 martie 1653, în vremea principelui Gheorghe Rákóczi. Cele două inscripții, în limba română cu litere chirilice, pomenesc ctitorii — între ei „Eva muma Giurgeștilor” — și preotul satului, iar clopotul original, aflat acum în clopotnița bisericii noi, e din 1665.",
+        "Lăcașul, de plan dreptunghiular cu colțurile teșite, se înscrie în tipul clasic vest-ardelean. A fost însă mult schimbat: pronaosul a fost mărit, intrarea mutată, iar „restaurarea” din 1965–1969 a scurtat turnul-clopotniță cu 3 m și a așezat biserica pe o fundație de beton."
+      ],
+      facts: [
+        { label: "Sfințită", value: "3 martie 1653" },
+        { label: "Hram", value: "Sfântul Dumitru" },
+        { label: "Particularitate", value: "două pisanii în română, cu litere chirilice" },
+        { label: "Localizare", value: "satul Bretea Mureșană, comuna Ilia" },
+        { label: "Cod LMI", value: "HD-II-m-A-03272" }
+      ]
+    },
+    en: {
+      tagline: "A wooden church consecrated on 3 March 1653, with two inscriptions in Romanian written in Cyrillic letters.",
+      description: [
+        "The wooden church in the cemetery of Bretea Mureșană, dedicated to Saint Demetrius, was consecrated on 3 March 1653, according to its inscription, in the time of Prince George Rákóczi. The two inscriptions, in Romanian written in Cyrillic, name the founders — among them \"Eva, mother of the Giurgești\" — and the village priest, and the original bell, now in the bell tower of the new church, dates from 1665.",
+        "With its rectangular plan and bevelled corners, the church belongs to the classic western Transylvanian type. It has been much altered, though: the narthex was enlarged, the entrance moved, and the 1965–1969 \"restoration\" cut 3 m off the bell tower and set the church on a concrete foundation."
+      ],
+      facts: [
+        { label: "Consecrated", value: "3 March 1653" },
+        { label: "Dedication", value: "Saint Demetrius" },
+        { label: "Notable", value: "two inscriptions in Romanian, in Cyrillic letters" },
+        { label: "Location", value: "Bretea Mureșană village, Ilia commune" },
+        { label: "LMI code", value: "HD-II-m-A-03272" }
+      ]
+    }
+  },
+  {
+    id: "biserica-ponor",
+    name: "Biserica „Pogorârea Sfântului Duh” din Ponor",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Pui",
+    coords: [45.51, 23.12778],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-ponor.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Biserica_din_Ponor_(9).JPG" },
+    ro: {
+      tagline: "Biserică de piatră din 1769, pictată în 1846, în satul de la poalele Șureanului unde au trăit cnezii Ponori.",
+      description: [
+        "Ponor, sat al comunei Pui la poalele sud-vestice ale Munților Șureanu, a fost reședința familiei cneziale românești Ponori. Biserica de piatră „Pogorârea Sfântului Duh” a fost ridicată în 1769, pe un teren de la marginea satului cedat obștii de familia nobiliară reformată Török, care voia să-și construiască propria biserică pe locul celei vechi.",
+        "Edificiul are plan dreptunghiular, absidă semicirculară și un turn-clopotniță suplu, cu foișor deschis de lemn. Interiorul a fost pictat în 1846, iar restaurarea din 1883 l-a păstrat în stare bună până azi."
+      ],
+      facts: [
+        { label: "Construită", value: "1769" },
+        { label: "Pictură", value: "1846" },
+        { label: "Restaurări", value: "1883, 1991" },
+        { label: "Localizare", value: "satul Ponor, comuna Pui" },
+        { label: "Cod LMI", value: "HD-II-m-B-03416" }
+      ]
+    },
+    en: {
+      tagline: "A stone church from 1769, painted in 1846, in the village below the Șureanu where the Ponori knezes lived.",
+      description: [
+        "Ponor, a village of Pui commune at the south-western foot of the Șureanu Mountains, was the seat of the Romanian knez family Ponori. The stone Church of the Descent of the Holy Spirit was built in 1769 on land at the edge of the village given to the community by the Reformed noble family Török, who wanted to build their own church on the site of the old one.",
+        "It has a rectangular plan, a semicircular apse and a slender bell tower with an open wooden gallery. The interior was painted in 1846, and the 1883 restoration has kept it in good condition to this day."
+      ],
+      facts: [
+        { label: "Built", value: "1769" },
+        { label: "Murals", value: "1846" },
+        { label: "Restorations", value: "1883, 1991" },
+        { label: "Location", value: "Ponor village, Pui commune" },
+        { label: "LMI code", value: "HD-II-m-B-03416" }
+      ]
+    }
+  },
+  {
+    id: "biserica-de-lemn-soimus",
+    name: "Biserica de lemn din Șoimuș",
+    category: { ro: "Biserică de lemn", en: "Wooden church" },
+    area: "Șoimuș",
+    coords: [45.91694, 22.88972],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-de-lemn-soimus.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 2.5", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Soimus_49.jpg" },
+    ro: {
+      tagline: "Biserică din bârne de stejar ridicată în 1705, cu iconostas de icoane pe sticlă din 1830.",
+      description: [
+        "Biserica de lemn „Sfântul Nicolae” din Șoimuș a fost ridicată în 1705, an dăltuit în pragul de sus al ușii spre naos. E construită din bârne de stejar, cu plan dreptunghiular și absida poligonală în prelungire; în secolul al XIX-lea a fost lungită spre vest cu un pronaos, peste care s-a ridicat o clopotniță scundă cu foișor și fleșă piramidală.",
+        "Merită privit ancadramentul intrării de pe latura de sud, ornamentat cu cruci piezișe, motivul „dinte de lup” și rozete. Iconostasul e alcătuit din icoane pictate pe sticlă în 1830."
+      ],
+      facts: [
+        { label: "Construită", value: "1705" },
+        { label: "Hram", value: "Sfântul Nicolae" },
+        { label: "Iconostas", value: "icoane pe sticlă, 1830" },
+        { label: "Localizare", value: "satul Șoimuș, comuna Șoimuș" },
+        { label: "Cod LMI", value: "HD-II-m-A-03461" }
+      ]
+    },
+    en: {
+      tagline: "An oak-log church built in 1705, with an iconostasis of icons painted on glass in 1830.",
+      description: [
+        "The wooden St Nicholas Church in Șoimuș was built in 1705, the year carved into the lintel of the door to the nave. It is made of oak logs, with a rectangular plan and a polygonal apse in line with the nave; in the 19th century it was extended west with a narthex, topped by a low bell tower with a gallery and pyramidal spire.",
+        "Look out for the carved frame of the south entrance, decorated with diagonal crosses, \"wolf's tooth\" patterns and rosettes. The iconostasis is made of icons painted on glass in 1830."
+      ],
+      facts: [
+        { label: "Built", value: "1705" },
+        { label: "Dedication", value: "Saint Nicholas" },
+        { label: "Iconostasis", value: "icons on glass, 1830" },
+        { label: "Location", value: "Șoimuș village, Șoimuș commune" },
+        { label: "LMI code", value: "HD-II-m-A-03461" }
+      ]
+    }
+  },
+  {
+    id: "biserica-de-lemn-radulesti",
+    name: "Biserica de lemn din Rădulești",
+    category: { ro: "Biserică de lemn", en: "Wooden church" },
+    area: "Dobra",
+    coords: [45.88111, 22.62667],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-de-lemn-radulesti.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 2.5", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Radulesti_5.jpg" },
+    ro: {
+      tagline: "Biserică de lemn din secolul al XVIII-lea, mărită în 1790 și pictată în întregime pe dinăuntru.",
+      description: [
+        "Biserica de lemn „Cuvioasa Paraschiva” din Rădulești, comuna Dobra, a fost construită în secolul al XVIII-lea; tradiția și sursele dau ani diferiți pentru ridicarea ei. La început avea un altar poligonal, o navă modestă și o clopotniță scundă spre apus.",
+        "În 1790, sub preotul Gheorghie, a fost mărită: s-a adăugat o travee, turnul a fost înălțat și i s-a dat un foișor, iar pereții au fost tencuiți pe dinăuntru și pictați în întregime, la fel ca iconostasul. În 1888 i s-a adăugat o prispă îngustă pe un soclu de piatră. Biserica apare pe harta iosefină a Transilvaniei (1769–1773)."
+      ],
+      facts: [
+        { label: "Construită", value: "sec. XVIII" },
+        { label: "Renovare mare", value: "1790 (mărire, pictură interioară)" },
+        { label: "Hram", value: "Cuvioasa Paraschiva" },
+        { label: "Localizare", value: "satul Rădulești, comuna Dobra" },
+        { label: "Cod LMI", value: "HD-II-m-A-03426" }
+      ]
+    },
+    en: {
+      tagline: "An 18th-century wooden church, enlarged in 1790 and painted throughout inside.",
+      description: [
+        "The wooden church of St Paraskeva in Rădulești, Dobra commune, was built in the 18th century; tradition and sources give different years for its construction. It originally had a polygonal altar, a modest nave and a low bell tower to the west.",
+        "In 1790, under the priest Gheorghie, it was enlarged: a bay was added, the tower was raised and given a gallery, and the walls were plastered inside and painted throughout, as was the iconostasis. A narrow porch on a stone base was added in 1888. The church appears on the Josephine map of Transylvania (1769–1773)."
+      ],
+      facts: [
+        { label: "Built", value: "18th century" },
+        { label: "Major renovation", value: "1790 (enlarged, painted inside)" },
+        { label: "Dedication", value: "St Paraskeva" },
+        { label: "Location", value: "Rădulești village, Dobra commune" },
+        { label: "LMI code", value: "HD-II-m-A-03426" }
+      ]
+    }
+  },
+  {
+    id: "biserica-lapusnic",
+    name: "Biserica „Cuvioasa Paraschiva” din Lăpușnic",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Dobra",
+    coords: [45.91167, 22.61861],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-lapusnic.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:LapusnicHD_(43).JPG" },
+    ro: {
+      tagline: "Biserică de piatră din secolul al XVII-lea, cu o boltă pictată în 1726 pe căptușeală de scânduri.",
+      description: [
+        "În satul Lăpușnic, la poalele nordice ale Munților Poiana Ruscă, se păstrează o biserică de zid clasată monument istoric încă din 1948. Partea cea mai veche a naosului, de la mijlocul secolului al XVII-lea, a fost la origine o clădire civilă, donată de văduva Maria de Lazar.",
+        "Altarul și lungirea navei datează din prima jumătate a secolului al XVIII-lea — pe boltă e scris „1726 martie 26” —, iar pronaosul și clopotnița au fost adăugate în 1832–1843. Bolta navei și a altarului a fost pictată în 1726 pe o căptușeală de scânduri, de un zugrav necunoscut, și repictată în 1817; pictura e azi într-o stare avansată de degradare."
+      ],
+      facts: [
+        { label: "Datare", value: "mijlocul sec. XVII; altar 1726; pronaos și turn 1832–1843" },
+        { label: "Pictură", value: "1726 (pe scânduri), repictată în 1817" },
+        { label: "Plan", value: "dreptunghiular, 21 × 7 m, absidă semicirculară" },
+        { label: "Localizare", value: "satul Lăpușnic, comuna Dobra" },
+        { label: "Cod LMI", value: "HD-II-m-A-03357" }
+      ]
+    },
+    en: {
+      tagline: "A 17th-century stone church with a vault painted in 1726 on a lining of wooden boards.",
+      description: [
+        "The village of Lăpușnic, at the northern foot of the Poiana Ruscă Mountains, keeps a stone church listed as a historic monument since 1948. The oldest part of the nave, from the mid-17th century, was originally a civil building donated by the widow Maria de Lazar.",
+        "The altar and the lengthened nave date from the first half of the 18th century — \"1726 March 26\" is written on the vault — and the narthex and bell tower were added in 1832–1843. The vault over the nave and altar was painted in 1726 on a board lining by an unknown painter and repainted in 1817; the murals are now badly deteriorated."
+      ],
+      facts: [
+        { label: "Date", value: "mid-17th century; altar 1726; narthex and tower 1832–1843" },
+        { label: "Murals", value: "1726 (on boards), repainted 1817" },
+        { label: "Plan", value: "rectangular, 21 × 7 m, semicircular apse" },
+        { label: "Location", value: "Lăpușnic village, Dobra commune" },
+        { label: "LMI code", value: "HD-II-m-A-03357" }
+      ]
+    }
+  },
+  {
+    id: "biserica-de-lemn-ciungani",
+    name: "Biserica de lemn din Ciungani",
+    category: { ro: "Biserică de lemn", en: "Wooden church" },
+    area: "Vața de Jos",
+    coords: [46.18556, 22.50056],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-de-lemn-ciungani.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 2.5", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Ciungani_5.jpg" },
+    ro: {
+      tagline: "Biserică de lemn de pe la 1600, cu cel mai înalt turn dintre bisericile de lemn hunedorene — 14 m.",
+      description: [
+        "Pe dealul „Zapoza” din satul Ciungani, în Țara Zarandului, se află biserica de lemn „Buna Vestire”, ridicată, după tradiție, în jurul anului 1600 — dată confirmată de planul ei arhaic. În 1755 era descrisă ca „de lemn, veche, nesfințită”. Acoperișul cu pante repezi și fleșa turnului-clopotniță, înaltă de 14 m — cea mai înaltă dintre bisericile de lemn din județ —, sunt învelite în șiță.",
+        "Înăuntru se văd două etape de pictură: cea din 1782, a lui Iosif Zugravul, peste care s-a suprapus aproape în întregime, în 1810, decorul meșterilor Ioan din Poiana Sibiului și Mihai Borșoș."
+      ],
+      facts: [
+        { label: "Datare", value: "cca. 1600" },
+        { label: "Turn", value: "14 m — cel mai înalt dintre bisericile de lemn hunedorene" },
+        { label: "Pictură", value: "1782 (Iosif Zugravul) și 1810" },
+        { label: "Localizare", value: "satul Ciungani, comuna Vața de Jos" },
+        { label: "Cod LMI", value: "HD-II-m-A-03297" }
+      ]
+    },
+    en: {
+      tagline: "A wooden church from around 1600, with the tallest tower of any wooden church in Hunedoara county — 14 m.",
+      description: [
+        "On Zapoza hill in the village of Ciungani, in the Zarand Country, stands the wooden Church of the Annunciation, built by tradition around 1600 — a date its archaic plan supports. In 1755 it was described as \"wooden, old, unconsecrated\". The steep roof and the 14 m spire of its bell tower — the tallest among the county's wooden churches — are covered in shingles.",
+        "Inside there are two layers of murals: those painted in 1782 by Iosif the Painter, almost entirely covered in 1810 by the work of Ioan of Poiana Sibiului and Mihai Borșoș."
+      ],
+      facts: [
+        { label: "Date", value: "c. 1600" },
+        { label: "Tower", value: "14 m — the tallest of Hunedoara's wooden churches" },
+        { label: "Murals", value: "1782 (Iosif the Painter) and 1810" },
+        { label: "Location", value: "Ciungani village, Vața de Jos commune" },
+        { label: "LMI code", value: "HD-II-m-A-03297" }
+      ]
+    }
+  },
+  {
+    id: "biserica-de-lemn-birtin",
+    name: "Biserica de lemn din Birtin",
+    category: { ro: "Biserică de lemn", en: "Wooden church" },
+    area: "Vața de Jos",
+    coords: [46.17333, 22.64139],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-de-lemn-birtin.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 2.5", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Birtin_4.jpg" },
+    ro: {
+      tagline: "Biserică de lemn din 1690, „în zilele lui Apafi Mihai craiu din Ardeal”, cu icoane de Stan Zugravul.",
+      description: [
+        "Biserica de lemn „Buna Vestire” din Birtin stă pe unul dintre dealurile molcome ale satului. Inscripția săpată deasupra intrării spre naos spune: „Făcutu-s-au această sfântă biserică în zilele lui Apafi Mihaiu craiu din Ardeal, anul Domnului 1690, meseța aprilie 20 zile, popa Lazăr”. Bârnele masive ale pereților sunt așezate direct pe pământ și îmbinate în coadă de rândunică.",
+        "Ușile împărătești, cu Buna Vestire și evangheliștii, au fost pictate în 1740 de Gligorie Moldovan, iar în 1772 Stan Zugravul, fiul popii Radu din Rășinari, a realizat registrul împărătesc al iconostasului. Pereții au primit o nouă pictură în prima jumătate a secolului al XIX-lea."
+      ],
+      facts: [
+        { label: "Construită", value: "1690" },
+        { label: "Hram", value: "Buna Vestire" },
+        { label: "Pictură", value: "uși împărătești 1740; iconostas 1772 (Stan Zugravul)" },
+        { label: "Localizare", value: "satul Birtin, comuna Vața de Jos" },
+        { label: "Cod LMI", value: "HD-II-m-A-03256" }
+      ]
+    },
+    en: {
+      tagline: "A wooden church from 1690, \"in the days of Michael Apafi, king of Transylvania\", with icons by Stan the Painter.",
+      description: [
+        "The wooden Church of the Annunciation in Birtin stands on one of the village's gentle hills. The inscription cut above the door to the nave reads: \"This holy church was made in the days of Michael Apafi, king of Transylvania, in the year of the Lord 1690, the 20th day of April, priest Lazăr\". The massive wall logs rest directly on the ground and are joined with dovetails.",
+        "The royal doors, with the Annunciation and the Evangelists, were painted in 1740 by Gligorie Moldovan, and in 1772 Stan the Painter, son of the priest Radu of Rășinari, painted the iconostasis's row of main icons. The walls were repainted in the first half of the 19th century."
+      ],
+      facts: [
+        { label: "Built", value: "1690" },
+        { label: "Dedication", value: "the Annunciation" },
+        { label: "Painting", value: "royal doors 1740; iconostasis 1772 (Stan the Painter)" },
+        { label: "Location", value: "Birtin village, Vața de Jos commune" },
+        { label: "LMI code", value: "HD-II-m-A-03256" }
+      ]
+    }
+  },
+  {
+    id: "castelul-kendeffy",
+    name: "Castelul Kendeffy",
+    category: { ro: "Castel", en: "Castle" },
+    area: "Sântămăria-Orlea",
+    coords: [45.588959, 22.966424],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/castelul-kendeffy.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:CastelulKendeffy_(10).JPG" },
+    ro: {
+      tagline: "Castelul neogotic al familiei Kendeffy din 1782, fost hotel, azi închis — se poate privi doar din afară.",
+      description: [
+        "Castelul din Sântămăria-Orlea a fost construit în 1782 de contele Elek Kendeffy, pe locul unui conac mai vechi, ca reședință a familiei în Țara Hațegului. La începutul secolului al XIX-lea i s-a adăugat un manej, iar în a doua jumătate a secolului Árpád Kendeffy l-a transformat în stil neogotic, după planurile arhitectului József Schulz, cu decorațiile lui Ferenc Storno. Pe fațadă se vede o placă barocă cu blazoanele familiilor Kendeffy și Bethlen și o inscripție latină din 1782.",
+        "După naționalizare a găzduit tabere de vară pentru copii, iar în anii 1980 a fost transformat în hotel. După 1990 a fost retrocedat urmașilor familiei, dar a rămas nefolosit: în 2024 era închis de aproape două decenii. Castelul nu se vizitează; se poate vedea din drum."
+      ],
+      facts: [
+        { label: "Construit", value: "1782, de contele Elek Kendeffy" },
+        { label: "Stil", value: "gotic, transformat neogotic în a doua jumătate a sec. XIX" },
+        { label: "Stare", value: "închis, nu se vizitează (proprietate privată)" },
+        { label: "Localizare", value: "satul Sântămăria-Orlea" },
+        { label: "Cod LMI", value: "HD-II-a-A-03446" }
+      ]
+    },
+    en: {
+      tagline: "The Kendeffy family's neo-Gothic castle from 1782, a former hotel, now closed — it can only be seen from outside.",
+      description: [
+        "The castle in Sântămăria-Orlea was built in 1782 by Count Elek Kendeffy, on the site of an older manor, as the family's residence in the Hațeg Country. A riding hall was added in the early 19th century, and in the second half of that century Árpád Kendeffy had it remodelled in neo-Gothic style to plans by architect József Schulz, with decoration by Ferenc Storno. The façade bears a Baroque plaque with the Kendeffy and Bethlen coats of arms and a Latin inscription from 1782.",
+        "After nationalisation it hosted children's summer camps, and in the 1980s it became a hotel. After 1990 it was returned to the family's heirs but has stayed unused: in 2024 it had been closed for nearly two decades. The castle is not open to visitors; it can be seen from the road."
+      ],
+      facts: [
+        { label: "Built", value: "1782, by Count Elek Kendeffy" },
+        { label: "Style", value: "Gothic, remodelled neo-Gothic in the late 19th century" },
+        { label: "Status", value: "closed, not open to visitors (private property)" },
+        { label: "Location", value: "Sântămăria-Orlea village" },
+        { label: "LMI code", value: "HD-II-a-A-03446" }
+      ]
+    }
+  },
+  {
+    id: "biserica-sanpetru",
+    name: "Biserica „Sfântul Gheorghe” din Sânpetru",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Sântămăria-Orlea",
+    coords: [45.5515, 22.912154],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-sanpetru.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:SanpetruHD_(50).JPG" },
+    ro: {
+      tagline: "Biserică cnezială din secolul al XIV-lea, cu pietre romane și un bust antic încastrate în fațadă.",
+      description: [
+        "Biserica „Sfântul Gheorghe” din Sânpetru (comuna Sântămăria-Orlea) este unul dintre cele mai vechi monumente de zid ale românilor din Transilvania. Are o navă dreptunghiulară de 9 × 5,8 m și un altar boltit în cruce, fără turn-clopotniță, iar pe fațada de vest constructorii au încastrat câteva piese de piatră romane și un bust antic, care îi dau o înfățișare neobișnuită.",
+        "Ctitorul a fost unul dintre cnezii locali — poate Dan, tatăl lui Ștefan, jurat al Țării Hațegului între 1411 și 1418 —, deci biserica e anterioară anului 1443, când satul a fost împărțit între Cândeștii din Râu de Mori și nobilii din Unciuc și Săcel. Portalul vestic, cu arc frânt, e gotic. Sânpetru e și punctul de plecare al Văii Dinozaurilor din Geoparcul Țara Hațegului."
+      ],
+      facts: [
+        { label: "Datare", value: "sec. XIV (înainte de 1443)" },
+        { label: "Particularitate", value: "piese romane și un bust antic în fațada de vest" },
+        { label: "Plan", value: "navă 9 × 5,8 m, altar boltit în cruce, fără turn" },
+        { label: "Localizare", value: "satul Sânpetru, comuna Sântămăria-Orlea" },
+        { label: "Cod LMI", value: "HD-II-m-A-03444" }
+      ]
+    },
+    en: {
+      tagline: "A 14th-century knez church with Roman stones and an ancient bust set into its façade.",
+      description: [
+        "St George's Church in Sânpetru (Sântămăria-Orlea commune) is one of the oldest Romanian stone monuments in Transylvania. It has a 9 × 5.8 m rectangular nave and a cross-vaulted altar, with no bell tower, and its builders set several Roman stone pieces and an ancient bust into the west façade, giving it an unusual look.",
+        "It was founded by one of the local knezes — perhaps Dan, father of Ștefan, a juror of the Hațeg Country between 1411 and 1418 — so it predates 1443, when the village was divided between the Cândeas of Râu de Mori and the nobles of Unciuc and Săcel. The pointed-arch west portal is Gothic. Sânpetru is also the starting point of the Dinosaur Valley in the Hațeg Country Geopark."
+      ],
+      facts: [
+        { label: "Date", value: "14th century (before 1443)" },
+        { label: "Notable", value: "Roman pieces and an ancient bust in the west façade" },
+        { label: "Plan", value: "9 × 5.8 m nave, cross-vaulted altar, no tower" },
+        { label: "Location", value: "Sânpetru village, Sântămăria-Orlea commune" },
+        { label: "LMI code", value: "HD-II-m-A-03444" }
+      ]
+    }
+  },
+  {
+    id: "biserica-trestia",
+    name: "Biserica „Buna Vestire” din Trestia",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Băița",
+    coords: [46.02389, 22.93333],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-trestia.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Biserica_Buna_Vestire_din_Trestia_(4).jpg" },
+    ro: {
+      tagline: "Biserică masivă de piatră din 1674, ctitorită de nobilul Francisc Gyulay, proprietar de mine, cu un iconostas brâncovenesc.",
+      description: [
+        "Pe un pinten de munte de la marginea satului Trestia (comuna Băița), atestat în 1439, s-a ridicat în 1674 o biserică mare de piatră, închinată Bunei Vestiri. Ctitorul a fost nobilul Francisc Gyulay, comandant în armata habsburgică și mare proprietar de mine, care în 1690 i-a dăruit două clopote și un steag primit de la împăratul Leopold I.",
+        "Iconostasul, de la începutul secolului al XVIII-lea, are motive sculptate de influență brâncovenească; registrul împărătesc e atribuit lui Simion Silaghi din Abrud, iar icoana de hram și cele douăsprezece praznicare meșterului Iacob din Rășinari. Pictura murală anonimă, din a doua jumătate a secolului al XVIII-lea, acoperă doar pronaosul și exonartexul."
+      ],
+      facts: [
+        { label: "Construită", value: "1674" },
+        { label: "Ctitor", value: "Francisc Gyulay, proprietar de mine" },
+        { label: "Iconostas", value: "începutul sec. XVIII, de influență brâncovenească" },
+        { label: "Localizare", value: "satul Trestia, comuna Băița" },
+        { label: "Cod LMI", value: "HD-II-m-A-03469" }
+      ]
+    },
+    en: {
+      tagline: "A massive stone church from 1674, founded by the mine-owning noble Francis Gyulay, with a Brâncoveanu-style iconostasis.",
+      description: [
+        "On a mountain spur at the edge of Trestia (Băița commune), recorded in 1439, a large stone church dedicated to the Annunciation was built in 1674. Its founder was the noble Francis Gyulay, a commander in the Habsburg army and a major mine owner, who in 1690 gave it two bells and a banner received from Emperor Leopold I.",
+        "The early 18th-century iconostasis has carved motifs in the Brâncoveanu style; its row of main icons is attributed to Simion Silaghi of Abrud, and the patronal icon and twelve feast icons to Master Iacob of Rășinari. Anonymous murals from the second half of the 18th century cover only the narthex and the outer porch."
+      ],
+      facts: [
+        { label: "Built", value: "1674" },
+        { label: "Founder", value: "Francis Gyulay, mine owner" },
+        { label: "Iconostasis", value: "early 18th century, Brâncoveanu style" },
+        { label: "Location", value: "Trestia village, Băița commune" },
+        { label: "LMI code", value: "HD-II-m-A-03469" }
+      ]
+    }
+  },
+  {
+    id: "biserica-lesnic",
+    name: "Biserica „Sfântul Nicolae” din Leșnic",
+    category: { ro: "Monument istoric", en: "Historic monument" },
+    area: "Vețel",
+    coords: [45.91361, 22.74167],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-lesnic.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Lesnic_29.jpg" },
+    ro: {
+      tagline: "Mică biserică cnezială de la sfârșitul secolului al XIV-lea, cu pictură medievală în naos.",
+      description: [
+        "Biserica de zid „Sfântul Nicolae” din Leșnic, comuna Vețel, pe malul stâng al Mureșului, este una dintre vechile ctitorii ale cnezilor români din părțile Hunedoarei. Are un plan simplu, de tip sală: un naos de 5,6 × 5 m și un altar boltit, la care s-a adăugat mai târziu un pronaos cu clopotniță de lemn și un mic pridvor.",
+        "Pe baza arhitecturii și a picturii din naos, biserica a fost datată la sfârșitul secolului al XIV-lea sau începutul secolului al XV-lea. Ctitorul e considerat cneazul Dobre, fiul lui Ioan din Leșnic, care în 1386 era întărit în stăpânirea unui munte de la izvoarele văii Leșnicului. Săpăturile din 1984 au însoțit restaurarea monumentului."
+      ],
+      facts: [
+        { label: "Datare", value: "sfârșitul sec. XIV – începutul sec. XV" },
+        { label: "Ctitor", value: "probabil cneazul Dobre din Leșnic" },
+        { label: "Pictură", value: "medievală, în naos" },
+        { label: "Localizare", value: "satul Leșnic, comuna Vețel" },
+        { label: "Cod LMI", value: "HD-II-m-A-03359" }
+      ]
+    },
+    en: {
+      tagline: "A small knez church from the late 14th century, with medieval murals in the nave.",
+      description: [
+        "St Nicholas' stone church in Leșnic, Vețel commune, on the left bank of the Mureș, is one of the old foundations of Romanian knezes in the Hunedoara area. It has a simple hall plan: a 5.6 × 5 m nave and a vaulted altar, later extended with a narthex topped by a wooden bell tower and a small porch.",
+        "Its architecture and the murals in the nave date it to the late 14th or early 15th century. Its founder is thought to be the knez Dobre, son of Ioan of Leșnic, who in 1386 was confirmed in possession of a mountain at the head of the Leșnic valley. Excavations in 1984 accompanied the building's restoration."
+      ],
+      facts: [
+        { label: "Date", value: "late 14th – early 15th century" },
+        { label: "Founder", value: "probably the knez Dobre of Leșnic" },
+        { label: "Murals", value: "medieval, in the nave" },
+        { label: "Location", value: "Leșnic village, Vețel commune" },
+        { label: "LMI code", value: "HD-II-m-A-03359" }
+      ]
+    }
+  },
+  {
+    id: "castelul-gyulay-mintia",
+    name: "Castelul Gyulay din Mintia",
+    category: { ro: "Castel", en: "Castle" },
+    area: "Vețel",
+    coords: [45.924965, 22.856363],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/castelul-gyulay-mintia.jpg"],
+    photoCredit: { author: "Leszay izabella", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Mintia_Castelu_Gyulai_Ferencz.jpg" },
+    ro: {
+      tagline: "Castel al familiei Gyulay din 1641, refăcut în stil clasicist în 1834, într-un parc de 5 hectare pe malul Mureșului.",
+      description: [
+        "Familia Gyulay și-a construit castelul de la Mintia, pe malul stâng al Mureșului, în 1641. Contele Lajos Gyulay l-a transformat în 1834 în stil clasicist, după planurile arhitectului Stuller; fațada principală are arcade, iar din galeria din spate se deschide priveliștea spre parc. Ansamblul, castelul și parcul de circa 5 ha, e monument istoric.",
+        "Castelul a fost devastat în răscoala din 1784 și în 1848–1849. Aici a trăit Lajos Gyulay, autorul unuia dintre cele mai lungi jurnale personale din literatura maghiară, iar mai târziu istoricul și orientalistul Géza Kuun, care a strâns aici o bibliotecă și o arhivă bogate. În 2007 a fost retrocedat moștenitorilor; e proprietate privată și se poate vedea din afară."
+      ],
+      facts: [
+        { label: "Construit", value: "1641; refăcut clasicist în 1834" },
+        { label: "Parc", value: "cca. 5 ha" },
+        { label: "Personalități", value: "Lajos Gyulay (memorialist), Géza Kuun (orientalist)" },
+        { label: "Stare", value: "proprietate privată, se vede din exterior" },
+        { label: "Cod LMI", value: "HD-II-a-A-03366" }
+      ]
+    },
+    en: {
+      tagline: "The Gyulay family's castle from 1641, rebuilt in Classicist style in 1834, in a 5-hectare park by the Mureș.",
+      description: [
+        "The Gyulay family built their castle at Mintia, on the left bank of the Mureș, in 1641. Count Lajos Gyulay had it remodelled in Classicist style in 1834 to plans by the architect Stuller; the main façade is arcaded, and the rear gallery looks out over the park. The castle and its park of about 5 ha are listed together as a historic monument.",
+        "The castle was ransacked during the 1784 uprising and again in 1848–1849. It was home to Lajos Gyulay, author of one of the longest private diaries in Hungarian literature, and later to the historian and orientalist Géza Kuun, who built up a rich library and archive here. It was returned to the heirs in 2007; it is private property and can be seen from outside."
+      ],
+      facts: [
+        { label: "Built", value: "1641; remodelled in Classicist style in 1834" },
+        { label: "Park", value: "about 5 ha" },
+        { label: "Notable people", value: "Lajos Gyulay (diarist), Géza Kuun (orientalist)" },
+        { label: "Status", value: "private property, seen from outside" },
+        { label: "LMI code", value: "HD-II-a-A-03366" }
       ]
     }
   },
@@ -5644,6 +6457,79 @@ window.SITE_BUSINESSES = [
       facts: [
         { label: "Address", value: "Str. Taia no. 53B, Petrila" },
         { label: "Facilities", value: "fireplace" }
+      ]
+    }
+  },
+  {
+    id: "hotel-germisara-geoagiu-bai",
+    name: "Hotel Germisara Resort & SPA",
+    category: { ro: "Hotel & restaurant", en: "Hotel & restaurant" },
+    area: "Geoagiu",
+    coords: [45.9342, 23.1661],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/hotel-germisara.jpg"],
+    photoCredit: { author: "Hotel Germisara", license: "material promoțional al afacerii", source: "https://hotelgermisara.ro", sourceLabel: "hotelgermisara.ro" },
+    ro: {
+      tagline: "Hotel de 4 stele în stațiunea Geoagiu-Băi, cu piscine cu apă termală, bază de tratament și restaurant.",
+      description: [
+        "Hotel Germisara Resort & SPA este unul dintre principalele hoteluri ale stațiunii Geoagiu-Băi, cu 144 de camere și apartamente. Are două piscine cu apă termală pentru tratament, o zonă de wellness și spa și un centru de tratament medical cu programe curative, profilactice și de recuperare.",
+        "Restaurantul „Bun Gust” are 200 de locuri și terasă de vară. Termele romane Germisara și ștrandul termal al stațiunii sunt în apropiere."
+      ],
+      facts: [
+        { label: "Adresă", value: "Str. Germisara nr. 1B, Geoagiu-Băi" },
+        { label: "Clasificare", value: "4 stele" },
+        { label: "Facilități", value: "144 de camere și apartamente, piscine termale, spa, bază de tratament, restaurant cu 200 de locuri" },
+        { label: "Contact", value: "tel. 0372 541 000 · office@hotelgermisara.ro · hotelgermisara.ro" }
+      ]
+    },
+    en: {
+      tagline: "A 4-star hotel in the Geoagiu-Băi spa resort, with thermal pools, a treatment centre and a restaurant.",
+      description: [
+        "Hotel Germisara Resort & SPA is one of the main hotels of the Geoagiu-Băi spa, with 144 rooms and apartments. It has two thermal-water treatment pools, a wellness and spa area, and a medical treatment centre with curative, preventive and rehabilitation programmes.",
+        "The \"Bun Gust\" restaurant seats 200 and has a summer terrace. The Roman baths of Germisara and the resort's thermal lido are close by."
+      ],
+      facts: [
+        { label: "Address", value: "Str. Germisara 1B, Geoagiu-Băi" },
+        { label: "Rating", value: "4 stars" },
+        { label: "Facilities", value: "144 rooms and apartments, thermal pools, spa, treatment centre, 200-seat restaurant" },
+        { label: "Contact", value: "tel. +40 372 541 000 · office@hotelgermisara.ro · hotelgermisara.ro" }
+      ]
+    }
+  },
+  {
+    id: "pensiunea-sarmis-sarmizegetusa",
+    name: "Pensiunea Sarmis",
+    category: { ro: "Cazare", en: "Accommodation" },
+    area: "Sarmizegetusa",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/pensiunea-sarmis.jpg"],
+    photoCredit: { author: "Pensiunea Sarmis", license: "material promoțional al afacerii", source: "https://www.pensiuneasarmis.ro", sourceLabel: "pensiuneasarmis.ro" },
+    ro: {
+      tagline: "Pensiune cu restaurant tradițional în satul Sarmizegetusa, lângă ruinele cetății Ulpia Traiana.",
+      description: [
+        "Pensiunea Sarmis se află în satul Sarmizegetusa, aproape de situl Ulpia Traiana Sarmizegetusa, capitala Daciei romane, la poalele Retezatului. Oferă cazare și un restaurant cu mâncăruri tradiționale românești.",
+        "E un punct de plecare comod pentru Ulpia Traiana, bisericile medievale din Densuș și Peșteana și pentru drumurile spre Retezat. Pensiunea acceptă carduri de vacanță."
+      ],
+      facts: [
+        { label: "Locație", value: "Sarmizegetusa nr. 82, comuna Sarmizegetusa" },
+        { label: "Facilități", value: "cazare, restaurant cu bucătărie tradițională" },
+        { label: "Plată", value: "carduri bancare și carduri de vacanță" },
+        { label: "Contact", value: "tel. 0744 794 051 · office@pensiuneasarmis.ro · pensiuneasarmis.ro" }
+      ]
+    },
+    en: {
+      tagline: "A guesthouse with a traditional restaurant in Sarmizegetusa village, next to the ruins of Ulpia Traiana.",
+      description: [
+        "Pensiunea Sarmis is in the village of Sarmizegetusa, close to the site of Ulpia Traiana Sarmizegetusa, capital of Roman Dacia, at the foot of the Retezat. It offers rooms and a restaurant serving traditional Romanian food.",
+        "It is a convenient base for Ulpia Traiana, the medieval churches of Densuș and Peșteana, and the roads into the Retezat. Holiday vouchers are accepted."
+      ],
+      facts: [
+        { label: "Location", value: "Sarmizegetusa no. 82, Sarmizegetusa commune" },
+        { label: "Facilities", value: "rooms, restaurant with traditional cuisine" },
+        { label: "Payment", value: "bank cards and holiday vouchers" },
+        { label: "Contact", value: "tel. +40 744 794 051 · office@pensiuneasarmis.ro · pensiuneasarmis.ro" }
       ]
     }
   }
