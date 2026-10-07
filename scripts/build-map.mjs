@@ -248,7 +248,7 @@ const lines = [
   '  <figcaption class="hero-map__caption">',
   '    <span class="hero-map__key hero-map__key--town" data-i18n="home.map.legend.towns">Orașe</span>',
   '    <span class="hero-map__key hero-map__key--lm" data-i18n="home.map.legend.landmarks">Repere</span>',
-  '    <a class="hero-map__credit" href="https://www.openstreetmap.org/copyright" rel="noopener" data-i18n="home.map.credit">Contur: © OpenStreetMap contributors</a>',
+  '    <a class="hero-map__credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" data-i18n="home.map.credit">Contur: © OpenStreetMap contributors</a>',
   "  </figcaption>",
   "</figure>",
   END
