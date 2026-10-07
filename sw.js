@@ -14,8 +14,12 @@
  *   disponibile offline; prima pagină EN (/en/) e salvată de la instalare.
  *
  * La orice schimbare a listei de mai jos sau a strategiei, crește VERSION.
+ * JS-ul e servit „stale-while-revalidate”: dacă o schimbare din HTML cere neapărat
+ * JS-ul nou (ex. configurația paginii mutată în blocuri JSON pentru CSP), pune un
+ * ?v=N la <script src> în pagini (cache-ul îl tratează ca fișier nou); offline,
+ * varianta fără ?v= din PRECACHE e folosită ca rezervă (ignoreSearch).
  */
-var VERSION = "v2";
+var VERSION = "v3";
 var STATIC_CACHE = "hl-static-" + VERSION;
 var PAGES_CACHE = "hl-pages-" + VERSION;
 var IMG_CACHE = "hl-img-" + VERSION;

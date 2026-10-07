@@ -32,6 +32,14 @@
  * ca HTML-ul pre-randat să fie identic cu cel randat în browser.
  */
 (function () {
+  // configurația paginii: bloc script type="application/json" (date, nu cod -> CSP fără 'unsafe-inline').
+  // Citită aici, nu prin common.js, ca să meargă și cu un common.js vechi din cache-ul service worker-ului.
+  function pageConfig(id) {
+    var el = typeof document !== "undefined" && document.getElementById && document.getElementById(id);
+    if (!el) return null;
+    try { return JSON.parse(el.textContent); } catch (e) { return null; }
+  }
+
   var RELATED_KEYS = ["SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_BUSINESSES"];
   var SEASON_ORDER = ["primavara", "vara", "toamna", "iarna", "tot-anul"];
 
@@ -105,7 +113,7 @@
   var renderedLang = null;
 
   function render() {
-    var cfg = window.DETAIL_CONFIG || window.RL.pageConfig("detail-config");
+    var cfg = window.DETAIL_CONFIG || pageConfig("detail-config");
     if (!cfg) return;
     var lang = window.I18N.lang;
     var id = cfg.id || window.RL.qs("id");

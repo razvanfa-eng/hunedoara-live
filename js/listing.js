@@ -16,8 +16,16 @@
  * (categoria/zona sunt opționale — dacă lipsesc din HTML, sunt ignorate)
  */
 (function () {
+  // configurația paginii: bloc script type="application/json" (date, nu cod -> CSP fără 'unsafe-inline').
+  // Citită aici, nu prin common.js, ca să meargă și cu un common.js vechi din cache-ul service worker-ului.
+  function pageConfig(id) {
+    var el = typeof document !== "undefined" && document.getElementById && document.getElementById(id);
+    if (!el) return null;
+    try { return JSON.parse(el.textContent); } catch (e) { return null; }
+  }
+
   function render() {
-    var cfg = window.LISTING_CONFIG || window.RL.pageConfig("listing-config");
+    var cfg = window.LISTING_CONFIG || pageConfig("listing-config");
     if (!cfg) return;
     var lang = window.I18N.lang;
     var all = window.RL.dataArray(cfg.dataKey);

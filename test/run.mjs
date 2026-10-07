@@ -44,7 +44,7 @@ function prep(html) {
   html = html.replace(/<head>/, `<head><script>window.addEventListener("error",e=>{window.__err=(window.__err||"")+String(e.message||e.error)+" | ";});</script>`);
   html = html.replace(/<link[^>]+href="https?:\/\/[^"]*"[^>]*>/g, "");
   html = html.replace(/<script[^>]+src="https?:\/\/[^"]*"[^>]*><\/script>/g, "");
-  html = html.replace(/<script src="\/?(js\/[^"]+)"><\/script>/g, (_, src) =>
+  html = html.replace(/<script src="\/?(js\/[^"?]+)(?:\?[^"]*)?"><\/script>/g, (_, src) =>
     "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>");
   return html;
 }
