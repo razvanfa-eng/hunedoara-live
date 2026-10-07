@@ -5554,7 +5554,8 @@ window.SITE_BUSINESSES = [
     area: "Deva",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/hotel-sarmis-deva.jpg"],
+    photoCredit: { author: "Hotel Sarmis", license: "material promoțional al afacerii", source: "https://www.unitahotels.ro/hotel-sarmis-deva", sourceLabel: "unitahotels.ro" },
     ro: {
       tagline: "Hotel de 3 stele cu 117 camere, pe strada principală din centrul Devei.",
       description: [
@@ -5653,7 +5654,8 @@ window.SITE_BUSINESSES = [
     area: "Hunedoara",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-la-fontaine-hunedoara.jpg"],
+    photoCredit: { author: "Pensiunea La Fontaine", license: "material promoțional al afacerii", source: "https://lafontaine.ro", sourceLabel: "lafontaine.ro" },
     ro: {
       tagline: "Pensiune cu 10 camere și grădină, la câteva minute de mers pe jos de Castelul Corvinilor.",
       description: [
@@ -5688,7 +5690,8 @@ window.SITE_BUSINESSES = [
     area: "Hunedoara",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/curtea-veche-hunedoara.jpg"],
+    photoCredit: { author: "Curtea Veche", license: "material promoțional al afacerii", source: "https://curteavechehunedoara.ro", sourceLabel: "curteavechehunedoara.ro" },
     ro: {
       tagline: "Fost han vechi, azi pensiune și restaurant cu bucătărie tradițională hunedoreană.",
       description: [
@@ -5754,7 +5757,8 @@ window.SITE_BUSINESSES = [
     area: "Petroșani",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/hotel-petrosani.jpg"],
+    photoCredit: { author: "Hotel Petroșani", license: "material promoțional al afacerii", source: "https://www.hotelpetrosani.com", sourceLabel: "hotelpetrosani.com" },
     ro: {
       tagline: "Hotel central, construit în 1987, lângă Parcul Central din Petroșani.",
       description: [
@@ -5824,7 +5828,8 @@ window.SITE_BUSINESSES = [
     area: "Hațeg",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-avy-hateg.jpg"],
+    photoCredit: { author: "Pensiunea Avy", license: "material promoțional al afacerii", source: "https://pensiunea-avy.ro", sourceLabel: "pensiunea-avy.ro" },
     ro: {
       tagline: "Pensiune cu 13 camere, vizavi de benzinăria Petrom, la 2 minute de centrul Hațegului.",
       description: [
@@ -5859,7 +5864,8 @@ window.SITE_BUSINESSES = [
     area: "Hațeg",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/avy-wine-dine-hateg.jpg"],
+    photoCredit: { author: "Avy Wine & Dine", license: "material promoțional al afacerii", source: "https://restaurant-avy.ro", sourceLabel: "restaurant-avy.ro" },
     ro: {
       tagline: "Restaurant cu bucătărie mediteraneeană, pe strada Tudor Arghezi din Hațeg.",
       description: [
@@ -5958,7 +5964,8 @@ window.SITE_BUSINESSES = [
     area: "Brad",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-irina-brad.jpg"],
+    photoCredit: { author: "Pensiunea Irina", license: "material promoțional al afacerii", source: "https://pensiuneairina.ro", sourceLabel: "pensiuneairina.ro" },
     ro: {
       tagline: "Pensiune de familie deschisă în 2001, cu 5 camere duble, în Brad.",
       description: [
@@ -6195,7 +6202,8 @@ window.SITE_BUSINESSES = [
     area: "Petroșani",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-bujor-de-munte-petrosani.jpg"],
+    photoCredit: { author: "Pensiunea Bujor de Munte", license: "material promoțional al afacerii", source: "https://bujordemunte.ro", sourceLabel: "bujordemunte.ro" },
     ro: {
       tagline: "Pensiune 3 stele la poalele Parângului, cu 17 camere și 2 apartamente.",
       description: [
@@ -6228,7 +6236,8 @@ window.SITE_BUSINESSES = [
     area: "Petroșani",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/pensiunea-floare-de-colt-petrosani.jpg"],
+    photoCredit: { author: "Pensiunea Floare de Colț", license: "material promoțional al afacerii", source: "https://floaredecolthd.ro", sourceLabel: "floaredecolthd.ro" },
     ro: {
       tagline: "Pensiune cu restaurant la ieșirea din Petroșani spre Defileul Jiului, pe strada Livezeni (DN66).",
       description: [
