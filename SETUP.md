@@ -45,7 +45,8 @@ protejate de regulile RLS și de verificarea din funcție.)
 2. **Site settings → Environment variables** → adaugă:
    - `SUPABASE_URL` = `https://xxxx.supabase.co`
    - `SUPABASE_SERVICE_ROLE_KEY` = *(service_role key — secretă)*
-   - `TURNSTILE_SECRET_KEY` = *(Secret Key de la Turnstile)*
+   - `TURNSTILE_SECRET_KEY` = *(Secret Key de la Turnstile)* — obligatorie: fără ea
+     funcția refuză recenziile (doar `netlify dev` o poate lipsi)
 3. Redeploy.
 
 ## 5. Moderarea recenziilor

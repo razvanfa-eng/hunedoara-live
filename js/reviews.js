@@ -60,7 +60,8 @@
           body: data.body,
           token: data.captchaToken || "",
           imageBase64: data.imageBase64 || "",
-          imageType: data.imageType || ""
+          imageType: data.imageType || "",
+          website: data.website || ""          // capcană anti-spam (vezi formHtml)
         })
       }).then(function (r) {
         return r.json().then(function (j) {
@@ -106,9 +107,16 @@
     "</div>";
   }
 
+  // poza unei recenzii: doar https:// (Supabase Storage) sau data:image/ (modul local)
+  function safeImageUrl(u) {
+    u = String(u || "");
+    return /^https:\/\//i.test(u) || /^data:image\/(png|jpe?g|webp);base64,/i.test(u) ? u : "";
+  }
+
   function itemHtml(r) {
-    var img = r.image_url
-      ? '<img class="review-photo" loading="lazy" src="' + esc(r.image_url) + '" alt="" onerror="RL.imgError(this)">'
+    var imgUrl = safeImageUrl(r.image_url);
+    var img = imgUrl
+      ? '<img class="review-photo" loading="lazy" src="' + esc(imgUrl) + '" alt="" onerror="RL.imgError(this)">'
       : "";
     return '<li class="review">' +
       '<div class="review-head">' +
@@ -152,6 +160,8 @@
       '<label class="rv-field"><span data-i18n="reviews.form.body">' + T("reviews.form.body") + '</span>' +
         '<textarea name="body" rows="4" maxlength="4000" required></textarea></label>' +
       photo +
+      // capcană anti-spam (honeypot): ascunsă pentru oameni, completată de roboți -> funcția o ignoră
+      '<p class="rv-hp" hidden aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>' +
       captcha +
       '<p class="rv-msg" role="status" hidden></p>' +
       '<button type="submit" class="btn btn--primary" data-i18n="reviews.form.submit">' + T("reviews.form.submit") + "</button>" +
@@ -181,6 +191,7 @@
       var rating = Number(fd.get("rating") || 0);
       var body = (fd.get("body") || "").toString().trim();
       var title = (fd.get("title") || "").toString().trim();
+      var website = (fd.get("website") || "").toString();
 
       function fail(key) { msg.hidden = false; msg.className = "rv-msg rv-msg--err"; msg.textContent = T(key); }
 
@@ -206,7 +217,7 @@
       prep.then(function (img) {
         return provider.submit(entryId, {
           name: name, rating: rating, body: body, title: title,
-          captchaToken: captchaToken,
+          captchaToken: captchaToken, website: website,
           imageBase64: img && img.base64, imageType: img && img.type,
           imageDataUrl: img && img.dataUrl
         });
