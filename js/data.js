@@ -3758,6 +3758,364 @@ window.SITE_TOWNS = [
         { label: "Landmark", value: "the Red Bastion — Gabriel Bethlen's birthplace (1582), LMI code HD-II-m-A-03353" }
       ]
     }
+  },
+  {
+    id: "pui",
+    name: "Pui",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Hațegului",
+    coords: [45.5150, 23.0925],
+    hasReviews: false,
+    relatedAreas: ["Pui"],
+    relatedIds: ["traseu-pui-rausor", "traseu-ohaba-ponor-cioclovina"],
+    images: ["images/pui-biserica-ponor.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Biserica_din_Ponor_(10).JPG" },
+    ro: {
+      tagline: "Comuna de pe valea Streiului, între Țara Hațegului și Munții Șureanu, cu peșteri, rezervații naturale și urme ale omului de Neanderthal.",
+      description: [
+        "Pui este o comună din estul Țării Hațegului, formată din satele Pui (reședința), Băiești, Federi, Fizești, Galați, Hobița, Ohaba-Ponor, Ponor, Râu Bărbat, Rușor, Șerel și Uric. Între 1918 și 1950 a fost reședința plășii Pui din județul Hunedoara.",
+        "În satul Ohaba-Ponor, în Munții Șureanu, se află Peștera Șura Mare, rezervație naturală cu o intrare monumentală de aproape 40 m înălțime și peste 6,6 km de galerii explorate, care adăpostește a doua mare colonie de lilieci din România, după Huda lui Papară; interiorul e recomandat doar speologilor echipați. Tot la Ohaba-Ponor, locul fosilifer (rezervație de 10 ha) a păstrat unelte musteriene și trei falange atribuite omului de Neanderthal.",
+        "Comuna mai are rezervația botanică Fânațele Pui (13 ha), inclusă în Geoparcul Dinozaurilor „Țara Hațegului”, castrul roman de la Râu Bărbat și biserica de piatră „Pogorârea Sfântului Duh” din Ponor, ridicată în 1769. Din satul Pui pornește traseul marcat cu bandă roșie spre baza Salvamont Râușor, în Retezat."
+      ],
+      facts: [
+        { label: "Populație", value: "3.682 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Pui, Băiești, Federi, Fizești, Galați, Hobița, Ohaba-Ponor, Ponor, Râu Bărbat, Rușor, Șerel, Uric" },
+        { label: "Rezervații naturale", value: "Peștera Șura Mare, Locul fosilifer Ohaba-Ponor (10 ha), Fânațele Pui (13 ha)" },
+        { label: "Reper", value: "Biserica „Pogorârea Sfântului Duh” din Ponor (1769), cod LMI HD-II-m-B-03416" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Strei valley, between the Hațeg Country and the Șureanu Mountains, with caves, nature reserves and traces of Neanderthal man.",
+      description: [
+        "Pui is a commune in the east of the Hațeg Country, made up of Pui (the seat), Băiești, Federi, Fizești, Galați, Hobița, Ohaba-Ponor, Ponor, Râu Bărbat, Rușor, Șerel and Uric. Between 1918 and 1950 it was the seat of Pui district in Hunedoara county.",
+        "In Ohaba-Ponor, in the Șureanu Mountains, lies Șura Mare Cave, a nature reserve with a monumental entrance almost 40 m high and more than 6.6 km of explored passages, home to Romania's second-largest bat colony after Huda lui Papară; the interior is recommended only for equipped cavers. Also at Ohaba-Ponor, the fossil site (a 10 ha reserve) has yielded Mousterian tools and three finger bones attributed to Neanderthal man.",
+        "The commune also has the Fânațele Pui botanical reserve (13 ha), part of the Hațeg Country Dinosaurs Geopark, the Roman fort at Râu Bărbat and the stone Church of the Pentecost in Ponor, built in 1769. The red-stripe trail to the Râușor mountain rescue base, in the Retezat, starts from Pui village."
+      ],
+      facts: [
+        { label: "Population", value: "3,682 (2021 census)" },
+        { label: "Villages", value: "Pui, Băiești, Federi, Fizești, Galați, Hobița, Ohaba-Ponor, Ponor, Râu Bărbat, Rușor, Șerel, Uric" },
+        { label: "Nature reserves", value: "Șura Mare Cave, Ohaba-Ponor fossil site (10 ha), Fânațele Pui (13 ha)" },
+        { label: "Landmark", value: "Church of the Pentecost in Ponor (1769), LMI code HD-II-m-B-03416" }
+      ]
+    }
+  },
+  {
+    id: "criscior",
+    name: "Crișcior",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [46.1239, 22.8644],
+    hasReviews: false,
+    relatedAreas: ["Crișcior"],
+    relatedIds: ["biserica-criscior"],
+    images: ["images/criscior-biserica-zdrapti.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Zdrapti_3_retusat_2016.jpg" },
+    ro: {
+      tagline: "Comuna minieră de lângă Brad, cu o biserică de piatră din secolul al XIV-lea și vechea uzină de aur de la Gurabarza.",
+      description: [
+        "Crișcior este o comună de lângă municipiul Brad, în Țara Zarandului, formată din satele Crișcior (reședința), Barza, Valea Arsului și Zdrapți. Sub teritoriul ei se întinde o rețea de galerii și puțuri săpate de-a lungul mai multor secole, în sectoarele miniere Ruda-Barza și Valea Morii.",
+        "Minereul era scos la suprafață prin galeria Victor (ulterior „1 Mai”), la 1,2 km sud de Barza, și dus cu funicularul la uzina de preparare de la Gurabarza, construită în 1898, unde s-au extras cantități importante de aur, argint, zinc, cupru și sulf. Linia ferată industrială cu ecartament îngust Brad – Crișcior, din 1906–1907, e clasată monument istoric.",
+        "În satul Crișcior se păstrează biserica de piatră „Adormirea Maicii Domnului”, ctitorită la sfârșitul secolului al XIV-lea de cneazul Bâlea și soția sa, cu fragmente importante de pictură murală din epoca fundației, iar în Zdrapți se află o biserică de lemn ridicată în 1852, cu hramul Sfântul Dimitrie."
+      ],
+      facts: [
+        { label: "Populație", value: "3.389 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Crișcior, Barza, Valea Arsului, Zdrapți" },
+        { label: "Reper", value: "Biserica „Adormirea Maicii Domnului” (sec. XIV–XV), cod LMI HD-II-m-A-03303" },
+        { label: "Patrimoniu industrial", value: "uzina de preparare Gurabarza (1898); linia ferată îngustă Brad – Crișcior (1906–1907)" }
+      ]
+    },
+    en: {
+      tagline: "A mining commune next to Brad, with a 14th-century stone church and the old Gurabarza gold-processing plant.",
+      description: [
+        "Crișcior is a commune next to the town of Brad, in the Zarand Country, made up of Crișcior (the seat), Barza, Valea Arsului and Zdrapți. Beneath it runs a network of galleries and shafts dug over several centuries, in the Ruda-Barza and Valea Morii mining sectors.",
+        "Ore was brought to the surface through the Victor gallery (later \"1 Mai\"), 1.2 km south of Barza, and carried by cableway to the Gurabarza processing plant, built in 1898, where large quantities of gold, silver, zinc, copper and sulphur were extracted. The narrow-gauge industrial railway between Brad and Crișcior, from 1906–1907, is a listed historic monument.",
+        "Crișcior village keeps the stone Church of the Dormition, founded in the late 14th century by the local knez Bâlea and his wife, with important fragments of mural painting from that time, while Zdrapți has a wooden church built in 1852 and dedicated to Saint Demetrius."
+      ],
+      facts: [
+        { label: "Population", value: "3,389 (2021 census)" },
+        { label: "Villages", value: "Crișcior, Barza, Valea Arsului, Zdrapți" },
+        { label: "Landmark", value: "Church of the Dormition (14th–15th century), LMI code HD-II-m-A-03303" },
+        { label: "Industrial heritage", value: "Gurabarza processing plant (1898); Brad – Crișcior narrow-gauge railway (1906–1907)" }
+      ]
+    }
+  },
+  {
+    id: "soimus",
+    name: "Șoimuș",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.9203, 22.8761],
+    hasReviews: false,
+    relatedAreas: ["Șoimuș"],
+    images: ["images/soimus-biserica-de-lemn.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Biserica_de_lemn_din_Soimus.jpg" },
+    ro: {
+      tagline: "Comuna de pe valea Mureșului, lângă Deva, cu trei biserici de lemn din secolul al XVIII-lea.",
+      description: [
+        "Șoimuș este o comună de pe valea Mureșului, în apropiere de Deva, formată din satele Șoimuș (reședința), Bălata, Bejan, Bejan-Târnăvița, Boholt, Căinelu de Jos, Chișcădaga, Fornădia, Păuliș și Sulighete. Numele satului, ca și cel german Falkendorf, trimite la șoimi.",
+        "Comuna păstrează trei biserici de lemn: cea din Șoimuș, cu hramul Sfântul Nicolae, ridicată în 1705 din bârne de stejar — anul e dăltuit în pragul ușii spre naos —, cea din Sulighete, tot cu hramul Sfântul Nicolae, și cea din Căinelu de Jos, cu hramul „Intrarea în Biserică a Maicii Domnului”, ambele din secolul al XVIII-lea.",
+        "La Boholt se află un sit arheologic din epoca bronzului, urmele unei villa rustica romane și rezervația naturală Boholt, iar o parte din teritoriul comunei intră în situl Natura 2000 „Râul Mureș între Brănișca și Ilia”."
+      ],
+      facts: [
+        { label: "Populație", value: "3.386 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Șoimuș, Bălata, Bejan, Bejan-Târnăvița, Boholt, Căinelu de Jos, Chișcădaga, Fornădia, Păuliș, Sulighete" },
+        { label: "Reper", value: "Biserica de lemn „Sfântul Nicolae” din Șoimuș (1705), cod LMI HD-II-m-A-03461" },
+        { label: "Natură", value: "rezervația Boholt; situl Natura 2000 „Râul Mureș între Brănișca și Ilia”" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Mureș valley near Deva, with three 18th-century wooden churches.",
+      description: [
+        "Șoimuș is a commune in the Mureș valley, close to Deva, made up of Șoimuș (the seat), Bălata, Bejan, Bejan-Târnăvița, Boholt, Căinelu de Jos, Chișcădaga, Fornădia, Păuliș and Sulighete. The village's name, like its German name Falkendorf, refers to falcons.",
+        "The commune keeps three wooden churches: the one in Șoimuș, dedicated to Saint Nicholas and built of oak beams in 1705 — the year is carved into the lintel of the door to the nave —, the one in Sulighete, also dedicated to Saint Nicholas, and the one in Căinelu de Jos, dedicated to the Presentation of the Virgin, both from the 18th century.",
+        "Boholt has a Bronze Age archaeological site, the remains of a Roman villa rustica and the Boholt nature reserve, while part of the commune lies within the \"Mureș River between Brănișca and Ilia\" Natura 2000 site."
+      ],
+      facts: [
+        { label: "Population", value: "3,386 (2021 census)" },
+        { label: "Villages", value: "Șoimuș, Bălata, Bejan, Bejan-Târnăvița, Boholt, Căinelu de Jos, Chișcădaga, Fornădia, Păuliș, Sulighete" },
+        { label: "Landmark", value: "Saint Nicholas wooden church in Șoimuș (1705), LMI code HD-II-m-A-03461" },
+        { label: "Nature", value: "Boholt reserve; \"Mureș River between Brănișca and Ilia\" Natura 2000 site" }
+      ]
+    }
+  },
+  {
+    id: "beriu",
+    name: "Beriu",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Orăștiei",
+    coords: [45.7908, 23.1908],
+    hasReviews: false,
+    relatedAreas: ["Beriu"],
+    images: ["images/beriu-biserica.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_Adormirea_Maicii_Domnuuli_din_Beriu_(1).jpg" },
+    ro: {
+      tagline: "Comuna de pe dealurile de la sud de Orăștie, cu Mănăstirea Cucuiș și un castru roman la Orăștioara de Jos.",
+      description: [
+        "Beriu este o comună de pe dealurile de la sud de Orăștie, spre Munții Orăștiei, formată din satele Beriu (reședința), Căstău, Cucuiș, Măgureni, Orăștioara de Jos, Poieni, Sereca și Sibișel. Satul Beriu este atestat documentar din 1332, iar în 1673 apare în documente ca Berény.",
+        "Pe teritoriul comunei se află Mănăstirea Cucuiș, Cetatea Sibișelului, castrul roman de la Orăștioara de Jos și urmele unei villa rustica romane la Beriu, iar o parte din comună intră în situl Natura 2000 Frumoasa.",
+        "Biserica „Adormirea Maicii Domnului” din Beriu a fost ridicată între 1894 și 1897 după planurile arhitectului Nicolae Părău din Orăștie, în locul unei biserici de piatră din secolul al XVIII-lea, distrusă de un incendiu în vara lui 1894. La Căstău și la Beriu, monumente ale eroilor amintesc de localnicii căzuți în războaie."
+      ],
+      facts: [
+        { label: "Populație", value: "3.281 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Beriu, Căstău, Cucuiș, Măgureni, Orăștioara de Jos, Poieni, Sereca, Sibișel" },
+        { label: "Atestare", value: "1332" },
+        { label: "Repere", value: "Mănăstirea Cucuiș; castrul roman de la Orăștioara de Jos; Cetatea Sibișelului" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the hills south of Orăștie, with Cucuiș Monastery and a Roman fort at Orăștioara de Jos.",
+      description: [
+        "Beriu is a commune in the hills south of Orăștie, towards the Orăștie Mountains, made up of Beriu (the seat), Căstău, Cucuiș, Măgureni, Orăștioara de Jos, Poieni, Sereca and Sibișel. Beriu village is first recorded in 1332, and in 1673 it appears in documents as Berény.",
+        "The commune is home to Cucuiș Monastery, Sibișel Fortress, the Roman fort at Orăștioara de Jos and the remains of a Roman villa rustica at Beriu, and part of it lies within the Frumoasa Natura 2000 site.",
+        "Beriu's Church of the Dormition was built between 1894 and 1897 to plans by the Orăștie architect Nicolae Părău, replacing an 18th-century stone church destroyed by fire in the summer of 1894. In Căstău and Beriu, war memorials honour local people who fell in the wars."
+      ],
+      facts: [
+        { label: "Population", value: "3,281 (2021 census)" },
+        { label: "Villages", value: "Beriu, Căstău, Cucuiș, Măgureni, Orăștioara de Jos, Poieni, Sereca, Sibișel" },
+        { label: "First recorded", value: "1332" },
+        { label: "Landmarks", value: "Cucuiș Monastery; the Roman fort at Orăștioara de Jos; Sibișel Fortress" }
+      ]
+    }
+  },
+  {
+    id: "dobra",
+    name: "Dobra",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.9139, 22.5669],
+    hasReviews: false,
+    relatedAreas: ["Dobra"],
+    relatedIds: ["traseu-hunedoara-dobra"],
+    images: ["images/dobra-biserica-radulesti.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_de_lemn_din_R%C4%83dule%C8%99ti.jpg" },
+    ro: {
+      tagline: "Vechi târg medieval la sud de Mureș, la limita cu Ținutul Pădurenilor, cu biserici de lemn monumente istorice.",
+      description: [
+        "Dobra este o comună din vestul județului, formată din 13 sate: Dobra (reședința), Abucea, Bujoru, Făgețel, Lăpușnic, Mihăiești, Panc, Panc-Săliște, Rădulești, Roșcani, Stâncești, Stâncești-Ohaba și Stretea. Satul Dobra se află pe DN68A, la câțiva kilometri sud de Mureș, la limita dintre valea Mureșului și Ținutul Pădurenilor, pe râul Dobra-Bătrâna, care izvorăște din zona vârfului Rusca.",
+        "Atestată din 1387, Dobra a fost în Evul Mediu un important centru comercial, cu târguri care atrăgeau negustori din Boemia, Polonia și Germania. În 1721 aici a izbucnit o răscoală țărănească, iar spre sfârșitul secolului al XVIII-lea localitatea a făcut parte din regiunea militară grănicerească; fosta cazarmă a husarilor a devenit mai târziu hotelul „La husariu”.",
+        "Comuna are biserici de lemn clasate monumente istorice la Rădulești, Stâncești și Abucea, o biserică de zid din secolul al XIV-lea la Roșcani și una din secolul al XVII-lea la Lăpușnic. Dobra e și capătul traseului marcat cu bandă galbenă care traversează Munții Poiana Ruscă pornind din Hunedoara."
+      ],
+      facts: [
+        { label: "Populație", value: "3.203 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Dobra, Abucea, Bujoru, Făgețel, Lăpușnic, Mihăiești, Panc, Panc-Săliște, Rădulești, Roșcani, Stâncești, Stâncești-Ohaba, Stretea" },
+        { label: "Atestare", value: "1387" },
+        { label: "Biserici de lemn monumente", value: "Rădulești (sec. XVIII, cod LMI HD-II-m-A-03426), Stâncești (HD-II-m-B-03451), Abucea" }
+      ]
+    },
+    en: {
+      tagline: "An old medieval market town south of the Mureș, on the edge of the Pădureni Country, with listed wooden churches.",
+      description: [
+        "Dobra is a commune in the west of the county, made up of 13 villages: Dobra (the seat), Abucea, Bujoru, Făgețel, Lăpușnic, Mihăiești, Panc, Panc-Săliște, Rădulești, Roșcani, Stâncești, Stâncești-Ohaba and Stretea. Dobra village lies on the DN68A, a few kilometres south of the Mureș, where the Mureș valley meets the Pădureni Country, on the Dobra-Bătrâna river, which rises near Rusca peak.",
+        "First recorded in 1387, Dobra was an important trading centre in the Middle Ages, its fairs drawing merchants from Bohemia, Poland and Germany. A peasant uprising broke out here in 1721, and towards the end of the 18th century the village belonged to the military border region; the former hussar barracks later became the \"La husariu\" hotel.",
+        "The commune has listed wooden churches at Rădulești, Stâncești and Abucea, a 14th-century stone church at Roșcani and a 17th-century one at Lăpușnic. Dobra is also the end point of the yellow-stripe trail that crosses the Poiana Ruscă Mountains from Hunedoara."
+      ],
+      facts: [
+        { label: "Population", value: "3,203 (2021 census)" },
+        { label: "Villages", value: "Dobra, Abucea, Bujoru, Făgețel, Lăpușnic, Mihăiești, Panc, Panc-Săliște, Rădulești, Roșcani, Stâncești, Stâncești-Ohaba, Stretea" },
+        { label: "First recorded", value: "1387" },
+        { label: "Listed wooden churches", value: "Rădulești (18th century, LMI code HD-II-m-A-03426), Stâncești (HD-II-m-B-03451), Abucea" }
+      ]
+    }
+  },
+  {
+    id: "vata-de-jos",
+    name: "Vața de Jos",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Zarandului",
+    coords: [46.1775, 22.5967],
+    hasReviews: false,
+    relatedAreas: ["Vața de Jos"],
+    relatedIds: ["baile-vata-de-jos"],
+    images: ["images/vata-de-jos-cazanesti.jpg"],
+    photoCredit: { author: "Nicu Farcaș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Biserica_de_lemn_din_C%C4%83z%C4%83ne%C8%99ti.JPG" },
+    ro: {
+      tagline: "Comuna din Zarand cu ape termale, biserici de lemn și satul natal al părintelui Arsenie Boca.",
+      description: [
+        "Vața de Jos este o comună din valea Crișului Alb, în nord-vestul județului, formată din 13 sate: Vața de Jos (reședința), Basarabasa, Birtin, Brotuna, Căzănești, Ciungani, Ocișor, Ociu, Prăvăleni, Prihodiște, Tătărăștii de Criș, Târnava de Criș și Vața de Sus. În Vața de Sus s-a născut, la 29 septembrie 1910, părintele Arsenie Boca, înmormântat la Mănăstirea Prislop.",
+        "Stațiunea Băile Vața, cu ape termale de 36–38 °C folosite încă de la mijlocul secolului al XIX-lea, a fost redeschisă după mai bine de un deceniu de abandon.",
+        "Comuna are numeroase biserici de lemn, între care cele din Căzănești, Basarabasa, Birtin, Ciungani, Ocișor și Ociu sunt monumente istorice. Biserica din Căzănești, din secolul al XVII-lea și mărită în secolul al XIX-lea, păstrează pictură din 1828, iar cea din Târnava de Criș, din 1824, amintește de luptele din 8 noiembrie 1848, când aici au fost uciși aproximativ 283 de români."
+      ],
+      facts: [
+        { label: "Populație", value: "3.163 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Vața de Jos, Basarabasa, Birtin, Brotuna, Căzănești, Ciungani, Ocișor, Ociu, Prăvăleni, Prihodiște, Tătărăștii de Criș, Târnava de Criș, Vața de Sus" },
+        { label: "Personalitate", value: "Arsenie Boca (n. 1910, Vața de Sus)" },
+        { label: "Reper", value: "Biserica de lemn din Căzănești (sec. XVII), cod LMI HD-II-m-A-03287" }
+      ]
+    },
+    en: {
+      tagline: "A Zarand commune with thermal springs, wooden churches and the birthplace of Father Arsenie Boca.",
+      description: [
+        "Vața de Jos is a commune in the Crișul Alb valley, in the north-west of the county, made up of 13 villages: Vața de Jos (the seat), Basarabasa, Birtin, Brotuna, Căzănești, Ciungani, Ocișor, Ociu, Prăvăleni, Prihodiște, Tătărăștii de Criș, Târnava de Criș and Vața de Sus. Father Arsenie Boca, buried at Prislop Monastery, was born in Vața de Sus on 29 September 1910.",
+        "The Băile Vața spa, with thermal water at 36–38 °C used since the mid-19th century, has reopened after more than a decade of neglect.",
+        "The commune has many wooden churches; those in Căzănești, Basarabasa, Birtin, Ciungani, Ocișor and Ociu are listed monuments. The Căzănești church, from the 17th century and enlarged in the 19th, keeps paintings from 1828, while the one in Târnava de Criș, from 1824, recalls the fighting of 8 November 1848, when about 283 Romanians were killed here."
+      ],
+      facts: [
+        { label: "Population", value: "3,163 (2021 census)" },
+        { label: "Villages", value: "Vața de Jos, Basarabasa, Birtin, Brotuna, Căzănești, Ciungani, Ocișor, Ociu, Prăvăleni, Prihodiște, Tătărăștii de Criș, Târnava de Criș, Vața de Sus" },
+        { label: "Notable native", value: "Arsenie Boca (born 1910, Vața de Sus)" },
+        { label: "Landmark", value: "Căzănești wooden church (17th century), LMI code HD-II-m-A-03287" }
+      ]
+    }
+  },
+  {
+    id: "santamaria-orlea",
+    name: "Sântămăria-Orlea",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Hațegului",
+    coords: [45.5887, 22.9710],
+    hasReviews: false,
+    relatedAreas: ["Sântămăria-Orlea"],
+    relatedIds: ["biserica-santamaria-orlea", "castelul-nopcsa-sacel"],
+    images: ["images/santamaria-orlea-castelul-kendeffy.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:SantamariaOrleaHD_(111).JPG" },
+    ro: {
+      tagline: "Comuna de lângă Hațeg cu castelul Kendeffy, o biserică de la 1300 și situl fosilifer cu dinozauri de la Sânpetru.",
+      description: [
+        "Sântămăria-Orlea este o comună din Țara Hațegului, formată din satele Sântămăria-Orlea (reședința), Balomir, Bărăștii Hațegului, Bucium-Orlea, Ciopeia, Săcel, Sânpetru, Subcetate și Vadu. Satul de reședință, atestat documentar din 1315, se află la 3 km sud-est de Hațeg, pe malul stâng al Streiului.",
+        "În sat se află biserica cnezilor Cândea, azi reformată, ridicată spre sfârșitul secolului al XIII-lea, cu picturi murale din 1311 și din jurul anului 1400, și castelul Kendeffy, construit în 1782 de contele Elek Kendeffy și transformat în stil neogotic în a doua jumătate a secolului al XIX-lea, înconjurat de un parc englezesc. Naționalizat după război, castelul a devenit hotel în anii 1980.",
+        "Pe teritoriul comunei mai sunt castelul familiei Nopcsa de la Săcel, ruinele cetății regale a Hațegului de la Subcetate (secolul al XIII-lea), biserica „Sfântul Gheorghe” din Sânpetru (secolul al XIV-lea) și Locul fosilifer cu dinozauri Sânpetru, rezervație de 5 ha în Geoparcul Dinozaurilor „Țara Hațegului” — aici a făcut Franz Nopcsa, în 1895, primele sale descoperiri paleontologice."
+      ],
+      facts: [
+        { label: "Populație", value: "3.132 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Sântămăria-Orlea, Balomir, Bărăștii Hațegului, Bucium-Orlea, Ciopeia, Săcel, Sânpetru, Subcetate, Vadu" },
+        { label: "Castelul Kendeffy", value: "1782, azi hotel; cod LMI HD-II-a-A-03446" },
+        { label: "Rezervație", value: "Locul fosilifer cu dinozauri Sânpetru (5 ha)" }
+      ]
+    },
+    en: {
+      tagline: "A commune near Hațeg with Kendeffy Castle, a church from around 1300 and the Sânpetru dinosaur fossil site.",
+      description: [
+        "Sântămăria-Orlea is a commune in the Hațeg Country, made up of Sântămăria-Orlea (the seat), Balomir, Bărăștii Hațegului, Bucium-Orlea, Ciopeia, Săcel, Sânpetru, Subcetate and Vadu. The seat, first recorded in 1315, lies 3 km south-east of Hațeg, on the left bank of the Strei.",
+        "The village has the church of the Cândea knezes, now Reformed, built towards the end of the 13th century, with mural paintings from 1311 and from around 1400, and Kendeffy Castle, built in 1782 by Count Elek Kendeffy and remodelled in Gothic Revival style in the second half of the 19th century, set in an English-style park. Nationalised after the war, the castle became a hotel in the 1980s.",
+        "The commune also holds the Nopcsa family manor at Săcel, the ruins of the royal fortress of Hațeg at Subcetate (13th century), Saint George's Church in Sânpetru (14th century) and the Sânpetru dinosaur fossil site, a 5 ha reserve in the Hațeg Country Dinosaurs Geopark — where Franz Nopcsa made his first palaeontological finds in 1895."
+      ],
+      facts: [
+        { label: "Population", value: "3,132 (2021 census)" },
+        { label: "Villages", value: "Sântămăria-Orlea, Balomir, Bărăștii Hațegului, Bucium-Orlea, Ciopeia, Săcel, Sânpetru, Subcetate, Vadu" },
+        { label: "Kendeffy Castle", value: "1782, now a hotel; LMI code HD-II-a-A-03446" },
+        { label: "Reserve", value: "Sânpetru dinosaur fossil site (5 ha)" }
+      ]
+    }
+  },
+  {
+    id: "baita",
+    name: "Băița",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [46.0306, 22.8922],
+    hasReviews: false,
+    relatedAreas: ["Băița"],
+    images: ["images/baita-magura-craciunesti.jpg"],
+    photoCredit: { author: "Oguszt", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Krecsunesdi_magura.JPG" },
+    ro: {
+      tagline: "Vechi centru minier la poalele Munților Metaliferi, cu o mină de aur exploatată încă din epoca romană.",
+      description: [
+        "Băița este o comună din nordul județului, la poalele Munților Metaliferi, formată din satele Băița (reședința), Barbura, Căinelu de Sus, Crăciunești, Fizeș, Hărțăgani, Lunca, Ormindea, Peștera, Săliște și Trestia. Satul Băița se află pe DJ706A, la circa 25 km de Deva și 24 km de Brad, și apare în documente din 1472, sub numele german Pernseyfen.",
+        "Bogăția subsolului a făcut din Băița o localitate privilegiată încă de la primele mențiuni. În epoca romană aici a funcționat un important centru minier și administrativ, iar mina de aur era deja exploatată; între dealurile Măgura și Cornet s-au descoperit urmele a 20 de construcții de piatră și cărămidă, conducte de apă, unelte de minerit și două tezaure monetare.",
+        "În Băița se află biserica ortodoxă „Buna Vestire”, din 1727, cu pictură din 1797, biserica romano-catolică, din 1780, și Muzeul Textilelor, deschis în 2018, iar la Hărțăgani, pe o colină, biserica de lemn „Buna Vestire”, din 1793. La nord de Crăciunești, calcarele Dealului Măgura sunt rezervație naturală (120 ha), în situl Natura 2000 Măgurile Băiței. Din Băița era scriitorul Mircea Sântimbreanu (1926–1999)."
+      ],
+      facts: [
+        { label: "Populație", value: "3.113 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Băița, Barbura, Căinelu de Sus, Crăciunești, Fizeș, Hărțăgani, Lunca, Ormindea, Peștera, Săliște, Trestia" },
+        { label: "Atestare", value: "1472 (Pernseyfen)" },
+        { label: "Natură", value: "rezervația Calcarele din Dealul Măgura (120 ha); situl Natura 2000 Măgurile Băiței" },
+        { label: "Reper", value: "Biserica de lemn din Hărțăgani (1793), cod LMI HD-II-m-B-03337" }
+      ]
+    },
+    en: {
+      tagline: "An old mining centre at the foot of the Metaliferi Mountains, with a gold mine worked since Roman times.",
+      description: [
+        "Băița is a commune in the north of the county, at the foot of the Metaliferi Mountains, made up of Băița (the seat), Barbura, Căinelu de Sus, Crăciunești, Fizeș, Hărțăgani, Lunca, Ormindea, Peștera, Săliște and Trestia. Băița village lies on the DJ706A, about 25 km from Deva and 24 km from Brad, and appears in records from 1472 under the German name Pernseyfen.",
+        "The wealth beneath its ground made Băița a privileged place from its earliest mentions. In Roman times it was an important mining and administrative centre, and its gold mine was already being worked; between the Măgura and Cornet hills, the remains of 20 stone and brick buildings, water pipes, mining tools and two coin hoards have been found.",
+        "Băița has the Orthodox Church of the Annunciation, from 1727, with paintings from 1797, the Roman Catholic church, from 1780, and the Textile Museum, opened in 2018, while Hărțăgani has the wooden Church of the Annunciation, from 1793, on a hilltop. North of Crăciunești, the limestone of Măgura Hill is a nature reserve (120 ha) within the Măgurile Băiței Natura 2000 site. The writer Mircea Sântimbreanu (1926–1999) was born in Băița."
+      ],
+      facts: [
+        { label: "Population", value: "3,113 (2021 census)" },
+        { label: "Villages", value: "Băița, Barbura, Căinelu de Sus, Crăciunești, Fizeș, Hărțăgani, Lunca, Ormindea, Peștera, Săliște, Trestia" },
+        { label: "First recorded", value: "1472 (Pernseyfen)" },
+        { label: "Nature", value: "Măgura Hill limestone reserve (120 ha); Măgurile Băiței Natura 2000 site" },
+        { label: "Landmark", value: "Hărțăgani wooden church (1793), LMI code HD-II-m-B-03337" }
+      ]
+    }
+  },
+  {
+    id: "vetel",
+    name: "Vețel",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.9047, 22.8000],
+    hasReviews: false,
+    relatedAreas: ["Vețel"],
+    images: ["images/vetel-amfiteatrul-micia.jpg"],
+    photoCredit: { author: "Saturnian", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Amphitheatre_Micia_01.jpg" },
+    ro: {
+      tagline: "Comuna de pe Mureș cu ruinele așezării romane Micia, castelul Gyulay de la Mintia și o biserică medievală la Leșnic.",
+      description: [
+        "Vețel este o comună din centrul-vestul județului, pe culoarul Mureșului și în Munții Poiana Ruscă, formată din satele Vețel (reședința), Boia Bârzii, Bretelin, Căoi, Herepeia, Leșnic, Mintia, Muncelu Mare, Muncelu Mic și Runcu Mic. Mintia, Vețel și Leșnic se înșiră de-a lungul Mureșului, iar Muncelu Mic, Muncelu Mare, Runcu Mic și Boia Bârzii sunt sate de munte.",
+        "Pe malul stâng al Mureșului, în dreptul termocentralei de la Mintia, se află ruinele Miciei, așezare romană dezvoltată în jurul unui mare castru. Deși avea doar statut rural (pagus), așezarea avea străzi ortogonale, terme, un amfiteatru și un port la Mureș, cu cheiuri din zidărie de piatră.",
+        "Biserica „Sfântul Nicolae” din Leșnic, una dintre vechile ctitorii ale cnezilor români din părțile Hunedoarei, a fost construită la sfârșitul secolului al XIV-lea și păstrează pictură murală în naos. La Mintia se află castelul Gyulay Ferenc, cu parcul său, și o biserică reformată din secolul al XVI-lea; vechea biserică de lemn a satului e expusă din 1991 la Muzeul Țăranului Român din București."
+      ],
+      facts: [
+        { label: "Populație", value: "3.104 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Vețel, Boia Bârzii, Bretelin, Căoi, Herepeia, Leșnic, Mintia, Muncelu Mare, Muncelu Mic, Runcu Mic" },
+        { label: "Micia", value: "castru și așezare romană — amfiteatru, terme, port la Mureș" },
+        { label: "Reper", value: "Biserica „Sfântul Nicolae” din Leșnic (sfârșitul sec. XIV), cod LMI HD-II-m-A-03359" }
+      ]
+    },
+    en: {
+      tagline: "A Mureș commune with the ruins of the Roman settlement of Micia, the Gyulay manor at Mintia and a medieval church at Leșnic.",
+      description: [
+        "Vețel is a commune in the centre-west of the county, along the Mureș corridor and into the Poiana Ruscă Mountains, made up of Vețel (the seat), Boia Bârzii, Bretelin, Căoi, Herepeia, Leșnic, Mintia, Muncelu Mare, Muncelu Mic and Runcu Mic. Mintia, Vețel and Leșnic line the Mureș, while Muncelu Mic, Muncelu Mare, Runcu Mic and Boia Bârzii are mountain villages.",
+        "On the left bank of the Mureș, opposite the Mintia power station, lie the ruins of Micia, a Roman settlement that grew up around a large fort. Although only a rural settlement (pagus), it had a grid of streets, baths, an amphitheatre and a river port on the Mureș with stone quays.",
+        "Saint Nicholas Church in Leșnic, one of the old foundations of the Romanian knezes of the Hunedoara region, was built in the late 14th century and keeps mural paintings in the nave. Mintia has the Gyulay Ferenc manor with its park and a 16th-century Reformed church; the village's old wooden church has been on display at the National Museum of the Romanian Peasant in Bucharest since 1991."
+      ],
+      facts: [
+        { label: "Population", value: "3,104 (2021 census)" },
+        { label: "Villages", value: "Vețel, Boia Bârzii, Bretelin, Căoi, Herepeia, Leșnic, Mintia, Muncelu Mare, Muncelu Mic, Runcu Mic" },
+        { label: "Micia", value: "Roman fort and settlement — amphitheatre, baths, river port" },
+        { label: "Landmark", value: "Saint Nicholas Church in Leșnic (late 14th century), LMI code HD-II-m-A-03359" }
+      ]
+    }
   }
 ];
 

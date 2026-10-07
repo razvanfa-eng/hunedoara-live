@@ -491,6 +491,132 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/ilia/"/>
   </url>
   <url>
+    <loc>https://gohd.ro/orase/pui/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/pui/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/pui/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/pui/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/pui/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/pui/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/pui/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/pui/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/criscior/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/criscior/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/criscior/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/criscior/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/criscior/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/criscior/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/criscior/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/criscior/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/soimus/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/soimus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/soimus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/soimus/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/soimus/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/soimus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/soimus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/soimus/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/beriu/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/beriu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/beriu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/beriu/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/beriu/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/beriu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/beriu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/beriu/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/dobra/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/dobra/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/dobra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/dobra/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/dobra/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/dobra/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/dobra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/dobra/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/vata-de-jos/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/vata-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/vata-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/vata-de-jos/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/vata-de-jos/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/vata-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/vata-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/vata-de-jos/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/santamaria-orlea/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/santamaria-orlea/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/santamaria-orlea/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/santamaria-orlea/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/santamaria-orlea/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/santamaria-orlea/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/santamaria-orlea/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/santamaria-orlea/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/baita/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/baita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/baita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/baita/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/baita/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/baita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/baita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/baita/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/vetel/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/vetel/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/vetel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/vetel/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/vetel/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/vetel/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/vetel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/vetel/"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/natura/parcul-national-retezat/</loc>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/parcul-national-retezat/"/>
