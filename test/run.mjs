@@ -86,6 +86,18 @@ function load(file, query = "", urlPath = file, pref = null) {
   ok([...de.querySelectorAll("#explore-grid .tile")].every((a) => /^\/en\/[a-z-]+\.html$/.test(a.getAttribute("href"))) &&
     [...de.querySelectorAll("#home-highlights .card, #home-news .news-item")].every((a) => /^\/en\/[a-z-]+\/[a-z0-9-]+\/$/.test(a.getAttribute("href"))),
     "en/index: tile-urile, reperele și știrile leagă spre paginile /en/");
+  // harta județului din hero (SVG inline generat de scripts/build-map.mjs)
+  const townLinks = (doc) => [...doc.querySelectorAll(".hero-map .hero-map__town")].map((a) => a.getAttribute("href")).sort();
+  const expTowns = DATA.SITE_TOWNS.map((t) => "/orase/" + t.id + "/").sort();
+  ok(JSON.stringify(townLinks(d)) === JSON.stringify(expTowns), "index: harta are câte un link pentru fiecare oraș (" + expTowns.length + "), spre /orase/<id>/");
+  ok(JSON.stringify(townLinks(de)) === JSON.stringify(expTowns.map((u) => "/en" + u)), "en/index: linkurile hărții duc la /en/orase/<id>/");
+  const mapSvg = d.querySelector(".hero-map svg");
+  ok(!!mapSvg && mapSvg.getAttribute("aria-labelledby") === "hero-map-title" && d.getElementById("hero-map-title")?.textContent.length > 10 &&
+    (d.querySelector(".hero-map__county")?.getAttribute("d") || "").split("L").length > 100,
+    "index: harta are titlu accesibil și conturul real al județului");
+  ok(de.getElementById("hero-map-title")?.textContent !== d.getElementById("hero-map-title")?.textContent &&
+    /OpenStreetMap/.test(de.querySelector(".hero-map__credit")?.textContent || ""), "en/index: titlul și atribuirea hărții sunt traduse");
+  ok(!/\sstyle=|\son[a-z]+=/i.test(d.querySelector(".hero-map").outerHTML), "index: harta nu are stiluri sau handler-e inline (CSP)");
 }
 
 /* -------- destinatii.html + destinatie.html (secțiune nouă) -------- */

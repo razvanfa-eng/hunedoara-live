@@ -63,21 +63,54 @@
 
   <main class="container">
     <section class="hero">
-      <span class="hero__eyebrow" data-i18n="home.hero.eyebrow">The digital guide to Hunedoara county</span>
-      <h1 data-i18n="site.name">Hunedoara Live</h1>
-      <p data-i18n="site.tagline">Places, towns, activities, history and businesses across Hunedoara county — up to date.</p>
-      <div class="hero__cta">
-        <a class="btn btn--primary" href="/en/destinatii.html" data-i18n="home.hero.cta.primary">Explore destinations</a>
-        <a class="btn btn--outline" href="/en/orase.html" data-i18n="home.hero.cta.secondary">See the interactive map</a>
+      <div class="hero__text">
+        <span class="hero__eyebrow" data-i18n="home.hero.eyebrow">The digital guide to Hunedoara county</span>
+        <h1 data-i18n="site.name">Hunedoara Live</h1>
+        <p data-i18n="site.tagline">Places, towns, activities, history and businesses across Hunedoara county — up to date.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="/en/destinatii.html" data-i18n="home.hero.cta.primary">Explore destinations</a>
+          <a class="btn btn--outline" href="/en/orase.html" data-i18n="home.hero.cta.secondary">See the interactive map</a>
+        </div>
+        <div class="hero__apps" data-pwa-install hidden>
+          <button class="badge-app" type="button" data-pwa-install-btn>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+            <span data-i18n="pwa.install">Install the app</span>
+          </button>
+          <span class="hero__apps-label" data-i18n="pwa.label">On your phone, straight from the browser — no app store needed</span>
+          <p class="pwa-hint" data-pwa-ios-hint hidden data-i18n="pwa.ios.hint">On iPhone or iPad: tap the Share button (the square with an arrow), then &quot;Add to Home Screen&quot;.</p>
+        </div>
       </div>
-      <div class="hero__apps" data-pwa-install hidden>
-        <button class="badge-app" type="button" data-pwa-install-btn>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
-          <span data-i18n="pwa.install">Install the app</span>
-        </button>
-        <span class="hero__apps-label" data-i18n="pwa.label">On your phone, straight from the browser — no app store needed</span>
-        <p class="pwa-hint" data-pwa-ios-hint hidden data-i18n="pwa.ios.hint">On iPhone or iPad: tap the Share button (the square with an arrow), then &quot;Add to Home Screen&quot;.</p>
-      </div>
+      <!-- HARTA: generat de scripts/build-map.mjs — nu edita manual -->
+      <figure class="hero-map">
+        <svg class="hero-map__svg" viewBox="0 0 420 525" role="group" aria-labelledby="hero-map-title" focusable="false">
+          <title id="hero-map-title" data-i18n="home.map.title">Map of Hunedoara county: the towns and a few landmarks in the guide</title>
+          <path class="hero-map__county" d="M134 17.6L140.4 10.7L144.6 10L149.4 11.5L152.4 16L156.5 16.3L160.4 22.1L173 20.5L174.1 17.7L178.4 16.7L190.3 20L196 19.8L198.7 21.8L201.9 34.5L206.6 37.1L208.8 41.9L203.3 49L205.6 51.8L205.9 58L209.5 60.8L209.6 63.2L212.1 63.8L214.1 71.2L217 70.9L220.4 73.9L223.7 72.5L232.3 75.5L235.8 73L242 75.9L241.8 79.8L250 87.2L248.3 94.4L252.6 100.2L251.1 106.9L244.4 102L244 104.1L237.3 106L238.6 111.3L241.3 114.4L239.4 121.9L243.6 121.3L248.1 124.4L248.5 126.8L246.3 127.9L247.4 129.6L245 132.5L248.1 135.1L247.4 139.7L252.3 141.9L251.8 149L260.7 150.5L262.4 154L264.4 152.8L275.9 155.5L278.1 157.6L284.6 153.6L290.6 154.9L295.4 151.3L296.3 152.8L294.1 156L295.8 165.9L294.2 175.4L299.6 183.8L299.4 188.2L303.6 199.9L305 202L310.3 203L309.3 203.9L312.6 206.6L318.6 205L319.4 206.3L321.9 205.5L323.6 208.3L326.6 207L326.4 210.2L320.7 211.7L315.7 218L319.1 219.1L323.4 224.8L324.7 224.3L322.2 244.1L328.5 257.1L328.4 260.7L331.4 263.8L329.7 265.9L331.5 270.6L337.9 272.8L340.2 279L336.1 294.1L333.7 297.7L335.5 302.5L340.6 308.2L344.7 308.5L353.4 315.5L353.2 319.4L349 320.2L346.8 324.5L342.1 325.3L341.5 328.4L336.4 331.8L335.4 334.2L336.7 339.3L339 341.2L349.1 335.8L354.3 339.7L352.1 353.2L354.9 358.3L360.7 356.7L363.3 360.3L370.5 360L372.5 363.1L377.7 360.4L378.8 367.6L382.2 372.1L389.5 374L394.2 379.3L395 382.6L399.6 385.3L402.3 393.1L408.1 400.4L406.9 402.8L408.9 406.5L408.1 417.8L401.9 429.2L402.2 431.2L407 432.3L407.6 434.9L406 437.3L410 449.7L409.6 452.3L404.8 455.6L405 461.2L406.5 463.1L399 464.5L397.7 467.4L394.1 469.4L390.2 469L388.3 473.6L381.9 474.9L372.7 480.7L369.1 485.9L358.9 488L357.9 485.4L346.4 479.9L348.1 476.8L347.1 471.4L345.8 470.8L344.6 472.5L340 469.6L338.3 472.7L327.1 472.9L323.6 477.7L323.1 482.6L317.8 487.2L311.1 482.7L307.3 484.3L297.8 483.9L294 485.6L290.9 487.4L285.4 497.4L278.3 493.6L271.9 496.5L271.6 494.8L269.4 496.2L266.9 493.1L264.5 495.5L265.8 496.6L249.3 491.1L244.2 498L241.3 498.6L240.8 503.1L237.5 502.3L222.3 508.3L218.6 505.2L212 508L208.4 500.2L205.9 500.1L204.1 502.1L204.6 505.4L201.7 515.1L195.3 513.7L200.1 508.9L201.6 503L206 499.6L201.1 498.9L198.8 496.9L193.4 496.5L187.2 498.7L179.5 504.8L177 504.8L174.9 498.1L172.3 498.9L168 494.9L164.2 493.9L164.2 496.7L161.2 499.7L155.5 500.6L151.8 504.2L149.4 504.2L148.5 500.7L145 501.1L143.3 503.3L139 503.1L136.2 508.3L131.3 508.1L129.2 507L129.1 505.1L125 505.2L124.9 508.1L122.6 509.2L120.7 506.2L121.5 498.7L117.9 495L121 492.4L124 485.7L122.6 478.1L124.8 474.2L122.2 474.7L119.7 472.9L114.6 463.5L115.2 459.3L111.3 454.8L114.7 449.9L122.2 445.5L129.1 434.7L126.4 427L127.1 414.2L124.2 413.6L121.8 399.8L117.5 398L116.6 393.4L115.1 393.5L117.8 389.3L110.1 384.4L108.6 377.6L102 380.2L102.2 377.2L106.4 372.5L106.6 367.1L105 364.3L91.2 369L92 362.7L88 358.2L84.6 360.5L84.3 357.9L80.9 357.1L77.1 359.8L75.9 353.3L65.7 353.3L63.9 351.8L63.7 347.4L61.2 346.8L60 342.9L53.7 340.3L49.6 331.5L47.1 329.8L48.4 326.8L47.3 323.8L44.1 323.6L38.6 319.9L40.2 315L42.8 313.4L46.2 313.9L51.9 308.7L50.8 300.9L52.2 292.2L68.1 282.6L77.3 272.7L77.9 268.7L72.6 259.9L69.6 260.5L61.9 267.3L55.6 266.5L55.8 263L52.4 259.3L55 257L54.3 243.3L51.8 244.9L49.3 243.5L49.9 239L45.5 238.8L41.5 235.2L38.3 235.9L36.9 234.4L33.6 235.8L25.8 222.5L23.3 221.5L20.3 222.6L26.3 216.3L30.5 215L33.5 212L36.2 198L31.7 195.5L23.2 186.1L11.1 179.5L10 172.4L13.4 170.5L25.1 171.9L26.7 165.9L28.9 165.2L31.7 168.8L35.4 167.5L34.6 166L37.4 164.3L41.8 164.9L43 156.6L39.1 154.2L39 150.1L41.4 147.6L39.4 140.8L39.5 134.9L35.8 133.1L31.9 126.7L33.9 120.7L36.6 122.7L37.6 121.3L40.2 121.6L40.1 118.7L44.6 117.3L45.4 113.3L48.3 110.8L48.3 107L51.5 103.8L47 95.9L47.4 90.3L42.4 74.5L47.1 70.2L50 71.7L49.6 67L52 64.4L57.3 62.9L60.2 59.5L62.1 64.8L65.9 68L69.2 66.3L69.1 67.7L70.8 68L72.2 66.1L76.3 68.3L78.4 65.7L79.4 66.9L81.6 64.8L88.3 64L89.1 66.4L90.6 66.4L89.4 67.9L95.9 70.7L101.2 65L104.3 67.3L108.9 66.2L108.4 64L111.4 63.1L112.9 57L110.6 54.1L112.5 51.2L112.2 47.9L118.8 34.7L119.5 29.5L118 24.2L123.2 23.4Z" aria-hidden="true"></path>
+          <g class="hero-map__landmarks">
+            <a class="hero-map__lm" href="/en/mostenire/castelul-corvinilor/"><path class="hero-map__diamond" d="M184.5 279l4.5 4.5l-4.5 4.5l-4.5-4.5Z"></path><text x="176.5" y="298.5" text-anchor="end" data-i18n="home.map.lm.corvin">Corvin Castle</text></a>
+            <a class="hero-map__lm" href="/en/mostenire/sarmizegetusa-regia/"><path class="hero-map__diamond" d="M317.6 336.7l4.5 4.5l-4.5 4.5l-4.5-4.5Z"></path><text x="317.6" y="332.2" text-anchor="middle">Sarmizegetusa Regia</text></a>
+            <a class="hero-map__lm" href="/en/natura/parcul-national-retezat/"><path class="hero-map__diamond" d="M180.3 456.2l4.5 4.5l-4.5 4.5l-4.5-4.5Z"></path><text x="188.3" y="464.7">Retezat</text></a>
+          </g>
+          <g class="hero-map__towns">
+            <a class="hero-map__town" href="/en/orase/deva/"><circle class="hero-map__halo" cx="192.8" cy="225.1" r="9"></circle><circle class="hero-map__dot" cx="192.8" cy="225.1" r="4"></circle><text x="183.8" y="229.1" text-anchor="end">Deva</text></a>
+            <a class="hero-map__town" href="/en/orase/hunedoara/"><circle class="hero-map__halo" cx="194.7" cy="274.3" r="9"></circle><circle class="hero-map__dot" cx="194.7" cy="274.3" r="4"></circle><text x="185.7" y="278.3" text-anchor="end">Hunedoara</text></a>
+            <a class="hero-map__town" href="/en/orase/simeria/"><circle class="hero-map__halo" cx="224.2" cy="237.2" r="9"></circle><circle class="hero-map__dot" cx="224.2" cy="237.2" r="4"></circle><text x="224.2" y="255.2" text-anchor="middle">Simeria</text></a>
+            <a class="hero-map__town" href="/en/orase/petrosani/"><circle class="hero-map__halo" cx="337.8" cy="434.3" r="9"></circle><circle class="hero-map__dot" cx="337.8" cy="434.3" r="4"></circle><text x="346.8" y="442.3">Petroșani</text></a>
+            <a class="hero-map__town" href="/en/orase/petrila/"><circle class="hero-map__halo" cx="351.3" cy="417.8" r="9"></circle><circle class="hero-map__dot" cx="351.3" cy="417.8" r="4"></circle><text x="360.3" y="415.8">Petrila</text></a>
+            <a class="hero-map__town" href="/en/orase/vulcan/"><circle class="hero-map__halo" cx="304.1" cy="449.4" r="9"></circle><circle class="hero-map__dot" cx="304.1" cy="449.4" r="4"></circle><text x="295.1" y="450.4" text-anchor="end">Vulcan</text></a>
+            <a class="hero-map__town" href="/en/orase/lupeni/"><circle class="hero-map__halo" cx="295.2" cy="459.8" r="9"></circle><circle class="hero-map__dot" cx="295.2" cy="459.8" r="4"></circle><text x="286.2" y="468.8" text-anchor="end">Lupeni</text></a>
+            <a class="hero-map__town" href="/en/orase/aninoasa/"><circle class="hero-map__halo" cx="319.1" cy="436.8" r="9"></circle><circle class="hero-map__dot" cx="319.1" cy="436.8" r="4"></circle><text x="317.1" y="426.8" text-anchor="end">Aninoasa</text></a>
+            <a class="hero-map__town" href="/en/orase/orastie/"><circle class="hero-map__halo" cx="283.1" cy="237.9" r="9"></circle><circle class="hero-map__dot" cx="283.1" cy="237.9" r="4"></circle><text x="292.1" y="241.9">Orăștie</text></a>
+            <a class="hero-map__town" href="/en/orase/hateg/"><circle class="hero-map__halo" cx="204" cy="347.8" r="9"></circle><circle class="hero-map__dot" cx="204" cy="347.8" r="4"></circle><text x="213" y="351.8">Hațeg</text></a>
+            <a class="hero-map__town" href="/en/orase/brad/"><circle class="hero-map__halo" cx="153.5" cy="111.2" r="9"></circle><circle class="hero-map__dot" cx="153.5" cy="111.2" r="4"></circle><text x="162.5" y="115.2">Brad</text></a>
+          </g>
+        </svg>
+        <figcaption class="hero-map__caption">
+          <span class="hero-map__key hero-map__key--town" data-i18n="home.map.legend.towns">Towns</span>
+          <span class="hero-map__key hero-map__key--lm" data-i18n="home.map.legend.landmarks">Landmarks</span>
+          <a class="hero-map__credit" href="https://www.openstreetmap.org/copyright" rel="noopener" data-i18n="home.map.credit">Outline: © OpenStreetMap contributors</a>
+        </figcaption>
+      </figure>
+      <!-- /HARTA -->
     </section>
 
     <section class="section" aria-labelledby="highlights-h">

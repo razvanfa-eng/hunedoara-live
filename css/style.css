@@ -181,7 +181,11 @@ p { margin: 0 0 12px; }
 .btn-reset:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ---------- Hero ---------- */
-.hero { padding: 52px 0 32px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+.hero {
+  padding: 52px 0 32px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 360px);
+  gap: 40px; align-items: center;
+}
+.hero__text { display: flex; flex-direction: column; gap: 16px; align-items: flex-start; min-width: 0; }
 .hero__eyebrow {
   font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase;
   color: var(--accent); font-weight: 700;
@@ -192,6 +196,42 @@ p { margin: 0 0 12px; }
 .hero__cta { display: flex; gap: 12px; margin-top: 6px; flex-wrap: wrap; }
 .hero__apps { display: flex; align-items: center; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
 .hero__apps-label { font-size: 12px; color: var(--fainter); }
+
+/* ---------- Harta județului (hero, prima pagină) ----------
+   SVG inline generat de scripts/build-map.mjs (contur OSM real + orașele din data.js).
+   Fără culori noi: accentul, neutrele zinc și fundalul paginii. */
+.hero-map { margin: 0; width: 100%; justify-self: end; }
+.hero-map__svg { display: block; width: 100%; height: auto; overflow: visible; }
+.hero-map__county {
+  fill: var(--accent); fill-opacity: .06;
+  stroke: var(--accent); stroke-opacity: .55; stroke-width: 1.25; stroke-linejoin: round;
+}
+.hero-map text {
+  font-family: var(--sans); font-size: 13px; font-weight: 600; fill: var(--ink);
+  paint-order: stroke; stroke: var(--bg); stroke-width: 3px; stroke-linejoin: round;
+}
+.hero-map a { cursor: pointer; }
+.hero-map a:focus { outline: none; }
+.hero-map__dot { fill: var(--accent); stroke: var(--bg); stroke-width: 1.5; }
+.hero-map__halo { fill: var(--accent); fill-opacity: 0; stroke: var(--accent); stroke-opacity: 0; stroke-width: 1.5; transition: fill-opacity .15s, stroke-opacity .15s; }
+.hero-map__town:hover .hero-map__halo { fill-opacity: .16; }
+.hero-map__town:focus-visible .hero-map__halo { fill-opacity: .16; stroke-opacity: 1; }
+.hero-map__town:hover text, .hero-map__town:focus-visible text { fill: var(--accent); }
+.hero-map__town:focus-visible text, .hero-map__lm:focus-visible text { text-decoration: underline; }
+.hero-map__lm text { font-size: 11.5px; font-weight: 500; fill: var(--faint); }
+.hero-map__diamond { fill: var(--bg); stroke: var(--faint); stroke-width: 1.25; transition: fill .15s, stroke .15s; }
+.hero-map__lm:hover .hero-map__diamond, .hero-map__lm:focus-visible .hero-map__diamond { fill: var(--accent); stroke: var(--accent); }
+.hero-map__lm:hover text, .hero-map__lm:focus-visible text { fill: var(--accent); }
+.hero-map__caption {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px;
+  font-size: 11.5px; color: var(--faint);
+}
+.hero-map__key { display: inline-flex; align-items: center; gap: 6px; }
+.hero-map__key::before { content: ""; width: 8px; height: 8px; flex: none; }
+.hero-map__key--town::before { border-radius: 50%; background: var(--accent); }
+.hero-map__key--lm::before { width: 6px; height: 6px; margin: 0 1px; border: 1.25px solid var(--faint); transform: rotate(45deg); }
+.hero-map__credit { margin-left: auto; color: var(--fainter); }
+.hero-map__credit:hover { color: var(--accent); }
 
 /* ---------- Instalare aplicație (PWA) ---------- */
 .footer-apps { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
@@ -443,6 +483,8 @@ button.badge-app:hover { border-color: var(--accent); color: var(--accent); }
   .explore-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .detail-body { grid-template-columns: 1fr; }
   .hero h1 { font-size: 32px; }
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .hero-map { justify-self: start; max-width: 360px; }
   .footer-nav { grid-template-columns: repeat(2, auto); }
 }
 @media (max-width: 560px) {
