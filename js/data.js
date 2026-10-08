@@ -384,7 +384,8 @@ window.SITE_NATURE = [
     coords: [45.4717, 23.4081],
     hasReviews: true,
     season: "toamna",
-    images: ["images/placeholder.svg"],
+    images: ["images/padurea-bicolora-petrila.jpg"],
+    photoCredit: { author: "Andrei Bunzac / OMD Valea Jiului", license: "material de promovare al instituției", source: "https://www.facebook.com/61579481461946/posts/122180287496982715", sourceLabel: "Facebook" },
     ro: {
       tagline: "Un deal parcă tăiat în două culori, la Cheile Tăii, lângă Petrila — molid mereu verde pe o parte, fag auriu pe cealaltă.",
       description: [
@@ -1370,7 +1371,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Parcul Național Retezat",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/traseu-pui-rausor.jpg"],
+    photoCredit: { author: "Domeniul Schiabil Râușor - Retezat", license: "material promoțional al afacerii", source: "https://www.facebook.com/Domeniul.Schiabil.Rausor", sourceLabel: "Facebook" },
     ro: {
       tagline: "Traseu lung de acces dinspre Pui spre baza Salvamont Râușor, la poalele nordice ale Retezatului.",
       description: [
@@ -1708,7 +1710,8 @@ window.SITE_ACTIVITIES = [
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Vâlcan",
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/traseu-campusel-saua-scorota.jpg"],
+    photoCredit: { author: "Cabana Buta", license: "material promoțional al afacerii", source: "https://www.facebook.com/CabanaButa", sourceLabel: "Facebook" },
     ro: {
       tagline: "Variantă mai scurtă de acces la Cabana Buta, dinspre Câmpușel, prin Șaua Scorota.",
       description: [
