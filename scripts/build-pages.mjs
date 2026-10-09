@@ -234,6 +234,9 @@ function ldEntity(key, entry, l, url, desc, img, lang) {
         eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
         location: { "@type": "Place", name: where.split(",")[0].trim(), address: ldAddress(entry, { facts: [{ label: "Adresă", value: where }] }) }
       };
+      // endDate din faptul „Perioadă” (doar pentru evenimentele pe mai multe zile)
+      const per = parseRoDates(factOf(l, /^(Perioadă|Dată)$/));
+      if (per && per.end > per.start) o.endDate = per.end;
       if (img) o.image = img;
       return o;
     }

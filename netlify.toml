@@ -20,9 +20,9 @@
 #    DACĂ SCHIMBI textul unuia dintre ele, recalculează hash-ul:
 #      printf '%s' 'RL.imgError(this)' | openssl dgst -sha256 -binary | base64
 #    challenges.cloudflare.com = captcha Turnstile (doar cu recenziile „remote”).
-#  - style: css/style.css + Google Fonts; 'unsafe-inline' doar pentru stiluri
+#  - style: css/style.css (fonturile sunt găzduite local în /fonts); 'unsafe-inline' doar pentru stiluri
 #    (atributele style="..." din pagini și fundalurile tile-urilor din home.js).
-#  - font: fonts.gstatic.com. img: proprii + data:/blob: (poza recenziei în modul
+#  - font: doar 'self' (/fonts/*.woff2, SIL OFL). img: proprii + data:/blob: (poza recenziei în modul
 #    local, previzualizarea din formularul „Trimite o poză”) + Supabase Storage (pozele
 #    recenziilor în modul „remote”) + tile.openstreetmap.org (DOAR dreptunghiurile hărții
 #    din harta.html; Leaflet e self-hosted în /vendor/leaflet, deci niciun script extern).
@@ -34,7 +34,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-hashes' 'sha256-2ne4wUUWpzMxLwoazH2X92gegM2NRhGZ5oB3r3XyFgE=' 'sha256-2rvfFrggTCtyF5WOiTri1gDS8Boibj4Njn0e+VCBmDI=' 'sha256-9gOBGqEQINNDuds+tkXbNzih6klbz+KeCyxEj4KRLeM=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co https://tile.openstreetmap.org; connect-src 'self' https://*.supabase.co https://api.open-meteo.com; frame-src https://challenges.cloudflare.com; worker-src 'self'; manifest-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-hashes' 'sha256-2ne4wUUWpzMxLwoazH2X92gegM2NRhGZ5oB3r3XyFgE=' 'sha256-2rvfFrggTCtyF5WOiTri1gDS8Boibj4Njn0e+VCBmDI=' 'sha256-9gOBGqEQINNDuds+tkXbNzih6klbz+KeCyxEj4KRLeM=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob: https://*.supabase.co https://tile.openstreetmap.org; connect-src 'self' https://*.supabase.co https://api.open-meteo.com; frame-src https://challenges.cloudflare.com; worker-src 'self'; manifest-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
@@ -47,6 +47,44 @@
   for = "/sw.js"
   [headers.values]
     Cache-Control = "no-cache"
+
+# =====================================================================
+# PERFORMANȚĂ — antete de cache pentru fișierele statice
+# =====================================================================
+# HTML și sw.js rămân cu valoarea implicită Netlify (public, max-age=0, must-revalidate): conținutul nou
+# apare imediat. Fonturile au nume stabile și nu se schimbă -> 1 an, immutable. Pozele (images/), iconițele
+# și bibliotecile (vendor/) -> 7 zile + stale-while-revalidate. CSS/JS nu au hash în nume (service worker-ul
+# le reîmprospătează oricum în fundal) -> 10 minute + stale-while-revalidate. Dacă înlocuiești o poză
+# păstrând numele, vizitatorii o văd cel târziu după 7 zile; pentru actualizare imediată dă-i alt nume.
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=2592000"
+
+[[headers]]
+  for = "/icons/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=2592000"
+
+[[headers]]
+  for = "/vendor/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=2592000"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600, stale-while-revalidate=86400"
 
 [[headers]]
   for = "/manifest.webmanifest"

@@ -122,6 +122,6 @@
     apply();
   }
 
-  document.addEventListener("DOMContentLoaded", render);
+  document.addEventListener("DOMContentLoaded", function () { render(); document.documentElement.classList.add("js-rendered"); });   // js-rendered: vezi CSS (CLS)
   document.addEventListener("langchange", render);
 })();

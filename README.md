@@ -54,6 +54,24 @@ Hațeg, Retezat) sunt în blocul JSON `#weather-config` și folosesc coordonatel
 (nu există o sursă oficială utilizabilă); paginile trimit la ANM, skistraja.ro, Salvamont. Atribuire Open-Meteo (CC BY 4.0) în pagină.
 Coordonatele Strajei (`statiunea-straja`) provin din Wikidata Q3036382.
 
+## Performanță și teste
+
+- **Fonturile sunt găzduite local** (`fonts/*.woff2`, DM Sans + Inter, SIL OFL, subseturi latin + latin-ext pentru diacritice;
+  `@font-face` la începutul `css/style.css`, preload în `<head>`). Nu mai există cereri către Google Fonts, iar CSP nu mai permite
+  `fonts.googleapis.com` / `fonts.gstatic.com`.
+- **Scripturile au `defer`** (pagina se desenează înainte de data.js, 480 KB). `js/home.js` și `js/listing.js` pun clasa
+  `js-rendered` pe `<html>`; până atunci CSS rezervă spațiu pentru grilele generate de JS (CLS).
+- **Cache** (`netlify.toml`): fonturi 1 an immutable; imagini, iconițe, `vendor/` 7 zile + stale-while-revalidate; CSS/JS 10 minute +
+  stale-while-revalidate; HTML și `sw.js` rămân cu valoarea implicită Netlify (revalidare). O poză înlocuită sub același nume apare
+  după cel mult 7 zile — pentru actualizare imediată, folosește alt nume de fișier.
+- **Contrast**: culoarea de text pe fundal accent e `--on-accent` (alb în tema luminoasă, aproape negru în cea întunecată).
+- **Lighthouse local** (mobil, throttling implicit): `npx lighthouse http://localhost:PORT/ --only-categories=performance,accessibility,best-practices,seo`.
+  `serve.js` nu comprimă și nu trimite antete de cache; pentru valori apropiate de producție folosește un server cu brotli + antetele
+  din `netlify.toml` (sau `netlify dev`).
+- **Teste** (`node test/run.mjs`): valorile așteptate (numărul de intrări, perechi RO/EN, URL-uri în sitemap, statistici, module, fixture-uri
+  de pagini) se derivă din `js/data.js` și din fișierele de pe disc, nu sunt scrise de mână. Include validarea JSON-LD (tipuri, câmpuri
+  permise, coerență cu `data.js`), sitemap `lastmod`, itinerarii, hartă, calendar/ICS, vreme și formularul de poze.
+
 ## Secțiuni
 
 Structură **hibridă**: **Destinații**, **Orașe**, **Natură**, **Turism activ**,

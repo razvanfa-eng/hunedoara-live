@@ -19,7 +19,7 @@
  * ?v=N la <script src> în pagini (cache-ul îl tratează ca fișier nou); offline,
  * varianta fără ?v= din PRECACHE e folosită ca rezervă (ignoreSearch).
  */
-var VERSION = "v7";
+var VERSION = "v8";
 var STATIC_CACHE = "hl-static-" + VERSION;
 var PAGES_CACHE = "hl-pages-" + VERSION;
 var IMG_CACHE = "hl-img-" + VERSION;
@@ -33,6 +33,7 @@ var PRECACHE = [
   "/js/data.js", "/js/config.js", "/js/i18n.js", "/js/common.js", "/js/search.js",
   "/js/home.js", "/js/listing.js", "/js/detail.js", "/js/reviews.js", "/js/credits.js", "/js/images.js",
   "/images/placeholder.svg",
+  "/fonts/dm-sans-latin.woff2", "/fonts/dm-sans-latin-ext.woff2", "/fonts/inter-latin.woff2", "/fonts/inter-latin-ext.woff2",
   "/manifest.webmanifest",
   "/icons/icon-192.png", "/icons/favicon.svg"
 ];

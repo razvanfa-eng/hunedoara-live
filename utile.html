@@ -30,9 +30,10 @@
   <meta name="twitter:description" content="Transport, hărți, contacte utile și informații practice pentru județul Hunedoara.">
   <meta name="twitter:image" content="https://gohd.ro/images/og/hunedoara-corvin-castle.jpg">
   <!-- /SEO -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dm-sans-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -53,7 +54,7 @@
         <button class="icon-btn" type="button" id="global-search-btn" data-i18n-attr="aria-label:nav.search.aria" aria-label="Căutare">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </button>
-        <a id="lang-toggle" class="lang-toggle" href="/en/utile.html" hreflang="en" lang="en" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria" aria-label="Switch to English">EN</a>
+        <a id="lang-toggle" class="lang-toggle" href="/en/utile.html" hreflang="en" lang="en" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria" aria-label="EN — Switch to English">EN</a>
         <a href="mailto:hunedoaragohd@gmail.com" class="ai-pill" data-i18n="nav.ai">Întreabă-ne</a>
       </div>
     </div>
@@ -112,11 +113,11 @@
     </div>
   </footer>
 
-  <script src="js/data.js"></script>
-  <script src="js/config.js"></script>
-  <script src="js/i18n.js"></script>
-  <script src="js/images.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/search.js"></script>
+  <script defer src="js/data.js"></script>
+  <script defer src="js/config.js"></script>
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/images.js"></script>
+  <script defer src="js/common.js"></script>
+  <script defer src="js/search.js"></script>
 </body>
 </html>

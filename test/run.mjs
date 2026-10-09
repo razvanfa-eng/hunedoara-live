@@ -27,6 +27,15 @@ const TOP_FILES = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html") && /<li
 const uniq = (a) => [...new Set(a.filter(Boolean))];
 const dataKeyOf = (file) => (fs.readFileSync(path.join(ROOT, file), "utf8").match(/"?dataKey"?:\s*"([A-Z_]+)"/) || [])[1];
 const byId = (key, id) => DATA[key].find((e) => e.id === id);
+/* Fixture-uri derivate din data.js: dacă o intrare e ștearsă sau redenumită, testele aleg alta potrivită. */
+const countRelated = (town) => RELATED_KEYS.flatMap((k) => DATA[k].filter((e) => !e.example && (town.relatedAreas || []).includes(e.area)));
+const FT = DATA.SITE_TOWNS.filter((t) => (t.relatedAreas || []).length && uniq(countRelated(t).map((e) => e.season || "tot-anul")).length >= 2 && t.images && t.images[0])
+  .sort((a, b) => countRelated(b).length - countRelated(a).length)[0];                       // oraș cu obiective din zonă pe mai multe sezoane
+const FD = DATA.SITE_DESTINATIONS[0];                                                           // o destinație
+const FN = DATA.SITE_NATURE.find((e) => e.coords && e.hasReviews) || DATA.SITE_NATURE[0];      // loc din natură cu coordonate și recenzii
+const HOME_JS = fs.readFileSync(path.join(ROOT, "js/home.js"), "utf8");
+const HOME_STATS = (HOME_JS.match(/I18N\.t\("home\.stats\.(?!aria)[a-z]+"\)\]/g) || []).length;       // perechile valoare/etichetă din home.js
+const HOME_TILES = (fs.readFileSync(path.join(ROOT, "index.html"), "utf8").match(/<nav class="site-nav">[\s\S]*?<\/nav>/) || [""])[0].match(/<a /g).length; // modulele = linkurile din meniu
 
 /* -------- data.js: integritate -------- */
 for (const k of SECTION_KEYS) ok(Array.isArray(DATA[k]) && DATA[k].length > 0, "data.js: " + k + " are intrări (" + (DATA[k] || []).length + ")");
@@ -48,7 +57,7 @@ function prep(html) {
   html = html.replace(/<head>/, `<head><script>window.addEventListener("error",e=>{window.__err=(window.__err||"")+String(e.message||e.error)+" | ";});</script>`);
   html = html.replace(/<link[^>]+href="https?:\/\/[^"]*"[^>]*>/g, "");
   html = html.replace(/<script[^>]+src="https?:\/\/[^"]*"[^>]*><\/script>/g, "");
-  html = html.replace(/<script src="\/?(js\/[^"?]+)(?:\?[^"]*)?"><\/script>/g, (_, src) =>
+  html = html.replace(/<script (?:defer )?src="\/?(js\/[^"?]+)(?:\?[^"]*)?"><\/script>/g, (_, src) =>
     "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>");
   return html;
 }
@@ -72,8 +81,8 @@ function load(file, query = "", urlPath = file, pref = null) {
   const w = await load("index.html");
   const d = w.document;
   ok(!w.__err, "index: fără erori JS" + (w.__err ? " — " + w.__err : ""));
-  ok(d.querySelectorAll("#home-stats .stat").length === 4, "index: 4 statistici randate");
-  ok(d.querySelectorAll("#explore-grid .tile").length === 8, "index: 8 module în grid-ul de explorare (structura hibridă)");
+  ok(HOME_STATS > 0 && d.querySelectorAll("#home-stats .stat").length === HOME_STATS, "index: " + HOME_STATS + " statistici randate (câte perechi are home.js)");
+  ok(d.querySelectorAll("#explore-grid .tile").length === HOME_TILES, "index: " + HOME_TILES + " module în grid-ul de explorare (câte linkuri are meniul)");
   ok([...d.querySelectorAll("#explore-grid .tile")].every((a) => /\.html$/.test(a.getAttribute("href"))), "index: toate tile-urile leagă spre o pagină");
   const expNews = Math.min(3, DATA.SITE_NEWS.length);
   ok(d.querySelectorAll("#home-news .news-item").length === expNews, "index: " + expNews + " știri randate (cele mai recente)");
@@ -101,10 +110,10 @@ function load(file, query = "", urlPath = file, pref = null) {
   ok(d1.querySelectorAll("#grid .card").length === nDest, "destinatii: " + nDest + " carduri (câte sunt în data.js)");
   ok([...d1.querySelectorAll("#grid .card")].every((a) => /^\/destinatii\/[a-z0-9-]+\/$/.test(a.getAttribute("href"))), "destinatii: href-uri carduri valide");
 
-  const w2 = await load("destinatie.html", "?id=valea-jiului");
+  const w2 = await load("destinatie.html", "?id=" + FD.id);
   const d2 = w2.document;
   ok(!w2.__err, "destinatie: fără erori JS" + (w2.__err ? " — " + w2.__err : ""));
-  ok(/Valea Jiului/.test(d2.querySelector("#detail-title")?.textContent || ""), "destinatie: titlu randat");
+  ok((d2.querySelector("#detail-title")?.textContent || "") === FD.name, "destinatie: titlu randat (" + FD.id + ")");
 }
 
 /* -------- natura.html (fost locuri) + recenzii (mod local) -------- */
@@ -122,10 +131,10 @@ function load(file, query = "", urlPath = file, pref = null) {
   const expArea = nat.filter((e) => e.area === firstArea).length;
   ok(d1.querySelectorAll("#grid .card").length === expArea, "natura: filtrul de zonă „" + firstArea + "” lasă " + expArea + " carduri");
 
-  const w = await load("natura-loc.html", "?id=pestera-bolii");
+  const w = await load("natura-loc.html", "?id=" + FN.id);
   const d = w.document;
   ok(!w.__err, "natura-loc: fără erori JS" + (w.__err ? " — " + w.__err : ""));
-  ok(/Bolii/.test(d.querySelector("#detail-title")?.textContent || ""), "natura-loc: titlu randat");
+  ok((d.querySelector("#detail-title")?.textContent || "") === FN.name, "natura-loc: titlu randat (" + FN.id + ")");
   ok(!!d.querySelector("#detail-map a"), "natura-loc: linkuri hartă prezente pentru coordonate");
   ok(!!d.querySelector("#reviews .review-form"), "recenzii: formularul e randat");
   ok(/Nicio recenzie/.test(d.querySelector("#reviews").textContent), "recenzii: mesaj 'nicio recenzie' inițial");
@@ -187,15 +196,15 @@ function load(file, query = "", urlPath = file, pref = null) {
 
 /* -------- oras.html?id=petrosani: secțiunea "Obiective din zonă" (relatedAreas) -------- */
 {
-  const w = await load("oras.html", "?id=petrosani");
-  ok(!w.__err, "oras petrosani: fără erori JS" + (w.__err ? " — " + w.__err : ""));
+  const w = await load("oras.html", "?id=" + FT.id);
+  ok(!w.__err, "oras " + FT.id + ": fără erori JS" + (w.__err ? " — " + w.__err : ""));
   const rel = w.document.querySelector("#detail-related");
-  ok(!!rel && !rel.hidden, "oras petrosani: #detail-related vizibil");
-  const areas = byId("SITE_TOWNS", "petrosani").relatedAreas || [];
+  ok(!!rel && !rel.hidden, "oras " + FT.id + ": #detail-related vizibil");
+  const areas = FT.relatedAreas || [];
   const relItems = RELATED_KEYS.flatMap((k) => DATA[k].filter((e) => !e.example && areas.includes(e.area)));
   const relSeasons = uniq(relItems.map((e) => e.season || "tot-anul"));
-  ok(relItems.length > 0 && rel.querySelectorAll(".card").length === relItems.length, "oras petrosani: " + relItems.length + " obiective din zonă");
-  ok(rel.querySelectorAll(".related-group__title").length === relSeasons.length && relSeasons.length >= 2, "oras petrosani: grupate pe " + relSeasons.length + " sezoane");
+  ok(relItems.length > 0 && rel.querySelectorAll(".card").length === relItems.length, "oras " + FT.id + ": " + relItems.length + " obiective din zonă");
+  ok(rel.querySelectorAll(".related-group__title").length === relSeasons.length && relSeasons.length >= 2, "oras " + FT.id + ": grupate pe " + relSeasons.length + " sezoane");
 }
 
 /* -------- pagini statice -------- */
@@ -258,24 +267,24 @@ function load(file, query = "", urlPath = file, pref = null) {
   ok(!!homeLd && homeLd["@graph"].some((n) => n["@type"] === "WebSite") && homeLd["@graph"].some((n) => n["@type"] === "Organization"), "index.html: JSON-LD WebSite + Organization");
 
   // randare în „browser”: pagina Petroșani (cu obiective din zonă) și una fără poză
-  const w = await load("orase/petrosani/index.html", "", "orase/petrosani/");
+  const w = await load("orase/" + FT.id + "/index.html", "", "orase/" + FT.id + "/");
   const d = w.document;
-  ok(!w.__err, "generat /orase/petrosani/: fără erori JS" + (w.__err ? " — " + w.__err : ""));
-  ok(/Petroșani/.test(d.querySelector("#detail-title").textContent) && d.title.startsWith("Petroșani"), "generat /orase/petrosani/: titlu + <title> corecte");
-  const pAreas = byId("SITE_TOWNS", "petrosani").relatedAreas || [];
+  ok(!w.__err, "generat /orase/" + FT.id + "/: fără erori JS" + (w.__err ? " — " + w.__err : ""));
+  ok(d.querySelector("#detail-title").textContent === FT.name && d.title.startsWith(FT.name), "generat /orase/" + FT.id + "/: titlu + <title> corecte");
+  const pAreas = FT.relatedAreas || [];
   const pRel = RELATED_KEYS.flatMap((k) => DATA[k].filter((e) => !e.example && pAreas.includes(e.area))).length;
-  ok(pRel > 0 && d.querySelectorAll("#detail-related .card").length === pRel, "generat /orase/petrosani/: " + pRel + " obiective din zonă (pre-randate)");
-  ok(d.querySelector("#detail-gallery img").getAttribute("srcset").includes(".webp 800w"), "generat /orase/petrosani/: poza principală are srcset webp");
+  ok(pRel > 0 && d.querySelectorAll("#detail-related .card").length === pRel, "generat /orase/" + FT.id + "/: " + pRel + " obiective din zonă (pre-randate)");
+  ok(d.querySelector("#detail-gallery img").getAttribute("srcset").includes(".webp 800w"), "generat /orase/" + FT.id + "/: poza principală are srcset webp");
   const roTag = d.querySelector("#detail-tagline").textContent;
-  ok(d.querySelector("#lang-toggle").getAttribute("href") === "/en/orase/petrosani/", "generat /orase/petrosani/: comutatorul EN duce la /en/orase/petrosani/");
-  ok(d.querySelector("#detail-back").getAttribute("href") === "/orase.html", "generat /orase/petrosani/: linkul înapoi e absolut");
-  const we = await load("en/orase/petrosani/index.html", "", "en/orase/petrosani/");
+  ok(d.querySelector("#lang-toggle").getAttribute("href") === "/en/orase/" + FT.id + "/", "generat /orase/" + FT.id + "/: comutatorul EN duce la /en/orase/petrosani/");
+  ok(d.querySelector("#detail-back").getAttribute("href") === "/orase.html", "generat /orase/" + FT.id + "/: linkul înapoi e absolut");
+  const we = await load("en/orase/" + FT.id + "/index.html", "", "en/orase/" + FT.id + "/");
   const de = we.document;
-  ok(!we.__err, "generat /en/orase/petrosani/: fără erori JS" + (we.__err ? " — " + we.__err : ""));
+  ok(!we.__err, "generat /en/orase/" + FT.id + "/: fără erori JS" + (we.__err ? " — " + we.__err : ""));
   ok(de.querySelector("#detail-tagline").textContent !== roTag && de.querySelector("#detail-back").textContent === "← All towns and communes" &&
-    de.querySelector("#detail-back").getAttribute("href") === "/en/orase.html", "generat /en/orase/petrosani/: conținut EN, înapoi spre /en/orase.html");
+    de.querySelector("#detail-back").getAttribute("href") === "/en/orase.html", "generat /en/orase/" + FT.id + "/: conținut EN, înapoi spre /en/orase.html");
   ok(de.querySelectorAll("#detail-related .card").length === pRel &&
-    [...de.querySelectorAll("#detail-related .card")].every((a) => a.getAttribute("href").startsWith("/en/")), "generat /en/orase/petrosani/: obiectivele din zonă leagă spre /en/");
+    [...de.querySelectorAll("#detail-related .card")].every((a) => a.getAttribute("href").startsWith("/en/")), "generat /en/orase/" + FT.id + "/: obiectivele din zonă leagă spre /en/");
 
   const nophoto = all.find((x) => x.e.images && x.e.images[0] === "images/placeholder.svg" && x.e.hasReviews);
   if (nophoto) {
@@ -725,7 +734,7 @@ function load(file, query = "", urlPath = file, pref = null) {
   }
   // calendar.js: ascunde evenimentele încheiate (rulat cu o dată falsă)
   {
-    const html = readF("calendar.html").replace(/<script src="\/?(js\/[^"?]+)(?:\?[^"]*)?"><\/script>/g, (_, src) => "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>");
+    const html = readF("calendar.html").replace(/<script (?:defer )?src="\/?(js\/[^"?]+)(?:\?[^"]*)?"><\/script>/g, (_, src) => "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>");
     const dom = new JSDOM(html.replace("<head>", '<head><script>Date = class extends Date { constructor(...a) { a.length ? super(...a) : super("2026-10-12T10:00:00"); } };</script>'), { runScripts: "dangerously", url: "http://localhost:5175/calendar.html" });
     const lis = [...dom.window.document.querySelectorAll("#cal-upcoming .cal-item")];
     ok(lis.some((li) => li.hidden) && lis.some((li) => !li.hidden) && lis.every((li) => li.hidden === (li.dataset.end < "2026-10-12")), "calendar: js/calendar.js ascunde evenimentele încheiate (azi simulat 12.10.2026)");
@@ -762,7 +771,7 @@ function load(file, query = "", urlPath = file, pref = null) {
   ok(/credentials: "omit"/.test(wjs) && !/document\.cookie|localStorage/.test(wjs) && (wjs.match(/https?:\/\/[a-z.-]+/g) || []).every((u) => /open-meteo\.com$/.test(u)), "vreme: js/weather.js — fără cookie/stocare, doar open-meteo.com, credentials omit");
   // randare cu un răspuns Open-Meteo simulat
   {
-    const html = readF("vreme.html").replace(/<script src="\/?(js\/[^"?]+)(?:\?[^"]*)?"><\/script>/g, (_, src) => "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>").replace(/<link[^>]+href="https?:[^"]*"[^>]*>/g, "");
+    const html = readF("vreme.html").replace(/<script (?:defer )?src="\/?(js\/[^"?]+)(?:\?[^"]*)?"><\/script>/g, (_, src) => "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>").replace(/<link[^>]+href="https?:[^"]*"[^>]*>/g, "");
     const cfg = JSON.parse(new JSDOM(html).window.document.getElementById("weather-config").textContent);
     const mk = (i) => ({ elevation: 500 + i, current: { temperature_2m: 10 + i, weather_code: i % 4, wind_speed_10m: 5 }, daily: { time: ["2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15"], weather_code: [0, 3, 61, 71], temperature_2m_max: [12, 13, 14, 5], temperature_2m_min: [3, 4, 5, -1], precipitation_sum: [0, 0, 5.5, 3], snowfall_sum: [0, 0, 0, 4.2] } });
     const dom = new JSDOM(html, { runScripts: "dangerously", pretendToBeVisual: true, url: "http://localhost:5175/vreme.html", beforeParse(w) { w.fetch = (u, o) => { w.__url = u; w.__opt = o; return Promise.resolve({ ok: true, json: () => Promise.resolve(cfg.places.map((_, i) => mk(i))) }); }; } });
@@ -801,6 +810,96 @@ function load(file, query = "", urlPath = file, pref = null) {
   }
   const bs = fs.readFileSync(path.join(ROOT, "scripts/build-pages.mjs"), "utf8");
   ok(!/lastmod:\s*entry\.date/.test(bs) && /function fileDay/.test(bs) && !/new Date\(\)\.toISOString\(\)\.slice\(0, 10\)\s*\}\)/.test(bs.replace(/\|\| new Date\(\)\.toISOString\(\)\.slice\(0, 10\)/g, "")), "sitemap lastmod: build-pages.mjs nu mai pune data de azi / data publicării pentru toate");
+}
+
+/* -------- Date structurate (JSON-LD): structură, câmpuri permise, coerență cu data.js -------- */
+{
+  const SITE = "https://gohd.ro";
+  const DIRS = { SITE_DESTINATIONS: "destinatii", SITE_TOWNS: "orase", SITE_NATURE: "natura", SITE_ACTIVITIES: "turism-activ", SITE_HERITAGE: "mostenire", SITE_NEWS: "stiri", SITE_BUSINESSES: "afaceri" };
+  // proprietăți schema.org permise pe tip (doar ce folosim; orice altceva = câmp inventat/greșit)
+  const THING = ["@type", "@id", "name", "description", "url", "image", "sameAs"];
+  const PLACE = [...THING, "address", "geo", "containedInPlace", "telephone"];
+  const ALLOWED = {
+    TouristAttraction: PLACE, Museum: PLACE, City: PLACE,
+    Hotel: [...PLACE, "email"], LodgingBusiness: [...PLACE, "email"], Restaurant: [...PLACE, "email"],
+    Event: [...THING, "inLanguage", "startDate", "endDate", "eventStatus", "eventAttendanceMode", "location"],
+    Festival: [...THING, "inLanguage", "startDate", "endDate", "eventStatus", "eventAttendanceMode", "location"],
+    NewsArticle: [...THING, "inLanguage", "headline", "author", "publisher", "mainEntityOfPage", "datePublished"],
+    TouristTrip: [...THING, "inLanguage", "itinerary"],
+    ItemList: [...THING, "itemListElement"],
+    BreadcrumbList: ["@type", "itemListElement"],
+    WebPage: [...THING, "inLanguage", "isPartOf", "about"],
+    WebSite: [...THING, "inLanguage", "publisher"],
+    Organization: [...THING, "logo", "email", "areaServed"]
+  };
+  const REQUIRED = { TouristAttraction: ["name", "url"], Museum: ["name", "url"], City: ["name", "url"], Hotel: ["name", "address"], LodgingBusiness: ["name", "address"], Restaurant: ["name", "address"],
+    Event: ["name", "startDate", "location"], Festival: ["name", "startDate", "location"], NewsArticle: ["headline", "datePublished", "author", "publisher"], TouristTrip: ["name", "itinerary"],
+    ItemList: ["itemListElement"], BreadcrumbList: ["itemListElement"], WebPage: ["url", "name"] };
+  const readF = (f) => fs.readFileSync(path.join(ROOT, f), "utf8");
+  const ldOf = (h) => [...h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1]));
+  const problems = [];
+  const P = (file, msg) => problems.push(file + ": " + msg);
+  const checkNode = (file, node, ctx) => {
+    const t = node["@type"], allowed = ALLOWED[t];
+    if (!allowed) return P(file, "tip necunoscut " + t);
+    for (const k of Object.keys(node)) {
+      if (!allowed.includes(k)) P(file, t + " are câmpul nepermis „" + k + "”");
+      const v = node[k];
+      if (v === "" || v === null || v === undefined || (Array.isArray(v) && !v.length)) P(file, t + "." + k + " e gol");
+      if (typeof v === "string" && /undefined|\[object|NaN/.test(v)) P(file, t + "." + k + " conține o valoare stricată: " + v);
+    }
+    for (const r of REQUIRED[t] || []) if (node[r] === undefined) P(file, t + " fără câmpul obligatoriu „" + r + "”");
+    if (t === "BreadcrumbList") {
+      node.itemListElement.forEach((li, i) => { if (li.position !== i + 1 || !li.name || !/^https:\/\/gohd\.ro\//.test(li.item)) P(file, "BreadcrumbList poziția " + (i + 1) + " greșită"); });
+    }
+    if (node.geo && !(typeof node.geo.latitude === "number" && typeof node.geo.longitude === "number" && node.geo.latitude > 45 && node.geo.latitude < 46.5)) P(file, "geo invalid");
+    if (node.telephone && !/^(\+40|0)[\d ]{8,13}$/.test(node.telephone)) P(file, "telephone în format neașteptat: " + node.telephone);
+    if (node.sameAs && !/^https:\/\/[a-z0-9.-]+\.[a-z]+$/.test(node.sameAs)) P(file, "sameAs nu e un site https: " + node.sameAs);
+    if (node.sameAs && /booking|tripadvisor|facebook|airbnb/.test(node.sameAs)) P(file, "sameAs spre o platformă, nu spre site-ul afacerii");
+    for (const k of ["startDate", "endDate", "datePublished"]) if (node[k] && !/^\d{4}-\d{2}-\d{2}$/.test(node[k])) P(file, k + " nu e o dată ISO: " + node[k]);
+    if (node.endDate && node.endDate < node.startDate) P(file, "endDate înainte de startDate");
+    if (node.image && !/^https:\/\/gohd\.ro\/images\/.+\.jpe?g$/.test(node.image)) P(file, "image nu e un URL absolut spre images/: " + node.image);
+    if (node.image && !fs.existsSync(path.join(ROOT, node.image.replace(SITE + "/", "")))) P(file, "imaginea din JSON-LD nu există: " + node.image);
+    if (node.description && node.description.length > 320) P(file, "description prea lungă (" + node.description.length + ")");
+  };
+  let blocks = 0, nodes = 0;
+  const pages = [];
+  for (const [k, dir] of Object.entries(DIRS)) for (const e of DATA[k]) for (const lang of ["ro", "en"]) pages.push({ k, e, lang, file: (lang === "en" ? "en/" : "") + dir + "/" + e.id + "/index.html", url: SITE + (lang === "en" ? "/en/" : "/") + dir + "/" + e.id + "/" });
+  for (const p of pages) {
+    const lds = ldOf(readF(p.file)); blocks += lds.length;
+    if (lds.length !== 1) { P(p.file, lds.length + " blocuri JSON-LD (așteptat 1)"); continue; }
+    const g = lds[0];
+    if (g["@context"] !== "https://schema.org" || !Array.isArray(g["@graph"])) { P(p.file, "lipsește @context/@graph"); continue; }
+    const ids = g["@graph"].map((n) => n["@id"]).filter(Boolean);
+    if (new Set(ids).size !== ids.length) P(p.file, "@id duplicat");
+    for (const n of g["@graph"]) { nodes++; checkNode(p.file, n); }
+    const main = g["@graph"][0];
+    if (main.url !== p.url || main["@id"] !== p.url + "#main") P(p.file, "url/@id principal diferit de URL-ul paginii");
+    if (main.geo && p.e.coords && (main.geo.latitude !== p.e.coords[0] || main.geo.longitude !== p.e.coords[1])) P(p.file, "geo diferă de coords din data.js");
+    if (!!main.geo !== !!p.e.coords) P(p.file, "geo prezent/absent diferit față de coords");
+    if (main.name !== ((p.lang === "en" && p.e.en && p.e.en.name) || p.e.name)) P(p.file, "name diferit de intrare");
+    if (/^(Event|Festival)$/.test(main["@type"]) && main.startDate !== p.e.date) P(p.file, "startDate diferă de date din data.js");
+    const wp = g["@graph"].find((n) => n["@type"] === "WebPage");
+    if (!wp || wp.inLanguage !== p.lang || wp.url !== p.url) P(p.file, "WebPage.inLanguage/url greșite");
+    const canon = (readF(p.file).match(/<link rel="canonical" href="([^"]+)"/) || [])[1];
+    if (canon !== p.url) P(p.file, "canonical diferit de URL-ul din JSON-LD");
+  }
+  ok(problems.length === 0, "json-ld: " + pages.length + " pagini de intrări (" + blocks + " blocuri, " + nodes + " noduri) — structură, câmpuri permise, coerență cu data.js" + (problems.length ? " — " + problems.slice(0, 8).join(" | ") + (problems.length > 8 ? " (+" + (problems.length - 8) + ")" : "") : ""));
+  // alte pagini: index (WebSite + Organization), itinerarii, listarea de itinerarii
+  const other = [];
+  for (const f of ["index.html", "en/index.html", "itinerarii.html", "en/itinerarii.html", ...DATA.SITE_ITINERARIES.flatMap((it) => ["itinerarii/" + it.id + "/index.html", "en/itinerarii/" + it.id + "/index.html"])]) {
+    const lds = ldOf(readF(f));
+    if (lds.length !== 1) { other.push(f + ": " + lds.length + " blocuri"); continue; }
+    const before = problems.length;
+    for (const n of lds[0]["@graph"]) checkNode(f, n);
+    if (problems.length > before) other.push(...problems.slice(before));
+  }
+  ok(other.length === 0, "json-ld: index, listarea și paginile de itinerarii valide" + (other.length ? " — " + other.slice(0, 5).join(" | ") : ""));
+  // evenimentele pe mai multe zile au endDate
+  const multi = DATA.SITE_NEWS.filter((e) => /^(Concert|Festival|Spectacol)$/.test(e.category.ro) && /\d+–\d+ \S+ \d{4}/.test((e.ro.facts.find((f) => /^Perioadă$/.test(f.label)) || {}).value || ""));
+  ok(multi.every((e) => /"endDate":"\d{4}-\d{2}-\d{2}"/.test(readF("stiri/" + e.id + "/index.html"))), "json-ld: evenimentele pe mai multe zile (" + multi.length + ") au endDate derivat din „Perioadă”");
+  // pagini fără JSON-LD de tip ascuns: șabloanele nu trebuie să aibă date structurate de intrare
+  ok(["oras.html", "natura-loc.html", "afacere.html"].every((f) => ldOf(readF(f)).length === 0), "json-ld: șabloanele ?id= (noindex) nu au JSON-LD");
 }
 
 console.log(`\n${pass} pass, ${fail} fail`);

@@ -5,6 +5,13 @@
    Un singur fișier CSS. Temă luminoasă implicit, se adaptează
    automat la modul întunecat al sistemului (prefers-color-scheme).
    ========================================================= */
+/* Fonturi găzduite local (variabile, SIL OFL 1.1 — vezi fonts/README.txt): fără cereri către Google Fonts.
+   Subseturile latin + latin-ext acoperă diacriticele românești (ă â î ș ț). */
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 500 700; font-display: swap; src: url("../fonts/dm-sans-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 500 700; font-display: swap; src: url("../fonts/dm-sans-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("../fonts/inter-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("../fonts/inter-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 :root {
   --bg:           #FFFFFF;
   --surface:      #FFFFFF;
@@ -12,7 +19,7 @@
   --ink:          #18181B;
   --muted:        #52525B;
   --faint:        #71717A;
-  --fainter:      #A1A1AA;
+  --fainter:      #6E6E78;
   --border:       #E4E4E7;
   --border-strong:#D4D4D8;
 
@@ -20,6 +27,7 @@
   --accent-d:     #0A616A;
   --accent-soft:  rgba(14,124,134,.12);
   --amber:        #E8A33D;
+  --on-accent:    #FFFFFF;   /* text pe fundal accent (contrast >= 4.5) */
 
   --shadow:    0 1px 1px rgba(24,24,27,.03), 0 18px 36px -24px rgba(24,24,27,.18);
   --radius:    10px;
@@ -38,13 +46,14 @@
     --ink:          #EDEDEE;
     --muted:        #A1A1AA;
     --faint:        #8A8A93;
-    --fainter:      #6B6B74;
+    --fainter:      #8F8F98;
     --border:       #2A2B2E;
     --border-strong:#38393D;
     --accent:       #3FBFC9;
     --accent-d:     #6ED4DC;
     --accent-soft:  rgba(63,191,201,.16);
     --amber:        #F0B85B;
+    --on-accent:    #0A1A1C;
     --shadow:    0 1px 1px rgba(0,0,0,.3), 0 20px 44px -24px rgba(0,0,0,.6);
   }
 }
@@ -129,7 +138,7 @@ p { margin: 0 0 12px; }
   padding: 6px 14px; white-space: nowrap;
   text-decoration: none; cursor: pointer;
 }
-.ai-pill:hover { background: var(--accent); color: #fff; }
+.ai-pill:hover { background: var(--accent); color: var(--on-accent); }
 
 /* ---------- Global search overlay ---------- */
 .search-overlay {
@@ -179,8 +188,8 @@ p { margin: 0 0 12px; }
   padding: 12px 24px; border-radius: 8px; border: 1.5px solid transparent;
   cursor: pointer; gap: 8px;
 }
-.btn--primary { background: var(--accent); color: #fff; }
-.btn--primary:hover { background: var(--accent-d); color: #fff; }
+.btn--primary { background: var(--accent); color: var(--on-accent); }
+.btn--primary:hover { background: var(--accent-d); color: var(--on-accent); }
 .btn--outline { background: transparent; border-color: var(--border-strong); color: var(--ink); }
 .btn--outline:hover { border-color: var(--accent); color: var(--accent); }
 .btn-reset {
@@ -266,10 +275,10 @@ button.badge-app:hover { border-color: var(--accent); color: var(--accent); }
 .tile--photo .tile__desc { color: rgba(255,255,255,.85); }
 
 /* Tile fără foto (Contact — nu are un subiect vizual firesc): stil accent, ca un CTA. */
-.tile--accent { background: var(--accent); border-color: var(--accent); color: #fff; }
-.tile--accent:hover { border-color: #fff; }
-.tile--accent .tile__mark { background: rgba(255,255,255,.2); color: #fff; }
-.tile--accent .tile__desc { color: rgba(255,255,255,.85); }
+.tile--accent { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.tile--accent .tile__desc { color: var(--on-accent); opacity: .9; }
+.tile--accent:hover { border-color: var(--on-accent); }
+.tile--accent .tile__mark { background: rgba(255,255,255,.2); color: var(--on-accent); }
 
 /* ---------- Latest news (home) ---------- */
 .news-list { display: flex; flex-direction: column; gap: 2px; }
@@ -393,7 +402,7 @@ button.badge-app:hover { border-color: var(--accent); color: var(--accent); }
   border-radius: 6px; background: var(--surface); color: var(--ink); min-width: 180px;
 }
 .newsletter-row button {
-  font-family: var(--sans); font-weight: 600; font-size: 13px; background: var(--accent); color: #fff;
+  font-family: var(--sans); font-weight: 600; font-size: 13px; background: var(--accent); color: var(--on-accent);
   border: none; border-radius: 6px; padding: 9px 16px; cursor: pointer;
 }
 .site-footer__bottom {
@@ -529,3 +538,10 @@ button.badge-app:hover { border-color: var(--accent); color: var(--accent); }
 .wx-sky, .wx-extra { color: var(--muted); font-size: 12.5px; }
 .wx-extra { text-align: right; }
 .wx-credit { font-size: 12px; }
+
+/* ---------- CLS: spațiu rezervat cât timp motoarele JS (home.js / listing.js) nu au randat încă ---------- */
+/* Clasa js-rendered se pune pe <html> după prima randare. Până atunci conținutul generat de JS are înălțimea
+   ecranului, deci footer-ul și secțiunile de sub el nu „sar” în zona vizibilă când apar cardurile. */
+html:not(.js-rendered) #grid,
+html:not(.js-rendered) #home-highlights { min-height: 100vh; }
+html:not(.js-rendered) #explore-grid { min-height: 60vh; }

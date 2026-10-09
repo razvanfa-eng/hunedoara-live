@@ -25,9 +25,10 @@
   <meta name="twitter:description" content="Ce se întâmplă în județ — evenimente și noutăți.">
   <meta name="twitter:image" content="https://gohd.ro/images/og/home-tile-stiri.jpg">
   <!-- /SEO -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dm-sans-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -105,13 +106,13 @@
     </div>
   </footer>
 
-  <script src="js/data.js"></script>
-  <script src="js/config.js"></script>
-  <script src="js/i18n.js"></script>
-  <script src="js/images.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/search.js"></script>
+  <script defer src="js/data.js"></script>
+  <script defer src="js/config.js"></script>
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/images.js"></script>
+  <script defer src="js/common.js"></script>
+  <script defer src="js/search.js"></script>
   <script type="application/json" id="detail-config">{"dataKey":"SITE_NEWS","backPage":"/stiri.html","backLabelKey":"detail.back.stiri"}</script>
-  <script src="js/detail.js?v=5"></script>
+  <script defer src="js/detail.js?v=5"></script>
 </body>
 </html>

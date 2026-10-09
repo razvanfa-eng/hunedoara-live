@@ -121,7 +121,7 @@
       "search.hint": "Scrie ca să cauți pe tot site-ul.",
       "search.none": "Niciun rezultat. Încearcă alt termen.",
       "lang.switch": "EN",
-      "lang.switch.aria": "Switch to English",
+      "lang.switch.aria": "EN — Switch to English",
 
       "home.hero.eyebrow": "Ghidul digital al județului Hunedoara",
       "home.hero.cta.primary": "Explorează destinații",
@@ -411,7 +411,7 @@
       "search.hint": "Start typing to search the whole site.",
       "search.none": "No results. Try a different term.",
       "lang.switch": "RO",
-      "lang.switch.aria": "Comută pe română",
+      "lang.switch.aria": "RO — Comută pe română",
 
       "home.hero.eyebrow": "The digital guide to Hunedoara county",
       "home.hero.cta.primary": "Explore destinations",
