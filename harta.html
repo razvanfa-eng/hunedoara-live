@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ro" data-page-lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0E7C86">
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <title data-i18n="page.title.harta">Harta obiectivelor — Hunedoara Live</title>
+  <meta name="description" content="Harta cu orașele, cetățile, bisericile, traseele și locurile din natură din județul Hunedoara care au coordonate în ghid." data-i18n-attr="content:page.meta.harta">
+  <!-- SEO: generat de scripts/build-pages.mjs -->
+  <link rel="canonical" href="https://gohd.ro/harta.html">
+  <link rel="alternate" hreflang="ro" href="https://gohd.ro/harta.html">
+  <link rel="alternate" hreflang="en" href="https://gohd.ro/en/harta.html">
+  <link rel="alternate" hreflang="x-default" href="https://gohd.ro/harta.html">
+  <meta property="og:site_name" content="Hunedoara Live">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harta obiectivelor — Hunedoara Live">
+  <meta property="og:description" content="Harta cu orașele, cetățile, bisericile, traseele și locurile din natură din județul Hunedoara care au coordonate în ghid.">
+  <meta property="og:url" content="https://gohd.ro/harta.html">
+  <meta property="og:image" content="https://gohd.ro/images/og/hunedoara-corvin-castle.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Harta obiectivelor — Hunedoara Live">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Harta obiectivelor — Hunedoara Live">
+  <meta name="twitter:description" content="Harta cu orașele, cetățile, bisericile, traseele și locurile din natură din județul Hunedoara care au coordonate în ghid.">
+  <meta name="twitter:image" content="https://gohd.ro/images/og/hunedoara-corvin-castle.jpg">
+  <!-- /SEO -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" data-i18n="site.name">Hunedoara Live</a>
+      <nav class="site-nav">
+        <a href="destinatii.html" data-i18n="nav.destinatii">Destinații</a>
+        <a href="orase.html" data-i18n="nav.orase">Orașe și comune</a>
+        <a href="natura.html" data-i18n="nav.natura">Natură</a>
+        <a href="turism-activ.html" data-i18n="nav.turismActiv">Turism activ</a>
+        <a href="mostenire.html" data-i18n="nav.mostenire">Moștenire culturală</a>
+        <a href="afaceri.html" data-i18n="nav.afaceri">Afaceri</a>
+        <a href="stiri.html" data-i18n="nav.stiri">Știri</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" id="global-search-btn" data-i18n-attr="aria-label:nav.search.aria" aria-label="Căutare">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a id="lang-toggle" class="lang-toggle" href="/en/harta.html" hreflang="en" lang="en" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria" aria-label="Switch to English">EN</a>
+        <a href="mailto:hunedoaragohd@gmail.com" class="ai-pill" data-i18n="nav.ai">Întreabă-ne</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding-bottom:0;">
+      <h1 data-i18n="map.heading">Harta obiectivelor</h1>
+      <p data-i18n="map.intro">Toate locurile din ghid care au coordonate. Alege categoriile de afișat, apoi atinge un punct pentru a deschide pagina lui.</p>
+    </section>
+    <fieldset class="map-filters">
+      <legend data-i18n="map.filters">Categorii afișate</legend>
+<!-- GEN:mapfilters -->
+      <label class="map-chip"><input type="checkbox" checked data-map-group="SITE_TOWNS"><span class="map-dot" style="background:#0E7C86"></span> Orașe și comune (27)</label>
+      <label class="map-chip"><input type="checkbox" checked data-map-group="SITE_HERITAGE"><span class="map-dot" style="background:#B45309"></span> Moștenire culturală (33)</label>
+      <label class="map-chip"><input type="checkbox" checked data-map-group="SITE_NATURE"><span class="map-dot" style="background:#15803D"></span> Natură (12)</label>
+      <label class="map-chip"><input type="checkbox" checked data-map-group="SITE_ACTIVITIES"><span class="map-dot" style="background:#1D4ED8"></span> Turism activ (3)</label>
+      <label class="map-chip"><input type="checkbox" checked data-map-group="SITE_BUSINESSES"><span class="map-dot" style="background:#BE185D"></span> Afaceri (2)</label>
+<!-- /GEN:mapfilters -->
+    </fieldset>
+    <p class="map-count" id="map-count" aria-live="polite"></p>
+    <div id="map" class="map-box" role="region" aria-label="Harta obiectivelor" data-i18n-attr="aria-label:map.heading"></div>
+    <noscript><p class="muted" data-i18n="map.noscript">Harta interactivă are nevoie de JavaScript. Lista de mai jos conține aceleași locuri.</p></noscript>
+    <p class="muted map-attrib" data-i18n="map.attribution">Harta: © OpenStreetMap contributors. Punctele sunt orientative; pentru navigare folosește butoanele Waze / Google Maps de pe pagina fiecărui loc.</p>
+    <h2 data-i18n="map.list">Lista locurilor</h2>
+<!-- GEN:maplist -->
+    <section class="map-list" data-map-list="SITE_TOWNS">
+      <h3>Orașe și comune (27)</h3>
+      <ul>
+        <li><a href="/orase/deva/">Deva</a> <span class="muted">· Culoarul Mureșului</span></li>
+        <li><a href="/orase/hunedoara/">Hunedoara</a> <span class="muted">· Culoarul Mureșului</span></li>
+        <li><a href="/orase/simeria/">Simeria</a> <span class="muted">· Culoarul Mureșului</span></li>
+        <li><a href="/orase/petrosani/">Petroșani</a> <span class="muted">· Valea Jiului</span></li>
+        <li><a href="/orase/petrila/">Petrila</a> <span class="muted">· Valea Jiului</span></li>
+        <li><a href="/orase/vulcan/">Vulcan</a> <span class="muted">· Valea Jiului</span></li>
+        <li><a href="/orase/lupeni/">Lupeni</a> <span class="muted">· Valea Jiului</span></li>
+        <li><a href="/orase/aninoasa/">Aninoasa</a> <span class="muted">· Valea Jiului</span></li>
+        <li><a href="/orase/orastie/">Orăștie</a> <span class="muted">· Zona cetăților dacice</span></li>
+        <li><a href="/orase/hateg/">Hațeg</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/orase/brad/">Brad</a> <span class="muted">· Munții Metaliferi</span></li>
+        <li><a href="/orase/uricani/">Uricani</a> <span class="muted">· Valea Jiului</span></li>
+        <li><a href="/orase/geoagiu/">Geoagiu</a> <span class="muted">· Culoarul Mureșului</span></li>
+        <li><a href="/orase/calan/">Călan</a> <span class="muted">· Valea Streiului</span></li>
+        <li><a href="/orase/sarmizegetusa/">Sarmizegetusa</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/orase/densus/">Densuș</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/orase/rau-de-mori/">Râu de Mori</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/orase/ilia/">Ilia</a> <span class="muted">· Culoarul Mureșului</span></li>
+        <li><a href="/orase/pui/">Pui</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/orase/criscior/">Crișcior</a> <span class="muted">· Munții Metaliferi</span></li>
+        <li><a href="/orase/soimus/">Șoimuș</a> <span class="muted">· Culoarul Mureșului</span></li>
+        <li><a href="/orase/beriu/">Beriu</a> <span class="muted">· Munții Orăștiei</span></li>
+        <li><a href="/orase/dobra/">Dobra</a> <span class="muted">· Culoarul Mureșului</span></li>
+        <li><a href="/orase/vata-de-jos/">Vața de Jos</a> <span class="muted">· Țara Zarandului</span></li>
+        <li><a href="/orase/santamaria-orlea/">Sântămăria-Orlea</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/orase/baita/">Băița</a> <span class="muted">· Munții Metaliferi</span></li>
+        <li><a href="/orase/vetel/">Vețel</a> <span class="muted">· Culoarul Mureșului</span></li>
+      </ul>
+    </section>
+    <section class="map-list" data-map-list="SITE_HERITAGE">
+      <h3>Moștenire culturală (33)</h3>
+      <ul>
+        <li><a href="/mostenire/sarmizegetusa-regia/">Sarmizegetusa Regia</a> <span class="muted">· Munții Orăștiei</span></li>
+        <li><a href="/mostenire/biserica-densus/">Biserica din Densuș</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/mostenire/manastirea-prislop/">Mănăstirea Prislop</a> <span class="muted">· Silvașu de Sus, Țara Hațegului</span></li>
+        <li><a href="/mostenire/muzeul-mineritului-petrosani/">Muzeul Mineritului din Petroșani</a> <span class="muted">· Petroșani</span></li>
+        <li><a href="/mostenire/castelul-bela-fay-simeria/">Castelul Béla Fáy</a> <span class="muted">· Simeria</span></li>
+        <li><a href="/mostenire/termele-romane-germisara/">Termele romane Germisara</a> <span class="muted">· Orăștie</span></li>
+        <li><a href="/mostenire/biserica-strei/">Biserica „Adormirea Maicii Domnului” din Strei</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/mostenire/biserica-santamaria-orlea/">Biserica reformată din Sântămăria-Orlea</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/mostenire/castelul-nopcsa-sacel/">Castelul Nopcsa din Săcel</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/mostenire/cetatea-malaiesti/">Cetatea Mălăiești</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/mostenire/ulpia-traiana-sarmizegetusa/">Ulpia Traiana Sarmizegetusa</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/mostenire/cetatea-colt/">Cetatea Colț</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/mostenire/rotonda-geoagiu/">Rotonda din Geoagiu</a> <span class="muted">· Geoagiu</span></li>
+        <li><a href="/mostenire/biserica-bozes/">Biserica „Sfinții Arhangheli” din Bozeș</a> <span class="muted">· Geoagiu</span></li>
+        <li><a href="/mostenire/biserica-streisangeorgiu/">Biserica Sf. Gheorghe din Streisângeorgiu</a> <span class="muted">· Călan</span></li>
+        <li><a href="/mostenire/curtea-candestilor-rau-de-mori/">Curtea nobiliară a Cândeștilor</a> <span class="muted">· Râu de Mori</span></li>
+        <li><a href="/mostenire/biserica-ostrov/">Biserica „Pogorârea Sfântului Duh” din Ostrov</a> <span class="muted">· Râu de Mori</span></li>
+        <li><a href="/mostenire/biserica-pesteana/">Biserica medievală din Peșteana</a> <span class="muted">· Densuș</span></li>
+        <li><a href="/mostenire/bastionul-rosu-ilia/">Bastionul Roșu — Casa natală Gabriel Bethlen</a> <span class="muted">· Ilia</span></li>
+        <li><a href="/mostenire/biserica-de-lemn-bretea-mureseana/">Biserica de lemn din Bretea Mureșană</a> <span class="muted">· Ilia</span></li>
+        <li><a href="/mostenire/biserica-ponor/">Biserica „Pogorârea Sfântului Duh” din Ponor</a> <span class="muted">· Pui</span></li>
+        <li><a href="/mostenire/biserica-de-lemn-soimus/">Biserica de lemn din Șoimuș</a> <span class="muted">· Șoimuș</span></li>
+        <li><a href="/mostenire/biserica-de-lemn-radulesti/">Biserica de lemn din Rădulești</a> <span class="muted">· Dobra</span></li>
+        <li><a href="/mostenire/biserica-lapusnic/">Biserica „Cuvioasa Paraschiva” din Lăpușnic</a> <span class="muted">· Dobra</span></li>
+        <li><a href="/mostenire/biserica-de-lemn-ciungani/">Biserica de lemn din Ciungani</a> <span class="muted">· Vața de Jos</span></li>
+        <li><a href="/mostenire/biserica-de-lemn-birtin/">Biserica de lemn din Birtin</a> <span class="muted">· Vața de Jos</span></li>
+        <li><a href="/mostenire/castelul-kendeffy/">Castelul Kendeffy</a> <span class="muted">· Sântămăria-Orlea</span></li>
+        <li><a href="/mostenire/biserica-sanpetru/">Biserica „Sfântul Gheorghe” din Sânpetru</a> <span class="muted">· Sântămăria-Orlea</span></li>
+        <li><a href="/mostenire/biserica-trestia/">Biserica „Buna Vestire” din Trestia</a> <span class="muted">· Băița</span></li>
+        <li><a href="/mostenire/biserica-lesnic/">Biserica „Sfântul Nicolae” din Leșnic</a> <span class="muted">· Vețel</span></li>
+        <li><a href="/mostenire/castelul-gyulay-mintia/">Castelul Gyulay din Mintia</a> <span class="muted">· Vețel</span></li>
+        <li><a href="/mostenire/biserica-beriu/">Biserica „Adormirea Maicii Domnului” din Beriu</a> <span class="muted">· Beriu</span></li>
+        <li><a href="/mostenire/biserica-castau/">Biserica „Sfinții Arhangheli” din Căstău</a> <span class="muted">· Beriu</span></li>
+      </ul>
+    </section>
+    <section class="map-list" data-map-list="SITE_NATURE">
+      <h3>Natură (12)</h3>
+      <ul>
+        <li><a href="/natura/parcul-national-retezat/">Parcul Național Retezat</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/natura/pestera-bolii/">Peștera Bolii</a> <span class="muted">· Petrila</span></li>
+        <li><a href="/natura/parangul-mare/">Vârful Parângul Mare</a> <span class="muted">· Parâng</span></li>
+        <li><a href="/natura/padurea-bicolora-petrila/">Pădurea Bicoloră</a> <span class="muted">· Petrila</span></li>
+        <li><a href="/natura/lacul-cincis/">Lacul Cinciș</a> <span class="muted">· Hunedoara</span></li>
+        <li><a href="/natura/padurea-bejan/">Pădurea Bejan</a> <span class="muted">· Deva</span></li>
+        <li><a href="/natura/parcul-dendrologic-simeria/">Parcul Dendrologic Simeria</a> <span class="muted">· Simeria</span></li>
+        <li><a href="/natura/geoparcul-tara-hategului/">Geoparcul UNESCO Țara Hațegului</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/natura/lacul-gura-apelor/">Lacul Gura Apelor</a> <span class="muted">· Parcul Național Retezat</span></li>
+        <li><a href="/natura/pestera-cioclovina/">Peștera Cioclovina</a> <span class="muted">· Țara Hațegului</span></li>
+        <li><a href="/natura/pestera-zeicului/">Peștera Zeicului</a> <span class="muted">· Uricani</span></li>
+        <li><a href="/natura/lacul-valea-de-pesti/">Lacul Valea de Pești</a> <span class="muted">· Uricani</span></li>
+      </ul>
+    </section>
+    <section class="map-list" data-map-list="SITE_ACTIVITIES">
+      <h3>Turism activ (3)</h3>
+      <ul>
+        <li><a href="/turism-activ/traseu-pietrele-bucura-peleaga/">Traseu Cabana Pietrele – Lacul Bucura – Vf. Peleaga</a> <span class="muted">· Parcul Național Retezat</span></li>
+        <li><a href="/turism-activ/statiunea-geoagiu-bai/">Stațiunea Geoagiu-Băi</a> <span class="muted">· Orăștie</span></li>
+        <li><a href="/turism-activ/baile-vata-de-jos/">Băile Vața de Jos (Vața Băi)</a> <span class="muted">· Brad</span></li>
+      </ul>
+    </section>
+    <section class="map-list" data-map-list="SITE_BUSINESSES">
+      <h3>Afaceri (2)</h3>
+      <ul>
+        <li><a href="/afaceri/hotel-rusu-parang/">Hotel Rusu</a> <span class="muted">· Petroșani</span></li>
+        <li><a href="/afaceri/hotel-germisara-geoagiu-bai/">Hotel Germisara Resort &amp; SPA</a> <span class="muted">· Geoagiu</span></li>
+      </ul>
+    </section>
+<!-- /GEN:maplist -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__top">
+      <div>
+        <a class="brand" href="index.html" data-i18n="site.name">Hunedoara Live</a>
+        <div class="footer-tagline" data-i18n="footer.tagline">ghidul digital al județului Hunedoara</div>
+      </div>
+      <nav class="footer-nav">
+        <a href="destinatii.html" data-i18n="nav.destinatii">Destinații</a>
+        <a href="orase.html" data-i18n="nav.orase">Orașe și comune</a>
+        <a href="natura.html" data-i18n="nav.natura">Natură</a>
+        <a href="turism-activ.html" data-i18n="nav.turismActiv">Turism activ</a>
+        <a href="mostenire.html" data-i18n="nav.mostenire">Moștenire culturală</a>
+        <a href="afaceri.html" data-i18n="nav.afaceri">Afaceri</a>
+        <a href="stiri.html" data-i18n="nav.stiri">Știri</a>
+        <a href="utile.html" data-i18n="nav.utile">Utile</a>
+        <a href="itinerarii.html" data-i18n="nav.itinerarii">Itinerarii</a>
+        <a href="harta.html" data-i18n="nav.harta">Hartă</a>
+        <a href="calendar.html" data-i18n="nav.calendar">Calendar</a>
+        <a href="vreme.html" data-i18n="nav.vreme">Vreme și pârtii</a>
+        <a href="trimite-poza.html" data-i18n="nav.trimitePoza">Trimite o poză</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+    <div class="container site-footer__bottom">
+      <span class="footer-note" data-i18n="footer.note">Proiect independent, necomercial. Textele sunt originale; fotografiile au licență liberă sau provin de la afacerile prezentate.</span>
+      <a class="footer-email" href="mailto:hunedoaragohd@gmail.com">hunedoaragohd@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/search.js"></script>
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

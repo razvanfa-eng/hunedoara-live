@@ -183,6 +183,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii.html"/>
   </url>
   <url>
+    <loc>https://gohd.ro/harta.html</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/harta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/harta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/harta.html"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/harta.html</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/harta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/harta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/harta.html"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/destinatii/valea-jiului/</loc>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/destinatii/valea-jiului/"/>

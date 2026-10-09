@@ -443,6 +443,20 @@ function ldItinList(lang, url, title) {
     ]
   };
 }
+/* ---------- harta (harta.html): filtre + lista statică a locurilor cu coordonate ---------- */
+const MAP_GROUPS = [
+  ["SITE_TOWNS", "orase", "#0E7C86"], ["SITE_HERITAGE", "mostenire", "#B45309"], ["SITE_NATURE", "natura", "#15803D"],
+  ["SITE_ACTIVITIES", "turismActiv", "#1D4ED8"], ["SITE_BUSINESSES", "afaceri", "#BE185D"], ["SITE_DESTINATIONS", "destinatii", "#52525B"]
+];
+function fillMap(html, lang) {
+  const groups = MAP_GROUPS.map(([k, nav, color]) => ({ k, nav, color, items: RL.dataArray(k).filter((e) => e.coords && e.coords.length === 2) })).filter((g) => g.items.length);
+  const filters = groups.map((g) => '      <label class="map-chip"><input type="checkbox" checked data-map-group="' + g.k + '"><span class="map-dot" style="background:' + g.color + '"></span> ' +
+    esc(t("nav." + g.nav, lang)) + " (" + g.items.length + ")</label>\n").join("");
+  const list = groups.map((g) => '    <section class="map-list" data-map-list="' + g.k + '">\n      <h3>' + esc(t("nav." + g.nav, lang)) + " (" + g.items.length + ")</h3>\n      <ul>\n" +
+    g.items.map((e) => '        <li><a href="' + esc(RL.entryUrl(g.k, e.id, lang)) + '">' + esc(RL.entryName(e, lang)) + "</a>" + (e.area ? ' <span class="muted">· ' + esc(RL.areaLabel(e.area, lang)) + "</span>" : "") + "</li>\n").join("") +
+    "      </ul>\n    </section>\n").join("");
+  return fillGen(fillGen(html, "mapfilters", filters), "maplist", list);
+}
 const hasOwnDesc = (html) => /<meta name="description"/.test(withoutSeo(html));
 const TOP_PAGES = [
   { file: "index.html", title: (l) => t("page.title.home", l), desc: (l) => t("page.meta.home", l), image: DEFAULT_IMAGE, sitemap: "1.0", pair: true, canonical: true },
@@ -462,6 +476,7 @@ const TOP_PAGES = [
     desc: (l) => (l === "en" ? "Your photo has been sent to the Hunedoara Live team. Thank you!" : "Poza ta a fost trimisă echipei Hunedoara Live. Îți mulțumim!") },
   { file: "itinerarii.html", title: (l) => t("page.title.itinerarii", l), desc: (l) => t("page.meta.itinerarii", l), sitemap: "0.7", pair: true, canonical: true, fill: fillItinList, ld: ldItinList },
   { file: "itinerariu.html", title: (l) => t("page.title.itinerarii", l), desc: (l) => t("page.meta.itinerarii", l), noindex: true },
+  { file: "harta.html", title: (l) => t("page.title.harta", l), desc: (l) => t("page.meta.harta", l), sitemap: "0.6", pair: true, canonical: true, fill: fillMap },
   { file: "404.html", title: () => "Pagina nu există — " + SITE_NAME, desc: () => "Pagina căutată nu există pe Hunedoara Live.", noindex: true },
   // șabloanele de detaliu: folosite doar cu ?id= (fallback) — nu se indexează, fără pereche
   ...Object.keys(SECTIONS).map((k) => ({

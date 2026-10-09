@@ -491,3 +491,16 @@ button.badge-app:hover { border-color: var(--accent); color: var(--accent); }
 .itin-note { font-size: 13px; margin-top: 20px; }
 .itin-grid { padding-top: 24px; }
 .itin-day ul { padding-left: 20px; }
+
+/* ---------- Harta ---------- */
+.map-filters { border: 0; margin: 16px 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 10px; }
+.map-filters legend { font-size: 13px; font-weight: 600; margin-bottom: 8px; padding: 0; }
+.map-chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; font-size: 13px; background: var(--surface); cursor: pointer; }
+.map-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.map-count { font-size: 13px; color: var(--muted); margin: 4px 0 8px; min-height: 20px; }
+.map-box { height: 520px; max-height: 70vh; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--surface-2); }
+.map-attrib { font-size: 12px; margin: 8px 0 0; }
+.map-list ul { columns: 2 260px; padding-left: 18px; font-size: 14px; }
+.map-list h3 { font-size: 15px; margin: 20px 0 6px; }
+.map-box .leaflet-popup-content { font-family: var(--sans); font-size: 13px; line-height: 1.5; }
+.map-box .leaflet-popup-content a { color: #0A616A; font-weight: 600; }

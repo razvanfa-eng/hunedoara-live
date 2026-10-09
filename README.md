@@ -31,6 +31,15 @@ la intrări din `js/data.js`; numele, descrierea, categoria, durata/lungimea (fa
 (șablonul `itinerariu.html`), JSON-LD `TouristTrip` + `ItemList` și intrările din sitemap; build-ul se oprește dacă un id nu există.
 Distanțele între opriri nu sunt trecute (nu există în date). Linkuri: footer-ul tuturor paginilor.
 
+## Harta (harta.html, + EN)
+
+Pagină separată (NU pe prima pagină): toate intrările din `js/data.js` care au `coords`, cu filtre pe secțiune și popup spre pagina
+intrării (`js/map.js`). **Leaflet 1.9.4 e self-hosted** în `vendor/leaflet/` (BSD-2, licența inclusă), fără script extern; singura
+resursă externă este tile-urile `https://tile.openstreetmap.org`, adăugate în CSP la `img-src` (atribuire „© OpenStreetMap contributors”
+în hartă și sub ea; respectă politica de utilizare a tile-urilor OSM — trafic mic, referer trimis). Lista locurilor de sub hartă e
+generată static de `build-pages.mjs` (zona `GEN:maplist`) și funcționează și fără JavaScript. Coordonate noi se adaugă doar din
+surse verificabile (Wikidata/OSM/Commons) direct pe intrare, în `js/data.js`, apoi se rulează `node scripts/build-pages.mjs`.
+
 ## Secțiuni
 
 Structură **hibridă**: **Destinații**, **Orașe**, **Natură**, **Turism activ**,

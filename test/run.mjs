@@ -670,5 +670,38 @@ function load(file, query = "", urlPath = file, pref = null) {
   ok(readF("index.html").includes('href="itinerarii.html"') && readF("en/index.html").includes('href="/en/itinerarii.html"'), "itinerarii: link în footer (RO + EN)");
 }
 
+/* -------- Harta (harta.html): puncte, filtre, atribuire, CSP -------- */
+{
+  const readF = (f) => fs.existsSync(path.join(ROOT, f)) ? fs.readFileSync(path.join(ROOT, f), "utf8") : "";
+  const withCoords = SECTION_KEYS.flatMap((k) => DATA[k].filter((e) => e.coords).map((e) => ({ k, e })));
+  ok(withCoords.length >= 24, "harta: " + withCoords.length + " intrări cu coordonate în data.js (minim 24)");
+  const badCoords = withCoords.filter(({ e }) => !Array.isArray(e.coords) || e.coords.length !== 2 || !(e.coords[0] > 45.2 && e.coords[0] < 46.2 && e.coords[1] > 22.2 && e.coords[1] < 23.8));
+  ok(badCoords.length === 0, "harta: toate coordonatele sunt în județul Hunedoara (bbox 45.2–46.2 N, 22.2–23.8 E)" + (badCoords.length ? " — " + badCoords.map(({ e }) => e.id).join(", ") : ""));
+  const dups = withCoords.filter(({ e }, i) => withCoords.findIndex((o) => o.e.id !== e.id && o.k === withCoords[i].k && o.e.coords.join() === e.coords.join()) >= 0);
+  ok(dups.length === 0, "harta: nicio pereche de intrări din aceeași secțiune cu coordonate identice" + (dups.length ? " — " + dups.map(({ e }) => e.id).join(", ") : ""));
+  for (const lang of ["ro", "en"]) {
+    const pre = lang === "en" ? "en/" : "";
+    const h = readF(pre + "harta.html");
+    const d = new JSDOM(h).window.document;
+    ok(d.querySelectorAll("[data-map-list] li a").length === withCoords.length, "harta (" + lang + "): lista statică are cele " + withCoords.length + " locuri");
+    const chips = [...d.querySelectorAll("[data-map-group]")];
+    const sumChips = chips.reduce((n, c) => n + Number((c.parentNode.textContent.match(/\((\d+)\)/) || [])[1]), 0);
+    ok(chips.length >= 2 && sumChips === withCoords.length, "harta (" + lang + "): filtre pe categorii (" + chips.length + "), numărătorile însumează " + withCoords.length);
+    ok(!!d.getElementById("map") && /OpenStreetMap contributors/.test(h), "harta (" + lang + "): container + atribuire © OpenStreetMap contributors");
+    const hrefs = [...d.querySelectorAll("[data-map-list] li a")].map((a) => a.getAttribute("href"));
+    ok(hrefs.every((u) => (lang === "en" ? u.startsWith("/en/") : !u.startsWith("/en/")) && fs.existsSync(path.join(ROOT, u.slice(1), "index.html"))), "harta (" + lang + "): linkurile din listă duc la pagini existente în limba paginii");
+    const scripts = [...d.querySelectorAll("script[src]")].map((s) => s.getAttribute("src"));
+    ok(scripts.every((s) => !/^https?:/.test(s)) && scripts.some((s) => /vendor\/leaflet\/leaflet\.js$/.test(s)), "harta (" + lang + "): Leaflet self-hosted, niciun script extern");
+  }
+  ok(["leaflet.js", "leaflet.css", "LICENSE"].every((f) => fs.existsSync(path.join(ROOT, "vendor/leaflet", f))), "harta: vendor/leaflet (js, css, licență) există");
+  const toml = readF("netlify.toml");
+  const csp = (toml.match(/Content-Security-Policy = "([^"]+)"/) || [])[1] || "";
+  ok(/img-src[^;]*https:\/\/tile\.openstreetmap\.org/.test(csp) && !/script-src[^;]*openstreetmap/.test(csp), "harta: CSP permite doar tile-urile OSM la img-src (nu și scripturi)");
+  ok(!/<link rel="stylesheet" href="https?:\/\/(?!fonts\.googleapis)/.test(readF("harta.html")), "harta: fără CSS extern în afară de Google Fonts");
+  ok(!readF("index.html").includes("harta.html#") && !/id="map"|leaflet/i.test(readF("index.html").replace(/href="harta\.html"[^>]*>/g, "")), "harta: NU există hartă pe prima pagină (doar link în footer)");
+  const w = await load("harta.html");
+  ok(!w.__err && w.RL_MAP && w.RL_MAP.points().length === withCoords.length, "harta: js/map.js, fără erori, produce " + withCoords.length + " puncte" + (w.__err ? " — " + w.__err : ""));
+}
+
 console.log(`\n${pass} pass, ${fail} fail`);
 process.exit(fail ? 1 : 0);
