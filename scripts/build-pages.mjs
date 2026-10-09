@@ -707,6 +707,17 @@ for (const key of Object.keys(SECTIONS)) {
         extra: key === "SITE_NEWS" && entry.date ? `<meta property="article:published_time" content="${esc(entry.date)}">` : "",
         ld: ldForEntry(key, entry, url, desc, hasPhoto ? SITE + "/" + img : null, lang, out.docTitle)
       }));
+      // poza principală (LCP): preload cu prioritate mare; pe aceste pagini scoatem preload-ul fonturilor (190 KB), ca să nu concureze
+      // cu poza pentru bandă (măsurat: LCP mobil cu ~1 s mai bun); fonturile se încarcă oricum când se desenează textul
+      const hero = (out.gallery.match(/^<img ([^>]*)>/) || [])[1] || "";
+      const heroAttr = (n) => (hero.match(new RegExp("\\b" + n + '="([^"]*)"')) || [])[1];
+      if (hasPhoto && heroAttr("srcset")) {
+        const tag = '  <link rel="preload" as="image" href="' + heroAttr("srcset").split(" ")[0] + '" imagesrcset="' + heroAttr("srcset") + '" imagesizes="' + heroAttr("sizes") + '" fetchpriority="high">\n';
+        const fontPre = /  <link rel="preload" href="\/fonts\/[a-z-]+\.woff2" as="font" type="font\/woff2" crossorigin>\n/g;
+        if (!fontPre.test(html)) throw new Error("Șablonul nu are preload pentru fonturi");
+        html = html.replace(fontPre, "");
+        html = html.replace('  <link rel="stylesheet" href="/css/style.css">\n', tag + '  <link rel="stylesheet" href="/css/style.css">\n');
+      }
       html = html.replace('<div id="detail-root">', '<div id="detail-root" data-prerendered="' + lang + '">');
       html = html.replace(/<a id="detail-back" class="detail-back" href="[^"]*">[^<]*<\/a>/,
         '<a id="detail-back" class="detail-back" href="' + esc(out.backHref) + '">' + esc(out.backLabel) + "</a>");
