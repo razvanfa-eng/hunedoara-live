@@ -28,6 +28,7 @@
     { key: "turismActiv", page: "turism-activ.html", img: "images/partii-parang.jpg" },
     { key: "mostenire", page: "mostenire.html", img: "images/prislop-manastire.jpg" },
     { key: "afaceri", page: "afaceri.html", img: "images/pensiunea-retezat.jpg" },
+    { key: "vreme", page: "vreme.html" },
     { key: "stiri", page: "stiri.html", img: "images/home-tile-stiri.jpg" },
     { key: "contact", page: "contact.html" }
   ];
