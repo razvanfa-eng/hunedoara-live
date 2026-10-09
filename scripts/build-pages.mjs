@@ -62,7 +62,7 @@ await buildImages({ quiet: true });
 const ctx = { console, document: { addEventListener() {} } };
 ctx.window = ctx;
 vm.createContext(ctx);
-for (const f of ["js/data.js", "js/config.js", "js/i18n.js", "js/images.js", "js/common.js", "js/detail.js"]) {
+for (const f of ["js/data.js", "js/config.js", "js/i18n.js", "js/images.js", "js/common.js", "js/detail.js", "js/itinerarii-data.js"]) {
   vm.runInContext(read(f), ctx, { filename: f });
 }
 const { RL, I18N, RL_DETAIL } = ctx;
@@ -330,6 +330,119 @@ function photoTargets(html, lang) {
   }).join("");
   return fillGen(html, "targets", out);
 }
+/* ---------- 2b. itinerarii (js/itinerarii-data.js) ---------- */
+const ITIN = ctx.SITE_ITINERARIES || [];
+const ITIN_DIR = "itinerarii";
+const itinUrl = (it, lang) => SITE + langPath("/" + ITIN_DIR + "/" + it.id + "/", lang);
+const fillN = (s, n) => s.replace("{n}", n);
+function itinStop(stop, lang) {
+  const entry = RL.entryById(stop.k, stop.id);
+  if (!entry) throw new Error("Itinerariu: " + stop.k + "/" + stop.id + " nu există în js/data.js");
+  const ro = RL.loc(entry, "ro"), l = RL.loc(entry, lang);
+  // durata / lungimea vine din faptele intrării (RO și EN sunt aliniate pe poziție), nu e scrisă aici
+  let i = (ro.facts || []).findIndex((f) => /^Durată/.test(f.label));
+  if (i < 0) i = (ro.facts || []).findIndex((f) => /^Lungime/.test(f.label));
+  return { stop, entry, l, name: RL.entryName(entry, lang), url: RL.entryUrl(stop.k, entry.id, lang), fact: i >= 0 && l.facts ? l.facts[i] : null };
+}
+const itinStopCount = (it) => it.days.reduce((n, d) => n + d.stops.length, 0);
+function itinMeta(it, lang) {
+  const days = it.days.length === 1 ? t("itin.count.one", lang) : fillN(t("itin.count.many", lang), it.days.length);
+  return days + " · " + fillN(t("itin.stops", lang), itinStopCount(it));
+}
+function itinFirstPhoto(it) {
+  for (const d of it.days) for (const s of d.stops) {
+    const e = RL.entryById(s.k, s.id);
+    if (e && e.images && e.images[0] && RL.imgInfo(e.images[0])) return e.images[0];
+  }
+  return null;
+}
+function itinCard(it, lang) {
+  const l = it[lang];
+  const img = itinFirstPhoto(it);
+  return '      <a class="card" href="' + esc(langPath("/" + ITIN_DIR + "/" + it.id + "/", lang)) + '">\n' +
+    '        <div class="card__media">' + RL.imgHtml(img, { sizes: "card", alt: it.name[lang] }) + "</div>\n" +
+    '        <div class="card__body">\n          <span class="card__cat">' + esc(itinMeta(it, lang)) + "</span>\n" +
+    '          <h2 class="card__title">' + esc(it.name[lang]) + "</h2>\n" +
+    '          <p class="card__tagline">' + esc(l.tagline) + "</p>\n        </div>\n      </a>\n";
+}
+function fillItinList(html, lang) {
+  return fillGen(html, "itinlist", ITIN.map((it) => itinCard(it, lang)).join(""));
+}
+function itinBody(it, lang) {
+  const l = it[lang], tt = (k) => t(k, lang);
+  const days = it.days.map((d) => {
+    const stops = d.stops.map((s) => {
+      const x = itinStop(s, lang);
+      return '        <li class="itin-stop"><a class="itin-stop__name" href="' + esc(x.url) + '">' + esc(x.name) + "</a>" +
+        (s.optional ? ' <span class="badge">' + esc(tt("itin.optional")) + "</span>" : "") +
+        ' <span class="itin-stop__cat">' + esc(RL.categoryLabel(x.entry, lang) + (x.entry.area ? " · " + RL.areaLabel(x.entry.area, lang) : "")) + "</span>" +
+        "<p>" + esc(x.l.tagline || "") + "</p>" +
+        (s.note ? '<p class="itin-stop__note">' + esc(s.note[lang]) + "</p>" : "") +
+        (x.fact ? '<p class="itin-stop__fact"><strong>' + esc(x.fact.label) + ":</strong> " + esc(x.fact.value) + "</p>" : "") +
+        "</li>";
+    }).join("\n");
+    return '    <section class="itin-day">\n      <h2>' + esc(d.title[lang]) + '</h2>\n      <ol class="itin-stops">\n' + stops + "\n      </ol>\n    </section>\n";
+  }).join("");
+  const eat = (it.eat || []).map((id) => {
+    const e = RL.entryById("SITE_BUSINESSES", id);
+    if (!e) throw new Error("Itinerariu: afacerea " + id + " nu există în js/data.js");
+    return '<li><a href="' + esc(RL.entryUrl("SITE_BUSINESSES", id, lang)) + '">' + esc(RL.entryName(e, lang)) + "</a> <span class=\"itin-stop__cat\">" + esc(RL.categoryLabel(e, lang) + " · " + RL.areaLabel(e.area, lang)) + "</span></li>";
+  }).join("");
+  const others = ITIN.filter((o) => o.id !== it.id).map((o) => '<li><a href="' + esc(langPath("/" + ITIN_DIR + "/" + o.id + "/", lang)) + '">' + esc(o.name[lang]) + "</a></li>").join("");
+  return '    <article class="itin" data-itinerary="' + esc(it.id) + '">\n' +
+    "    <h1>" + esc(it.name[lang]) + "</h1>\n" +
+    '    <p class="detail-tagline">' + esc(l.tagline) + "</p>\n" +
+    '    <p class="itin-meta">' + esc(itinMeta(it, lang)) + "</p>\n" +
+    l.intro.map((p) => "    <p>" + esc(p) + "</p>\n").join("") +
+    days +
+    (eat ? '    <section class="itin-day">\n      <h2>' + esc(tt("itin.eat")) + "</h2>\n      <ul>" + eat + "</ul>\n    </section>\n" : "") +
+    (it.mountain ? '    <p class="itin-warn">' + esc(tt("itin.mountain")) + "</p>\n" : "") +
+    '    <p class="muted itin-note">' + esc(tt("itin.disclaimer")) + "</p>\n" +
+    '    <section class="itin-day">\n      <h2>' + esc(tt("itin.related")) + "</h2>\n      <ul>" + others + "</ul>\n    </section>\n    </article>";
+}
+function ldItinerary(it, lang, url, desc) {
+  const stops = it.days.flatMap((d) => d.stops.map((s) => itinStop(s, lang)));
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TouristTrip", "@id": url + "#main", name: it.name[lang], description: desc, url, inLanguage: lang,
+        itinerary: {
+          "@type": "ItemList",
+          itemListElement: stops.map((x, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "TouristAttraction", name: x.name, url: SITE + x.url } }))
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: HOME_NAME[lang], item: SITE + langPath("/", lang) },
+          { "@type": "ListItem", position: 2, name: t("nav.itinerarii", lang), item: SITE + langPath("/itinerarii.html", lang) },
+          { "@type": "ListItem", position: 3, name: it.name[lang], item: url }
+        ]
+      },
+      ldWebPage(url, it.name[lang] + " — " + SITE_NAME, lang, url + "#main")
+    ]
+  };
+}
+function ldItinList(lang, url, title) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ItemList", "@id": url + "#list", name: t("nav.itinerarii", lang),
+        itemListElement: ITIN.map((it, i) => ({ "@type": "ListItem", position: i + 1, url: itinUrl(it, lang), name: it.name[lang] }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: HOME_NAME[lang], item: SITE + langPath("/", lang) },
+          { "@type": "ListItem", position: 2, name: t("nav.itinerarii", lang), item: url }
+        ]
+      },
+      ldWebPage(url, title, lang, url + "#list")
+    ]
+  };
+}
 const hasOwnDesc = (html) => /<meta name="description"/.test(withoutSeo(html));
 const TOP_PAGES = [
   { file: "index.html", title: (l) => t("page.title.home", l), desc: (l) => t("page.meta.home", l), image: DEFAULT_IMAGE, sitemap: "1.0", pair: true, canonical: true },
@@ -347,6 +460,8 @@ const TOP_PAGES = [
   { file: "trimite-poza.html", title: (l) => t("page.title.foto", l), desc: (l) => t("page.meta.foto", l), sitemap: "0.4", pair: true, canonical: true, fill: photoTargets },
   { file: "multumim-poza.html", title: (l) => t("page.title.thanksPhoto", l), pair: true,
     desc: (l) => (l === "en" ? "Your photo has been sent to the Hunedoara Live team. Thank you!" : "Poza ta a fost trimisă echipei Hunedoara Live. Îți mulțumim!") },
+  { file: "itinerarii.html", title: (l) => t("page.title.itinerarii", l), desc: (l) => t("page.meta.itinerarii", l), sitemap: "0.7", pair: true, canonical: true, fill: fillItinList, ld: ldItinList },
+  { file: "itinerariu.html", title: (l) => t("page.title.itinerarii", l), desc: (l) => t("page.meta.itinerarii", l), noindex: true },
   { file: "404.html", title: () => "Pagina nu există — " + SITE_NAME, desc: () => "Pagina căutată nu există pe Hunedoara Live.", noindex: true },
   // șabloanele de detaliu: folosite doar cu ?id= (fallback) — nu se indexează, fără pereche
   ...Object.keys(SECTIONS).map((k) => ({
@@ -367,7 +482,7 @@ for (const p of TOP_PAGES) {
   const seo = (lang, withDesc) => seoBlock({
     lang, title: p.title(lang), desc: p.desc(lang), url: p.canonical ? urls[lang] : null, image,
     noindex: p.noindex, withDesc, alternates,
-    ld: p.file === "index.html" ? ldHome(lang, urls[lang], p.title(lang)) : null
+    ld: p.file === "index.html" ? ldHome(lang, urls[lang], p.title(lang)) : p.ld ? p.ld(lang, urls[lang], p.title(lang)) : null
   });
 
   let html = read(p.file);
@@ -482,6 +597,45 @@ for (const key of Object.keys(SECTIONS)) {
         console.log("  șters (intrare dispărută): /" + secRel + "/" + d + "/");
         changed++;
       }
+    }
+  }
+}
+
+/* ---------- 2b. paginile itinerariilor (RO + EN) ---------- */
+{
+  const template = absolutize(read("itinerariu.html"));
+  const genDirs = new Set();
+  for (const it of ITIN) {
+    const roPath = "/" + ITIN_DIR + "/" + it.id + "/";
+    const alternates = { ro: SITE + roPath, en: SITE + langPath(roPath, "en") };
+    const firstPhoto = itinFirstPhoto(it);
+    for (const lang of LANGS) {
+      const url = alternates[lang];
+      const docTitle = it.name[lang] + " — " + SITE_NAME;
+      const desc = clip(it[lang].tagline);
+      let html = template;
+      html = html.replace("<!DOCTYPE html>\n", "<!DOCTYPE html>\n" + GEN_MARK + " din itinerariu.html + js/itinerarii-data.js" + (lang === "en" ? " (versiunea EN)" : "") + " — nu edita manual -->\n");
+      html = html.replace(/<title[^>]*>[^<]*<\/title>/, "<title>" + esc(docTitle) + "</title>");
+      html = setSeo(html, seoBlock({
+        lang, title: docTitle, desc, url, alternates, image: ogImage(firstPhoto), imageAlt: it.name[lang], ld: ldItinerary(it, lang, url, desc)
+      }));
+      html = fillGen(html, "itin", itinBody(it, lang) + "\n");
+      html = lang === "en" ? toEnglish(html, roPath) : markPaired(html, "ro", langPath(roPath, "en"));
+      const dir = (lang === "en" ? EN_DIR + "/" : "") + ITIN_DIR + "/" + it.id;
+      if (write(dir + "/index.html", html)) changed++;
+      genDirs.add(dir);
+      sitemapUrls.push({ loc: url, priority: "0.6", alt: alternates, src: ["js/itinerarii-data.js", "js/data.js"] });
+      pages++;
+      if (lang === "en") enPages++;
+    }
+  }
+  // itinerarii șterse din js/itinerarii-data.js -> ștergem și paginile generate
+  for (const base of ["", EN_DIR + "/"]) {
+    const root = path.join(ROOT, base + ITIN_DIR);
+    for (const d of fs.existsSync(root) ? fs.readdirSync(root) : []) {
+      const idx = path.join(root, d, "index.html");
+      if (genDirs.has(base + ITIN_DIR + "/" + d) || !fs.existsSync(idx)) continue;
+      if (fs.readFileSync(idx, "utf8").includes(GEN_MARK)) { fs.rmSync(path.join(root, d), { recursive: true }); changed++; }
     }
   }
 }

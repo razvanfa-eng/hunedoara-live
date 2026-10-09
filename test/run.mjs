@@ -16,6 +16,7 @@ const DATA = (() => {
   const ctx = { window: {} };
   vm.createContext(ctx);
   vm.runInContext(fs.readFileSync(path.join(ROOT, "js/data.js"), "utf8"), ctx);
+  vm.runInContext(fs.readFileSync(path.join(ROOT, "js/itinerarii-data.js"), "utf8"), ctx);
   return ctx.window;
 })();
 const SECTION_KEYS = ["SITE_DESTINATIONS", "SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_TOWNS", "SITE_NEWS", "SITE_BUSINESSES"];
@@ -290,7 +291,7 @@ function load(file, query = "", urlPath = file, pref = null) {
   const locs = [...doc.getElementsByTagName("loc")].map((n) => n.textContent);
   const toFile = (u) => { const p = u.replace("https://gohd.ro/", ""); return p === "" ? "index.html" : p.endsWith("/") ? p + "index.html" : p; };
   const deadLocs = locs.filter((u) => !fs.existsSync(path.join(ROOT, toFile(u))));
-  ok(locs.length === 2 * (all.length + TOP_FILES.length) && deadLocs.length === 0, "sitemap.xml: " + locs.length + " URL-uri (RO + EN), toate cu fișier real" + (deadLocs.length ? " — lipsă: " + deadLocs.join(", ") : ""));
+  ok(locs.length === 2 * (all.length + TOP_FILES.length + DATA.SITE_ITINERARIES.length) && deadLocs.length === 0, "sitemap.xml: " + locs.length + " URL-uri (RO + EN), toate cu fișier real" + (deadLocs.length ? " — lipsă: " + deadLocs.join(", ") : ""));
   ok(!locs.some((u) => /multumim|404|oras\.html|destinatie\.html/.test(u)), "sitemap.xml: fără multumim/404/șabloane");
   ok(/Sitemap: https:\/\/gohd\.ro\/sitemap\.xml/.test(fs.readFileSync(path.join(ROOT, "robots.txt"), "utf8")), "robots.txt: indică sitemap.xml");
 }
@@ -307,8 +308,10 @@ function load(file, query = "", urlPath = file, pref = null) {
   const entryPairs = Object.entries(DIRS).flatMap(([k, dir]) => DATA[k].map((e) => ({ k, e, ro: "/" + dir + "/" + e.id + "/" })));
   const topPairs = TOP_FILES
     .map((f) => ({ ro: f === "index.html" ? "/" : "/" + f, roFile: f, enFile: "en/" + f }));
+  const itinPairs = DATA.SITE_ITINERARIES.map((it) => ({ ro: "/itinerarii/" + it.id + "/", roFile: "itinerarii/" + it.id + "/index.html", enFile: "en/itinerarii/" + it.id + "/index.html" }));
   const pairs = [
     ...topPairs,
+    ...itinPairs,
     ...entryPairs.map((x) => ({ ro: x.ro, roFile: x.ro.slice(1) + "index.html", enFile: "en" + x.ro + "index.html", x }))
   ].map((p) => ({ ...p, en: "/en" + p.ro }));
 
@@ -618,6 +621,53 @@ function load(file, query = "", urlPath = file, pref = null) {
   }
   const toml = fs.readFileSync(path.join(ROOT, "netlify.toml"), "utf8");
   ok(/form-action 'self'/.test(toml), "trimite-poza: CSP form-action 'self' (acțiunea formularului e pe același domeniu)");
+}
+
+/* -------- Itinerarii: date, pagini RO+EN, JSON-LD, linkuri -------- */
+{
+  const ITIN = DATA.SITE_ITINERARIES;
+  const htmlEscape = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  const readF = (f) => fs.existsSync(path.join(ROOT, f)) ? fs.readFileSync(path.join(ROOT, f), "utf8") : "";
+  const DIRS = { SITE_DESTINATIONS: "destinatii", SITE_TOWNS: "orase", SITE_NATURE: "natura", SITE_ACTIVITIES: "turism-activ", SITE_HERITAGE: "mostenire", SITE_NEWS: "stiri", SITE_BUSINESSES: "afaceri" };
+  ok(Array.isArray(ITIN) && ITIN.length >= 4, "itinerarii: " + (ITIN || []).length + " itinerarii definite");
+  const badRef = ITIN.flatMap((it) => [...it.days.flatMap((d) => d.stops.map((s) => [s.k, s.id])), ...(it.eat || []).map((id) => ["SITE_BUSINESSES", id])])
+    .filter(([k, id]) => !DATA[k] || !byId(k, id));
+  ok(badRef.length === 0, "itinerarii: toate opririle trimit la intrări existente în data.js" + (badRef.length ? " — lipsesc: " + badRef.map((x) => x.join("/")).join(", ") : ""));
+  const badTxt = ITIN.filter((it) => !it.name.ro || !it.name.en || !it.ro.tagline || !it.en.tagline || it.ro.intro.length !== it.en.intro.length ||
+    it.days.some((d) => !d.title.ro || !d.title.en || d.stops.some((s) => s.note && (!s.note.ro || !s.note.en)))).map((it) => it.id);
+  ok(badTxt.length === 0, "itinerarii: texte RO+EN complete" + (badTxt.length ? " — " + badTxt.join(", ") : ""));
+  ok(ITIN.every((it) => /^[a-z0-9-]+$/.test(it.id) && it.days.length >= 1 && it.days.every((d) => d.stops.length >= 1)), "itinerarii: id-uri valide, fiecare zi are opriri");
+
+  for (const lang of ["ro", "en"]) {
+    const pre = lang === "en" ? "en/" : "", base = lang === "en" ? "/en" : "";
+    const list = readF(pre + "itinerarii.html");
+    ok(list.includes('<html lang="' + lang + '"') && (list.match(/class="card" href="[^"]+"/g) || []).length === ITIN.length, "itinerarii (" + lang + "): listarea are câte un card pentru fiecare itinerariu (" + ITIN.length + ")");
+    for (const it of ITIN) {
+      const file = pre + "itinerarii/" + it.id + "/index.html", h = readF(file);
+      const d = new JSDOM(h).window.document;
+      const stops = d.querySelectorAll(".itin-stop");
+      const expected = it.days.reduce((n, day) => n + day.stops.length, 0);
+      ok(stops.length === expected, "itinerarii (" + lang + ") " + it.id + ": " + expected + " opriri randate");
+      const links = [...d.querySelectorAll(".itin-stop__name, .itin-day ul a")].map((a) => a.getAttribute("href"));
+      const dead = links.filter((u) => { const p = u.replace(/^\//, ""); return !fs.existsSync(path.join(ROOT, p, "index.html")) && !fs.existsSync(path.join(ROOT, p)); });
+      ok(links.length > 0 && dead.length === 0 && links.every((u) => lang === "en" ? u.startsWith("/en/") : !u.startsWith("/en/")), "itinerarii (" + lang + ") " + it.id + ": linkurile spre intrări există și rămân în limba paginii" + (dead.length ? " — lipsă: " + dead.join(", ") : ""));
+      ok(h.includes('<link rel="canonical" href="https://gohd.ro' + base + "/itinerarii/" + it.id + '/">') && h.includes('hreflang="x-default" href="https://gohd.ro/itinerarii/' + it.id + '/"'), "itinerarii (" + lang + ") " + it.id + ": canonical + hreflang");
+      // durata / lungimea vine din faptele intrării, nu e inventată
+      for (const day of it.days) for (const s of day.stops) {
+        const e = byId(s.k, s.id), i = e.ro.facts.findIndex((f) => /^Durată/.test(f.label)) >= 0 ? e.ro.facts.findIndex((f) => /^Durată/.test(f.label)) : e.ro.facts.findIndex((f) => /^Lungime/.test(f.label));
+        if (i >= 0) ok(h.includes(htmlEscape((e[lang].facts[i]).value)), "itinerarii (" + lang + ") " + it.id + "/" + s.id + ": durata/lungimea provine din fapte");
+      }
+      const ld = [...d.querySelectorAll('script[type="application/ld+json"]')].map((s) => JSON.parse(s.textContent));
+      const trip = ld.flatMap((x) => x["@graph"] || [x]).find((x) => x["@type"] === "TouristTrip");
+      ok(trip && trip.itinerary["@type"] === "ItemList" && trip.itinerary.itemListElement.length === expected &&
+        trip.itinerary.itemListElement.every((li, i) => li.position === i + 1 && li.item.name && /^https:\/\/gohd\.ro\//.test(li.item.url)), "itinerarii (" + lang + ") " + it.id + ": JSON-LD TouristTrip + ItemList cu " + expected + " elemente");
+    }
+    const ldl = [...new JSDOM(list).window.document.querySelectorAll('script[type="application/ld+json"]')].map((s) => JSON.parse(s.textContent)).flatMap((x) => x["@graph"] || [x]);
+    ok(ldl.some((x) => x["@type"] === "ItemList" && x.itemListElement.length === ITIN.length), "itinerarii (" + lang + "): JSON-LD ItemList pe listare");
+  }
+  const sm = readF("sitemap.xml");
+  ok(ITIN.every((it) => sm.includes("<loc>https://gohd.ro/itinerarii/" + it.id + "/</loc>") && sm.includes("<loc>https://gohd.ro/en/itinerarii/" + it.id + "/</loc>")) && sm.includes("<loc>https://gohd.ro/itinerarii.html</loc>") && sm.includes("<loc>https://gohd.ro/en/itinerarii.html</loc>"), "itinerarii: în sitemap (RO + EN)");
+  ok(readF("index.html").includes('href="itinerarii.html"') && readF("en/index.html").includes('href="/en/itinerarii.html"'), "itinerarii: link în footer (RO + EN)");
 }
 
 console.log(`\n${pass} pass, ${fail} fail`);

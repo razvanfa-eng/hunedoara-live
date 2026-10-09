@@ -169,6 +169,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/trimite-poza.html"/>
   </url>
   <url>
+    <loc>https://gohd.ro/itinerarii.html</loc>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii.html"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/itinerarii.html</loc>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii.html"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/destinatii/valea-jiului/</loc>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/destinatii/valea-jiului/"/>
@@ -2797,5 +2811,61 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/afaceri/pensiunea-sarmis-sarmizegetusa/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/afaceri/pensiunea-sarmis-sarmizegetusa/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/afaceri/pensiunea-sarmis-sarmizegetusa/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/itinerarii/weekend-in-valea-jiului/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/weekend-in-valea-jiului/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/weekend-in-valea-jiului/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/weekend-in-valea-jiului/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/itinerarii/weekend-in-valea-jiului/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/weekend-in-valea-jiului/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/weekend-in-valea-jiului/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/weekend-in-valea-jiului/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/o-zi-la-hunedoara-deva/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/itinerarii/o-zi-la-hunedoara-deva/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/o-zi-la-hunedoara-deva/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/itinerarii/pe-urmele-dacilor/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/pe-urmele-dacilor/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/pe-urmele-dacilor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/pe-urmele-dacilor/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/itinerarii/pe-urmele-dacilor/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/pe-urmele-dacilor/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/pe-urmele-dacilor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/pe-urmele-dacilor/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/itinerarii/retezat-in-2-zile/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/retezat-in-2-zile/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/retezat-in-2-zile/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/retezat-in-2-zile/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/itinerarii/retezat-in-2-zile/</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/retezat-in-2-zile/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/retezat-in-2-zile/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/retezat-in-2-zile/"/>
   </url>
 </urlset>

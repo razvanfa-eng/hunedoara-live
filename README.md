@@ -23,6 +23,14 @@ honeypot `bot-field`. Linkuri spre formular: footer (toate paginile), pagina Cre
 (link în e-mail și în dashboard). Limita Netlify: 8 MB per trimitere pe planul gratuit; spam-ul marcat se vede în tab-ul *Spam*.
 Poza acceptată se pune în `images/`, se adaugă `photoCredit` pe intrare (autor, licență, sursă) și se rulează `node scripts/build-pages.mjs`.
 
+## Itinerarii
+
+`js/itinerarii-data.js` (`window.SITE_ITINERARIES`) definește itinerariile (zile + opriri). Opririle sunt doar **referințe** (secțiune + id)
+la intrări din `js/data.js`; numele, descrierea, categoria, durata/lungimea (faptele „Durată”/„Lungime”) și linkul vin din intrare.
+`build-pages.mjs` generează `itinerarii.html` (listarea, zona `GEN:itinlist`), `/itinerarii/<id>/` și `/en/itinerarii/<id>/`
+(șablonul `itinerariu.html`), JSON-LD `TouristTrip` + `ItemList` și intrările din sitemap; build-ul se oprește dacă un id nu există.
+Distanțele între opriri nu sunt trecute (nu există în date). Linkuri: footer-ul tuturor paginilor.
+
 ## Secțiuni
 
 Structură **hibridă**: **Destinații**, **Orașe**, **Natură**, **Turism activ**,
