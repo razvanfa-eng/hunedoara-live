@@ -33,6 +33,7 @@ import fs from "fs";
 import path from "path";
 import vm from "vm";
 import { fileURLToPath } from "url";
+import { execFileSync } from "child_process";
 import { buildImages, OG_W, OG_H } from "./build-images.mjs";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -55,6 +56,22 @@ function write(f, text) {
   return prev !== text;
 }
 
+/* ---------- data modificării unui fișier (pentru sitemap lastmod, .ics) ----------
+ * Ziua ultimului commit care a atins fișierele; dacă fișierele au modificări necomise (sau
+ * nu sunt în git), ziua modificării pe disc. Nu e „data de azi” pentru toate paginile. */
+function fileDay(rel) {
+  const p = path.join(ROOT, rel);
+  if (!fs.existsSync(p)) return null;
+  const mtime = fs.statSync(p).mtime.toISOString().slice(0, 10);
+  try {
+    const dirty = execFileSync("git", ["status", "--porcelain", "--", rel], { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
+    if (dirty) return mtime;
+    const d = execFileSync("git", ["log", "-1", "--format=%cs", "--", rel], { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
+    return d || mtime;
+  } catch (e) { return mtime; }
+}
+const latestDay = (rels) => rels.map(fileDay).filter(Boolean).sort().pop() || new Date().toISOString().slice(0, 10);
+
 /* ---------- 1. pozele ---------- */
 await buildImages({ quiet: true });
 
@@ -62,7 +79,7 @@ await buildImages({ quiet: true });
 const ctx = { console, document: { addEventListener() {} } };
 ctx.window = ctx;
 vm.createContext(ctx);
-for (const f of ["js/data.js", "js/config.js", "js/i18n.js", "js/images.js", "js/common.js", "js/detail.js", "js/itinerarii-data.js"]) {
+for (const f of ["js/data.js", "js/config.js", "js/i18n.js", "js/images.js", "js/common.js", "js/detail.js", "js/itinerarii-data.js", "js/evenimente-data.js"]) {
   vm.runInContext(read(f), ctx, { filename: f });
 }
 const { RL, I18N, RL_DETAIL } = ctx;
@@ -457,6 +474,96 @@ function fillMap(html, lang) {
     "      </ul>\n    </section>\n").join("");
   return fillGen(fillGen(html, "mapfilters", filters), "maplist", list);
 }
+/* ---------- calendar (calendar.html) + evenimente.ics ---------- */
+const RO_MONTHS = { ianuarie: 1, februarie: 2, martie: 3, aprilie: 4, mai: 5, iunie: 6, iulie: 7, august: 8, septembrie: 9, octombrie: 10, noiembrie: 11, decembrie: 12 };
+const isoDate = (y, m, d) => y + "-" + String(m).padStart(2, "0") + "-" + String(d).padStart(2, "0");
+// „9–10 octombrie 2026”, „1 decembrie 2026 – 10 ianuarie 2027”, „vineri, 9 octombrie 2026, ora 18:00” -> { start, end } (ISO)
+function parseRoDates(v) {
+  const W = "([a-zăâîșț]+)";
+  let m = v.match(new RegExp("(\\d{1,2})\\s+" + W + "\\s+(\\d{4})\\s*[–-]\\s*(\\d{1,2})\\s+" + W + "\\s+(\\d{4})", "i"));
+  if (m && RO_MONTHS[m[2].toLowerCase()] && RO_MONTHS[m[5].toLowerCase()]) return { start: isoDate(+m[3], RO_MONTHS[m[2].toLowerCase()], +m[1]), end: isoDate(+m[6], RO_MONTHS[m[5].toLowerCase()], +m[4]) };
+  m = v.match(new RegExp("(\\d{1,2})\\s*[–-]\\s*(\\d{1,2})\\s+" + W + "\\s+(\\d{4})", "i"));
+  if (m && RO_MONTHS[m[3].toLowerCase()]) return { start: isoDate(+m[4], RO_MONTHS[m[3].toLowerCase()], +m[1]), end: isoDate(+m[4], RO_MONTHS[m[3].toLowerCase()], +m[2]) };
+  m = v.match(new RegExp("(\\d{1,2})\\s+" + W + "\\s+(\\d{4})", "i"));
+  if (m && RO_MONTHS[m[2].toLowerCase()]) { const d = isoDate(+m[3], RO_MONTHS[m[2].toLowerCase()], +m[1]); return { start: d, end: d }; }
+  return null;
+}
+const CAL_CATS = /^(Concert|Festival|Spectacol|Târg)$/;
+// evenimentele anunțate = știri-eveniment din js/data.js, cu dată; datele vin din faptul „Perioadă” / „Dată” (verificate față de `date`)
+function announcedEvents() {
+  return RL.dataArray("SITE_NEWS").filter((e) => CAL_CATS.test((e.category && e.category.ro) || "") && e.date).map((e) => {
+    const roFacts = (RL.loc(e, "ro").facts) || [];
+    const di = roFacts.findIndex((f) => /^(Perioadă|Dată)$/.test(f.label));
+    const li = roFacts.findIndex((f) => /^(Loc|Locație)$/.test(f.label));
+    const dates = di >= 0 ? parseRoDates(roFacts[di].value) : null;
+    if (!dates) throw new Error("Calendar: nu pot citi data din faptele evenimentului " + e.id);
+    if (dates.start !== e.date) throw new Error("Calendar: data din fapte (" + dates.start + ") diferă de `date` (" + e.date + ") la " + e.id);
+    return { e, ...dates, di, li };
+  }).sort((a, b) => a.start.localeCompare(b.start) || a.e.id.localeCompare(b.e.id));
+}
+const CAL_EVENTS = announcedEvents();
+function calUpcoming(html, lang) {
+  const items = CAL_EVENTS.map((x) => {
+    const l = RL.loc(x.e, lang);
+    const when = l.facts[x.di].value, where = x.li >= 0 && l.facts[x.li] ? l.facts[x.li].value : "";
+    return '        <li class="cal-item" data-start="' + x.start + '" data-end="' + x.end + '">\n' +
+      '          <span class="cal-item__cat">' + esc(RL.categoryLabel(x.e, lang)) + "</span>\n" +
+      '          <h3><a href="' + esc(RL.entryUrl("SITE_NEWS", x.e.id, lang)) + '">' + esc(RL.entryName(x.e, lang)) + "</a></h3>\n" +
+      '          <p class="cal-item__when">' + esc(when) + "</p>\n" +
+      (where ? '          <p class="muted">' + esc(t("cal.where", lang)) + ": " + esc(where) + "</p>\n" : "") +
+      "        </li>\n";
+  }).join("");
+  return fillGen(html, "calupcoming", items);
+}
+function calRecurring(html, lang) {
+  const items = (ctx.SITE_EVENTS_RECURRING || []).map((r) => {
+    const news = r.newsId && RL.entryById("SITE_NEWS", r.newsId);
+    if (r.newsId && !news) throw new Error("Calendar: știrea " + r.newsId + " nu există");
+    const src = r.source.url
+      ? '<a href="' + esc(r.source.url) + '" target="_blank" rel="noopener noreferrer">' + esc(r.source.label[lang]) + "</a>"
+      : '<a href="' + esc(RL.entryUrl("SITE_NEWS", r.newsId, lang)) + '">' + esc(r.source.label[lang]) + "</a>";
+    return '        <li class="cal-item" data-recurring="' + esc(r.id) + '">\n' +
+      "          <h3>" + esc(r.name[lang]) + "</h3>\n" +
+      '          <p class="muted">' + esc(r.place[lang]) + "</p>\n" +
+      "          <p><strong>" + esc(t("cal.basis", lang)) + ":</strong> " + esc(r.basis[lang]) + "</p>\n" +
+      (r.organizer ? '          <p class="muted">' + esc(t("cal.organizer", lang)) + ": " + esc(r.organizer[lang]) + "</p>\n" : "") +
+      '          <p class="muted">' + esc(t("cal.source", lang)) + ": " + src + "</p>\n" +
+      "        </li>\n";
+  }).join("");
+  return fillGen(html, "calrecurring", items);
+}
+const fillCalendar = (html, lang) => calRecurring(calUpcoming(html, lang), lang);
+
+// evenimente.ics: evenimentele anunțate, pe zile întregi (DTEND exclusiv); ora exactă rămâne în descriere
+function icsFold(line) {
+  const out = []; let cur = "", bytes = 0;
+  for (const ch of line) {
+    const b = Buffer.byteLength(ch);
+    if (bytes + b > 74) { out.push(cur); cur = " "; bytes = 1; }
+    cur += ch; bytes += b;
+  }
+  out.push(cur);
+  return out.join("\r\n");
+}
+const icsEsc = (s) => String(s).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
+const ymd = (iso) => iso.split("-").join("");
+function addDay(iso) { const d = new Date(iso + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + 1); return d.toISOString().slice(0, 10); }
+function buildIcs(stamp) {
+  const L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Hunedoara Live//gohd.ro//RO", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+    "X-WR-CALNAME:Hunedoara Live — evenimente", "X-WR-TIMEZONE:Europe/Bucharest"];
+  for (const x of CAL_EVENTS) {
+    const l = RL.loc(x.e, "ro");
+    const when = l.facts[x.di].value, where = x.li >= 0 && l.facts[x.li] ? l.facts[x.li].value : "";
+    L.push("BEGIN:VEVENT", "UID:" + x.e.id + "@gohd.ro", "DTSTAMP:" + ymd(stamp) + "T000000Z",
+      "DTSTART;VALUE=DATE:" + ymd(x.start), "DTEND;VALUE=DATE:" + ymd(addDay(x.end)),
+      "SUMMARY:" + icsEsc(x.e.name),
+      "DESCRIPTION:" + icsEsc(when + (l.tagline ? " — " + l.tagline : "") + " Detalii: " + SITE + RL.entryUrl("SITE_NEWS", x.e.id, "ro")),
+      ...(where ? ["LOCATION:" + icsEsc(where)] : []),
+      "URL:" + SITE + RL.entryUrl("SITE_NEWS", x.e.id, "ro"), "TRANSP:TRANSPARENT", "END:VEVENT");
+  }
+  L.push("END:VCALENDAR");
+  return L.map(icsFold).join("\r\n") + "\r\n";
+}
 const hasOwnDesc = (html) => /<meta name="description"/.test(withoutSeo(html));
 const TOP_PAGES = [
   { file: "index.html", title: (l) => t("page.title.home", l), desc: (l) => t("page.meta.home", l), image: DEFAULT_IMAGE, sitemap: "1.0", pair: true, canonical: true },
@@ -477,6 +584,8 @@ const TOP_PAGES = [
   { file: "itinerarii.html", title: (l) => t("page.title.itinerarii", l), desc: (l) => t("page.meta.itinerarii", l), sitemap: "0.7", pair: true, canonical: true, fill: fillItinList, ld: ldItinList },
   { file: "itinerariu.html", title: (l) => t("page.title.itinerarii", l), desc: (l) => t("page.meta.itinerarii", l), noindex: true },
   { file: "harta.html", title: (l) => t("page.title.harta", l), desc: (l) => t("page.meta.harta", l), sitemap: "0.6", pair: true, canonical: true, fill: fillMap },
+  { file: "calendar.html", title: (l) => t("page.title.calendar", l), desc: (l) => t("page.meta.calendar", l), sitemap: "0.6", pair: true, canonical: true, fill: fillCalendar },
+  { file: "vreme.html", title: (l) => t("page.title.vreme", l), desc: (l) => t("page.meta.vreme", l), sitemap: "0.5", pair: true, canonical: true },
   { file: "404.html", title: () => "Pagina nu există — " + SITE_NAME, desc: () => "Pagina căutată nu există pe Hunedoara Live.", noindex: true },
   // șabloanele de detaliu: folosite doar cu ?id= (fallback) — nu se indexează, fără pereche
   ...Object.keys(SECTIONS).map((k) => ({
@@ -653,6 +762,13 @@ for (const key of Object.keys(SECTIONS)) {
       if (fs.readFileSync(idx, "utf8").includes(GEN_MARK)) { fs.rmSync(path.join(root, d), { recursive: true }); changed++; }
     }
   }
+}
+
+/* ---------- evenimente.ics ---------- */
+{
+  const icsPath = path.join(ROOT, "evenimente.ics");
+  const ics = buildIcs(latestDay(["js/data.js"]));
+  if (!fs.existsSync(icsPath) || fs.readFileSync(icsPath, "utf8") !== ics) { fs.writeFileSync(icsPath, ics); changed++; }
 }
 
 /* ---------- 4. sitemap.xml + robots.txt ---------- */

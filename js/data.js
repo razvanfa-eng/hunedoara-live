@@ -1015,6 +1015,7 @@ window.SITE_ACTIVITIES = [
     name: "Stațiunea de schi Straja",
     category: { ro: "Schi", en: "Skiing" },
     area: "Vâlcan",
+    coords: [45.3207, 23.2369], // Wikidata Q3036382 („Straja”, stațiune de schi): 45.320711, 23.236856
     hasReviews: false,
     season: "iarna",
     images: ["images/statiunea-straja.jpg"],

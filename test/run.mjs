@@ -17,6 +17,7 @@ const DATA = (() => {
   vm.createContext(ctx);
   vm.runInContext(fs.readFileSync(path.join(ROOT, "js/data.js"), "utf8"), ctx);
   vm.runInContext(fs.readFileSync(path.join(ROOT, "js/itinerarii-data.js"), "utf8"), ctx);
+  vm.runInContext(fs.readFileSync(path.join(ROOT, "js/evenimente-data.js"), "utf8"), ctx);
   return ctx.window;
 })();
 const SECTION_KEYS = ["SITE_DESTINATIONS", "SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_TOWNS", "SITE_NEWS", "SITE_BUSINESSES"];
@@ -701,6 +702,79 @@ function load(file, query = "", urlPath = file, pref = null) {
   ok(!readF("index.html").includes("harta.html#") && !/id="map"|leaflet/i.test(readF("index.html").replace(/href="harta\.html"[^>]*>/g, "")), "harta: NU există hartă pe prima pagină (doar link în footer)");
   const w = await load("harta.html");
   ok(!w.__err && w.RL_MAP && w.RL_MAP.points().length === withCoords.length, "harta: js/map.js, fără erori, produce " + withCoords.length + " puncte" + (w.__err ? " — " + w.__err : ""));
+}
+
+/* -------- Calendar de evenimente + .ics, Vreme și pârtii -------- */
+{
+  const readF = (f) => fs.existsSync(path.join(ROOT, f)) ? fs.readFileSync(path.join(ROOT, f), "utf8") : "";
+  const EV = DATA.SITE_NEWS.filter((e) => /^(Concert|Festival|Spectacol|Târg)$/.test(e.category.ro) && e.date);
+  const REC = DATA.SITE_EVENTS_RECURRING;
+  ok(EV.length > 0 && Array.isArray(REC) && REC.length > 0, "calendar: " + EV.length + " evenimente anunțate (din Știri) + " + (REC || []).length + " care revin");
+  const badRec = REC.filter((r) => !r.name.ro || !r.name.en || !r.basis.ro || !r.basis.en || !r.place.ro || !r.place.en || !r.checked ||
+    !(r.source && ((r.source.url && /^https:\/\//.test(r.source.url)) || (r.newsId && byId("SITE_NEWS", r.newsId)))));
+  ok(badRec.length === 0, "calendar: fiecare eveniment care revine are texte RO+EN, sursă https sau pagină din ghid" + (badRec.length ? " — " + badRec.map((r) => r.id).join(", ") : ""));
+  for (const lang of ["ro", "en"]) {
+    const d = new JSDOM(readF((lang === "en" ? "en/" : "") + "calendar.html")).window.document;
+    const items = [...d.querySelectorAll("#cal-upcoming .cal-item")];
+    ok(items.length === EV.length && items.every((li) => /^\d{4}-\d{2}-\d{2}$/.test(li.dataset.start) && li.dataset.end >= li.dataset.start), "calendar (" + lang + "): " + EV.length + " evenimente anunțate, cu data-start/data-end");
+    ok(items.every((li, i) => i === 0 || items[i - 1].dataset.start <= li.dataset.start), "calendar (" + lang + "): sortate după dată");
+    ok(d.querySelectorAll("[data-recurring]").length === REC.length, "calendar (" + lang + "): " + REC.length + " evenimente care revin, cu sursă");
+    ok(!!d.querySelector('a[href="evenimente.ics"], a[href="/evenimente.ics"]'), "calendar (" + lang + "): link spre evenimente.ics");
+    const links = [...d.querySelectorAll(".cal-item h3 a")].map((a) => a.getAttribute("href")).filter((u) => u.startsWith("/"));
+    ok(links.every((u) => (lang === "en" ? u.startsWith("/en/") : !u.startsWith("/en/")) && fs.existsSync(path.join(ROOT, u.slice(1), "index.html"))), "calendar (" + lang + "): linkurile spre știri există în limba paginii");
+  }
+  // calendar.js: ascunde evenimentele încheiate (rulat cu o dată falsă)
+  {
+    const html = readF("calendar.html").replace(/<script src="\/?(js\/[^"?]+)(?:\?[^"]*)?"><\/script>/g, (_, src) => "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>");
+    const dom = new JSDOM(html.replace("<head>", '<head><script>Date = class extends Date { constructor(...a) { a.length ? super(...a) : super("2026-10-12T10:00:00"); } };</script>'), { runScripts: "dangerously", url: "http://localhost:5175/calendar.html" });
+    const lis = [...dom.window.document.querySelectorAll("#cal-upcoming .cal-item")];
+    ok(lis.some((li) => li.hidden) && lis.some((li) => !li.hidden) && lis.every((li) => li.hidden === (li.dataset.end < "2026-10-12")), "calendar: js/calendar.js ascunde evenimentele încheiate (azi simulat 12.10.2026)");
+  }
+  // evenimente.ics
+  const ics = readF("evenimente.ics");
+  ok(/^BEGIN:VCALENDAR\r\nVERSION:2\.0\r\n/.test(ics) && /END:VCALENDAR\r\n$/.test(ics), "ics: antet/subsol VCALENDAR, linii CRLF");
+  ok((ics.match(/BEGIN:VEVENT/g) || []).length === EV.length && (ics.match(/END:VEVENT/g) || []).length === EV.length, "ics: " + EV.length + " VEVENT (câte un eveniment anunțat)");
+  const unfolded = ics.replace(/\r\n /g, "");
+  ok(ics.split("\r\n").every((l) => Buffer.byteLength(l) <= 75), "ics: liniile ≤ 75 octeți (pliere corectă)");
+  const uids = [...unfolded.matchAll(/UID:([^\r]+)/g)].map((m) => m[1]);
+  ok(uids.length === EV.length && new Set(uids).size === uids.length && EV.every((e) => uids.includes(e.id + "@gohd.ro")), "ics: UID unic pentru fiecare eveniment");
+  const bad = [...unfolded.matchAll(/DTSTART;VALUE=DATE:(\d{8})\r\nDTEND;VALUE=DATE:(\d{8})/g)].filter((m) => !(m[2] > m[1]));
+  ok([...unfolded.matchAll(/DTSTART;VALUE=DATE:/g)].length === EV.length && bad.length === 0, "ics: DTSTART/DTEND pe zile întregi, DTEND > DTSTART");
+  const multi = EV.find((e) => /decembrie 2026 – 10 ianuarie 2027/.test(JSON.stringify(e.ro.facts)));
+  ok(!multi || /DTSTART;VALUE=DATE:20261201\r\nDTEND;VALUE=DATE:20270111/.test(unfolded), "ics: evenimentul pe mai multe zile (1 dec – 10 ian) are DTEND exclusiv corect");
+  ok(fs.readFileSync(path.join(ROOT, "serve.js"), "utf8").includes("text/calendar"), "ics: serve.js trimite text/calendar");
+
+  // Vreme și pârtii
+  const toml = readF("netlify.toml");
+  const csp = (toml.match(/Content-Security-Policy = "([^"]+)"/) || [])[1] || "";
+  const connect = (csp.match(/connect-src ([^;]+)/) || [])[1] || "";
+  ok(/https:\/\/api\.open-meteo\.com(\s|$)/.test(connect) && connect.split(/\s+/).every((s) => /^('self'|connect-src|https:\/\/(\*\.supabase\.co|api\.open-meteo\.com))$/.test(s) || s === ""), "vreme: CSP connect-src permite doar 'self', Supabase și api.open-meteo.com");
+  for (const lang of ["ro", "en"]) {
+    const h = readF((lang === "en" ? "en/" : "") + "vreme.html");
+    const d = new JSDOM(h).window.document;
+    const cfg = JSON.parse(d.getElementById("weather-config").textContent);
+    const missing = cfg.places.filter((p) => !byId(p.key, p.id) || !byId(p.key, p.id).coords);
+    ok(cfg.places.length >= 4 && missing.length === 0, "vreme (" + lang + "): " + cfg.places.length + " locuri configurate, toate cu coordonate în data.js" + (missing.length ? " — " + missing.map((p) => p.id).join(", ") : ""));
+    const hrefs = [...d.querySelectorAll("a[href^=http]")].map((a) => a.getAttribute("href"));
+    ok(["meteoromania.ro", "skistraja.ro", "salvamonthd.ro", "open-meteo.com"].every((x) => hrefs.some((u) => u.includes(x))), "vreme (" + lang + "): linkuri oficiale ANM, Straja, Salvamont + atribuire Open-Meteo");
+  }
+  const wjs = readF("js/weather.js");
+  ok(/credentials: "omit"/.test(wjs) && !/document\.cookie|localStorage/.test(wjs) && (wjs.match(/https?:\/\/[a-z.-]+/g) || []).every((u) => /open-meteo\.com$/.test(u)), "vreme: js/weather.js — fără cookie/stocare, doar open-meteo.com, credentials omit");
+  // randare cu un răspuns Open-Meteo simulat
+  {
+    const html = readF("vreme.html").replace(/<script src="\/?(js\/[^"?]+)(?:\?[^"]*)?"><\/script>/g, (_, src) => "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>").replace(/<link[^>]+href="https?:[^"]*"[^>]*>/g, "");
+    const cfg = JSON.parse(new JSDOM(html).window.document.getElementById("weather-config").textContent);
+    const mk = (i) => ({ elevation: 500 + i, current: { temperature_2m: 10 + i, weather_code: i % 4, wind_speed_10m: 5 }, daily: { time: ["2026-10-12", "2026-10-13", "2026-10-14", "2026-10-15"], weather_code: [0, 3, 61, 71], temperature_2m_max: [12, 13, 14, 5], temperature_2m_min: [3, 4, 5, -1], precipitation_sum: [0, 0, 5.5, 3], snowfall_sum: [0, 0, 0, 4.2] } });
+    const dom = new JSDOM(html, { runScripts: "dangerously", pretendToBeVisual: true, url: "http://localhost:5175/vreme.html", beforeParse(w) { w.fetch = (u, o) => { w.__url = u; w.__opt = o; return Promise.resolve({ ok: true, json: () => Promise.resolve(cfg.places.map((_, i) => mk(i))) }); }; } });
+    await new Promise((r) => setTimeout(r, 120));
+    const d = dom.window.document;
+    ok(d.querySelectorAll(".wx-card").length === cfg.places.length && d.querySelectorAll(".wx-days li").length === 4 * cfg.places.length && /api\.open-meteo\.com\/v1\/forecast\?latitude=.*,.*&longitude=/.test(dom.window.__url) && dom.window.__opt.credentials === "omit",
+      "vreme: randare din răspuns simulat — " + cfg.places.length + " carduri × 4 zile, o singură cerere, fără credențiale");
+    ok(/ninsoare/.test(d.getElementById("wx-grid").textContent) && /zăpadă 4\.2 cm/.test(d.getElementById("wx-grid").textContent), "vreme: afișează codul WMO tradus și zăpada prognozată");
+    const dom2 = new JSDOM(html, { runScripts: "dangerously", url: "http://localhost:5175/vreme.html", beforeParse(w) { w.fetch = () => Promise.reject(new Error("net")); } });
+    await new Promise((r) => setTimeout(r, 80));
+    ok(/nu a putut fi încărcată/.test(dom2.window.document.getElementById("wx-status").textContent) && dom2.window.document.querySelectorAll(".wx-card").length === 0, "vreme: la eroare de rețea apare mesajul și rămân linkurile oficiale");
+  }
 }
 
 console.log(`\n${pass} pass, ${fail} fail`);

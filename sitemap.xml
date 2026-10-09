@@ -197,6 +197,34 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/harta.html"/>
   </url>
   <url>
+    <loc>https://gohd.ro/calendar.html</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/calendar.html"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/calendar.html</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/calendar.html"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/vreme.html</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/vreme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/vreme.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/vreme.html"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/vreme.html</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/vreme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/vreme.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/vreme.html"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/destinatii/valea-jiului/</loc>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/destinatii/valea-jiului/"/>

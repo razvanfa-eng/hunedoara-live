@@ -40,6 +40,20 @@ resursă externă este tile-urile `https://tile.openstreetmap.org`, adăugate î
 generată static de `build-pages.mjs` (zona `GEN:maplist`) și funcționează și fără JavaScript. Coordonate noi se adaugă doar din
 surse verificabile (Wikidata/OSM/Commons) direct pe intrare, în `js/data.js`, apoi se rulează `node scripts/build-pages.mjs`.
 
+## Calendar de evenimente (`calendar.html`) și Vreme și pârtii (`vreme.html`)
+
+**Calendar.** „Evenimente anunțate” = știrile din `js/data.js` cu categoria Concert / Festival / Spectacol / Târg și `date`;
+perioada se citește din faptul „Perioadă” / „Dată” (build-ul se oprește dacă nu se potrivește cu `date`). `js/calendar.js`
+ascunde în browser evenimentele încheiate. „Evenimente care revin” vin din `js/evenimente-data.js`: doar ediții **confirmate de o
+sursă oficială** (ultima ediție + sursa); nu estimăm date pentru anul următor. `evenimente.ics` (zile întregi, UID stabil) e
+generat de `build-pages.mjs` din aceleași evenimente. Pentru un eveniment nou: adaugă o știre în `data.js` (cu fapt „Perioadă”/„Dată” și „Loc”).
+
+**Vreme.** `js/weather.js` cere prognoza pe 4 zile direct de la Open-Meteo (fără cheie, fără cookie-uri, `credentials: "omit"`,
+`referrerPolicy: "no-referrer"`). CSP: `connect-src` + `https://api.open-meteo.com` (nimic altceva). Locurile (Deva, Petroșani, Straja,
+Hațeg, Retezat) sunt în blocul JSON `#weather-config` și folosesc coordonatele intrărilor din `data.js`. Starea pârtiilor NU e afișată
+(nu există o sursă oficială utilizabilă); paginile trimit la ANM, skistraja.ro, Salvamont. Atribuire Open-Meteo (CC BY 4.0) în pagină.
+Coordonatele Strajei (`statiunea-straja`) provin din Wikidata Q3036382.
+
 ## Secțiuni
 
 Structură **hibridă**: **Destinații**, **Orașe**, **Natură**, **Turism activ**,

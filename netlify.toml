@@ -26,13 +26,15 @@
 #    local, previzualizarea din formularul „Trimite o poză”) + Supabase Storage (pozele
 #    recenziilor în modul „remote”) + tile.openstreetmap.org (DOAR dreptunghiurile hărții
 #    din harta.html; Leaflet e self-hosted în /vendor/leaflet, deci niciun script extern).
-#  - connect: proprii (service worker, funcția de recenzii) + Supabase (citirea recenziilor).
+#  - connect: proprii (service worker, funcția de recenzii) + Supabase (citirea recenziilor)
+#    + api.open-meteo.com (DOAR vreme.html: prognoză fără cheie și fără cookie-uri, cerere GET
+#    cu credentials omit și referrer-policy no-referrer; nimic altceva nu e permis).
 #  - form-action 'self': formularul de contact (Netlify Forms -> /multumim.html).
 #  - frame-ancestors 'none': site-ul nu poate fi încadrat în alt site (clickjacking).
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-hashes' 'sha256-2ne4wUUWpzMxLwoazH2X92gegM2NRhGZ5oB3r3XyFgE=' 'sha256-2rvfFrggTCtyF5WOiTri1gDS8Boibj4Njn0e+VCBmDI=' 'sha256-9gOBGqEQINNDuds+tkXbNzih6klbz+KeCyxEj4KRLeM=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co https://tile.openstreetmap.org; connect-src 'self' https://*.supabase.co; frame-src https://challenges.cloudflare.com; worker-src 'self'; manifest-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-hashes' 'sha256-2ne4wUUWpzMxLwoazH2X92gegM2NRhGZ5oB3r3XyFgE=' 'sha256-2rvfFrggTCtyF5WOiTri1gDS8Boibj4Njn0e+VCBmDI=' 'sha256-9gOBGqEQINNDuds+tkXbNzih6klbz+KeCyxEj4KRLeM=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co https://tile.openstreetmap.org; connect-src 'self' https://*.supabase.co https://api.open-meteo.com; frame-src https://challenges.cloudflare.com; worker-src 'self'; manifest-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"

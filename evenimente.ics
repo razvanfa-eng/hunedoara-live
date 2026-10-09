@@ -1,0 +1,119 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hunedoara Live//gohd.ro//RO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hunedoara Live — evenimente
+X-WR-TIMEZONE:Europe/Bucharest
+BEGIN:VEVENT
+UID:concert-stagiunea-iancu-de-hunedoara-castelul-corvinilor-2026@gohd.ro
+DTSTAMP:20261009T000000Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Concert de muzică sacră și de cameră la Castelul Corvinilor\, 
+ în Stagiunea „Iancu de Hunedoara”
+DESCRIPTION:vineri\, 9 octombrie 2026\, ora 18:00 — Vineri\, 9 octombrie
+  2026\, de la ora 18:00: soprana Georgeta Plută\, pianistul Andrei Drago
+ mir și Cvartetul de coarde al județului Alba\, cu intrare liberă. Deta
+ lii: https://gohd.ro/stiri/concert-stagiunea-iancu-de-hunedoara-castelul-
+ corvinilor-2026/
+LOCATION:Castelul Corvinilor\, Hunedoara
+URL:https://gohd.ro/stiri/concert-stagiunea-iancu-de-hunedoara-castelul-co
+ rvinilor-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:festivalul-umor-liviu-oros-2026@gohd.ro
+DTSTAMP:20261009T000000Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261011
+SUMMARY:Festivalul Național de Umor „Liviu Oros” — ediția a XXV-a\
+ , la Deva
+DESCRIPTION:9–10 octombrie 2026 — 9–10 octombrie 2026: portrete dese
+ nate pe loc\, lansări de carte\, premierea concursurilor și Salonul de 
+ caricatură „Remember Liviu Oros 40”. Intrarea e liberă. Detalii: ht
+ tps://gohd.ro/stiri/festivalul-umor-liviu-oros-2026/
+LOCATION:Centrul Cultural „Drăgan Muntean”\, Piața Unirii și Parcul
+  „Cetate”\, Deva
+URL:https://gohd.ro/stiri/festivalul-umor-liviu-oros-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:violoncellissimo-deva-2026@gohd.ro
+DTSTAMP:20261009T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Violoncellissimo la Deva — concert în turneul aniversar „Mari
+ n Cazacu 70”
+DESCRIPTION:duminică\, 18 octombrie 2026\, ora 19:00 — Duminică\, 18 o
+ ctombrie 2026\, de la ora 19:00\, la Centrul Cultural „Drăgan Muntean
+ ”: de la baroc la Piazzolla\, cu ansamblul de violonceliști condus de 
+ Marin Cazacu. Detalii: https://gohd.ro/stiri/violoncellissimo-deva-2026/
+LOCATION:Centrul Cultural „Drăgan Muntean” (Sala Mare)\, Piața Victo
+ riei nr. 7\, Deva
+URL:https://gohd.ro/stiri/violoncellissimo-deva-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:stelele-cetatii-deva-2026@gohd.ro
+DTSTAMP:20261009T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261026
+SUMMARY:„Stelele Cetății” Deva — festival-concurs de muzică ușoa
+ ră\, ediția a XLIII-a
+DESCRIPTION:24–25 octombrie 2026 — 24–25 octombrie 2026: concurs na
+ țional pentru tineri interpreți între 15 și 23 de ani\, cu un trofeu 
+ de 5.000 de lei. Detalii: https://gohd.ro/stiri/stelele-cetatii-deva-2026
+ /
+LOCATION:Centrul Cultural „Drăgan Muntean”\, Deva
+URL:https://gohd.ro/stiri/stelele-cetatii-deva-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:vivaldi-rocks-deva-2026@gohd.ro
+DTSTAMP:20261009T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Vivaldi Rocks — legendele rockului\, în variantă simfonică\, 
+ la Deva
+DESCRIPTION:sâmbătă\, 31 octombrie 2026\, ora 19:30 — Sâmbătă\, 31
+  octombrie 2026\, de la 19:30\, la Centrul Cultural „Drăgan Muntean”
+ : piese Metallica\, Queen\, Led Zeppelin sau Bon Jovi\, în aranjamente s
+ imfonice. Detalii: https://gohd.ro/stiri/vivaldi-rocks-deva-2026/
+LOCATION:Centrul Cultural „Drăgan Muntean”\, Piața Victoriei nr. 7\,
+  Deva
+URL:https://gohd.ro/stiri/vivaldi-rocks-deva-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:spargatorul-de-nuci-deva-2026@gohd.ro
+DTSTAMP:20261009T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:„Spărgătorul de nuci”\, cu Balletto Nazionale Italiano\, la 
+ Deva
+DESCRIPTION:joi\, 19 noiembrie 2026\, ora 19:00 — Joi\, 19 noiembrie 202
+ 6\, de la 19:00\, baletul lui Ceaikovski ajunge la Centrul Cultural „Dr
+ ăgan Muntean”\, cu balerina Oksana Bondareva. Detalii: https://gohd.ro
+ /stiri/spargatorul-de-nuci-deva-2026/
+LOCATION:Centrul Cultural „Drăgan Muntean”\, Piața Victoriei nr. 7\,
+  Deva
+URL:https://gohd.ro/stiri/spargatorul-de-nuci-deva-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:targul-de-craciun-deva-2026@gohd.ro
+DTSTAMP:20261009T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20270111
+SUMMARY:Târgul de Crăciun Deva 2026 se deschide pe 1 decembrie\, în Pia
+ ța Unirii
+DESCRIPTION:1 decembrie 2026 – 10 ianuarie 2027 — Între 1 decembrie 2
+ 026 și 10 ianuarie 2027\, căsuțe de lemn cu produse de sezon\, mește
+ șuguri\, preparate tradiționale și băuturi calde\, în centrul Devei.
+  Detalii: https://gohd.ro/stiri/targul-de-craciun-deva-2026/
+LOCATION:Piața Unirii\, Deva
+URL:https://gohd.ro/stiri/targul-de-craciun-deva-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
