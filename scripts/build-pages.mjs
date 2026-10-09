@@ -316,6 +316,20 @@ const SECTION_META = {
 /* ---------- 3. paginile principale ----------
  * pair: are versiune EN în /en/ (comutatorul duce acolo); canonical: are URL canonic
  * (+ hreflang, dacă are și pereche); sitemap: prioritatea în sitemap.xml. */
+/* zone generate în interiorul paginilor scrise de mână: <!-- GEN:nume --> ... <!-- /GEN:nume --> */
+function fillGen(html, name, inner) {
+  const re = new RegExp("(<!-- GEN:" + name + " -->\\n)[\\s\\S]*?(<!-- /GEN:" + name + " -->)");
+  if (!re.test(html)) throw new Error("Lipsește zona GEN:" + name);
+  return html.replace(re, (m, a, z) => a + inner + z);
+}
+// <optgroup> cu toate obiectivele (fără știri) pentru formularul „Trimite o poză”; valoarea e mereu în română
+function photoTargets(html, lang) {
+  const out = Object.keys(SECTIONS).filter((k) => k !== "SITE_NEWS").map((k) => {
+    const opts = RL.dataArray(k).map((e) => '          <option value="' + esc(SECTIONS[k].dir + "/" + e.id + " — " + e.name) + '">' + esc(RL.entryName(e, lang)) + "</option>").join("\n");
+    return '        <optgroup label="' + esc(t("nav." + SECTION_META[k].key, lang)) + '">\n' + opts + "\n        </optgroup>\n";
+  }).join("");
+  return fillGen(html, "targets", out);
+}
 const hasOwnDesc = (html) => /<meta name="description"/.test(withoutSeo(html));
 const TOP_PAGES = [
   { file: "index.html", title: (l) => t("page.title.home", l), desc: (l) => t("page.meta.home", l), image: DEFAULT_IMAGE, sitemap: "1.0", pair: true, canonical: true },
@@ -330,6 +344,9 @@ const TOP_PAGES = [
   // are deja noindex; versiunea EN e pagina de după formularul de pe /en/contact.html
   { file: "multumim.html", title: (l) => t("page.title.thanks", l), pair: true,
     desc: (l) => (l === "en" ? "Your message has been sent to the Hunedoara Live team. Thank you!" : "Mesajul tău a fost trimis către echipa Hunedoara Live. Îți mulțumim!") },
+  { file: "trimite-poza.html", title: (l) => t("page.title.foto", l), desc: (l) => t("page.meta.foto", l), sitemap: "0.4", pair: true, canonical: true, fill: photoTargets },
+  { file: "multumim-poza.html", title: (l) => t("page.title.thanksPhoto", l), pair: true,
+    desc: (l) => (l === "en" ? "Your photo has been sent to the Hunedoara Live team. Thank you!" : "Poza ta a fost trimisă echipei Hunedoara Live. Îți mulțumim!") },
   { file: "404.html", title: () => "Pagina nu există — " + SITE_NAME, desc: () => "Pagina căutată nu există pe Hunedoara Live.", noindex: true },
   // șabloanele de detaliu: folosite doar cu ?id= (fallback) — nu se indexează, fără pereche
   ...Object.keys(SECTIONS).map((k) => ({
@@ -354,6 +371,7 @@ for (const p of TOP_PAGES) {
   });
 
   let html = read(p.file);
+  if (p.fill) html = p.fill(html, "ro");
   html = setSeo(html, seo("ro", !hasOwnDesc(html)));
   if (p.pair) html = markPaired(html, "ro", langPath(roPath, "en"));
   if (write(p.file, html)) changed++;
@@ -364,6 +382,7 @@ for (const p of TOP_PAGES) {
   let en = absolutize(withoutSeo(html)).replace(/  <meta name="description"[^>]*>\n/, "");
   en = en.replace("<!DOCTYPE html>\n", "<!DOCTYPE html>\n" + GEN_MARK + " din " + p.file + " (versiunea EN) — nu edita manual -->\n");
   en = toEnglish(en, roPath);
+  if (p.fill) en = p.fill(en, "en");
   en = setSeo(en, seo("en", true));
   if (write(EN_DIR + "/" + p.file, en)) changed++;
   enPages++;

@@ -19,7 +19,7 @@
  * ?v=N la <script src> în pagini (cache-ul îl tratează ca fișier nou); offline,
  * varianta fără ?v= din PRECACHE e folosită ca rezervă (ignoreSearch).
  */
-var VERSION = "v6";
+var VERSION = "v7";
 var STATIC_CACHE = "hl-static-" + VERSION;
 var PAGES_CACHE = "hl-pages-" + VERSION;
 var IMG_CACHE = "hl-img-" + VERSION;

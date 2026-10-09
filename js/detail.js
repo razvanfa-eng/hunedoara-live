@@ -81,6 +81,19 @@
         '<a class="btn btn--outline" target="_blank" rel="noopener noreferrer" href="' + RL.gmapsDirUrl(entry.coords) + '">' + RL.esc(t("detail.gmaps")) + "</a>"
       : "";
 
+    // intrare fără poză proprie: invităm vizitatorii să trimită una (formularul trimite-poza.html)
+    var hasPhoto = !!(entry.images && entry.images[0] && RL.imgInfo(entry.images[0]));
+    if (!hasPhoto) {
+      out.map += '<a class="btn btn--outline" href="' + RL.esc(RL.pageUrl("trimite-poza.html", lang) + "?obiectiv=" + encodeURIComponent(cfg.dirKey ? cfg.dirKey + "/" + entry.id : entry.id)) + '">' + RL.esc(t("photo.detail.cta")) + "</a>";
+    }
+
+    // intrare fără poză proprie: invităm vizitatorii să trimită una (formularul trimite-poza.html)
+    var hasPhoto = !!(entry.images && entry.images[0] && RL.imgInfo(entry.images[0]));
+    var sec = RL.SECTIONS[cfg.dataKey];
+    if (!hasPhoto && sec && sec.dir !== "stiri") {
+      out.map += '<a class="btn btn--outline" href="' + RL.esc(RL.pageUrl("trimite-poza.html", lang) + "?obiectiv=" + encodeURIComponent(sec.dir + "/" + entry.id)) + '">' + RL.esc(t("photo.detail.cta")) + "</a>";
+    }
+
     var areas = entry.relatedAreas || [];
     var ids = entry.relatedIds || [];
     var groups = {};

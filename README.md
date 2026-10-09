@@ -8,6 +8,21 @@ neutru zinc, UN singur accent (petrol/teal #0E7C86), tipografie DM Sans + Inter.
 Live pe **gohd.ro** (deploy manual, `netlify deploy --prod`; nu e încă legat de
 push-uri GitHub — vezi „Ce urmează").
 
+## Trimite o poză (formular cu încărcare de fișier)
+
+`trimite-poza.html` (+ `/en/trimite-poza.html`, mulțumirea `multumim-poza.html`) este un formular **Netlify Forms**
+cu `enctype="multipart/form-data"`: obiectiv (lista e generată de `build-pages.mjs` din `js/data.js`), fișier JPG/PNG
+(min. ~1600 px lățime, max. 8 MB — avertizare în `js/photo-form.js`), autor, e-mail, licență
+(permisiune de publicare cu credit / CC BY 4.0 / CC BY-SA 4.0) și bifa OBLIGATORIE „Sunt autorul pozei…”. Anti-spam: câmp
+honeypot `bot-field`. Linkuri spre formular: footer (toate paginile), pagina Credite și pagina fiecărei intrări **fără poză**
+(`?obiectiv=<secțiune>/<id>` preselectează obiectivul).
+
+**De făcut în Netlify (o singură dată, după primul deploy):** Site configuration → Forms → vezi formularul
+`trimite-poza` (apare după deploy; `ignore_html_forms` e false) → *Form notifications* → *Add notification* → *Email notification*
+→ alegi formularul `trimite-poza` și adresa `hunedoaragohd@gmail.com`. Pozele încărcate se descarcă din Forms → Submissions
+(link în e-mail și în dashboard). Limita Netlify: 8 MB per trimitere pe planul gratuit; spam-ul marcat se vede în tab-ul *Spam*.
+Poza acceptată se pune în `images/`, se adaugă `photoCredit` pe intrare (autor, licență, sursă) și se rulează `node scripts/build-pages.mjs`.
+
 ## Secțiuni
 
 Structură **hibridă**: **Destinații**, **Orașe**, **Natură**, **Turism activ**,

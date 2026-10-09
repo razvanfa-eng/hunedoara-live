@@ -20,6 +20,8 @@ const DATA = (() => {
 })();
 const SECTION_KEYS = ["SITE_DESTINATIONS", "SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_TOWNS", "SITE_NEWS", "SITE_BUSINESSES"];
 const RELATED_KEYS = ["SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_BUSINESSES"];
+/* paginile principale indexabile = fișierele HTML din rădăcină cu canonical (blocul SEO generat); derivate din disc, nu numărate de mână */
+const TOP_FILES = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html") && /<link rel="canonical"/.test(fs.readFileSync(path.join(ROOT, f), "utf8")));
 const uniq = (a) => [...new Set(a.filter(Boolean))];
 const dataKeyOf = (file) => (fs.readFileSync(path.join(ROOT, file), "utf8").match(/"?dataKey"?:\s*"([A-Z_]+)"/) || [])[1];
 const byId = (key, id) => DATA[key].find((e) => e.id === id);
@@ -288,7 +290,7 @@ function load(file, query = "", urlPath = file, pref = null) {
   const locs = [...doc.getElementsByTagName("loc")].map((n) => n.textContent);
   const toFile = (u) => { const p = u.replace("https://gohd.ro/", ""); return p === "" ? "index.html" : p.endsWith("/") ? p + "index.html" : p; };
   const deadLocs = locs.filter((u) => !fs.existsSync(path.join(ROOT, toFile(u))));
-  ok(locs.length === 2 * (all.length + 11) && deadLocs.length === 0, "sitemap.xml: " + locs.length + " URL-uri (RO + EN), toate cu fișier real" + (deadLocs.length ? " — lipsă: " + deadLocs.join(", ") : ""));
+  ok(locs.length === 2 * (all.length + TOP_FILES.length) && deadLocs.length === 0, "sitemap.xml: " + locs.length + " URL-uri (RO + EN), toate cu fișier real" + (deadLocs.length ? " — lipsă: " + deadLocs.join(", ") : ""));
   ok(!locs.some((u) => /multumim|404|oras\.html|destinatie\.html/.test(u)), "sitemap.xml: fără multumim/404/șabloane");
   ok(/Sitemap: https:\/\/gohd\.ro\/sitemap\.xml/.test(fs.readFileSync(path.join(ROOT, "robots.txt"), "utf8")), "robots.txt: indică sitemap.xml");
 }
@@ -303,7 +305,7 @@ function load(file, query = "", urlPath = file, pref = null) {
   const readF = (f) => fs.existsSync(path.join(ROOT, f)) ? fs.readFileSync(path.join(ROOT, f), "utf8") : "";
   // perechile RO <-> EN: [cale RO, fișier RO, fișier EN]
   const entryPairs = Object.entries(DIRS).flatMap(([k, dir]) => DATA[k].map((e) => ({ k, e, ro: "/" + dir + "/" + e.id + "/" })));
-  const topPairs = ["index.html", ...LISTINGS, "utile.html", "contact.html", "credite.html"]
+  const topPairs = TOP_FILES
     .map((f) => ({ ro: f === "index.html" ? "/" : "/" + f, roFile: f, enFile: "en/" + f }));
   const pairs = [
     ...topPairs,
@@ -576,6 +578,46 @@ function load(file, query = "", urlPath = file, pref = null) {
   const blocked = ["/package.json", "/README.md", "/SETUP.md", "/serve.js", "/scripts/*", "/test/*", "/supabase/*", "/netlify/*"];
   const notBlocked = blocked.filter((p) => !new RegExp('from = "' + p.replace(/[.*]/g, "\\$&") + '"\\s+to = "/404.html"\\s+status = 404\\s+force = true').test(toml));
   ok(notBlocked.length === 0, "securitate: fișierele proiectului (surse, teste, configurări) răspund 404" + (notBlocked.length ? " — lipsesc: " + notBlocked.join(", ") : ""));
+}
+
+/* -------- „Trimite o poză”: formular Netlify Forms (RO + EN) -------- */
+{
+  const ro = fs.readFileSync(path.join(ROOT, "trimite-poza.html"), "utf8");
+  const en = fs.readFileSync(path.join(ROOT, "en/trimite-poza.html"), "utf8");
+  ok(fs.existsSync(path.join(ROOT, "multumim-poza.html")) && fs.existsSync(path.join(ROOT, "en/multumim-poza.html")), "trimite-poza: pagina de mulțumire există în RO și EN");
+  for (const [lang, h, thanks] of [["ro", ro, "/multumim-poza.html"], ["en", en, "/en/multumim-poza.html"]]) {
+    const d = new JSDOM(h).window.document;
+    const form = d.querySelector("form[name=trimite-poza]");
+    ok(!!form && form.hasAttribute("data-netlify") && form.getAttribute("netlify-honeypot") === "bot-field" && form.getAttribute("enctype") === "multipart/form-data" &&
+      form.getAttribute("method") === "POST" && form.getAttribute("action") === thanks, "trimite-poza (" + lang + "): Netlify Forms + honeypot + multipart + action " + thanks);
+    ok(d.querySelector("input[name=form-name][value=trimite-poza]") && d.querySelector("input[name=bot-field]"), "trimite-poza (" + lang + "): form-name + câmp honeypot");
+    const file = d.querySelector("input[type=file][name=fotografie]");
+    ok(file && file.required && /image\/jpeg/.test(file.accept) && /image\/png/.test(file.accept) && !/webp|gif/.test(file.accept), "trimite-poza (" + lang + "): fișier obligatoriu, doar JPG/PNG");
+    const consent = d.querySelector("input[type=checkbox][name=acord-autor]");
+    ok(consent && consent.required, "trimite-poza (" + lang + "): bifa de acord autor e OBLIGATORIE");
+    ok(d.querySelectorAll("select[name=licenta] option").length >= 3 && d.querySelector("input[name=autor][required]") && d.querySelector("input[name=email][type=email][required]"), "trimite-poza (" + lang + "): licență, autor și e-mail obligatorii");
+    const expected = ["SITE_DESTINATIONS", "SITE_NATURE", "SITE_ACTIVITIES", "SITE_HERITAGE", "SITE_TOWNS", "SITE_BUSINESSES"].reduce((n, k) => n + DATA[k].length, 0);
+    ok(d.querySelectorAll("#photo-target optgroup option").length === expected, "trimite-poza (" + lang + "): select cu cele " + expected + " obiective (fără știri)");
+    ok(/1600/.test(h), "trimite-poza (" + lang + "): menționează dimensiunea minimă de 1600 px");
+  }
+  ok(/Send a photo/.test(en) && /Place shown in the photo/.test(en), "trimite-poza (en): textele sunt traduse în HTML");
+  const w = await load("trimite-poza.html", "?obiectiv=natura/cheile-banitei", "trimite-poza.html");
+  const sel = w.document.getElementById("photo-target");
+  ok(!w.__err && sel.value.startsWith("natura/cheile-banitei"), "trimite-poza: ?obiectiv= preselectează obiectivul" + (w.__err ? " — " + w.__err : ""));
+  const w2 = await load("trimite-poza.html", "?obiectiv=Un%20loc%20nou", "trimite-poza.html");
+  ok(w2.document.getElementById("photo-target").value === "altul" && w2.document.getElementById("photo-other").value === "Un loc nou", "trimite-poza: un obiectiv necunoscut merge în câmpul „Alt obiectiv”");
+  // legături de descoperire: footer pe toate paginile cu footer-nav, pagina Credite, pagina intrărilor fără poză
+  const noFooter = ["index.html", "contact.html", "orase.html", "oras.html"].filter((f) => !fs.readFileSync(path.join(ROOT, f), "utf8").includes('href="trimite-poza.html"'));
+  ok(noFooter.length === 0, "trimite-poza: linkul din footer" + (noFooter.length ? " — lipsește din " + noFooter.join(", ") : ""));
+  ok(fs.readFileSync(path.join(ROOT, "credite.html"), "utf8").includes('href="trimite-poza.html"'), "trimite-poza: linkul din pagina Credite");
+  const noPhoto = SECTION_KEYS.filter((k) => k !== "SITE_NEWS").flatMap((k) => DATA[k].filter((e) => !(e.images && e.images[0])).map((e) => ({ k, e })))[0];
+  if (noPhoto) {
+    const dir = { SITE_DESTINATIONS: "destinatii", SITE_TOWNS: "orase", SITE_NATURE: "natura", SITE_ACTIVITIES: "turism-activ", SITE_HERITAGE: "mostenire", SITE_BUSINESSES: "afaceri" }[noPhoto.k];
+    const h = fs.readFileSync(path.join(ROOT, dir, noPhoto.e.id, "index.html"), "utf8");
+    ok(h.includes("/trimite-poza.html?obiectiv=" + dir + "%2F" + noPhoto.e.id), "trimite-poza: intrarea fără poză (" + noPhoto.e.id + ") are linkul „Trimite o poză”");
+  }
+  const toml = fs.readFileSync(path.join(ROOT, "netlify.toml"), "utf8");
+  ok(/form-action 'self'/.test(toml), "trimite-poza: CSP form-action 'self' (acțiunea formularului e pe același domeniu)");
 }
 
 console.log(`\n${pass} pass, ${fail} fail`);

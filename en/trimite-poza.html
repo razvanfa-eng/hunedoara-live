@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!-- GENERAT de scripts/build-pages.mjs din trimite-poza.html (versiunea EN) — nu edita manual -->
+<html lang="en" data-page-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0E7C86">
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <title data-i18n="page.title.foto">Send a photo — Hunedoara Live</title>
+  <!-- SEO: generat de scripts/build-pages.mjs -->
+  <meta name="description" content="Photographed a place in Hunedoara county? Send us your picture; we publish it with your name as credit if you are the author and agree.">
+  <link rel="canonical" href="https://gohd.ro/en/trimite-poza.html">
+  <link rel="alternate" hreflang="ro" href="https://gohd.ro/trimite-poza.html">
+  <link rel="alternate" hreflang="en" href="https://gohd.ro/en/trimite-poza.html">
+  <link rel="alternate" hreflang="x-default" href="https://gohd.ro/trimite-poza.html">
+  <meta property="og:site_name" content="Hunedoara Live">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Send a photo — Hunedoara Live">
+  <meta property="og:description" content="Photographed a place in Hunedoara county? Send us your picture; we publish it with your name as credit if you are the author and agree.">
+  <meta property="og:url" content="https://gohd.ro/en/trimite-poza.html">
+  <meta property="og:image" content="https://gohd.ro/images/og/hunedoara-corvin-castle.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Send a photo — Hunedoara Live">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Send a photo — Hunedoara Live">
+  <meta name="twitter:description" content="Photographed a place in Hunedoara county? Send us your picture; we publish it with your name as credit if you are the author and agree.">
+  <meta name="twitter:image" content="https://gohd.ro/images/og/hunedoara-corvin-castle.jpg">
+  <!-- /SEO -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="/en/" data-i18n="site.name">Hunedoara Live</a>
+      <nav class="site-nav">
+        <a href="/en/destinatii.html" data-i18n="nav.destinatii">Destinations</a>
+        <a href="/en/orase.html" data-i18n="nav.orase">Towns &amp; communes</a>
+        <a href="/en/natura.html" data-i18n="nav.natura">Nature</a>
+        <a href="/en/turism-activ.html" data-i18n="nav.turismActiv">Active tourism</a>
+        <a href="/en/mostenire.html" data-i18n="nav.mostenire">Cultural heritage</a>
+        <a href="/en/afaceri.html" data-i18n="nav.afaceri">Businesses</a>
+        <a href="/en/stiri.html" data-i18n="nav.stiri">News</a>
+        <a href="/en/contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" id="global-search-btn" data-i18n-attr="aria-label:nav.search.aria" aria-label="Search">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a id="lang-toggle" class="lang-toggle" href="/trimite-poza.html" hreflang="ro" lang="ro" data-i18n="lang.switch" data-i18n-attr="aria-label:lang.switch.aria" aria-label="Comută pe română">RO</a>
+        <a href="mailto:hunedoaragohd@gmail.com" class="ai-pill" data-i18n="nav.ai">Ask us</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container prose">
+    <h1 data-i18n="photo.heading">Send a photo</h1>
+    <p data-i18n="photo.intro">Many places in the guide still lack a good photo. If you took the picture yourself, we can publish it on gohd.ro with your name as the author.</p>
+    <p class="muted" data-i18n="photo.rules">The image must be JPG or PNG, preferably landscape and at least 1600 px wide, up to 8 MB. We do not publish photos of identifiable people without their consent, nor photos taken by somebody else.</p>
+
+    <form class="contact-form photo-form" name="trimite-poza" method="POST" action="/en/multumim-poza.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="trimite-poza">
+      <p hidden><label>Nu completa acest câmp: <input name="bot-field"></label></p>
+      <label>
+        <span data-i18n="photo.target">Place shown in the photo</span>
+        <select name="obiectiv" id="photo-target" required>
+          <option value="" data-i18n="photo.target.choose">Choose a place…</option>
+<!-- GEN:targets -->
+        <optgroup label="Destinations">
+          <option value="destinatii/valea-jiului — Valea Jiului">Jiu Valley</option>
+          <option value="destinatii/tara-hategului — Țara Hațegului">Hațeg Country</option>
+          <option value="destinatii/cetatile-dacice — Zona Cetăților Dacice">Dacian Fortresses Area</option>
+          <option value="destinatii/culoarul-muresului — Culoarul Mureșului">Mureș Corridor</option>
+          <option value="destinatii/muntii-metaliferi — Munții Metaliferi">Metaliferi Mountains</option>
+          <option value="destinatii/tinutul-padurenilor — Ținutul Pădurenilor">Pădureni Land</option>
+        </optgroup>
+        <optgroup label="Towns &amp; communes">
+          <option value="orase/deva — Deva">Deva</option>
+          <option value="orase/hunedoara — Hunedoara">Hunedoara</option>
+          <option value="orase/simeria — Simeria">Simeria</option>
+          <option value="orase/petrosani — Petroșani">Petroșani</option>
+          <option value="orase/petrila — Petrila">Petrila</option>
+          <option value="orase/vulcan — Vulcan">Vulcan</option>
+          <option value="orase/lupeni — Lupeni">Lupeni</option>
+          <option value="orase/aninoasa — Aninoasa">Aninoasa</option>
+          <option value="orase/orastie — Orăștie">Orăștie</option>
+          <option value="orase/hateg — Hațeg">Hațeg</option>
+          <option value="orase/brad — Brad">Brad</option>
+          <option value="orase/uricani — Uricani">Uricani</option>
+          <option value="orase/geoagiu — Geoagiu">Geoagiu</option>
+          <option value="orase/calan — Călan">Călan</option>
+          <option value="orase/sarmizegetusa — Sarmizegetusa">Sarmizegetusa</option>
+          <option value="orase/densus — Densuș">Densuș</option>
+          <option value="orase/rau-de-mori — Râu de Mori">Râu de Mori</option>
+          <option value="orase/ilia — Ilia">Ilia</option>
+          <option value="orase/pui — Pui">Pui</option>
+          <option value="orase/criscior — Crișcior">Crișcior</option>
+          <option value="orase/soimus — Șoimuș">Șoimuș</option>
+          <option value="orase/beriu — Beriu">Beriu</option>
+          <option value="orase/dobra — Dobra">Dobra</option>
+          <option value="orase/vata-de-jos — Vața de Jos">Vața de Jos</option>
+          <option value="orase/santamaria-orlea — Sântămăria-Orlea">Sântămăria-Orlea</option>
+          <option value="orase/baita — Băița">Băița</option>
+          <option value="orase/vetel — Vețel">Vețel</option>
+        </optgroup>
+        <optgroup label="Nature">
+          <option value="natura/parcul-national-retezat — Parcul Național Retezat">Retezat National Park</option>
+          <option value="natura/pestera-bolii — Peștera Bolii">Bolii Cave</option>
+          <option value="natura/cheile-banitei — Cheile Băniței">Bănița Gorge</option>
+          <option value="natura/parangul-mare — Vârful Parângul Mare">Parângul Mare Peak</option>
+          <option value="natura/padurea-bicolora-petrila — Pădurea Bicoloră">Two-Coloured Forest</option>
+          <option value="natura/pasul-vulcan — Pasul Vulcan">Vulcan Pass</option>
+          <option value="natura/jiet-groapa-seaca — Cheile Jiețului – Groapa Seacă">Jieț Gorge – Groapa Seacă</option>
+          <option value="natura/campu-lui-neag — Câmpu lui Neag">Câmpu lui Neag</option>
+          <option value="natura/cheile-buta — Cheile Buții">Buta Gorges</option>
+          <option value="natura/valea-iarului — Valea Iarului">Iarului Valley</option>
+          <option value="natura/drum-transmontan-uricani-runcu — Drumul transmontan Uricani – Runcu">Uricani – Runcu mountain road</option>
+          <option value="natura/lacul-cincis — Lacul Cinciș">Lake Cinciș</option>
+          <option value="natura/padurea-bejan — Pădurea Bejan">Bejan Forest</option>
+          <option value="natura/parcul-dendrologic-simeria — Parcul Dendrologic Simeria">Simeria Arboretum</option>
+          <option value="natura/geoparcul-tara-hategului — Geoparcul UNESCO Țara Hațegului">Hațeg Country UNESCO Geopark</option>
+          <option value="natura/lacul-gura-apelor — Lacul Gura Apelor">Lake Gura Apelor</option>
+          <option value="natura/pestera-cioclovina — Peștera Cioclovina">Cioclovina Cave</option>
+          <option value="natura/pestera-zeicului — Peștera Zeicului">Zeicu Cave</option>
+          <option value="natura/lacul-valea-de-pesti — Lacul Valea de Pești">Lake Valea de Pești</option>
+        </optgroup>
+        <optgroup label="Active tourism">
+          <option value="turism-activ/traseu-pietrele-bucura-peleaga — Traseu Cabana Pietrele – Lacul Bucura – Vf. Peleaga">Pietrele Hut – Lake Bucura – Peleaga Peak trail</option>
+          <option value="turism-activ/partiile-parang — Pârtiile de schi din Parâng">Parâng ski slopes</option>
+          <option value="turism-activ/statiunea-straja — Stațiunea de schi Straja">Straja ski resort</option>
+          <option value="turism-activ/sania-straja — Sania pe șine Straja (Baloo Coaster)">Straja alpine coaster (Baloo Coaster)</option>
+          <option value="turism-activ/traseu-dealul-babii — Traseul Dealul Babii">Dealul Babii trail</option>
+          <option value="turism-activ/bazin-inot-petrosani — Bazinul Didactic de Înot „Avram Iancu” Petroșani">&quot;Avram Iancu&quot; Educational Swimming Pool, Petroșani</option>
+          <option value="turism-activ/bazin-inot-petrila — Bazinul de Înot Didactic Petrila">Educational Swimming Pool, Petrila</option>
+          <option value="turism-activ/bazin-inot-vulcan — Bazinul Didactic de Înot Vulcan">Educational Swimming Pool, Vulcan</option>
+          <option value="turism-activ/bazin-inot-lupeni — Bazinul Didactic de Înot Lupeni">Educational Swimming Pool, Lupeni</option>
+          <option value="turism-activ/traseul-tunelelor-vulcan — Traseul Tunelelor">Tunnels Trail</option>
+          <option value="turism-activ/traseul-ruinelor-aninoasa — Traseul Ruinelor">Ruins Trail</option>
+          <option value="turism-activ/parcul-cetatii-deva — Parcul Cetății Deva">Citadel Park, Deva</option>
+          <option value="turism-activ/traseu-pui-rausor — Traseul Pui – Baza Salvamont Râușor">Pui – Râușor Salvamont Base trail</option>
+          <option value="turism-activ/traseu-pietrele-varful-mare — Traseul Cabana Pietrele – Vârful Mare (Retezat)">Pietrele Hut – Vârful Mare trail (Retezat)</option>
+          <option value="turism-activ/traseu-pietrele-saua-pelegii — Traseul Cabana Pietrele – Șaua Pelegii">Pietrele Hut – Peleaga Saddle trail</option>
+          <option value="turism-activ/traseu-lacul-gales-saua-pelegii — Traseul Lacul Galeș – Șaua Pelegii">Lake Galeș – Peleaga Saddle trail</option>
+          <option value="turism-activ/traseu-cetatea-colt — Traseul Valea Nucșoara – Cetatea Colț">Nucșoara Valley – Colț Fortress trail</option>
+          <option value="turism-activ/traseu-rau-de-mori-varful-retezat — Traseul Râu de Mori – Vârful Retezat">Râu de Mori – Retezat Peak trail</option>
+          <option value="turism-activ/traseu-gura-zlata-lacul-bucura — Traseul Cabana Gura Zlata – Lacul Bucura">Gura Zlata Hut – Lake Bucura trail</option>
+          <option value="turism-activ/traseu-lacul-bucura-circuit — Traseul circular al Lacului Bucura">Lake Bucura loop trail</option>
+          <option value="turism-activ/traseu-baru-varful-tulisa — Traseul Baru – Vârful Tulișa">Baru – Tulișa Peak trail</option>
+          <option value="turism-activ/traseu-cheile-butii-cabana-buta — Traseul Cheile Buții – Cabana Buta">Buta Gorges – Buta Hut trail</option>
+          <option value="turism-activ/traseu-campusel-saua-scorota — Traseul Câmpușel – Șaua Scorota – Cabana Buta">Câmpușel – Scorota Saddle – Buta Hut trail</option>
+          <option value="turism-activ/traseu-culmea-branu-varful-gugu — Traseul Culmea Branu – Vârful Gugu – Lacul lui Iovan">Branu Ridge – Gugu Peak – Lake Iovan trail</option>
+          <option value="turism-activ/traseu-creasta-valcan-straja-oslea — Traseul de creastă Vâlcan – Straja – Oslea">Vâlcan – Straja – Oslea ridge trail</option>
+          <option value="turism-activ/traseu-hunedoara-lacul-cincis-cheile-cernei — Traseul Hunedoara – Lacul Cinciș – Cheile Cernei">Hunedoara – Lake Cinciș – Cerna Gorge trail</option>
+          <option value="turism-activ/traseu-hunedoara-varful-rusca — Traseul Hunedoara – Lacul Cinciș – Vârful Rusca">Hunedoara – Lake Cinciș – Rusca Peak trail</option>
+          <option value="turism-activ/traseu-hunedoara-dobra — Traseul Hunedoara – Lacul Cinciș – Dobra">Hunedoara – Lake Cinciș – Dobra trail</option>
+          <option value="turism-activ/traseu-ohaba-ponor-cioclovina — Traseul Ohaba Ponor – Peștera Ponorici-Cioclovina">Ohaba Ponor – Ponorici-Cioclovina Cave trail</option>
+          <option value="turism-activ/traseu-baru-varful-lola-porumbelu — Traseul Baru – Vârful Lola – Vârful Porumbelu Mare">Baru – Lola Peak – Porumbelu Mare Peak trail</option>
+          <option value="turism-activ/traseu-costesti-sarmizegetusa-regia-varful-godeanu — Traseul Costești – Sarmizegetusa Regia – Vârful Godeanu (Șureanu)">Costești – Sarmizegetusa Regia – Godeanu Peak trail (Șureanu)</option>
+          <option value="turism-activ/traseu-costesti-cetatea-blidaru-varful-godeanu — Traseul Costești – Cetatea Blidaru – Vârful Godeanu">Costești – Blidaru Fortress – Godeanu Peak trail</option>
+          <option value="turism-activ/traseu-cetatea-fetele-albe — Traseul Podul Gerosu – Cetatea Fețele Albe">Podul Gerosu – Fețele Albe Fortress trail</option>
+          <option value="turism-activ/traseu-gradistea-cetatea-piatra-rosie-cioclovina — Traseul Grădiștea de Munte – Cetatea Piatra Roșie – Peștera Cioclovina">Grădiștea de Munte – Piatra Roșie Fortress – Cioclovina Cave trail</option>
+          <option value="turism-activ/traseu-telescaun-parangul-mare — Traseul Telescaun Parâng – Vârful Parângul Mare">Parâng chairlift – Parângul Mare Peak trail</option>
+          <option value="turism-activ/traseu-telescaun-varful-carja — Traseul Telescaun Parâng – Vârful Cârja">Parâng chairlift – Cârja Peak trail</option>
+          <option value="turism-activ/traseu-lacul-calcescu — Traseul spre Lacul Câlcescu (Parâng)">Trail to Lake Câlcescu (Parâng)</option>
+          <option value="turism-activ/traseu-lacurile-verzi-parang — Traseul spre Lacurile Verzi (Parâng)">Trail to the Green Lakes (Parâng)</option>
+          <option value="turism-activ/traseu-refugiul-agatat-lacul-rosiile — Traseul spre Lacul Roșiile și Refugiul Agățat (Parâng)">Trail to Lake Roșiile and the Agățat Refuge (Parâng)</option>
+          <option value="turism-activ/statiunea-geoagiu-bai — Stațiunea Geoagiu-Băi">Geoagiu-Băi spa resort</option>
+          <option value="turism-activ/baile-vata-de-jos — Băile Vața de Jos (Vața Băi)">Vața de Jos thermal baths (Vața Băi)</option>
+        </optgroup>
+        <optgroup label="Cultural heritage">
+          <option value="mostenire/sarmizegetusa-regia — Sarmizegetusa Regia">Sarmizegetusa Regia</option>
+          <option value="mostenire/biserica-densus — Biserica din Densuș">Densuș Church</option>
+          <option value="mostenire/manastirea-prislop — Mănăstirea Prislop">Prislop Monastery</option>
+          <option value="mostenire/muzeul-mineritului-petrosani — Muzeul Mineritului din Petroșani">Mining Museum, Petroșani</option>
+          <option value="mostenire/mina-petrila — Mina Petrila (Planeta Petrila)">Petrila Mine (Planeta Petrila)</option>
+          <option value="mostenire/crucea-eroilor-lupeni — Crucea Eroilor de pe Muntele Straja">Heroes&#39; Cross on Mount Straja</option>
+          <option value="mostenire/aleea-gimnastelor — Aleea Gimnastelor">Gymnasts&#39; Walk</option>
+          <option value="mostenire/muzeul-civilizatiei-dacice-si-romane-deva — Muzeul Civilizației Dacice și Romane — Magna Curia">Museum of Dacian and Roman Civilisation — Magna Curia</option>
+          <option value="mostenire/muzeul-etnografie-orastie — Muzeul de Etnografie și Artă Populară Orăștie">Museum of Ethnography and Folk Art, Orăștie</option>
+          <option value="mostenire/cetatea-medievala-orastie — Cetatea medievală a Orăștiei">Orăștie Medieval Citadel</option>
+          <option value="mostenire/casa-memoriala-aurel-vlaicu — Complexul Memorial „Aurel Vlaicu”">&quot;Aurel Vlaicu&quot; Memorial Complex</option>
+          <option value="mostenire/muzeul-aurului-brad — Muzeul Aurului din Brad">Gold Museum, Brad</option>
+          <option value="mostenire/treptele-romane-ruda-brad — Treptele Romane (Ruda-Brad)">Roman Steps (Ruda-Brad)</option>
+          <option value="mostenire/biserica-criscior — Biserica „Adormirea Maicii Domnului” din Crișcior">Church of the Dormition, Crișcior</option>
+          <option value="mostenire/castelul-corvinilor — Castelul Corvinilor">Corvin Castle</option>
+          <option value="mostenire/furnalul-govajdia — Furnalul de la Govăjdia">Govăjdia Blast Furnace</option>
+          <option value="mostenire/castelul-bela-fay-simeria — Castelul Béla Fáy">Béla Fáy Manor</option>
+          <option value="mostenire/termele-romane-germisara — Termele romane Germisara">Germisara Roman Baths</option>
+          <option value="mostenire/biserica-strei — Biserica „Adormirea Maicii Domnului” din Strei">Church of the Dormition, Strei</option>
+          <option value="mostenire/biserica-santamaria-orlea — Biserica reformată din Sântămăria-Orlea">Reformed Church, Sântămăria-Orlea</option>
+          <option value="mostenire/castelul-nopcsa-sacel — Castelul Nopcsa din Săcel">Nopcsa Castle, Săcel</option>
+          <option value="mostenire/cetatea-malaiesti — Cetatea Mălăiești">Mălăiești Fortress</option>
+          <option value="mostenire/ulpia-traiana-sarmizegetusa — Ulpia Traiana Sarmizegetusa">Ulpia Traiana Sarmizegetusa</option>
+          <option value="mostenire/cetatea-colt — Cetatea Colț">Colț Fortress</option>
+          <option value="mostenire/rotonda-geoagiu — Rotonda din Geoagiu">Geoagiu Rotunda</option>
+          <option value="mostenire/biserica-bozes — Biserica „Sfinții Arhangheli” din Bozeș">Church of the Holy Archangels, Bozeș</option>
+          <option value="mostenire/biserica-streisangeorgiu — Biserica Sf. Gheorghe din Streisângeorgiu">St George&#39;s Church, Streisângeorgiu</option>
+          <option value="mostenire/curtea-candestilor-rau-de-mori — Curtea nobiliară a Cândeștilor">Cândea Noble Court</option>
+          <option value="mostenire/biserica-ostrov — Biserica „Pogorârea Sfântului Duh” din Ostrov">Church of the Descent of the Holy Spirit, Ostrov</option>
+          <option value="mostenire/biserica-pesteana — Biserica medievală din Peșteana">Medieval Church, Peșteana</option>
+          <option value="mostenire/bastionul-rosu-ilia — Bastionul Roșu — Casa natală Gabriel Bethlen">Red Bastion — Gabriel Bethlen&#39;s Birthplace</option>
+          <option value="mostenire/biserica-de-lemn-bretea-mureseana — Biserica de lemn din Bretea Mureșană">Wooden Church, Bretea Mureșană</option>
+          <option value="mostenire/biserica-ponor — Biserica „Pogorârea Sfântului Duh” din Ponor">Church of the Descent of the Holy Spirit, Ponor</option>
+          <option value="mostenire/biserica-de-lemn-soimus — Biserica de lemn din Șoimuș">Wooden Church, Șoimuș</option>
+          <option value="mostenire/biserica-de-lemn-radulesti — Biserica de lemn din Rădulești">Wooden Church, Rădulești</option>
+          <option value="mostenire/biserica-lapusnic — Biserica „Cuvioasa Paraschiva” din Lăpușnic">St Paraskeva Church, Lăpușnic</option>
+          <option value="mostenire/biserica-de-lemn-ciungani — Biserica de lemn din Ciungani">Wooden Church, Ciungani</option>
+          <option value="mostenire/biserica-de-lemn-birtin — Biserica de lemn din Birtin">Wooden Church, Birtin</option>
+          <option value="mostenire/castelul-kendeffy — Castelul Kendeffy">Kendeffy Castle</option>
+          <option value="mostenire/biserica-sanpetru — Biserica „Sfântul Gheorghe” din Sânpetru">St George&#39;s Church, Sânpetru</option>
+          <option value="mostenire/biserica-trestia — Biserica „Buna Vestire” din Trestia">Church of the Annunciation, Trestia</option>
+          <option value="mostenire/biserica-lesnic — Biserica „Sfântul Nicolae” din Leșnic">St Nicholas&#39; Church, Leșnic</option>
+          <option value="mostenire/castelul-gyulay-mintia — Castelul Gyulay din Mintia">Gyulay Castle, Mintia</option>
+          <option value="mostenire/biserica-beriu — Biserica „Adormirea Maicii Domnului” din Beriu">Church of the Dormition, Beriu</option>
+          <option value="mostenire/biserica-castau — Biserica „Sfinții Arhangheli” din Căstău">Church of the Holy Archangels, Căstău</option>
+        </optgroup>
+        <optgroup label="Businesses">
+          <option value="afaceri/conacul-radacinilor — Conacul Rădăcinilor">Conacul Rădăcinilor</option>
+          <option value="afaceri/casa-lupeni — Casa Lupeni">Casa Lupeni</option>
+          <option value="afaceri/hotel-sarmis-deva — Hotel Sarmis">Hotel Sarmis</option>
+          <option value="afaceri/cocosul-de-aur-deva — Cocoșul de Aur">Cocoșul de Aur</option>
+          <option value="afaceri/casa-rustica-deva — Casa Rustică">Casa Rustică</option>
+          <option value="afaceri/pensiunea-la-fontaine-hunedoara — Pensiunea La Fontaine">Pensiunea La Fontaine</option>
+          <option value="afaceri/curtea-veche-hunedoara — Curtea Veche">Curtea Veche</option>
+          <option value="afaceri/eden-by-werk-hunedoara — Eden by Werk">Eden by Werk</option>
+          <option value="afaceri/hotel-petrosani — Hotel Petroșani">Hotel Petroșani</option>
+          <option value="afaceri/complex-keops-petrosani — Complex Keops">Complex Keops</option>
+          <option value="afaceri/pensiunea-avy-hateg — Pensiunea Avy">Pensiunea Avy</option>
+          <option value="afaceri/avy-wine-dine-hateg — Avy Wine &amp; Dine">Avy Wine &amp; Dine</option>
+          <option value="afaceri/pensiunea-jorja-orastie — Pensiunea Jorja">Pensiunea Jorja</option>
+          <option value="afaceri/bistro-merinde-orastie — Bistro Merinde">Bistro Merinde</option>
+          <option value="afaceri/pensiunea-irina-brad — Pensiunea Irina">Pensiunea Irina</option>
+          <option value="afaceri/pensiunea-ana-maria-brad — Pensiunea Ana Maria">Pensiunea Ana Maria</option>
+          <option value="afaceri/pensiunea-phoenix-simeria — Pensiunea Phoenix">Pensiunea Phoenix</option>
+          <option value="afaceri/atrium-hotel-vulcan — Atrium Hotel">Atrium Hotel</option>
+          <option value="afaceri/heaven-inn-vulcan — Heaven Inn">Heaven Inn</option>
+          <option value="afaceri/pensiunea-retezat-petrosani — Pensiunea Retezat">Pensiunea Retezat</option>
+          <option value="afaceri/hotel-rusu-parang — Hotel Rusu">Hotel Rusu</option>
+          <option value="afaceri/pensiunea-bujor-de-munte-petrosani — Pensiunea Bujor de Munte">Pensiunea Bujor de Munte</option>
+          <option value="afaceri/pensiunea-floare-de-colt-petrosani — Pensiunea Floare de Colț">Pensiunea Floare de Colț</option>
+          <option value="afaceri/complex-turistic-valea-mosului-petrosani — Complex Turistic Valea Moșului">Complex Turistic Valea Moșului</option>
+          <option value="afaceri/cabana-la-cassian-vulcan — Cabana la Cassian">Cabana la Cassian</option>
+          <option value="afaceri/pensiunea-paradisul-verde-vulcan — Pensiunea Paradisul Verde">Pensiunea Paradisul Verde</option>
+          <option value="afaceri/cabana-casa-ozon-vulcan — Cabana Casa Ozon">Cabana Casa Ozon</option>
+          <option value="afaceri/pensiunea-dor-de-munte-lupeni — Pensiunea Dor de Munte">Pensiunea Dor de Munte</option>
+          <option value="afaceri/complexul-montana-lupeni — Complexul Montana">Complexul Montana</option>
+          <option value="afaceri/vila-casa-cu-tei-lupeni — Vila Casa cu Tei">Vila Casa cu Tei</option>
+          <option value="afaceri/pensiunea-izvorul-maleii-petrila — Pensiunea Izvorul Maleii">Pensiunea Izvorul Maleii</option>
+          <option value="afaceri/cabana-brazihouse-petrila — Cabana Brazihouse">Cabana Brazihouse</option>
+          <option value="afaceri/cabana-taia-parang-sureanu-petrila — Cabana Taia Parâng-Șureanu">Cabana Taia Parâng-Șureanu</option>
+          <option value="afaceri/hotel-germisara-geoagiu-bai — Hotel Germisara Resort &amp; SPA">Hotel Germisara Resort &amp; SPA</option>
+          <option value="afaceri/pensiunea-sarmis-sarmizegetusa — Pensiunea Sarmis">Pensiunea Sarmis</option>
+        </optgroup>
+<!-- /GEN:targets -->
+          <option value="altul" data-i18n="photo.target.other">Other place (I write it below)</option>
+        </select>
+      </label>
+      <label>
+        <span data-i18n="photo.other">Other place or details about the spot</span>
+        <input type="text" name="obiectiv-detalii" id="photo-other" maxlength="200">
+      </label>
+      <label>
+        <span data-i18n="photo.file">Photo (JPG or PNG)</span>
+        <input type="file" name="fotografie" id="photo-file" accept="image/jpeg,image/png" required>
+        <small data-i18n="photo.file.hint">At least 1600 px wide, 8 MB at most.</small>
+        <small class="photo-warn" id="photo-warn" role="alert" hidden></small>
+      </label>
+      <label>
+        <span data-i18n="photo.author">Author name (as it should appear in the credit)</span>
+        <input type="text" name="autor" required maxlength="80">
+      </label>
+      <label>
+        <span data-i18n="photo.email">Your e-mail address</span>
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        <span data-i18n="photo.license">Licence under which you allow publication</span>
+        <select name="licenta" required>
+          <option value="Permisiune de publicare pe gohd.ro, cu credit" data-i18n="photo.license.permission">Permission to publish on gohd.ro, with credit to the author</option>
+          <option value="CC BY 4.0" data-i18n="photo.license.ccby">Creative Commons CC BY 4.0 licence</option>
+          <option value="CC BY-SA 4.0" data-i18n="photo.license.ccbysa">Creative Commons CC BY-SA 4.0 licence</option>
+        </select>
+      </label>
+      <label class="check">
+        <input type="checkbox" name="acord-autor" value="da" required>
+        <span data-i18n="photo.consent">I am the author of the photo and I allow it to be published on gohd.ro, with credit to the author named above, under the chosen licence.</span>
+      </label>
+      <button class="btn btn--primary" type="submit" data-i18n="photo.submit">Send the photo</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__top">
+      <div>
+        <a class="brand" href="/en/" data-i18n="site.name">Hunedoara Live</a>
+        <div class="footer-tagline" data-i18n="footer.tagline">the digital guide to Hunedoara county</div>
+      </div>
+      <nav class="footer-nav">
+        <a href="/en/destinatii.html" data-i18n="nav.destinatii">Destinations</a>
+        <a href="/en/orase.html" data-i18n="nav.orase">Towns &amp; communes</a>
+        <a href="/en/natura.html" data-i18n="nav.natura">Nature</a>
+        <a href="/en/turism-activ.html" data-i18n="nav.turismActiv">Active tourism</a>
+        <a href="/en/mostenire.html" data-i18n="nav.mostenire">Cultural heritage</a>
+        <a href="/en/afaceri.html" data-i18n="nav.afaceri">Businesses</a>
+        <a href="/en/stiri.html" data-i18n="nav.stiri">News</a>
+        <a href="/en/utile.html" data-i18n="nav.utile">Useful</a>
+        <a href="/itinerarii.html" data-i18n="nav.itinerarii">Itineraries</a>
+        <a href="/harta.html" data-i18n="nav.harta">Map</a>
+        <a href="/calendar.html" data-i18n="nav.calendar">Calendar</a>
+        <a href="/vreme.html" data-i18n="nav.vreme">Weather &amp; slopes</a>
+        <a href="/en/trimite-poza.html" data-i18n="nav.trimitePoza">Send a photo</a>
+        <a href="/en/contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+    <div class="container site-footer__bottom">
+      <span class="footer-note" data-i18n="footer.note">Independent, non-commercial project. The texts are original; photos are freely licensed or come from the featured businesses.</span>
+      <a class="footer-email" href="mailto:hunedoaragohd@gmail.com">hunedoaragohd@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="/js/data.js"></script>
+  <script src="/js/config.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/images.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/photo-form.js"></script>
+</body>
+</html>
