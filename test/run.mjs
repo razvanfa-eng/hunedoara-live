@@ -777,5 +777,31 @@ function load(file, query = "", urlPath = file, pref = null) {
   }
 }
 
+/* -------- sitemap.xml: <lastmod> din data reală a modificării fișierului -------- */
+{
+  const { execFileSync } = await import("child_process");
+  const sm = fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8");
+  const doc = new JSDOM(sm, { contentType: "application/xml" }).window.document;
+  const urls = [...doc.getElementsByTagName("url")].map((u) => ({
+    loc: u.getElementsByTagName("loc")[0].textContent,
+    lastmod: (u.getElementsByTagName("lastmod")[0] || {}).textContent,
+    alt: u.getElementsByTagName("xhtml:link").length
+  }));
+  const toFile = (u) => { const p = u.replace("https://gohd.ro/", ""); return p === "" ? "index.html" : p.endsWith("/") ? p + "index.html" : p; };
+  const today = new Date().toISOString().slice(0, 10);
+  ok(urls.length > 0 && urls.every((u) => /^\d{4}-\d{2}-\d{2}$/.test(u.lastmod || "") && u.lastmod <= today), "sitemap lastmod: fiecare URL are <lastmod> AAAA-LL-ZZ, niciunul din viitor");
+  ok(urls.every((u) => u.alt === 3 || !/\/(en\/)?(multumim|404)/.test(u.loc)), "sitemap lastmod: xhtml:link hreflang păstrate (3 per URL cu pereche)");
+  let git = null;
+  try { git = (args) => execFileSync("git", ["-c", "core.quotepath=false", ...args], { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }); git(["rev-parse", "--git-dir"]); } catch (e) { git = null; }
+  if (git) {
+    const dirty = new Set(git(["status", "--porcelain", "--untracked-files=all"]).split("\n").filter(Boolean).map((l) => l.slice(3)));
+    const sample = urls.filter((u) => !dirty.has(toFile(u.loc))).filter((_, i) => i % 7 === 0);
+    const wrong = sample.filter((u) => { const d = git(["log", "-1", "--format=%cs", "--", toFile(u.loc)]).trim(); return d && d !== u.lastmod; });
+    ok(sample.length === 0 || wrong.length === 0, "sitemap lastmod: = ziua ultimului commit al fișierului (" + sample.length + " URL-uri verificate cu git log)" + (wrong.length ? " — diferă: " + wrong.slice(0, 3).map((u) => u.loc + " " + u.lastmod).join(", ") : ""));
+  }
+  const bs = fs.readFileSync(path.join(ROOT, "scripts/build-pages.mjs"), "utf8");
+  ok(!/lastmod:\s*entry\.date/.test(bs) && /function fileDay/.test(bs) && !/new Date\(\)\.toISOString\(\)\.slice\(0, 10\)\s*\}\)/.test(bs.replace(/\|\| new Date\(\)\.toISOString\(\)\.slice\(0, 10\)/g, "")), "sitemap lastmod: build-pages.mjs nu mai pune data de azi / data publicării pentru toate");
+}
+
 console.log(`\n${pass} pass, ${fail} fail`);
 process.exit(fail ? 1 : 0);

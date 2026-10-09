@@ -56,21 +56,42 @@ function write(f, text) {
   return prev !== text;
 }
 
-/* ---------- data modificării unui fișier (pentru sitemap lastmod, .ics) ----------
- * Ziua ultimului commit care a atins fișierele; dacă fișierele au modificări necomise (sau
- * nu sunt în git), ziua modificării pe disc. Nu e „data de azi” pentru toate paginile. */
-function fileDay(rel) {
-  const p = path.join(ROOT, rel);
-  if (!fs.existsSync(p)) return null;
-  const mtime = fs.statSync(p).mtime.toISOString().slice(0, 10);
+/* ---------- data modificării unui fișier (sitemap <lastmod>, .ics) ----------
+ * Ziua ultimului commit care a modificat fișierul (un singur `git log --name-only` pentru toate); fișierele cu modificări
+ * necomise sau neurmărite primesc ziua modificării pe disc. Paginile generate se rescriu doar când li se
+ * schimbă conținutul (write() de mai jos), deci data lor de commit = ultima modificare reală a paginii —
+ * nu „data de azi” pentru toate. Fără git (arhivă): ziua modificării pe disc. */
+let DAY_MAP = null;
+function dayMap() {
+  if (DAY_MAP) return DAY_MAP;
+  DAY_MAP = new Map();
+  const git = (args) => execFileSync("git", ["-c", "core.quotepath=false", ...args], { cwd: ROOT, encoding: "utf8", maxBuffer: 1 << 28, stdio: ["ignore", "pipe", "ignore"] });
   try {
-    const dirty = execFileSync("git", ["status", "--porcelain", "--", rel], { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
-    if (dirty) return mtime;
-    const d = execFileSync("git", ["log", "-1", "--format=%cs", "--", rel], { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
-    return d || mtime;
-  } catch (e) { return mtime; }
+    let day = null;
+    for (const line of git(["log", "--format=@%cs", "--name-only", "--no-renames"]).split("\n")) {
+      if (line.startsWith("@")) day = line.slice(1);
+      else if (line && !DAY_MAP.has(line)) DAY_MAP.set(line, day);
+    }
+    for (const e of git(["status", "--porcelain", "-z", "--untracked-files=all"]).split("\0").filter(Boolean)) {
+      const rel = e.slice(3);
+      const p = path.join(ROOT, rel);
+      if (fs.existsSync(p) && fs.statSync(p).isFile()) DAY_MAP.set(rel, fs.statSync(p).mtime.toISOString().slice(0, 10));
+    }
+  } catch (e) { /* fără git: se folosește mtime */ }
+  return DAY_MAP;
+}
+function fileDay(rel) {
+  const d = dayMap().get(rel);
+  if (d) return d;
+  const p = path.join(ROOT, rel);
+  return fs.existsSync(p) ? fs.statSync(p).mtime.toISOString().slice(0, 10) : null;
 }
 const latestDay = (rels) => rels.map(fileDay).filter(Boolean).sort().pop() || new Date().toISOString().slice(0, 10);
+// URL absolut -> fișierul care îl servește (/ -> index.html, /x/ -> x/index.html)
+function urlFile(u) {
+  const p = u.replace(SITE + "/", "");
+  return p === "" ? "index.html" : p.endsWith("/") ? p + "index.html" : p;
+}
 
 /* ---------- 1. pozele ---------- */
 await buildImages({ quiet: true });
@@ -703,7 +724,7 @@ for (const key of Object.keys(SECTIONS)) {
       const dir = (lang === "en" ? EN_DIR + "/" : "") + sec.dir + "/" + entry.id;
       if (write(dir + "/index.html", html)) changed++;
       generatedDirs.add(dir);
-      sitemapUrls.push({ loc: url, priority: key === "SITE_NEWS" ? "0.5" : "0.6", lastmod: entry.date, alt: alternates });
+      sitemapUrls.push({ loc: url, priority: key === "SITE_NEWS" ? "0.5" : "0.6", alt: alternates });
       pages++;
       if (lang === "en") enPages++;
     }
@@ -748,7 +769,7 @@ for (const key of Object.keys(SECTIONS)) {
       const dir = (lang === "en" ? EN_DIR + "/" : "") + ITIN_DIR + "/" + it.id;
       if (write(dir + "/index.html", html)) changed++;
       genDirs.add(dir);
-      sitemapUrls.push({ loc: url, priority: "0.6", alt: alternates, src: ["js/itinerarii-data.js", "js/data.js"] });
+      sitemapUrls.push({ loc: url, priority: "0.6", alt: alternates });
       pages++;
       if (lang === "en") enPages++;
     }
@@ -775,6 +796,7 @@ for (const key of Object.keys(SECTIONS)) {
 const xmlEsc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const xhtmlLinks = (alt) => !alt ? "" : [["ro", alt.ro], ["en", alt.en], ["x-default", alt.ro]]
   .map(([hl, href]) => '\n    <xhtml:link rel="alternate" hreflang="' + hl + '" href="' + xmlEsc(href) + '"/>').join("");
+for (const u of sitemapUrls) u.lastmod = fileDay(urlFile(u.loc));
 const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' +
   sitemapUrls.map((u) => "  <url>\n    <loc>" + xmlEsc(u.loc) + "</loc>" +

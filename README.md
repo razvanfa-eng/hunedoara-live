@@ -149,7 +149,9 @@ Scriptul face, în ordine:
    textele `data-i18n` deja traduse în HTML și linkurile interne spre `/en/`.
    Nu edita fișierele din `en/` — editează pagina RO și rulează scriptul.
 4. **`sitemap.xml`** (toate paginile publice + toate intrările, RO și EN, cu
-   `xhtml:link` hreflang pentru fiecare pereche) și **`robots.txt`**.
+   `xhtml:link` hreflang pentru fiecare pereche) și **`robots.txt`**. `<lastmod>` = ziua ultimului commit care a modificat
+   fișierul paginii (un singur `git log --name-only`; fișierele cu modificări necomise primesc ziua modificării pe disc), nu data de azi.
+   Paginile generate se rescriu doar când li se schimbă conținutul, deci data lor reflectă o modificare reală.
 
 **Limbile.** Fiecare pereche RO ↔ EN e legată prin `<link rel="alternate" hreflang="ro|en|x-default">`
 (x-default = RO). Pe paginile cu pereche limba e dată de URL (`<html data-page-lang>`),
