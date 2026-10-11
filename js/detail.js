@@ -183,7 +183,8 @@
   function mountReviews(entry, force) {
     var reviewsEl = document.getElementById("reviews");
     if (!reviewsEl) return;
-    if (!entry.hasReviews || !window.Reviews) { reviewsEl.hidden = true; return; }
+    var rcfg = (window.SITE_CONFIG && window.SITE_CONFIG.reviews) || {};
+    if (rcfg.enabled === false || !entry.hasReviews || !window.Reviews) { reviewsEl.hidden = true; return; }
     if (reviewsMounted && !force) return;
     reviewsMounted = true;
     reviewsEl.hidden = false;

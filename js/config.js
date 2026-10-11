@@ -28,6 +28,9 @@ window.SITE_CONFIG = {
    *               Vezi SETUP.md pentru pași.
    * ------------------------------------------------------------------- */
   reviews: {
+    // false = secțiunea de recenzii e ascunsă pe toate paginile (până se configurează Supabase + Turnstile);
+    // pune true și provider "remote" după pașii din SETUP.md
+    enabled: false,
     provider: "local",
 
     // completează după ce creezi proiectul Supabase (SETUP.md)

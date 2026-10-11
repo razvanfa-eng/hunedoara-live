@@ -58,7 +58,7 @@ function prep(html) {
   html = html.replace(/<link[^>]+href="https?:\/\/[^"]*"[^>]*>/g, "");
   html = html.replace(/<script[^>]+src="https?:\/\/[^"]*"[^>]*><\/script>/g, "");
   html = html.replace(/<script (?:defer )?src="\/?(js\/[^"?]+)(?:\?[^"]*)?"><\/script>/g, (_, src) =>
-    "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8") + "\n</script>");
+    "<script>\n" + fs.readFileSync(path.join(ROOT, src), "utf8").replace("enabled: false,", src === "js/config.js" ? "enabled: true," : "enabled: false,") + "\n</script>");
   return html;
 }
 // pref: preferința de limbă salvată deja în localStorage ("ro" / "en") la încărcare
@@ -454,6 +454,13 @@ function load(file, query = "", urlPath = file, pref = null) {
   ];
   const missing = files.filter((f) => !fs.existsSync(path.join(ROOT, f)));
   ok(missing.length === 0, "toate fișierele există" + (missing.length ? ": lipsesc " + missing.join(", ") : ""));
+}
+
+/* -------- recenzii: în producție sunt ascunse până se configurează Supabase (testele le pornesc în prep()) -------- */
+{
+  const cfg = fs.readFileSync(path.join(ROOT, "js/config.js"), "utf8");
+  const remote = /provider:\s*"remote"/.test(cfg);
+  ok(/enabled:\s*false,/.test(cfg) || remote, "recenzii: ascunse în producție (enabled:false) sau configurate remote");
 }
 
 /* -------- PWA: manifest, etichete în <head>, buton de instalare, service worker -------- */
