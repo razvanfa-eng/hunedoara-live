@@ -704,8 +704,8 @@ function load(file, query = "", urlPath = file, pref = null) {
   const readF = (f) => fs.existsSync(path.join(ROOT, f)) ? fs.readFileSync(path.join(ROOT, f), "utf8") : "";
   const withCoords = SECTION_KEYS.flatMap((k) => DATA[k].filter((e) => e.coords).map((e) => ({ k, e })));
   ok(withCoords.length >= 24, "harta: " + withCoords.length + " intrări cu coordonate în data.js (minim 24)");
-  const badCoords = withCoords.filter(({ e }) => !Array.isArray(e.coords) || e.coords.length !== 2 || !(e.coords[0] > 45.2 && e.coords[0] < 46.2 && e.coords[1] > 22.2 && e.coords[1] < 23.8));
-  ok(badCoords.length === 0, "harta: toate coordonatele sunt în județul Hunedoara (bbox 45.2–46.2 N, 22.2–23.8 E)" + (badCoords.length ? " — " + badCoords.map(({ e }) => e.id).join(", ") : ""));
+  const badCoords = withCoords.filter(({ e }) => !Array.isArray(e.coords) || e.coords.length !== 2 || !(e.coords[0] > 45.2 && e.coords[0] < 46.3 && e.coords[1] > 22.2 && e.coords[1] < 23.8));
+  ok(badCoords.length === 0, "harta: toate coordonatele sunt în județul Hunedoara (bbox 45.2–46.3 N, 22.2–23.8 E)" + (badCoords.length ? " — " + badCoords.map(({ e }) => e.id).join(", ") : ""));
   const dups = withCoords.filter(({ e }, i) => withCoords.findIndex((o) => o.e.id !== e.id && o.k === withCoords[i].k && o.e.coords.join() === e.coords.join()) >= 0);
   ok(dups.length === 0, "harta: nicio pereche de intrări din aceeași secțiune cu coordonate identice" + (dups.length ? " — " + dups.map(({ e }) => e.id).join(", ") : ""));
   for (const lang of ["ro", "en"]) {

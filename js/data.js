@@ -939,6 +939,234 @@ window.SITE_NATURE = [
       ]
     }
   },
+  {
+    id: "cheile-crivadiei",
+    name: "Cheile Crivadiei",
+    category: { ro: "Rezervație naturală", en: "Nature reserve" },
+    area: "Bănița",
+    coords: [45.4689, 23.2144],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/cheile-crivadiei.jpg"],
+    photoCredit: { author: "Zsolt deak", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Turn_de_cetate_(ruine).JPG" },
+    ro: {
+      tagline: "Rezervație de 10 ha din Parcul Natural Grădiștea Muncelului-Cioclovina, lângă ruinele Turnului Crivadiei.",
+      description: [
+        "Cheile Crivadiei sunt o arie protejată de interes național (categoria a IV-a IUCN, rezervație de tip mixt), aflată pe raza Parcului Natural Grădiștea Muncelului-Cioclovina, lângă satul Crivadia din comuna Bănița. Rezervația are 10 ha și se remarcă prin frumusețea peisajului și printr-o floră bogată și variată.",
+        "La adăpostul abruptului cheilor, pe substrat calcaros, a rămas o adevărată „oază” termofilă, cu numeroase elemente dacice. În imediata apropiere se află monumentul feudal Turnul Crivadiei — ruinele lui apar în fotografia alăturată —, iar în sat există și Peștera Gaura Oanei."
+      ],
+      facts: [
+        { label: "Suprafață", value: "10 ha" },
+        { label: "Statut", value: "arie protejată de interes național, categoria a IV-a IUCN" },
+        { label: "Localizare", value: "lângă satul Crivadia, comuna Bănița" },
+        { label: "Reper", value: "Turnul Crivadiei, monument feudal" }
+      ]
+    },
+    en: {
+      name: "Crivadia Gorge",
+      tagline: "A 10 ha reserve in the Grădiștea Muncelului-Cioclovina Natural Park, beside the ruins of the Crivadia Tower.",
+      description: [
+        "The Crivadia Gorge is a nationally protected area (IUCN category IV, mixed-type reserve) within the Grădiștea Muncelului-Cioclovina Natural Park, near the village of Crivadia in Bănița commune. The reserve covers 10 ha and stands out for its scenery and its rich, varied flora.",
+        "Sheltered by the steep walls of the gorge, on limestone, survives a true thermophilous “oasis” with many Dacian elements. Close by stands the medieval Crivadia Tower — its ruins appear in the accompanying photo — and the village also has the Gaura Oanei Cave."
+      ],
+      facts: [
+        { label: "Area", value: "10 ha" },
+        { label: "Status", value: "nationally protected area, IUCN category IV" },
+        { label: "Location", value: "near Crivadia village, Bănița commune" },
+        { label: "Landmark", value: "Crivadia Tower, a medieval monument" }
+      ]
+    }
+  },
+  {
+    id: "podul-natural-grohot",
+    name: "Podul natural de la Grohot",
+    category: { ro: "Monument al naturii", en: "Natural monument" },
+    area: "Țara Zarandului",
+    coords: [46.233, 22.75],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Monument al naturii pe valea Uibăreștilor, la circa 15 km de Țebea, ocrotit pentru podul natural și vegetația de pe calcar.",
+      description: [
+        "Podul natural de la Grohot este o rezervație naturală de tip geologic (categoria a III-a IUCN, monument al naturii), cu o suprafață de 1 ha, aflată pe valea Uibăreștilor, pe teritoriul satului Grohot, comuna Bulzeștii de Sus, la circa 15 km de Țebea.",
+        "Este ocrotit pentru elementele naturale specifice — podul natural propriu-zis —, la care se adaugă vegetația dezvoltată pe substrat calcaros, cu numeroase elemente specifice zonei submediteraneene."
+      ],
+      facts: [
+        { label: "Suprafață", value: "1 ha" },
+        { label: "Statut", value: "rezervație geologică, monument al naturii (categoria a III-a IUCN)" },
+        { label: "Localizare", value: "valea Uibăreștilor, satul Grohot, comuna Bulzeștii de Sus" },
+        { label: "Distanță", value: "~15 km de Țebea" }
+      ]
+    },
+    en: {
+      name: "Grohot Natural Bridge",
+      tagline: "A natural monument in the Uibărești valley, about 15 km from Țebea, protected for its natural bridge and limestone vegetation.",
+      description: [
+        "The Grohot Natural Bridge is a geological nature reserve (IUCN category III, natural monument) of 1 ha, in the Uibărești valley, in the village of Grohot, Bulzeștii de Sus commune, about 15 km from Țebea.",
+        "It is protected for its specific natural features — the natural bridge itself — together with the vegetation growing on limestone, with many elements typical of the sub-Mediterranean zone."
+      ],
+      facts: [
+        { label: "Area", value: "1 ha" },
+        { label: "Status", value: "geological reserve, natural monument (IUCN category III)" },
+        { label: "Location", value: "Uibărești valley, Grohot village, Bulzeștii de Sus commune" },
+        { label: "Distance", value: "~15 km from Țebea" }
+      ]
+    }
+  },
+  {
+    id: "cascada-clocota",
+    name: "Cascada Clocota",
+    category: { ro: "Cascadă", en: "Waterfall" },
+    area: "Geoagiu",
+    coords: [45.9374, 23.1679],
+    hasReviews: true,
+    season: "tot-anul",
+    relatedIds: ["statiunea-geoagiu-bai"],
+    images: ["images/cascada-clocota.jpg"],
+    photoCredit: { author: "Oguszt", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Waterfall_geoagiu.jpg" },
+    ro: {
+      tagline: "Mică cascadă pe râul Clocota, aproape de centrul stațiunii Geoagiu-Băi.",
+      description: [
+        "Cascada Clocota se află în partea sud-estică a stațiunii Geoagiu-Băi, aproape de centru, și se formează pe râul Clocota. Deși nu are dimensiuni mari, impresionează prin cădere și prin amplasament.",
+        "Se poate ajunge pe două căi: pe poteca care coboară din drumul spre orașul Geoagiu sau prin stațiune, pe o stradă îngustă care pornește din drumul dintre Hotelul Diana și centrul civic al stațiunii."
+      ],
+      facts: [
+        { label: "Localizare", value: "sud-estul stațiunii Geoagiu-Băi, lângă centru" },
+        { label: "Râu", value: "Clocota" },
+        { label: "Acces", value: "pe potecă din drumul spre Geoagiu sau pe o stradă îngustă din stațiune" }
+      ]
+    },
+    en: {
+      name: "Clocota Waterfall",
+      tagline: "A small waterfall on the Clocota stream, close to the centre of Geoagiu-Băi resort.",
+      description: [
+        "The Clocota Waterfall lies in the south-eastern part of Geoagiu-Băi resort, close to the centre, and forms on the Clocota stream. Though not large, it is impressive for its drop and its setting.",
+        "It can be reached two ways: along the path that descends from the road to Geoagiu town, or through the resort, along a narrow street that leaves the road between the Hotel Diana and the civic centre."
+      ],
+      facts: [
+        { label: "Location", value: "south-east of Geoagiu-Băi resort, near the centre" },
+        { label: "Stream", value: "Clocota" },
+        { label: "Access", value: "by path from the road to Geoagiu, or via a narrow street in the resort" }
+      ]
+    }
+  },
+  {
+    id: "cheile-cernei",
+    name: "Cheile Cernei",
+    category: { ro: "Rezervație naturală", en: "Nature reserve" },
+    area: "Poiana Ruscă",
+    coords: [45.6539, 22.6589],
+    hasReviews: true,
+    season: "tot-anul",
+    relatedIds: ["lacul-cincis"],
+    images: ["images/cheile-cernei.jpg"],
+    photoCredit: { author: "Nicu Farcaș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Cheile_Cernei.JPG" },
+    ro: {
+      tagline: "Chei de 2 ha săpate de râul Cerna în șisturile cristaline ale Munților Poiana Ruscă.",
+      description: [
+        "Cheile Cernei sunt o arie naturală protejată de interes național (categoria a IV-a IUCN, rezervație de tip mixt) pe valea Cernei, pe raza comunei Lunca Cernii de Jos, în Munții Poiana Ruscă. Rezervația, de 2 ha, este o formațiune geomorfologică de chei, cu versanți înalți, săpată de apele râului Cerna în roci metamorfice (șisturi cristaline).",
+        "Râul Cerna izvorăște din Poiana Ruscă, străbate Ținutul Pădurenilor, alimentează Lacul Cincis și trece prin Hunedoara, înainte de a se vărsa în Mureș."
+      ],
+      facts: [
+        { label: "Suprafață", value: "2 ha" },
+        { label: "Statut", value: "arie protejată de interes național, categoria a IV-a IUCN" },
+        { label: "Rocă", value: "șisturi cristaline (roci metamorfice)" },
+        { label: "Localizare", value: "valea Cernei, comuna Lunca Cernii de Jos, Munții Poiana Ruscă" }
+      ]
+    },
+    en: {
+      name: "Cerna Gorge",
+      tagline: "A 2 ha gorge cut by the Cerna river through the crystalline schists of the Poiana Ruscă Mountains.",
+      description: [
+        "The Cerna Gorge is a nationally protected natural area (IUCN category IV, mixed-type reserve) in the Cerna valley, in Lunca Cernii de Jos commune, in the Poiana Ruscă Mountains. The 2 ha reserve is a geomorphological gorge formation with high slopes, cut by the waters of the Cerna river through metamorphic rock (crystalline schists).",
+        "The Cerna rises in the Poiana Ruscă, crosses the Pădureni Land, feeds Lake Cincis and passes through Hunedoara before flowing into the Mureș."
+      ],
+      facts: [
+        { label: "Area", value: "2 ha" },
+        { label: "Status", value: "nationally protected area, IUCN category IV" },
+        { label: "Rock", value: "crystalline schists (metamorphic rock)" },
+        { label: "Location", value: "Cerna valley, Lunca Cernii de Jos commune, Poiana Ruscă Mountains" }
+      ]
+    }
+  },
+  {
+    id: "pestera-cu-corali",
+    name: "Peștera cu Corali",
+    category: { ro: "Peșteră", en: "Cave" },
+    area: "Vâlcan",
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/pestera-cu-corali.jpg"],
+    photoCredit: { author: "Petr Vodička", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Pestera_cu_Corali.jpg" },
+    ro: {
+      tagline: "Peșteră-rezervație din Munții Vâlcan, cu o sală de coralite; închisă accesului public din 1972.",
+      description: [
+        "Peștera cu Corali se află în Munții Vâlcan, pe valea Scorotei, la circa 12 km de Câmpu lui Neag, la aproximativ 1000 m altitudine, sub culmea Cioaca. A fost descoperită în 1970 de membri ai clubului de speologie „Focul Viu” din București; planul ei s-a întocmit un an mai târziu, iar în 1972 a fost declarată rezervație speologică și închisă accesului publicului.",
+        "Este o peșteră liniară, fosilă și descendentă, lungă de 83 m. O galerie înaltă de 2–4 m se îngustează la 1 m într-un punct numit Altarul; după aproximativ 50 m urmează o săritoare de 5 m, la baza căreia începe Sala cu Coralite, lungă de 30 m. Fiind rezervație, nu se poate vizita."
+      ],
+      facts: [
+        { label: "Lungime", value: "83 m" },
+        { label: "Altitudine", value: "~1000 m, sub culmea Cioaca" },
+        { label: "Descoperire", value: "1970, de clubul de speologie „Focul Viu” din București" },
+        { label: "Statut", value: "rezervație speologică din 1972; acces interzis publicului" },
+        { label: "Localizare", value: "valea Scorotei, la ~12 km de Câmpu lui Neag" }
+      ]
+    },
+    en: {
+      name: "Coral Cave",
+      tagline: "A cave reserve in the Vâlcan Mountains with a chamber of coralloid formations; closed to the public since 1972.",
+      description: [
+        "Coral Cave lies in the Vâlcan Mountains, in the Scorota valley, about 12 km from Câmpu lui Neag, at roughly 1,000 m altitude, below the Cioaca ridge. It was discovered in 1970 by members of the “Focul Viu” caving club of Bucharest; its plan was drawn up a year later, and in 1972 it was declared a speleological reserve and closed to the public.",
+        "It is a linear, fossil, descending cave 83 m long. A gallery 2–4 m high narrows to 1 m at a spot called the Altar; after about 50 m comes a 5 m drop, at whose foot begins the 30 m-long Coralite Chamber. As a reserve, it cannot be visited."
+      ],
+      facts: [
+        { label: "Length", value: "83 m" },
+        { label: "Altitude", value: "~1,000 m, below the Cioaca ridge" },
+        { label: "Discovery", value: "1970, by the “Focul Viu” caving club of Bucharest" },
+        { label: "Status", value: "speleological reserve since 1972; closed to the public" },
+        { label: "Location", value: "Scorota valley, ~12 km from Câmpu lui Neag" }
+      ]
+    }
+  },
+  {
+    id: "padurea-slivut",
+    name: "Pădurea Slivuț",
+    category: { ro: "Rezervație naturală", en: "Nature reserve" },
+    area: "Hațeg",
+    coords: [45.625, 22.9775],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/hateg-rezervatia-zimbri.jpg"],
+    photoCredit: { author: "Radu Niculița", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:14-18-hateg-zimbrii-2.jpg" },
+    ro: {
+      tagline: "Pădure de stejari de 40 ha lângă Hațeg, cu rezervație de zimbri din 1958.",
+      description: [
+        "Pădurea Slivuț este o arie protejată de interes național (categoria a IV-a IUCN, rezervație botanică), de 40 ha, aflată lângă orașul Hațeg și inclusă în Geoparcul Dinozaurilor „Țara Hațegului”. Este un ecosistem natural de stejărete xerofile, rest al unor întinse păduri inițiale de stejar, defrișate odată cu extinderea agriculturii pe dealurile din marginea depresiunii Hațegului.",
+        "Din 1958, în pădure funcționează o rezervație de zimbri, aflată în custodia Direcției Silvice Deva, prin Ocolul Silvic Hațeg."
+      ],
+      facts: [
+        { label: "Suprafață", value: "40 ha" },
+        { label: "Statut", value: "arie protejată de interes național, categoria a IV-a IUCN; în Geoparcul Dinozaurilor" },
+        { label: "Zimbri", value: "rezervație din 1958, în custodia Ocolului Silvic Hațeg" },
+        { label: "Localizare", value: "lângă orașul Hațeg" }
+      ]
+    },
+    en: {
+      name: "Slivuț Forest",
+      tagline: "A 40 ha oak forest near Hațeg, with a European bison reserve since 1958.",
+      description: [
+        "Slivuț Forest is a nationally protected area (IUCN category IV, botanical reserve) of 40 ha near the town of Hațeg, included in the “Hațeg Country” Dinosaur Geopark. It is a natural ecosystem of xerophilous oak woods, a remnant of vast original oak forests cleared as farming spread over the hills at the edge of the Hațeg depression.",
+        "Since 1958 a European bison reserve has operated in the forest, in the custody of the Deva Forestry Directorate through the Hațeg Forest District."
+      ],
+      facts: [
+        { label: "Area", value: "40 ha" },
+        { label: "Status", value: "nationally protected area, IUCN category IV; within the Dinosaur Geopark" },
+        { label: "Bison", value: "reserve since 1958, in the custody of the Hațeg Forest District" },
+        { label: "Location", value: "near the town of Hațeg" }
+      ]
+    }
+  },
 ];
 
 window.SITE_ACTIVITIES = [
@@ -4098,6 +4326,359 @@ window.SITE_HERITAGE = [
         { label: "Dedication", value: "Archangels Michael and Gabriel" },
         { label: "Renovations", value: "1921–1925, 1965, 1990, 2005" },
         { label: "Location", value: "Căstău village, Beriu commune" }
+      ]
+    }
+  },
+  {
+    id: "cetatea-costesti-blidaru",
+    name: "Cetatea Costești-Blidaru",
+    category: { ro: "Cetate dacică", en: "Dacian fortress" },
+    area: "Munții Orăștiei",
+    coords: [45.6678, 23.1629],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/cetatea-blidaru.jpg"],
+    photoCredit: { author: "Oroles", license: "Domeniu public", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Blidaru.JPG" },
+    ro: {
+      tagline: "Cel mai puternic complex fortificat dintre cetățile dacice din Munții Orăștiei, pe culmea Blidarului, în patrimoniul mondial UNESCO.",
+      description: [
+        "Cetatea dacică Costești-Blidaru se află lângă satul Costești, comuna Orăștioara de Sus, pe culmea Blidarului (750 m), pe malul stâng al apei Grădiștei. A fost construită în secolul I î.Hr., ca apărare în fața cuceririi romane, și este una dintre cele șase fortărețe dacice din Munții Orăștiei înscrise în patrimoniul mondial UNESCO.",
+        "Este cel mai puternic complex fortificat din zonă: se întinde pe un platou de aproape 6000 mp și cuprinde două incinte unite între ele, cu șase turnuri în total. Prima cetate, de formă trapezoidală, ocupă platoul superior și are patru turnuri exterioare, pe colțuri; intrarea se făcea prin turnul I, gândit astfel încât atacatorii să fie siliți să cotească și să-și expună flancul. A doua incintă, pentagonală, a fost ridicată la vest de prima."
+      ],
+      facts: [
+        { label: "Datare", value: "secolul I î.Hr." },
+        { label: "Altitudine", value: "750 m (culmea Blidarului)" },
+        { label: "Componente", value: "două incinte, șase turnuri, platou de aproape 6000 mp" },
+        { label: "Statut", value: "patrimoniu mondial UNESCO (Fortărețele dacice din Munții Orăștiei)" },
+        { label: "Localizare", value: "lângă satul Costești, comuna Orăștioara de Sus" }
+      ]
+    },
+    en: {
+      name: "Costești-Blidaru Fortress",
+      tagline: "The strongest fortified complex among the Dacian fortresses of the Orăștie Mountains, on Blidaru ridge, part of UNESCO World Heritage.",
+      description: [
+        "The Dacian fortress of Costești-Blidaru stands near the village of Costești, Orăștioara de Sus commune, on Blidaru ridge (750 m), on the left bank of the Grădiște stream. It was built in the 1st century BC as a defence against the Roman conquest and is one of the six Dacian fortresses of the Orăștie Mountains inscribed on the UNESCO World Heritage List.",
+        "It is the strongest fortified complex in the area: it spreads over a plateau of almost 6,000 sq m and has two linked enclosures with six towers in all. The first fortress, trapezoidal, occupies the upper plateau and has four outer towers at its corners; the entrance went through tower I, designed so that attackers had to turn and expose their flank. The second, pentagonal enclosure was built to the west of the first."
+      ],
+      facts: [
+        { label: "Dating", value: "1st century BC" },
+        { label: "Altitude", value: "750 m (Blidaru ridge)" },
+        { label: "Components", value: "two enclosures, six towers, a plateau of almost 6,000 sq m" },
+        { label: "Status", value: "UNESCO World Heritage (Dacian Fortresses of the Orăștie Mountains)" },
+        { label: "Location", value: "near Costești village, Orăștioara de Sus commune" }
+      ]
+    }
+  },
+  {
+    id: "cetatea-costesti-cetatuie",
+    name: "Cetatea Costești-Cetățuie",
+    category: { ro: "Cetate dacică", en: "Dacian fortress" },
+    area: "Munții Orăștiei",
+    coords: [45.6794, 23.1541],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/cetatea-costesti-cetatuie.jpg"],
+    photoCredit: { author: "Oroles", license: "Domeniu public", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Costesti.JPG" },
+    ro: {
+      tagline: "Fortăreață dacică pe valea Apei Grădiștei, reședință a regilor daci și pază a drumului spre Sarmizegetusa Regia.",
+      description: [
+        "Cetățuia Costești se află pe valea Apei Grădiștei, lângă satul Costești (comuna Orăștioara de Sus); platoul superior al dealului are 514 m altitudine. Era o cetate puternică, cu rol defensiv, la baza căreia se întindea o mare așezare civilă, și reședința obișnuită a regilor daci transilvăneni. Un alt rol al ei era apărarea drumului spre cetatea Sarmizegetusa Regia.",
+        "Primul sistem defensiv a fost un val de pământ lat de 6–8 m la bază și înalt astăzi de 2–2,5 m, în care erau înfipți stâlpi groși de lemn, legați între ei cu împletituri de nuiele lipite cu pământ — o palisadă în spatele căreia se adăposteau apărătorii. Cetatea face parte din cele șase fortărețe dacice din Munții Orăștiei înscrise în patrimoniul mondial UNESCO."
+      ],
+      facts: [
+        { label: "Datare", value: "secolul I î.Hr." },
+        { label: "Altitudine", value: "514 m (platoul superior)" },
+        { label: "Rol", value: "reședință regală; apărarea drumului spre Sarmizegetusa Regia" },
+        { label: "Apărare", value: "val de pământ cu palisadă de lemn" },
+        { label: "Localizare", value: "valea Apei Grădiștei, lângă satul Costești" }
+      ]
+    },
+    en: {
+      name: "Costești-Cetățuie Fortress",
+      tagline: "A Dacian fortress in the Grădiște valley, a seat of the Dacian kings that guarded the road to Sarmizegetusa Regia.",
+      description: [
+        "Costești-Cetățuie stands in the Grădiște valley near the village of Costești (Orăștioara de Sus commune); the upper plateau of the hill is 514 m high. It was a strong defensive fortress with a large civilian settlement at its foot, and the usual residence of the Transylvanian Dacian kings. Another of its roles was to protect the road to the fortress of Sarmizegetusa Regia.",
+        "The first line of defence was an earth rampart 6–8 m wide at the base and 2–2.5 m high today, in which thick wooden posts were set, bound together with wattle daubed with clay — a palisade behind which the defenders sheltered. The fortress is one of the six Dacian fortresses of the Orăștie Mountains inscribed on the UNESCO World Heritage List."
+      ],
+      facts: [
+        { label: "Dating", value: "1st century BC" },
+        { label: "Altitude", value: "514 m (upper plateau)" },
+        { label: "Role", value: "royal residence; guarding the road to Sarmizegetusa Regia" },
+        { label: "Defences", value: "earth rampart with a wooden palisade" },
+        { label: "Location", value: "Grădiște valley, near Costești village" }
+      ]
+    }
+  },
+  {
+    id: "castrul-roman-micia",
+    name: "Castrul roman Micia",
+    category: { ro: "Castru roman", en: "Roman fort" },
+    area: "Vețel",
+    coords: [45.9146, 22.8149],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/castrul-roman-micia.jpg"],
+    photoCredit: { author: "Saturnian", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Castra_Micia_043.jpg" },
+    ro: {
+      tagline: "Ruinele unui mare castru și ale unei așezări romane cu rețea stradală, terme, amfiteatru și port, pe malul Mureșului.",
+      description: [
+        "Micia a fost o importantă așezare romană, dezvoltată în jurul unui mare castru. Ruinele se află astăzi pe teritoriul satului Vețel, pe malul stâng al Mureșului, în dreptul termocentralei de la Mintia.",
+        "Deși avea doar statut rural (pagus), așezarea era puternic urbanizată: rețea stradală ortogonală, edificii publice monumentale — terme, amfiteatru — și un port la Mureș, amenajat cu cheiuri din zidărie de piatră. Pe la 1840, în ruine a fost găsit un altar votiv din secolele II–III, închinat zeului Silvanus Domesticus, care arată cum erau administrate pășunile și salinele din Dacia romană."
+      ],
+      facts: [
+        { label: "Epoca", value: "romană (Dacia romană)" },
+        { label: "Localizare", value: "satul Vețel, pe malul stâng al Mureșului, în dreptul termocentralei Mintia" },
+        { label: "Urme", value: "rețea stradală ortogonală, terme, amfiteatru, port cu cheiuri de piatră" },
+        { label: "Descoperire", value: "altar votiv din sec. II–III, dedicat lui Silvanus Domesticus" }
+      ]
+    },
+    en: {
+      name: "Micia Roman Fort",
+      tagline: "The ruins of a large fort and a Roman settlement with a street grid, baths, amphitheatre and port, on the Mureș bank.",
+      description: [
+        "Micia was an important Roman settlement that grew around a large fort. Its ruins now lie in the village of Vețel, on the left bank of the Mureș, opposite the Mintia power plant.",
+        "Although it only had rural status (a pagus), the settlement was highly urbanised: an orthogonal street grid, monumental public buildings — baths, an amphitheatre — and a port on the Mureș, fitted with stone-masonry quays. Around 1840 a votive altar of the 2nd–3rd century, dedicated to the god Silvanus Domesticus, was found in the ruins; it shows how pastures and salt mines were administered in Roman Dacia."
+      ],
+      facts: [
+        { label: "Period", value: "Roman (Roman Dacia)" },
+        { label: "Location", value: "Vețel village, on the left bank of the Mureș, opposite the Mintia power plant" },
+        { label: "Remains", value: "orthogonal street grid, baths, amphitheatre, port with stone quays" },
+        { label: "Find", value: "votive altar of the 2nd–3rd century, dedicated to Silvanus Domesticus" }
+      ]
+    }
+  },
+  {
+    id: "castrul-roman-germisara",
+    name: "Castrul roman Germisara (Cigmău)",
+    category: { ro: "Castru roman", en: "Roman fort" },
+    area: "Geoagiu",
+    coords: [45.897, 23.1644],
+    hasReviews: true,
+    season: "tot-anul",
+    relatedIds: ["termele-romane-germisara"],
+    images: ["images/castrul-roman-germisara.jpg"],
+    photoCredit: { author: "Saturnian", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Castra_of_Cigmau_-_26.JPG" },
+    ro: {
+      tagline: "Castru auxiliar roman lângă Geoagiu, cunoscut local drept „Cetatea Uriașului”, cu o așezare civilă alături.",
+      description: [
+        "Castrul roman Germisara, numit și castrul de la Cigmău, a fost un castru de trupe auxiliare, cu o așezare civilă alături. Situl arheologic — cunoscut local drept „Cetatea Uriașului” sau „Cetatea Urieșilor” — se află pe platoul Turiac, prima terasă a Mureșului, la circa 2 km de Geoagiu spre Simeria, în satul Cigmău, pe malul drept al Mureșului.",
+        "Germisara este atestată în Tabula Peutingeriana, în Geografia lui Ptolemeu și în Cosmografia de la Ravenna. Până în 1990 terenul a fost lucrat agricol, ceea ce a distrus parțial sau total zidurile, iar piatra a fost luată de localnicii din așezările apropiate; săpăturile arheologice au început abia în anul 2000."
+      ],
+      facts: [
+        { label: "Epoca", value: "romană" },
+        { label: "Tip", value: "castru de trupe auxiliare, cu așezare civilă" },
+        { label: "Localizare", value: "platoul Turiac, satul Cigmău, la ~2 km de Geoagiu spre Simeria" },
+        { label: "Atestare", value: "Tabula Peutingeriana, Ptolemeu, Cosmografia de la Ravenna" }
+      ]
+    },
+    en: {
+      name: "Germisara Roman Fort (Cigmău)",
+      tagline: "A Roman auxiliary fort near Geoagiu, known locally as the “Giant's Fortress”, with a civilian settlement beside it.",
+      description: [
+        "The Roman fort of Germisara, also called the Cigmău fort, was a fort for auxiliary troops with a civilian settlement alongside. The archaeological site — known locally as the “Giant's Fortress” — lies on the Turiac plateau, the first terrace of the Mureș, about 2 km from Geoagiu towards Simeria, in the village of Cigmău, on the right bank of the Mureș.",
+        "Germisara is recorded in the Tabula Peutingeriana, in Ptolemy's Geography and in the Ravenna Cosmography. Until 1990 the land was farmed, which partly or wholly destroyed the walls, and the stone was taken by people from nearby villages; archaeological digs began only in 2000."
+      ],
+      facts: [
+        { label: "Period", value: "Roman" },
+        { label: "Type", value: "fort for auxiliary troops, with a civilian settlement" },
+        { label: "Location", value: "Turiac plateau, Cigmău village, ~2 km from Geoagiu towards Simeria" },
+        { label: "Sources", value: "Tabula Peutingeriana, Ptolemy, Ravenna Cosmography" }
+      ]
+    }
+  },
+  {
+    id: "panteonul-motilor-tebea",
+    name: "Panteonul Moților din Țebea",
+    category: { ro: "Complex memorial", en: "Memorial complex" },
+    area: "Țara Zarandului",
+    coords: [46.1681, 22.7358],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/panteonul-motilor-tebea.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Tebea_2011.21.jpg" },
+    ro: {
+      tagline: "Cimitirul eroilor din Țebea, cu mormântul lui Avram Iancu și celebrul Gorun al lui Horea.",
+      description: [
+        "Panteonul Moților este numele sub care se cunoaște Cimitirul eroilor din Țebea, un complex memorial aflat lângă drumul european E79. Aici se găsesc biserica satului, mormintele revoluționarilor de la 1848 Avram Iancu, Ioan Buteanu și Simeon Groza, morminte și cruci ale eroilor din Războiul de Independență și din cele două războaie mondiale, precum și Gorunul lui Horea. Țebea este considerat capitala Țării Zarandului.",
+        "Ansamblul se află pe o movilă, în jurul bisericii. La circa 15 m vest de biserică este mormântul lui Avram Iancu, socotit centrul complexului, iar la sud de el stă Gorunul lui Horea — de fapt un stejar pedunculat de circa 400 de ani, cu circumferința de 9 m. Potrivit tradiției, sub acest copac Horea i-a chemat la luptă pe moții adunați, în 1784.",
+        "Trunchiul, slăbit în timp, a fost legat cu cercuri de oțel în 1924, iar la restaurarea din 1947 a fost îmbrăcat în ciment, cu modelul scoarței realizat de sculptorul Radu Moga-Mânzat."
+      ],
+      facts: [
+        { label: "Localizare", value: "satul Țebea, comuna Baia de Criș, lângă drumul european E79" },
+        { label: "Morminte", value: "Avram Iancu (†10 septembrie 1872), Ioan Buteanu, Simeon Groza" },
+        { label: "Gorunul lui Horea", value: "stejar pedunculat de ~400 de ani, circumferință 9 m" },
+        { label: "Istorie", value: "legat cu cercuri de oțel în 1924; acoperit cu ciment la restaurarea din 1947" }
+      ]
+    },
+    en: {
+      name: "Moților Pantheon, Țebea",
+      tagline: "The heroes' cemetery in Țebea, with Avram Iancu's grave and the famous Horea's Oak.",
+      description: [
+        "The Moților Pantheon (Pantheon of the Moți) is the name by which the Heroes' Cemetery of Țebea is known, a memorial complex beside the E79 European road. It holds the village church, the graves of the 1848 revolutionaries Avram Iancu, Ioan Buteanu and Simeon Groza, graves and crosses of heroes of the War of Independence and the two world wars, and Horea's Oak. Țebea is regarded as the capital of the Zarand Country.",
+        "The complex stands on a mound, around the church. About 15 m west of the church is Avram Iancu's grave, considered the centre of the complex, and south of it stands Horea's Oak — in fact a pedunculate oak about 400 years old, with a 9 m circumference. According to tradition, it was under this tree that Horea called the assembled Moți to arms in 1784.",
+        "The trunk, weakened over time, was bound with steel hoops in 1924 and, during the 1947 restoration, covered in cement, with the bark pattern modelled by the sculptor Radu Moga-Mânzat."
+      ],
+      facts: [
+        { label: "Location", value: "Țebea village, Baia de Criș commune, beside the E79 European road" },
+        { label: "Graves", value: "Avram Iancu (d. 10 September 1872), Ioan Buteanu, Simeon Groza" },
+        { label: "Horea's Oak", value: "pedunculate oak, ~400 years old, 9 m circumference" },
+        { label: "History", value: "bound with steel hoops in 1924; covered in cement in the 1947 restoration" }
+      ]
+    }
+  },
+  {
+    id: "casa-memoriala-crisan",
+    name: "Casa memorială Crișan",
+    category: { ro: "Casă memorială", en: "Memorial house" },
+    area: "Brad",
+    coords: [46.1703, 22.7996],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/casa-memoriala-crisan.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:CasaNatalaCrisan_(22).jpg" },
+    ro: {
+      tagline: "Casa reconstituită a lui Gheorghe Crișan, unul dintre conducătorii răscoalei țăranilor din 1784–1785.",
+      description: [
+        "Casa natală Crișan se află în satul Crișan (numit în trecut Vaca), comuna Ribița, în nordul județului. Este monument istoric (cod LMI HD-IV-m-B-03491) și a fost reconstruită în 1979, după o fotografie publicată de istoricul Ioan Lupaș în 1934. În acest sat s-a născut Gheorghe Crișan, unul dintre conducătorii răscoalei țăranilor români din Transilvania din 1784–1785.",
+        "Clădirea reproduce o casă țărănească de la începutul secolului al XVIII-lea: fundație de piatră, două camere și o cămară din bârne de lemn, târnaț cu stâlpi și arcade și acoperiș de paie. În încăperi sunt expuse piese de etnografie din zona Ribița — inclusiv un interior de casă moțească —, arme albe și de foc din secolul al XVIII-lea și material foto-documentar despre răscoală."
+      ],
+      facts: [
+        { label: "Localizare", value: "satul Crișan (fost Vaca), comuna Ribița" },
+        { label: "Reconstruită", value: "1979, după o fotografie din 1934" },
+        { label: "Construcție", value: "fundație de piatră, pereți din bârne, acoperiș de paie" },
+        { label: "Cod LMI", value: "HD-IV-m-B-03491" }
+      ]
+    },
+    en: {
+      name: "Crișan Memorial House",
+      tagline: "The reconstructed house of Gheorghe Crișan, one of the leaders of the 1784–1785 peasant uprising.",
+      description: [
+        "The Crișan birth house stands in the village of Crișan (formerly Vaca), Ribița commune, in the north of the county. It is a historic monument (LMI code HD-IV-m-B-03491) and was rebuilt in 1979 from a photograph published by the historian Ioan Lupaș in 1934. This village was the birthplace of Gheorghe Crișan, one of the leaders of the 1784–1785 uprising of the Romanian peasants of Transylvania.",
+        "The building reproduces an early 18th-century peasant house: a stone foundation, two rooms and a pantry of timber logs, a porch with posts and arches, and a thatched roof. Inside are ethnographic pieces from the Ribița area — including the interior of a Moți house —, 18th-century bladed and firearms, and photo-documentary material about the uprising."
+      ],
+      facts: [
+        { label: "Location", value: "Crișan village (formerly Vaca), Ribița commune" },
+        { label: "Rebuilt", value: "1979, from a 1934 photograph" },
+        { label: "Construction", value: "stone foundation, log walls, thatched roof" },
+        { label: "LMI code", value: "HD-IV-m-B-03491" }
+      ]
+    }
+  },
+  {
+    id: "catedrala-ortodoxa-orastie",
+    name: "Catedrala Ortodoxă din Orăștie",
+    category: { ro: "Catedrală ortodoxă", en: "Orthodox cathedral" },
+    area: "Orăștie",
+    coords: [45.8376, 23.1927],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/catedrala-orastie.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Catedrala_din_Orăștie_(4).jpg" },
+    ro: {
+      tagline: "Catedrala cu hramul Sfinții Arhangheli Mihail și Gavriil, ridicată în 1936–1943, cu turn de cinci clopote de bronz.",
+      description: [
+        "Catedrala ortodoxă din Orăștie, cu hramul Sfinții Arhangheli Mihail și Gavriil, domină centrul orașului, în Piața Victoriei. A fost ridicată între 1936 și 1943, din inițiativa protopopului Ioan Moța — gazetar și om politic, luptător pentru Marea Unire —, cu sprijinul Băncii „Ardeleana” din Orăștie, al Băncii Naționale a României, al societății „Mica” din Brad, al Liceului „Aurel Vlaicu” și al Regimentului 92 Infanterie.",
+        "Edificiul are proporții monumentale, în plan de cruce greacă, și îmbină elemente de arhitectură bizantină, romanică și gotică; arhitectul George Cristinel a creat o clădire unică în spațiul românesc. Nota distinctivă este turnul impunător, cu cinci clopote mari de bronz, alipit peretelui nordic al pronaosului. La construcție s-au folosit beton armat și cărămidă."
+      ],
+      facts: [
+        { label: "Hram", value: "Sfinții Arhangheli Mihail și Gavriil" },
+        { label: "Construcție", value: "1936–1943" },
+        { label: "Arhitect", value: "George Cristinel" },
+        { label: "Plan", value: "cruce greacă; stil care îmbină elemente bizantine, romanice și gotice" },
+        { label: "Adresă", value: "Piața Victoriei nr. 1, Orăștie" }
+      ]
+    },
+    en: {
+      name: "Orthodox Cathedral of Orăștie",
+      tagline: "The cathedral dedicated to the Archangels Michael and Gabriel, built in 1936–1943, with a tower of five bronze bells.",
+      description: [
+        "The Orthodox Cathedral of Orăștie, dedicated to the Archangels Michael and Gabriel, dominates the town centre on Victory Square. It was built between 1936 and 1943 on the initiative of Archpriest Ioan Moța — a journalist and politician, a fighter for the Great Union — with the support of the “Ardeleana” Bank of Orăștie, the National Bank of Romania, the “Mica” company of Brad, the “Aurel Vlaicu” High School and the 92nd Infantry Regiment.",
+        "The building has monumental proportions, on a Greek-cross plan, and combines Byzantine, Romanesque and Gothic elements; the architect George Cristinel created a building unique in Romania. Its distinctive feature is the imposing tower with five large bronze bells, attached to the north wall of the narthex. Reinforced concrete and brick were used in its construction."
+      ],
+      facts: [
+        { label: "Patron saints", value: "Archangels Michael and Gabriel" },
+        { label: "Built", value: "1936–1943" },
+        { label: "Architect", value: "George Cristinel" },
+        { label: "Plan", value: "Greek cross; a style combining Byzantine, Romanesque and Gothic elements" },
+        { label: "Address", value: "Piața Victoriei no. 1, Orăștie" }
+      ]
+    }
+  },
+  {
+    id: "biserica-luterana-orastie",
+    name: "Biserica luterană din Orăștie",
+    category: { ro: "Biserică luterană", en: "Lutheran church" },
+    area: "Orăștie",
+    coords: [45.8373, 23.1959],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/biserica-luterana-orastie.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:OrastieHD2012_(26).JPG" },
+    ro: {
+      tagline: "Biserica comunității săsești, construită la începutul secolului al XIX-lea în vecinătatea vechii biserici a orașului.",
+      description: [
+        "În evul mediu, întreaga comunitate din Orăștie folosea aceeași biserică, astăzi biserica reformată. După Reforma protestantă, maghiarii din oraș au adoptat reforma lui Jean Calvin, iar sașii pe cea a lui Martin Luther. Timp de trei secole, sașii au folosit alternativ, cu maghiarii, fosta biserică romano-catolică; la începutul secolului al XIX-lea și-au construit un lăcaș nou, în imediata vecinătate a celei vechi.",
+        "Biserica este monument istoric și amintește trecutul săsesc al orașului, numit în germană Broos și în maghiară Szászváros — „Orașul sașilor”."
+      ],
+      facts: [
+        { label: "Confesiune", value: "luterană (comunitatea săsească)" },
+        { label: "Construcție", value: "începutul secolului al XIX-lea" },
+        { label: "Statut", value: "monument istoric" },
+        { label: "Localizare", value: "Orăștie, lângă biserica reformată" }
+      ]
+    },
+    en: {
+      name: "Lutheran Church of Orăștie",
+      tagline: "The church of the Saxon community, built in the early 19th century next to the town's old church.",
+      description: [
+        "In the Middle Ages the whole community of Orăștie used the same church, today the Reformed church. After the Protestant Reformation the town's Hungarians adopted the reform of John Calvin and the Saxons that of Martin Luther. For three centuries the Saxons shared the former Roman Catholic church with the Hungarians, taking turns; in the early 19th century they built a new place of worship right next to the old one.",
+        "The church is a historic monument and recalls the Saxon past of the town, called Broos in German and Szászváros in Hungarian — “the Saxons' town”."
+      ],
+      facts: [
+        { label: "Denomination", value: "Lutheran (Saxon community)" },
+        { label: "Built", value: "early 19th century" },
+        { label: "Status", value: "historic monument" },
+        { label: "Location", value: "Orăștie, next to the Reformed church" }
+      ]
+    }
+  },
+  {
+    id: "manastirea-franciscana-deva",
+    name: "Mănăstirea franciscană din Deva",
+    category: { ro: "Mănăstire franciscană", en: "Franciscan monastery" },
+    area: "Deva",
+    coords: [45.8874, 22.907],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/manastirea-franciscana-deva.jpg"],
+    photoCredit: { author: "Dezidor", license: "CC BY 3.0", source: "https://commons.wikimedia.org/wiki/File:Deva,_kostel.jpg" },
+    ro: {
+      tagline: "Mănăstire și biserică baroce din Deva, ridicate de franciscani veniți din Ciprovți și definitivate până în 1752.",
+      description: [
+        "Mănăstirea franciscană din Deva, cu hramul Sfânta Maria, este monument istoric și de arhitectură (cod LMI HD-II-a-B-03231). A fost înființată la începutul secolului al XVIII-lea de călugări ai provinciei bulgare a Ordinului Franciscan, sprijiniți de catolicii din Ciprovți, care la sfârșitul secolului al XVII-lea au emigrat în masă în Țara Românească și Transilvania. Ansamblul a fost ridicat în etape, până în 1752.",
+        "Clădirea, în formă de patrulater, urmează stilul mănăstirilor franciscane din Transilvania, cu biserica barocă alipită colțului de sud-est; este construită din piatră și cărămidă, cu decorațiuni în relief și statuete de baroc târziu. A fost mistuită de flăcări de mai multe ori — în 1707, incendiată de trupele generalului Acton, apoi în 1748 și 1872 —, iar în 1749 biserica a fost mărită din materialul clădirilor afectate."
+      ],
+      facts: [
+        { label: "Hram", value: "Sfânta Maria" },
+        { label: "Stil", value: "baroc, din piatră și cărămidă" },
+        { label: "Incendii", value: "1707, 1748, 1872" },
+        { label: "Cod LMI", value: "HD-II-a-B-03231" },
+        { label: "Adresă", value: "Strada Progresului, Deva" }
+      ]
+    },
+    en: {
+      name: "Franciscan Monastery of Deva",
+      tagline: "A Baroque monastery and church in Deva, built by friars from Chiprovtsi and completed by 1752.",
+      description: [
+        "The Franciscan Monastery of Deva, dedicated to St Mary, is a historic and architectural monument (LMI code HD-II-a-B-03231). It was founded in the early 18th century by monks of the Bulgarian province of the Franciscan Order, supported by the Catholics of Chiprovtsi, who emigrated en masse to Wallachia and Transylvania at the end of the 17th century. The complex was built in stages, up to 1752.",
+        "The quadrangular building follows the style of Transylvanian Franciscan monasteries, with the Baroque church attached to the south-east corner; it is built of stone and brick, with relief decoration and late-Baroque statuettes. It burned several times — in 1707, set alight by the troops of General Acton, then in 1748 and 1872 — and in 1749 the church was enlarged using material from the damaged buildings."
+      ],
+      facts: [
+        { label: "Patron", value: "St Mary" },
+        { label: "Style", value: "Baroque, of stone and brick" },
+        { label: "Fires", value: "1707, 1748, 1872" },
+        { label: "LMI code", value: "HD-II-a-B-03231" },
+        { label: "Address", value: "Strada Progresului, Deva" }
       ]
     }
   },

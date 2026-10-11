@@ -1089,6 +1089,102 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/lacul-valea-de-pesti/"/>
   </url>
   <url>
+    <loc>https://gohd.ro/natura/cheile-crivadiei/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/cheile-crivadiei/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/cheile-crivadiei/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cheile-crivadiei/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/cheile-crivadiei/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/cheile-crivadiei/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/cheile-crivadiei/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cheile-crivadiei/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/natura/podul-natural-grohot/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/podul-natural-grohot/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/podul-natural-grohot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/podul-natural-grohot/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/podul-natural-grohot/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/podul-natural-grohot/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/podul-natural-grohot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/podul-natural-grohot/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/natura/cascada-clocota/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/cascada-clocota/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/cascada-clocota/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cascada-clocota/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/cascada-clocota/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/cascada-clocota/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/cascada-clocota/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cascada-clocota/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/natura/cheile-cernei/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/cheile-cernei/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/cheile-cernei/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cheile-cernei/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/cheile-cernei/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/cheile-cernei/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/cheile-cernei/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cheile-cernei/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/natura/pestera-cu-corali/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/pestera-cu-corali/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/pestera-cu-corali/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/pestera-cu-corali/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/pestera-cu-corali/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/pestera-cu-corali/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/pestera-cu-corali/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/pestera-cu-corali/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/natura/padurea-slivut/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/padurea-slivut/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/padurea-slivut/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/padurea-slivut/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/padurea-slivut/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/padurea-slivut/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/padurea-slivut/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/padurea-slivut/"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/turism-activ/traseu-pietrele-bucura-peleaga/</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
@@ -2463,6 +2559,150 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-castau/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-castau/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-castau/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/cetatea-costesti-blidaru/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/cetatea-costesti-blidaru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/cetatea-costesti-blidaru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-costesti-blidaru/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/cetatea-costesti-blidaru/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/cetatea-costesti-blidaru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/cetatea-costesti-blidaru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-costesti-blidaru/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/cetatea-costesti-cetatuie/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/cetatea-costesti-cetatuie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/cetatea-costesti-cetatuie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-costesti-cetatuie/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/cetatea-costesti-cetatuie/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/cetatea-costesti-cetatuie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/cetatea-costesti-cetatuie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-costesti-cetatuie/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/castrul-roman-micia/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/castrul-roman-micia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/castrul-roman-micia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castrul-roman-micia/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/castrul-roman-micia/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/castrul-roman-micia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/castrul-roman-micia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castrul-roman-micia/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/castrul-roman-germisara/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/castrul-roman-germisara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/castrul-roman-germisara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castrul-roman-germisara/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/castrul-roman-germisara/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/castrul-roman-germisara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/castrul-roman-germisara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castrul-roman-germisara/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/panteonul-motilor-tebea/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/panteonul-motilor-tebea/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/panteonul-motilor-tebea/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/panteonul-motilor-tebea/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/panteonul-motilor-tebea/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/panteonul-motilor-tebea/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/panteonul-motilor-tebea/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/panteonul-motilor-tebea/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/casa-memoriala-crisan/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/casa-memoriala-crisan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/casa-memoriala-crisan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/casa-memoriala-crisan/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/casa-memoriala-crisan/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/casa-memoriala-crisan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/casa-memoriala-crisan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/casa-memoriala-crisan/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/catedrala-ortodoxa-orastie/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/catedrala-ortodoxa-orastie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/catedrala-ortodoxa-orastie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/catedrala-ortodoxa-orastie/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/catedrala-ortodoxa-orastie/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/catedrala-ortodoxa-orastie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/catedrala-ortodoxa-orastie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/catedrala-ortodoxa-orastie/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-luterana-orastie/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-luterana-orastie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-luterana-orastie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-luterana-orastie/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-luterana-orastie/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-luterana-orastie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-luterana-orastie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-luterana-orastie/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/manastirea-franciscana-deva/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/manastirea-franciscana-deva/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/manastirea-franciscana-deva/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/manastirea-franciscana-deva/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/manastirea-franciscana-deva/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/manastirea-franciscana-deva/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/manastirea-franciscana-deva/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/manastirea-franciscana-deva/"/>
   </url>
   <url>
     <loc>https://gohd.ro/stiri/castelul-corvinilor-restaurat-2026/</loc>
