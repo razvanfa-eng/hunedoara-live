@@ -70,7 +70,7 @@ export async function buildImages({ quiet = false } = {}) {
     for (const dir of ["800", "1600", "og"]) fs.mkdirSync(path.join(IMG, dir), { recursive: true });
 
     await sharp(src).rotate().resize({ width: Math.min(w, 800), withoutEnlargement: true })
-      .webp({ quality: 78, effort: 5 }).toFile(path.join(IMG, "800", base + ".webp"));
+      .webp({ quality: 70, effort: 6 }).toFile(path.join(IMG, "800", base + ".webp"));
     if (w > 800) {
       await sharp(src).rotate().resize({ width: Math.min(w, 1600), withoutEnlargement: true })
         .webp({ quality: 76, effort: 5 }).toFile(path.join(IMG, "1600", base + ".webp"));

@@ -381,6 +381,14 @@ function fillHome(html, lang) {
     html = fillGen(html, id, zones[id] + "\n");
     html = html.replace(new RegExp('(<\\w+\\b[^>]*\\bid="' + id + '")( data-prerendered="[a-z]+")?'), '$1 data-prerendered="' + lang + '"');
   }
+  // poza primului card (LCP pe mobil): preload cu prioritate mare, ca să nu aștepte descoperirea din HTML-ul randat
+  const img = (h.highlights.match(/<img ([^>]*)>/) || [])[1] || "";
+  const attr = (n) => (img.match(new RegExp("\\b" + n + '="([^"]*)"')) || [])[1];
+  if (attr("srcset")) {
+    html = html.replace(/  <link rel="preload" as="image"[^>]*>\n/, "");
+    const tag = '  <link rel="preload" as="image" href="' + attr("srcset").split(" ")[0] + '" imagesrcset="' + attr("srcset") + '" imagesizes="' + attr("sizes") + '" fetchpriority="high">\n';
+    html = html.replace(/(  <link rel="stylesheet" href="\/?css\/style\.css">\n)/, tag + "$1");
+  }
   return html;
 }
 /* ---------- 2b. itinerarii (js/itinerarii-data.js) ---------- */
