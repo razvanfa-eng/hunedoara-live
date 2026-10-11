@@ -100,10 +100,10 @@ await buildImages({ quiet: true });
 const ctx = { console, document: { addEventListener() {} } };
 ctx.window = ctx;
 vm.createContext(ctx);
-for (const f of ["js/data.js", "js/config.js", "js/i18n.js", "js/images.js", "js/common.js", "js/detail.js", "js/itinerarii-data.js", "js/evenimente-data.js"]) {
+for (const f of ["js/data.js", "js/config.js", "js/i18n.js", "js/images.js", "js/common.js", "js/detail.js", "js/home.js", "js/itinerarii-data.js", "js/evenimente-data.js"]) {
   vm.runInContext(read(f), ctx, { filename: f });
 }
-const { RL, I18N, RL_DETAIL } = ctx;
+const { RL, I18N, RL_DETAIL, RL_HOME } = ctx;
 const t = (k, lang = "ro") => I18N.t(k, lang);
 
 /* ---------- limbi ---------- */
@@ -371,6 +371,18 @@ function photoTargets(html, lang) {
   }).join("");
   return fillGen(html, "targets", out);
 }
+/* ---------- 2a. prima pagină: cardurile pre-randate (js/home.js build) ----------
+ * Zonele din index.html (GEN:home-*) conțin deja HTML-ul final, ca LCP-ul să nu aștepte JS-ul;
+ * data-prerendered=<limba> spune lui home.js să nu le refacă. */
+function fillHome(html, lang) {
+  const h = RL_HOME.build(lang);
+  const zones = { "home-stats": h.stats, "explore-grid": h.explore, "home-highlights": h.highlights, "home-news": h.news };
+  for (const id of Object.keys(zones)) {
+    html = fillGen(html, id, zones[id] + "\n");
+    html = html.replace(new RegExp('(<\\w+\\b[^>]*\\bid="' + id + '")( data-prerendered="[a-z]+")?'), '$1 data-prerendered="' + lang + '"');
+  }
+  return html;
+}
 /* ---------- 2b. itinerarii (js/itinerarii-data.js) ---------- */
 const ITIN = ctx.SITE_ITINERARIES || [];
 const ITIN_DIR = "itinerarii";
@@ -590,7 +602,7 @@ function buildIcs(stamp) {
 }
 const hasOwnDesc = (html) => /<meta name="description"/.test(withoutSeo(html));
 const TOP_PAGES = [
-  { file: "index.html", title: (l) => t("page.title.home", l), desc: (l) => t("page.meta.home", l), image: DEFAULT_IMAGE, sitemap: "1.0", pair: true, canonical: true },
+  { file: "index.html", title: (l) => t("page.title.home", l), desc: (l) => t("page.meta.home", l), image: DEFAULT_IMAGE, sitemap: "1.0", pair: true, canonical: true, fill: fillHome },
   ...Object.keys(SECTIONS).map((k) => ({
     file: SECTIONS[k].listing,
     title: (l) => t("page.title." + SECTION_META[k].key, l), desc: (l) => t("page.meta." + SECTION_META[k].key, l),

@@ -33,73 +33,83 @@
     { key: "contact", page: "contact.html" }
   ];
 
+  // HTML-ul celor 4 zone, pentru o limbă dată — folosit și de scripts/build-pages.mjs
+  // (pre-randare în index.html / en/index.html: cardurile apar fără să aștepte JS-ul).
+  function build(lang) {
+    var t = function (k) { return window.I18N.t(k, lang); };
+    var RL = window.RL;
+    var out = {};
+
+    var towns = RL.dataArray("SITE_TOWNS").length;
+    var places = RL.dataArray("SITE_DESTINATIONS").length;
+    var trails = RL.dataArray("SITE_ACTIVITIES").length;
+    out.stats = [
+      [towns, t("home.stats.towns")],
+      [places, t("home.stats.places")],
+      [trails, t("home.stats.trails")],
+      [t("home.stats.history.value"), t("home.stats.history")]
+    ].map(function (pair) {
+      return '<div class="stat"><span class="stat__value">' + RL.esc(pair[0]) + '</span>' +
+        '<span class="stat__label">' + RL.esc(pair[1]) + "</span></div>";
+    }).join("");
+
+    out.explore = SECTIONS.map(function (s) {
+      var cls = "tile" + (s.img ? " tile--photo" : " tile--accent");
+      // fundal: varianta webp de ~800 px (tile-urile au max. ~560 px lățime pe ecran)
+      var bg = s.img ? ' style="background-image:url(&quot;' + RL.imgVariant(s.img, 800) + '&quot;)"' : "";
+      return '<a class="' + cls + '" href="' + RL.pageUrl(s.page, lang) + '"' + bg + '>' +
+        '<span class="tile__mark">' + RL.esc(s.key.charAt(0).toUpperCase()) + "</span>" +
+        '<span class="tile__title">' + RL.esc(t("sec." + s.key + ".name")) + "</span>" +
+        '<span class="tile__desc">' + RL.esc(t("sec." + s.key + ".desc")) + "</span>" +
+      "</a>";
+    }).join("");
+
+    out.highlights = HIGHLIGHTS.map(function (h, i) {
+      var e = RL.entryById(h.dataKey, h.id);
+      if (!e) return "";
+      var l = RL.loc(e, lang);
+      var img = (e.images && e.images[0]) || "";
+      return '<a class="card" href="' + RL.entryUrl(h.dataKey, e.id, lang) + '">' +
+        '<div class="card__media">' + RL.imgHtml(img, { sizes: "card", eager: i < 2 }) + "</div>" +
+        '<div class="card__body">' +
+          '<span class="card__cat">' + RL.esc(RL.categoryLabel(e, lang)) + "</span>" +
+          '<h3 class="card__title">' + RL.esc(RL.entryName(e, lang)) + "</h3>" +
+          '<p class="card__tagline">' + RL.esc(l.tagline || "") + "</p>" +
+        "</div>" +
+      "</a>";
+    }).join("");
+
+    var news = RL.dataArray("SITE_NEWS").slice().sort(function (a, b) {
+      return (b.date || "").localeCompare(a.date || "");
+    }).slice(0, 3);
+    out.news = news.length
+      ? news.map(function (n) {
+          var l = RL.loc(n, lang);
+          return '<a class="news-item" href="' + RL.entryUrl("SITE_NEWS", n.id, lang) + '">' +
+            '<span class="news-item__date">' + RL.esc(n.date || "") + "</span>" +
+            '<span class="news-item__title">' + RL.esc(RL.entryName(n, lang)) + "</span>" +
+            '<span class="news-item__tagline">' + RL.esc(l.tagline || "") + "</span>" +
+          "</a>";
+        }).join("")
+      : '<p class="muted">' + RL.esc(t("home.news.empty")) + "</p>";
+    return out;
+  }
+  window.RL_HOME = { build: build };
+
+  var ZONES = { stats: "home-stats", explore: "explore-grid", highlights: "home-highlights", news: "home-news" };
+
   function render() {
     var lang = window.I18N.lang;
-
-    var statsEl = document.getElementById("home-stats");
-    if (statsEl) {
-      var towns = window.RL.dataArray("SITE_TOWNS").length;
-      var places = window.RL.dataArray("SITE_DESTINATIONS").length;
-      var trails = window.RL.dataArray("SITE_ACTIVITIES").length;
-      statsEl.innerHTML = [
-        [towns, window.I18N.t("home.stats.towns")],
-        [places, window.I18N.t("home.stats.places")],
-        [trails, window.I18N.t("home.stats.trails")],
-        [window.I18N.t("home.stats.history.value"), window.I18N.t("home.stats.history")]
-      ].map(function (pair) {
-        return '<div class="stat"><span class="stat__value">' + window.RL.esc(pair[0]) + '</span>' +
-          '<span class="stat__label">' + window.RL.esc(pair[1]) + "</span></div>";
-      }).join("");
-    }
-
-    var gridEl = document.getElementById("explore-grid");
-    if (gridEl) {
-      gridEl.innerHTML = SECTIONS.map(function (s) {
-        var cls = "tile" + (s.img ? " tile--photo" : " tile--accent");
-        // fundal: varianta webp de ~800 px (tile-urile au max. ~560 px lățime pe ecran)
-        var bg = s.img ? ' style="background-image:url(&quot;' + window.RL.imgVariant(s.img, 800) + '&quot;)"' : "";
-        return '<a class="' + cls + '" href="' + window.RL.pageUrl(s.page, lang) + '"' + bg + '>' +
-          '<span class="tile__mark">' + window.RL.esc(s.key.charAt(0).toUpperCase()) + "</span>" +
-          '<span class="tile__title">' + window.RL.esc(window.I18N.t("sec." + s.key + ".name")) + "</span>" +
-          '<span class="tile__desc">' + window.RL.esc(window.I18N.t("sec." + s.key + ".desc")) + "</span>" +
-        "</a>";
-      }).join("");
-    }
-
-    var highlightsEl = document.getElementById("home-highlights");
-    if (highlightsEl) {
-      highlightsEl.innerHTML = HIGHLIGHTS.map(function (h, i) {
-        var e = window.RL.entryById(h.dataKey, h.id);
-        if (!e) return "";
-        var l = window.RL.loc(e, lang);
-        var img = (e.images && e.images[0]) || "";
-        return '<a class="card" href="' + window.RL.entryUrl(h.dataKey, e.id) + '">' +
-          '<div class="card__media">' + window.RL.imgHtml(img, { sizes: "card", eager: i < 2 }) + "</div>" +
-          '<div class="card__body">' +
-            '<span class="card__cat">' + window.RL.esc(window.RL.categoryLabel(e, lang)) + "</span>" +
-            '<h3 class="card__title">' + window.RL.esc(window.RL.entryName(e, lang)) + "</h3>" +
-            '<p class="card__tagline">' + window.RL.esc(l.tagline || "") + "</p>" +
-          "</div>" +
-        "</a>";
-      }).join("");
-    }
-
-    var newsEl = document.getElementById("home-news");
-    if (newsEl) {
-      var news = window.RL.dataArray("SITE_NEWS").slice().sort(function (a, b) {
-        return (b.date || "").localeCompare(a.date || "");
-      }).slice(0, 3);
-      newsEl.innerHTML = news.length
-        ? news.map(function (n) {
-            var l = window.RL.loc(n, lang);
-            return '<a class="news-item" href="' + window.RL.entryUrl("SITE_NEWS", n.id) + '">' +
-              '<span class="news-item__date">' + window.RL.esc(n.date || "") + "</span>" +
-              '<span class="news-item__title">' + window.RL.esc(window.RL.entryName(n, lang)) + "</span>" +
-              '<span class="news-item__tagline">' + window.RL.esc(l.tagline || "") + "</span>" +
-            "</a>";
-          }).join("")
-        : '<p class="muted">' + window.RL.esc(window.I18N.t("home.news.empty")) + "</p>";
-    }
+    var html = null;
+    Object.keys(ZONES).forEach(function (k) {
+      var el = document.getElementById(ZONES[k]);
+      if (!el) return;
+      // pre-randat de build-pages în aceeași limbă: nu-l mai refacem (evită reîncărcarea pozelor)
+      if (el.getAttribute("data-prerendered") === lang) { el.removeAttribute("data-prerendered"); return; }
+      el.removeAttribute("data-prerendered");
+      html = html || build(lang);
+      el.innerHTML = html[k];
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () { render(); document.documentElement.classList.add("js-rendered"); });   // js-rendered: vezi CSS (CLS)

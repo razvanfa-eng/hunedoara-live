@@ -34,7 +34,7 @@ const FT = DATA.SITE_TOWNS.filter((t) => (t.relatedAreas || []).length && uniq(c
 const FD = DATA.SITE_DESTINATIONS[0];                                                           // o destinație
 const FN = DATA.SITE_NATURE.find((e) => e.coords && e.hasReviews) || DATA.SITE_NATURE[0];      // loc din natură cu coordonate și recenzii
 const HOME_JS = fs.readFileSync(path.join(ROOT, "js/home.js"), "utf8");
-const HOME_STATS = (HOME_JS.match(/I18N\.t\("home\.stats\.(?!aria)[a-z]+"\)\]/g) || []).length;       // perechile valoare/etichetă din home.js
+const HOME_STATS = (HOME_JS.match(/\bt\("home\.stats\.(?!aria)[a-z]+"\)\]/g) || []).length;       // perechile valoare/etichetă din home.js
 const HOME_TILES = (fs.readFileSync(path.join(ROOT, "index.html"), "utf8").match(/<nav class="site-nav">[\s\S]*?<\/nav>/) || [""])[0].match(/<a /g).length; // modulele = linkurile din meniu
 
 /* -------- data.js: integritate -------- */

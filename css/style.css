@@ -210,6 +210,9 @@ p { margin: 0 0 12px; }
 .hero p { max-width: 560px; font-size: 16.5px; color: var(--muted); }
 .hero__cta { display: flex; gap: 12px; margin-top: 6px; flex-wrap: wrap; }
 .hero__apps { display: flex; align-items: center; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+.quick { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+.quick a { display: inline-block; padding: 7px 14px; border: 1px solid var(--border); border-radius: 999px; font-size: 13.5px; font-weight: 500; color: var(--ink); text-decoration: none; }
+.quick a:hover { border-color: var(--accent); color: var(--accent); }
 .hero__apps-label { font-size: 12px; color: var(--fainter); }
 
 /* ---------- Instalare aplicație (PWA) ---------- */
@@ -543,5 +546,5 @@ button.badge-app:hover { border-color: var(--accent); color: var(--accent); }
 /* Clasa js-rendered se pune pe <html> după prima randare. Până atunci conținutul generat de JS are înălțimea
    ecranului, deci footer-ul și secțiunile de sub el nu „sar” în zona vizibilă când apar cardurile. */
 html:not(.js-rendered) #grid,
-html:not(.js-rendered) #home-highlights { min-height: 100vh; }
-html:not(.js-rendered) #explore-grid { min-height: 60vh; }
+html:not(.js-rendered) #home-highlights:not([data-prerendered]) { min-height: 100vh; }
+html:not(.js-rendered) #explore-grid:not([data-prerendered]) { min-height: 60vh; }
