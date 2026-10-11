@@ -463,6 +463,18 @@ function load(file, query = "", urlPath = file, pref = null) {
   ok(/enabled:\s*false,/.test(cfg) || remote, "recenzii: ascunse în producție (enabled:false) sau configurate remote");
 }
 
+/* -------- analytics GoatCounter: script pe toate paginile + permis în CSP -------- */
+{
+  const GC = /<script async data-goatcounter="https:\/\/gohd\.goatcounter\.com\/count" src="https:\/\/gc\.zgo\.at\/count\.js"><\/script>/;
+  const pages = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html"))
+    .concat(["en/index.html", "orase/deva/index.html", "en/orase/deva/index.html"]);
+  const missing = pages.filter((f) => !GC.test(fs.readFileSync(path.join(ROOT, f), "utf8")));
+  ok(missing.length === 0, "goatcounter: scriptul e pe toate cele " + pages.length + " pagini verificate" + (missing.length ? " — lipsește din " + missing.join(", ") : ""));
+  const toml = fs.readFileSync(path.join(ROOT, "netlify.toml"), "utf8");
+  ok(/script-src[^;]*https:\/\/gc\.zgo\.at/.test(toml) && /img-src[^;]*https:\/\/gohd\.goatcounter\.com/.test(toml) && /connect-src[^;]*https:\/\/gohd\.goatcounter\.com/.test(toml),
+    "goatcounter: CSP permite gc.zgo.at (script) și gohd.goatcounter.com (img + connect)");
+}
+
 /* -------- PWA: manifest, etichete în <head>, buton de instalare, service worker -------- */
 {
   let man = null;
@@ -708,7 +720,7 @@ function load(file, query = "", urlPath = file, pref = null) {
     const hrefs = [...d.querySelectorAll("[data-map-list] li a")].map((a) => a.getAttribute("href"));
     ok(hrefs.every((u) => (lang === "en" ? u.startsWith("/en/") : !u.startsWith("/en/")) && fs.existsSync(path.join(ROOT, u.slice(1), "index.html"))), "harta (" + lang + "): linkurile din listă duc la pagini existente în limba paginii");
     const scripts = [...d.querySelectorAll("script[src]")].map((s) => s.getAttribute("src"));
-    ok(scripts.every((s) => !/^https?:/.test(s)) && scripts.some((s) => /vendor\/leaflet\/leaflet\.js$/.test(s)), "harta (" + lang + "): Leaflet self-hosted, niciun script extern");
+    ok(scripts.every((s) => !/^https?:/.test(s) || s === "https://gc.zgo.at/count.js") && scripts.some((s) => /vendor\/leaflet\/leaflet\.js$/.test(s)), "harta (" + lang + "): Leaflet self-hosted, niciun script extern");
   }
   ok(["leaflet.js", "leaflet.css", "LICENSE"].every((f) => fs.existsSync(path.join(ROOT, "vendor/leaflet", f))), "harta: vendor/leaflet (js, css, licență) există");
   const toml = readF("netlify.toml");
@@ -764,7 +776,7 @@ function load(file, query = "", urlPath = file, pref = null) {
   const toml = readF("netlify.toml");
   const csp = (toml.match(/Content-Security-Policy = "([^"]+)"/) || [])[1] || "";
   const connect = (csp.match(/connect-src ([^;]+)/) || [])[1] || "";
-  ok(/https:\/\/api\.open-meteo\.com(\s|$)/.test(connect) && connect.split(/\s+/).every((s) => /^('self'|connect-src|https:\/\/(\*\.supabase\.co|api\.open-meteo\.com))$/.test(s) || s === ""), "vreme: CSP connect-src permite doar 'self', Supabase și api.open-meteo.com");
+  ok(/https:\/\/api\.open-meteo\.com(\s|$)/.test(connect) && connect.split(/\s+/).every((s) => /^('self'|connect-src|https:\/\/(\*\.supabase\.co|api\.open-meteo\.com|gohd\.goatcounter\.com))$/.test(s) || s === ""), "vreme: CSP connect-src permite doar 'self', Supabase, api.open-meteo.com și GoatCounter");
   for (const lang of ["ro", "en"]) {
     const h = readF((lang === "en" ? "en/" : "") + "vreme.html");
     const d = new JSDOM(h).window.document;
