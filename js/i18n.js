@@ -15,7 +15,7 @@
       "home.quick.foto": "Trimite o poză",
       "nav.utile": "Utile",
       "page.title.calendar": "Calendar de evenimente — Hunedoara Live",
-      "page.meta.calendar": "Evenimentele anunțate în județul Hunedoara (concerte, festivaluri, târguri) și evenimentele care revin de obicei în fiecare an, cu sursă. Export .ics pentru calendarul tău.",
+      "page.meta.calendar": "Evenimentele anunțate în județul Hunedoara (concerte, festivaluri, târguri) și cele care revin anual, cu sursă. Export .ics pentru calendarul tău.",
       "cal.heading": "Calendar de evenimente",
       "cal.intro": "Includem doar evenimente confirmate de organizatori sau de surse oficiale. Pentru cele care revin, arătăm ultima ediție confirmată și sursa ei; datele din anul următor apar abia când le anunță organizatorii.",
       "cal.upcoming": "Evenimente anunțate",
