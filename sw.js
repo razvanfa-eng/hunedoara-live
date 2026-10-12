@@ -19,7 +19,7 @@
  * ?v=N la <script src> în pagini (cache-ul îl tratează ca fișier nou); offline,
  * varianta fără ?v= din PRECACHE e folosită ca rezervă (ignoreSearch).
  */
-var VERSION = "v16";
+var VERSION = "v17";
 var STATIC_CACHE = "hl-static-" + VERSION;
 var PAGES_CACHE = "hl-pages-" + VERSION;
 var IMG_CACHE = "hl-img-" + VERSION;
@@ -149,7 +149,7 @@ self.addEventListener("fetch", function (event) {
     event.respondWith(networkFirstPage(request));
     return;
   }
-  if (url.pathname === "/js/data.js" || url.pathname === "/js/data-home.js") {
+  if (/^\/js\/data(-[a-z]+)?\.js$/.test(url.pathname)) {
     event.respondWith(networkFirst(request, STATIC_CACHE));
     return;
   }

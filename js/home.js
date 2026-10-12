@@ -57,8 +57,9 @@
 
     out.explore = SECTIONS.map(function (s) {
       var cls = "tile" + (s.img ? " tile--photo" : " tile--accent");
-      // fundal: varianta webp de ~800 px (tile-urile au max. ~560 px lățime pe ecran)
-      var bg = s.img ? ' style="background-image:url(&quot;' + RL.imgVariant(s.img, 800) + '&quot;)"' : "";
+      // fundal: varianta mică images/tile/<nume>.webp (560 px, scripts/build-tiles.mjs) — tile-urile sunt sub „Locuri emblematice”,
+      // iar 800 px (~90 KB fiecare) încetinea poza LCP pe mobil
+      var bg = s.img ? ' style="background-image:url(&quot;/images/tile/' + s.img.split("/").pop().split(".")[0] + '.webp&quot;)"' : "";
       return '<a class="' + cls + '" href="' + RL.pageUrl(s.page, lang) + '"' + bg + '>' +
         '<span class="tile__mark">' + RL.esc(s.key.charAt(0).toUpperCase()) + "</span>" +
         '<span class="tile__title">' + RL.esc(t("sec." + s.key + ".name")) + "</span>" +

@@ -35,6 +35,7 @@ import vm from "vm";
 import { fileURLToPath } from "url";
 import { execFileSync } from "child_process";
 import { buildImages, OG_W, OG_H } from "./build-images.mjs";
+import { buildTiles } from "./build-tiles.mjs";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://gohd.ro";
@@ -95,6 +96,7 @@ function urlFile(u) {
 
 /* ---------- 1. pozele ---------- */
 await buildImages({ quiet: true });
+await buildTiles();
 
 /* ---------- încărcăm scripturile site-ului într-un „browser” minimal ---------- */
 const ctx = { console, document: { addEventListener() {} } };
@@ -122,6 +124,18 @@ const t = (k, lang = "ro") => I18N.t(k, lang);
   for (const k of Object.keys(byKey)) lines.push("window." + k + " = " + JSON.stringify(byKey[k].map((e) => { const o = slim(e); if (k === "SITE_NEWS") o.date = e.date; return o; })) + ";");
   const body = lines.join(LF) + LF;
   write("js/data-home.js", body);
+}
+
+/* ---------- 1c. js/data-<secțiune>.js: paginile de listă încarcă doar secțiunea lor; vreme.html doar locurile din prognoză ---------- */
+{
+  const LF2 = String.fromCharCode(10);
+  const HEAD = "/* GENERAT AUTOMAT de scripts/build-pages.mjs — nu edita manual. Secțiune din js/data.js. */" + LF2;
+  const files = { SITE_DESTINATIONS: "destinatii", SITE_TOWNS: "orase", SITE_NATURE: "natura", SITE_ACTIVITIES: "activitati", SITE_HERITAGE: "mostenire", SITE_BUSINESSES: "afaceri", SITE_NEWS: "stiri" };
+  for (const [key, name] of Object.entries(files)) write("js/data-" + name + ".js", HEAD + "window." + key + " = " + JSON.stringify(RL.dataArray(key)) + ";" + LF2);
+  const wx = JSON.parse((read("vreme.html").match(/id="weather-config"[^>]*>([^<]*)</) || [0, "{}"])[1]);
+  const byK = {};
+  for (const p of wx.places || []) (byK[p.key] = byK[p.key] || []).push(RL.entryById(p.key, p.id));
+  write("js/data-vreme.js", HEAD + Object.keys(byK).map((k) => "window." + k + " = " + JSON.stringify(byK[k]) + ";").join(LF2) + LF2);
 }
 
 /* ---------- limbi ---------- */

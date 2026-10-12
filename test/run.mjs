@@ -111,6 +111,26 @@ function load(file, query = "", urlPath = file, pref = null) {
   for (const lg of ["ro", "en"]) ok(JSON.stringify(slimHome.build(lg)) === JSON.stringify(fullHome.build(lg)), "index: js/data-home.js dă aceeași randare (" + lg + ") ca js/data.js complet");
 }
 
+/* -------- date pe secțiuni: fiecare pagină încarcă doar ce folosește -------- */
+{
+  const SLICES = { SITE_DESTINATIONS: "destinatii", SITE_TOWNS: "orase", SITE_NATURE: "natura", SITE_ACTIVITIES: "activitati", SITE_HERITAGE: "mostenire", SITE_BUSINESSES: "afaceri", SITE_NEWS: "stiri" };
+  for (const [key, name] of Object.entries(SLICES)) {
+    const c = { console }; c.window = c; vm.createContext(c);
+    vm.runInContext(fs.readFileSync(path.join(ROOT, "js/data-" + name + ".js"), "utf8"), c);
+    ok(JSON.stringify(c[key]) === JSON.stringify(DATA[key]), "data-" + name + ".js = secțiunea " + key + " din data.js (regenerează cu node scripts/build-pages.mjs)");
+  }
+  const LISTING = { "destinatii.html": "destinatii", "orase.html": "orase", "natura.html": "natura", "turism-activ.html": "activitati", "mostenire.html": "mostenire", "afaceri.html": "afaceri", "stiri.html": "stiri" };
+  for (const [f, n] of Object.entries(LISTING)) {
+    const h = fs.readFileSync(path.join(ROOT, f), "utf8");
+    ok(h.includes('src="js/data-' + n + '.js"') && !/src="[/]?js[/]data[.]js"/.test(h), f + ": încarcă doar js/data-" + n + ".js");
+  }
+  for (const f of ["contact.html", "utile.html", "multumim.html", "multumim-poza.html", "trimite-poza.html", "calendar.html", "itinerarii.html", "itinerariu.html"]) {
+    ok(!/src="[/]?js[/]data[.-]/.test(fs.readFileSync(path.join(ROOT, f), "utf8")), f + ": nu încarcă date (căutarea le aduce la nevoie)");
+  }
+  const wx = await load("vreme.html");
+  ok(!wx.__err && !!wx.RL.entryById("SITE_TOWNS", "deva") && !wx.SITE_FULL_DATA, "vreme: locurile din prognoză vin din js/data-vreme.js (nu tot data.js)" + (wx.__err ? " — " + wx.__err : ""));
+}
+
 /* -------- destinatii.html + destinatie.html (secțiune nouă) -------- */
 {
   const w1 = await load("destinatii.html");
