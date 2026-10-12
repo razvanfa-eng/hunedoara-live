@@ -961,5 +961,33 @@ function load(file, query = "", urlPath = file, pref = null) {
   ok(["oras.html", "natura-loc.html", "afacere.html"].every((f) => ldOf(readF(f)).length === 0), "json-ld: șabloanele ?id= (noindex) nu au JSON-LD");
 }
 
+/* -------- integritate pe tot site-ul: linkuri interne, SEO de bază, imagini -------- */
+{
+  const htmlFiles = [];
+  (function walk(d) { for (const f of fs.readdirSync(d, { withFileTypes: true })) { if (["node_modules", ".git", "vendor", "supabase", "netlify", "test", "scripts"].includes(f.name)) continue; const p = path.join(d, f.name); f.isDirectory() ? walk(p) : p.endsWith(".html") && htmlFiles.push(p); } })(ROOT);
+  const broken = [], noDesc = [], noCanon = [], noH1 = [], noAlt = [];
+  for (const f of htmlFiles) {
+    const h = fs.readFileSync(f, "utf8"), rel = path.relative(ROOT, f).split(path.sep).join("/");
+    for (const m of h.matchAll(/(?:href|src)="([^"#?]+)[^"]*"/g)) {
+      const u = m[1];
+      if (/^(https?:|mailto:|tel:|data:|javascript:)/.test(u)) continue;
+      const p = u.startsWith("/") ? path.join(ROOT, u) : path.join(path.dirname(f), u);
+      if (!fs.existsSync(p) && !fs.existsSync(p + ".html") && !fs.existsSync(path.join(p, "index.html"))) broken.push(rel + " -> " + u);
+    }
+    for (const m of h.matchAll(/<img[^>]*>/g)) if (!/ alt=/.test(m[0])) noAlt.push(rel);
+    if (h.includes("noindex") || rel === "offline.html") continue;
+    const d = (h.match(/<meta name="description" content="([^"]*)"/) || [])[1] || "";
+    if (d.length < 50 || d.length > 170) noDesc.push(rel + " (" + d.length + ")");
+    if (!h.includes('rel="canonical"')) noCanon.push(rel);
+    if (!h.includes("<h1")) noH1.push(rel);
+  }
+  ok(htmlFiles.length > 400, "site: " + htmlFiles.length + " pagini HTML verificate");
+  ok(broken.length === 0, "site: nicio legătură internă ruptă (href/src)" + (broken.length ? " — " + broken.slice(0, 5).join(" | ") : ""));
+  ok(noAlt.length === 0, "site: toate imaginile din HTML au alt" + (noAlt.length ? " — " + noAlt.slice(0, 5).join(", ") : ""));
+  ok(noDesc.length === 0, "site: meta description de 50–170 caractere pe paginile indexabile" + (noDesc.length ? " — " + noDesc.slice(0, 5).join(", ") : ""));
+  ok(noCanon.length === 0, "site: canonical pe paginile indexabile" + (noCanon.length ? " — " + noCanon.slice(0, 5).join(", ") : ""));
+  ok(noH1.length === 0, "site: h1 pe paginile indexabile" + (noH1.length ? " — " + noH1.slice(0, 5).join(", ") : ""));
+}
+
 console.log(`\n${pass} pass, ${fail} fail`);
 process.exit(fail ? 1 : 0);
