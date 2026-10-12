@@ -1,0 +1,4 @@
+Contact: mailto:hunedoaragohd@gmail.com
+Expires: 2027-10-12T00:00:00.000Z
+Preferred-Languages: ro, en
+Canonical: https://gohd.ro/.well-known/security.txt
