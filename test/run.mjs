@@ -128,6 +128,16 @@ function load(file, query = "", urlPath = file, pref = null) {
     ok(!/src="[/]?js[/]data[.-]/.test(fs.readFileSync(path.join(ROOT, f), "utf8")), f + ": nu încarcă date (căutarea le aduce la nevoie)");
   }
   const wx = await load("vreme.html");
+  // căutarea: filtre pe secțiuni (pagina de detaliu are tot data.js încărcat)
+  const sw = await load("orase/" + FT.id + "/index.html", "", "orase/" + FT.id + "/");
+  sw.document.getElementById("global-search-btn").click();
+  const chips = [...sw.document.querySelectorAll("#search-chips button")];
+  ok(chips.length === 8 && chips[0].getAttribute("aria-pressed") === "true", "căutare: 8 filtre (Toate + 7 secțiuni), „Toate” activ");
+  const q = sw.document.getElementById("search-input"); q.value = "castel"; q.dispatchEvent(new sw.Event("input"));
+  const nAll = sw.document.querySelectorAll(".search-result").length;
+  chips.find((b) => b.getAttribute("data-type") === "SITE_NATURE").click();
+  const nNat = sw.document.querySelectorAll(".search-result").length;
+  ok(nAll > 0 && nNat < nAll && [...sw.document.querySelectorAll(".search-result__type")].every((e) => e.textContent === sw.I18N.t("sec.natura.name")), "căutare: filtrul „Natură” restrânge rezultatele la secțiunea aleasă");
   ok(!wx.__err && !!wx.RL.entryById("SITE_TOWNS", "deva") && !wx.SITE_FULL_DATA, "vreme: locurile din prognoză vin din js/data-vreme.js (nu tot data.js)" + (wx.__err ? " — " + wx.__err : ""));
 }
 

@@ -18,7 +18,8 @@
     return String(s || "").toLowerCase().replace(/[ăâîșşțţ]/g, function (c) { return DIACRITICS[c] || c; });
   }
 
-  var overlay, input, resultsEl, panel;
+  var overlay, input, resultsEl, panel, chipsEl;
+  var activeType = ""; // "" = toate secțiunile; altfel cheia unei secțiuni (ex. SITE_NATURE)
 
   // Prima pagină încarcă doar js/data-home.js; căutarea are nevoie de tot js/data.js,
   // pe care îl aducem la prima deschidere (sau când cursorul/degetul ajunge pe butonul de căutare).
@@ -48,12 +49,22 @@
           '<input type="text" id="search-input" autocomplete="off" spellcheck="false">' +
           '<button type="button" class="search-panel__close" aria-label="Close">&times;</button>' +
         "</div>" +
+        '<div class="search-chips" id="search-chips" role="group"></div>' +
         '<div class="search-panel__results" id="search-results"></div>' +
       "</div>";
     document.body.appendChild(overlay);
     panel = overlay.querySelector(".search-panel");
     input = overlay.querySelector("#search-input");
     resultsEl = overlay.querySelector("#search-results");
+    chipsEl = overlay.querySelector("#search-chips");
+    chipsEl.addEventListener("click", function (e) {
+      var b = e.target.closest ? e.target.closest("button[data-type]") : null;
+      if (!b) return;
+      activeType = b.getAttribute("data-type");
+      renderChips();
+      renderResults(input.value);
+      input.focus();
+    });
 
     overlay.addEventListener("mousedown", function (e) {
       if (e.target === overlay) close();
@@ -63,6 +74,15 @@
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && !overlay.hidden) close();
     });
+  }
+
+  function renderChips() {
+    if (!chipsEl) return;
+    var html = '<button type="button" data-type="" aria-pressed="' + (activeType === "") + '">' + window.RL.esc(window.I18N.t("search.all")) + "</button>";
+    SOURCES.forEach(function (src) {
+      html += '<button type="button" data-type="' + src.key + '" aria-pressed="' + (activeType === src.key) + '">' + window.RL.esc(window.I18N.t(src.typeKey)) + "</button>";
+    });
+    chipsEl.innerHTML = html;
   }
 
   function labelFor(src) {
@@ -75,6 +95,7 @@
     var lang = window.I18N.lang;
     var out = [];
     SOURCES.forEach(function (src) {
+      if (activeType && src.key !== activeType) return;
       var all = window.RL.dataArray(src.key);
       all.forEach(function (e) {
         if (e.example) return;
@@ -116,6 +137,7 @@
   function open() {
     buildOverlay();
     input.placeholder = window.I18N.t("search.placeholder");
+    renderChips();
     overlay.hidden = false;
     document.body.style.overflow = "hidden";
     renderResults(input.value);
