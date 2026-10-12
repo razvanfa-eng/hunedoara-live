@@ -106,6 +106,24 @@ for (const f of ["js/data.js", "js/config.js", "js/i18n.js", "js/images.js", "js
 const { RL, I18N, RL_DETAIL, RL_HOME } = ctx;
 const t = (k, lang = "ro") => I18N.t(k, lang);
 
+/* ---------- 1b. js/data-home.js: setul MIC de date al primei pagini ----------
+ * Prima pagină nu mai încarcă tot js/data.js (~500 KB): îi ajung cele 6 repere, cele 3 știri cele mai noi
+ * și numărătorile din statistici (home.js le folosește la schimbarea limbii; search.js încarcă data.js complet la nevoie). */
+{
+  const slim = (e) => ({ id: e.id, name: e.name, category: e.category, images: (e.images || []).slice(0, 1),
+    ro: { tagline: (e.ro || {}).tagline }, en: { name: (e.en || {}).name, tagline: (e.en || {}).tagline } });
+  const byKey = {};
+  for (const h of RL_HOME.highlights) (byKey[h.dataKey] = byKey[h.dataKey] || []).push(RL.entryById(h.dataKey, h.id));
+  byKey.SITE_NEWS = RL.dataArray("SITE_NEWS").slice().sort((a, b) => (b.date || "").localeCompare(a.date || "")).slice(0, 3);
+  const counts = { towns: RL.dataArray("SITE_TOWNS").length, places: RL.dataArray("SITE_DESTINATIONS").length, trails: RL.dataArray("SITE_ACTIVITIES").length };
+  const LF = String.fromCharCode(10);
+  const lines = ["/* GENERAT AUTOMAT de scripts/build-pages.mjs — nu edita manual. Date minime pentru prima pagină (vezi js/data.js pentru tot). */",
+    "window.SITE_HOME_COUNTS = " + JSON.stringify(counts) + ";"];
+  for (const k of Object.keys(byKey)) lines.push("window." + k + " = " + JSON.stringify(byKey[k].map((e) => { const o = slim(e); if (k === "SITE_NEWS") o.date = e.date; return o; })) + ";");
+  const body = lines.join(LF) + LF;
+  write("js/data-home.js", body);
+}
+
 /* ---------- limbi ---------- */
 const other = (lang) => (lang === "ro" ? "en" : "ro");
 const OG_LOCALE = { ro: "ro_RO", en: "en_GB" };

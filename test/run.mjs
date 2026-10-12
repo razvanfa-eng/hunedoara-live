@@ -99,6 +99,16 @@ function load(file, query = "", urlPath = file, pref = null) {
   ok([...de.querySelectorAll("#explore-grid .tile")].every((a) => /^\/en\/[a-z-]+\.html$/.test(a.getAttribute("href"))) &&
     [...de.querySelectorAll("#home-highlights .card, #home-news .news-item")].every((a) => /^\/en\/[a-z-]+\/[a-z0-9-]+\/$/.test(a.getAttribute("href"))),
     "en/index: tile-urile, reperele și știrile leagă spre paginile /en/");
+
+  /* prima pagină rulează pe setul mic js/data-home.js (nu pe tot data.js) și randarea din el = pre-randarea din build */
+  const idxHtml = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
+  ok(/src="js\/data-home\.js"/.test(idxHtml) && !/src="\/?js\/data\.js"/.test(idxHtml), "index: încarcă js/data-home.js, nu js/data.js");
+  ok(!w.SITE_FULL_DATA && !w.SITE_BUSINESSES, "index: datele complete NU sunt încărcate la deschidere");
+  // randarea din setul mic (cum face home.js la schimbarea limbii) = randarea din datele complete (cum pre-randează build-pages)
+  const homeBuild = (files) => { const c = { console, document: { addEventListener() {} } }; c.window = c; vm.createContext(c); for (const f of files) vm.runInContext(fs.readFileSync(path.join(ROOT, f), "utf8"), c, { filename: f }); return c.RL_HOME; };
+  const common = ["js/config.js", "js/i18n.js", "js/images.js", "js/common.js", "js/home.js"];
+  const fullHome = homeBuild(["js/data.js", ...common]), slimHome = homeBuild(["js/data-home.js", ...common]);
+  for (const lg of ["ro", "en"]) ok(JSON.stringify(slimHome.build(lg)) === JSON.stringify(fullHome.build(lg)), "index: js/data-home.js dă aceeași randare (" + lg + ") ca js/data.js complet");
 }
 
 /* -------- destinatii.html + destinatie.html (secțiune nouă) -------- */

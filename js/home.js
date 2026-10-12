@@ -40,9 +40,11 @@
     var RL = window.RL;
     var out = {};
 
-    var towns = RL.dataArray("SITE_TOWNS").length;
-    var places = RL.dataArray("SITE_DESTINATIONS").length;
-    var trails = RL.dataArray("SITE_ACTIVITIES").length;
+    // pe prima pagină rulează js/data-home.js (doar reperele, știrile și aceste numărători), nu tot data.js
+    var C = window.SITE_HOME_COUNTS;
+    var towns = C ? C.towns : RL.dataArray("SITE_TOWNS").length;
+    var places = C ? C.places : RL.dataArray("SITE_DESTINATIONS").length;
+    var trails = C ? C.trails : RL.dataArray("SITE_ACTIVITIES").length;
     out.stats = [
       [towns, t("home.stats.towns")],
       [places, t("home.stats.places")],
@@ -94,7 +96,7 @@
       : '<p class="muted">' + RL.esc(t("home.news.empty")) + "</p>";
     return out;
   }
-  window.RL_HOME = { build: build };
+  window.RL_HOME = { build: build, highlights: HIGHLIGHTS };
 
   var ZONES = { stats: "home-stats", explore: "explore-grid", highlights: "home-highlights", news: "home-news" };
 

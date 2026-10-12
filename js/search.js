@@ -20,6 +20,22 @@
 
   var overlay, input, resultsEl, panel;
 
+  // Prima pagină încarcă doar js/data-home.js; căutarea are nevoie de tot js/data.js,
+  // pe care îl aducem la prima deschidere (sau când cursorul/degetul ajunge pe butonul de căutare).
+  var fullLoading = null;
+  function ensureFull(done) {
+    if (window.SITE_FULL_DATA) { if (done) done(); return; }
+    if (!fullLoading) {
+      fullLoading = [];
+      var s = document.createElement("script");
+      s.src = "/js/data.js";
+      s.onload = function () { var q = fullLoading; fullLoading = null; q.forEach(function (f) { f(); }); };
+      s.onerror = function () { fullLoading = null; };
+      document.head.appendChild(s);
+    }
+    if (done) fullLoading.push(done);
+  }
+
   function buildOverlay() {
     if (overlay) return;
     overlay = document.createElement("div");
@@ -73,6 +89,12 @@
 
   function renderResults(query) {
     var q = query.trim();
+    if (q && !window.SITE_FULL_DATA) {
+      // datele complete încă se încarcă — rezultatele apar imediat după
+      resultsEl.innerHTML = '<p class="search-panel__hint">…</p>';
+      ensureFull(function () { if (overlay && !overlay.hidden) renderResults(input.value); });
+      return;
+    }
     if (!q) {
       resultsEl.innerHTML = '<p class="search-panel__hint">' + window.RL.esc(window.I18N.t("search.hint")) + "</p>";
       return;
@@ -108,6 +130,11 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     var btn = document.getElementById("global-search-btn");
-    if (btn) btn.addEventListener("click", open);
+    if (btn) {
+      btn.addEventListener("click", open);
+      ["pointerenter", "focus", "touchstart"].forEach(function (ev) {
+        btn.addEventListener(ev, function () { ensureFull(); }, { passive: true, once: true });
+      });
+    }
   });
 })();

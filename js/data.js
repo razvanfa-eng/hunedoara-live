@@ -7357,3 +7357,6 @@ window.SITE_BUSINESSES = [
     }
   }
 ];
+
+// marcaj: datele complete sunt încărcate (prima pagină rulează doar js/data-home.js; search.js încarcă data.js la nevoie)
+window.SITE_FULL_DATA = true;
