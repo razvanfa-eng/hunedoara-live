@@ -11,6 +11,7 @@ window.SITE_IMAGES = {
   "images/baita-magura-craciunesti.jpg": [1600, 1200],
   "images/bastionul-rosu-ilia.jpg": [1600, 1063],
   "images/bazin-inot-lupeni.jpg": [1600, 1066],
+  "images/bazin-inot-petrila.jpg": [1600, 1200],
   "images/bazin-inot-petrosani.jpg": [1200, 1600],
   "images/bazin-inot-vulcan.jpg": [1600, 904],
   "images/beriu-biserica.jpg": [1600, 1200],

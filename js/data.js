@@ -1385,7 +1385,8 @@ window.SITE_ACTIVITIES = [
     area: "Petrila",
     hasReviews: true,
     season: "tot-anul",
-    images: ["images/placeholder.svg"],
+    images: ["images/bazin-inot-petrila.jpg"],
+    photoCredit: { author: "Loraine", license: "CC BY 4.0", source: "https://commons.wikimedia.org/wiki/File:Petrila_view.jpg" },
     ro: {
       tagline: "Bazin didactic de 25×12,5 m, cu 5 culoare, lângă Școala nr. 5.",
       description: [
