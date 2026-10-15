@@ -7,7 +7,7 @@ X-WR-CALNAME:Hunedoara Live — evenimente
 X-WR-TIMEZONE:Europe/Bucharest
 BEGIN:VEVENT
 UID:concert-stagiunea-iancu-de-hunedoara-castelul-corvinilor-2026@gohd.ro
-DTSTAMP:20261012T000000Z
+DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Concert de muzică sacră și de cameră la Castelul Corvinilor\, 
@@ -24,7 +24,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:festivalul-umor-liviu-oros-2026@gohd.ro
-DTSTAMP:20261012T000000Z
+DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261011
 SUMMARY:Festivalul Național de Umor „Liviu Oros” — ediția a XXV-a\
@@ -39,8 +39,25 @@ URL:https://gohd.ro/stiri/festivalul-umor-liviu-oros-2026/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:festivalul-vanatorilor-castelul-nopcsa-2026@gohd.ro
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Festivalul Vânătorilor revine la Castelul Nopcsa: șoimărit\, a
+ teliere și vernisajul expoziției „Retezat”
+DESCRIPTION:sâmbătă\, 17 octombrie 2026\, de la ora 10:00 — Sâmbăt
+ ă\, 17 octombrie 2026\, de la ora 10:00\, la Săcel: ediția a II-a\, cu
+  demonstrații vânătorești\, șoimărit\, muzică și ateliere pentru 
+ toate vârstele. Detalii: https://gohd.ro/stiri/festivalul-vanatorilor-ca
+ stelul-nopcsa-2026/
+LOCATION:Castelul Nopcsa\, str. Castelului nr. 60\, Săcel\, comuna Sânt
+ ămăria-Orlea
+URL:https://gohd.ro/stiri/festivalul-vanatorilor-castelul-nopcsa-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:violoncellissimo-deva-2026@gohd.ro
-DTSTAMP:20261012T000000Z
+DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:Violoncellissimo la Deva — concert în turneul aniversar „Mari
@@ -56,7 +73,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:stelele-cetatii-deva-2026@gohd.ro
-DTSTAMP:20261012T000000Z
+DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261026
 SUMMARY:„Stelele Cetății” Deva — festival-concurs de muzică ușoa
@@ -71,7 +88,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:vivaldi-rocks-deva-2026@gohd.ro
-DTSTAMP:20261012T000000Z
+DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:Vivaldi Rocks — legendele rockului\, în variantă simfonică\, 
@@ -87,7 +104,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:spargatorul-de-nuci-deva-2026@gohd.ro
-DTSTAMP:20261012T000000Z
+DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:„Spărgătorul de nuci”\, cu Balletto Nazionale Italiano\, la 
@@ -103,7 +120,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:targul-de-craciun-deva-2026@gohd.ro
-DTSTAMP:20261012T000000Z
+DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20270111
 SUMMARY:Târgul de Crăciun Deva 2026 se deschide pe 1 decembrie\, în Pia

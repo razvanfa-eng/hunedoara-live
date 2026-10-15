@@ -5711,6 +5711,216 @@ window.SITE_TOWNS = [
 
 window.SITE_NEWS = [
   {
+    "id": "festivalul-vanatorilor-castelul-nopcsa-2026",
+    "name": "Festivalul Vânătorilor revine la Castelul Nopcsa: șoimărit, ateliere și vernisajul expoziției „Retezat”",
+    "category": {
+      "ro": "Festival",
+      "en": "Festival"
+    },
+    "area": "Țara Hațegului",
+    "date": "2026-10-17",
+    "hasReviews": false,
+    "images": [
+      "images/castelul-nopcsa-sacel.jpg"
+    ],
+    "photoCredit": {
+      "author": "Țetcu Mircea Rareș",
+      "license": "CC BY-SA 3.0 RO",
+      "source": "https://commons.wikimedia.org/wiki/File:CastelNopcsa_(9).JPG"
+    },
+    "ro": {
+      "tagline": "Sâmbătă, 17 octombrie 2026, de la ora 10:00, la Săcel: ediția a II-a, cu demonstrații vânătorești, șoimărit, muzică și ateliere pentru toate vârstele.",
+      "description": [
+        "Castelul Nopcsa din Săcel (comuna Sântămăria-Orlea) găzduiește sâmbătă, 17 octombrie 2026, ediția a II-a a Festivalului Vânătorilor. Programul începe la 10:00 și cuprinde demonstrații și concursuri vânătorești, ateliere pentru toate vârstele, șoimărit, muzică, caricaturi la minut și experiențe interactive.",
+        "De la ora 17:00 are loc vernisajul expoziției „RETEZAT”, ediția a XXI-a, rezultatul Simpozionului de Artă „Retezat”. Organizatori sunt Consiliul Județean Hunedoara, Muzeul Civilizației Dacice și Romane Deva, Centrul de Cultură și Artă al Județului Hunedoara și Primăria Comunei Sântămăria-Orlea."
+      ],
+      "facts": [
+        {
+          "label": "Dată",
+          "value": "sâmbătă, 17 octombrie 2026, de la ora 10:00"
+        },
+        {
+          "label": "Loc",
+          "value": "Castelul Nopcsa, str. Castelului nr. 60, Săcel, comuna Sântămăria-Orlea"
+        },
+        {
+          "label": "Vernisaj",
+          "value": "expoziția „RETEZAT”, ediția a XXI-a, de la ora 17:00"
+        },
+        {
+          "label": "Organizatori",
+          "value": "Consiliul Județean Hunedoara, MCDR Deva, Centrul de Cultură și Artă, Primăria Sântămăria-Orlea"
+        }
+      ]
+    },
+    "en": {
+      "name": "The Hunters' Festival returns to Nopcsa Castle: falconry, workshops and the \"Retezat\" art exhibition opening",
+      "tagline": "Saturday, 17 October 2026, from 10:00, at Săcel: the 2nd edition, with hunting demonstrations, falconry, music and workshops for all ages.",
+      "description": [
+        "Nopcsa Castle in Săcel (Sântămăria-Orlea commune) hosts the 2nd Hunters' Festival on Saturday, 17 October 2026. The programme starts at 10:00 and includes hunting demonstrations and contests, workshops for all ages, falconry, music, live caricatures and interactive experiences.",
+        "At 17:00 the 21st \"RETEZAT\" exhibition opens, the outcome of the \"Retezat\" Art Symposium. The organisers are the Hunedoara County Council, the Museum of Dacian and Roman Civilisation Deva, the County Centre for Culture and Art and Sântămăria-Orlea City Hall."
+      ],
+      "facts": [
+        {
+          "label": "Date",
+          "value": "Saturday, 17 October 2026, from 10:00"
+        },
+        {
+          "label": "Location",
+          "value": "Nopcsa Castle, Castelului St. 60, Săcel, Sântămăria-Orlea commune"
+        },
+        {
+          "label": "Exhibition opening",
+          "value": "\"RETEZAT\" exhibition, 21st edition, from 17:00"
+        },
+        {
+          "label": "Organisers",
+          "value": "Hunedoara County Council, MCDR Deva, County Centre for Culture and Art, Sântămăria-Orlea City Hall"
+        }
+      ]
+    }
+  },
+  {
+    "id": "congres-patrimoniu-si-tehnologii-castelul-nopcsa-2026",
+    "name": "Congresul „Patrimoniu și Tehnologii” se ține la Castelul Nopcsa, 23–25 octombrie",
+    "category": {
+      "ro": "Patrimoniu",
+      "en": "Heritage"
+    },
+    "area": "Țara Hațegului",
+    "date": "2026-10-23",
+    "hasReviews": false,
+    "images": [
+      "images/castelul-nopcsa-sacel.jpg"
+    ],
+    "photoCredit": {
+      "author": "Țetcu Mircea Rareș",
+      "license": "CC BY-SA 3.0 RO",
+      "source": "https://commons.wikimedia.org/wiki/File:CastelNopcsa_(9).JPG"
+    },
+    "ro": {
+      "tagline": "Specialiști din universități, muzee și institute de cercetare discută digitalizarea și valorificarea patrimoniului arheologic și cultural.",
+      "description": [
+        "Între 23 și 25 octombrie 2026, Castelul Nopcsa din Săcel găzduiește Congresul Internațional „Patrimoniu și Tehnologii”, anunțat în calendarul Muzeului Civilizației Dacice și Romane Deva. Sunt așteptați reprezentanți ai universităților, muzeelor, facultăților, institutelor de cercetare și ai altor instituții de specialitate.",
+        "Tema e folosirea noilor tehnologii în documentarea, cercetarea, protejarea și promovarea patrimoniului, prin prezentări, dezbateri și sesiuni de lucru. Scopul declarat este inițierea unui acord de colaborare între instituții, pentru găsirea surselor de finanțare ale unei platforme digitale comune. Programul pe zile nu a fost publicat."
+      ],
+      "facts": [
+        {
+          "label": "Perioadă",
+          "value": "23–25 octombrie 2026"
+        },
+        {
+          "label": "Loc",
+          "value": "Castelul Nopcsa, Săcel, comuna Sântămăria-Orlea"
+        },
+        {
+          "label": "Public țintă",
+          "value": "specialiști din universități, muzee și institute de cercetare"
+        },
+        {
+          "label": "Contact",
+          "value": "muzeucdr.deva@gmail.com"
+        }
+      ]
+    },
+    "en": {
+      "name": "The \"Heritage and Technologies\" Congress takes place at Nopcsa Castle, 23–25 October",
+      "tagline": "Specialists from universities, museums and research institutes discuss digitising and promoting archaeological and cultural heritage.",
+      "description": [
+        "From 23 to 25 October 2026, Nopcsa Castle in Săcel hosts the International Congress \"Patrimoniu și Tehnologii\" (\"Heritage and Technologies\"), listed in the calendar of the Museum of Dacian and Roman Civilisation Deva. Representatives of universities, museums, faculties, research institutes and other specialised institutions are expected.",
+        "The theme is the use of new technologies in documenting, researching, protecting and promoting heritage, through presentations, debates and working sessions. The stated aim is to start a cooperation agreement between institutions to find funding for a shared digital platform. A day-by-day programme has not been published."
+      ],
+      "facts": [
+        {
+          "label": "Period",
+          "value": "23–25 October 2026"
+        },
+        {
+          "label": "Location",
+          "value": "Nopcsa Castle, Săcel, Sântămăria-Orlea commune"
+        },
+        {
+          "label": "Audience",
+          "value": "specialists from universities, museums and research institutes"
+        },
+        {
+          "label": "Contact",
+          "value": "muzeucdr.deva@gmail.com"
+        }
+      ]
+    }
+  },
+  {
+    "id": "traseu-tematic-rausor-retezat-2026",
+    "name": "Un nou traseu tematic în zona Râușor din Parcul Național Retezat",
+    "category": {
+      "ro": "Natură",
+      "en": "Nature"
+    },
+    "area": "Parcul Național Retezat",
+    "date": "2026-10-13",
+    "hasReviews": false,
+    "images": [
+      "images/traseu-lacul-gales.jpg"
+    ],
+    "photoCredit": {
+      "author": "Olario~commonswiki",
+      "license": "domeniu public",
+      "source": "https://commons.wikimedia.org/wiki/File:LaculGalesusiVarfulRetezatvazutedepeVarfulMare.JPG"
+    },
+    "ro": {
+      "tagline": "Panouri informative despre patrimoniul natural și relația dintre oameni și natură, instalate în zona Râușor de Asociația Rangerilor din România.",
+      "description": [
+        "Asociația Rangerilor din România a anunțat pe 13 octombrie 2026 că a instalat panourile unui nou traseu tematic în zona Râușor din Parcul Național Retezat. Panourile prezintă patrimoniul natural al zonei și legătura dintre oameni și natură, iar traseul e deschis turiștilor care vizitează Râușorul.",
+        "Instalarea încheie proiectul „Oameni conectați prin natură – Tineri și comunități pentru viitorul Parcului Național Retezat”, derulat împreună cu Administrația Parcului Național Retezat și Asociația EcoEdu Natura, cu finanțare de la Fundația pentru Parteneriat și MOL România, prin programul „Spații Verzi”."
+      ],
+      "facts": [
+        {
+          "label": "Loc",
+          "value": "zona Râușor, Parcul Național Retezat"
+        },
+        {
+          "label": "Anunțat",
+          "value": "13 octombrie 2026"
+        },
+        {
+          "label": "Realizat de",
+          "value": "Asociația Rangerilor din România, cu Administrația Parcului Național Retezat și Asociația EcoEdu Natura"
+        },
+        {
+          "label": "Finanțare",
+          "value": "Fundația pentru Parteneriat și MOL România, programul „Spații Verzi”"
+        }
+      ]
+    },
+    "en": {
+      "name": "A new themed trail in the Râușor area of Retezat National Park",
+      "tagline": "Information panels on natural heritage and the relationship between people and nature, installed in the Râușor area by the Romanian Rangers Association.",
+      "description": [
+        "On 13 October 2026 the Romanian Rangers Association announced that it had installed the panels of a new themed trail in the Râușor area of Retezat National Park. The panels present the area's natural heritage and the link between people and nature, and the trail is open to tourists visiting Râușor.",
+        "The installation completes the project \"Oameni conectați prin natură – Tineri și comunități pentru viitorul Parcului Național Retezat\" (\"People connected through nature – Young people and communities for the future of Retezat National Park\"), run with the Retezat National Park Administration and the EcoEdu Natura Association, funded by the Fundația pentru Parteneriat and MOL România through the \"Green Spaces\" programme."
+      ],
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Râușor area, Retezat National Park"
+        },
+        {
+          "label": "Announced",
+          "value": "13 October 2026"
+        },
+        {
+          "label": "Delivered by",
+          "value": "Romanian Rangers Association, with the Retezat National Park Administration and EcoEdu Natura Association"
+        },
+        {
+          "label": "Funding",
+          "value": "Fundația pentru Parteneriat and MOL România, \"Green Spaces\" programme"
+        }
+      ]
+    }
+  },
+  {
     id: "castelul-corvinilor-restaurat-2026",
     name: "Castelul Corvinilor, restaurat integral — prima restaurare completă după mai bine de un secol",
     category: { ro: "Patrimoniu", en: "Heritage" },
