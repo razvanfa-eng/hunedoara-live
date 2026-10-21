@@ -1167,6 +1167,44 @@ window.SITE_NATURE = [
       ]
     }
   },
+  {
+    id: "cascada-lolaia",
+    name: "Cascada Lolaia",
+    category: { ro: "Cascadă", en: "Waterfall" },
+    area: "Parcul Național Retezat",
+    coords: [45.4259, 22.8973],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/cascada-lolaia.jpg"],
+    photoCredit: { author: "Raimond Spekking", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Cascada_Lolaia-9087.jpg" },
+    ro: {
+      tagline: "Cădere de circa 15 m pe valea Nucșoarei, la o plimbare scurtă de popasul Cârnic, în Parcul Național Retezat.",
+      description: [
+        "Cascada Lolaia se află în Parcul Național Retezat, pe valea Nucșoarei, și este cunoscută turiștilor care urcă sau coboară pe aici spre zona Pietrele. Apa cade de la un prag de aproximativ 15 m, rupându-se în două fâșii, la capătul unei porțiuni de chei aflate pe la circa 1.000 m altitudine.",
+        "Drumul asfaltat dinspre Hațeg (prin Ohaba de Sub Piatră, Sălașu de Jos, Sălașu de Sus, Mălăiești și Nucșoara) ajunge aproape de popasul Cârnic, unde se lasă mașina. De acolo, cascada se află la circa 15–20 de minute de mers pe jos; poate fi privită din față, de pe poteca cu trepte de lemn, sau de sus, de pe o pasarelă peste râul Pietrele."
+      ],
+      facts: [
+        { label: "Înălțimea căderii", value: "circa 15 m" },
+        { label: "Altitudine", value: "circa 1.000 m" },
+        { label: "Localizare", value: "valea Nucșoarei, Parcul Național Retezat" },
+        { label: "Acces", value: "circa 15–20 de minute pe jos de la popasul Cârnic" }
+      ]
+    },
+    en: {
+      name: "Lolaia Waterfall",
+      tagline: "A drop of about 15 m on the Nucșoara valley, a short walk from the Cârnic stop in Retezat National Park.",
+      description: [
+        "The Lolaia Waterfall lies in Retezat National Park, on the Nucșoara valley, and is well known to hikers going up or down towards the Pietrele area. The water falls from a ledge of about 15 m, splitting into two ribbons, at the end of a stretch of gorge at around 1,000 m altitude.",
+        "The paved road from Hațeg (through Ohaba de Sub Piatră, Sălașu de Jos, Sălașu de Sus, Mălăiești and Nucșoara) reaches close to the Cârnic stop, where cars are left. From there the waterfall is about a 15–20 minute walk; it can be viewed from the front, from the path with wooden steps, or from above, from a footbridge over the Pietrele river."
+      ],
+      facts: [
+        { label: "Height of the drop", value: "about 15 m" },
+        { label: "Altitude", value: "about 1,000 m" },
+        { label: "Location", value: "Nucșoara valley, Retezat National Park" },
+        { label: "Access", value: "about 15–20 minutes on foot from the Cârnic stop" }
+      ]
+    }
+  },
 ];
 
 window.SITE_ACTIVITIES = [
@@ -4680,6 +4718,86 @@ window.SITE_HERITAGE = [
         { label: "Fires", value: "1707, 1748, 1872" },
         { label: "LMI code", value: "HD-II-a-B-03231" },
         { label: "Address", value: "Strada Progresului, Deva" }
+      ]
+    }
+  },
+  {
+    id: "cetatea-piatra-rosie",
+    name: "Cetatea Piatra Roșie",
+    category: { ro: "Cetate dacică", en: "Dacian fortress" },
+    area: "Munții Orăștiei",
+    coords: [45.6024, 23.147],
+    hasReviews: true,
+    season: "tot-anul",
+    relatedIds: ["traseu-gradistea-cetatea-piatra-rosie-cioclovina"],
+    images: ["images/cetatea-piatra-rosie-zid.jpg"],
+    photoCredit: { author: "Korinna", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Piatra_Rosie_WP_20170604_15_56_36_Pro_highres.jpg" },
+    ro: {
+      tagline: "Cetate dacică de piatră pe dealul Piatra Roșie, apărând dinspre vest capitala Sarmizegetusa Regia; în patrimoniul mondial UNESCO.",
+      description: [
+        "Cetatea dacică Piatra Roșie (Luncani–Piatra Roșie) se află pe un deal de circa 832 m din satul Luncani, comuna Boșorod, în Munții Orăștiei. A fost ridicată la sfârșitul secolului I î.Hr. și folosită în secolul I d.Hr., ca parte a sistemului defensiv care proteja dinspre vest capitala dacilor, Sarmizegetusa Regia. Este una dintre cele șase fortărețe dacice din Munții Orăștiei înscrise în patrimoniul mondial UNESCO.",
+        "Construită din piatră, în tehnica dacică a zidului cu blocuri fasonate (murus dacicus), cetatea are o incintă dreptunghiulară de circa 102 × 45 m, cu turnuri la colțuri și un turn pe latura de est. S-a lucrat în două etape: întâi citadela dreptunghiulară, apoi o incintă mai largă, pentru care vârful dealului a fost nivelat. Numele vine de la piatra roșiatică a zidurilor, spre deosebire de calcarul alb din alte cetăți. Printre descoperiri se numără o sabie de fier de tip celtic, învelișul unui scut de paradă, un candelabru de bronz și un bust de bronz considerat a o înfățișa pe zeița Bendis. Cetatea a fost distrusă de romani în anul 106 d.Hr."
+      ],
+      facts: [
+        { label: "Datare", value: "sfârșitul sec. I î.Hr. – sec. I d.Hr." },
+        { label: "Altitudine", value: "circa 832 m (dealul Piatra Roșie)" },
+        { label: "Incintă", value: "circa 102 × 45 m, cu turnuri de apărare" },
+        { label: "Statut", value: "patrimoniu mondial UNESCO; monument istoric (cod LMI HD-I-s-A-03200)" },
+        { label: "Localizare", value: "satul Luncani, comuna Boșorod, Parcul Natural Grădiștea Muncelului–Cioclovina" }
+      ]
+    },
+    en: {
+      name: "Piatra Roșie Fortress",
+      tagline: "A Dacian stone fortress on Piatra Roșie hill, guarding the capital Sarmizegetusa Regia from the west; UNESCO World Heritage.",
+      description: [
+        "The Dacian fortress of Piatra Roșie (Luncani–Piatra Roșie, \"Red Rock\") stands on a hill of about 832 m at Luncani village, Boșorod commune, in the Orăștie Mountains. It was built at the end of the 1st century BC and used in the 1st century AD, as part of the defensive system that protected the Dacian capital, Sarmizegetusa Regia, from the west. It is one of the six Dacian fortresses of the Orăștie Mountains inscribed on the UNESCO World Heritage List.",
+        "Built of stone in the Dacian technique of dressed blocks (murus dacicus), the fortress has a rectangular enclosure of about 102 × 45 m, with towers at the corners and one on the east side. It was built in two phases: first the rectangular citadel, then a larger enclosure, for which the hilltop was levelled. The name comes from the reddish stone of the walls, unlike the white limestone of other fortresses. Finds include a Celtic-type iron sword, the covering of a parade shield, a bronze candelabrum and a bronze bust thought to represent the goddess Bendis. The fortress was destroyed by the Romans in AD 106."
+      ],
+      facts: [
+        { label: "Dating", value: "end of 1st century BC – 1st century AD" },
+        { label: "Altitude", value: "about 832 m (Piatra Roșie hill)" },
+        { label: "Enclosure", value: "about 102 × 45 m, with defensive towers" },
+        { label: "Status", value: "UNESCO World Heritage; historic monument (LMI code HD-I-s-A-03200)" },
+        { label: "Location", value: "Luncani village, Boșorod commune, Grădiștea Muncelului–Cioclovina Natural Park" }
+      ]
+    }
+  },
+  {
+    id: "cetatea-banita",
+    name: "Cetatea dacică Bănița",
+    category: { ro: "Cetate dacică", en: "Dacian fortress" },
+    area: "Munții Orăștiei",
+    coords: [45.4517, 23.3135],
+    hasReviews: true,
+    season: "tot-anul",
+    relatedIds: ["cheile-banitei"],
+    images: ["images/cetatea-banita.jpg"],
+    photoCredit: { author: "Muzeul Civilizației Dacice și Romane Deva", license: "material de promovare al instituției", source: "https://www.facebook.com/photo/?fbid=1493113089498058", sourceLabel: "Facebook" },
+    ro: {
+      tagline: "Cetate dacică pe Piatra Cetății, lângă Cheile Băniței, din patrimoniul mondial UNESCO; din 2026 se urcă pe un traseu tematic marcat.",
+      description: [
+        "Cetatea dacică de la Bănița se află pe Piatra Cetății, la circa 902 m altitudine, lângă Cheile Băniței. Este una dintre cele șase fortărețe dacice din Munții Orăștiei care au intrat în 1999 în patrimoniul mondial UNESCO, alături de Sarmizegetusa Regia, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie și Căpâlna.",
+        "Din 1 august 2026, cetatea poate fi vizitată pe traseul tematic „Cetatea Bănița”, marcat și amenajat, care traversează Cheile Băniței și continuă prin pădure, pe un drum în pantă: 570 m, 104 m diferență de nivel, dificultate medie, circa 40 de minute la urcare. Traseul a fost pus la dispoziția publicului de Muzeul Civilizației Dacice și Romane Deva, împreună cu Primăria Bănița, Parcul Natural Grădiștea Muncelului–Cioclovina, Romsilva și Salvamont Hunedoara."
+      ],
+      facts: [
+        { label: "Altitudine", value: "circa 902 m (Piatra Cetății)" },
+        { label: "Statut", value: "patrimoniu mondial UNESCO din 1999 (Fortărețele dacice din Munții Orăștiei)" },
+        { label: "Traseu tematic", value: "570 m, diferență de nivel 104 m, dificultate medie, circa 40 de minute la urcare" },
+        { label: "Localizare", value: "lângă Cheile Băniței, comuna Bănița" }
+      ]
+    },
+    en: {
+      name: "Bănița Dacian Fortress",
+      tagline: "A Dacian fortress on Piatra Cetății by the Bănița Gorge, UNESCO World Heritage; since 2026 reached by a marked themed trail.",
+      description: [
+        "The Dacian fortress at Bănița stands on Piatra Cetății, at about 902 m altitude, next to the Bănița Gorge. It is one of the six Dacian fortresses of the Orăștie Mountains that joined the UNESCO World Heritage List in 1999, alongside Sarmizegetusa Regia, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie and Căpâlna.",
+        "Since 1 August 2026 the fortress can be visited on the marked and improved \"Bănița Fortress\" themed trail, which crosses the Bănița Gorge and continues through the forest on a steep track: 570 m, a 104 m height difference, medium difficulty, about 40 minutes uphill. The trail was opened to the public by the Museum of Dacian and Roman Civilisation in Deva, together with Bănița town hall, the Grădiștea Muncelului–Cioclovina Natural Park, Romsilva and Salvamont Hunedoara."
+      ],
+      facts: [
+        { label: "Altitude", value: "about 902 m (Piatra Cetății)" },
+        { label: "Status", value: "UNESCO World Heritage since 1999 (Dacian Fortresses of the Orăștie Mountains)" },
+        { label: "Themed trail", value: "570 m, 104 m height difference, medium difficulty, about 40 minutes uphill" },
+        { label: "Location", value: "by the Bănița Gorge, Bănița commune" }
       ]
     }
   },
