@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gohd.ro/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/"/>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/"/>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/destinatii.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/destinatii.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/destinatii.html"/>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/destinatii.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/destinatii.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/destinatii.html"/>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/orase.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase.html"/>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/orase.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase.html"/>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/natura.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura.html"/>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/natura.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura.html"/>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/turism-activ.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/turism-activ.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/turism-activ.html"/>
@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/turism-activ.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/turism-activ.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/turism-activ.html"/>
@@ -82,7 +82,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/mostenire.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire.html"/>
@@ -90,7 +90,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/mostenire.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire.html"/>
@@ -98,7 +98,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/stiri.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri.html"/>
@@ -106,7 +106,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/stiri.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri.html"/>
@@ -114,7 +114,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/afaceri.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/afaceri.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/afaceri.html"/>
@@ -122,7 +122,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/afaceri.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/afaceri.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/afaceri.html"/>
@@ -130,7 +130,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/utile.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/utile.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/utile.html"/>
@@ -138,7 +138,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/utile.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/utile.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/utile.html"/>
@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/contact.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/contact.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/contact.html"/>
@@ -154,7 +154,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/contact.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/contact.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/contact.html"/>
@@ -162,7 +162,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/credite.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.2</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/credite.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/credite.html"/>
@@ -170,7 +170,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/credite.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.2</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/credite.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/credite.html"/>
@@ -178,7 +178,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/trimite-poza.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/trimite-poza.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/trimite-poza.html"/>
@@ -186,7 +186,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/trimite-poza.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/trimite-poza.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/trimite-poza.html"/>
@@ -194,7 +194,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/itinerarii.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii.html"/>
@@ -202,7 +202,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/itinerarii.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii.html"/>
@@ -210,7 +210,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/harta.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/harta.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/harta.html"/>
@@ -218,7 +218,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/harta.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/harta.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/harta.html"/>
@@ -226,7 +226,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/calendar.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/calendar.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/calendar.html"/>
@@ -234,7 +234,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/calendar.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/calendar.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/calendar.html"/>
@@ -242,7 +242,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/vreme.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/vreme.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/vreme.html"/>
@@ -250,7 +250,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/vreme.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/vreme.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/vreme.html"/>
@@ -978,7 +978,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/natura/padurea-bejan/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/padurea-bejan/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/padurea-bejan/"/>
@@ -986,7 +986,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/natura/padurea-bejan/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/padurea-bejan/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/padurea-bejan/"/>
@@ -1042,7 +1042,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/natura/pestera-cioclovina/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/pestera-cioclovina/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/pestera-cioclovina/"/>
@@ -1050,7 +1050,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/natura/pestera-cioclovina/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/pestera-cioclovina/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/pestera-cioclovina/"/>
@@ -1106,7 +1106,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/natura/podul-natural-grohot/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/podul-natural-grohot/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/podul-natural-grohot/"/>
@@ -1114,7 +1114,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/natura/podul-natural-grohot/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/podul-natural-grohot/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/podul-natural-grohot/"/>
@@ -1250,7 +1250,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/turism-activ/traseu-dealul-babii/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/turism-activ/traseu-dealul-babii/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/turism-activ/traseu-dealul-babii/"/>
@@ -1258,7 +1258,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/turism-activ/traseu-dealul-babii/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/turism-activ/traseu-dealul-babii/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/turism-activ/traseu-dealul-babii/"/>
@@ -1506,7 +1506,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/turism-activ/traseu-baru-varful-tulisa/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/turism-activ/traseu-baru-varful-tulisa/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/turism-activ/traseu-baru-varful-tulisa/"/>
@@ -1514,7 +1514,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/turism-activ/traseu-baru-varful-tulisa/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/turism-activ/traseu-baru-varful-tulisa/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/turism-activ/traseu-baru-varful-tulisa/"/>
@@ -1650,7 +1650,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/turism-activ/traseu-baru-varful-lola-porumbelu/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/turism-activ/traseu-baru-varful-lola-porumbelu/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/turism-activ/traseu-baru-varful-lola-porumbelu/"/>
@@ -1658,7 +1658,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/turism-activ/traseu-baru-varful-lola-porumbelu/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/turism-activ/traseu-baru-varful-lola-porumbelu/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/turism-activ/traseu-baru-varful-lola-porumbelu/"/>
@@ -2034,7 +2034,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/mostenire/treptele-romane-ruda-brad/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/treptele-romane-ruda-brad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/treptele-romane-ruda-brad/"/>
@@ -2042,7 +2042,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/mostenire/treptele-romane-ruda-brad/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/treptele-romane-ruda-brad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/treptele-romane-ruda-brad/"/>
@@ -3522,7 +3522,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/itinerarii/weekend-in-valea-jiului/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/weekend-in-valea-jiului/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/weekend-in-valea-jiului/"/>
@@ -3530,7 +3530,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/itinerarii/weekend-in-valea-jiului/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/weekend-in-valea-jiului/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/weekend-in-valea-jiului/"/>
@@ -3538,7 +3538,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/o-zi-la-hunedoara-deva/"/>
@@ -3546,7 +3546,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/itinerarii/o-zi-la-hunedoara-deva/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/o-zi-la-hunedoara-deva/"/>
@@ -3554,7 +3554,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/itinerarii/pe-urmele-dacilor/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/pe-urmele-dacilor/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/pe-urmele-dacilor/"/>
@@ -3562,7 +3562,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/itinerarii/pe-urmele-dacilor/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/pe-urmele-dacilor/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/pe-urmele-dacilor/"/>
@@ -3570,7 +3570,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/itinerarii/retezat-in-2-zile/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/retezat-in-2-zile/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/retezat-in-2-zile/"/>
@@ -3578,7 +3578,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/itinerarii/retezat-in-2-zile/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/retezat-in-2-zile/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/retezat-in-2-zile/"/>
