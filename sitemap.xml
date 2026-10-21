@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gohd.ro/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/"/>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/"/>
@@ -226,7 +226,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/calendar.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/calendar.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/calendar.html"/>
@@ -234,7 +234,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/calendar.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/calendar.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/calendar.html"/>
@@ -2703,6 +2703,70 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/manastirea-franciscana-deva/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/manastirea-franciscana-deva/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/manastirea-franciscana-deva/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/stiri/bella-voce-bella-musica-deva-2026/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/bella-voce-bella-musica-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/bella-voce-bella-musica-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/bella-voce-bella-musica-deva-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/stiri/bella-voce-bella-musica-deva-2026/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/bella-voce-bella-musica-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/bella-voce-bella-musica-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/bella-voce-bella-musica-deva-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/stiri/vioara-si-enescu-deva-2026/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/vioara-si-enescu-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/vioara-si-enescu-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/vioara-si-enescu-deva-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/stiri/vioara-si-enescu-deva-2026/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/vioara-si-enescu-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/vioara-si-enescu-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/vioara-si-enescu-deva-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/stiri/morosenii-va-colinda-deva-2026/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/morosenii-va-colinda-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/morosenii-va-colinda-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/morosenii-va-colinda-deva-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/stiri/morosenii-va-colinda-deva-2026/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/morosenii-va-colinda-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/morosenii-va-colinda-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/morosenii-va-colinda-deva-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/stiri/iancu-de-hunedoara-pataky-alba-iulia-2026/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/iancu-de-hunedoara-pataky-alba-iulia-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/iancu-de-hunedoara-pataky-alba-iulia-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/iancu-de-hunedoara-pataky-alba-iulia-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/stiri/iancu-de-hunedoara-pataky-alba-iulia-2026/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/iancu-de-hunedoara-pataky-alba-iulia-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/iancu-de-hunedoara-pataky-alba-iulia-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/iancu-de-hunedoara-pataky-alba-iulia-2026/"/>
   </url>
   <url>
     <loc>https://gohd.ro/stiri/festivalul-vanatorilor-castelul-nopcsa-2026/</loc>

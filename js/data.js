@@ -5712,6 +5712,152 @@ window.SITE_TOWNS = [
 
 window.SITE_NEWS = [
   {
+    id: "bella-voce-bella-musica-deva-2026",
+    name: "„Bella voce, Bella musica”: Leontina Văduva și Cătălin Răducanu, recital la Deva",
+    category: { ro: "Concert", en: "Concert" },
+    area: "Deva",
+    date: "2026-11-15",
+    hasReviews: false,
+    images: ["images/deva-piata-unirii.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Deva_Piata_Unirii_(8).jpg" },
+    ro: {
+      tagline: "Duminică, 15 noiembrie 2026, ora 19:00, în Sala Pro Arte a Colegiului Național „Decebal”: soprana Leontina Văduva și pianistul Cătălin Răducanu, cu intrare liberă.",
+      description: [
+        "Soprana Leontina Văduva și pianistul Cătălin Răducanu ajung la Deva cu al doilea turneu național „Bella voce, Bella musica”, inițiat de Pro Contemporania în seria „Turnee de poveste”. Repertoriul trece de la lied și operă la cântecul francez și muzica românească, cu lucrări de George Enescu, Kurt Weill, George Gershwin, Édith Piaf, Maria Tănase și altele.",
+        "Intrarea este liberă, în limita locurilor disponibile. Organizatori: Primăria Municipiului Deva și Centrul Cultural „Drăgan Muntean” Deva."
+      ],
+      facts: [
+        { label: "Dată", value: "duminică, 15 noiembrie 2026, ora 19:00" },
+        { label: "Loc", value: "Sala Pro Arte, Colegiul Național „Decebal”, Deva" },
+        { label: "Acces", value: "intrare liberă, în limita locurilor disponibile" },
+        { label: "Organizatori", value: "Primăria Municipiului Deva, Centrul Cultural „Drăgan Muntean”" }
+      ]
+    },
+    en: {
+      name: "\"Bella voce, Bella musica\": Leontina Văduva and Cătălin Răducanu in recital at Deva",
+      tagline: "Sunday, 15 November 2026, 19:00, in the Pro Arte Hall of the \"Decebal\" National College: soprano Leontina Văduva and pianist Cătălin Răducanu, free entry.",
+      description: [
+        "Soprano Leontina Văduva and pianist Cătălin Răducanu come to Deva with the second national tour \"Bella voce, Bella musica\", launched by Pro Contemporania in its \"Turnee de poveste\" series. The repertoire moves from lied and opera to French song and Romanian music, with works by George Enescu, Kurt Weill, George Gershwin, Édith Piaf, Maria Tănase and others.",
+        "Entry is free, subject to available seats. Organisers: Deva City Hall and the \"Drăgan Muntean\" Cultural Centre Deva."
+      ],
+      facts: [
+        { label: "Date", value: "Sunday, 15 November 2026, 19:00" },
+        { label: "Location", value: "Pro Arte Hall, \"Decebal\" National College, Deva" },
+        { label: "Entry", value: "free, subject to available seats" },
+        { label: "Organisers", value: "Deva City Hall, \"Drăgan Muntean\" Cultural Centre" }
+      ]
+    }
+  },
+  {
+    id: "vioara-si-enescu-deva-2026",
+    name: "Turneul Național „Vioara și Enescu” ajunge din nou la Deva",
+    category: { ro: "Concert", en: "Concert" },
+    area: "Deva",
+    date: "2026-11-27",
+    hasReviews: false,
+    images: ["images/deva-cetate.jpg"],
+    photoCredit: { author: "Bogdan.onis", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Deva.jpg" },
+    ro: {
+      tagline: "Vineri, 27 noiembrie 2026, ora 19:00, în Sala Pro Arte: Gabriel Croitoru, Simina Croitoru și Clementina Ciucu-Ristea, într-un program Enescu, Chausson și Ravel.",
+      description: [
+        "Ediția a XV-a a turneului național „Vioara și Enescu” se oprește la Deva. Violonistul Gabriel Croitoru cântă pe vioara Guarneri del Gesù „Catedrala”, care i-a aparținut cândva lui George Enescu, alături de Simina Croitoru (vioară) și Clementina Ciucu-Ristea (pian).",
+        "Programul cuprinde Sonata „Torso” și Sonata nr. 3 în la minor op. 25 de George Enescu, Poème op. 25 de Ernest Chausson și Tzigane de Maurice Ravel. Intrarea este liberă, în limita locurilor disponibile. Organizatori: Primăria Municipiului Deva și Centrul Cultural „Drăgan Muntean” Deva."
+      ],
+      facts: [
+        { label: "Dată", value: "vineri, 27 noiembrie 2026, ora 19:00" },
+        { label: "Loc", value: "Sala Pro Arte, Colegiul Național „Decebal”, Deva" },
+        { label: "Acces", value: "intrare liberă, în limita locurilor disponibile" },
+        { label: "Organizatori", value: "Primăria Municipiului Deva, Centrul Cultural „Drăgan Muntean”" }
+      ]
+    },
+    en: {
+      name: "The \"Violin and Enescu\" national tour returns to Deva",
+      tagline: "Friday, 27 November 2026, 19:00, in the Pro Arte Hall: Gabriel Croitoru, Simina Croitoru and Clementina Ciucu-Ristea in a programme of Enescu, Chausson and Ravel.",
+      description: [
+        "The 15th edition of the \"Vioara și Enescu\" national tour stops in Deva. Violinist Gabriel Croitoru plays the Guarneri del Gesù \"Catedrala\" violin, once owned by George Enescu, alongside Simina Croitoru (violin) and Clementina Ciucu-Ristea (piano).",
+        "The programme includes the \"Torso\" Sonata and Sonata No. 3 in A minor, Op. 25 by George Enescu, Poème, Op. 25 by Ernest Chausson and Tzigane by Maurice Ravel. Entry is free, subject to available seats. Organisers: Deva City Hall and the \"Drăgan Muntean\" Cultural Centre Deva."
+      ],
+      facts: [
+        { label: "Date", value: "Friday, 27 November 2026, 19:00" },
+        { label: "Location", value: "Pro Arte Hall, \"Decebal\" National College, Deva" },
+        { label: "Entry", value: "free, subject to available seats" },
+        { label: "Organisers", value: "Deva City Hall, \"Drăgan Muntean\" Cultural Centre" }
+      ]
+    }
+  },
+  {
+    id: "morosenii-va-colinda-deva-2026",
+    name: "„Moroșenii vă colindă” — o întoarcere la Crăciunul de altădată, la Deva",
+    category: { ro: "Concert", en: "Concert" },
+    area: "Deva",
+    date: "2026-11-29",
+    hasReviews: false,
+    images: ["images/parcul-cetatii-deva.jpg"],
+    photoCredit: { author: "Carmen buzan", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Parcul_Cetatii_Deva.JPG" },
+    ro: {
+      tagline: "Duminică, 29 noiembrie, ora 18:00, la Centrul Cultural „Drăgan Muntean”: colinde tradiționale, ediția a III-a a turneului național.",
+      description: [
+        "Ediția a III-a a turneului național „Moroșenii vă colindă” aduce la Deva un concert de colinde tradiționale românești, gândit ca o amintire a vremii când colindătorii mergeau din casă în casă. Pe scenă urcă Alexandru Pop, Năstăcuța Iuga, Marius Ciprian Pop, Florentina și Petre Giurgi, însoțiți de un taraf tradițional.",
+        "Biletele se găsesc pe iabilet.ro sau la telefon 0721 055 037. Evenimentul figurează în calendarul Primăriei Municipiului Deva, iar textul anunțului este semnat de Centrul Cultural „Drăgan Muntean” Deva."
+      ],
+      facts: [
+        { label: "Dată", value: "duminică, 29 noiembrie 2026, ora 18:00" },
+        { label: "Loc", value: "Centrul Cultural „Drăgan Muntean”, Piața Victoriei nr. 7, Deva" },
+        { label: "Bilete", value: "iabilet.ro sau telefon 0721 055 037" }
+      ]
+    },
+    en: {
+      name: "\"Moroșenii vă colindă\" — a return to the Christmas of yesteryear, in Deva",
+      tagline: "Sunday, 29 November, 18:00, at the \"Drăgan Muntean\" Cultural Centre: traditional carols, 3rd edition of the national tour.",
+      description: [
+        "The 3rd edition of the \"Moroșenii vă colindă\" national tour brings a concert of traditional Romanian carols to Deva, recalling the time when carollers went from house to house. On stage are Alexandru Pop, Năstăcuța Iuga, Marius Ciprian Pop, Florentina and Petre Giurgi, accompanied by a traditional string band.",
+        "Tickets are available on iabilet.ro or by phone at 0721 055 037. The event is listed in the Deva City Hall calendar; the announcement text is credited to the \"Drăgan Muntean\" Cultural Centre Deva."
+      ],
+      facts: [
+        { label: "Date", value: "Sunday, 29 November 2026, 18:00" },
+        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Piața Victoriei 7, Deva" },
+        { label: "Tickets", value: "iabilet.ro or phone +40 721 055 037" }
+      ]
+    }
+  },
+  {
+    id: "iancu-de-hunedoara-pataky-alba-iulia-2026",
+    name: "Tabloul „Iancu de Hunedoara” din colecția MCDR, expus la Alba Iulia până pe 13 noiembrie",
+    category: { ro: "Patrimoniu", en: "Heritage" },
+    area: "Deva",
+    date: "2026-10-22",
+    hasReviews: false,
+    images: ["images/muzeul-civilizatiei-dacice-deva.jpg"],
+    photoCredit: { author: "Andrei kokelburg", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Deva_Magna_curia_(1).jpg" },
+    ro: {
+      tagline: "Din 22 octombrie până la 13 noiembrie 2026, pictura monumentală a lui Pataky László (1896) din patrimoniul Muzeului Civilizației Dacice și Romane Deva, la Palatul Principilor Transilvaniei.",
+      description: [
+        "O lucrare monumentală din patrimoniul Muzeului Civilizației Dacice și Romane Deva va putea fi admirată la Alba Iulia, în Palatul Principilor Transilvaniei, în cadrul expoziției „Metamorfozele lui Iancu de Hunedoara”. Este pictura în ulei pe pânză „Iancu de Hunedoara” de Pataky László, datată 1896, care îl înfățișează pe voievod conducându-și armata, cu Castelul Corvinilor în fundal.",
+        "Vernisajul are loc joi, 22 octombrie 2026, la ora 18:00, iar expoziția rămâne deschisă până pe 13 noiembrie 2026. Evenimentul se leagă de Anul Iancu de Hunedoara 2026. Atenție: expoziția se află la Alba Iulia, în afara județului Hunedoara; lucrarea aparține muzeului din Deva."
+      ],
+      facts: [
+        { label: "Vernisaj", value: "joi, 22 octombrie 2026, ora 18:00" },
+        { label: "Perioadă", value: "22 octombrie – 13 noiembrie 2026" },
+        { label: "Loc", value: "Palatul Principilor Transilvaniei, Alba Iulia (expoziția „Metamorfozele lui Iancu de Hunedoara”)" },
+        { label: "Proprietar lucrare", value: "Muzeul Civilizației Dacice și Romane Deva" }
+      ]
+    },
+    en: {
+      name: "\"Iancu de Hunedoara\" painting from the MCDR collection on show in Alba Iulia until 13 November",
+      tagline: "From 22 October to 13 November 2026, Pataky László's monumental 1896 painting from the Museum of Dacian and Roman Civilisation Deva is shown at the Palace of the Princes of Transylvania.",
+      description: [
+        "A monumental work from the heritage of the Museum of Dacian and Roman Civilisation Deva can be admired in Alba Iulia, at the Palace of the Princes of Transylvania, in the exhibition \"The Metamorphoses of Iancu de Hunedoara\". It is the oil-on-canvas painting \"Iancu de Hunedoara\" by Pataky László, dated 1896, showing the voivode leading his army with Corvin Castle in the background.",
+        "The opening is on Thursday, 22 October 2026 at 18:00, and the exhibition stays open until 13 November 2026. The event ties in with the 2026 Year of Iancu de Hunedoara. Note: the exhibition is in Alba Iulia, outside Hunedoara County; the painting belongs to the Deva museum."
+      ],
+      facts: [
+        { label: "Opening", value: "Thursday, 22 October 2026, 18:00" },
+        { label: "Period", value: "22 October – 13 November 2026" },
+        { label: "Location", value: "Palace of the Princes of Transylvania, Alba Iulia (exhibition \"The Metamorphoses of Iancu de Hunedoara\")" },
+        { label: "Owner of the work", value: "Museum of Dacian and Roman Civilisation Deva" }
+      ]
+    }
+  },
+  {
     "id": "festivalul-vanatorilor-castelul-nopcsa-2026",
     "name": "Festivalul Vânătorilor revine la Castelul Nopcsa: șoimărit, ateliere și vernisajul expoziției „Retezat”",
     "category": {
