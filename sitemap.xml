@@ -178,7 +178,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/trimite-poza.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/trimite-poza.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/trimite-poza.html"/>
@@ -186,7 +186,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/trimite-poza.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/trimite-poza.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/trimite-poza.html"/>
@@ -210,7 +210,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/harta.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/harta.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/harta.html"/>
@@ -218,7 +218,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/harta.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/harta.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/harta.html"/>
@@ -482,7 +482,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/orase/orastie/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/orastie/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/orastie/"/>
@@ -490,7 +490,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/orase/orastie/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/orastie/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/orastie/"/>
@@ -498,7 +498,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/orase/hateg/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/hateg/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/hateg/"/>
@@ -506,7 +506,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/orase/hateg/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/hateg/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/hateg/"/>
@@ -1183,6 +1183,22 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/padurea-slivut/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/padurea-slivut/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/padurea-slivut/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/natura/cascada-lolaia/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/cascada-lolaia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/cascada-lolaia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cascada-lolaia/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/cascada-lolaia/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/cascada-lolaia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/cascada-lolaia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cascada-lolaia/"/>
   </url>
   <url>
     <loc>https://gohd.ro/turism-activ/traseu-pietrele-bucura-peleaga/</loc>
@@ -2703,6 +2719,38 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/manastirea-franciscana-deva/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/manastirea-franciscana-deva/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/manastirea-franciscana-deva/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/cetatea-piatra-rosie/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/cetatea-piatra-rosie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/cetatea-piatra-rosie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-piatra-rosie/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/cetatea-piatra-rosie/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/cetatea-piatra-rosie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/cetatea-piatra-rosie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-piatra-rosie/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/cetatea-banita/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/cetatea-banita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/cetatea-banita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-banita/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/cetatea-banita/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/cetatea-banita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/cetatea-banita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-banita/"/>
   </url>
   <url>
     <loc>https://gohd.ro/stiri/festivalul-vanatorilor-castelul-nopcsa-2026/</loc>
