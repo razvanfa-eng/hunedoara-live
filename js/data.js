@@ -125,7 +125,7 @@ window.SITE_DESTINATIONS = [
       tagline: "The Orăștie Mountains — the fortified core of the Dacian Kingdom, UNESCO heritage since 1999.",
       description: [
         "The Orăștie Mountains hold five of the six Dacian fortresses on the UNESCO World Heritage list (the sixth, Căpâlna, is in Alba county): Sarmizegetusa Regia — the capital of Decebalus's kingdom —, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie and Bănița.",
-        "The area is visited from Orăștie, the gateway town to the trails leading up to the fortress ruins, built in the famous \"murus dacicus\" technique."
+        "The area is visited from Orăștie, the gateway town to the trails leading up to the fortress ruins, built in the famous “murus dacicus” technique."
       ],
       facts: [
         { label: "Fortresses in the county", value: "Sarmizegetusa Regia, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie, Bănița" },
@@ -189,9 +189,9 @@ window.SITE_DESTINATIONS = [
     },
     en: {
       name: "Metaliferi Mountains",
-      tagline: "The Hunedoara side of the \"gold quadrilateral\" — Brad, Săcărâmb and Crișcior, gold mining without interruption from Roman times to the 20th century.",
+      tagline: "The Hunedoara side of the “gold quadrilateral” — Brad, Săcărâmb and Crișcior, gold mining without interruption from Roman times to the 20th century.",
       description: [
-        "The Metaliferi Mountains, in the county's north-west, hold the Hunedoara portion of the \"gold quadrilateral\" — one of Europe's richest gold-bearing regions. Brad is the area's historic centre, with its own Gold Museum; nearby lie Ruda-Brad, with a Roman mining gallery from the 2nd-3rd centuries AD, and Crișcior, with a 14th-15th century church.",
+        "The Metaliferi Mountains, in the county's north-west, hold the Hunedoara portion of the “gold quadrilateral” — one of Europe's richest gold-bearing regions. Brad is the area's historic centre, with its own Gold Museum; nearby lie Ruda-Brad, with a Roman mining gallery from the 2nd-3rd centuries AD, and Crișcior, with a 14th-15th century church.",
         "At Săcărâmb, worked without interruption since 1746, six minerals were described for the first time in the world, including sylvanite (1835) — the deposit was regarded, for nearly 130 years (1748-1876), as the most profitable in Europe."
       ],
       facts: [
@@ -227,7 +227,7 @@ window.SITE_DESTINATIONS = [
       name: "Pădureni Land",
       tagline: "An archaic ethno-folkloric zone on the Cerna Hunedoreană valley — 40 villages scattered across hilltops, an iron-making tradition and folk costume still worn at festivals.",
       description: [
-        "Ținutul Pădurenilor (\"the Foresters' Land\") stretches along the Cerna Hunedoreană valley, bordered by the Mureș corridor to the north, Țara Hațegului to the south and the Poiana Ruscă Mountains to the west — an \"ethnographic island\" of about 40 villages and hamlets, most perched on deforested hilltops between 600 and 1,100 m altitude. Ghelari, the area's largest village, gave its name to the region's iron-ore mining tradition, smelted until 1924 at the nearby Govăjdia furnace — Europe's first continuous-flow blast furnace.",
+        "Ținutul Pădurenilor (“the Foresters' Land”) stretches along the Cerna Hunedoreană valley, bordered by the Mureș corridor to the north, Țara Hațegului to the south and the Poiana Ruscă Mountains to the west — an “ethnographic island” of about 40 villages and hamlets, most perched on deforested hilltops between 600 and 1,100 m altitude. Ghelari, the area's largest village, gave its name to the region's iron-ore mining tradition, smelted until 1924 at the nearby Govăjdia furnace — Europe's first continuous-flow blast furnace.",
         "Near Teliucu Inferior lies Lake Cinciș, a reservoir built on the Cerna in the early 1960s, with beaches and fishing. The area remains known for the traditional folk costume of the pădureni, still worn at festivals and events."
       ],
       facts: [
@@ -406,7 +406,7 @@ window.SITE_NATURE = [
       name: "Two-Coloured Forest",
       tagline: "A hillside that looks cut in two colours, at the Tăia Gorges near Petrila — evergreen spruce on one side, golden beech on the other.",
       description: [
-        "Pădurea Bicoloră (the \"Two-Coloured Forest\") formed nearly half a century ago, when one half of the slope was cleared and replanted with spruce, while the other half stayed natural beech forest. The line between the two kinds of vegetation stayed almost perfectly straight, from the hilltop down to the valley.",
+        "Pădurea Bicoloră (the “Two-Coloured Forest”) formed nearly half a century ago, when one half of the slope was cleared and replanted with spruce, while the other half stayed natural beech forest. The line between the two kinds of vegetation stayed almost perfectly straight, from the hilltop down to the valley.",
         "The contrast is visible year-round — the spruce stays green, the beech changes colour — but it's most spectacular in autumn, for a few weeks, when the beech foliage turns golden-rust. The spot lies on the way to the Tăia Gorges, a protected nature reserve, a few kilometres from Petrila."
       ],
       facts: [
@@ -779,8 +779,8 @@ window.SITE_NATURE = [
       tagline: "The dwarf dinosaur geopark: over 1,000 km² of Țara Hațegului, internationally recognised since 2005 and a UNESCO Global Geopark since 2015.",
       description: [
         "The geopark covers the town of Hațeg and the communes of Baru, Densuș, General Berthelot, Pui, Răchitova, Râu de Mori, Sarmizegetusa, Sălașu de Sus, Sântămăria-Orlea and Totești. It was declared a protected area in 2004, joined the European and Global Geoparks Networks in 2005 — the first geopark in South-East Europe to do so — and has been a UNESCO Global Geopark since 2015. It is managed by the University of Bucharest.",
-        "Its stars are the dwarf dinosaurs of the Late Cretaceous, some 70 million years ago, when the area was an island — \"Hațeg Island\". Finds here include dinosaur nests with eggs and embryos, mammals that lived alongside the dinosaurs and the flying reptile Hatzegopteryx. The first dinosaur bones were discovered in 1895 on the Nopcsa family estate, and Baron Franz Nopcsa built on them his theory of insular dwarfism.",
-        "The geopark is explored through its \"geopark houses\", visitor and interpretation centres: The Geopark House in Hațeg (with a reconstruction of the dinosaur Balaur bondoc), the House of Science and Art in General Berthelot (with a life-size Magyarosaurus dacus in the yard and original nests with dinosaur eggs), the House of Dwarf Dinosaurs in Sânpetru and the House of Volcanoes in Densuș. Opening hours vary with the season, and some houses can only be visited by appointment."
+        "Its stars are the dwarf dinosaurs of the Late Cretaceous, some 70 million years ago, when the area was an island — “Hațeg Island”. Finds here include dinosaur nests with eggs and embryos, mammals that lived alongside the dinosaurs and the flying reptile Hatzegopteryx. The first dinosaur bones were discovered in 1895 on the Nopcsa family estate, and Baron Franz Nopcsa built on them his theory of insular dwarfism.",
+        "The geopark is explored through its “geopark houses”, visitor and interpretation centres: The Geopark House in Hațeg (with a reconstruction of the dinosaur Balaur bondoc), the House of Science and Art in General Berthelot (with a life-size Magyarosaurus dacus in the yard and original nests with dinosaur eggs), the House of Dwarf Dinosaurs in Sânpetru and the House of Volcanoes in Densuș. Opening hours vary with the season, and some houses can only be visited by appointment."
       ],
       facts: [
         { label: "Status", value: "UNESCO Global Geopark (2015); in the European and Global Geoparks Networks since 2005" },
@@ -859,15 +859,15 @@ window.SITE_NATURE = [
     },
     en: {
       name: "Cioclovina Cave",
-      tagline: "The cave where the \"Cioclovina 1\" skull was found — one of the oldest modern humans in Central and South-East Europe.",
+      tagline: "The cave where the “Cioclovina 1” skull was found — one of the oldest modern humans in Central and South-East Europe.",
       description: [
-        "Peștera Cioclovina Uscată (the \"dry\" Cioclovina Cave) lies near the village of Cioclovina (Boșorod commune), in the Șureanu Mountains, inside the Grădiștea Muncelului–Cioclovina Natural Park, where the Ponorâci–Cioclovina karst complex is a nature reserve. It is a karst gallery about 2 km long, studied since the 1880s; the neighbouring Cioclovina cu Apă (\"wet\") cave is open only to cavers.",
-        "The cave was mined for guano phosphate — \"Cioclovina phosphate\", a natural fertiliser formed from bat deposits. During this work, in 1941, the \"Cioclovina 1\" skull was found, radiocarbon-dated to 28,000–29,000 years; DNA analysis confirmed it belonged to a Homo sapiens. Numerous cave bear fossils were also recovered here between 1911 and 1921, and in 1931 a new mineral, ardealite — named after Ardeal, the Romanian name for Transylvania — was described from this cave.",
+        "Peștera Cioclovina Uscată (the “dry” Cioclovina Cave) lies near the village of Cioclovina (Boșorod commune), in the Șureanu Mountains, inside the Grădiștea Muncelului–Cioclovina Natural Park, where the Ponorâci–Cioclovina karst complex is a nature reserve. It is a karst gallery about 2 km long, studied since the 1880s; the neighbouring Cioclovina cu Apă (“wet”) cave is open only to cavers.",
+        "The cave was mined for guano phosphate — “Cioclovina phosphate”, a natural fertiliser formed from bat deposits. During this work, in 1941, the “Cioclovina 1” skull was found, radiocarbon-dated to 28,000–29,000 years; DNA analysis confirmed it belonged to a Homo sapiens. Numerous cave bear fossils were also recovered here between 1911 and 1921, and in 1931 a new mineral, ardealite — named after Ardeal, the Romanian name for Transylvania — was described from this cave.",
         "The cave is reached from the village of Cioclovina, about 6 km away. The area is also crossed by the marked Ohaba Ponor – Ponorici Cave – Cioclovina Cave – Boșorod trail."
       ],
       facts: [
         { label: "Length", value: "~2 km (Peștera Cioclovina Uscată)" },
-        { label: "Discovery", value: "the \"Cioclovina 1\" skull (1941), 28,000–29,000 years old (radiocarbon)" },
+        { label: "Discovery", value: "the “Cioclovina 1” skull (1941), 28,000–29,000 years old (radiocarbon)" },
         { label: "Mineral", value: "type locality of ardealite (described in 1931)" },
         { label: "Protected area", value: "Grădiștea Muncelului–Cioclovina Natural Park" },
         { label: "Access", value: "~6 km from Cioclovina village (Boșorod commune)" }
@@ -1500,10 +1500,10 @@ window.SITE_ACTIVITIES = [
       ]
     },
     en: {
-      name: "\"Avram Iancu\" Educational Swimming Pool, Petroșani",
+      name: "“Avram Iancu” Educational Swimming Pool, Petroșani",
       tagline: "A covered semi-Olympic pool, reopened in 2025 after modernisation, in the Aeroport district.",
       description: [
-        "The \"Avram Iancu\" Educational Swimming Pool in Petroșani is a semi-Olympic pool measuring 12.5 × 25 m, with variable depth between 1.20 and 1.80 m, located on Oituz Street, in the Aeroport district. The facility includes a sauna, changing rooms and a table-tennis table, used both for swimming lessons for pupils and for open swimming.",
+        "The “Avram Iancu” Educational Swimming Pool in Petroșani is a semi-Olympic pool measuring 12.5 × 25 m, with variable depth between 1.20 and 1.80 m, located on Oituz Street, in the Aeroport district. The facility includes a sauna, changing rooms and a table-tennis table, used both for swimming lessons for pupils and for open swimming.",
         "After modernisation works (heating plant, roof, ventilation), the pool reopened to the public on 20 October 2025."
       ],
       facts: [
@@ -1648,7 +1648,7 @@ window.SITE_ACTIVITIES = [
       name: "Tunnels Trail",
       tagline: "An easy-to-moderate themed trail near Vulcan, leading to the Devil's Cave and Waterfall.",
       description: [
-        "Traseul Tunelelor (\"the tunnels trail\") is one of five themed hiking trails set up in 2022 in the mountains near Vulcan, an initiative of the Pro Montana group, carried out by Vulcan Town Hall with support from Salvamont Hunedoara.",
+        "Traseul Tunelelor (“the tunnels trail”) is one of five themed hiking trails set up in 2022 in the mountains near Vulcan, an initiative of the Pro Montana group, carried out by Vulcan Town Hall with support from Salvamont Hunedoara.",
         "About 6 km long (3–4 hours round trip), easy to moderate in difficulty, the trail passes abandoned hydro-technical structures and leads to the Devil's Cave (Peștera Dracului), the Devil's Waterfall (Cascada Dracului) and the Baleia springs — it can be covered on foot, by bike or, in winter, on skis."
       ],
       facts: [
@@ -1686,7 +1686,7 @@ window.SITE_ACTIVITIES = [
       name: "Ruins Trail",
       tagline: "A 12 km trail from Vulcan to Aninoasa along Valea Ungurului, with a monastery, waterfall and ruins.",
       description: [
-        "Traseul Ruinelor (\"the ruins trail\") is the longest of five themed trails set up in 2022 near Vulcan (a Pro Montana project, with Vulcan Town Hall and Salvamont Hunedoara). It starts in Vulcan and follows the Valea Ungurului stream to Aninoasa, covering about 12 km at moderate difficulty.",
+        "Traseul Ruinelor (“the ruins trail”) is the longest of five themed trails set up in 2022 near Vulcan (a Pro Montana project, with Vulcan Town Hall and Salvamont Hunedoara). It starts in Vulcan and follows the Valea Ungurului stream to Aninoasa, covering about 12 km at moderate difficulty.",
         "Along the way lie Sf. Nicolae Monastery, Cascada Ungurului waterfall, a rock formation known as the Sphinx of Valea Ungurului, and several historic stone ruins — which give the trail its name."
       ],
       facts: [
@@ -2367,6 +2367,7 @@ window.SITE_ACTIVITIES = [
     name: "Traseul Costești – Sarmizegetusa Regia – Vârful Godeanu (Șureanu)",
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
+    seo: { ro: { title: "Traseu Costești – Sarmizegetusa Regia – Vf. Godeanu" }, en: { title: "Costești – Sarmizegetusa Regia – Godeanu Peak trail" } },
     townId: "orastioara-de-sus",
     hasReviews: true,
     images: ["images/sarmizegetusa-zona-sacra.jpg"],
@@ -2472,6 +2473,7 @@ window.SITE_ACTIVITIES = [
     name: "Traseul Grădiștea de Munte – Cetatea Piatra Roșie – Peștera Cioclovina",
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
+    seo: { ro: { title: "Traseu Grădiștea – Piatra Roșie – Peștera Cioclovina" }, en: { title: "Grădiștea – Piatra Roșie – Cioclovina Cave trail" } },
     townId: "orastioara-de-sus",
     hasReviews: false,
     images: ["images/cetatea-piatra-rosie.jpg"],
@@ -2703,7 +2705,7 @@ window.SITE_ACTIVITIES = [
       tagline: "A year-round spa resort with thermal waters, an outdoor pool complex with an Olympic pool, and Roman baths almost two millennia old.",
       description: [
         "Geoagiu-Băi is a year-round spa and climatic resort, part of the town of Geoagiu, about 18 km north of Orăștie, at 350 m altitude, in hilly country at the foot of the Metaliferi Mountains. Its mesothermal and thermal waters (29–32 °C) are alkaline, slightly sulphurous, bicarbonated and magnesian, used mainly for locomotor, gynaecological, metabolic and skin conditions.",
-        "The thermal outdoor pool complex has three pools, including an Olympic-size one, with water at 32–33 °C. Also in the resort are the Germisara Roman baths, a well-preserved stretch of Roman road and a waterfall, while nearby Geoagiu has an 11th–12th century Romanesque rotunda. The north of the resort holds the \"Geoagiu-Băi mesothermal waters\" nature reserve (8 ha), which protects the forest around the springs.",
+        "The thermal outdoor pool complex has three pools, including an Olympic-size one, with water at 32–33 °C. Also in the resort are the Germisara Roman baths, a well-preserved stretch of Roman road and a waterfall, while nearby Geoagiu has an 11th–12th century Romanesque rotunda. The north of the resort holds the “Geoagiu-Băi mesothermal waters” nature reserve (8 ha), which protects the forest around the springs.",
         "In 2008 Geoagiu-Băi was classified as a tourist resort of national interest, and in 2010 it was named Romania's European Destination of Excellence (EDEN) for aquatic tourism."
       ],
       facts: [
@@ -2784,8 +2786,8 @@ window.SITE_HERITAGE = [
     en: {
       tagline: "The capital of the Dacian kingdom, on a 1,200 m summit — UNESCO World Heritage since 1999.",
       description: [
-        "Sarmizegetusa Regia was the political and religious centre of the Dacian kingdom for over a century and a half, reaching its peak under Decebalus. The fortress, built in the \"murus dacicus\" technique across five terraces, covers almost 30,000 m².",
-        "The nearby sacred area holds rectangular temples and the famous circular sanctuary — a wood-and-stone \"calendar\", one of the most discussed structures in Romanian archaeology."
+        "Sarmizegetusa Regia was the political and religious centre of the Dacian kingdom for over a century and a half, reaching its peak under Decebalus. The fortress, built in the “murus dacicus” technique across five terraces, covers almost 30,000 m².",
+        "The nearby sacred area holds rectangular temples and the famous circular sanctuary — a wood-and-stone “calendar”, one of the most discussed structures in Romanian archaeology."
       ],
       facts: [
         { label: "Status", value: "UNESCO World Heritage since 1999" },
@@ -2920,12 +2922,12 @@ window.SITE_HERITAGE = [
       name: "Petrila Mine (Planeta Petrila)",
       tagline: "The oldest mine in the Jiu Valley, now turned into an open-air museum.",
       description: [
-        "Petrila Mine closed in 2015, after more than a century of coal extraction, and was listed the same year as a historic monument of exceptional national value. The complex, bought by Hunedoara County Council in 2022, includes the mechanical workshops, the compressor building, the power plant with its distinctive chimney, the New Shaft with its cage lift and the Central Shaft, covering nearly 164,000 sqm.",
-        "Known as \"Planet Petrila\", the former mine now hosts guided tours, film screenings and the international Opera Nights festival, part of a PNRR-funded urban regeneration project aiming to bring it permanently into the tourist circuit."
+        "Petrila Mine closed in 2015, after more than a century of coal extraction, and was listed the same year as a historic monument of exceptional national value. The complex, bought by Hunedoara County Council in 2022, includes the mechanical workshops, the compressor building, the power plant with its distinctive chimney, the New Shaft with its cage lift and the Central Shaft, covering nearly 164,000 sq m.",
+        "Known as “Planet Petrila”, the former mine now hosts guided tours, film screenings and the international Opera Nights festival, part of a PNRR-funded urban regeneration project aiming to bring it permanently into the tourist circuit."
       ],
       facts: [
         { label: "Closed / listed as monument", value: "2015" },
-        { label: "Site area", value: "~163,855 sqm" },
+        { label: "Site area", value: "~163,855 sq m" },
         { label: "What to see", value: "mechanical workshops, power plant, New Shaft and Central Shaft" },
         { label: "Visiting", value: "guided tours; Opera Nights festival" }
       ]
@@ -2999,7 +3001,7 @@ window.SITE_HERITAGE = [
       name: "Gymnasts' Walk",
       tagline: "A row of 15 bronze busts, unveiled in 2008 at the foot of Deva Citadel, honouring the gymnasts and coaches who made Deva a world centre of gymnastics.",
       description: [
-        "Aleea Gimnastelor (\"the gymnasts' walk\") was unveiled in 2008 at the base of Deva Citadel, right in front of the hall where the national women's gymnastics team trains, next to the cable car's lower station. The walk has 15 bronze busts about 42-43 cm tall, made by the artist Ioan Șeu, cast at a foundry in Bucharest and set on 1.80 m granite pedestals.",
+        "Aleea Gimnastelor (“the gymnasts' walk”) was unveiled in 2008 at the base of Deva Citadel, right in front of the hall where the national women's gymnastics team trains, next to the cable car's lower station. The walk has 15 bronze busts about 42-43 cm tall, made by the artist Ioan Șeu, cast at a foundry in Bucharest and set on 1.80 m granite pedestals.",
         "The ensemble includes four busts of coaches — the couples Marta and Bela Karolyi, and Mariana Bitang and Octavian Bellu — and 11 busts of gymnasts, including Nadia Comăneci, Lavinia Agache, Ecaterina Szabo, Daniela Silivaș, Monica Roșu and Andreea Răducan. The walk marks the record of Deva's gymnastics school, where the national team moved in 1978, from Onești.",
         "On 22 April 2026, Deva Local Council approved three more busts, in marble — of gymnasts Sandra Izbașa and Cătălina Ponor and of coach Nicolae Forminte — which will be added to the ensemble. As of early October 2026, no date had been announced for their unveiling."
       ],
@@ -3114,7 +3116,7 @@ window.SITE_HERITAGE = [
       name: "Orăștie Medieval Citadel",
       tagline: "A 12th-century Saxon fortification, reopened to the public in 2024 after three years of restoration.",
       description: [
-        "The medieval fortress of Orăștie dates from the 12th century, from the arrival of the first Saxon colonists, and served as the seat of local Saxon community leaders (\"graefs\"). Over the centuries it went through numerous sieges, fires and rebuildings: it was plundered by the Tatars in the mid-13th century and devastated by the Ottomans in the early 15th century and again in the mid-17th century.",
+        "The medieval fortress of Orăștie dates from the 12th century, from the arrival of the first Saxon colonists, and served as the seat of local Saxon community leaders (“graefs”). Over the centuries it went through numerous sieges, fires and rebuildings: it was plundered by the Tatars in the mid-13th century and devastated by the Ottomans in the early 15th century and again in the mid-17th century.",
         "Restored between autumn 2021 and September 2024 with EU funding, the fortress reopened its gates in the very year Orăștie marked 800 years since its first documentary mention. Inside stands a nearly 1,000-year-old stone rotunda — one of the oldest structures of its kind in Romania —, two historic churches (Reformed and Evangelical) and a museum dedicated to Dacian civilisation, set up in a 19th-century building that once served as the town's hospital."
       ],
       facts: [
@@ -3149,7 +3151,7 @@ window.SITE_HERITAGE = [
       ]
     },
     en: {
-      name: "\"Aurel Vlaicu\" Memorial Complex",
+      name: "“Aurel Vlaicu” Memorial Complex",
       tagline: "The birthplace and museum of inventor and aviator Aurel Vlaicu, in the village near Orăștie that now bears his name.",
       description: [
         "The village of Binținți, near Orăștie (Geoagiu commune), was renamed Aurel Vlaicu in honour of the inventor and aviator born there. The memorial complex has three parts: the memorial house, opened to the public in 1952, the memorial museum built next to it in 1982, and a bust-monument erected in 1933.",
@@ -3191,12 +3193,12 @@ window.SITE_HERITAGE = [
       tagline: "The largest collection of native gold in Europe, with pieces untouched by any jeweller.",
       description: [
         "The Gold Museum in Brad has operated since 1896, growing out of the mineral and mining-tool collections of the companies that worked the gold deposits of the Metaliferi Mountains. Today it holds over 2,000 exhibits — minerals and native gold pieces, none of them reworked by a jeweller — regarded as one of the most important collections of its kind in the world.",
-        "Among its best-known pieces, visitors have given proper names to native gold formations, such as \"The Ballerina\", a twelve-faced crystal unique in the world, and the gold \"lizards\", one of which was insured for €500,000 during transport for display at a German museum. The museum stands on Independenței Street no. 3 and is open daily."
+        "Among its best-known pieces, visitors have given proper names to native gold formations, such as “The Ballerina”, a twelve-faced crystal unique in the world, and the gold “lizards”, one of which was insured for €500,000 during transport for display at a German museum. The museum stands on Independenței Street no. 3 and is open daily."
       ],
       facts: [
         { label: "Founded", value: "1896" },
         { label: "Collection", value: "over 2,000 exhibits (minerals and native gold)" },
-        { label: "Unique piece", value: "\"The Ballerina\" — a 12-faced gold crystal, unique in the world" },
+        { label: "Unique piece", value: "“The Ballerina” — a 12-faced gold crystal, unique in the world" },
         { label: "Hours", value: "daily, 9:00 AM-5:00 PM" }
       ]
     }
@@ -3227,8 +3229,8 @@ window.SITE_HERITAGE = [
       name: "Roman Steps (Ruda-Brad)",
       tagline: "One of the few Roman-era mining galleries preserved in the Apuseni Mountains, dug nearly 2,000 years ago.",
       description: [
-        "Treptele Romane (\"the Roman Steps\") is a mining gallery cut into the rock at the edge of Ruda village, near Brad, in the 2nd-3rd centuries AD, to extract gold from the deposits of the Metaliferi Mountains. The gallery, about 200 metres long, takes its name from the steps cut into stone at the end of the tunnel, dug by hand with pickaxes by miners during the Roman occupation of Dacia.",
-        "The area had been worked for gold since Dacian times and stayed in use for centuries afterward, making it one of the few visible traces of Roman mining technique in Dacia. For safety reasons, the gallery entrance is currently closed with a metal door, and visitors can only see the pavilion built at the entrance; local authorities plan to open the area up for visiting."
+        "Treptele Romane (“the Roman Steps”) is a mining gallery cut into the rock at the edge of Ruda village, near Brad, in the 2nd-3rd centuries AD, to extract gold from the deposits of the Metaliferi Mountains. The gallery, about 200 metres long, takes its name from the steps cut into stone at the end of the tunnel, dug by hand with pickaxes by miners during the Roman occupation of Dacia.",
+        "The area had been worked for gold since Dacian times and stayed in use for centuries afterwards, making it one of the few visible traces of Roman mining technique in Dacia. For safety reasons, the gallery entrance is currently closed with a metal door, and visitors can only see the pavilion built at the entrance; local authorities plan to open the area up for visiting."
       ],
       facts: [
         { label: "Period", value: "2nd-3rd century AD (Roman era)" },
@@ -3265,7 +3267,7 @@ window.SITE_HERITAGE = [
       name: "Church of the Dormition, Crișcior",
       tagline: "A 14th-15th century church founded by voivode Bâlea, with Byzantine murals unique to the area.",
       description: [
-        "The \"Dormition of the Mother of God\" church in Crișcior, a few kilometres from Brad, was built in stone in the 14th-15th centuries on the site of an older wooden church, with a bell tower on its western side. Its founders were the local voivode Bâlea and his wife Vișa, documented in 1404.",
+        "The “Dormition of the Mother of God” church in Crișcior, a few kilometres from Brad, was built in stone in the 14th-15th centuries on the site of an older wooden church, with a bell tower on its western side. Its founders were the local voivode Bâlea and his wife Vișa, documented in 1404.",
         "Inside, 15th-century murals have survived — among the most valuable in the area — including a votive painting of the founders' family, scenes from the life of Christ (the Washing of the Feet, the Last Supper, the Way of the Cross) and depictions of warrior saints and the three sainted kings of Hungary. The church is listed as a historic monument of national value, LMI code HD-II-m-A-03303."
       ],
       facts: [
@@ -3304,7 +3306,7 @@ window.SITE_HERITAGE = [
       name: "Corvin Castle",
       tagline: "The Knights' Hall, the Diet Hall and a well dug by Turkish prisoners — the details behind Romania's most visited castle.",
       description: [
-        "Built by John Hunyadi (Iancu de Hunedoara) after 1440 on the foundations of a 14th-century fortification and expanded in Renaissance style by his son, King Matthias Corvinus, between 1458 and 1480, the castle preserves the Knights' Hall — a Gothic-vaulted reception room bearing a Latin inscription, \"Hoc opus fecit fieri Magnificus Johannes de Hunyadi\", dated 1452 — and the Diet Hall, decorated with painted medallions, including portraits of Wallachian prince Matei Basarab and Moldavian prince Vasile Lupu.",
+        "Built by John Hunyadi (Iancu de Hunedoara) after 1440 on the foundations of a 14th-century fortification and expanded in Renaissance style by his son, King Matthias Corvinus, between 1458 and 1480, the castle preserves the Knights' Hall — a Gothic-vaulted reception room bearing a Latin inscription, “Hoc opus fecit fieri Magnificus Johannes de Hunyadi”, dated 1452 — and the Diet Hall, decorated with painted medallions, including portraits of Wallachian prince Matei Basarab and Moldavian prince Vasile Lupu.",
         "The inner courtyard holds the well that, according to legend, three Ottoman prisoners spent 15 years digging in search of water after being promised freedom if they succeeded; the promise was reportedly broken, and an inscription said to remain on the well's walls has a meaning historians still dispute. The castle is open year-round; from 1 October 2026 to 31 March 2027 winter hours apply (Mondays 12:00–17:00, Tuesday–Sunday 9:00–17:00), and an adult ticket costs 55 lei in 2026."
       ],
       facts: [
@@ -3422,12 +3424,12 @@ window.SITE_HERITAGE = [
       name: "Germisara Roman Baths",
       tagline: "The Roman baths of Geoagiu-Băi, with pools cut into the rock, where gold offerings were made to the deities of the warm springs.",
       description: [
-        "The name Germisara is of Dacian origin, means \"hot water\" and appears on the Tabula Peutingeriana and in the geographer Ptolemy. The baths lie in the centre of the Geoagiu-Băi resort, on a circular promontory 90–95 m across, where the rock-cut pools, drainage channels and traces of cult buildings are still visible. The baths were used in two phases, as Germisara and later as Thermae Dodonae.",
+        "The name Germisara is of Dacian origin, means “hot water” and appears on the Tabula Peutingeriana and in the geographer Ptolemy. The baths lie in the centre of the Geoagiu-Băi resort, on a circular promontory 90–95 m across, where the rock-cut pools, drainage channels and traces of cult buildings are still visible. The baths were used in two phases, as Germisara and later as Thermae Dodonae.",
         "In 1935, while a pool of the modern lido was being dug, statues of Aesculapius and Hygieia were found. In 1986–1987, altars and votive statues dedicated to the Nymphs and to Diana came to light, along with seven gold votive plaques made in the repoussé technique — five with inscriptions, two showing Diana and a group of three nymphs. The plaques now belong to the Museum of Dacian and Roman Civilisation in Deva.",
         "About 5 km south of the resort, near the village of Cigmău, lie the ruins of the Roman fort of Germisara, which guarded the Mureș valley."
       ],
       facts: [
-        { label: "Name", value: "Germisara — \"hot water\" (of Dacian origin)" },
+        { label: "Name", value: "Germisara — “hot water” (of Dacian origin)" },
         { label: "Setting", value: "circular promontory 90–95 m across, in the centre of Geoagiu-Băi" },
         { label: "Finds", value: "statues of Aesculapius and Hygieia (1935); 7 gold votive plaques (1986–1987)" },
         { label: "Where to see the finds", value: "Museum of Dacian and Roman Civilisation, Deva" }
@@ -3504,7 +3506,7 @@ window.SITE_HERITAGE = [
       name: "Reformed Church, Sântămăria-Orlea",
       tagline: "The church of the Cândea knezes, built around 1280 — one of the oldest churches in the Romanian lands, with murals dated 1311.",
       description: [
-        "The church stands in Sântămăria-Orlea, a few kilometres south-east of Hațeg, on a small plateau near the old Kendeffy family manor. Built towards the end of the 13th century, around 1280, it is known as the church of the Cândea knezes; originally Catholic, it now belongs to the Reformed (Calvinist) church. The village appears in records from 1315, and in 1331 as \"villa Sancte Marie\".",
+        "The church stands in Sântămăria-Orlea, a few kilometres south-east of Hațeg, on a small plateau near the old Kendeffy family manor. Built towards the end of the 13th century, around 1280, it is known as the church of the Cândea knezes; originally Catholic, it now belongs to the Reformed (Calvinist) church. The village appears in records from 1315, and in 1331 as “villa Sancte Marie”.",
         "Built of rough stone with dressed-stone corners, it has a flat-ceilinged rectangular nave, a square five-storey tower on its west front with a richly carved Romanesque portal, and a rib-vaulted sanctuary. Its forms illustrate the transition from Romanesque to early Gothic in Transylvania.",
         "Inside, significant fragments survive of a mural scheme uncovered from beneath whitewash from 1869 onwards. The main painting phase is dated by a Latin inscription to the year 1311."
       ],
@@ -3548,7 +3550,7 @@ window.SITE_HERITAGE = [
       description: [
         "The manor in the village of Săcel (Sântămăria-Orlea commune) took its present form around 1872 under Elek Nopcsa, after the estate passed from the Naláczy family to the Nopcsas. The two-storey building has a stepped gable on its west front, a rectangular crenellated corner tower and a small octagonal turret. Elek Nopcsa farmed the estate in a modern way and was the first to bring a threshing machine to Hunedoara county.",
         "The manor is tied to the name of his son, Franz Nopcsa (1877–1933) — adventurer, Albanologist and one of the pioneers of paleobiology. In 1895 his sister Ilona found dinosaur bones on the family estate, and studying them led Nopcsa to the theory of insular dwarfism, which explains the dwarf dinosaurs of Țara Hațegului.",
-        "After decades of decay, the manor, owned by Hunedoara County Council, was restored and reopened to visitors on 1 September 2025, together with the Museum of Dacian and Roman Civilisation in Deva, with the exhibition \"Nopcsa Castle – A Journey Through Time in Țara Hațegului\". The photo dates from 2012, before the restoration."
+        "After decades of decay, the manor, owned by Hunedoara County Council, was restored and reopened to visitors on 1 September 2025, together with the Museum of Dacian and Roman Civilisation in Deva, with the exhibition “Nopcsa Castle – A Journey Through Time in Țara Hațegului”. The photo dates from 2012, before the restoration."
       ],
       facts: [
         { label: "Built", value: "around 1872, by Elek Nopcsa" },
@@ -3670,11 +3672,11 @@ window.SITE_HERITAGE = [
     },
     en: {
       name: "Colț Fortress",
-      tagline: "The ruined fortress of the Cândea knezes, on a crag at the mouth of the Râușor gorge — a possible inspiration for Jules Verne's \"The Carpathian Castle\".",
+      tagline: "The ruined fortress of the Cândea knezes, on a crag at the mouth of the Râușor gorge — a possible inspiration for Jules Verne's “The Carpathian Castle”.",
       description: [
         "Colț Fortress was built in the 14th century by the knez Cândea, whose descendants converted to Catholicism and changed their name to Kendeffy. It stands within the village of Suseni (Râu de Mori commune), about 3 km from Râu de Mori, on a rocky spur at the entrance to the Râușor gorge.",
         "Built around a square tower, later joined by a curtain wall and further towers, the fortress has an irregular plan shaped by the rock. In the mid-17th century the Ottoman traveller Evliya Çelebi described it as a mighty stronghold whose slopes were so steep it was impossible to approach. Today only the ruined walls remain.",
-        "Because of its look and the local place names, the site is believed to have inspired Jules Verne's novel \"The Carpathian Castle\". The ruins are reached on a marked trail of about an hour from the Nucșoara valley."
+        "Because of its look and the local place names, the site is believed to have inspired Jules Verne's novel “The Carpathian Castle”. The ruins are reached on a marked trail of about an hour from the Nucșoara valley."
       ],
       facts: [
         { label: "Dating", value: "14th century" },
@@ -3794,7 +3796,7 @@ window.SITE_HERITAGE = [
       name: "St George's Church, Streisângeorgiu",
       tagline: "A Romanesque church from 1313–1314 with murals from three periods — one of Romania's oldest churches still in use.",
       description: [
-        "On the edge of Călan, in Streisângeorgiu, stands one of the oldest medieval buildings in Transylvania still in use. A Slavonic-Romanian inscription found in the altar says the stone church was made in 1313–1314, \"with the help of Saint George\", for the forgiveness of the sins of the knez Balea and the priest Naneș, and that it was painted by Teofil the painter.",
+        "On the edge of Călan, in Streisângeorgiu, stands one of the oldest medieval buildings in Transylvania still in use. A Slavonic-Romanian inscription found in the altar says the stone church was made in 1313–1314, “with the help of Saint George”, for the forgiveness of the sins of the knez Balea and the priest Naneș, and that it was painted by Teofil the painter.",
         "Excavations showed that a wooden church with the same plan stood here earlier, and the graves around it date from the 12th–13th centuries. The murals survive from three stages — 1313–1314, 1409 and 1743 — and Roman slabs from a nearby villa rustica can be seen in the walls."
       ],
       facts: [
@@ -3875,7 +3877,7 @@ window.SITE_HERITAGE = [
       name: "Church of the Descent of the Holy Spirit, Ostrov",
       tagline: "One of the oldest Romanian stone churches in Transylvania, founded by local knezes in the 14th century.",
       description: [
-        "Ostrov, in Râu de Mori commune, lies on the old Roman road between Sarmizegetusa and the point where the Strei leaves the basin, and takes its name (\"islet\") from its setting, surrounded by the Râul Mare and the Apa Borii. The Church of the Descent of the Holy Spirit, founded by local knezes, predates the mid-14th century; in 1360 Peter of Ostrov was the district's first known archpriest.",
+        "Ostrov, in Râu de Mori commune, lies on the old Roman road between Sarmizegetusa and the point where the Strei leaves the basin, and takes its name (“islet”) from its setting, surrounded by the Râul Mare and the Apa Borii. The Church of the Descent of the Holy Spirit, founded by local knezes, predates the mid-14th century; in 1360 Peter of Ostrov was the district's first known archpriest.",
         "Only the south and west walls of the nave survive from the first building; today's appearance results from works in the second half of the 18th century and the early 19th. The village's noble family moved from Catholicism to Calvinism, the church later became Greek Catholic and, after 1948, Orthodox. Excavations in 1996 established its building phases."
       ],
       facts: [
@@ -3915,7 +3917,7 @@ window.SITE_HERITAGE = [
       name: "Medieval Church, Peșteana",
       tagline: "A 13th-century stone church built with reused Roman blocks, a few kilometres from Densuș.",
       description: [
-        "In the middle of Peșteana, recorded in 1360 through its priest \"Balk de Possana\", stands the Church of the Descent of the Holy Spirit, a witness to the old knez families of the Hațeg Country. It has a rectangular nave, a Romanesque-style altar and a bell tower on the west side, and was built with massive stone blocks taken from ruined Roman buildings.",
+        "In the middle of Peșteana, recorded in 1360 through its priest “Balk de Possana”, stands the Church of the Descent of the Holy Spirit, a witness to the old knez families of the Hațeg Country. It has a rectangular nave, a Romanesque-style altar and a bell tower on the west side, and was built with massive stone blocks taken from ruined Roman buildings.",
         "Excavations revealed two building phases: a first court chapel with a semicircular altar, and a larger 13th-century church, to which the portal under the bell tower belongs. The 1925–1926 restoration by architect Rudolf Wagner changed its look considerably — the plaster decoration with round niches and the upper storey of the tower date from then."
       ],
       facts: [
@@ -3997,8 +3999,8 @@ window.SITE_HERITAGE = [
       name: "Wooden Church, Bretea Mureșană",
       tagline: "A wooden church consecrated on 3 March 1653, with two inscriptions in Romanian written in Cyrillic letters.",
       description: [
-        "The wooden church in the cemetery of Bretea Mureșană, dedicated to Saint Demetrius, was consecrated on 3 March 1653, according to its inscription, in the time of Prince George Rákóczi. The two inscriptions, in Romanian written in Cyrillic, name the founders — among them \"Eva, mother of the Giurgești\" — and the village priest, and the original bell, now in the bell tower of the new church, dates from 1665.",
-        "With its rectangular plan and bevelled corners, the church belongs to the classic western Transylvanian type. It has been much altered, though: the narthex was enlarged, the entrance moved, and the 1965–1969 \"restoration\" cut 3 m off the bell tower and set the church on a concrete foundation."
+        "The wooden church in the cemetery of Bretea Mureșană, dedicated to Saint Demetrius, was consecrated on 3 March 1653, according to its inscription, in the time of Prince George Rákóczi. The two inscriptions, in Romanian written in Cyrillic, name the founders — among them “Eva, mother of the Giurgești” — and the village priest, and the original bell, now in the bell tower of the new church, dates from 1665.",
+        "With its rectangular plan and bevelled corners, the church belongs to the classic western Transylvanian type. It has been much altered, though: the narthex was enlarged, the entrance moved, and the 1965–1969 “restoration” cut 3 m off the bell tower and set the church on a concrete foundation."
       ],
       facts: [
         { label: "Consecrated", value: "3 March 1653" },
@@ -4080,7 +4082,7 @@ window.SITE_HERITAGE = [
       tagline: "An oak-log church built in 1705, with an iconostasis of icons painted on glass in 1830.",
       description: [
         "The wooden St Nicholas Church in Șoimuș was built in 1705, the year carved into the lintel of the door to the nave. It is made of oak logs, with a rectangular plan and a polygonal apse in line with the nave; in the 19th century it was extended west with a narthex, topped by a low bell tower with a gallery and pyramidal spire.",
-        "Look out for the carved frame of the south entrance, decorated with diagonal crosses, \"wolf's tooth\" patterns and rosettes. The iconostasis is made of icons painted on glass in 1830."
+        "Look out for the carved frame of the south entrance, decorated with diagonal crosses, “wolf's tooth” patterns and rosettes. The iconostasis is made of icons painted on glass in 1830."
       ],
       facts: [
         { label: "Built", value: "1705" },
@@ -4162,7 +4164,7 @@ window.SITE_HERITAGE = [
       tagline: "A 17th-century stone church with a vault painted in 1726 on a lining of wooden boards.",
       description: [
         "The village of Lăpușnic, at the northern foot of the Poiana Ruscă Mountains, keeps a stone church listed as a historic monument since 1948. The oldest part of the nave, from the mid-17th century, was originally a civil building donated by the widow Maria de Lazar.",
-        "The altar and the lengthened nave date from the first half of the 18th century — \"1726 March 26\" is written on the vault — and the narthex and bell tower were added in 1832–1843. The vault over the nave and altar was painted in 1726 on a board lining by an unknown painter and repainted in 1817; the murals are now badly deteriorated."
+        "The altar and the lengthened nave date from the first half of the 18th century — “1726 March 26” is written on the vault — and the narthex and bell tower were added in 1832–1843. The vault over the nave and altar was painted in 1726 on a board lining by an unknown painter and repainted in 1817; the murals are now badly deteriorated."
       ],
       facts: [
         { label: "Date", value: "mid-17th century; altar 1726; narthex and tower 1832–1843" },
@@ -4202,7 +4204,7 @@ window.SITE_HERITAGE = [
       name: "Wooden Church, Ciungani",
       tagline: "A wooden church from around 1600, with the tallest tower of any wooden church in Hunedoara county — 14 m.",
       description: [
-        "On Zapoza hill in the village of Ciungani, in the Zarand Country, stands the wooden Church of the Annunciation, built by tradition around 1600 — a date its archaic plan supports. In 1755 it was described as \"wooden, old, unconsecrated\". The steep roof and the 14 m spire of its bell tower — the tallest among the county's wooden churches — are covered in shingles.",
+        "On Zapoza hill in the village of Ciungani, in the Zarand Country, stands the wooden Church of the Annunciation, built by tradition around 1600 — a date its archaic plan supports. In 1755 it was described as “wooden, old, unconsecrated”. The steep roof and the 14 m spire of its bell tower — the tallest among the county's wooden churches — are covered in shingles.",
         "Inside there are two layers of murals: those painted in 1782 by Iosif the Painter, almost entirely covered in 1810 by the work of Ioan of Poiana Sibiului and Mihai Borșoș."
       ],
       facts: [
@@ -4241,9 +4243,9 @@ window.SITE_HERITAGE = [
     },
     en: {
       name: "Wooden Church, Birtin",
-      tagline: "A wooden church from 1690, \"in the days of Michael Apafi, king of Transylvania\", with icons by Stan the Painter.",
+      tagline: "A wooden church from 1690, “in the days of Michael Apafi, king of Transylvania”, with icons by Stan the Painter.",
       description: [
-        "The wooden Church of the Annunciation in Birtin stands on one of the village's gentle hills. The inscription cut above the door to the nave reads: \"This holy church was made in the days of Michael Apafi, king of Transylvania, in the year of the Lord 1690, the 20th day of April, priest Lazăr\". The massive wall logs rest directly on the ground and are joined with dovetails.",
+        "The wooden Church of the Annunciation in Birtin stands on one of the village's gentle hills. The inscription cut above the door to the nave reads: “This holy church was made in the days of Michael Apafi, king of Transylvania, in the year of the Lord 1690, the 20th day of April, priest Lazăr”. The massive wall logs rest directly on the ground and are joined with dovetails.",
         "The royal doors, with the Annunciation and the Evangelists, were painted in 1740 by Gligorie Moldovan, and in 1772 Stan the Painter, son of the priest Radu of Rășinari, painted the iconostasis's row of main icons. The walls were repainted in the first half of the 19th century."
       ],
       facts: [
@@ -4930,7 +4932,7 @@ window.SITE_HERITAGE = [
       name: "Piatra Roșie Fortress",
       tagline: "A Dacian stone fortress on Piatra Roșie hill, guarding the capital Sarmizegetusa Regia from the west; UNESCO World Heritage.",
       description: [
-        "The Dacian fortress of Piatra Roșie (Luncani–Piatra Roșie, \"Red Rock\") stands on a hill of about 832 m at Luncani village, Boșorod commune, in the Orăștie Mountains. It was built at the end of the 1st century BC and used in the 1st century AD, as part of the defensive system that protected the Dacian capital, Sarmizegetusa Regia, from the west. It is one of the six Dacian fortresses of the Orăștie Mountains inscribed on the UNESCO World Heritage List.",
+        "The Dacian fortress of Piatra Roșie (Luncani–Piatra Roșie, “Red Rock”) stands on a hill of about 832 m at Luncani village, Boșorod commune, in the Orăștie Mountains. It was built at the end of the 1st century BC and used in the 1st century AD, as part of the defensive system that protected the Dacian capital, Sarmizegetusa Regia, from the west. It is one of the six Dacian fortresses of the Orăștie Mountains inscribed on the UNESCO World Heritage List.",
         "Built of stone in the Dacian technique of dressed blocks (murus dacicus), the fortress has a rectangular enclosure of about 102 × 45 m, with towers at the corners and one on the east side. It was built in two phases: first the rectangular citadel, then a larger enclosure, for which the hilltop was levelled. The name comes from the reddish stone of the walls, unlike the white limestone of other fortresses. Finds include a Celtic-type iron sword, the covering of a parade shield, a bronze candelabrum and a bronze bust thought to represent the goddess Bendis. The fortress was destroyed by the Romans in AD 106."
       ],
       facts: [
@@ -4972,7 +4974,7 @@ window.SITE_HERITAGE = [
       tagline: "A Dacian fortress on Piatra Cetății by the Bănița Gorge, UNESCO World Heritage; since 2026 reached by a marked themed trail.",
       description: [
         "The Dacian fortress at Bănița stands on Piatra Cetății, at about 902 m altitude, next to the Bănița Gorge. It is one of the six Dacian fortresses of the Orăștie Mountains that joined the UNESCO World Heritage List in 1999, alongside Sarmizegetusa Regia, Costești-Cetățuie, Costești-Blidaru, Piatra Roșie and Căpâlna.",
-        "Since 1 August 2026 the fortress can be visited on the marked and improved \"Bănița Fortress\" themed trail, which crosses the Bănița Gorge and continues through the forest on a steep track: 570 m, a 104 m height difference, medium difficulty, about 40 minutes uphill. The trail was opened to the public by the Museum of Dacian and Roman Civilisation in Deva, together with Bănița town hall, the Grădiștea Muncelului–Cioclovina Natural Park, Romsilva and Salvamont Hunedoara."
+        "Since 1 August 2026 the fortress can be visited on the marked and improved “Bănița Fortress” themed trail, which crosses the Bănița Gorge and continues through the forest on a steep track: 570 m, a 104 m height difference, medium difficulty, about 40 minutes uphill. The trail was opened to the public by the Museum of Dacian and Roman Civilisation in Deva, together with Bănița town hall, the Grădiștea Muncelului–Cioclovina Natural Park, Romsilva and Salvamont Hunedoara."
       ],
       facts: [
         { label: "Altitude", value: "about 902 m (Piatra Cetății)" },
@@ -5157,7 +5159,7 @@ window.SITE_TOWNS = [
     en: {
       tagline: "Home to Corvin Castle, one of Europe's largest medieval castles.",
       description: [
-        "Hunedoara was long an important steel-industry centre, but is best known for Corvin Castle (Hunyadi Castle), built in the 15th century by John Hunyadi — one of the largest Gothic-Renaissance castles in Europe and one of the \"7 Wonders of Romania\".",
+        "Hunedoara was long an important steel-industry centre, but is best known for Corvin Castle (Hunyadi Castle), built in the 15th century by John Hunyadi — one of the largest Gothic-Renaissance castles in Europe and one of the “7 Wonders of Romania”.",
         "The castle, with its Knights' Hall, Diet Hall and towers, can be visited year-round and is lit up in the evening."
       ],
       facts: [
@@ -5264,7 +5266,7 @@ window.SITE_TOWNS = [
     en: {
       tagline: "The oldest mining town of the Jiu Valley, now a gateway to the Jieț Gorge and its former mine turned museum.",
       description: [
-        "Petrila is first documented in 1499 and grew from the 1840s as a mining centre, around the Lonea and Petrila mines. The mine, closed in 2015, was listed as a historic monument and gradually turned into \"Planet Petrila\" — an open-air museum with guided tours and the Opera Nights festival.",
+        "Petrila is first documented in 1499 and grew from the 1840s as a mining centre, around the Lonea and Petrila mines. The mine, closed in 2015, was listed as a historic monument and gradually turned into “Planet Petrila” — an open-air museum with guided tours and the Opera Nights festival.",
         "The town's territory also holds the Jieț Gorge (10 ha) and the Taia Gorge (2 ha) nature reserves, a starting point for the Parâng plateau, as well as Conacul Rădăcinilor, a hotel and leisure complex opened in 2023 in the Jieț gorge."
       ],
       facts: [
@@ -5635,7 +5637,7 @@ window.SITE_TOWNS = [
     en: {
       tagline: "The commune built over the capital of Roman Dacia, Ulpia Traiana Sarmizegetusa.",
       description: [
-        "Sarmizegetusa is a commune in the Hațeg Country, made up of Sarmizegetusa (the seat), Breazova, Hobița-Grădiște, Păucinești and Zeicani. Locals still call it Grădiște — from the Slavic grad, \"fortress\", after the Roman ruins — and it received the official name Sarmizegetusa in 1941.",
+        "Sarmizegetusa is a commune in the Hațeg Country, made up of Sarmizegetusa (the seat), Breazova, Hobița-Grădiște, Păucinești and Zeicani. Locals still call it Grădiște — from the Slavic grad, “fortress”, after the Roman ruins — and it received the official name Sarmizegetusa in 1941.",
         "The village stands right on the site of Ulpia Traiana Sarmizegetusa, the capital of Roman Dacia founded after AD 106: the forum, the amphitheatre with about 5,000 seats and the temples can be visited in the middle of the village, and the Archaeology Museum holds the finds.",
         "The commune also has the Dacian fortress at Zeicani and the site of a Roman villa rustica at Breazova. The road through Zeicani leads to the Iron Gates of Transylvania pass and on to the Banat."
       ],
@@ -5754,14 +5756,14 @@ window.SITE_TOWNS = [
     en: {
       tagline: "The old market town on the Mureș where Gabriel Bethlen, Prince of Transylvania, was born.",
       description: [
-        "Ilia is a commune on the right bank of the Mureș in the west of the county, made up of Ilia (the seat), Bacea, Brâznic, Bretea Mureșană, Cuieș, Dumbrăvița, Săcămaș, Sârbi and Valea Lungă — some in the river meadow, others at the foot of the Poiana Ruscă and Metaliferi mountains. It appears in records from 1266, and in 1350 as \"the market town of Ilia\".",
+        "Ilia is a commune on the right bank of the Mureș in the west of the county, made up of Ilia (the seat), Bacea, Brâznic, Bretea Mureșană, Cuieș, Dumbrăvița, Săcămaș, Sârbi and Valea Lungă — some in the river meadow, others at the foot of the Poiana Ruscă and Metaliferi mountains. It appears in records from 1266, and in 1350 as “the market town of Ilia”.",
         "After the Ottomans took the fortress of Lipova in 1552, Ilia became a border stronghold and was ringed with bastions. Farkas Bethlen, granted the estate by Prince Stephen Báthory, built the Red Bastion in 1582. His son Gabriel Bethlen, Prince of Transylvania from 1613 to 1629, was born in the fortress's residential tower in 1580.",
         "In 1670 the other bastions and the walls were pulled down. The Red Bastion, rebuilt in Romantic style after 1850, is known today as Gabriel Bethlen's birthplace, and the manor built around 1848 by Baron Bornemisza now houses the hospital."
       ],
       facts: [
         { label: "Population", value: "3,144 (2021 census)" },
         { label: "Villages", value: "Ilia, Bacea, Brâznic, Bretea Mureșană, Cuieș, Dumbrăvița, Săcămaș, Sârbi, Valea Lungă" },
-        { label: "First recorded", value: "1266; \"the market town of Ilia\" in 1350" },
+        { label: "First recorded", value: "1266; “the market town of Ilia” in 1350" },
         { label: "Landmark", value: "The Red Bastion — Gabriel Bethlen's birthplace (1582), LMI code HD-II-m-A-03353" }
       ]
     }
@@ -5835,7 +5837,7 @@ window.SITE_TOWNS = [
       tagline: "A mining commune next to Brad, with a 14th-century stone church and the old Gurabarza gold-processing plant.",
       description: [
         "Crișcior is a commune next to the town of Brad, in the Zarand Country, made up of Crișcior (the seat), Barza, Valea Arsului and Zdrapți. Beneath it runs a network of galleries and shafts dug over several centuries, in the Ruda-Barza and Valea Morii mining sectors.",
-        "Ore was brought to the surface through the Victor gallery (later \"1 Mai\"), 1.2 km south of Barza, and carried by cableway to the Gurabarza processing plant, built in 1898, where large quantities of gold, silver, zinc, copper and sulphur were extracted. The narrow-gauge industrial railway between Brad and Crișcior, from 1906–1907, is a listed historic monument.",
+        "Ore was brought to the surface through the Victor gallery (later “1 Mai”), 1.2 km south of Barza, and carried by cableway to the Gurabarza processing plant, built in 1898, where large quantities of gold, silver, zinc, copper and sulphur were extracted. The narrow-gauge industrial railway between Brad and Crișcior, from 1906–1907, is a listed historic monument.",
         "Crișcior village keeps the stone Church of the Dormition, founded in the late 14th century by the local knez Bâlea and his wife, with important fragments of mural painting from that time, while Zdrapți has a wooden church built in 1852 and dedicated to Saint Demetrius."
       ],
       facts: [
@@ -5875,13 +5877,13 @@ window.SITE_TOWNS = [
       description: [
         "Șoimuș is a commune in the Mureș valley, close to Deva, made up of Șoimuș (the seat), Bălata, Bejan, Bejan-Târnăvița, Boholt, Căinelu de Jos, Chișcădaga, Fornădia, Păuliș and Sulighete. The village's name, like its German name Falkendorf, refers to falcons.",
         "The commune keeps three wooden churches: the one in Șoimuș, dedicated to Saint Nicholas and built of oak beams in 1705 — the year is carved into the lintel of the door to the nave —, the one in Sulighete, also dedicated to Saint Nicholas, and the one in Căinelu de Jos, dedicated to the Presentation of the Virgin, both from the 18th century.",
-        "Boholt has a Bronze Age archaeological site, the remains of a Roman villa rustica and the Boholt nature reserve, while part of the commune lies within the \"Mureș River between Brănișca and Ilia\" Natura 2000 site."
+        "Boholt has a Bronze Age archaeological site, the remains of a Roman villa rustica and the Boholt nature reserve, while part of the commune lies within the “Mureș River between Brănișca and Ilia” Natura 2000 site."
       ],
       facts: [
         { label: "Population", value: "3,386 (2021 census)" },
         { label: "Villages", value: "Șoimuș, Bălata, Bejan, Bejan-Târnăvița, Boholt, Căinelu de Jos, Chișcădaga, Fornădia, Păuliș, Sulighete" },
         { label: "Landmark", value: "Saint Nicholas wooden church in Șoimuș (1705), LMI code HD-II-m-A-03461" },
-        { label: "Nature", value: "Boholt reserve; \"Mureș River between Brănișca and Ilia\" Natura 2000 site" }
+        { label: "Nature", value: "Boholt reserve; “Mureș River between Brănișca and Ilia” Natura 2000 site" }
       ]
     }
   },
@@ -5953,7 +5955,7 @@ window.SITE_TOWNS = [
       tagline: "An old medieval market town south of the Mureș, on the edge of the Pădureni Country, with listed wooden churches.",
       description: [
         "Dobra is a commune in the west of the county, made up of 13 villages: Dobra (the seat), Abucea, Bujoru, Făgețel, Lăpușnic, Mihăiești, Panc, Panc-Săliște, Rădulești, Roșcani, Stâncești, Stâncești-Ohaba and Stretea. Dobra village lies on the DN68A, a few kilometres south of the Mureș, where the Mureș valley meets the Pădureni Country, on the Dobra-Bătrâna river, which rises near Rusca peak.",
-        "First recorded in 1387, Dobra was an important trading centre in the Middle Ages, its fairs drawing merchants from Bohemia, Poland and Germany. A peasant uprising broke out here in 1721, and towards the end of the 18th century the village belonged to the military border region; the former hussar barracks later became the \"La husariu\" hotel.",
+        "First recorded in 1387, Dobra was an important trading centre in the Middle Ages, its fairs drawing merchants from Bohemia, Poland and Germany. A peasant uprising broke out here in 1721, and towards the end of the 18th century the village belonged to the military border region; the former hussar barracks later became the “La husariu” hotel.",
         "The commune has listed wooden churches at Rădulești, Stâncești and Abucea, a 14th-century stone church at Roșcani and a 17th-century one at Lăpușnic. Dobra is also the end point of the yellow-band trail that crosses the Poiana Ruscă Mountains from Hunedoara."
       ],
       facts: [
@@ -7710,7 +7712,7 @@ window.SITE_TOWNS = [
       ]
     },
     en: {
-      tagline: "The smallest commune in the county, in the Poiana Ruscă range, with an 1780 wooden church and the “Old-growth forests” reserve.",
+      tagline: "The smallest commune in the county, in the Poiana Ruscă range, with a 1780 wooden church and the “Old-growth forests” reserve.",
       description: [
         "Bătrâna is a commune in Hunedoara County, made up of 4 villages: Bătrâna, Fața Roșie, Piatra and Răchițaua.",
         "Sights in the commune include the wooden church of Saint Paraskeva (1780). The area also has the “Old-growth forests” nature reserve (139.3 ha) and the Natura 2000 site Pădureni Land. The first record of Bătrâna dates from 1750."
@@ -7731,6 +7733,7 @@ window.SITE_NEWS = [
     name: "Castelul Corvinilor: restaurare de 11,6 milioane de euro și zone noi pentru vizitatori",
     category: {"ro":"Patrimoniu","en":"Heritage"},
     area: "Hunedoara",
+    seo: { ro: { title: "Castelul Corvinilor: restaurare de 11,6 mil. € și zone noi" }, en: { title: "Corvin Castle: €11.6 million restoration, new areas" } },
     townId: "hunedoara",
     hasReviews: false,
     date: "2026-08-03",
@@ -7769,6 +7772,7 @@ window.SITE_NEWS = [
     name: "„Drumuri spre altădată”: lansare de carte la Magna Curia, Deva, pe 30 octombrie",
     category: {"ro":"Eveniment cultural","en":"Cultural event"},
     area: "Deva",
+    seo: { ro: { title: "Lansare de carte „Drumuri spre altădată”, Deva, 30 oct." }, en: { title: "Book launch “Drumuri spre altădată”, Deva, 30 Oct" } },
     townId: "deva",
     hasReviews: false,
     date: "2026-10-30",
@@ -7805,6 +7809,7 @@ window.SITE_NEWS = [
     name: "„Sunetul formelor”: spectacol multimedia „Brâncuși 150” la Deva, cu intrare liberă",
     category: { ro: "Concert", en: "Concert" },
     area: "Deva",
+    seo: { ro: { title: "„Sunetul formelor”: spectacol „Brâncuși 150”, Deva" }, en: { title: "“Sunetul formelor”: “Brâncuși 150” show in Deva" } },
     date: "2026-10-24",
     hasReviews: false,
     images: ["images/deva-piata-unirii.jpg"],
@@ -7823,17 +7828,17 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "\"Sunetul formelor\": a \"Brâncuși 150\" multimedia show in Deva, free entry",
+      name: "“Sunetul formelor”: a “Brâncuși 150” multimedia show in Deva, free entry",
       tagline: "Saturday, 24 October 2026, 19:00, at the Deva Art Theatre: violinist Diana Jipa and pianist Ștefan Doniga in a show that blends live music with images filmed in Romanian museums.",
       description: [
-        "The cultural project \"Cadențe clasice la Deva\" brings the multimedia show \"Sunetul formelor\" to the stage of the Deva Art Theatre, presented under the \"Brâncuși 150\" theme. Six audiovisual pieces, filmed in museums and art collections across Romania, alternate with live music, and the audience moves between the stage and the projected images. The performers are violinist Diana Jipa and pianist Ștefan Doniga.",
+        "The cultural project “Cadențe clasice la Deva” brings the multimedia show “Sunetul formelor” to the stage of the Deva Art Theatre, presented under the “Brâncuși 150” theme. Six audiovisual pieces, filmed in museums and art collections across Romania, alternate with live music, and the audience moves between the stage and the projected images. The performers are violinist Diana Jipa and pianist Ștefan Doniga.",
         "Entry is free, but seats are limited and must be reserved by choosing a seat on the hall plan. Organiser: Dobondi Art Association, co-financed by Deva Municipality and the Local Council."
       ],
       facts: [
         { label: "Date", value: "Saturday, 24 October 2026, 19:00" },
         { label: "Location", value: "Deva Art Theatre" },
         { label: "Entry", value: "free, with seat reservation; limited seating" },
-        { label: "Organiser", value: "Dobondi Art Association, within the \"Cadențe clasice la Deva\" project" }
+        { label: "Organiser", value: "Dobondi Art Association, within the “Cadențe clasice la Deva” project" }
       ]
     }
   },
@@ -7842,6 +7847,7 @@ window.SITE_NEWS = [
     name: "Baletul „Don Quijote”, în turneu național, la Teatrul de Artă din Deva",
     category: { ro: "Spectacol", en: "Performance" },
     area: "Deva",
+    seo: { ro: { title: "Baletul „Don Quijote” la Teatrul de Artă Deva" }, en: { title: "“Don Quijote” ballet at the Deva Art Theatre" } },
     date: "2026-11-14",
     hasReviews: false,
     images: ["images/deva-cetate.jpg"],
@@ -7850,7 +7856,7 @@ window.SITE_NEWS = [
       tagline: "Sâmbătă, 14 noiembrie 2026, ora 19:00, la Teatrul de Artă Deva: producție de balet clasic Omnia Ballet Production, în regia coregrafică a lui Valentin Barteș.",
       description: [
         "Turneul național de balet „Don Quijote” ajunge la Deva sâmbătă, 14 noiembrie 2026. Spectacolul, inspirat din romanul lui Cervantes, urmărește povestea îndrăgostiților Kitri și Basil într-un ritm alert, cu momente spectaculoase și dans virtuoz. Producția este semnată de Omnia Ballet Production, împreună cu compania italiană „Messapica”, iar coregrafia îi aparține lui Valentin Barteș.",
-        "Ca soliști invitați apar Gustavo Ferreira și Cecilia Basseto, din Brazilia, solişti ai Operei Naționale Române din Timișoara. Organizatorii îl recomandă publicului de toate vârstele. Biletele se vând prin ticketstore.ro."
+        "Ca soliști invitați apar Gustavo Ferreira și Cecilia Basseto, din Brazilia, soliști ai Operei Naționale Române din Timișoara. Organizatorii îl recomandă publicului de toate vârstele. Biletele se vând prin ticketstore.ro."
       ],
       facts: [
         { label: "Dată", value: "sâmbătă, 14 noiembrie 2026, ora 19:00" },
@@ -7861,16 +7867,16 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "\"Don Quijote\" ballet on national tour at the Deva Art Theatre",
+      name: "“Don Quijote” ballet on national tour at the Deva Art Theatre",
       tagline: "Saturday, 14 November 2026, 19:00, at the Deva Art Theatre: a classical ballet production by Omnia Ballet Production, choreographed by Valentin Barteș.",
       description: [
-        "The \"Don Quijote\" national ballet tour reaches Deva on Saturday, 14 November 2026. Inspired by Cervantes's novel, the show follows the lovers Kitri and Basil at a lively pace, with spectacular moments and virtuoso dance. The production is by Omnia Ballet Production together with the Italian company \"Messapica\", with choreography by Valentin Barteș.",
+        "The “Don Quijote” national ballet tour reaches Deva on Saturday, 14 November 2026. Inspired by Cervantes's novel, the show follows the lovers Kitri and Basil at a lively pace, with spectacular moments and virtuoso dance. The production is by Omnia Ballet Production together with the Italian company “Messapica”, with choreography by Valentin Barteș.",
         "Guest soloists are Gustavo Ferreira and Cecilia Basseto from Brazil, soloists of the Romanian National Opera in Timișoara. The organisers recommend it to audiences of all ages. Tickets are sold through ticketstore.ro."
       ],
       facts: [
         { label: "Date", value: "Saturday, 14 November 2026, 19:00" },
         { label: "Location", value: "Deva Art Theatre" },
-        { label: "Production", value: "Omnia Ballet Production, with the \"Messapica\" company (Italy)" },
+        { label: "Production", value: "Omnia Ballet Production, with the “Messapica” company (Italy)" },
         { label: "Choreography", value: "Valentin Barteș" },
         { label: "Tickets", value: "ticketstore.ro" }
       ]
@@ -7881,6 +7887,7 @@ window.SITE_NEWS = [
     name: "Parcul Central din Hunedoara se reface: 25.000 de flori și sute de copaci",
     category: { ro: "Oraș", en: "City" },
     area: "Hunedoara",
+    seo: { ro: { title: "Parcul Central Hunedoara: 25.000 de flori, sute de copaci" }, en: { title: "Hunedoara Central Park: 25,000 flowers, hundreds of trees" } },
     date: "2026-10-20",
     hasReviews: false,
     images: ["images/hunedoara-corvin-castle.jpg"],
@@ -7918,6 +7925,7 @@ window.SITE_NEWS = [
     name: "„Bella voce, Bella musica”: Leontina Văduva și Cătălin Răducanu, recital la Deva",
     category: { ro: "Concert", en: "Concert" },
     area: "Deva",
+    seo: { ro: { title: "Recital Leontina Văduva și Cătălin Răducanu, Deva" }, en: { title: "Leontina Văduva and Cătălin Răducanu recital, Deva" } },
     date: "2026-11-15",
     hasReviews: false,
     images: ["images/deva-piata-unirii.jpg"],
@@ -7936,17 +7944,17 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "\"Bella voce, Bella musica\": Leontina Văduva and Cătălin Răducanu in recital at Deva",
-      tagline: "Sunday, 15 November 2026, 19:00, in the Pro Arte Hall of the \"Decebal\" National College: soprano Leontina Văduva and pianist Cătălin Răducanu, free entry.",
+      name: "“Bella voce, Bella musica”: Leontina Văduva and Cătălin Răducanu in recital at Deva",
+      tagline: "Sunday, 15 November 2026, 19:00, in the Pro Arte Hall of the “Decebal” National College: soprano Leontina Văduva and pianist Cătălin Răducanu, free entry.",
       description: [
-        "Soprano Leontina Văduva and pianist Cătălin Răducanu come to Deva with the second national tour \"Bella voce, Bella musica\", launched by Pro Contemporania in its \"Turnee de poveste\" series. The repertoire moves from lied and opera to French song and Romanian music, with works by George Enescu, Kurt Weill, George Gershwin, Édith Piaf, Maria Tănase and others.",
-        "Entry is free, subject to available seats. Organisers: Deva City Hall and the \"Drăgan Muntean\" Cultural Centre Deva."
+        "Soprano Leontina Văduva and pianist Cătălin Răducanu come to Deva with the second national tour “Bella voce, Bella musica”, launched by Pro Contemporania in its “Turnee de poveste” series. The repertoire moves from lied and opera to French song and Romanian music, with works by George Enescu, Kurt Weill, George Gershwin, Édith Piaf, Maria Tănase and others.",
+        "Entry is free, subject to available seats. Organisers: Deva City Hall and the “Drăgan Muntean” Cultural Centre Deva."
       ],
       facts: [
         { label: "Date", value: "Sunday, 15 November 2026, 19:00" },
-        { label: "Location", value: "Pro Arte Hall, \"Decebal\" National College, Deva" },
+        { label: "Location", value: "Pro Arte Hall, “Decebal” National College, Deva" },
         { label: "Entry", value: "free, subject to available seats" },
-        { label: "Organisers", value: "Deva City Hall, \"Drăgan Muntean\" Cultural Centre" }
+        { label: "Organisers", value: "Deva City Hall, “Drăgan Muntean” Cultural Centre" }
       ]
     }
   },
@@ -7955,6 +7963,7 @@ window.SITE_NEWS = [
     name: "Turneul Național „Vioara și Enescu” ajunge din nou la Deva",
     category: { ro: "Concert", en: "Concert" },
     area: "Deva",
+    seo: { ro: { title: "Turneul „Vioara și Enescu” revine la Deva" }, en: { title: "“Violin and Enescu” tour returns to Deva" } },
     date: "2026-11-27",
     hasReviews: false,
     images: ["images/deva-cetate.jpg"],
@@ -7973,17 +7982,17 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "The \"Violin and Enescu\" national tour returns to Deva",
+      name: "The “Violin and Enescu” national tour returns to Deva",
       tagline: "Friday, 27 November 2026, 19:00, in the Pro Arte Hall: Gabriel Croitoru, Simina Croitoru and Clementina Ciucu-Ristea in a programme of Enescu, Chausson and Ravel.",
       description: [
-        "The 15th edition of the \"Vioara și Enescu\" national tour stops in Deva. Violinist Gabriel Croitoru plays the Guarneri del Gesù \"Catedrala\" violin, once owned by George Enescu, alongside Simina Croitoru (violin) and Clementina Ciucu-Ristea (piano).",
-        "The programme includes the \"Torso\" Sonata and Sonata No. 3 in A minor, Op. 25 by George Enescu, Poème, Op. 25 by Ernest Chausson and Tzigane by Maurice Ravel. Entry is free, subject to available seats. Organisers: Deva City Hall and the \"Drăgan Muntean\" Cultural Centre Deva."
+        "The 15th edition of the “Vioara și Enescu” national tour stops in Deva. Violinist Gabriel Croitoru plays the Guarneri del Gesù “Catedrala” violin, once owned by George Enescu, alongside Simina Croitoru (violin) and Clementina Ciucu-Ristea (piano).",
+        "The programme includes the “Torso” Sonata and Sonata No. 3 in A minor, Op. 25 by George Enescu, Poème, Op. 25 by Ernest Chausson and Tzigane by Maurice Ravel. Entry is free, subject to available seats. Organisers: Deva City Hall and the “Drăgan Muntean” Cultural Centre Deva."
       ],
       facts: [
         { label: "Date", value: "Friday, 27 November 2026, 19:00" },
-        { label: "Location", value: "Pro Arte Hall, \"Decebal\" National College, Deva" },
+        { label: "Location", value: "Pro Arte Hall, “Decebal” National College, Deva" },
         { label: "Entry", value: "free, subject to available seats" },
-        { label: "Organisers", value: "Deva City Hall, \"Drăgan Muntean\" Cultural Centre" }
+        { label: "Organisers", value: "Deva City Hall, “Drăgan Muntean” Cultural Centre" }
       ]
     }
   },
@@ -7992,6 +8001,7 @@ window.SITE_NEWS = [
     name: "„Moroșenii vă colindă” — o întoarcere la Crăciunul de altădată, la Deva",
     category: { ro: "Concert", en: "Concert" },
     area: "Deva",
+    seo: { ro: { title: "„Moroșenii vă colindă”, Crăciun de altădată la Deva" }, en: { title: "“Moroșenii vă colindă”: old-time Christmas, Deva" } },
     date: "2026-11-29",
     hasReviews: false,
     images: ["images/parcul-cetatii-deva.jpg"],
@@ -8009,15 +8019,15 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "\"Moroșenii vă colindă\" — a return to the Christmas of yesteryear, in Deva",
-      tagline: "Sunday, 29 November, 18:00, at the \"Drăgan Muntean\" Cultural Centre: traditional carols, 3rd edition of the national tour.",
+      name: "“Moroșenii vă colindă” — a return to the Christmas of yesteryear, in Deva",
+      tagline: "Sunday, 29 November, 18:00, at the “Drăgan Muntean” Cultural Centre: traditional carols, 3rd edition of the national tour.",
       description: [
-        "The 3rd edition of the \"Moroșenii vă colindă\" national tour brings a concert of traditional Romanian carols to Deva, recalling the time when carollers went from house to house. On stage are Alexandru Pop, Năstăcuța Iuga, Marius Ciprian Pop, Florentina and Petre Giurgi, accompanied by a traditional string band.",
-        "Tickets are available on iabilet.ro or by phone at 0721 055 037. The event is listed in the Deva City Hall calendar; the announcement text is credited to the \"Drăgan Muntean\" Cultural Centre Deva."
+        "The 3rd edition of the “Moroșenii vă colindă” national tour brings a concert of traditional Romanian carols to Deva, recalling the time when carollers went from house to house. On stage are Alexandru Pop, Năstăcuța Iuga, Marius Ciprian Pop, Florentina and Petre Giurgi, accompanied by a traditional string band.",
+        "Tickets are available on iabilet.ro or by phone at 0721 055 037. The event is listed in the Deva City Hall calendar; the announcement text is credited to the “Drăgan Muntean” Cultural Centre Deva."
       ],
       facts: [
         { label: "Date", value: "Sunday, 29 November 2026, 18:00" },
-        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Piața Victoriei 7, Deva" },
+        { label: "Location", value: "“Drăgan Muntean” Cultural Centre, Piața Victoriei 7, Deva" },
         { label: "Tickets", value: "iabilet.ro or phone +40 721 055 037" }
       ]
     }
@@ -8027,6 +8037,7 @@ window.SITE_NEWS = [
     name: "Tabloul „Iancu de Hunedoara” din colecția MCDR, expus la Alba Iulia până pe 13 noiembrie",
     category: { ro: "Patrimoniu", en: "Heritage" },
     area: "Deva",
+    seo: { ro: { title: "Tabloul „Iancu de Hunedoara” expus la Alba Iulia" }, en: { title: "“Iancu de Hunedoara” painting on show in Alba Iulia" } },
     date: "2026-10-22",
     hasReviews: false,
     images: ["images/muzeul-civilizatiei-dacice-deva.jpg"],
@@ -8045,16 +8056,16 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "\"Iancu de Hunedoara\" painting from the MCDR collection on show in Alba Iulia until 13 November",
+      name: "“Iancu de Hunedoara” painting from the MCDR collection on show in Alba Iulia until 13 November",
       tagline: "From 22 October to 13 November 2026, Pataky László's monumental 1896 painting from the Museum of Dacian and Roman Civilisation Deva is shown at the Palace of the Princes of Transylvania.",
       description: [
-        "A monumental work from the heritage of the Museum of Dacian and Roman Civilisation Deva can be admired in Alba Iulia, at the Palace of the Princes of Transylvania, in the exhibition \"The Metamorphoses of Iancu de Hunedoara\". It is the oil-on-canvas painting \"Iancu de Hunedoara\" by Pataky László, dated 1896, showing the voivode leading his army with Corvin Castle in the background.",
+        "A monumental work from the heritage of the Museum of Dacian and Roman Civilisation Deva can be admired in Alba Iulia, at the Palace of the Princes of Transylvania, in the exhibition “The Metamorphoses of Iancu de Hunedoara”. It is the oil-on-canvas painting “Iancu de Hunedoara” by Pataky László, dated 1896, showing the voivode leading his army with Corvin Castle in the background.",
         "The opening is on Thursday, 22 October 2026 at 18:00, and the exhibition stays open until 13 November 2026. The event ties in with the 2026 Year of Iancu de Hunedoara. Note: the exhibition is in Alba Iulia, outside Hunedoara County; the painting belongs to the Deva museum."
       ],
       facts: [
         { label: "Opening", value: "Thursday, 22 October 2026, 18:00" },
         { label: "Period", value: "22 October – 13 November 2026" },
-        { label: "Location", value: "Palace of the Princes of Transylvania, Alba Iulia (exhibition \"The Metamorphoses of Iancu de Hunedoara\")" },
+        { label: "Location", value: "Palace of the Princes of Transylvania, Alba Iulia (exhibition “The Metamorphoses of Iancu de Hunedoara”)" },
         { label: "Owner of the work", value: "Museum of Dacian and Roman Civilisation Deva" }
       ]
     }
@@ -8067,6 +8078,7 @@ window.SITE_NEWS = [
       "en": "Festival"
     },
     "area": "Țara Hațegului",
+    seo: { ro: { title: "Festivalul Vânătorilor la Castelul Nopcsa: șoimărit, ateliere" }, en: { title: "Hunters' Festival at Nopcsa Castle: falconry, workshops" } },
     "date": "2026-10-17",
     "hasReviews": false,
     "images": [
@@ -8103,11 +8115,11 @@ window.SITE_NEWS = [
       ]
     },
     "en": {
-      "name": "The Hunters' Festival returns to Nopcsa Castle: falconry, workshops and the \"Retezat\" art exhibition opening",
+      "name": "The Hunters' Festival returns to Nopcsa Castle: falconry, workshops and the “Retezat” art exhibition opening",
       "tagline": "Saturday, 17 October 2026, from 10:00, at Săcel: the 2nd edition, with hunting demonstrations, falconry, music and workshops for all ages.",
       "description": [
         "Nopcsa Castle in Săcel (Sântămăria-Orlea commune) hosts the 2nd Hunters' Festival on Saturday, 17 October 2026. The programme starts at 10:00 and includes hunting demonstrations and contests, workshops for all ages, falconry, music, live caricatures and interactive experiences.",
-        "At 17:00 the 21st \"RETEZAT\" exhibition opens, the outcome of the \"Retezat\" Art Symposium. The organisers are the Hunedoara County Council, the Museum of Dacian and Roman Civilisation Deva, the County Centre for Culture and Art and Sântămăria-Orlea City Hall."
+        "At 17:00 the 21st “RETEZAT” exhibition opens, the outcome of the “Retezat” Art Symposium. The organisers are the Hunedoara County Council, the Museum of Dacian and Roman Civilisation Deva, the County Centre for Culture and Art and Sântămăria-Orlea City Hall."
       ],
       "facts": [
         {
@@ -8120,7 +8132,7 @@ window.SITE_NEWS = [
         },
         {
           "label": "Exhibition opening",
-          "value": "\"RETEZAT\" exhibition, 21st edition, from 17:00"
+          "value": "“RETEZAT” exhibition, 21st edition, from 17:00"
         },
         {
           "label": "Organisers",
@@ -8137,6 +8149,7 @@ window.SITE_NEWS = [
       "en": "Heritage"
     },
     "area": "Țara Hațegului",
+    seo: { ro: { title: "Congresul „Patrimoniu și Tehnologii”, Castelul Nopcsa" }, en: { title: "“Heritage and Technologies” Congress, Nopcsa Castle" } },
     "date": "2026-10-23",
     "hasReviews": false,
     "images": [
@@ -8173,10 +8186,10 @@ window.SITE_NEWS = [
       ]
     },
     "en": {
-      "name": "The \"Heritage and Technologies\" Congress takes place at Nopcsa Castle, 23–25 October",
+      "name": "The “Heritage and Technologies” Congress takes place at Nopcsa Castle, 23–25 October",
       "tagline": "Specialists from universities, museums and research institutes discuss digitising and promoting archaeological and cultural heritage.",
       "description": [
-        "From 23 to 25 October 2026, Nopcsa Castle in Săcel hosts the International Congress \"Patrimoniu și Tehnologii\" (\"Heritage and Technologies\"), listed in the calendar of the Museum of Dacian and Roman Civilisation Deva. Representatives of universities, museums, faculties, research institutes and other specialised institutions are expected.",
+        "From 23 to 25 October 2026, Nopcsa Castle in Săcel hosts the International Congress “Patrimoniu și Tehnologii” (“Heritage and Technologies”), listed in the calendar of the Museum of Dacian and Roman Civilisation Deva. Representatives of universities, museums, faculties, research institutes and other specialised institutions are expected.",
         "The theme is the use of new technologies in documenting, researching, protecting and promoting heritage, through presentations, debates and working sessions. The stated aim is to start a cooperation agreement between institutions to find funding for a shared digital platform. A day-by-day programme has not been published."
       ],
       "facts": [
@@ -8207,6 +8220,7 @@ window.SITE_NEWS = [
       "en": "Nature"
     },
     "area": "Parcul Național Retezat",
+    seo: { ro: { title: "Traseu tematic nou în zona Râușor, Retezat" }, en: { title: "New themed trail in the Râușor area, Retezat" } },
     "date": "2026-10-13",
     "hasReviews": false,
     "images": [
@@ -8247,7 +8261,7 @@ window.SITE_NEWS = [
       "tagline": "Information panels on natural heritage and the relationship between people and nature, installed in the Râușor area by the Romanian Rangers Association.",
       "description": [
         "On 13 October 2026 the Romanian Rangers Association announced that it had installed the panels of a new themed trail in the Râușor area of Retezat National Park. The panels present the area's natural heritage and the link between people and nature, and the trail is open to tourists visiting Râușor.",
-        "The installation completes the project \"Oameni conectați prin natură – Tineri și comunități pentru viitorul Parcului Național Retezat\" (\"People connected through nature – Young people and communities for the future of Retezat National Park\"), run with the Retezat National Park Administration and the EcoEdu Natura Association, funded by the Fundația pentru Parteneriat and MOL România through the \"Green Spaces\" programme."
+        "The installation completes the project “Oameni conectați prin natură – Tineri și comunități pentru viitorul Parcului Național Retezat” (“People connected through nature – Young people and communities for the future of Retezat National Park”), run with the Retezat National Park Administration and the EcoEdu Natura Association, funded by the Fundația pentru Parteneriat and MOL România through the “Green Spaces” programme."
       ],
       "facts": [
         {
@@ -8264,7 +8278,7 @@ window.SITE_NEWS = [
         },
         {
           "label": "Funding",
-          "value": "Fundația pentru Parteneriat and MOL România, \"Green Spaces\" programme"
+          "value": "Fundația pentru Parteneriat and MOL România, “Green Spaces” programme"
         }
       ]
     }
@@ -8274,6 +8288,7 @@ window.SITE_NEWS = [
     name: "Castelul Corvinilor, restaurat integral — prima restaurare completă după mai bine de un secol",
     category: { ro: "Patrimoniu", en: "Heritage" },
     area: "Hunedoara",
+    seo: { ro: { title: "Castelul Corvinilor, restaurat integral" }, en: { title: "Corvin Castle fully restored" } },
     date: "2026-09-02",
     hasReviews: false,
     images: ["images/castelul-corvinilor.jpg"],
@@ -8296,13 +8311,13 @@ window.SITE_NEWS = [
       tagline: "The €11.6 million works are finished: towers, bridge, roofs and halls restored, plus new areas opened to visitors.",
       description: [
         "The Corvin Castle restoration project was completed at the end of August 2026, after two EU-funded phases: €5 million through the Regional Operational Programme (2018–2023) and €6.6 million through Romania's Recovery and Resilience Plan (PNRR). It is the monument's first complete restoration since the works carried out between 1868 and 1914.",
-        "The restored parts include the Buzdugan (Mace) Tower and the \"Cavalier\" at its top, the access bridge by the old Gate Tower, the roofs, the Diet Hall and the Knights' Hall. In the Matia Loggia, the fresco with the coats of arms of the great noble families, including those of King Vladislaus Jagiellon and John Hunyadi (Iancu de Hunedoara), has been recreated. Visitors can now also enter new areas such as the Bears' Pit, the Chapel Bridge and the \"Between the Walls\" space.",
+        "The restored parts include the Buzdugan (Mace) Tower and the “Cavalier” at its top, the access bridge by the old Gate Tower, the roofs, the Diet Hall and the Knights' Hall. In the Matia Loggia, the fresco with the coats of arms of the great noble families, including those of King Vladislaus Jagiellon and John Hunyadi (Iancu de Hunedoara), has been recreated. Visitors can now also enter new areas such as the Bears' Pit, the Chapel Bridge and the “Between the Walls” space.",
         "Hunedoara City Hall is already preparing the next phases, worth over €15 million: restoring the Hussars' Courtyard and the circular bridge, plus an 8,000 m² Ethnographic Museum of the Pădureni region."
       ],
       facts: [
         { label: "Total cost", value: "€11.6 million (ROP + PNRR)" },
         { label: "Completed", value: "August 2026 (announced on 2 September 2026)" },
-        { label: "New visitor areas", value: "Bears' Pit, Chapel Bridge, \"Between the Walls\"" }
+        { label: "New visitor areas", value: "Bears' Pit, Chapel Bridge, “Between the Walls”" }
       ]
     }
   },
@@ -8311,6 +8326,7 @@ window.SITE_NEWS = [
     name: "Castelul Corvinilor a trecut la programul de iarnă: se vizitează până la ora 17:00",
     category: { ro: "Info utile", en: "Practical info" },
     area: "Hunedoara",
+    seo: { ro: { title: "Castelul Corvinilor: program de iarnă, până la 17:00" }, en: { title: "Corvin Castle winter hours: open until 5 pm" } },
     date: "2026-10-01",
     hasReviews: false,
     images: ["images/hunedoara-corvin-castle.jpg"],
@@ -8348,6 +8364,7 @@ window.SITE_NEWS = [
     name: "Concert de muzică sacră și de cameră la Castelul Corvinilor, în Stagiunea „Iancu de Hunedoara”",
     category: { ro: "Concert", en: "Concert" },
     area: "Hunedoara",
+    seo: { ro: { title: "Concert la Castelul Corvinilor, Stagiunea „Iancu de Hunedoara”" }, en: { title: "Concert at Corvin Castle, “Iancu de Hunedoara” season" } },
     date: "2026-10-09",
     hasReviews: false,
     images: ["images/curtea-castelul-corvinilor.jpg"],
@@ -8366,17 +8383,17 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "Sacred and chamber music concert at Corvin Castle, in the \"Iancu de Hunedoara\" season",
+      name: "Sacred and chamber music concert at Corvin Castle, in the “Iancu de Hunedoara” season",
       tagline: "Friday, 9 October 2026, from 18:00: soprano Georgeta Plută, pianist Andrei Dragomir and the Alba County String Quartet, with free admission.",
       description: [
-        "Corvin Castle hosts another concert of the \"Iancu de Hunedoara\" music season, a project that invites audiences to rediscover heritage through recitals of sacred, meditative and chamber music. The concert is part of the programme for the Year of Iancu de Hunedoara (John Hunyadi) and marks 570 years since his victory at Belgrade and his death.",
-        "Performers: soprano Georgeta Plută, pianist Andrei Dragomir and the Alba County String Quartet — Dan-Liviu Cernat and Mădălin Danciu (violin), Mădălina Gherman-Neag (viola) and Cătălina Craiu (cello). The concert is organised by the \"Augustin Bena\" Culture Centre in Alba. Admission is free, subject to available seating."
+        "Corvin Castle hosts another concert of the “Iancu de Hunedoara” music season, a project that invites audiences to rediscover heritage through recitals of sacred, meditative and chamber music. The concert is part of the programme for the Year of Iancu de Hunedoara (John Hunyadi) and marks 570 years since his victory at Belgrade and his death.",
+        "Performers: soprano Georgeta Plută, pianist Andrei Dragomir and the Alba County String Quartet — Dan-Liviu Cernat and Mădălin Danciu (violin), Mădălina Gherman-Neag (viola) and Cătălina Craiu (cello). The concert is organised by the “Augustin Bena” Culture Centre in Alba. Admission is free, subject to available seating."
       ],
       facts: [
         { label: "Date", value: "Friday, 9 October 2026, 18:00" },
         { label: "Location", value: "Corvin Castle, Hunedoara" },
         { label: "Admission", value: "free, subject to available seating" },
-        { label: "Organiser", value: "\"Augustin Bena\" Culture Centre" }
+        { label: "Organiser", value: "“Augustin Bena” Culture Centre" }
       ]
     }
   },
@@ -8385,6 +8402,7 @@ window.SITE_NEWS = [
     name: "Festivalul Național de Umor „Liviu Oros” — ediția a XXV-a, la Deva",
     category: { ro: "Festival", en: "Festival" },
     area: "Deva",
+    seo: { ro: { title: "Festivalul Național de Umor „Liviu Oros”, Deva, ediția XXV" }, en: { title: "“Liviu Oros” National Humour Festival, Deva, 25th edition" } },
     date: "2026-10-09",
     hasReviews: false,
     images: ["images/parcul-cetatii-deva.jpg"],
@@ -8404,16 +8422,16 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "\"Liviu Oros\" National Humour Festival — 25th edition, in Deva",
-      tagline: "9–10 October 2026: live portrait drawing, book launches, the contest awards and the \"Remember Liviu Oros 40\" cartoon exhibition. Free admission.",
+      name: "“Liviu Oros” National Humour Festival — 25th edition, in Deva",
+      tagline: "9–10 October 2026: live portrait drawing, book launches, the contest awards and the “Remember Liviu Oros 40” cartoon exhibition. Free admission.",
       description: [
-        "Deva City Hall and the \"Drăgan Muntean\" Cultural Centre are organising the 25th edition of the \"Liviu Oros\" National Humour Festival, dedicated to creators of written and drawn humour. All events are free to attend.",
-        "On Friday, 9 October, from 10:00, cartoonists Victor Eugen Mihai, Liviu Stănilă, Cristinel Vecerdea and Radu Clețiu run the \"Apprentice Cartoonist\" workshop for students of the \"Sigismund Toduță\" Arts High School, and from 17:30 Cristinel Vecerdea and Radu Clețiu draw portraits in Piața Unirii (Union Square). On Saturday, 10 October, from 12:00, the portrait session continues in the \"Cetate\" Municipal Park.",
-        "On Saturday from 18:00, the Cultural Centre's \"Liviu Oros\" Amphitheatre hosts book launches (authors include Nicolae Băciuț, Gavril Moisa, Valentin David and Horia Crișan) and the awards for the cartoon and epigram contests. At 19:00, the \"Remember Liviu Oros 40\" cartoon exhibition opens in the Great Hall. First prize for graphic humour went to Constantin Pavel (Focșani), and first prize in the \"Epigramissima\" International Epigram Contest to Vasile Bordianu (Prăjeni, Botoșani)."
+        "Deva City Hall and the “Drăgan Muntean” Cultural Centre are organising the 25th edition of the “Liviu Oros” National Humour Festival, dedicated to creators of written and drawn humour. All events are free to attend.",
+        "On Friday, 9 October, from 10:00, cartoonists Victor Eugen Mihai, Liviu Stănilă, Cristinel Vecerdea and Radu Clețiu run the “Apprentice Cartoonist” workshop for students of the “Sigismund Toduță” Arts High School, and from 17:30 Cristinel Vecerdea and Radu Clețiu draw portraits in Piața Unirii (Union Square). On Saturday, 10 October, from 12:00, the portrait session continues in the “Cetate” Municipal Park.",
+        "On Saturday from 18:00, the Cultural Centre's “Liviu Oros” Amphitheatre hosts book launches (authors include Nicolae Băciuț, Gavril Moisa, Valentin David and Horia Crișan) and the awards for the cartoon and epigram contests. At 19:00, the “Remember Liviu Oros 40” cartoon exhibition opens in the Great Hall. First prize for graphic humour went to Constantin Pavel (Focșani), and first prize in the “Epigramissima” International Epigram Contest to Vasile Bordianu (Prăjeni, Botoșani)."
       ],
       facts: [
         { label: "Dates", value: "9–10 October 2026" },
-        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Piața Unirii and \"Cetate\" Park, Deva" },
+        { label: "Location", value: "“Drăgan Muntean” Cultural Centre, Piața Unirii and “Cetate” Park, Deva" },
         { label: "Main event", value: "Saturday, 10 October: 18:00 awards, 19:00 cartoon exhibition" },
         { label: "Admission", value: "free" }
       ]
@@ -8424,6 +8442,7 @@ window.SITE_NEWS = [
     name: "Violoncellissimo la Deva — concert în turneul aniversar „Marin Cazacu 70”",
     category: { ro: "Concert", en: "Concert" },
     area: "Deva",
+    seo: { ro: { title: "Violoncellissimo la Deva: turneul „Marin Cazacu 70”" }, en: { title: "Violoncellissimo in Deva: “Marin Cazacu 70” tour" } },
     date: "2026-10-18",
     hasReviews: false,
     images: ["images/deva-cetate.jpg"],
@@ -8442,15 +8461,15 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "Violoncellissimo in Deva — a concert on the \"Marin Cazacu 70\" anniversary tour",
-      tagline: "Sunday, 18 October 2026, from 19:00, at the \"Drăgan Muntean\" Cultural Centre: from Baroque to Piazzolla, with the cello ensemble led by Marin Cazacu.",
+      name: "Violoncellissimo in Deva — a concert on the “Marin Cazacu 70” anniversary tour",
+      tagline: "Sunday, 18 October 2026, from 19:00, at the “Drăgan Muntean” Cultural Centre: from Baroque to Piazzolla, with the cello ensemble led by Marin Cazacu.",
       description: [
-        "The Violoncellissimo ensemble, under the musical direction of cellist Marin Cazacu, stops in Deva on the 8th edition of the \"Clasic la puterea a treia\" (\"Classical to the Power of Three\") national tour, dedicated to the 70th birthday of the ensemble's founder and mentor.",
-        "The programme spans Baroque, classical, jazz and contemporary music, with works by Constantin Dimitrescu, David Popper and Astor Piazzolla, plus well-known international themes in special arrangements. Entry is by invitation; invitations can be collected from the \"Drăgan Muntean\" Cultural Centre, Monday to Friday, 9:00–16:00. Organisers: Deva City Hall and the \"Drăgan Muntean\" Cultural Centre."
+        "The Violoncellissimo ensemble, under the musical direction of cellist Marin Cazacu, stops in Deva on the 8th edition of the “Clasic la puterea a treia” (“Classical to the Power of Three”) national tour, dedicated to the 70th birthday of the ensemble's founder and mentor.",
+        "The programme spans Baroque, classical, jazz and contemporary music, with works by Constantin Dimitrescu, David Popper and Astor Piazzolla, plus well-known international themes in special arrangements. Entry is by invitation; invitations can be collected from the “Drăgan Muntean” Cultural Centre, Monday to Friday, 9:00–16:00. Organisers: Deva City Hall and the “Drăgan Muntean” Cultural Centre."
       ],
       facts: [
         { label: "Date", value: "Sunday, 18 October 2026, 19:00" },
-        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre (Great Hall), Piața Victoriei 7, Deva" },
+        { label: "Location", value: "“Drăgan Muntean” Cultural Centre (Great Hall), Piața Victoriei 7, Deva" },
         { label: "Entry", value: "by invitation, collected from the Cultural Centre (Monday–Friday, 9:00–16:00)" },
         { label: "Information", value: "phone +40 354 408 907" }
       ]
@@ -8461,6 +8480,7 @@ window.SITE_NEWS = [
     name: "„Stelele Cetății” Deva — festival-concurs de muzică ușoară, ediția a XLIII-a",
     category: { ro: "Festival", en: "Festival" },
     area: "Deva",
+    seo: { ro: { title: "„Stelele Cetății” Deva: festival-concurs, ediția a XLIII-a" }, en: { title: "“Stelele Cetății” Deva: pop festival, 43rd edition" } },
     date: "2026-10-24",
     hasReviews: false,
     images: ["images/deva-cetate.jpg"],
@@ -8479,15 +8499,15 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "\"Stelele Cetății\" Deva — pop music festival and contest, 43rd edition",
+      name: "“Stelele Cetății” Deva — pop music festival and contest, 43rd edition",
       tagline: "24–25 October 2026: a national contest for young singers aged 15 to 23, with a 5,000-lei trophy.",
       description: [
-        "The \"Stelele Cetății\" (\"Stars of the Fortress\") National Pop Music Festival and Contest, organised by Deva City Hall and the \"Drăgan Muntean\" Cultural Centre, reaches its 43rd edition. Its aim is to discover and promote young performers and Romanian music.",
-        "The contest is open to young people aged 15 to 23. Entries close on 8 October 2026 (centrulculturaldeva@gmail.com), and the pre-selection results are announced on 12 October on the Cultural Centre's website and Facebook page. The \"Stelele Cetății\" trophy is worth 5,000 lei, followed by first prize (4,000 lei), second prize (3,000 lei), third prize (2,000 lei) and four honourable mentions of 1,000 lei each."
+        "The “Stelele Cetății” (“Stars of the Fortress”) National Pop Music Festival and Contest, organised by Deva City Hall and the “Drăgan Muntean” Cultural Centre, reaches its 43rd edition. Its aim is to discover and promote young performers and Romanian music.",
+        "The contest is open to young people aged 15 to 23. Entries close on 8 October 2026 (centrulculturaldeva@gmail.com), and the pre-selection results are announced on 12 October on the Cultural Centre's website and Facebook page. The “Stelele Cetății” trophy is worth 5,000 lei, followed by first prize (4,000 lei), second prize (3,000 lei), third prize (2,000 lei) and four honourable mentions of 1,000 lei each."
       ],
       facts: [
         { label: "Dates", value: "24–25 October 2026" },
-        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Deva" },
+        { label: "Location", value: "“Drăgan Muntean” Cultural Centre, Deva" },
         { label: "Who can enter", value: "singers aged 15 to 23" },
         { label: "Entries", value: "until 8 October 2026, at centrulculturaldeva@gmail.com" }
       ]
@@ -8498,6 +8518,7 @@ window.SITE_NEWS = [
     name: "Sarmizegetusa Regia se vizitează doar în weekend, până la 31 octombrie",
     category: { ro: "Patrimoniu", en: "Heritage" },
     area: "Munții Orăștiei",
+    seo: { ro: { title: "Sarmizegetusa Regia: doar în weekend, până la 31 oct." }, en: { title: "Sarmizegetusa Regia: weekends only, until 31 Oct" } },
     date: "2026-09-25",
     hasReviews: false,
     images: ["images/sarmizegetusa-regia-sanctuar.jpg"],
@@ -8535,6 +8556,7 @@ window.SITE_NEWS = [
     name: "Cetatea dacică Bănița, redată turiștilor printr-un traseu tematic nou",
     category: { ro: "Turism", en: "Tourism" },
     area: "Bănița",
+    seo: { ro: { title: "Cetatea dacică Bănița, cu un traseu tematic nou" }, en: { title: "Bănița Dacian fortress, with a new themed trail" } },
     date: "2026-08-01",
     hasReviews: false,
     images: ["images/traseu-tematic-cetatea-banita-2026.jpg"],
@@ -8556,7 +8578,7 @@ window.SITE_NEWS = [
       name: "Bănița Dacian fortress reopened to visitors with a new themed trail",
       tagline: "Since 1 August 2026, the UNESCO-listed fortress by the Bănița Gorge has a marked, improved trail: 570 m, about 40 minutes uphill.",
       description: [
-        "The Dacian fortress at Bănița, one of the Orăștie Mountains fortresses on the UNESCO World Heritage list, can be visited since 1 August 2026 on the marked and improved \"Bănița Fortress\" themed trail. The route crosses the Bănița Gorge, then continues through the forest on a steep track.",
+        "The Dacian fortress at Bănița, one of the Orăștie Mountains fortresses on the UNESCO World Heritage list, can be visited since 1 August 2026 on the marked and improved “Bănița Fortress” themed trail. The route crosses the Bănița Gorge, then continues through the forest on a steep track.",
         "It is 570 m long, with a 104 m height difference and medium difficulty; the climb takes about 40 minutes. The organisers recommend proper hiking gear, following the markings and signs, and respecting the cultural heritage and nature. The trail was opened to the public by the Museum of Dacian and Roman Civilisation in Deva, together with Bănița town hall, the Grădiștea Muncelului-Cioclovina Natural Park, Romsilva and Salvamont Hunedoara."
       ],
       facts: [
@@ -8572,6 +8594,7 @@ window.SITE_NEWS = [
     name: "Biletul pentru Parcul Național Retezat se poate plăti online sau prin SMS",
     category: { ro: "Info utile", en: "Practical info" },
     area: "Parcul Național Retezat",
+    seo: { ro: { title: "Bilet Parcul Național Retezat: plată online sau SMS" }, en: { title: "Retezat National Park tickets: pay online or by SMS" } },
     date: "2026-09-08",
     hasReviews: false,
     images: ["images/retezat-bucura.jpg"],
@@ -8609,6 +8632,7 @@ window.SITE_NEWS = [
     name: "Vivaldi Rocks — legendele rockului, în variantă simfonică, la Deva",
     category: { ro: "Concert", en: "Concert" },
     area: "Deva",
+    seo: { ro: { title: "Vivaldi Rocks: rock simfonic la Deva" }, en: { title: "Vivaldi Rocks: symphonic rock in Deva" } },
     date: "2026-10-31",
     hasReviews: false,
     images: ["images/deva-cetate.jpg"],
@@ -8627,14 +8651,14 @@ window.SITE_NEWS = [
     },
     en: {
       name: "Vivaldi Rocks — rock legends in a symphonic version, in Deva",
-      tagline: "Saturday, 31 October 2026, from 19:30, at the \"Drăgan Muntean\" Cultural Centre: Metallica, Queen, Led Zeppelin or Bon Jovi songs in symphonic arrangements.",
+      tagline: "Saturday, 31 October 2026, from 19:30, at the “Drăgan Muntean” Cultural Centre: Metallica, Queen, Led Zeppelin or Bon Jovi songs in symphonic arrangements.",
       description: [
-        "The \"Drăgan Muntean\" Cultural Centre in Deva hosts, for the first time, the Vivaldi Rocks 2026 show, where symphonic music meets rock energy. On stage are the Bucharest Symphony Orchestra (Orchestra Simfonică București) and Vivaldi Rocks, playing pieces inspired by rock legends such as Metallica, Queen, Led Zeppelin and Bon Jovi, re-orchestrated and performed on electric instruments.",
+        "The “Drăgan Muntean” Cultural Centre in Deva hosts, for the first time, the Vivaldi Rocks 2026 show, where symphonic music meets rock energy. On stage are the Bucharest Symphony Orchestra (Orchestra Simfonică București) and Vivaldi Rocks, playing pieces inspired by rock legends such as Metallica, Queen, Led Zeppelin and Bon Jovi, re-orchestrated and performed on electric instruments.",
         "Tickets are sold online at vivaldirocks.com and iabilet.ro; the organisers recommend buying early, as seating is limited. Information from the Cultural Centre: +40 354 408 907."
       ],
       facts: [
         { label: "Date", value: "Saturday, 31 October 2026, 19:30" },
-        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Piața Victoriei 7, Deva" },
+        { label: "Location", value: "“Drăgan Muntean” Cultural Centre, Piața Victoriei 7, Deva" },
         { label: "Tickets", value: "vivaldirocks.com, iabilet.ro" }
       ]
     }
@@ -8644,6 +8668,7 @@ window.SITE_NEWS = [
     name: "„Spărgătorul de nuci”, cu Balletto Nazionale Italiano, la Deva",
     category: { ro: "Spectacol", en: "Performance" },
     area: "Deva",
+    seo: { ro: { title: "„Spărgătorul de nuci”, Balletto Nazionale Italiano, Deva" }, en: { title: "“The Nutcracker”, Balletto Nazionale Italiano, Deva" } },
     date: "2026-11-19",
     hasReviews: false,
     images: ["images/parcul-cetatii-deva.jpg"],
@@ -8661,15 +8686,15 @@ window.SITE_NEWS = [
       ]
     },
     en: {
-      name: "\"The Nutcracker\" with Balletto Nazionale Italiano, in Deva",
-      tagline: "Thursday, 19 November 2026, from 19:00, Tchaikovsky's ballet comes to the \"Drăgan Muntean\" Cultural Centre, with ballerina Oksana Bondareva.",
+      name: "“The Nutcracker” with Balletto Nazionale Italiano, in Deva",
+      tagline: "Thursday, 19 November 2026, from 19:00, Tchaikovsky's ballet comes to the “Drăgan Muntean” Cultural Centre, with ballerina Oksana Bondareva.",
       description: [
-        "Balletto Nazionale Italiano brings \"The Nutcracker\" to Deva — the classic ballet set to Pyotr Ilyich Tchaikovsky's music, with ballerina Oksana Bondareva. The production promises impressive sets, spectacular costumes and visually powerful choreography, blending classical ballet with contemporary staging.",
+        "Balletto Nazionale Italiano brings “The Nutcracker” to Deva — the classic ballet set to Pyotr Ilyich Tchaikovsky's music, with ballerina Oksana Bondareva. The production promises impressive sets, spectacular costumes and visually powerful choreography, blending classical ballet with contemporary staging.",
         "Tickets are sold through TicketStore.ro; information on +40 721 055 037."
       ],
       facts: [
         { label: "Date", value: "Thursday, 19 November 2026, 19:00" },
-        { label: "Location", value: "\"Drăgan Muntean\" Cultural Centre, Piața Victoriei 7, Deva" },
+        { label: "Location", value: "“Drăgan Muntean” Cultural Centre, Piața Victoriei 7, Deva" },
         { label: "Tickets", value: "TicketStore.ro · phone +40 721 055 037" }
       ]
     }
@@ -8679,6 +8704,7 @@ window.SITE_NEWS = [
     name: "Telecabina de pe Dealul Cetății Deva rămâne oprită; la cetate se ajunge cu autobuzul electric sau pe jos",
     category: { ro: "Info utile", en: "Practical info" },
     area: "Deva",
+    seo: { ro: { title: "Telecabina Cetății Deva rămâne oprită" }, en: { title: "Deva Citadel cable car stays closed" } },
     date: "2026-09-29",
     hasReviews: false,
     images: ["images/deva-dealul-cetatii.jpg"],
@@ -8718,6 +8744,7 @@ window.SITE_NEWS = [
     name: "Târgul de Crăciun Deva 2026 se deschide pe 1 decembrie, în Piața Unirii",
     category: { ro: "Târg", en: "Fair" },
     area: "Deva",
+    seo: { ro: { title: "Târgul de Crăciun Deva 2026: deschidere pe 1 decembrie" }, en: { title: "Deva Christmas Market 2026 opens on 1 December" } },
     date: "2026-12-01",
     hasReviews: false,
     images: ["images/deva-piata-unirii.jpg"],
@@ -8820,7 +8847,7 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A manor-style hotel complex opened in 2023 in the Jieț gorge, with a spa, restaurant and guided hikes.",
       description: [
-        "Conacul Rădăcinilor (\"Manor of Roots\") is a hotel, restaurant and leisure complex opened in 2023 on Jiet Street (DN7A), in the Jieț Gorge, within Petrila town, on the way to the Transalpina road. Its rustic architecture, built with solid wood and greenery, houses over 25 rooms, a wellness & spa area with a jacuzzi and heated sauna, a salt therapy room, a restaurant, a \"Green Bar\", a terrace, and event and conference spaces.",
+        "Conacul Rădăcinilor (“Manor of Roots”) is a hotel, restaurant and leisure complex opened in 2023 on Jiet Street (DN7A), in the Jieț Gorge, within Petrila town, on the way to the Transalpina road. Its rustic architecture, built with solid wood and greenery, houses over 25 rooms, a wellness & spa area with a jacuzzi and heated sauna, a salt therapy room, a restaurant, a “Green Bar”, a terrace, and event and conference spaces.",
         "The complex runs guided mountain hikes and partners with a nearby equestrian centre (Keops Horses), making it a good base both for a relaxing weekend and for exploring the Jieț gorge and the Parâng plateau."
       ],
       facts: [
@@ -8931,7 +8958,7 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A traditional Romanian restaurant right next to the Deva synagogue.",
       description: [
-        "Cocoșul de Aur (\"The Golden Rooster\") is a traditional Romanian restaurant at 9 Iuliu Maniu boulevard, in central Deva, next to the synagogue building. It seats 60 indoors plus another 40 on a heated terrace, and its menu combines soups and grilled meats cooked to classic recipes with a few international dishes."
+        "Cocoșul de Aur (“The Golden Rooster”) is a traditional Romanian restaurant at 9 Iuliu Maniu boulevard, in central Deva, next to the synagogue building. It seats 60 indoors plus another 40 on a heated terrace, and its menu combines soups and grilled meats cooked to classic recipes with a few international dishes."
       ],
       facts: [
         { label: "Address", value: "9 Iuliu Maniu boulevard, Deva" },
@@ -9038,7 +9065,7 @@ window.SITE_BUSINESSES = [
     en: {
       tagline: "A former old inn, now a guesthouse and restaurant with traditional Hunedoara cuisine.",
       description: [
-        "Curtea Veche is an accommodation and restaurant complex set up in an old inn in Hunedoara, at 2 Cernei Street, at the foot of Corvin Castle. The guesthouse offers single, double, triple and family rooms, while the restaurant serves traditional Hunedoara dishes — roasted meat with sides \"like grandmother used to make\", wood-fired oven pastries and stews slow-cooked in clay pots.",
+        "Curtea Veche is an accommodation and restaurant complex set up in an old inn in Hunedoara, at 2 Cernei Street, at the foot of Corvin Castle. The guesthouse offers single, double, triple and family rooms, while the restaurant serves traditional Hunedoara dishes — roasted meat with sides “like grandmother used to make”, wood-fired oven pastries and stews slow-cooked in clay pots.",
         "The complex has a spacious courtyard with a wood-burning fireplace and event spaces, making it one of the few places in town that combines lodging and dining under one roof, right next to the fortress."
       ],
       facts: [
@@ -9054,7 +9081,7 @@ window.SITE_BUSINESSES = [
     name: "Eden by Werk",
     category: { ro: "Restaurant", en: "Restaurant" },
     area: "Hunedoara",
-    seo: { ro: { title: "Eden by Werk, Hunedoara: restaurant lângă Castelul Corvinilor", desc: "Eden by Werk din Hunedoara: bucătărie contemporană cu meniu de autor, în Werk Hotel & Spa, la câteva minute de Castelul Corvinilor. Str. Voinei nr. 2A." }, en: { title: "Eden by Werk, Hunedoara: restaurant near Corvin Castle", desc: "Eden by Werk in Hunedoara: contemporary cuisine with a signature menu, inside Werk Hotel & Spa, a few minutes from Corvin Castle. Str. Voinei 2A." } },
+    seo: { ro: { title: "Eden by Werk, Hunedoara: restaurant cu vedere la castel", desc: "Eden by Werk din Hunedoara: bucătărie contemporană cu meniu de autor, în Werk Hotel & Spa, la câteva minute de Castelul Corvinilor. Str. Voinei nr. 2A." }, en: { title: "Eden by Werk, Hunedoara: restaurant with castle view", desc: "Eden by Werk in Hunedoara: contemporary cuisine with a signature menu, inside Werk Hotel & Spa, a few minutes from Corvin Castle. Str. Voinei 2A." } },
     townId: "hunedoara",
     hasReviews: true,
     season: "tot-anul",
@@ -9950,7 +9977,7 @@ window.SITE_BUSINESSES = [
       tagline: "A 4-star hotel in the Geoagiu-Băi spa resort, with thermal pools, a treatment centre and a restaurant.",
       description: [
         "Hotel Germisara Resort & SPA is one of the main hotels of the Geoagiu-Băi spa, with 144 rooms and apartments. It has two thermal-water treatment pools, a wellness and spa area, and a medical treatment centre with curative, preventive and rehabilitation programmes.",
-        "The \"Bun Gust\" restaurant seats 200 and has a summer terrace. The Roman baths of Germisara and the resort's thermal lido are close by."
+        "The “Bun Gust” restaurant seats 200 and has a summer terrace. The Roman baths of Germisara and the resort's thermal lido are close by."
       ],
       facts: [
         { label: "Address", value: "Str. Germisara 1B, Geoagiu-Băi" },
