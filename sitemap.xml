@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gohd.ro/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/"/>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/"/>
@@ -783,6 +783,22 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/vetel/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/vetel/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/vetel/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/harau/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/harau/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/harau/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/harau/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/harau/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/harau/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/harau/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/harau/"/>
   </url>
   <url>
     <loc>https://gohd.ro/natura/parcul-national-retezat/</loc>

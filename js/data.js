@@ -5825,6 +5825,48 @@ window.SITE_TOWNS = [
         { label: "Landmark", value: "Saint Nicholas Church in Leșnic (late 14th century), LMI code HD-II-m-A-03359" }
       ]
     }
+  },
+  {
+    id: "harau",
+    name: "Hărău",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.9006, 22.9569],
+    hasReviews: false,
+    relatedAreas: ["Hărău"],
+    relatedIds: ["vila-castelul-maria-banpotoc"],
+    images: ["images/harau-biserica-barsau.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_Sf%C3%A2ntul_Nicolae_din_B%C3%A2rs%C4%83u_(4).jpg" },
+    ro: {
+      tagline: "Comună liniștită din apropiere de Deva, cu biserici din secolele XVI–XVIII, izvoare minerale carbogazoase și Vila Castelul Maria din Bănpotoc.",
+      description: [
+        "Hărău este o comună din județul Hunedoara, în Transilvania, aflată la câțiva kilometri de Deva, pe culoarul Mureșului. Din ea fac parte satele Hărău (reședința), Bănpotoc, Bârsău și Chimindia. Este un colț de sat tradițional, potrivit pentru o escapadă liniștită în apropierea municipiului.",
+        "Satele păstrează câteva biserici vechi, declarate monumente istorice: biserica „Sfântul Nicolae” din Bârsău, din secolul al XVI-lea, biserica „Sfântul Dumitru” din Hărău, din secolul al XVIII-lea, și biserica „Cuvioasa Paraschiva” din Chimindia, din secolul al XVI-lea. La Chimindia și la Bănpotoc există izvoare de apă minerală carbogazoasă.",
+        "În Bănpotoc se află Vila Castelul Maria, o clădire în stil de mic castel cu turn, înconjurată de o grădină mare, care primește oaspeți pentru cazare, saună și evenimente de familie."
+      ],
+      facts: [
+        { label: "Populație", value: "2.026 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Hărău, Bănpotoc, Bârsău, Chimindia" },
+        { label: "Repere", value: "biserica „Sfântul Nicolae” din Bârsău (sec. XVI), biserica „Sfântul Dumitru” din Hărău (sec. XVIII), biserica „Cuvioasa Paraschiva” din Chimindia (sec. XVI)" },
+        { label: "Natură", value: "izvoare minerale carbogazoase la Chimindia și Bănpotoc" },
+        { label: "Cazare", value: "Vila Castelul Maria, Bănpotoc nr. 20" }
+      ]
+    },
+    en: {
+      tagline: "A quiet commune near Deva, with 16th–18th-century churches, carbonated mineral springs and the Castelul Maria Villa in Bănpotoc.",
+      description: [
+        "Hărău is a commune in Hunedoara County, in Transylvania, a few kilometres from Deva, along the Mureș corridor. It is made up of the villages of Hărău (the seat), Bănpotoc, Bârsău and Chimindia. It is a traditional village corner, well suited to a quiet getaway close to the city.",
+        "The villages keep a few old churches listed as historic monuments: Saint Nicholas Church in Bârsău, from the 16th century, Saint Demetrius Church in Hărău, from the 18th century, and Saint Paraskeva Church in Chimindia, from the 16th century. Chimindia and Bănpotoc have carbonated mineral water springs.",
+        "Bănpotoc is home to Castelul Maria Villa, a building designed as a small castle with a tower, set in a large garden, which welcomes guests for accommodation, a sauna and family events."
+      ],
+      facts: [
+        { label: "Population", value: "2,026 (2021 census)" },
+        { label: "Villages", value: "Hărău, Bănpotoc, Bârsău, Chimindia" },
+        { label: "Landmarks", value: "Saint Nicholas Church in Bârsău (16th c.), Saint Demetrius Church in Hărău (18th c.), Saint Paraskeva Church in Chimindia (16th c.)" },
+        { label: "Nature", value: "carbonated mineral springs at Chimindia and Bănpotoc" },
+        { label: "Stay", value: "Castelul Maria Villa, Bănpotoc no. 20" }
+      ]
+    }
   }
 ];
 
