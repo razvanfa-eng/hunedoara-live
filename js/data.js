@@ -634,8 +634,8 @@ window.SITE_NATURE = [
     id: "lacul-cincis",
     name: "Lacul Cinciș",
     category: { ro: "Lac de acumulare", en: "Reservoir lake" },
-    area: "Hunedoara",
-    townId: "hunedoara",
+    area: "Teliucu Inferior",
+    townId: "teliucu-inferior",
     coords: [45.69, 22.86],
     hasReviews: true,
     season: "vara",
@@ -1950,7 +1950,7 @@ window.SITE_ACTIVITIES = [
     name: "Traseul Baru – Vârful Tulișa",
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Baru Mare",
-    townId: "hateg",
+    townId: "baru",
     hasReviews: false,
     images: ["images/placeholder.svg"],
     ro: {
@@ -2262,7 +2262,7 @@ window.SITE_ACTIVITIES = [
     name: "Traseul Baru – Vârful Lola – Vârful Porumbelu Mare",
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
-    townId: "hateg",
+    townId: "baru",
     hasReviews: false,
     images: ["images/placeholder.svg"],
     ro: {
@@ -4957,7 +4957,7 @@ window.SITE_TOWNS = [
     coords: [45.7697, 22.9203],
     hasReviews: false,
     relatedAreas: ["Hunedoara"],
-    relatedIds: ["cheile-cernei", "traseu-hunedoara-lacul-cincis-cheile-cernei", "traseu-hunedoara-varful-rusca"],
+    relatedIds: ["cheile-cernei", "traseu-hunedoara-lacul-cincis-cheile-cernei", "traseu-hunedoara-varful-rusca", "lacul-cincis"],
     images: ["images/hunedoara-corvin-castle.jpg"],
     photoCredit: { author: "Andrei Stroe", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Corvin_castle.jpg" },
     ro: {
@@ -6332,6 +6332,313 @@ window.SITE_TOWNS = [
         { label: "Villages", value: "Ghelari, Govăjdia, Plop, Ruda" },
         { label: "Landmarks", value: "Govăjdia Blast Furnace (1806–1810), iron-reduction furnace at Ghelari, church in Ruda (1653), stone church in Ghelari (1770)" },
         { label: "Distance", value: "about 20 km from Hunedoara" }
+      ]
+    }
+  },
+  {
+    id: "bretea-romana",
+    name: "Bretea Română",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Hațegului",
+    coords: [45.6667,23.0167],
+    hasReviews: false,
+    relatedAreas: ["Bretea Română"],
+    relatedIds: [],
+    images: ["images/bretea-romana.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Bretea_Romana_(4).jpg" },
+    ro: {
+      tagline: "Comună din Țara Hațegului, cu treisprezece sate pe valea Streiului, biserici vechi și o villa rustica la Bățălar.",
+      description: [
+        "Bretea Română este o comună din sud-vestul județului Hunedoara, la marginea Țării Hațegului, formată din 13 sate: Bretea Română (reședința), Bățălar, Bercu, Bretea Streiului, Covragiu, Gânțaga, Măceu, Ocolișu Mare, Plopi, Ruși, Vâlcele, Vâlcelele Bune și Vâlceluța.",
+        "În satul Bretea Română se păstrează o biserică ortodoxă din 1720, iar la Bățălar sunt vestigiile unei villa rustica romane. Comuna se află în apropierea Parcului Național Retezat și a sitului Natura 2000 „Strei–Hațeg”."
+      ],
+      facts: [
+        { label: "Populație", value: "2.969 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Bretea Română, Bățălar, Bercu, Bretea Streiului, Covragiu, Gânțaga, Măceu, Ocolișu Mare, Plopi, Ruși, Vâlcele, Vâlcelele Bune, Vâlceluța" },
+        { label: "Repere", value: "biserica ortodoxă din Bretea Română (1720), villa rustica de la Bățălar" },
+        { label: "Arii protejate", value: "situl Natura 2000 „Strei–Hațeg”" }
+      ]
+    },
+    en: {
+      tagline: "A commune in Hațeg Country, with thirteen villages on the Strei valley, old churches and a villa rustica at Bățălar.",
+      description: [
+        "Bretea Română is a commune in the south-west of Hunedoara County, on the edge of Hațeg Country, made up of 13 villages: Bretea Română (the seat), Bățălar, Bercu, Bretea Streiului, Covragiu, Gânțaga, Măceu, Ocolișu Mare, Plopi, Ruși, Vâlcele, Vâlcelele Bune and Vâlceluța.",
+        "The village of Bretea Română keeps an Orthodox church from 1720, and Bățălar has the remains of a Roman villa rustica. The commune lies near the Retezat National Park and the Natura 2000 site “Strei–Hațeg”."
+      ],
+      facts: [
+        { label: "Population", value: "2,969 (2021 census)" },
+        { label: "Villages", value: "Bretea Română, Bățălar, Bercu, Bretea Streiului, Covragiu, Gânțaga, Măceu, Ocolișu Mare, Plopi, Ruși, Vâlcele, Vâlcelele Bune, Vâlceluța" },
+        { label: "Landmarks", value: "Orthodox church in Bretea Română (1720), villa rustica at Bățălar" },
+        { label: "Protected areas", value: "Natura 2000 site “Strei–Hațeg”" }
+      ]
+    }
+  },
+  {
+    id: "certeju-de-sus",
+    name: "Certeju de Sus",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [45.9739,22.9703],
+    hasReviews: false,
+    relatedAreas: ["Certeju de Sus"],
+    relatedIds: [],
+    images: ["images/certeju-de-sus.jpg"],
+    photoCredit: { author: "Oguszt", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Katolikus_templom_nagyag.jpg" },
+    ro: {
+      tagline: "Comună minieră din Munții Metaliferi, cu Săcărâmb, Stânca lui Horea și Tăul Făerag, în zona aurului transilvănean.",
+      description: [
+        "Certeju de Sus este o comună din nordul județului Hunedoara, în Munții Metaliferi, formată din satele Certeju de Sus (reședința), Bocșa Mare, Bocșa Mică, Hondol, Măgura-Toplița, Nojag, Săcărâmb, Toplița Mureșului și Vărmaga.",
+        "Zona este cunoscută ca zonă minieră din 1746, când Maria Terezia a decis relansarea mineritului aurifer. Prima topitorie de aur a fost deschisă în 1763 și a funcționat 119 ani. Stânca lui Horea amintește de mobilizarea minerilor în răscoala din 1784.",
+        "Pentru drumeție și odihnă există Tăul Făerag, un lac de acumulare de 4 ha, adânc de până la 8,7 m, și o cabană Romsilva. La Săcărâmb se află o biserică romano-catolică, iar rezervația „Măgurile Săcărâmbului” face parte din arealul comunei."
+      ],
+      facts: [
+        { label: "Populație", value: "2.870 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Certeju de Sus, Bocșa Mare, Bocșa Mică, Hondol, Măgura-Toplița, Nojag, Săcărâmb, Toplița Mureșului, Vărmaga" },
+        { label: "Repere", value: "Stânca lui Horea, Tăul Făerag (4 ha), biserica romano-catolică din Săcărâmb" },
+        { label: "Istoric minier", value: "zonă minieră din 1746; prima topitorie de aur din 1763 (119 ani)" }
+      ]
+    },
+    en: {
+      tagline: "A mining commune in the Metaliferi Mountains, with Săcărâmb, Horea's Rock and Făerag Lake, in the heart of Transylvanian gold country.",
+      description: [
+        "Certeju de Sus is a commune in the north of Hunedoara County, in the Metaliferi Mountains, made up of the villages of Certeju de Sus (the seat), Bocșa Mare, Bocșa Mică, Hondol, Măgura-Toplița, Nojag, Săcărâmb, Toplița Mureșului and Vărmaga.",
+        "The area has been a mining zone since 1746, when Maria Theresa decided to revive gold mining. The first gold smelter opened in 1763 and ran for 119 years. Horea's Rock recalls the mobilisation of miners in the 1784 uprising.",
+        "For walks and relaxation there is Făerag Lake, a 4 ha reservoir up to 8.7 m deep, and a Romsilva lodge. Săcărâmb has a Roman Catholic church, and the “Săcărâmb Hillocks” reserve lies in the commune's area."
+      ],
+      facts: [
+        { label: "Population", value: "2,870 (2021 census)" },
+        { label: "Villages", value: "Certeju de Sus, Bocșa Mare, Bocșa Mică, Hondol, Măgura-Toplița, Nojag, Săcărâmb, Toplița Mureșului, Vărmaga" },
+        { label: "Landmarks", value: "Horea's Rock, Făerag Lake (4 ha), Roman Catholic church in Săcărâmb" },
+        { label: "Mining history", value: "mining zone since 1746; first gold smelter from 1763 (119 years)" }
+      ]
+    }
+  },
+  {
+    id: "baru",
+    name: "Baru",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Hațegului",
+    coords: [45.4864,23.1765],
+    hasReviews: false,
+    relatedAreas: ["Baru","Baru Mare"],
+    relatedIds: ["traseu-baru-varful-tulisa","traseu-baru-varful-lola-porumbelu"],
+    images: ["images/baru.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Biserica_monument_din_Baru_Mare_(10).JPG" },
+    ro: {
+      tagline: "Comună de la poalele Retezatului și Șureanului, cu Cheile Barului, Peștera Tecuri, biserici vechi și un muzeu de artă populară.",
+      description: [
+        "Baru este o comună din sud-vestul județului Hunedoara, formată din satele Baru (reședința), Livadia, Petros și Valea Lupului. Este un punct de plecare pentru trasee spre Retezat și spre Munții Șureanu.",
+        "Printre obiective se numără biserica „Sfântul Ilie” din Baru (monument istoric), biserica Pârveștilor din secolul al XVIII-lea, muzeul de artă populară „Maria Hord Gârbea”, castrul roman și situl arheologic de la Baru și villa rustica de la Valea Lupului.",
+        "În natură sunt Cheile Barului și rezervația „Peștera Tecuri” (2 ha)."
+      ],
+      facts: [
+        { label: "Populație", value: "2.425 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Baru, Livadia, Petros, Valea Lupului" },
+        { label: "Repere", value: "biserica „Sfântul Ilie”, biserica Pârveștilor (sec. XVIII), muzeul „Maria Hord Gârbea”, castrul roman de la Baru" },
+        { label: "Natură", value: "Cheile Barului, rezervația „Peștera Tecuri” (2 ha)" }
+      ]
+    },
+    en: {
+      tagline: "A commune at the foot of the Retezat and Șureanu mountains, with the Baru Gorge, Tecuri Cave, old churches and a folk-art museum.",
+      description: [
+        "Baru is a commune in the south-west of Hunedoara County, made up of the villages of Baru (the seat), Livadia, Petros and Valea Lupului. It is a starting point for trails into the Retezat and the Șureanu Mountains.",
+        "Its sights include Saint Elijah Church in Baru (a listed monument), the 18th-century Pârveștilor Church, the “Maria Hord Gârbea” folk-art museum, the Roman fort and archaeological site at Baru and the villa rustica at Valea Lupului.",
+        "Natural attractions are the Baru Gorge and the “Tecuri Cave” reserve (2 ha)."
+      ],
+      facts: [
+        { label: "Population", value: "2,425 (2021 census)" },
+        { label: "Villages", value: "Baru, Livadia, Petros, Valea Lupului" },
+        { label: "Landmarks", value: "Saint Elijah Church, Pârveștilor Church (18th c.), “Maria Hord Gârbea” museum, Roman fort at Baru" },
+        { label: "Nature", value: "Baru Gorge, “Tecuri Cave” reserve (2 ha)" }
+      ]
+    }
+  },
+  {
+    id: "romos",
+    name: "Romos",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.8173,23.3082],
+    hasReviews: false,
+    relatedAreas: ["Romos"],
+    relatedIds: [],
+    images: ["images/romos.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_Înălțarea_Domnului_din_Romos_(1).jpg" },
+    ro: {
+      tagline: "Comună de lângă Orăștie, cu ansamblul rural Romos, biserica evanghelică și biserici vechi din secolele XVIII–XIX.",
+      description: [
+        "Romos este o comună din centrul județului Hunedoara, formată din satele Romos (reședința), Ciungu Mare, Pișchinți, Romoșel și Vaidei. Satul Romos păstrează un ansamblu rural declarat monument istoric.",
+        "Aici se află biserica evanghelică-luterană, casa parohială evanghelică din secolul al XVIII-lea și biserica „Înălțarea Domnului”, din 1775. La Romoșel sunt biserica ortodoxă „Pogorârea Sfântului Duh” (1847) și biserica greco-catolică „Adormirea Maicii Domnului” (1839)."
+      ],
+      facts: [
+        { label: "Populație", value: "2.388 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Romos, Ciungu Mare, Pișchinți, Romoșel, Vaidei" },
+        { label: "Repere", value: "ansamblul rural Romos, biserica evanghelică-luterană, casa parohială evanghelică (sec. XVIII), biserica „Înălțarea Domnului” (1775)" }
+      ]
+    },
+    en: {
+      tagline: "A commune near Orăștie, with the Romos rural ensemble, a Lutheran church and old 18th–19th-century churches.",
+      description: [
+        "Romos is a commune in the centre of Hunedoara County, made up of the villages of Romos (the seat), Ciungu Mare, Pișchinți, Romoșel and Vaidei. The village of Romos keeps a rural ensemble listed as a historic monument.",
+        "It has the Evangelical-Lutheran church, the 18th-century Evangelical parish house and the Church of the Ascension, from 1775. Romoșel has the Orthodox church of the Descent of the Holy Spirit (1847) and the Greek-Catholic church of the Dormition (1839)."
+      ],
+      facts: [
+        { label: "Population", value: "2,388 (2021 census)" },
+        { label: "Villages", value: "Romos, Ciungu Mare, Pișchinți, Romoșel, Vaidei" },
+        { label: "Landmarks", value: "Romos rural ensemble, Evangelical-Lutheran church, Evangelical parish house (18th c.), Church of the Ascension (1775)" }
+      ]
+    }
+  },
+  {
+    id: "teliucu-inferior",
+    name: "Teliucu Inferior",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Poiana Ruscă",
+    coords: [45.7178,22.8869],
+    hasReviews: false,
+    relatedAreas: ["Teliucu Inferior","Cinciș-Cerna"],
+    relatedIds: ["lacul-cincis"],
+    images: ["images/lacul-cincis.jpg"],
+    photoCredit: { author: "Raydu18", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Lake_Cincis.jpg" },
+    ro: {
+      tagline: "Comună din Poiana Ruscă, cu Lacul Cinciș, situri arheologice romane la Cinciș-Cerna și o veche tradiție minieră la Teliuc.",
+      description: [
+        "Teliucu Inferior este o comună din Munții Poiana Ruscă, lângă Hunedoara, formată din satele Teliucu Inferior (reședința), Cinciș-Cerna, Izvoarele și Teliucu Superior.",
+        "Pe teritoriul ei se află Lacul Cinciș, un lac de acumulare cunoscut pentru plajă și pescuit. La Cinciș-Cerna sunt un sit arheologic, o necropolă tumulară și o villa rustica romană.",
+        "Teliuc a fost în antichitate un important loc de exploatare de suprafață, iar un atelier dacico-roman de aici furniza fier pentru Legiunea a XIII-a Gemina de la Apulum și pentru capitala provinciei, Sarmizegetusa."
+      ],
+      facts: [
+        { label: "Populație", value: "2.022 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Teliucu Inferior, Cinciș-Cerna, Izvoarele, Teliucu Superior" },
+        { label: "Repere", value: "Lacul Cinciș, necropola tumulară și villa rustica de la Cinciș-Cerna" },
+        { label: "Istoric", value: "exploatare de fier în epoca dacico-romană la Teliuc" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Poiana Ruscă range, with Cincis Lake, Roman archaeological sites at Cinciș-Cerna and an old mining tradition at Teliuc.",
+      description: [
+        "Teliucu Inferior is a commune in the Poiana Ruscă Mountains, near Hunedoara, made up of the villages of Teliucu Inferior (the seat), Cinciș-Cerna, Izvoarele and Teliucu Superior.",
+        "Its territory includes Cincis Lake, a reservoir known for its beach and fishing. Cinciș-Cerna has an archaeological site, a tumular necropolis and a Roman villa rustica.",
+        "Teliuc was an important surface-mining site in antiquity, and a Dacian-Roman workshop there supplied iron to Legio XIII Gemina at Apulum and to the provincial capital, Sarmizegetusa."
+      ],
+      facts: [
+        { label: "Population", value: "2,022 (2021 census)" },
+        { label: "Villages", value: "Teliucu Inferior, Cinciș-Cerna, Izvoarele, Teliucu Superior" },
+        { label: "Landmarks", value: "Cincis Lake, tumular necropolis and villa rustica at Cinciș-Cerna" },
+        { label: "History", value: "iron extraction in Dacian-Roman times at Teliuc" }
+      ]
+    }
+  },
+  {
+    id: "turdas",
+    name: "Turdaș",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.85,23.1333],
+    hasReviews: false,
+    relatedAreas: ["Turdaș"],
+    relatedIds: [],
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Comună de pe Mureș, cunoscută pentru așezarea neolitică din cultura Vinča–Turdaș și pentru ansamblul bisericii reformate din secolul al XV-lea.",
+      description: [
+        "Turdaș este o comună din centrul județului Hunedoara, formată din satele Turdaș (reședința), Pricaz, Râpaș și Spini.",
+        "Cea mai cunoscută este așezarea neolitică de la Turdaș, asociată culturii Vinča–Turdaș: o probabilă așezare fortificată de tip proto-urban și centru regional de olărit, cu șase straturi de locuire, din neoliticul timpuriu până în perioada medievală.",
+        "Printre monumentele istorice se numără ansamblul bisericii reformate din Turdaș (secolul al XV-lea) și ansamblurile rurale Turdaș și Pricaz, din secolul al XIX-lea."
+      ],
+      facts: [
+        { label: "Populație", value: "1.791 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Turdaș, Pricaz, Râpaș, Spini" },
+        { label: "Repere", value: "așezarea neolitică Vinča–Turdaș, ansamblul bisericii reformate (sec. XV), ansamblurile rurale Turdaș și Pricaz" }
+      ]
+    },
+    en: {
+      tagline: "A commune on the Mureș, known for its Neolithic settlement of the Vinča–Turdaș culture and its 15th-century Reformed church ensemble.",
+      description: [
+        "Turdaș is a commune in the centre of Hunedoara County, made up of the villages of Turdaș (the seat), Pricaz, Râpaș and Spini.",
+        "Best known is the Neolithic settlement at Turdaș, linked to the Vinča–Turdaș culture: a probable fortified proto-urban settlement and regional pottery centre, with six occupation layers from the early Neolithic to the medieval period.",
+        "Listed monuments include the Reformed church ensemble in Turdaș (15th century) and the rural ensembles of Turdaș and Pricaz, from the 19th century."
+      ],
+      facts: [
+        { label: "Population", value: "1,791 (2021 census)" },
+        { label: "Villages", value: "Turdaș, Pricaz, Râpaș, Spini" },
+        { label: "Landmarks", value: "Vinča–Turdaș Neolithic settlement, Reformed church ensemble (15th c.), Turdaș and Pricaz rural ensembles" }
+      ]
+    }
+  },
+  {
+    id: "rapoltu-mare",
+    name: "Rapoltu Mare",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.865,23.0753],
+    hasReviews: false,
+    relatedAreas: ["Rapoltu Mare"],
+    relatedIds: [],
+    images: ["images/rapoltu-mare.jpg"],
+    photoCredit: { author: "Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 2.5", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Bobalna_2.jpg" },
+    ro: {
+      tagline: "Comună de la poalele Munților Metaliferi, cu biserica reformată din secolul al XIV-lea, castelul Veress din Bobâlna și Tufurile calcaroase din Valea Bobâlnei.",
+      description: [
+        "Rapoltu Mare este o comună din centrul județului Hunedoara, formată din satele Rapoltu Mare (reședința), Bobâlna, Boiu, Folt și Rapolțel.",
+        "Aici se află biserica reformată din Rapoltu Mare (secolul al XIV-lea), conacul Daniel și castelul contelui Veress din Bobâlna (secolul al XVIII-lea). În zonă sunt și situl arheologic de la Măgura Uroiului și o așezare din epoca bronzului.",
+        "Rezervațiile „Tufurile calcaroase din Valea Bobâlnei” și „Măgura Uroiului” completează oferta naturală. Aici s-a născut Atanasie Anghel, mitropolit al Bălgradului (m. 1713)."
+      ],
+      facts: [
+        { label: "Populație", value: "1.788 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Rapoltu Mare, Bobâlna, Boiu, Folt, Rapolțel" },
+        { label: "Repere", value: "biserica reformată (sec. XIV), castelul Veress din Bobâlna (sec. XVIII), conacul Daniel, Măgura Uroiului" },
+        { label: "Natură", value: "rezervațiile „Tufurile calcaroase din Valea Bobâlnei” și „Măgura Uroiului”" }
+      ]
+    },
+    en: {
+      tagline: "A commune at the foot of the Metaliferi Mountains, with a 14th-century Reformed church, the Veress castle at Bobâlna and the Bobâlna Valley limestone tuffs.",
+      description: [
+        "Rapoltu Mare is a commune in the centre of Hunedoara County, made up of the villages of Rapoltu Mare (the seat), Bobâlna, Boiu, Folt and Rapolțel.",
+        "It has the Reformed church of Rapoltu Mare (14th century), the Daniel manor and Count Veress's castle at Bobâlna (18th century). Nearby are the archaeological site at Măgura Uroiului and a Bronze Age settlement.",
+        "The “Bobâlna Valley limestone tuffs” and “Măgura Uroiului” reserves complete the natural offer. Atanasie Anghel, Metropolitan of Bălgrad (d. 1713), was born here."
+      ],
+      facts: [
+        { label: "Population", value: "1,788 (2021 census)" },
+        { label: "Villages", value: "Rapoltu Mare, Bobâlna, Boiu, Folt, Rapolțel" },
+        { label: "Landmarks", value: "Reformed church (14th c.), Veress castle at Bobâlna (18th c.), Daniel manor, Măgura Uroiului" },
+        { label: "Nature", value: "“Bobâlna Valley limestone tuffs” and “Măgura Uroiului” reserves" }
+      ]
+    }
+  },
+  {
+    id: "bacia",
+    name: "Băcia",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Valea Streiului",
+    coords: [45.8028,23.0069],
+    hasReviews: false,
+    relatedAreas: ["Băcia"],
+    relatedIds: [],
+    images: ["images/bacia.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_Sfântul_Mare_Mucenic_Gheorghe_din_Băcia_(6).jpg" },
+    ro: {
+      tagline: "Comună de pe valea Streiului, cunoscută pentru casa memorială și mormântul lui Petru Groza, și pentru bisericile ei vechi.",
+      description: [
+        "Băcia este o comună din județul Hunedoara, la 225 m altitudine, pe valea Streiului, formată din satele Băcia (reședința), Petreni, Tâmpa și Totia. Pe teritoriul ei se intersectează două drumuri importante, simbolizate pe stemă prin crucea Sfântului Andrei.",
+        "În Băcia se află casa memorială Petru Groza și mormântul acestuia. Satul are biserica „Sfântul Mare Mucenic Gheorghe” (monument istoric), biserica „Pogorârea Sfântului Duh” (1873–1876) și biserica reformată (1865). Stema comunei amintește de prelucrarea pietrelor de moară și de dalele de marmură."
+      ],
+      facts: [
+        { label: "Populație", value: "1.734 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Băcia, Petreni, Tâmpa, Totia" },
+        { label: "Repere", value: "casa memorială și mormântul Petru Groza, biserica „Sfântul Gheorghe”, biserica „Pogorârea Sfântului Duh” (1873–1876)" }
+      ]
+    },
+    en: {
+      tagline: "A commune on the Strei valley, known for Petru Groza's memorial house and grave, and for its old churches.",
+      description: [
+        "Băcia is a commune in Hunedoara County, at 225 m altitude on the Strei valley, made up of the villages of Băcia (the seat), Petreni, Tâmpa and Totia. Two important roads cross on its territory, symbolised on the coat of arms by Saint Andrew's cross.",
+        "Băcia has the Petru Groza memorial house and his grave. The village has Saint George the Great Martyr church (a listed monument), the Descent of the Holy Spirit church (1873–1876) and the Reformed church (1865). The commune's coat of arms recalls millstone working and marble slabs."
+      ],
+      facts: [
+        { label: "Population", value: "1,734 (2021 census)" },
+        { label: "Villages", value: "Băcia, Petreni, Tâmpa, Totia" },
+        { label: "Landmarks", value: "Petru Groza memorial house and grave, Saint George church, Descent of the Holy Spirit church (1873–1876)" }
       ]
     }
   }
