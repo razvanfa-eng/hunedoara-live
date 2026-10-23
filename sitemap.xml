@@ -801,6 +801,70 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/harau/"/>
   </url>
   <url>
+    <loc>https://gohd.ro/orase/bosorod/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/bosorod/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/bosorod/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/bosorod/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/bosorod/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/bosorod/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/bosorod/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/bosorod/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/banita/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/banita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/banita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/banita/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/banita/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/banita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/banita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/banita/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/ribita/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/ribita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/ribita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/ribita/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/ribita/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/ribita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/ribita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/ribita/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/bulzestii-de-sus/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/bulzestii-de-sus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/bulzestii-de-sus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/bulzestii-de-sus/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/bulzestii-de-sus/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/bulzestii-de-sus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/bulzestii-de-sus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/bulzestii-de-sus/"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/natura/parcul-national-retezat/</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>
@@ -3714,7 +3778,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/itinerarii/weekend-in-valea-jiului/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/weekend-in-valea-jiului/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/weekend-in-valea-jiului/"/>
@@ -3722,7 +3786,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/itinerarii/weekend-in-valea-jiului/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/weekend-in-valea-jiului/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/weekend-in-valea-jiului/"/>

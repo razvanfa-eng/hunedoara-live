@@ -281,8 +281,8 @@ window.SITE_NATURE = [
     id: "pestera-bolii",
     name: "Peștera Bolii",
     category: { ro: "Peșteră", en: "Cave" },
-    area: "Petrila",
-    townId: "petrila",
+    area: "Bănița",
+    townId: "banita",
     coords: [45.4539, 23.3183],
     hasReviews: true,
     season: "tot-anul",
@@ -319,7 +319,7 @@ window.SITE_NATURE = [
     name: "Cheile Băniței",
     category: { ro: "Chei", en: "Gorge" },
     area: "Bănița",
-    townId: "petrosani",
+    townId: "banita",
     hasReviews: true,
     images: ["images/cheile-banitei.jpg"],
     photoCredit: { author: "Muzeul Civilizației Dacice și Romane Deva", license: "material de promovare al instituției", source: "https://www.facebook.com/photo/?fbid=1493112846164749", sourceLabel: "Facebook" },
@@ -837,7 +837,7 @@ window.SITE_NATURE = [
     name: "Peștera Cioclovina",
     category: { ro: "Peșteră", en: "Cave" },
     area: "Țara Hațegului",
-    townId: "pui",
+    townId: "bosorod",
     coords: [45.5753, 23.1360],
     hasReviews: true,
     season: "vara",
@@ -959,7 +959,7 @@ window.SITE_NATURE = [
     name: "Cheile Crivadiei",
     category: { ro: "Rezervație naturală", en: "Nature reserve" },
     area: "Bănița",
-    townId: "petrosani",
+    townId: "banita",
     coords: [45.4689, 23.2144],
     hasReviews: true,
     season: "tot-anul",
@@ -998,7 +998,7 @@ window.SITE_NATURE = [
     name: "Podul natural de la Grohot",
     category: { ro: "Monument al naturii", en: "Natural monument" },
     area: "Țara Zarandului",
-    townId: "brad",
+    townId: "bulzestii-de-sus",
     coords: [46.233, 22.75],
     hasReviews: true,
     season: "tot-anul",
@@ -4674,7 +4674,7 @@ window.SITE_HERITAGE = [
     name: "Casa memorială Crișan",
     category: { ro: "Casă memorială", en: "Memorial house" },
     area: "Brad",
-    townId: "brad",
+    townId: "ribita",
     coords: [46.1703, 22.7996],
     hasReviews: true,
     season: "tot-anul",
@@ -4834,7 +4834,7 @@ window.SITE_HERITAGE = [
     name: "Cetatea Piatra Roșie",
     category: { ro: "Cetate dacică", en: "Dacian fortress" },
     area: "Munții Orăștiei",
-    townId: "pui",
+    townId: "bosorod",
     coords: [45.6024, 23.147],
     hasReviews: true,
     season: "tot-anul",
@@ -4876,7 +4876,7 @@ window.SITE_HERITAGE = [
     name: "Cetatea dacică Bănița",
     category: { ro: "Cetate dacică", en: "Dacian fortress" },
     area: "Bănița",
-    townId: "petrosani",
+    townId: "banita",
     coords: [45.4517, 23.3135],
     hasReviews: true,
     season: "tot-anul",
@@ -5275,7 +5275,7 @@ window.SITE_TOWNS = [
     coords: [46.1294, 22.7900],
     hasReviews: false,
     relatedAreas: ["Brad"],
-    relatedIds: ["podul-natural-grohot", "panteonul-motilor-tebea"],
+    relatedIds: ["panteonul-motilor-tebea"],
     images: ["images/brad-skyline.jpg"],
     photoCredit: { author: "Sthadrian", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Brad_Skyline.jpg" },
     ro: {
@@ -5592,7 +5592,7 @@ window.SITE_TOWNS = [
     coords: [45.5150, 23.0925],
     hasReviews: false,
     relatedAreas: ["Pui"],
-    relatedIds: ["traseu-pui-rausor", "traseu-ohaba-ponor-cioclovina", "pestera-cioclovina", "cetatea-piatra-rosie", "traseu-gradistea-cetatea-piatra-rosie-cioclovina"],
+    relatedIds: ["traseu-pui-rausor", "traseu-ohaba-ponor-cioclovina", "traseu-gradistea-cetatea-piatra-rosie-cioclovina"],
     images: ["images/pui-biserica-ponor.jpg"],
     photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Biserica_din_Ponor_(10).JPG" },
     ro: {
@@ -5981,6 +5981,164 @@ window.SITE_TOWNS = [
         { label: "Landmarks", value: "Saint Nicholas Church in Bârsău (16th c.), Saint Demetrius Church in Hărău (18th c.), Saint Paraskeva Church in Chimindia (16th c.)" },
         { label: "Nature", value: "carbonated mineral springs at Chimindia and Bănpotoc" },
         { label: "Stay", value: "Castelul Maria Villa, Bănpotoc no. 20" }
+      ]
+    }
+  },
+  {
+    id: "bosorod",
+    name: "Boșorod",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Zona cetăților dacice",
+    coords: [45.6261,23.1289],
+    hasReviews: false,
+    relatedAreas: ["Boșorod"],
+    relatedIds: ["pestera-cioclovina","cetatea-piatra-rosie"],
+    images: ["images/cetatea-piatra-rosie-zid.jpg"],
+    photoCredit: { author: "Korinna", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Piatra_Rosie_WP_20170604_15_56_36_Pro_highres.jpg" },
+    ro: {
+      tagline: "Comuna de la poalele Munților Orăștiei, cu cetatea dacică Piatra Roșie (UNESCO), Peștera Cioclovina Uscată și castre romane.",
+      description: [
+        "Boșorod este o comună din sud-vestul județului Hunedoara, formată din satele Boșorod (reședința), Alun, Bobaia, Chitid, Cioclovina, Luncani, Prihodiște, Târsa și Ursici. O parte din teritoriul ei se află în Parcul Natural Grădiștea Muncelului–Cioclovina.",
+        "Pe dealul de la Luncani se află cetatea dacică Piatra Roșie, parte din cetățile dacice din Munții Orăștiei înscrise în patrimoniul mondial UNESCO. Tot aici sunt castrele romane de la Luncani și Chitid, villa rustica de la Chitid și biserica de lemn „Adormirea Maicii Domnului” din Luncani, construită în 1803.",
+        "La Cioclovina se află peștera „Cioclovina Uscată” și rezervația naturală „Ponorici–Cioclovina”, un complex carstic cu peșteri, ponoare și chei. La Bobaia este cunoscută „Fântâna cu leacuri”."
+      ],
+      facts: [
+        { label: "Populație", value: "1.781 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Boșorod, Alun, Bobaia, Chitid, Cioclovina, Luncani, Prihodiște, Târsa, Ursici" },
+        { label: "Repere", value: "cetatea dacică Piatra Roșie (UNESCO), peștera Cioclovina Uscată, castrele romane Luncani și Chitid" },
+        { label: "Arii protejate", value: "Parcul Natural Grădiștea Muncelului–Cioclovina, rezervația „Ponorici–Cioclovina”" }
+      ]
+    },
+    en: {
+      tagline: "A commune at the foot of the Orăștie Mountains, with the Dacian fortress of Piatra Roșie (UNESCO), the Cioclovina Uscată Cave and Roman forts.",
+      description: [
+        "Boșorod is a commune in the south-west of Hunedoara County, made up of the villages of Boșorod (the seat), Alun, Bobaia, Chitid, Cioclovina, Luncani, Prihodiște, Târsa and Ursici. Part of its territory lies within the Grădiștea Muncelului–Cioclovina Nature Park.",
+        "On the hill at Luncani stands the Dacian fortress of Piatra Roșie, one of the Dacian fortresses of the Orăștie Mountains on the UNESCO World Heritage List. The commune also has the Roman forts at Luncani and Chitid, the villa rustica at Chitid and the wooden church of the Dormition of the Mother of God at Luncani, built in 1803.",
+        "At Cioclovina are the Cioclovina Uscată cave and the Ponorici–Cioclovina nature reserve, a karst complex of caves, sinkholes and gorges. Bobaia is known for its “healing spring”."
+      ],
+      facts: [
+        { label: "Population", value: "1,781 (2021 census)" },
+        { label: "Villages", value: "Boșorod, Alun, Bobaia, Chitid, Cioclovina, Luncani, Prihodiște, Târsa, Ursici" },
+        { label: "Landmarks", value: "Piatra Roșie Dacian fortress (UNESCO), Cioclovina Uscată cave, Roman forts at Luncani and Chitid" },
+        { label: "Protected areas", value: "Grădiștea Muncelului–Cioclovina Nature Park, “Ponorici–Cioclovina” reserve" }
+      ]
+    }
+  },
+  {
+    id: "banita",
+    name: "Bănița",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Valea Jiului",
+    coords: [45.4458,23.2611],
+    hasReviews: false,
+    relatedAreas: ["Bănița"],
+    relatedIds: ["pestera-bolii"],
+    images: ["images/cheile-crivadiei.jpg"],
+    photoCredit: { author: "Zsolt deak", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Turn_de_cetate_(ruine).JPG" },
+    ro: {
+      tagline: "Comuna de la intrarea în Valea Jiului, cu fortăreața dacică și castrul roman de la Bănița, Cheile Băniței, Peștera Bolii și Cheile Crivadiei.",
+      description: [
+        "Bănița este o comună de munte din sudul județului Hunedoara, aflată la circa 756 m altitudine, formată din satele Bănița (reședința), Crivadia și Merișor. Drumul național DN66 și calea ferată Simeria–Petroșani trec prin Cheile Băniței, la intrarea în Valea Jiului.",
+        "Pe teritoriul comunei se află fortăreața dacică de la Bănița, inclusă în patrimoniul mondial UNESCO, și castrul roman din apropiere. La Crivadia se păstrează ruinele unui turn de cetate medieval, lângă rezervația naturală „Cheile Crivadiei”.",
+        "Peștera Bolii, o peșteră-râu amenajată cu iluminat electric, pe râul Galbina, este rezervație naturală și o oprire frecventă pentru turiști. Zona se leagă de Parcul Natural Grădiștea Muncelului–Cioclovina și de traseul tematic spre cetatea dacică."
+      ],
+      facts: [
+        { label: "Populație", value: "1.092 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Bănița, Crivadia, Merișor" },
+        { label: "Repere", value: "fortăreața dacică și castrul roman de la Bănița, turnul de cetate din Crivadia, Cheile Băniței" },
+        { label: "Rezervații", value: "Peștera Bolii (10 ha), Cheile Crivadiei (10 ha)" }
+      ]
+    },
+    en: {
+      tagline: "The commune at the gateway to the Jiu Valley, with the Dacian fortress and Roman fort at Bănița, the Bănița Gorge, Bolii Cave and the Crivadia Gorge.",
+      description: [
+        "Bănița is a mountain commune in the south of Hunedoara County, at about 756 m altitude, made up of the villages of Bănița (the seat), Crivadia and Merișor. National road DN66 and the Simeria–Petroșani railway run through the Bănița Gorge, at the entrance to the Jiu Valley.",
+        "The commune has the Dacian fortress of Bănița, part of the UNESCO World Heritage List, and a nearby Roman fort. At Crivadia stand the ruins of a medieval fortress tower, next to the “Crivadia Gorge” nature reserve.",
+        "Bolii Cave, a river cave lit by electric lighting on the Galbina river, is a nature reserve and a frequent stop for visitors. The area connects to the Grădiștea Muncelului–Cioclovina Nature Park and to the themed trail up to the Dacian fortress."
+      ],
+      facts: [
+        { label: "Population", value: "1,092 (2021 census)" },
+        { label: "Villages", value: "Bănița, Crivadia, Merișor" },
+        { label: "Landmarks", value: "Dacian fortress and Roman fort at Bănița, the Crivadia fortress tower, the Bănița Gorge" },
+        { label: "Reserves", value: "Bolii Cave (10 ha), Crivadia Gorge (10 ha)" }
+      ]
+    }
+  },
+  {
+    id: "ribita",
+    name: "Ribița",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [46.1833,22.7667],
+    hasReviews: false,
+    relatedAreas: ["Ribița"],
+    relatedIds: ["casa-memoriala-crisan"],
+    images: ["images/casa-memoriala-crisan.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:CasaNatalaCrisan_(22).jpg" },
+    ro: {
+      tagline: "Comună din Munții Metaliferi, cu casa memorială a lui Crișan, biserici vechi de lemn și de zid și Cheile Ribiciorei.",
+      description: [
+        "Ribița este o comună din nord-vestul județului Hunedoara, în Munții Metaliferi, formată din satele Ribița (reședința), Crișan, Dumbrava de Jos, Dumbrava de Sus, Ribicioara și Uibărești. Este o zonă de sate de munte, la nord de Brad.",
+        "În satul Crișan (fost Vaca) se află casa memorială a lui Gheorghe Crișan, unul dintre conducătorii răscoalei din 1784–1785, cu bustul lui. Comuna păstrează mai multe biserici monument istoric: biserica „Sfântul Nicolae” din Ribița (1417), bisericile de lemn din Dumbrava de Jos, Dumbrava de Sus (1844) și Ribicioara (1763) și biserica „Sfântul Nicolae” din Uibărești.",
+        "Rezervația naturală „Cheile Ribiciorei și Uibăreștilor” (20 ha) adăpostește și Peștera Cizmei."
+      ],
+      facts: [
+        { label: "Populație", value: "1.170 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Ribița, Crișan, Dumbrava de Jos, Dumbrava de Sus, Ribicioara, Uibărești" },
+        { label: "Repere", value: "casa memorială Crișan, biserica „Sfântul Nicolae” din Ribița (1417), bisericile de lemn din Ribicioara (1763) și Dumbrava de Sus (1844)" },
+        { label: "Natură", value: "rezervația „Cheile Ribiciorei și Uibăreștilor” (20 ha), Peștera Cizmei" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Metaliferi Mountains, with Crișan's memorial house, old wooden and stone churches and the Ribicioara Gorge.",
+      description: [
+        "Ribița is a commune in the north-west of Hunedoara County, in the Metaliferi Mountains, made up of the villages of Ribița (the seat), Crișan, Dumbrava de Jos, Dumbrava de Sus, Ribicioara and Uibărești. It is a mountain-village area north of Brad.",
+        "In the village of Crișan (formerly Vaca) stands the memorial house of Gheorghe Crișan, one of the leaders of the 1784–1785 uprising, with his bust. The commune keeps several listed churches: Saint Nicholas Church in Ribița (1417), the wooden churches of Dumbrava de Jos, Dumbrava de Sus (1844) and Ribicioara (1763) and Saint Nicholas Church in Uibărești.",
+        "The “Ribicioara and Uibărești Gorges” nature reserve (20 ha) also shelters the Cizmei Cave."
+      ],
+      facts: [
+        { label: "Population", value: "1,170 (2021 census)" },
+        { label: "Villages", value: "Ribița, Crișan, Dumbrava de Jos, Dumbrava de Sus, Ribicioara, Uibărești" },
+        { label: "Landmarks", value: "Crișan memorial house, Saint Nicholas Church in Ribița (1417), wooden churches in Ribicioara (1763) and Dumbrava de Sus (1844)" },
+        { label: "Nature", value: "“Ribicioara and Uibărești Gorges” reserve (20 ha), Cizmei Cave" }
+      ]
+    }
+  },
+  {
+    id: "bulzestii-de-sus",
+    name: "Bulzeștii de Sus",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Zarandului",
+    coords: [46.3008,22.7833],
+    hasReviews: false,
+    relatedAreas: ["Bulzeștii de Sus"],
+    relatedIds: ["podul-natural-grohot"],
+    images: ["images/bulzestii-biserica-tomnatec.jpg"],
+    photoCredit: { author: "Dobrei Florin (încărcat de Țetcu Mircea Rareș)", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Tomnatecu_de_Sus_church_3.jpg" },
+    ro: {
+      tagline: "Comună rară din Țara Zarandului, cu nouă sate risipite pe munte, biserici de lemn monument istoric și Podul natural de la Grohot.",
+      description: [
+        "Bulzeștii de Sus este o comună din nord-vestul județului Hunedoara, în Țara Zarandului, formată din nouă sate: Bulzeștii de Jos, Bulzeștii de Sus (reședința), Giurgești, Grohot, Păulești, Rusești, Stănculești, Ticera și Tomnatec. Satele sunt împrăștiate pe văile și dealurile Munților Metaliferi.",
+        "Comuna are două biserici de lemn monument istoric: biserica „Sfântul Ioan Gură de Aur” din Bulzeștii de Sus (1853) și biserica „Buna Vestire” din Tomnatec, din secolul al XVIII-lea.",
+        "La Grohot, pe valea Uibăreștilor, se află Podul natural de la Grohot, monument al naturii ocrotit pentru podul de calcar și vegetația din jur."
+      ],
+      facts: [
+        { label: "Sate", value: "Bulzeștii de Jos, Bulzeștii de Sus, Giurgești, Grohot, Păulești, Rusești, Stănculești, Ticera, Tomnatec" },
+        { label: "Repere", value: "biserica de lemn din Bulzeștii de Sus (1853), biserica de lemn „Buna Vestire” din Tomnatec (sec. XVIII)" },
+        { label: "Natură", value: "Podul natural de la Grohot, valea Uibăreștilor" }
+      ]
+    },
+    en: {
+      tagline: "A sparsely populated commune in Zarand Country, with nine villages scattered over the mountains, listed wooden churches and the Grohot Natural Bridge.",
+      description: [
+        "Bulzeștii de Sus is a commune in the north-west of Hunedoara County, in Zarand Country, made up of nine villages: Bulzeștii de Jos, Bulzeștii de Sus (the seat), Giurgești, Grohot, Păulești, Rusești, Stănculești, Ticera and Tomnatec. The villages are scattered over the valleys and hills of the Metaliferi Mountains.",
+        "The commune has two listed wooden churches: Saint John Chrysostom Church in Bulzeștii de Sus (1853) and the Annunciation Church in Tomnatec, from the 18th century.",
+        "At Grohot, in the Uibărești valley, lies the Grohot Natural Bridge, a nature monument protected for its limestone bridge and the surrounding vegetation."
+      ],
+      facts: [
+        { label: "Villages", value: "Bulzeștii de Jos, Bulzeștii de Sus, Giurgești, Grohot, Păulești, Rusești, Stănculești, Ticera, Tomnatec" },
+        { label: "Landmarks", value: "wooden church in Bulzeștii de Sus (1853), “Annunciation” wooden church in Tomnatec (18th c.)" },
+        { label: "Nature", value: "Grohot Natural Bridge, the Uibărești valley" }
       ]
     }
   }
