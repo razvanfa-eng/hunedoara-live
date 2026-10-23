@@ -167,5 +167,181 @@ window.SITE_ITINERARIES = [
     ],
     eat: ["pensiunea-retezat-petrosani", "pensiunea-avy-hateg"],
     mountain: true
+  },
+  {
+    id: "poiana-rusca-lacuri-chei-furnale",
+    name: { ro: "Poiana Ruscă: lacuri, chei și furnale", en: "Poiana Ruscă: lakes, gorges and furnaces" },
+    ro: {
+      tagline: "Lacul Cinciș, Cheile Cernei și Furnalul de la Govăjdia, într-un weekend din Munții Poiana Ruscă, cu Hunedoara ca bază.",
+      intro: [
+        "Poiana Ruscă se vede cel mai bine plecând din Hunedoara. Prima zi alternează apa (Lacul Cinciș) cu peisajul de chei de pe valea Cernei, iar a doua leagă tradiția siderurgică de la Govăjdia cu Castelul Corvinilor din oraș."
+      ]
+    },
+    en: {
+      tagline: "Cincis Lake, the Cerna Gorge and the Govăjdia Blast Furnace, over a weekend in the Poiana Ruscă Mountains, with Hunedoara as a base.",
+      intro: [
+        "Poiana Ruscă is best explored from Hunedoara. Day one alternates water (Cincis Lake) with the gorge scenery of the Cerna valley, while day two links the ironworking tradition at Govăjdia with Corvin Castle in town."
+      ]
+    },
+    days: [
+      {
+        title: { ro: "Ziua 1 — Apă și chei", en: "Day 1 — Water and gorges" },
+        stops: [
+          { k: "SITE_NATURE", id: "lacul-cincis" },
+          { k: "SITE_NATURE", id: "cheile-cernei" },
+          { k: "SITE_ACTIVITIES", id: "traseu-hunedoara-lacul-cincis-cheile-cernei", optional: true }
+        ]
+      },
+      {
+        title: { ro: "Ziua 2 — Fier și castel", en: "Day 2 — Iron and a castle" },
+        stops: [
+          { k: "SITE_HERITAGE", id: "furnalul-govajdia" },
+          { k: "SITE_HERITAGE", id: "castelul-corvinilor" },
+          { k: "SITE_ACTIVITIES", id: "traseu-hunedoara-varful-rusca", optional: true }
+        ]
+      }
+    ],
+    eat: ["pensiunea-la-fontaine-hunedoara","curtea-veche-hunedoara","eden-by-werk-hunedoara"],
+    mountain: true
+  },
+  {
+    id: "tara-zarandului-aur-si-istorie",
+    name: { ro: "Țara Zarandului: aur, istorie și ape termale", en: "Zarand Country: gold, history and thermal waters" },
+    ro: {
+      tagline: "Muzeul Aurului din Brad, casa lui Crișan, Țebea și Băile Vața, în zona Brad–Baia de Criș.",
+      intro: [
+        "Brad și împrejurimile lui leagă trei teme: aurul Munților Metaliferi, răscoalele din 1784 și 1848 și satele de pe Crișul Alb. Prima zi rămâne în Brad și în comuna Ribița; a doua duce spre Țebea, Grohot și Băile Vața de Jos."
+      ]
+    },
+    en: {
+      tagline: "The Gold Museum in Brad, Crișan's house, Țebea and Vața Spa, around Brad and Baia de Criș.",
+      intro: [
+        "Brad and its surroundings link three themes: the gold of the Metaliferi Mountains, the uprisings of 1784 and 1848, and the villages on the Crișul Alb. Day one stays in Brad and Ribița commune; day two heads to Țebea, Grohot and Vața de Jos Spa."
+      ]
+    },
+    days: [
+      {
+        title: { ro: "Ziua 1 — Aur și răscoală", en: "Day 1 — Gold and uprising" },
+        stops: [
+          { k: "SITE_HERITAGE", id: "muzeul-aurului-brad" },
+          { k: "SITE_HERITAGE", id: "casa-memoriala-crisan" },
+          { k: "SITE_HERITAGE", id: "treptele-romane-ruda-brad", optional: true }
+        ]
+      },
+      {
+        title: { ro: "Ziua 2 — Țebea, Grohot și Vața", en: "Day 2 — Țebea, Grohot and Vața" },
+        stops: [
+          { k: "SITE_HERITAGE", id: "panteonul-motilor-tebea" },
+          { k: "SITE_NATURE", id: "podul-natural-grohot", optional: true },
+          { k: "SITE_ACTIVITIES", id: "baile-vata-de-jos" },
+          { k: "SITE_HERITAGE", id: "biserica-de-lemn-ciungani", optional: true }
+        ]
+      }
+    ],
+    eat: ["pensiunea-irina-brad","pensiunea-ana-maria-brad"]
+  },
+  {
+    id: "tara-hategului-castele-si-biserici",
+    name: { ro: "Țara Hațegului: castele, biserici de piatră și Sarmizegetusa", en: "Hațeg Country: castles, stone churches and Sarmizegetusa" },
+    ro: {
+      tagline: "Geoparcul, biserica din Densuș, Ulpia Traiana, castelele de la Săcel și Păclișa și cetatea Mălăiești, în două zile în jurul Hațegului.",
+      intro: [
+        "Țara Hațegului adună într-un perimetru mic geologie, urme romane și castele nobiliare. Prima zi merge pe linia Hațeg–Densuș–Sarmizegetusa; a doua leagă castelele și cetatea de la poalele Retezatului."
+      ]
+    },
+    en: {
+      tagline: "The Geopark, Densuș church, Ulpia Traiana, the castles at Săcel and Păclișa and Mălăiești fortress, over two days around Hațeg.",
+      intro: [
+        "Hațeg Country packs geology, Roman remains and noble castles into a small area. Day one follows the Hațeg–Densuș–Sarmizegetusa line; day two links the castles and the fortress at the foot of the Retezat."
+      ]
+    },
+    days: [
+      {
+        title: { ro: "Ziua 1 — Dinozauri și romani", en: "Day 1 — Dinosaurs and Romans" },
+        stops: [
+          { k: "SITE_NATURE", id: "geoparcul-tara-hategului" },
+          { k: "SITE_HERITAGE", id: "biserica-densus" },
+          { k: "SITE_HERITAGE", id: "ulpia-traiana-sarmizegetusa" }
+        ]
+      },
+      {
+        title: { ro: "Ziua 2 — Castele și cetăți", en: "Day 2 — Castles and fortresses" },
+        stops: [
+          { k: "SITE_HERITAGE", id: "castelul-nopcsa-sacel" },
+          { k: "SITE_HERITAGE", id: "castelul-pogany-pacliza", optional: true, note: {ro:"Azi spital pentru copii: se admiră din exterior; vizitarea nu e documentată.",en:"Now a children's hospital: admire it from outside; visiting is not documented."} },
+          { k: "SITE_HERITAGE", id: "cetatea-malaiesti" },
+          { k: "SITE_HERITAGE", id: "manastirea-prislop", optional: true }
+        ]
+      }
+    ],
+    eat: ["pensiunea-avy-hateg","avy-wine-dine-hateg"]
+  },
+  {
+    id: "simeria-vetel-biserici-de-lemn",
+    name: { ro: "Simeria, Vețel și bisericile de lemn de pe Mureș", en: "Simeria, Vețel and the wooden churches along the Mureș" },
+    ro: {
+      tagline: "Parcul Dendrologic, castelele de la Simeria și Mintia, castrul Micia și cinci biserici și cetăți din Ilia, Șoimuș, Beriu și Dobra.",
+      intro: [
+        "Culoarul Mureșului ascunde, în afara orașelor mari, parcuri, castele și biserici de lemn. Prima zi rămâne în jurul Simeriei și al Vețelului; a doua urmărește Mureșul spre Ilia și satele din jur."
+      ]
+    },
+    en: {
+      tagline: "The Dendrological Park, the castles at Simeria and Mintia, Micia fort and five churches and fortifications in Ilia, Șoimuș, Beriu and Dobra.",
+      intro: [
+        "Beyond its larger towns, the Mureș corridor hides parks, castles and wooden churches. Day one stays around Simeria and Vețel; day two follows the Mureș towards Ilia and the surrounding villages."
+      ]
+    },
+    days: [
+      {
+        title: { ro: "Ziua 1 — Simeria și Vețel", en: "Day 1 — Simeria and Vețel" },
+        stops: [
+          { k: "SITE_NATURE", id: "parcul-dendrologic-simeria" },
+          { k: "SITE_HERITAGE", id: "castelul-bela-fay-simeria" },
+          { k: "SITE_HERITAGE", id: "castelul-gyulay-mintia" },
+          { k: "SITE_HERITAGE", id: "castrul-roman-micia", optional: true }
+        ]
+      },
+      {
+        title: { ro: "Ziua 2 — Spre Ilia", en: "Day 2 — Towards Ilia" },
+        stops: [
+          { k: "SITE_HERITAGE", id: "bastionul-rosu-ilia" },
+          { k: "SITE_HERITAGE", id: "biserica-de-lemn-bretea-mureseana" },
+          { k: "SITE_HERITAGE", id: "biserica-de-lemn-soimus", optional: true },
+          { k: "SITE_HERITAGE", id: "biserica-beriu", optional: true },
+          { k: "SITE_HERITAGE", id: "biserica-lapusnic", optional: true }
+        ]
+      }
+    ],
+    eat: ["pensiunea-phoenix-simeria","hotel-sarmis-deva"]
+  },
+  {
+    id: "geoagiu-bai-si-aurel-vlaicu",
+    name: { ro: "Geoagiu-Băi și satul lui Aurel Vlaicu", en: "Geoagiu-Băi and Aurel Vlaicu's village" },
+    ro: {
+      tagline: "Stațiunea, termele romane Germisara, rotonda și castrul de la Geoagiu, casa memorială Aurel Vlaicu, într-o zi în zona Geoagiu.",
+      intro: [
+        "O zi plină în jurul Geoagiului: dimineața apă termală și vestigii romane, după-amiaza satul inventatorului Aurel Vlaicu și biserica din Boz."
+      ]
+    },
+    en: {
+      tagline: "The spa resort, the Germisara Roman baths, the rotunda and fort at Geoagiu and the Aurel Vlaicu memorial house, in a day around Geoagiu.",
+      intro: [
+        "A full day around Geoagiu: thermal water and Roman remains in the morning, the village of the inventor Aurel Vlaicu and the church in Boz in the afternoon."
+      ]
+    },
+    days: [
+      {
+        title: { ro: "Ziua 1 — Geoagiu", en: "Day 1 — Geoagiu" },
+        stops: [
+          { k: "SITE_ACTIVITIES", id: "statiunea-geoagiu-bai" },
+          { k: "SITE_HERITAGE", id: "termele-romane-germisara" },
+          { k: "SITE_HERITAGE", id: "castrul-roman-germisara", optional: true },
+          { k: "SITE_HERITAGE", id: "rotonda-geoagiu" },
+          { k: "SITE_HERITAGE", id: "casa-memoriala-aurel-vlaicu" },
+          { k: "SITE_NATURE", id: "cascada-clocota", optional: true }
+        ]
+      }
+    ],
+    eat: ["hotel-germisara-geoagiu-bai","bistro-merinde-orastie"]
   }
 ];

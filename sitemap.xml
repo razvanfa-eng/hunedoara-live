@@ -194,7 +194,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/itinerarii.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii.html"/>
@@ -202,7 +202,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/itinerarii.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii.html"/>
@@ -1873,6 +1873,38 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cascada-lolaia/"/>
   </url>
   <url>
+    <loc>https://gohd.ro/natura/cheile-madei/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/cheile-madei/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/cheile-madei/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cheile-madei/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/cheile-madei/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/cheile-madei/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/cheile-madei/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/cheile-madei/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/natura/pestera-sura-mare/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/pestera-sura-mare/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/pestera-sura-mare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/pestera-sura-mare/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/natura/pestera-sura-mare/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/natura/pestera-sura-mare/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/natura/pestera-sura-mare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/natura/pestera-sura-mare/"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/turism-activ/traseu-pietrele-bucura-peleaga/</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>
@@ -3425,6 +3457,86 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-banita/"/>
   </url>
   <url>
+    <loc>https://gohd.ro/mostenire/castelul-pogany-pacliza/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/castelul-pogany-pacliza/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/castelul-pogany-pacliza/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castelul-pogany-pacliza/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/castelul-pogany-pacliza/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/castelul-pogany-pacliza/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/castelul-pogany-pacliza/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/castelul-pogany-pacliza/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/biserica-gurasada/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-gurasada/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-gurasada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-gurasada/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/biserica-gurasada/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/biserica-gurasada/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/biserica-gurasada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/biserica-gurasada/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/mostenire/cetatea-rachitova/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/cetatea-rachitova/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/cetatea-rachitova/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-rachitova/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/mostenire/cetatea-rachitova/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/mostenire/cetatea-rachitova/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/mostenire/cetatea-rachitova/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/mostenire/cetatea-rachitova/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/stiri/castelul-corvinilor-restaurare-zone-noi-2026/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/castelul-corvinilor-restaurare-zone-noi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/castelul-corvinilor-restaurare-zone-noi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/castelul-corvinilor-restaurare-zone-noi-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/stiri/castelul-corvinilor-restaurare-zone-noi-2026/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/castelul-corvinilor-restaurare-zone-noi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/castelul-corvinilor-restaurare-zone-noi-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/castelul-corvinilor-restaurare-zone-noi-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/stiri/drumuri-spre-altadata-lansare-deva-2026/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/drumuri-spre-altadata-lansare-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/drumuri-spre-altadata-lansare-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/drumuri-spre-altadata-lansare-deva-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/stiri/drumuri-spre-altadata-lansare-deva-2026/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/drumuri-spre-altadata-lansare-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/drumuri-spre-altadata-lansare-deva-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/drumuri-spre-altadata-lansare-deva-2026/"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/stiri/sunetul-formelor-deva-2026/</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.5</priority>
@@ -4386,7 +4498,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/o-zi-la-hunedoara-deva/"/>
@@ -4394,7 +4506,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/itinerarii/o-zi-la-hunedoara-deva/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/o-zi-la-hunedoara-deva/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/o-zi-la-hunedoara-deva/"/>
@@ -4418,7 +4530,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/itinerarii/retezat-in-2-zile/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/retezat-in-2-zile/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/retezat-in-2-zile/"/>
@@ -4426,10 +4538,90 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/itinerarii/retezat-in-2-zile/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/retezat-in-2-zile/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/retezat-in-2-zile/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/retezat-in-2-zile/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/itinerarii/poiana-rusca-lacuri-chei-furnale/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/poiana-rusca-lacuri-chei-furnale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/poiana-rusca-lacuri-chei-furnale/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/poiana-rusca-lacuri-chei-furnale/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/itinerarii/poiana-rusca-lacuri-chei-furnale/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/poiana-rusca-lacuri-chei-furnale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/poiana-rusca-lacuri-chei-furnale/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/poiana-rusca-lacuri-chei-furnale/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/itinerarii/tara-zarandului-aur-si-istorie/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/tara-zarandului-aur-si-istorie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/tara-zarandului-aur-si-istorie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/tara-zarandului-aur-si-istorie/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/itinerarii/tara-zarandului-aur-si-istorie/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/tara-zarandului-aur-si-istorie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/tara-zarandului-aur-si-istorie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/tara-zarandului-aur-si-istorie/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/itinerarii/tara-hategului-castele-si-biserici/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/tara-hategului-castele-si-biserici/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/tara-hategului-castele-si-biserici/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/tara-hategului-castele-si-biserici/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/itinerarii/tara-hategului-castele-si-biserici/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/tara-hategului-castele-si-biserici/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/tara-hategului-castele-si-biserici/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/tara-hategului-castele-si-biserici/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/itinerarii/simeria-vetel-biserici-de-lemn/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/simeria-vetel-biserici-de-lemn/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/simeria-vetel-biserici-de-lemn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/simeria-vetel-biserici-de-lemn/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/itinerarii/simeria-vetel-biserici-de-lemn/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/simeria-vetel-biserici-de-lemn/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/simeria-vetel-biserici-de-lemn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/simeria-vetel-biserici-de-lemn/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/itinerarii/geoagiu-bai-si-aurel-vlaicu/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/geoagiu-bai-si-aurel-vlaicu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/geoagiu-bai-si-aurel-vlaicu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/geoagiu-bai-si-aurel-vlaicu/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/itinerarii/geoagiu-bai-si-aurel-vlaicu/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/itinerarii/geoagiu-bai-si-aurel-vlaicu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/itinerarii/geoagiu-bai-si-aurel-vlaicu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/itinerarii/geoagiu-bai-si-aurel-vlaicu/"/>
   </url>
 </urlset>

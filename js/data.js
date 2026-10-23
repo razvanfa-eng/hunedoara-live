@@ -1226,6 +1226,77 @@ window.SITE_NATURE = [
       ]
     }
   },
+  {
+    id: "cheile-madei",
+    name: "Cheile Madei",
+    category: {"ro":"Rezervație naturală","en":"Nature reserve"},
+    area: "Balșa",
+    townId: "balsa",
+    coords: [46.0128,23.1256],
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Rezervație de 10 ha în sud-estul Munților Metaliferi, pe valea Balșei, cu valoare peisagistică, floristică și speologică.",
+      description: [
+        "Cheile Madei se află în partea sud-estică a Munților Metaliferi, pe teritoriul comunei Balșa, străbătute de apele văii Balșei. Rezervația are 10 ha și are valoare peisagistică, floristică (elemente termofile endemice) și speologică (calcare jurasice). Cel mai apropiat oraș este Zlatna, din județul Alba.",
+        "Este rezervație naturală de interes național, din categoria a IV-a IUCN (tip mixt), înființată în 1979 și declarată în 2000. Informații despre acces nu sunt publicate."
+      ],
+      facts: [
+        { label: "Localizare", value: "comuna Balșa, sud-estul Munților Metaliferi; cel mai apropiat oraș: Zlatna" },
+        { label: "Suprafață", value: "10 ha" },
+        { label: "Statut", value: "rezervație naturală de interes național, IUCN categoria a IV-a (1979, declarată 2000)" }
+      ]
+    },
+    en: {
+      name: "Mada Gorge",
+      tagline: "A 10 ha reserve in the south-east of the Metaliferi Mountains, on the Balșa valley, with scenic, botanical and speleological value.",
+      description: [
+        "The Mada Gorge lies in the south-eastern part of the Metaliferi Mountains, in Balșa commune, crossed by the waters of the Balșa valley. The reserve covers 10 ha and has scenic, botanical (endemic thermophilous species) and speleological (Jurassic limestone) value. The nearest town is Zlatna, in Alba County.",
+        "It is a nature reserve of national interest, IUCN category IV (mixed type), established in 1979 and declared in 2000. No access information is published."
+      ],
+      facts: [
+        { label: "Location", value: "Balșa commune, south-east Metaliferi Mountains; nearest town: Zlatna" },
+        { label: "Area", value: "10 ha" },
+        { label: "Status", value: "nature reserve of national interest, IUCN category IV (1979, declared 2000)" }
+      ]
+    }
+  },
+  {
+    id: "pestera-sura-mare",
+    name: "Peștera Șura Mare",
+    category: {"ro":"Peșteră","en":"Cave"},
+    area: "Pui",
+    townId: "pui",
+    hasReviews: false,
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Peșteră-râu din satul Ohaba-Ponor, în Parcul Natural Grădiștea Muncelului–Cioclovina, cu o intrare de 40 m înălțime și a doua colonie de lilieci din România — doar pentru speologi pregătiți.",
+      description: [
+        "Peștera Șura Mare se află în satul Ohaba-Ponor (comuna Pui), pe valea Ponorului, la baza stâncii Fruntea Mare, în Parcul Natural Grădiștea Muncelului–Cioclovina. Intrarea are circa 40 m înălțime și 12 m lățime la bază. Sala Mare, la aproximativ 2.300 m de intrare, este zona cea mai spectaculoasă, cu scurgeri de calcit și gururi; un sifon adânc oprește înaintarea la circa 800 m dincolo de ea. Sursele diferă asupra lungimii (între 6,6 și 11,1 km).",
+        "În prima sală au fost făcute săpături arheologice, cu urme de locuire neolitică și podoabe hallstattiene din chihlimbar și bronz. Peștera adăpostește a doua cea mai mare colonie de lilieci din România, după Huda lui Papară. Accesul se recomandă doar speologilor bine antrenați, în echipe cu experiență, cu combinezoane de neopren, saci etanși, coardă de siguranță și surse de lumină."
+      ],
+      facts: [
+        { label: "Localizare", value: "satul Ohaba-Ponor, comuna Pui, valea Ponorului" },
+        { label: "Intrare", value: "circa 40 m înălțime, 12 m lățime la bază" },
+        { label: "Acces", value: "doar speologi bine antrenați, în echipe cu experiență" },
+        { label: "Arie protejată", value: "Parcul Natural Grădiștea Muncelului–Cioclovina" }
+      ]
+    },
+    en: {
+      name: "Șura Mare Cave",
+      tagline: "A river cave in Ohaba-Ponor village, in the Grădiștea Muncelului–Cioclovina Nature Park, with a 40 m-high entrance and Romania's second-largest bat colony — for trained cavers only.",
+      description: [
+        "Șura Mare Cave is in Ohaba-Ponor village (Pui commune), on the Ponor valley at the foot of the Fruntea Mare cliff, in the Grădiștea Muncelului–Cioclovina Nature Park. The entrance is about 40 m high and 12 m wide at the base. The Big Hall, about 2,300 m from the entrance, is the most spectacular area, with flowstone and gours; a deep siphon halts progress about 800 m beyond it. Sources differ on the length (between 6.6 and 11.1 km).",
+        "Archaeological digs in the first hall found traces of Neolithic habitation and Hallstatt-era amber and bronze ornaments. The cave shelters the second-largest bat colony in Romania, after Huda lui Papară. Access is recommended only for well-trained cavers in experienced teams, with neoprene suits, waterproof bags, safety rope and light sources."
+      ],
+      facts: [
+        { label: "Location", value: "Ohaba-Ponor village, Pui commune, Ponor valley" },
+        { label: "Entrance", value: "about 40 m high, 12 m wide at the base" },
+        { label: "Access", value: "well-trained cavers only, in experienced teams" },
+        { label: "Protected area", value: "Grădiștea Muncelului–Cioclovina Nature Park" }
+      ]
+    }
+  }
 ];
 
 window.SITE_ACTIVITIES = [
@@ -4911,6 +4982,118 @@ window.SITE_HERITAGE = [
       ]
     }
   },
+  {
+    id: "castelul-pogany-pacliza",
+    name: "Castelul Pogány din Păclișa",
+    category: {"ro":"Castel","en":"Castle"},
+    area: "Totești",
+    townId: "totesti",
+    coords: [45.5733,22.8862],
+    hasReviews: false,
+    images: ["images/totesti.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 ro", source: "https://commons.wikimedia.org/wiki/File:PăclișaHD_(6).JPG" },
+    ro: {
+      tagline: "Castel baroc cu două niveluri și 22 de camere, într-un parc cu pârâu, construit în jurul anului 1800 la 6 km de Hațeg; azi aici funcționează un spital pentru copii.",
+      description: [
+        "Castelul din Păclișa, comuna Totești, a fost construit în stil baroc în jurul anului 1800 (secolul al XVIII-lea, cu modificări și adăugiri din secolul al XIX-lea). Are două niveluri și 22 de camere și este înconjurat de un parc cu un pârâu și alei de plimbare. Se află la circa 6 km de Hațeg și la aproximativ 15 km de Parcul Național Retezat.",
+        "După al Doilea Război Mondial, armata sovietică a ocupat castelul și a amenajat o cazarmă în incintă. Au urmat lucrări de reabilitare la începutul anilor ’90 și, din 2001, alte lucrări. Azi ansamblul găzduiește Spitalul de Neuropsihiatrie Infantilă „Dr. V. Ilea”, iar castelul servește drept sediu administrativ. Informații despre vizitare nu sunt publicate."
+      ],
+      facts: [
+        { label: "Localizare", value: "satul Păclișa, comuna Totești, la circa 6 km de Hațeg" },
+        { label: "Stil și epocă", value: "baroc, jurul anului 1800 (modificări în secolul al XIX-lea)" },
+        { label: "Cod LMI", value: "HD-II-a-A-03402 (împreună cu parcul)" },
+        { label: "Utilizare actuală", value: "Spitalul de Neuropsihiatrie Infantilă „Dr. V. Ilea”; vizitarea nu e documentată" }
+      ]
+    },
+    en: {
+      name: "Pogány Castle, Păclișa",
+      tagline: "A two-storey Baroque castle with 22 rooms, in a park with a stream, built around 1800 6 km from Hațeg; a children's hospital now operates here.",
+      description: [
+        "The castle in Păclișa, Totești commune, was built in the Baroque style around 1800 (18th century, with 19th-century alterations and additions). It has two storeys and 22 rooms and stands in a park with a stream and walking paths. It lies about 6 km from Hațeg and roughly 15 km from the Retezat National Park.",
+        "After the Second World War the Soviet army occupied the castle and set up barracks in the grounds. Rehabilitation works followed in the early 1990s and further works from 2001. Today the complex houses the “Dr. V. Ilea” Child Neuropsychiatry Hospital, and the castle serves as its administrative seat. No visiting information is published."
+      ],
+      facts: [
+        { label: "Location", value: "Păclișa village, Totești commune, about 6 km from Hațeg" },
+        { label: "Style and era", value: "Baroque, around 1800 (19th-century alterations)" },
+        { label: "LMI code", value: "HD-II-a-A-03402 (together with the park)" },
+        { label: "Current use", value: "“Dr. V. Ilea” Child Neuropsychiatry Hospital; visiting is not documented" }
+      ]
+    }
+  },
+  {
+    id: "biserica-gurasada",
+    name: "Biserica „Sfântul Arhanghel Mihail” din Gurasada",
+    category: {"ro":"Biserică","en":"Church"},
+    area: "Gurasada",
+    townId: "gurasada",
+    coords: [45.9508,22.5878],
+    hasReviews: false,
+    images: ["images/biserica-gurasada.jpg"],
+    photoCredit: { author: "Bianca Petrescu", license: "CC BY-SA 3.0 ro", source: "https://commons.wikimedia.org/wiki/File:Biserica_Sfantul_Arhanghel_Mihail,_Gurasada,_HD.jpg" },
+    ro: {
+      tagline: "Biserică de piatră cu plan în patru lobi, ridicată în mai multe etape, cu pictură murală din 1765 și o scenă a Judecății de Apoi cu aproximativ 30 de categorii de păcate.",
+      description: [
+        "Biserica de la marginea satului Gurasada este o clădire de piatră în tradiție romanică, cu plan în patru lobi (est–vest), abside laterale semicirculare și turn prismatic deasupra centrului. Cercetările arheologice din 1977 și 1984 arată că a fost ridicată în cel puțin patru etape: nucleul inițial, datat în secolele X–XI, a fost completat în jurul anului 1300 cu pronaos și proscomidiar, iar în secolul al XIV-lea pronaosul a fost împărțit cu bolți pe stâlpi. Clopotnița cu galerie deschisă și turnuleț subțire datează din 1765, iar anexa din nord din 1820.",
+        "Pictura murală este din 1765: o inscripție de pe peretele vestic îi numește pe Ioan din Deva (pronaos) și Nicolae din Pitești (naos). În pronaos se află o Judecată de Apoi care înfățișează circa 30 de categorii de păcate, printre care nedreptăți sociale. Identitatea ctitorilor este disputată. Satul e menționat prima dată în 1292, iar biserica a fost reparată în 1668, 1905, 1915, 1928, 1960 și 1988–1994."
+      ],
+      facts: [
+        { label: "Localizare", value: "marginea satului Gurasada, județul Hunedoara" },
+        { label: "Etape de construcție", value: "nucleu din sec. X–XI; completări ~1300 și în sec. XIV; clopotniță 1765; anexă 1820" },
+        { label: "Pictură murală", value: "1765, Ioan din Deva și Nicolae din Pitești; Judecata de Apoi în pronaos" },
+        { label: "Cod LMI", value: "HD-II-m-A-03323" }
+      ]
+    },
+    en: {
+      name: "Saint Archangel Michael Church, Gurasada",
+      tagline: "A stone church with a four-lobed plan, built in several stages, with 1765 murals and a Last Judgment scene showing about 30 categories of sins.",
+      description: [
+        "The church on the edge of Gurasada village is a stone building in the Romanesque tradition, with an east–west four-lobed plan, semicircular side apses and a prismatic tower over the centre. Archaeological research in 1977 and 1984 shows it was built in at least four stages: the original core, dated to the 10th–11th centuries, gained a narthex and prothesis around 1300, and in the 14th century the narthex was divided by vaults on pillars. The bell tower with an open gallery and slender spire dates from 1765, and the northern annex from 1820.",
+        "The murals date from 1765: an inscription on the west wall names Ioan of Deva (narthex) and Nicolae of Pitești (nave). The narthex has a Last Judgment depicting around 30 categories of sins, including social injustices. The identity of the founders is disputed. The village is first recorded in 1292, and the church was repaired in 1668, 1905, 1915, 1928, 1960 and 1988–1994."
+      ],
+      facts: [
+        { label: "Location", value: "edge of Gurasada village, Hunedoara County" },
+        { label: "Building stages", value: "core from the 10th–11th c.; additions around 1300 and in the 14th c.; bell tower 1765; annex 1820" },
+        { label: "Murals", value: "1765, Ioan of Deva and Nicolae of Pitești; Last Judgment in the narthex" },
+        { label: "LMI code", value: "HD-II-m-A-03323" }
+      ]
+    }
+  },
+  {
+    id: "cetatea-rachitova",
+    name: "Cetatea Răchitova",
+    category: {"ro":"Cetate medievală","en":"Medieval fortress"},
+    area: "Răchitova",
+    townId: "rachitova",
+    coords: [45.6011,22.7479],
+    hasReviews: false,
+    images: ["images/rachitova.jpg"],
+    photoCredit: { author: "Bogdan Stanciu", license: "Domeniu public", source: "https://commons.wikimedia.org/wiki/File:Rachitova.jpg" },
+    ro: {
+      tagline: "Ruinele unei cetăți din secolul al XIV-lea, la circa 500 m sud de satul Răchitova.",
+      description: [
+        "Cetatea Răchitova se află pe teritoriul satului Răchitova, la aproximativ 500 m sud de sat, și datează din secolul al XIV-lea. Este monument istoric. Din ea se păstrează ruine; în fotografia de pe pagină se văd resturile unei temnițe medievale.",
+        "În aceeași comună se păstrează biserica românească din Răchitova (secolul al XV-lea), tot monument istoric. Informații despre accesul și vizitarea ruinelor nu sunt publicate."
+      ],
+      facts: [
+        { label: "Localizare", value: "la circa 500 m sud de satul Răchitova" },
+        { label: "Epocă", value: "secolul al XIV-lea" },
+        { label: "Cod LMI", value: "HD-II-m-A-03424" }
+      ]
+    },
+    en: {
+      name: "Răchitova Fortress",
+      tagline: "The ruins of a 14th-century fortress about 500 m south of Răchitova village.",
+      description: [
+        "Răchitova Fortress stands on the territory of Răchitova village, about 500 m south of the village, and dates from the 14th century. It is a listed monument. Ruins survive; the photo on this page shows the remains of a medieval dungeon.",
+        "The same commune keeps the Romanian church of Răchitova (15th century), also a listed monument. No information on access to or visiting the ruins is published."
+      ],
+      facts: [
+        { label: "Location", value: "about 500 m south of Răchitova village" },
+        { label: "Era", value: "14th century" },
+        { label: "LMI code", value: "HD-II-m-A-03424" }
+      ]
+    }
+  }
 ];
 
 window.SITE_TOWNS = [
@@ -7544,6 +7727,80 @@ window.SITE_TOWNS = [
 
 window.SITE_NEWS = [
   {
+    id: "castelul-corvinilor-restaurare-zone-noi-2026",
+    name: "Castelul Corvinilor: restaurare de 11,6 milioane de euro și zone noi pentru vizitatori",
+    category: {"ro":"Patrimoniu","en":"Heritage"},
+    area: "Hunedoara",
+    townId: "hunedoara",
+    hasReviews: false,
+    date: "2026-08-03",
+    images: ["images/castelul-corvinilor.jpg"],
+    photoCredit: { author: "Giuseppe Milo", license: "CC BY 2.0", source: "https://commons.wikimedia.org/wiki/File:Corvin_Castle_-_Hunedoara,_Romania_-_Travel_photography_(36729360851).jpg" },
+    ro: {
+      tagline: "Pe 3 august 2026, primarul a anunțat că lucrările de restaurare se încheie până pe 31 august, iar Groapa Urșilor, Podul Capelei și spațiul „Între Ziduri” intră în circuitul de vizitare.",
+      description: [
+        "Restaurarea Castelului Corvinilor se face cu 11,6 milioane de euro, din două proiecte cu finanțare nerambursabilă: 5 milioane de euro din Programul Operațional Regional (2018–2023) și 6,6 milioane de euro din Planul Național de Redresare și Reziliență. La data anunțului (3 august 2026) erau terminate podul de acces din zona vechiului Turn de Poartă, Turnul Buzdugan cu cavalerul din vârful lui și fresca din Loggia Matia, cu blazoanele unor familii nobiliare, între care Vladislav Jagello și Iancu de Hunedoara.",
+        "Potrivit anunțului, Groapa Urșilor urma să fie inclusă în curând în circuitul de vizitare, iar Podul Capelei și spațiul „Între Ziduri”, dintre Turnul Pustiu și Turnul Vechi de Poartă, urmau să fie accesibile pentru prima dată. Pentru programul și tariful actual verifică pagina castelului (programul de iarnă e în vigoare între 1 octombrie 2026 și 31 martie 2027)."
+      ],
+      facts: [
+        { label: "Anunț", value: "3 august 2026" },
+        { label: "Valoare", value: "11,6 milioane de euro (POR 2018–2023 + PNRR)" },
+        { label: "Termen anunțat", value: "31 august 2026" },
+        { label: "Zone noi anunțate", value: "Groapa Urșilor, Podul Capelei, spațiul „Între Ziduri”" }
+      ]
+    },
+    en: {
+      name: "Corvin Castle: a €11.6 million restoration and new areas for visitors",
+      tagline: "On 3 August 2026 the mayor announced that the restoration would end by 31 August, with the Bear Pit, the Chapel Bridge and the “Between the Walls” space joining the visitor route.",
+      description: [
+        "Corvin Castle's restoration costs €11.6 million, from two non-reimbursable projects: €5 million from the Regional Operational Programme (2018–2023) and €6.6 million from the National Recovery and Resilience Plan. By the date of the announcement (3 August 2026) the access bridge near the old Gate Tower, the Buzdugan Tower with the cavalier on top and the fresco in the Matia Loggia, showing the coats of arms of noble families including Vladislav Jagiello and John Hunyadi, were finished.",
+        "According to the announcement, the Bear Pit was soon to join the visitor route, while the Chapel Bridge and the “Between the Walls” space, between the Pustiu Tower and the Old Gate Tower, were to become accessible for the first time. For the current hours and ticket price, see the castle's page (the winter schedule applies from 1 October 2026 to 31 March 2027)."
+      ],
+      facts: [
+        { label: "Announcement", value: "3 August 2026" },
+        { label: "Cost", value: "€11.6 million (ROP 2018–2023 + NRRP)" },
+        { label: "Announced deadline", value: "31 August 2026" },
+        { label: "New areas announced", value: "Bear Pit, Chapel Bridge, “Between the Walls” space" }
+      ]
+    }
+  },
+  {
+    id: "drumuri-spre-altadata-lansare-deva-2026",
+    name: "„Drumuri spre altădată”: lansare de carte la Magna Curia, Deva, pe 30 octombrie",
+    category: {"ro":"Eveniment cultural","en":"Cultural event"},
+    area: "Deva",
+    townId: "deva",
+    hasReviews: false,
+    date: "2026-10-30",
+    images: ["images/muzeul-civilizatiei-dacice-deva.jpg"],
+    photoCredit: { author: "Andrei kokelburg", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Deva_Magna_curia_(1).jpg" },
+    ro: {
+      tagline: "Vineri, 30 octombrie 2026, ora 17:00, în Sala Șemineului de la Magna Curia: lansarea volumului de poezie și amintiri al lui Dumitru Tuhuț.",
+      description: [
+        "Muzeul Civilizației Dacice și Romane anunță lansarea cărții „Drumuri spre altădată”, de Dumitru Tuhuț, un volum de poezie și amintiri. Evenimentul are loc în Sala Șemineului de la Magna Curia (Castelul Bethlen) din Deva, pe 30 octombrie 2026, la ora 17:00.",
+        "Magna Curia găzduiește și expoziții temporare ale muzeului, așa că seara poate fi combinată cu o vizită în clădire."
+      ],
+      facts: [
+        { label: "Dată", value: "vineri, 30 octombrie 2026, ora 17:00" },
+        { label: "Loc", value: "Sala Șemineului, Magna Curia, Deva" },
+        { label: "Organizator", value: "Muzeul Civilizației Dacice și Romane Deva" }
+      ]
+    },
+    en: {
+      name: "“Drumuri spre altădată”: a book launch at Magna Curia, Deva, on 30 October",
+      tagline: "Friday 30 October 2026 at 17:00, in the Fireplace Hall at Magna Curia: the launch of Dumitru Tuhuț's volume of poetry and memories.",
+      description: [
+        "The Museum of Dacian and Roman Civilisation announces the launch of “Drumuri spre altădată” by Dumitru Tuhuț, a volume of poetry and memories. The event takes place in the Fireplace Hall at Magna Curia (the Bethlen Castle) in Deva on 30 October 2026 at 17:00.",
+        "Magna Curia also hosts the museum's temporary exhibitions, so the evening can be combined with a visit to the building."
+      ],
+      facts: [
+        { label: "Date", value: "Friday 30 October 2026, 17:00" },
+        { label: "Venue", value: "Fireplace Hall, Magna Curia, Deva" },
+        { label: "Organiser", value: "Museum of Dacian and Roman Civilisation, Deva" }
+      ]
+    }
+  },
+  {
     id: "sunetul-formelor-deva-2026",
     name: "„Sunetul formelor”: spectacol multimedia „Brâncuși 150” la Deva, cu intrare liberă",
     category: { ro: "Concert", en: "Concert" },
@@ -8653,6 +8910,7 @@ window.SITE_BUSINESSES = [
     name: "Cocoșul de Aur",
     category: { ro: "Restaurant", en: "Restaurant" },
     area: "Deva",
+    seo: { ro: { title: "Cocoșul de Aur, Deva: restaurant tradițional românesc", desc: "Cocoșul de Aur din Deva: bucătărie tradițională românească, 60 de locuri în interior și terasă încălzită de 40 de locuri. Bd. Iuliu Maniu nr. 9, lângă Sinagogă." }, en: { title: "Cocoșul de Aur, Deva: traditional Romanian restaurant", desc: "Cocoșul de Aur in Deva: traditional Romanian cuisine, 60 indoor seats and a heated terrace for 40. Bd. Iuliu Maniu 9, next to the synagogue." } },
     townId: "deva",
     hasReviews: true,
     season: "tot-anul",
@@ -8688,6 +8946,7 @@ window.SITE_BUSINESSES = [
     name: "Casa Rustică",
     category: { ro: "Restaurant", en: "Restaurant" },
     area: "Deva",
+    seo: { ro: { title: "Casa Rustică, Deva: pizzerie și bistro italian", desc: "Casa Rustică din Deva: pizza, paste și bucătărie italiană și internațională, vizavi de centrul comercial Ulpia. Aleea Transilvaniei, bl. 7." }, en: { title: "Casa Rustică, Deva: pizzeria and Italian bistro", desc: "Casa Rustică in Deva: pizza, pasta and Italian and international cuisine, across from the Ulpia mall. Aleea Transilvaniei, block 7." } },
     townId: "deva",
     hasReviews: true,
     season: "tot-anul",
@@ -8795,6 +9054,7 @@ window.SITE_BUSINESSES = [
     name: "Eden by Werk",
     category: { ro: "Restaurant", en: "Restaurant" },
     area: "Hunedoara",
+    seo: { ro: { title: "Eden by Werk, Hunedoara: restaurant lângă Castelul Corvinilor", desc: "Eden by Werk din Hunedoara: bucătărie contemporană cu meniu de autor, în Werk Hotel & Spa, la câteva minute de Castelul Corvinilor. Str. Voinei nr. 2A." }, en: { title: "Eden by Werk, Hunedoara: restaurant near Corvin Castle", desc: "Eden by Werk in Hunedoara: contemporary cuisine with a signature menu, inside Werk Hotel & Spa, a few minutes from Corvin Castle. Str. Voinei 2A." } },
     townId: "hunedoara",
     hasReviews: true,
     season: "tot-anul",
@@ -8902,6 +9162,7 @@ window.SITE_BUSINESSES = [
     name: "Pensiunea Avy",
     category: { ro: "Cazare", en: "Accommodation" },
     area: "Hațeg",
+    seo: { ro: { title: "Pensiunea Avy, Hațeg: cazare cu 13 camere lângă centru", desc: "Pensiunea Avy din Hațeg: 13 camere și 27 de locuri, pavilion cu grătar, bucătărie pentru oaspeți și wi-fi, la 2 minute de centrul orașului." }, en: { title: "Pensiunea Avy, Hațeg: 13-room guesthouse near the centre", desc: "Pensiunea Avy in Hațeg: 13 rooms and 27 beds, a grill pavilion, a guest kitchen and wi-fi, 2 minutes from the town centre." } },
     townId: "hateg",
     hasReviews: true,
     season: "tot-anul",
@@ -8939,6 +9200,7 @@ window.SITE_BUSINESSES = [
     name: "Avy Wine & Dine",
     category: { ro: "Restaurant", en: "Restaurant" },
     area: "Hațeg",
+    seo: { ro: { title: "Avy Wine & Dine, Hațeg: restaurant mediteraneean", desc: "Avy Wine & Dine din Hațeg: bucătărie mediteraneeană, italiană și franțuzească și listă de vinuri. Str. Tudor Arghezi nr. 28." }, en: { title: "Avy Wine & Dine, Hațeg: Mediterranean restaurant", desc: "Avy Wine & Dine in Hațeg: Mediterranean, Italian and French cuisine and a wine list. Str. Tudor Arghezi 28." } },
     townId: "hateg",
     hasReviews: true,
     season: "tot-anul",
@@ -9009,6 +9271,7 @@ window.SITE_BUSINESSES = [
     name: "Bistro Merinde",
     category: { ro: "Restaurant", en: "Restaurant" },
     area: "Orăștie",
+    seo: { ro: { title: "Bistro Merinde, Orăștie: meniu românesc și internațional", desc: "Bistro Merinde din Orăștie: bucătărie românească și internațională contemporană, într-o casă veche. Str. Octavian Goga nr. 31, program luni–sâmbătă." }, en: { title: "Bistro Merinde, Orăștie: Romanian and international menu", desc: "Bistro Merinde in Orăștie: contemporary Romanian and international cuisine in an old house. Str. Octavian Goga 31, open Monday to Saturday." } },
     townId: "orastie",
     hasReviews: true,
     season: "tot-anul",

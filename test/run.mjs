@@ -398,8 +398,9 @@ function load(file, query = "", urlPath = file, pref = null) {
     const g = ld["@graph"] || [];
     const page = g.find((n) => n["@type"] === "WebPage");
     const crumbs = g.find((n) => n["@type"] === "BreadcrumbList");
-    return !h.includes("<title>" + htmlEsc((e.en && e.en.name) || e.name) + " — Hunedoara Live</title>") ||
-      !desc.startsWith(htmlEsc(e.en.tagline).slice(0, 30)) ||
+    const seoEn = e.seo && e.seo.en; // titlu/descriere SEO opționale
+    return !h.includes("<title>" + htmlEsc((seoEn && seoEn.title) || (e.en && e.en.name) || e.name) + " — Hunedoara Live</title>") ||
+      !desc.startsWith(htmlEsc((seoEn && seoEn.desc) || e.en.tagline).slice(0, 30)) ||
       !h.includes('id="detail-tagline">' + htmlEsc(e.en.tagline) + "</p>") ||
       !page || page.inLanguage !== "en" || page.url !== SITE + "/en" + ro ||
       g[0].description !== desc.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&") ||

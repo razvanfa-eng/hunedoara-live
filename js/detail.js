@@ -53,7 +53,9 @@
     var out = {};
 
     var name = RL.entryName(entry, lang);
-    out.docTitle = name + (siteName ? " — " + siteName : "");
+    // titlu SEO opțional (câmpul seo.<limbă>.title); altfel numele intrării
+    var seo = entry.seo && entry.seo[lang];
+    out.docTitle = ((seo && seo.title) || name) + (siteName ? " — " + siteName : "");
     out.backHref = RL.pageUrl(cfg.backPage, lang);   // EN -> /en/<listare>.html
     out.backLabel = t(cfg.backLabelKey);
     out.badge = RL.esc(RL.categoryLabel(entry, lang)) +

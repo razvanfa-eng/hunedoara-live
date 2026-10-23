@@ -769,9 +769,10 @@ for (const key of Object.keys(SECTIONS)) {
       const out = RL_DETAIL.build(cfg, entry, lang);
       const l = RL.loc(entry, lang);
       const url = alternates[lang];
-      let desc = l.tagline || "";
+      const seoEntry = entry.seo && entry.seo[lang];
+      let desc = (seoEntry && seoEntry.desc) || l.tagline || "";
       // taglinele scurte le completăm cu prima frază a descrierii (dacă încape)
-      if (desc.length < 110 && l.description && l.description[0]) {
+      if (!(seoEntry && seoEntry.desc) && desc.length < 110 && l.description && l.description[0]) {
         const first = (l.description[0].match(/^.+?[.!?](?=\s|$)/) || [l.description[0]])[0];
         if ((desc + " " + first).length <= 160) desc += " " + first;
       }
