@@ -1234,7 +1234,8 @@ window.SITE_NATURE = [
     townId: "balsa",
     coords: [46.0128,23.1256],
     hasReviews: false,
-    images: ["images/placeholder.svg"],
+    images: ["images/cheile-madei.jpg"],
+    photoCredit: { author: "Oguszt", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Cheile_mazii.jpg" },
     ro: {
       tagline: "Rezervație de 10 ha în sud-estul Munților Metaliferi, pe valea Balșei, cu valoare peisagistică, floristică și speologică.",
       description: [
@@ -6723,7 +6724,8 @@ window.SITE_TOWNS = [
     hasReviews: false,
     relatedAreas: ["Turdaș"],
     relatedIds: [],
-    images: ["images/placeholder.svg"],
+    images: ["images/turdas.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Biserica_greco-catolică_din_Turdaș_(4).jpg" },
     ro: {
       tagline: "Comună de pe Mureș, cunoscută pentru așezarea neolitică din cultura Vinča–Turdaș și pentru ansamblul bisericii reformate din secolul al XV-lea.",
       description: [
@@ -7100,7 +7102,8 @@ window.SITE_TOWNS = [
     hasReviews: false,
     relatedAreas: ["Pestișu Mic"],
     relatedIds: [],
-    images: ["images/placeholder.svg"],
+    images: ["images/pestisu-mic.jpg"],
+    photoCredit: { author: "Florin Dobrei, uploaded by Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Cutin_1.jpg" },
     ro: {
       tagline: "Comună de lângă Hunedoara, cu un sit arheologic la Nandru și o biserică de lemn din 1624 la Almașu Mic.",
       description: [
@@ -7547,7 +7550,8 @@ window.SITE_TOWNS = [
     hasReviews: false,
     relatedAreas: ["Toplița"],
     relatedIds: [],
-    images: ["images/placeholder.svg"],
+    images: ["images/toplita.jpg"],
+    photoCredit: { author: "Alexandru Baboş. Original uploader was Albabos at ro.wikipedia", license: "CC BY 2.5", source: "https://commons.wikimedia.org/wiki/File:Valari.latura_nordica+.jpg" },
     ro: {
       tagline: "Comună din Poiana Ruscă, cu ruinele furnalului de la Toplița, biserica de lemn din Vălari și Cheile Cernei.",
       description: [
