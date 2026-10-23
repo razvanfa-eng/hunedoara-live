@@ -550,6 +550,33 @@ function fillMap(html, lang) {
     "      </ul>\n    </section>\n").join("");
   return fillGen(fillGen(html, "mapfilters", filters), "maplist", list);
 }
+/* ---------- destinatii.html: localitățile grupate pe zonele turistice ---------- */
+// zona (`area`) a fiecărei localități -> id-ul destinației (zonei) din SITE_DESTINATIONS
+const ZONE_OF_AREA = {
+  "Culoarul Mureșului": "culoarul-muresului", "Valea Streiului": "culoarul-muresului",
+  "Valea Jiului": "valea-jiului", "Țara Hațegului": "tara-hategului",
+  "Zona cetăților dacice": "cetatile-dacice", "Munții Orăștiei": "cetatile-dacice",
+  "Munții Metaliferi": "muntii-metaliferi", "Țara Zarandului": "muntii-metaliferi",
+  "Poiana Ruscă": "tinutul-padurenilor"
+};
+function fillZoneTowns(html, lang) {
+  const towns = RL.dataArray("SITE_TOWNS");
+  const zones = RL.dataArray("SITE_DESTINATIONS");
+  const byZone = {};
+  for (const e of towns) {
+    const z = ZONE_OF_AREA[e.area];
+    if (!z) throw new Error("Zonă fără destinație pentru " + e.id + " (" + e.area + ")");
+    (byZone[z] = byZone[z] || []).push(e);
+  }
+  const isCommune = (e) => (e.category && e.category.ro === "Comună" ? 1 : 0);
+  const out = zones.filter((z) => byZone[z.id]).map((z) => {
+    const items = byZone[z.id].slice().sort((a, b) => isCommune(a) - isCommune(b));
+    return '      <section class="zone-group">\n        <h3><a href="' + esc(RL.entryUrl("SITE_DESTINATIONS", z.id, lang)) + '">' + esc(RL.entryName(z, lang)) + "</a> (" + items.length + ")</h3>\n        <ul>\n" +
+      items.map((e) => '          <li><a href="' + esc(RL.entryUrl("SITE_TOWNS", e.id, lang)) + '">' + esc(RL.entryName(e, lang)) + '</a> <span class="muted">· ' + esc(RL.categoryLabel(e, lang)) + "</span></li>\n").join("") +
+      "        </ul>\n      </section>\n";
+  }).join("");
+  return fillGen(html, "zonelocalitati", out);
+}
 /* ---------- calendar (calendar.html) + evenimente.ics ---------- */
 const RO_MONTHS = { ianuarie: 1, februarie: 2, martie: 3, aprilie: 4, mai: 5, iunie: 6, iulie: 7, august: 8, septembrie: 9, octombrie: 10, noiembrie: 11, decembrie: 12 };
 const isoDate = (y, m, d) => y + "-" + String(m).padStart(2, "0") + "-" + String(d).padStart(2, "0");
@@ -646,7 +673,8 @@ const TOP_PAGES = [
   ...Object.keys(SECTIONS).map((k) => ({
     file: SECTIONS[k].listing,
     title: (l) => t("page.title." + SECTION_META[k].key, l), desc: (l) => t("page.meta." + SECTION_META[k].key, l),
-    image: SECTION_META[k].image, sitemap: "0.8", pair: true, canonical: true
+    image: SECTION_META[k].image, sitemap: "0.8", pair: true, canonical: true,
+    fill: k === "SITE_DESTINATIONS" ? fillZoneTowns : undefined
   })),
   { file: "utile.html", title: (l) => t("page.title.utile", l), desc: (l) => t("page.meta.utile", l), sitemap: "0.5", pair: true, canonical: true },
   { file: "contact.html", title: (l) => t("page.title.contact", l), desc: (l) => t("page.meta.contact", l), sitemap: "0.4", pair: true, canonical: true },

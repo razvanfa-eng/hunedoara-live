@@ -145,6 +145,8 @@
 
       "sec.destinatii.name": "Destinații",
       "sec.destinatii.desc": "Zonele și regiunile turistice ale județului, dintr-o privire.",
+      "dest.towns.heading": "Orașe și comune, pe zone",
+      "dest.towns.intro": "Toate localitățile din ghid, grupate după zona turistică din care fac parte.",
       "sec.orase.name": "Orașe și comune",
       "sec.orase.desc": "Orașele județului și cele mai importante comune — de la Deva și Hunedoara la Sarmizegetusa și Densuș.",
       "sec.natura.name": "Natură",
@@ -443,6 +445,8 @@
 
       "sec.destinatii.name": "Destinations",
       "sec.destinatii.desc": "The county's tourist zones and regions, at a glance.",
+      "dest.towns.heading": "Towns and communes, by zone",
+      "dest.towns.intro": "Every town and commune in the guide, grouped by the tourist zone it belongs to.",
       "sec.orase.name": "Towns and communes",
       "sec.orase.desc": "The county's towns and its most notable communes — from Deva and Hunedoara to Sarmizegetusa and Densuș.",
       "sec.natura.name": "Nature",

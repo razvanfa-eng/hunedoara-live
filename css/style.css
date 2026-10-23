@@ -559,3 +559,11 @@ button.badge-app:hover { border-color: var(--accent); color: var(--accent); }
 html:not(.js-rendered) #grid,
 html:not(.js-rendered) #home-highlights:not([data-prerendered]) { min-height: 100vh; }
 html:not(.js-rendered) #explore-grid:not([data-prerendered]) { min-height: 60vh; }
+
+/* destinatii.html: localitățile grupate pe zone */
+.zone-towns { margin: 40px 0 8px; }
+.zone-towns h2 { margin-bottom: 6px; }
+.zone-group { margin-top: 22px; }
+.zone-group h3 { font-size: 16px; margin-bottom: 8px; }
+.zone-group ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px 20px; }
+.zone-group a { color: var(--accent); font-weight: 500; }
