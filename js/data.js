@@ -1074,7 +1074,7 @@ window.SITE_NATURE = [
     name: "Cheile Cernei",
     category: { ro: "Rezervație naturală", en: "Nature reserve" },
     area: "Poiana Ruscă",
-    townId: "hunedoara",
+    townId: "lunca-cernii-de-jos",
     coords: [45.6539, 22.6589],
     hasReviews: true,
     season: "tot-anul",
@@ -1192,7 +1192,7 @@ window.SITE_NATURE = [
     name: "Cascada Lolaia",
     category: { ro: "Cascadă", en: "Waterfall" },
     area: "Parcul Național Retezat",
-    townId: "hateg",
+    townId: "salasu-de-sus",
     coords: [45.4259, 22.8973],
     hasReviews: true,
     season: "tot-anul",
@@ -2296,7 +2296,7 @@ window.SITE_ACTIVITIES = [
     name: "Traseul Costești – Sarmizegetusa Regia – Vârful Godeanu (Șureanu)",
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
-    townId: "orastie",
+    townId: "orastioara-de-sus",
     hasReviews: true,
     images: ["images/sarmizegetusa-zona-sacra.jpg"],
     photoCredit: { author: "Cosmin Stefanescu", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Sarmisegetusa_Regia_-_Zona_sacra_%E2%80%93_Gradistea_Muntelui,_Muntii_Sureanu,_Hunedoara,_Romania_21.JPG" },
@@ -2331,7 +2331,7 @@ window.SITE_ACTIVITIES = [
     name: "Traseul Costești – Cetatea Blidaru – Vârful Godeanu",
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
-    townId: "orastie",
+    townId: "orastioara-de-sus",
     hasReviews: true,
     images: ["images/cetatea-blidaru.jpg"],
     photoCredit: { author: "Oroles", license: "Domeniu public", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Blidaru.JPG" },
@@ -2366,7 +2366,7 @@ window.SITE_ACTIVITIES = [
     name: "Traseul Podul Gerosu – Cetatea Fețele Albe",
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
-    townId: "orastie",
+    townId: "orastioara-de-sus",
     hasReviews: false,
     images: ["images/cetatea-fetele-albe.jpg"],
     photoCredit: { author: "România de vis", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Ziduri_ale_Cet%C4%83%C5%A3ii_Fe%C5%A3ele-Albe_0298.JPG" },
@@ -2401,7 +2401,7 @@ window.SITE_ACTIVITIES = [
     name: "Traseul Grădiștea de Munte – Cetatea Piatra Roșie – Peștera Cioclovina",
     category: { ro: "Drumeție montană", en: "Mountain hiking" },
     area: "Șureanu",
-    townId: "orastie",
+    townId: "orastioara-de-sus",
     hasReviews: false,
     images: ["images/cetatea-piatra-rosie.jpg"],
     photoCredit: { author: "Korinna", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Piatra_Rosie_drum_pavat.jpg" },
@@ -2693,7 +2693,7 @@ window.SITE_HERITAGE = [
     name: "Sarmizegetusa Regia",
     category: { ro: "Sit arheologic UNESCO", en: "UNESCO archaeological site" },
     area: "Munții Orăștiei",
-    townId: "orastie",
+    townId: "orastioara-de-sus",
     coords: [45.6219, 23.3093],
     hasReviews: true,
     images: ["images/sarmizegetusa-regia-sanctuar.jpg"],
@@ -3250,7 +3250,7 @@ window.SITE_HERITAGE = [
     name: "Furnalul de la Govăjdia",
     category: { ro: "Ansamblu industrial istoric", en: "Historic industrial site" },
     area: "Hunedoara",
-    townId: "hunedoara",
+    townId: "ghelari",
     hasReviews: false,
     season: "tot-anul",
     images: ["images/furnalul-govajdia.jpg"],
@@ -3493,7 +3493,7 @@ window.SITE_HERITAGE = [
     name: "Cetatea Mălăiești",
     category: { ro: "Cetate medievală", en: "Medieval fortress" },
     area: "Țara Hațegului",
-    townId: "hateg",
+    townId: "salasu-de-sus",
     coords: [45.4832, 22.9474],
     hasReviews: true,
     season: "tot-anul",
@@ -4472,7 +4472,7 @@ window.SITE_HERITAGE = [
     name: "Cetatea Costești-Blidaru",
     category: { ro: "Cetate dacică", en: "Dacian fortress" },
     area: "Munții Orăștiei",
-    townId: "orastie",
+    townId: "orastioara-de-sus",
     coords: [45.6678, 23.1629],
     hasReviews: true,
     season: "tot-anul",
@@ -4513,7 +4513,7 @@ window.SITE_HERITAGE = [
     name: "Cetatea Costești-Cetățuie",
     category: { ro: "Cetate dacică", en: "Dacian fortress" },
     area: "Munții Orăștiei",
-    townId: "orastie",
+    townId: "orastioara-de-sus",
     coords: [45.6794, 23.1541],
     hasReviews: true,
     season: "tot-anul",
@@ -4633,7 +4633,7 @@ window.SITE_HERITAGE = [
     name: "Panteonul Moților din Țebea",
     category: { ro: "Complex memorial", en: "Memorial complex" },
     area: "Țara Zarandului",
-    townId: "brad",
+    townId: "baia-de-cris",
     coords: [46.1681, 22.7358],
     hasReviews: true,
     season: "tot-anul",
@@ -5275,7 +5275,6 @@ window.SITE_TOWNS = [
     coords: [46.1294, 22.7900],
     hasReviews: false,
     relatedAreas: ["Brad"],
-    relatedIds: ["panteonul-motilor-tebea"],
     images: ["images/brad-skyline.jpg"],
     photoCredit: { author: "Sthadrian", license: "domeniu public", source: "https://commons.wikimedia.org/wiki/File:Brad_Skyline.jpg" },
     ro: {
@@ -6139,6 +6138,200 @@ window.SITE_TOWNS = [
         { label: "Villages", value: "Bulzeștii de Jos, Bulzeștii de Sus, Giurgești, Grohot, Păulești, Rusești, Stănculești, Ticera, Tomnatec" },
         { label: "Landmarks", value: "wooden church in Bulzeștii de Sus (1853), “Annunciation” wooden church in Tomnatec (18th c.)" },
         { label: "Nature", value: "Grohot Natural Bridge, the Uibărești valley" }
+      ]
+    }
+  },
+  {
+    id: "lunca-cernii-de-jos",
+    name: "Lunca Cernii de Jos",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Poiana Ruscă",
+    coords: [45.6383,22.6147],
+    hasReviews: false,
+    relatedAreas: ["Lunca Cernii de Jos"],
+    relatedIds: ["cheile-cernei"],
+    images: ["images/cheile-cernei.jpg"],
+    photoCredit: { author: "Nicu Farcaș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Cheile_Cernei.JPG" },
+    ro: {
+      tagline: "Comună de munte din Poiana Ruscă, pe valea Cernei, cu Cheile Cernei și opt sate risipite în Ținutul Pădurenilor.",
+      description: [
+        "Lunca Cernii de Jos este o comună din Munții Poiana Ruscă, formată din satele Lunca Cernii de Jos (reședința), Ciumița, Fântâna, Gura Bordului, Lunca Cernii de Sus, Meria, Negoiu și Valea Babii. Este una dintre cele mai întinse și mai puțin populate comune ale județului, cu pădure, văi și sate de munte.",
+        "Rezervația naturală „Cheile Cernei” (2 ha) este un defileu săpat de râul Cerna în șisturile cristaline ale Poienii Ruscă, inclus în rețeaua Natura 2000. Comuna se află și în situl „Ținutul Pădurenilor”, zona locuită de pădureni, cu tradiții păstrate în satele de munte."
+      ],
+      facts: [
+        { label: "Populație", value: "758 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Lunca Cernii de Jos, Ciumița, Fântâna, Gura Bordului, Lunca Cernii de Sus, Meria, Negoiu, Valea Babii" },
+        { label: "Natură", value: "rezervația „Cheile Cernei” (2 ha), siturile Natura 2000 Cheile Cernei și Ținutul Pădurenilor" }
+      ]
+    },
+    en: {
+      tagline: "A mountain commune in the Poiana Ruscă range, on the Cerna valley, with the Cerna Gorge and eight villages scattered through the Pădureni Land.",
+      description: [
+        "Lunca Cernii de Jos is a commune in the Poiana Ruscă Mountains, made up of the villages of Lunca Cernii de Jos (the seat), Ciumița, Fântâna, Gura Bordului, Lunca Cernii de Sus, Meria, Negoiu and Valea Babii. It is one of the largest and least populated communes in the county, with forests, valleys and mountain villages.",
+        "The “Cerna Gorge” nature reserve (2 ha) is a gorge cut by the Cerna river through the crystalline schists of Poiana Ruscă, part of the Natura 2000 network. The commune also lies in the “Pădureni Land” site, home to the pădureni and their traditions kept alive in the mountain villages."
+      ],
+      facts: [
+        { label: "Population", value: "758 (2021 census)" },
+        { label: "Villages", value: "Lunca Cernii de Jos, Ciumița, Fântâna, Gura Bordului, Lunca Cernii de Sus, Meria, Negoiu, Valea Babii" },
+        { label: "Nature", value: "“Cerna Gorge” reserve (2 ha), Natura 2000 sites Cheile Cernei and Ținutul Pădurenilor" }
+      ]
+    }
+  },
+  {
+    id: "baia-de-cris",
+    name: "Baia de Criș",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Zarandului",
+    coords: [46.1747,22.7153],
+    hasReviews: false,
+    relatedAreas: ["Baia de Criș"],
+    relatedIds: ["panteonul-motilor-tebea"],
+    images: ["images/panteonul-motilor-tebea.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Tebea_2011.21.jpg" },
+    ro: {
+      tagline: "Comună din Țara Zarandului, pe valea Crișului Alb, cu Țebea, Gorunul lui Horea, mormântul lui Avram Iancu și biserici vechi de lemn.",
+      description: [
+        "Baia de Criș este o comună din nord-vestul județului Hunedoara, în Țara Zarandului, formată din satele Baia de Criș (reședința), Baldovin, Căraci, Cărăstău, Lunca, Rișca, Rișculița, Țebea și Văleni. A fost reședința Prefecturii Zarandului, condusă de Ioan Buteanu în Revoluția de la 1848.",
+        "În satul Țebea se află complexul memorial cu mormântul lui Avram Iancu și Gorunul lui Horea, loc de pelerinaj național. La Baia de Criș sunt casa memorială Avram Iancu și un obelisc inaugurat în 1972, la 100 de ani de la moartea lui, precum și o biserică franciscană din secolul al XV-lea.",
+        "Comuna păstrează și bisericile de lemn monument istoric din Căraci (secolul al XVIII-lea) și Lunca (secolul al XVII-lea). Zona face parte din situl Natura 2000 „Munții Metaliferi”."
+      ],
+      facts: [
+        { label: "Populație", value: "2.176 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Baia de Criș, Baldovin, Căraci, Cărăstău, Lunca, Rișca, Rișculița, Țebea, Văleni" },
+        { label: "Repere", value: "complexul memorial Țebea (Avram Iancu, Gorunul lui Horea), casa memorială Avram Iancu, biserica franciscană (sec. XV)" },
+        { label: "Biserici de lemn", value: "Căraci (sec. XVIII), Lunca (sec. XVII)" }
+      ]
+    },
+    en: {
+      tagline: "A commune in Zarand Country, on the Crișul Alb valley, with Țebea, Horea's Oak, Avram Iancu's grave and old wooden churches.",
+      description: [
+        "Baia de Criș is a commune in the north-west of Hunedoara County, in Zarand Country, made up of the villages of Baia de Criș (the seat), Baldovin, Căraci, Cărăstău, Lunca, Rișca, Rișculița, Țebea and Văleni. It was the seat of the Zarand prefecture, led by Ioan Buteanu during the 1848 Revolution.",
+        "In the village of Țebea stands the memorial complex with Avram Iancu's grave and Horea's Oak, a national place of pilgrimage. Baia de Criș has the Avram Iancu memorial house and an obelisk unveiled in 1972, a hundred years after his death, as well as a 15th-century Franciscan church.",
+        "The commune also keeps listed wooden churches at Căraci (18th century) and Lunca (17th century). The area is part of the Natura 2000 site “Metaliferi Mountains”."
+      ],
+      facts: [
+        { label: "Population", value: "2,176 (2021 census)" },
+        { label: "Villages", value: "Baia de Criș, Baldovin, Căraci, Cărăstău, Lunca, Rișca, Rișculița, Țebea, Văleni" },
+        { label: "Landmarks", value: "Țebea memorial complex (Avram Iancu, Horea's Oak), Avram Iancu memorial house, Franciscan church (15th c.)" },
+        { label: "Wooden churches", value: "Căraci (18th c.), Lunca (17th c.)" }
+      ]
+    }
+  },
+  {
+    id: "salasu-de-sus",
+    name: "Sălașu de Sus",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Hațegului",
+    coords: [45.51,22.9547],
+    hasReviews: false,
+    relatedAreas: ["Sălașu de Sus"],
+    relatedIds: ["cetatea-malaiesti","cascada-lolaia"],
+    images: ["images/cetatea-malaiesti.jpg"],
+    photoCredit: { author: "Raimond Spekking", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Malaistii_fortress,_Romania-9103.jpg" },
+    ro: {
+      tagline: "Comuna de la poalele Retezatului, cu Cetatea Mălăiești, biserici din secolul al XV-lea, curtea cnezilor Cândreș și valea Nucșoarei.",
+      description: [
+        "Sălașu de Sus este o comună din Țara Hațegului, la poalele Munților Retezat, formată din satele Sălașu de Sus (reședința), Coroiești, Mălăiești, Nucșoara, Ohaba de sub Piatră, Paroș, Peștera, Râu Alb, Râu Mic, Sălașu de Jos și Zăvoi. Este o comună întinsă, cu o bună parte din teritoriu în zona montană.",
+        "La Mălăiești se află Cetatea Mălăiești, o cetate nobiliară din secolul al XIV-lea. La Sălașu de Sus se păstrează biserica „Sfinții Atanasie și Chiril” și curtea cnezilor Cândreș (secolul al XV-lea), iar la Paroș și Râu Alb sunt alte biserici medievale. Valea Nucșoarei duce spre Retezat și spre cascada Lolaia.",
+        "Printre ariile protejate se numără rezervația „Fânațele cu narcise Nucșoara” (20 ha)."
+      ],
+      facts: [
+        { label: "Populație", value: "2.142 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Sălașu de Sus, Coroiești, Mălăiești, Nucșoara, Ohaba de sub Piatră, Paroș, Peștera, Râu Alb, Râu Mic, Sălașu de Jos, Zăvoi" },
+        { label: "Repere", value: "Cetatea Mălăiești (sec. XIV), curtea cnezilor Cândreș (sec. XV), biserici medievale la Sălașu de Sus, Paroș și Râu Alb" },
+        { label: "Natură", value: "valea Nucșoarei, cascada Lolaia, rezervația „Fânațele cu narcise Nucșoara” (20 ha)" }
+      ]
+    },
+    en: {
+      tagline: "A commune at the foot of the Retezat Mountains, with Mălăiești Fortress, 15th-century churches, the Cândreș knezes' court and the Nucșoara valley.",
+      description: [
+        "Sălașu de Sus is a commune in Hațeg Country, at the foot of the Retezat Mountains, made up of the villages of Sălașu de Sus (the seat), Coroiești, Mălăiești, Nucșoara, Ohaba de sub Piatră, Paroș, Peștera, Râu Alb, Râu Mic, Sălașu de Jos and Zăvoi. It is a large commune, with much of its territory in the mountains.",
+        "At Mălăiești stands Mălăiești Fortress, a 14th-century noble stronghold. Sălașu de Sus keeps the Saints Athanasius and Cyril church and the court of the Cândreș knezes (15th century), while Paroș and Râu Alb have other medieval churches. The Nucșoara valley leads to the Retezat and to the Lolaia waterfall.",
+        "Protected areas include the “Nucșoara Narcissus Meadows” reserve (20 ha)."
+      ],
+      facts: [
+        { label: "Population", value: "2,142 (2021 census)" },
+        { label: "Villages", value: "Sălașu de Sus, Coroiești, Mălăiești, Nucșoara, Ohaba de sub Piatră, Paroș, Peștera, Râu Alb, Râu Mic, Sălașu de Jos, Zăvoi" },
+        { label: "Landmarks", value: "Mălăiești Fortress (14th c.), Cândreș knezes' court (15th c.), medieval churches at Sălașu de Sus, Paroș and Râu Alb" },
+        { label: "Nature", value: "Nucșoara valley, Lolaia waterfall, “Nucșoara Narcissus Meadows” reserve (20 ha)" }
+      ]
+    }
+  },
+  {
+    id: "orastioara-de-sus",
+    name: "Orăștioara de Sus",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Zona cetăților dacice",
+    coords: [45.7333,23.1667],
+    hasReviews: false,
+    relatedAreas: ["Orăștioara de Sus"],
+    relatedIds: ["sarmizegetusa-regia", "cetatea-costesti-blidaru", "cetatea-costesti-cetatuie", "traseu-costesti-sarmizegetusa-regia-varful-godeanu", "traseu-costesti-cetatea-blidaru-varful-godeanu", "traseu-cetatea-fetele-albe", "traseu-gradistea-cetatea-piatra-rosie-cioclovina"],
+    images: ["images/cetatea-blidaru.jpg"],
+    photoCredit: { author: "Oroles", license: "Domeniu public", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Blidaru.JPG" },
+    ro: {
+      tagline: "Comuna din inima cetăților dacice, cu Sarmizegetusa Regia, Costești–Blidaru, Costești–Cetățuie și Fețele Albe, în patrimoniul UNESCO.",
+      description: [
+        "Orăștioara de Sus este o comună din Munții Orăștiei, formată din satele Orăștioara de Sus (reședința), Bucium, Costești, Costești-Deal, Grădiștea de Munte, Ludeștii de Jos, Ludeștii de Sus și Ocolișu Mic. Pe teritoriul ei se află o mare parte din cetățile dacice din Munții Orăștiei, înscrise în patrimoniul mondial UNESCO.",
+        "La Grădiștea de Munte se află așezarea dacică de la Sarmizegetusa Regia, capitala regatului dac, iar în zona Fețele Albe sunt alte vestigii dacice. La Costești sunt cetățile dacice Costești–Blidaru și Costești–Cetățuie, iar la Bucium, Grădiștea de Munte și Costești-Deal se păstrează castre romane și fortificații dacice.",
+        "Comuna face parte din Parcul Natural Grădiștea Muncelului–Cioclovina. Bisericile din Orăștioara de Sus (1794), Bucium (1892–1900) și Ludeștii de Jos (1902) completează patrimoniul local."
+      ],
+      facts: [
+        { label: "Populație", value: "1.910 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Orăștioara de Sus, Bucium, Costești, Costești-Deal, Grădiștea de Munte, Ludeștii de Jos, Ludeștii de Sus, Ocolișu Mic" },
+        { label: "Repere", value: "Sarmizegetusa Regia, cetățile Costești–Blidaru și Costești–Cetățuie, Fețele Albe (UNESCO)" },
+        { label: "Arii protejate", value: "Parcul Natural Grădiștea Muncelului–Cioclovina, situl Natura 2000 „Frumoasa”" }
+      ]
+    },
+    en: {
+      tagline: "The commune at the heart of the Dacian fortresses, with Sarmizegetusa Regia, Costești–Blidaru, Costești–Cetățuie and Fețele Albe, all UNESCO-listed.",
+      description: [
+        "Orăștioara de Sus is a commune in the Orăștie Mountains, made up of the villages of Orăștioara de Sus (the seat), Bucium, Costești, Costești-Deal, Grădiștea de Munte, Ludeștii de Jos, Ludeștii de Sus and Ocolișu Mic. Much of the Dacian fortresses of the Orăștie Mountains, on the UNESCO World Heritage List, lie within its territory.",
+        "At Grădiștea de Munte lies the Dacian settlement of Sarmizegetusa Regia, the capital of the Dacian kingdom, and the Fețele Albe area has further Dacian remains. Costești has the Dacian fortresses of Costești–Blidaru and Costești–Cetățuie, while Bucium, Grădiștea de Munte and Costești-Deal keep Roman forts and Dacian fortifications.",
+        "The commune is part of the Grădiștea Muncelului–Cioclovina Nature Park. The churches of Orăștioara de Sus (1794), Bucium (1892–1900) and Ludeștii de Jos (1902) complete the local heritage."
+      ],
+      facts: [
+        { label: "Population", value: "1,910 (2021 census)" },
+        { label: "Villages", value: "Orăștioara de Sus, Bucium, Costești, Costești-Deal, Grădiștea de Munte, Ludeștii de Jos, Ludeștii de Sus, Ocolișu Mic" },
+        { label: "Landmarks", value: "Sarmizegetusa Regia, the Costești–Blidaru and Costești–Cetățuie fortresses, Fețele Albe (UNESCO)" },
+        { label: "Protected areas", value: "Grădiștea Muncelului–Cioclovina Nature Park, Natura 2000 site “Frumoasa”" }
+      ]
+    }
+  },
+  {
+    id: "ghelari",
+    name: "Ghelari",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Poiana Ruscă",
+    coords: [45.7167,22.7833],
+    hasReviews: false,
+    relatedAreas: ["Ghelari"],
+    relatedIds: ["furnalul-govajdia"],
+    images: ["images/furnalul-govajdia.jpg"],
+    photoCredit: { author: "RudolfHanzelik", license: "CC0 (domeniu public)", source: "https://commons.wikimedia.org/wiki/File:Blast_furnace_of_Govajdia.jpg" },
+    ro: {
+      tagline: "Comună minieră din Poiana Ruscă, cu Furnalul de la Govăjdia, un cuptor medieval de reducere a fierului și biserici vechi.",
+      description: [
+        "Ghelari este o comună din Munții Poiana Ruscă, la circa 20 km de Hunedoara, formată din satele Ghelari (reședința), Govăjdia, Plop și Ruda. Zona are o veche tradiție în extracția și prelucrarea minereului de fier, de la care a pornit și industria siderurgică a Hunedoarei.",
+        "La Govăjdia se află Furnalul din 1806–1810, monument istoric, considerat primul furnal cu flux continuu din Europa. La Ghelari se păstrează un cuptor de reducere a fierului, o biserică de piatră din 1770 și o cruce memorială, iar la Ruda este biserica „Sfinții Arhangheli Mihail și Gavriil”, din 1653."
+      ],
+      facts: [
+        { label: "Populație", value: "1.501 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Ghelari, Govăjdia, Plop, Ruda" },
+        { label: "Repere", value: "Furnalul de la Govăjdia (1806–1810), cuptor de reducere a fierului la Ghelari, biserica din Ruda (1653), biserica de piatră din Ghelari (1770)" },
+        { label: "Distanță", value: "circa 20 km de Hunedoara" }
+      ]
+    },
+    en: {
+      tagline: "A mining commune in the Poiana Ruscă range, with the Govăjdia Blast Furnace, a medieval iron-smelting furnace and old churches.",
+      description: [
+        "Ghelari is a commune in the Poiana Ruscă Mountains, about 20 km from Hunedoara, made up of the villages of Ghelari (the seat), Govăjdia, Plop and Ruda. The area has a long tradition of mining and working iron ore, from which Hunedoara's steel industry also grew.",
+        "At Govăjdia stands the 1806–1810 Blast Furnace, a listed monument regarded as the first continuous-flow furnace in Europe. Ghelari keeps an iron-reduction furnace, a stone church from 1770 and a memorial cross, while Ruda has the Holy Archangels Michael and Gabriel church, from 1653."
+      ],
+      facts: [
+        { label: "Population", value: "1,501 (2021 census)" },
+        { label: "Villages", value: "Ghelari, Govăjdia, Plop, Ruda" },
+        { label: "Landmarks", value: "Govăjdia Blast Furnace (1806–1810), iron-reduction furnace at Ghelari, church in Ruda (1653), stone church in Ghelari (1770)" },
+        { label: "Distance", value: "about 20 km from Hunedoara" }
       ]
     }
   }
