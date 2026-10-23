@@ -1073,6 +1073,390 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/bacia/"/>
   </url>
   <url>
+    <loc>https://gohd.ro/orase/totesti/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/totesti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/totesti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/totesti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/totesti/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/totesti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/totesti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/totesti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/luncoiu-de-jos/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/luncoiu-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/luncoiu-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/luncoiu-de-jos/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/luncoiu-de-jos/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/luncoiu-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/luncoiu-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/luncoiu-de-jos/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/buces/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/buces/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/buces/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/buces/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/buces/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/buces/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/buces/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/buces/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/zam/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/zam/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/zam/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/zam/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/zam/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/zam/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/zam/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/zam/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/branisca/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/branisca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/branisca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/branisca/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/branisca/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/branisca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/branisca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/branisca/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/lapugiu-de-jos/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/lapugiu-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/lapugiu-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/lapugiu-de-jos/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/lapugiu-de-jos/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/lapugiu-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/lapugiu-de-jos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/lapugiu-de-jos/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/bucuresci/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/bucuresci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/bucuresci/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/bucuresci/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/bucuresci/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/bucuresci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/bucuresci/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/bucuresci/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/pestisu-mic/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/pestisu-mic/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/pestisu-mic/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/pestisu-mic/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/pestisu-mic/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/pestisu-mic/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/pestisu-mic/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/pestisu-mic/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/gurasada/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/gurasada/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/gurasada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/gurasada/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/gurasada/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/gurasada/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/gurasada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/gurasada/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/rachitova/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/rachitova/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/rachitova/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/rachitova/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/rachitova/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/rachitova/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/rachitova/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/rachitova/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/valisoara/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/valisoara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/valisoara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/valisoara/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/valisoara/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/valisoara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/valisoara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/valisoara/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/martinesti/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/martinesti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/martinesti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/martinesti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/martinesti/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/martinesti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/martinesti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/martinesti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/tomesti/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/tomesti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/tomesti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/tomesti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/tomesti/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/tomesti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/tomesti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/tomesti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/blajeni/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/blajeni/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/blajeni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/blajeni/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/blajeni/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/blajeni/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/blajeni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/blajeni/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/general-berthelot/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/general-berthelot/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/general-berthelot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/general-berthelot/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/general-berthelot/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/general-berthelot/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/general-berthelot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/general-berthelot/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/balsa/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/balsa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/balsa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/balsa/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/balsa/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/balsa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/balsa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/balsa/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/vorta/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/vorta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/vorta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/vorta/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/vorta/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/vorta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/vorta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/vorta/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/burjuc/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/burjuc/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/burjuc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/burjuc/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/burjuc/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/burjuc/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/burjuc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/burjuc/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/carjiti/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/carjiti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/carjiti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/carjiti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/carjiti/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/carjiti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/carjiti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/carjiti/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/toplita/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/toplita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/toplita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/toplita/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/toplita/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/toplita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/toplita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/toplita/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/cerbal/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/cerbal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/cerbal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/cerbal/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/cerbal/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/cerbal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/cerbal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/cerbal/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/lelese/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/lelese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/lelese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/lelese/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/lelese/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/lelese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/lelese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/lelese/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/bunila/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/bunila/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/bunila/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/bunila/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/bunila/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/bunila/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/bunila/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/bunila/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/orase/batrana/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/batrana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/batrana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/batrana/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/orase/batrana/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/orase/batrana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/orase/batrana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/orase/batrana/"/>
+  </url>
+  <url>
     <loc>https://gohd.ro/natura/parcul-national-retezat/</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>

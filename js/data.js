@@ -6641,6 +6641,904 @@ window.SITE_TOWNS = [
         { label: "Landmarks", value: "Petru Groza memorial house and grave, Saint George church, Descent of the Holy Spirit church (1873–1876)" }
       ]
     }
+  },
+  {
+    id: "totesti",
+    name: "Totești",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Hațegului",
+    coords: [45.5667,22.8833],
+    hasReviews: false,
+    relatedAreas: ["Totești"],
+    relatedIds: [],
+    images: ["images/totesti.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 ro", source: "https://commons.wikimedia.org/wiki/File:PăclișaHD_(6).JPG" },
+    ro: {
+      tagline: "Comună din Țara Hațegului, cunoscută pentru castelul Pogány din Păclișa și parcul lui.",
+      description: [
+        "Totești este o comună din județul Hunedoara, formată din 5 sate: Totești, Cârnești, Copaci, Păclișa și Reea.",
+        "Printre obiectivele din comună se numără castelul Pogány din Păclișa (secolul al XVIII-lea, monument istoric), cu parcul castelului (secolul al XIX-lea)."
+      ],
+      facts: [
+        { label: "Populație", value: "1.649 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Totești, Cârnești, Copaci, Păclișa, Reea" },
+        { label: "Repere", value: "castelul Pogány din Păclișa (secolul al XVIII-lea, monument istoric), cu parcul castelului (secolul al XIX-lea)" }
+      ]
+    },
+    en: {
+      tagline: "A commune in Hațeg Country, known for the Pogány castle in Păclișa and its park.",
+      description: [
+        "Totești is a commune in Hunedoara County, made up of 5 villages: Totești, Cârnești, Copaci, Păclișa and Reea.",
+        "Sights in the commune include the Pogány castle in Păclișa (18th century, a listed monument), with its 19th-century castle park."
+      ],
+      facts: [
+        { label: "Population", value: "1,649 (2021 census)" },
+        { label: "Villages", value: "Totești, Cârnești, Copaci, Păclișa, Reea" },
+        { label: "Landmarks", value: "the Pogány castle in Păclișa (18th century, a listed monument), with its 19th-century castle park" }
+      ]
+    }
+  },
+  {
+    id: "luncoiu-de-jos",
+    name: "Luncoiu de Jos",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [46.0822,22.7864],
+    hasReviews: false,
+    relatedAreas: ["Luncoiu de Jos"],
+    relatedIds: [],
+    images: ["images/luncoiu-de-jos.jpg"],
+    photoCredit: { author: "Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 2.5", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Stejarel_3.jpg" },
+    ro: {
+      tagline: "Comună din Munții Metaliferi, în apropiere de Brad, cu biserica de lemn din Stejărel.",
+      description: [
+        "Luncoiu de Jos este o comună din județul Hunedoara, formată din 5 sate: Luncoiu de Jos, Dudești, Luncoiu de Sus, Podele și Stejărel.",
+        "Printre obiectivele din comună se numără biserica de lemn „Adormirea Maicii Domnului” din Stejărel (1851). În zonă se află Munții Metaliferi (sit de importanță comunitară)."
+      ],
+      facts: [
+        { label: "Populație", value: "1.630 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Luncoiu de Jos, Dudești, Luncoiu de Sus, Podele, Stejărel" },
+        { label: "Repere", value: "biserica de lemn „Adormirea Maicii Domnului” din Stejărel (1851)" },
+        { label: "Natură și arii protejate", value: "Munții Metaliferi (sit de importanță comunitară)" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Metaliferi Mountains, near Brad, with the wooden church in Stejărel.",
+      description: [
+        "Luncoiu de Jos is a commune in Hunedoara County, made up of 5 villages: Luncoiu de Jos, Dudești, Luncoiu de Sus, Podele and Stejărel.",
+        "Sights in the commune include the wooden church of the Dormition in Stejărel (1851). The area also has the Metaliferi Mountains (Site of Community Importance)."
+      ],
+      facts: [
+        { label: "Population", value: "1,630 (2021 census)" },
+        { label: "Villages", value: "Luncoiu de Jos, Dudești, Luncoiu de Sus, Podele, Stejărel" },
+        { label: "Landmarks", value: "the wooden church of the Dormition in Stejărel (1851)" },
+        { label: "Nature and protected areas", value: "the Metaliferi Mountains (Site of Community Importance)" }
+      ]
+    }
+  },
+  {
+    id: "buces",
+    name: "Buceș",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [46.19,22.9361],
+    hasReviews: false,
+    relatedAreas: ["Buceș"],
+    relatedIds: [],
+    images: ["images/buces.jpg"],
+    photoCredit: { author: "Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 2.5", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Stanija_8.jpg" },
+    ro: {
+      tagline: "Comună de munte din Munții Metaliferi, cu rezervația Muntele Vulcan și o biserică de lemn din 1842 la Stănija.",
+      description: [
+        "Buceș este o comună din județul Hunedoara, formată din 7 sate: Buceș, Buceș-Vulcan, Dupăpiatră, Grohoțele, Mihăileni, Stănija și Tarnița.",
+        "Printre obiectivele din comună se numără biserica de lemn „Adormirea Maicii Domnului” din Stănija (1842, monument istoric). În zonă se află rezervația naturală Muntele Vulcan (5 ha) și siturile Natura 2000 Munții Metaliferi și Pădurea Povernii–Valea Cernița."
+      ],
+      facts: [
+        { label: "Populație", value: "1.595 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Buceș, Buceș-Vulcan, Dupăpiatră, Grohoțele, Mihăileni, Stănija, Tarnița" },
+        { label: "Repere", value: "biserica de lemn „Adormirea Maicii Domnului” din Stănija (1842, monument istoric)" },
+        { label: "Natură și arii protejate", value: "rezervația naturală Muntele Vulcan (5 ha) și siturile Natura 2000 Munții Metaliferi și Pădurea Povernii–Valea Cernița" }
+      ]
+    },
+    en: {
+      tagline: "A mountain commune in the Metaliferi Mountains, with the Vulcan Mountain reserve and an 1842 wooden church at Stănija.",
+      description: [
+        "Buceș is a commune in Hunedoara County, made up of 7 villages: Buceș, Buceș-Vulcan, Dupăpiatră, Grohoțele, Mihăileni, Stănija and Tarnița.",
+        "Sights in the commune include the wooden church of the Dormition in Stănija (1842, a listed monument). The area also has the Vulcan Mountain nature reserve (5 ha) and the Natura 2000 sites Metaliferi Mountains and Povernii Forest–Cernița Valley."
+      ],
+      facts: [
+        { label: "Population", value: "1,595 (2021 census)" },
+        { label: "Villages", value: "Buceș, Buceș-Vulcan, Dupăpiatră, Grohoțele, Mihăileni, Stănija, Tarnița" },
+        { label: "Landmarks", value: "the wooden church of the Dormition in Stănija (1842, a listed monument)" },
+        { label: "Nature and protected areas", value: "the Vulcan Mountain nature reserve (5 ha) and the Natura 2000 sites Metaliferi Mountains and Povernii Forest–Cernița Valley" }
+      ]
+    }
+  },
+  {
+    id: "zam",
+    name: "Zam",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [46,22.4],
+    hasReviews: false,
+    relatedAreas: ["Zam"],
+    relatedIds: [],
+    images: ["images/zam.jpg"],
+    photoCredit: { author: "Dobrei Florin, uploaded by Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Almasel_1.jpg" },
+    ro: {
+      tagline: "Comună de pe Defileul Mureșului, cu treisprezece sate și numeroase biserici de lemn din secolele XVII–XIX.",
+      description: [
+        "Zam este o comună din județul Hunedoara, formată din 13 sate: Zam, Almaș-Săliște, Almășel, Brășeu, Cerbia, Deleni, Godinești, Micănești, Pogănești, Pojoga, Sălciva, Tămășești și Valea.",
+        "Printre obiectivele din comună se numără bisericile de lemn din Almaș-Săliște (sec. XVIII), Micănești (1761), Pogănești (sec. XVIII) și Sălciva (1799), toate monumente istorice, precum și cele din Almășel, Cerbia, Deleni și Godinești. În zonă se află rezervațiile „Calcarele de la Godinești” (6 ha) și „Pădurea Pojoga” (20 ha) și situl Natura 2000 Defileul Mureșului. Prima atestare documentară a localității Zam este din 1407."
+      ],
+      facts: [
+        { label: "Populație", value: "1.585 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Zam, Almaș-Săliște, Almășel, Brășeu, Cerbia, Deleni, Godinești, Micănești, Pogănești, Pojoga, Sălciva, Tămășești, Valea" },
+        { label: "Repere", value: "bisericile de lemn din Almaș-Săliște (sec. XVIII), Micănești (1761), Pogănești (sec. XVIII) și Sălciva (1799), toate monumente istorice, precum și cele din Almășel, Cerbia, Deleni și Godinești" },
+        { label: "Natură și arii protejate", value: "rezervațiile „Calcarele de la Godinești” (6 ha) și „Pădurea Pojoga” (20 ha) și situl Natura 2000 Defileul Mureșului" }
+      ]
+    },
+    en: {
+      tagline: "A commune on the Mureș Gorge, with thirteen villages and many 17th–19th-century wooden churches.",
+      description: [
+        "Zam is a commune in Hunedoara County, made up of 13 villages: Zam, Almaș-Săliște, Almășel, Brășeu, Cerbia, Deleni, Godinești, Micănești, Pogănești, Pojoga, Sălciva, Tămășești and Valea.",
+        "Sights in the commune include the wooden churches of Almaș-Săliște (18th c.), Micănești (1761), Pogănești (18th c.) and Sălciva (1799), all listed monuments, as well as those in Almășel, Cerbia, Deleni and Godinești. The area also has the “Godinești Limestones” (6 ha) and “Pojoga Forest” (20 ha) reserves and the Natura 2000 site Mureș Gorge. The first documentary record of Zam dates from 1407."
+      ],
+      facts: [
+        { label: "Population", value: "1,585 (2021 census)" },
+        { label: "Villages", value: "Zam, Almaș-Săliște, Almășel, Brășeu, Cerbia, Deleni, Godinești, Micănești, Pogănești, Pojoga, Sălciva, Tămășești, Valea" },
+        { label: "Landmarks", value: "the wooden churches of Almaș-Săliște (18th c.), Micănești (1761), Pogănești (18th c.) and Sălciva (1799), all listed monuments, as well as those in Almășel, Cerbia, Deleni and Godinești" },
+        { label: "Nature and protected areas", value: "the “Godinești Limestones” (6 ha) and “Pojoga Forest” (20 ha) reserves and the Natura 2000 site Mureș Gorge" }
+      ]
+    }
+  },
+  {
+    id: "branisca",
+    name: "Brănișca",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.9153,22.7725],
+    hasReviews: false,
+    relatedAreas: ["Brănișca"],
+    relatedIds: [],
+    images: ["images/branisca.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 ro", source: "https://commons.wikimedia.org/wiki/File:Biserica_de_lemn_din_Furcsoara_(1).jpg" },
+    ro: {
+      tagline: "Comună de pe Mureș, cu castelul Jósika și opt biserici de lemn din secolele XVII–XIX.",
+      description: [
+        "Brănișca este o comună din județul Hunedoara, formată din 9 sate: Brănișca, Bărăștii Iliei, Boz, Căbești, Furcșoara, Gialacuta, Rovina, Târnava și Târnăvița.",
+        "Printre obiectivele din comună se numără castelul Jósika din Brănișca și bisericile de lemn din Bărăștii Iliei (1778), Rovina (1780), Furcșoara (1808), Căbești (1864), Boz, Gialacuta, Târnava și Târnăvița. În zonă se află situl de importanță comunitară „Râul Mureș între Brănișca și Ilia”."
+      ],
+      facts: [
+        { label: "Populație", value: "1.554 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Brănișca, Bărăștii Iliei, Boz, Căbești, Furcșoara, Gialacuta, Rovina, Târnava, Târnăvița" },
+        { label: "Repere", value: "castelul Jósika din Brănișca și bisericile de lemn din Bărăștii Iliei (1778), Rovina (1780), Furcșoara (1808), Căbești (1864), Boz, Gialacuta, Târnava și Târnăvița" },
+        { label: "Natură și arii protejate", value: "situl de importanță comunitară „Râul Mureș între Brănișca și Ilia”" }
+      ]
+    },
+    en: {
+      tagline: "A commune on the Mureș, with the Jósika castle and eight 17th–19th-century wooden churches.",
+      description: [
+        "Brănișca is a commune in Hunedoara County, made up of 9 villages: Brănișca, Bărăștii Iliei, Boz, Căbești, Furcșoara, Gialacuta, Rovina, Târnava and Târnăvița.",
+        "Sights in the commune include the Jósika castle in Brănișca and the wooden churches of Bărăștii Iliei (1778), Rovina (1780), Furcșoara (1808), Căbești (1864), Boz, Gialacuta, Târnava and Târnăvița. The area also has the Site of Community Importance “Mureș River between Brănișca and Ilia”."
+      ],
+      facts: [
+        { label: "Population", value: "1,554 (2021 census)" },
+        { label: "Villages", value: "Brănișca, Bărăștii Iliei, Boz, Căbești, Furcșoara, Gialacuta, Rovina, Târnava, Târnăvița" },
+        { label: "Landmarks", value: "the Jósika castle in Brănișca and the wooden churches of Bărăștii Iliei (1778), Rovina (1780), Furcșoara (1808), Căbești (1864), Boz, Gialacuta, Târnava and Târnăvița" },
+        { label: "Nature and protected areas", value: "the Site of Community Importance “Mureș River between Brănișca and Ilia”" }
+      ]
+    }
+  },
+  {
+    id: "lapugiu-de-jos",
+    name: "Lăpugiu de Jos",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Poiana Ruscă",
+    coords: [45.8864,22.4811],
+    hasReviews: false,
+    relatedAreas: ["Lăpugiu de Jos"],
+    relatedIds: [],
+    images: ["images/lapugiu-de-jos.jpg"],
+    photoCredit: { author: "Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Holdea_91.jpg" },
+    ro: {
+      tagline: "Comună din Poiana Ruscă, cu locul fosilifer de la Lăpugiu de Sus, Peștera Șura Mare și biserici de lemn din secolele XVIII–XIX.",
+      description: [
+        "Lăpugiu de Jos este o comună din județul Hunedoara, formată din 10 sate: Lăpugiu de Jos, Baștea, Cosești, Fintoag, Grind, Holdea, Lăpugiu de Sus, Lăsău, Ohaba și Teiu.",
+        "Printre obiectivele din comună se numără biserica de lemn „Adormirea Maicii Domnului” din Lăpugiu de Jos (1765, monument istoric), biserica de lemn din Holdea (1818) și biserica de zid din Teiu (1788). În zonă se află rezervația „Locul fosilifer de la Lăpugiu de Sus” (5 ha), Peștera Șura Mare și situl Natura 2000 Ținutul Pădurenilor."
+      ],
+      facts: [
+        { label: "Populație", value: "1.460 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Lăpugiu de Jos, Baștea, Cosești, Fintoag, Grind, Holdea, Lăpugiu de Sus, Lăsău, Ohaba, Teiu" },
+        { label: "Repere", value: "biserica de lemn „Adormirea Maicii Domnului” din Lăpugiu de Jos (1765, monument istoric), biserica de lemn din Holdea (1818) și biserica de zid din Teiu (1788)" },
+        { label: "Natură și arii protejate", value: "rezervația „Locul fosilifer de la Lăpugiu de Sus” (5 ha), Peștera Șura Mare și situl Natura 2000 Ținutul Pădurenilor" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Poiana Ruscă range, with the Lăpugiu de Sus fossil site, Șura Mare Cave and 18th–19th-century wooden churches.",
+      description: [
+        "Lăpugiu de Jos is a commune in Hunedoara County, made up of 10 villages: Lăpugiu de Jos, Baștea, Cosești, Fintoag, Grind, Holdea, Lăpugiu de Sus, Lăsău, Ohaba and Teiu.",
+        "Sights in the commune include the wooden church of the Dormition in Lăpugiu de Jos (1765, a listed monument), the wooden church in Holdea (1818) and the stone church in Teiu (1788). The area also has the “Lăpugiu de Sus fossil site” reserve (5 ha), Șura Mare Cave and the Natura 2000 site Pădureni Land."
+      ],
+      facts: [
+        { label: "Population", value: "1,460 (2021 census)" },
+        { label: "Villages", value: "Lăpugiu de Jos, Baștea, Cosești, Fintoag, Grind, Holdea, Lăpugiu de Sus, Lăsău, Ohaba, Teiu" },
+        { label: "Landmarks", value: "the wooden church of the Dormition in Lăpugiu de Jos (1765, a listed monument), the wooden church in Holdea (1818) and the stone church in Teiu (1788)" },
+        { label: "Nature and protected areas", value: "the “Lăpugiu de Sus fossil site” reserve (5 ha), Șura Mare Cave and the Natura 2000 site Pădureni Land" }
+      ]
+    }
+  },
+  {
+    id: "bucuresci",
+    name: "Bucureșci",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [46.1278,22.9],
+    hasReviews: false,
+    relatedAreas: ["Bucureșci"],
+    relatedIds: [],
+    images: ["images/bucuresci.jpg"],
+    photoCredit: { author: "Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 2.5", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Curechiu_3.jpg" },
+    ro: {
+      tagline: "Comună din Munții Metaliferi, cu biserici de lemn din secolul al XVIII-lea la Curechiu și Rovina.",
+      description: [
+        "Bucureșci este o comună din județul Hunedoara, formată din 5 sate: Bucureșci, Curechiu, Merișor, Rovina și Șesuri.",
+        "Printre obiectivele din comună se numără bisericile de lemn „Sfântul Nicolae” din Curechiu (sec. XVIII) și „Înălțarea Sfintei Cruci” din Rovina (1780), precum și troița din Curechiu (1784). În zonă se află situl Natura 2000 Munții Metaliferi (arie de protecție specială avifaunistică)."
+      ],
+      facts: [
+        { label: "Populație", value: "1.284 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Bucureșci, Curechiu, Merișor, Rovina, Șesuri" },
+        { label: "Repere", value: "bisericile de lemn „Sfântul Nicolae” din Curechiu (sec. XVIII) și „Înălțarea Sfintei Cruci” din Rovina (1780), precum și troița din Curechiu (1784)" },
+        { label: "Natură și arii protejate", value: "situl Natura 2000 Munții Metaliferi (arie de protecție specială avifaunistică)" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Metaliferi Mountains, with 18th-century wooden churches at Curechiu and Rovina.",
+      description: [
+        "Bucureșci is a commune in Hunedoara County, made up of 5 villages: Bucureșci, Curechiu, Merișor, Rovina and Șesuri.",
+        "Sights in the commune include the wooden churches of Saint Nicholas in Curechiu (18th c.) and the Exaltation of the Holy Cross in Rovina (1780), as well as the wayside cross in Curechiu (1784). The area also has the Natura 2000 site Metaliferi Mountains (Special Protection Area for birds)."
+      ],
+      facts: [
+        { label: "Population", value: "1,284 (2021 census)" },
+        { label: "Villages", value: "Bucureșci, Curechiu, Merișor, Rovina, Șesuri" },
+        { label: "Landmarks", value: "the wooden churches of Saint Nicholas in Curechiu (18th c.) and the Exaltation of the Holy Cross in Rovina (1780), as well as the wayside cross in Curechiu (1784)" },
+        { label: "Nature and protected areas", value: "the Natura 2000 site Metaliferi Mountains (Special Protection Area for birds)" }
+      ]
+    }
+  },
+  {
+    id: "pestisu-mic",
+    name: "Pestișu Mic",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.7981,22.8858],
+    hasReviews: false,
+    relatedAreas: ["Pestișu Mic"],
+    relatedIds: [],
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Comună de lângă Hunedoara, cu un sit arheologic la Nandru și o biserică de lemn din 1624 la Almașu Mic.",
+      description: [
+        "Pestișu Mic este o comună din județul Hunedoara, formată din 9 sate: Pestișu Mic, Almașu Mic, Ciulpăz, Cutin, Dumbrava, Josani, Mănerău, Nandru și Valea Nandrului.",
+        "Printre obiectivele din comună se numără biserica de lemn „Sfântul Nicolae” din Almașu Mic (1624, monument istoric) și situl arheologic de la Nandru. Până în 1851, localitatea Pestișu Mic a aparținut Regimentului I de Graniță de la Orlat."
+      ],
+      facts: [
+        { label: "Populație", value: "1.250 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Pestișu Mic, Almașu Mic, Ciulpăz, Cutin, Dumbrava, Josani, Mănerău, Nandru, Valea Nandrului" },
+        { label: "Repere", value: "biserica de lemn „Sfântul Nicolae” din Almașu Mic (1624, monument istoric) și situl arheologic de la Nandru" }
+      ]
+    },
+    en: {
+      tagline: "A commune near Hunedoara, with an archaeological site at Nandru and a 1624 wooden church at Almașu Mic.",
+      description: [
+        "Pestișu Mic is a commune in Hunedoara County, made up of 9 villages: Pestișu Mic, Almașu Mic, Ciulpăz, Cutin, Dumbrava, Josani, Mănerău, Nandru and Valea Nandrului.",
+        "Sights in the commune include the wooden church of Saint Nicholas in Almașu Mic (1624, a listed monument) and the archaeological site at Nandru. Until 1851, Pestișu Mic belonged to the 1st Border Regiment of Orlat."
+      ],
+      facts: [
+        { label: "Population", value: "1,250 (2021 census)" },
+        { label: "Villages", value: "Pestișu Mic, Almașu Mic, Ciulpăz, Cutin, Dumbrava, Josani, Mănerău, Nandru, Valea Nandrului" },
+        { label: "Landmarks", value: "the wooden church of Saint Nicholas in Almașu Mic (1624, a listed monument) and the archaeological site at Nandru" }
+      ]
+    }
+  },
+  {
+    id: "gurasada",
+    name: "Gurasada",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.9508,22.5878],
+    hasReviews: false,
+    relatedAreas: ["Gurasada"],
+    relatedIds: [],
+    images: ["images/gurasada.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 ro", source: "https://commons.wikimedia.org/wiki/File:ConaculKlobosiski_(3).JPG" },
+    ro: {
+      tagline: "Comună de pe Defileul Mureșului, cu biserica „Sfântul Arhanghel Mihail” din secolul al XIII-lea, un conac și biserici de lemn.",
+      description: [
+        "Gurasada este o comună din județul Hunedoara, formată din 11 sate: Gurasada, Boiu de Jos, Boiu de Sus, Cărmăzănești, Câmpuri de Sus, Câmpuri-Surduc, Dănulești, Gothatea, Runcșor, Ulieș și Vica.",
+        "Printre obiectivele din comună se numără biserica „Sfântul Arhanghel Mihail” din Gurasada (sec. XIII), conacul Klobosiski, bisericile de lemn din Boiu de Jos (sec. XVII), Cărmăzănești (1741), Dănulești, Gothatea și Câmpuri de Sus, precum și casa de lemn „Andrica Sinefta” din Boiu de Sus (sec. XIX). În zonă se află rezervația „Calcarele de la Boiu de Sus” și situl Natura 2000 Defileul Mureșului."
+      ],
+      facts: [
+        { label: "Populație", value: "1.193 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Gurasada, Boiu de Jos, Boiu de Sus, Cărmăzănești, Câmpuri de Sus, Câmpuri-Surduc, Dănulești, Gothatea, Runcșor, Ulieș, Vica" },
+        { label: "Repere", value: "biserica „Sfântul Arhanghel Mihail” din Gurasada (sec. XIII), conacul Klobosiski, bisericile de lemn din Boiu de Jos (sec. XVII), Cărmăzănești (1741), Dănulești, Gothatea și Câmpuri de Sus, precum și casa de lemn „Andrica Sinefta” din Boiu de Sus (sec. XIX)" },
+        { label: "Natură și arii protejate", value: "rezervația „Calcarele de la Boiu de Sus” și situl Natura 2000 Defileul Mureșului" }
+      ]
+    },
+    en: {
+      tagline: "A commune on the Mureș Gorge, with the 13th-century Saint Archangel Michael church, a manor house and wooden churches.",
+      description: [
+        "Gurasada is a commune in Hunedoara County, made up of 11 villages: Gurasada, Boiu de Jos, Boiu de Sus, Cărmăzănești, Câmpuri de Sus, Câmpuri-Surduc, Dănulești, Gothatea, Runcșor, Ulieș and Vica.",
+        "Sights in the commune include Saint Archangel Michael church in Gurasada (13th c.), the Klobosiski manor, the wooden churches of Boiu de Jos (17th c.), Cărmăzănești (1741), Dănulești, Gothatea and Câmpuri de Sus, and the “Andrica Sinefta” wooden house in Boiu de Sus (19th c.). The area also has the “Boiu de Sus Limestones” reserve and the Natura 2000 site Mureș Gorge."
+      ],
+      facts: [
+        { label: "Population", value: "1,193 (2021 census)" },
+        { label: "Villages", value: "Gurasada, Boiu de Jos, Boiu de Sus, Cărmăzănești, Câmpuri de Sus, Câmpuri-Surduc, Dănulești, Gothatea, Runcșor, Ulieș, Vica" },
+        { label: "Landmarks", value: "Saint Archangel Michael church in Gurasada (13th c.), the Klobosiski manor, the wooden churches of Boiu de Jos (17th c.), Cărmăzănești (1741), Dănulești, Gothatea and Câmpuri de Sus, and the “Andrica Sinefta” wooden house in Boiu de Sus (19th c.)" },
+        { label: "Nature and protected areas", value: "the “Boiu de Sus Limestones” reserve and the Natura 2000 site Mureș Gorge" }
+      ]
+    }
+  },
+  {
+    id: "rachitova",
+    name: "Răchitova",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Poiana Ruscă",
+    coords: [45.6,22.7333],
+    hasReviews: false,
+    relatedAreas: ["Răchitova"],
+    relatedIds: [],
+    images: ["images/rachitova.jpg"],
+    photoCredit: { author: "Bogdan Stanciu", license: "Public domain", source: "https://commons.wikimedia.org/wiki/File:Rachitova.jpg" },
+    ro: {
+      tagline: "Comună din sud-vestul județului, cu ruinele cetății Răchitova (sec. XIV) și o biserică românească din secolul al XV-lea.",
+      description: [
+        "Răchitova este o comună din județul Hunedoara, formată din 7 sate: Răchitova, Boița, Ciula Mare, Ciula Mică, Gotești, Mesteacăn și Vălioara.",
+        "Printre obiectivele din comună se numără cetatea Răchitova (sec. XIV) și biserica românească din Răchitova (sec. XV), ambele monumente istorice."
+      ],
+      facts: [
+        { label: "Populație", value: "1.127 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Răchitova, Boița, Ciula Mare, Ciula Mică, Gotești, Mesteacăn, Vălioara" },
+        { label: "Repere", value: "cetatea Răchitova (sec. XIV) și biserica românească din Răchitova (sec. XV), ambele monumente istorice" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the south-west of the county, with the ruins of Răchitova fortress (14th c.) and a 15th-century Romanian church.",
+      description: [
+        "Răchitova is a commune in Hunedoara County, made up of 7 villages: Răchitova, Boița, Ciula Mare, Ciula Mică, Gotești, Mesteacăn and Vălioara.",
+        "Sights in the commune include Răchitova fortress (14th c.) and the Romanian church in Răchitova (15th c.), both listed monuments."
+      ],
+      facts: [
+        { label: "Population", value: "1,127 (2021 census)" },
+        { label: "Villages", value: "Răchitova, Boița, Ciula Mare, Ciula Mică, Gotești, Mesteacăn, Vălioara" },
+        { label: "Landmarks", value: "Răchitova fortress (14th c.) and the Romanian church in Răchitova (15th c.), both listed monuments" }
+      ]
+    }
+  },
+  {
+    id: "valisoara",
+    name: "Vălișoara",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [46.05,22.8333],
+    hasReviews: false,
+    relatedAreas: ["Vălișoara"],
+    relatedIds: [],
+    images: ["images/valisoara.jpg"],
+    photoCredit: { author: "Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Salistioara_1.29.jpg" },
+    ro: {
+      tagline: "Comună din Munții Metaliferi, cu biserici de lemn din secolul al XIX-lea și un monument al revoluționarilor de la 1848.",
+      description: [
+        "Vălișoara este o comună din județul Hunedoara, formată din 4 sate: Vălișoara, Dealu Mare, Săliștioara și Stoieneasa.",
+        "Printre obiectivele din comună se numără bisericile de lemn din Săliștioara (1830) și Dealu Mare (1868) și monumentul revoluționarilor de la 1848 din Vălișoara (monument istoric)."
+      ],
+      facts: [
+        { label: "Populație", value: "1.018 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Vălișoara, Dealu Mare, Săliștioara, Stoieneasa" },
+        { label: "Repere", value: "bisericile de lemn din Săliștioara (1830) și Dealu Mare (1868) și monumentul revoluționarilor de la 1848 din Vălișoara (monument istoric)" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Metaliferi Mountains, with 19th-century wooden churches and a monument to the 1848 revolutionaries.",
+      description: [
+        "Vălișoara is a commune in Hunedoara County, made up of 4 villages: Vălișoara, Dealu Mare, Săliștioara and Stoieneasa.",
+        "Sights in the commune include the wooden churches of Săliștioara (1830) and Dealu Mare (1868) and the monument to the 1848 revolutionaries in Vălișoara (a listed monument)."
+      ],
+      facts: [
+        { label: "Population", value: "1,018 (2021 census)" },
+        { label: "Villages", value: "Vălișoara, Dealu Mare, Săliștioara, Stoieneasa" },
+        { label: "Landmarks", value: "the wooden churches of Săliștioara (1830) and Dealu Mare (1868) and the monument to the 1848 revolutionaries in Vălișoara (a listed monument)" }
+      ]
+    }
+  },
+  {
+    id: "martinesti",
+    name: "Mărtinești",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.8167,23.1333],
+    hasReviews: false,
+    relatedAreas: ["Mărtinești"],
+    relatedIds: [],
+    images: ["images/martinesti.jpg"],
+    photoCredit: { author: "Oguszt", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Martinesd.jpg" },
+    ro: {
+      tagline: "Comună rurală de lângă Orăștie, cu biserici ortodoxe și greco-catolice în satele ei.",
+      description: [
+        "Mărtinești este o comună din județul Hunedoara, formată din 7 sate: Mărtinești, Dâncu Mare, Dâncu Mic, Jeledinți, Măgura, Tămășasa și Turmaș.",
+        "Printre obiectivele din comună se numără bisericile din Mărtinești, Dâncu Mare și Turmaș."
+      ],
+      facts: [
+        { label: "Populație", value: "939 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Mărtinești, Dâncu Mare, Dâncu Mic, Jeledinți, Măgura, Tămășasa, Turmaș" },
+        { label: "Repere", value: "bisericile din Mărtinești, Dâncu Mare și Turmaș" }
+      ]
+    },
+    en: {
+      tagline: "A rural commune near Orăștie, with Orthodox and Greek-Catholic churches in its villages.",
+      description: [
+        "Mărtinești is a commune in Hunedoara County, made up of 7 villages: Mărtinești, Dâncu Mare, Dâncu Mic, Jeledinți, Măgura, Tămășasa and Turmaș.",
+        "Sights in the commune include the churches in Mărtinești, Dâncu Mare and Turmaș."
+      ],
+      facts: [
+        { label: "Population", value: "939 (2021 census)" },
+        { label: "Villages", value: "Mărtinești, Dâncu Mare, Dâncu Mic, Jeledinți, Măgura, Tămășasa, Turmaș" },
+        { label: "Landmarks", value: "the churches in Mărtinești, Dâncu Mare and Turmaș" }
+      ]
+    }
+  },
+  {
+    id: "tomesti",
+    name: "Tomești",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Zarandului",
+    coords: [46.2167,22.65],
+    hasReviews: false,
+    relatedAreas: ["Tomești"],
+    relatedIds: [],
+    images: ["images/tomesti.jpg"],
+    photoCredit: { author: "Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 2.5", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Tiulesti_1.jpg" },
+    ro: {
+      tagline: "Comună din nord-vestul județului, în Țara Zarandului, cu biserici de lemn și o gospodărie țărănească monument.",
+      description: [
+        "Tomești este o comună din județul Hunedoara, formată din 8 sate: Tomești, Dobroț, Leauț, Livada, Obârșa, Șteia, Tiulești și Valea Mare de Criș.",
+        "Printre obiectivele din comună se numără bisericile de lemn din Șteia (1823) și Tiulești (1784), bisericile monument din Dobroț, Obârșa și Leauț și gospodăria țărănească Herbea din Tomești (sec. XIX). În zonă se află Munții Bihor (sit de importanță comunitară)."
+      ],
+      facts: [
+        { label: "Populație", value: "912 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Tomești, Dobroț, Leauț, Livada, Obârșa, Șteia, Tiulești, Valea Mare de Criș" },
+        { label: "Repere", value: "bisericile de lemn din Șteia (1823) și Tiulești (1784), bisericile monument din Dobroț, Obârșa și Leauț și gospodăria țărănească Herbea din Tomești (sec. XIX)" },
+        { label: "Natură și arii protejate", value: "Munții Bihor (sit de importanță comunitară)" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the north-west of the county, in Zarand Country, with wooden churches and a listed peasant homestead.",
+      description: [
+        "Tomești is a commune in Hunedoara County, made up of 8 villages: Tomești, Dobroț, Leauț, Livada, Obârșa, Șteia, Tiulești and Valea Mare de Criș.",
+        "Sights in the commune include the wooden churches of Șteia (1823) and Tiulești (1784), the listed churches in Dobroț, Obârșa and Leauț and the Herbea peasant homestead in Tomești (19th c.). The area also has the Bihor Mountains (Site of Community Importance)."
+      ],
+      facts: [
+        { label: "Population", value: "912 (2021 census)" },
+        { label: "Villages", value: "Tomești, Dobroț, Leauț, Livada, Obârșa, Șteia, Tiulești, Valea Mare de Criș" },
+        { label: "Landmarks", value: "the wooden churches of Șteia (1823) and Tiulești (1784), the listed churches in Dobroț, Obârșa and Leauț and the Herbea peasant homestead in Tomești (19th c.)" },
+        { label: "Nature and protected areas", value: "the Bihor Mountains (Site of Community Importance)" }
+      ]
+    }
+  },
+  {
+    id: "blajeni",
+    name: "Blăjeni",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [46.2122,22.9058],
+    hasReviews: false,
+    relatedAreas: ["Blăjeni"],
+    relatedIds: [],
+    images: ["images/blajeni.jpg"],
+    photoCredit: { author: "The original uploader was Țetcu Mircea Rareș at Romanian Wikipedia.", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:SalatrucObarsaHD.JPG" },
+    ro: {
+      tagline: "Comună din Munții Metaliferi, cu Cascada Pișoaia, rezervația Băi-Groșuri și biserici de lemn din secolul al XIX-lea.",
+      description: [
+        "Blăjeni este o comună din județul Hunedoara, formată din 8 sate: Blăjeni, Blăjeni-Vulcan, Criș, Dragu-Brad, Groșuri, Plai, Reț și Sălătruc.",
+        "Printre obiectivele din comună se numără bisericile de lemn din Sălătruc (1830) și Groșuri (1855). În zonă se află Cascada Pișoaia, rezervația Băi-Groșuri, rezervația Muntele Vâlcan și situl Natura 2000 Munții Metaliferi."
+      ],
+      facts: [
+        { label: "Populație", value: "883 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Blăjeni, Blăjeni-Vulcan, Criș, Dragu-Brad, Groșuri, Plai, Reț, Sălătruc" },
+        { label: "Repere", value: "bisericile de lemn din Sălătruc (1830) și Groșuri (1855)" },
+        { label: "Natură și arii protejate", value: "Cascada Pișoaia, rezervația Băi-Groșuri, rezervația Muntele Vâlcan și situl Natura 2000 Munții Metaliferi" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Metaliferi Mountains, with the Pișoaia Waterfall, the Băi-Groșuri reserve and 19th-century wooden churches.",
+      description: [
+        "Blăjeni is a commune in Hunedoara County, made up of 8 villages: Blăjeni, Blăjeni-Vulcan, Criș, Dragu-Brad, Groșuri, Plai, Reț and Sălătruc.",
+        "Sights in the commune include the wooden churches of Sălătruc (1830) and Groșuri (1855). The area also has the Pișoaia Waterfall, the Băi-Groșuri reserve, the Vâlcan Mountain reserve and the Natura 2000 site Metaliferi Mountains."
+      ],
+      facts: [
+        { label: "Population", value: "883 (2021 census)" },
+        { label: "Villages", value: "Blăjeni, Blăjeni-Vulcan, Criș, Dragu-Brad, Groșuri, Plai, Reț, Sălătruc" },
+        { label: "Landmarks", value: "the wooden churches of Sălătruc (1830) and Groșuri (1855)" },
+        { label: "Nature and protected areas", value: "the Pișoaia Waterfall, the Băi-Groșuri reserve, the Vâlcan Mountain reserve and the Natura 2000 site Metaliferi Mountains" }
+      ]
+    }
+  },
+  {
+    id: "general-berthelot",
+    name: "General Berthelot",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Țara Hațegului",
+    coords: [45.6,22.8833],
+    hasReviews: false,
+    relatedAreas: ["General Berthelot"],
+    relatedIds: [],
+    images: ["images/general-berthelot.jpg"],
+    photoCredit: { author: "philippe48", license: "CC0", source: "https://commons.wikimedia.org/wiki/File:Général_Berthelot_3.jpg" },
+    ro: {
+      tagline: "Comună din Țara Hațegului, numită după generalul francez Henri Mathias Berthelot, cu rezervația „Paleofauna reptiliană Tuștea”.",
+      description: [
+        "General Berthelot este o comună din județul Hunedoara, formată din 5 sate: General Berthelot, Crăguiș, Fărcădin, Livezi și Tuștea.",
+        "Printre obiectivele din comună se numără conacul „General Henri Berthelot”. În zonă se află rezervația „Paleofauna reptiliană Tuștea” (0,5 ha). Localitatea poartă numele lui Henri Mathias Berthelot."
+      ],
+      facts: [
+        { label: "Populație", value: "790 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "General Berthelot, Crăguiș, Fărcădin, Livezi, Tuștea" },
+        { label: "Repere", value: "conacul „General Henri Berthelot”" },
+        { label: "Natură și arii protejate", value: "rezervația „Paleofauna reptiliană Tuștea” (0,5 ha)" }
+      ]
+    },
+    en: {
+      tagline: "A commune in Hațeg Country, named after the French general Henri Mathias Berthelot, with the “Tuștea Reptilian Palaeofauna” reserve.",
+      description: [
+        "General Berthelot is a commune in Hunedoara County, made up of 5 villages: General Berthelot, Crăguiș, Fărcădin, Livezi and Tuștea.",
+        "Sights in the commune include the “General Henri Berthelot” manor house. The area also has the “Tuștea Reptilian Palaeofauna” reserve (0.5 ha). The commune is named after Henri Mathias Berthelot."
+      ],
+      facts: [
+        { label: "Population", value: "790 (2021 census)" },
+        { label: "Villages", value: "General Berthelot, Crăguiș, Fărcădin, Livezi, Tuștea" },
+        { label: "Landmarks", value: "the “General Henri Berthelot” manor house" },
+        { label: "Nature and protected areas", value: "the “Tuștea Reptilian Palaeofauna” reserve (0.5 ha)" }
+      ]
+    }
+  },
+  {
+    id: "balsa",
+    name: "Balșa",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [46.0419,23.0558],
+    hasReviews: false,
+    relatedAreas: ["Balșa"],
+    relatedIds: [],
+    images: ["images/balsa.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 ro", source: "https://commons.wikimedia.org/wiki/File:Biserica_de_lemn_din_Valisoara_(7).jpg" },
+    ro: {
+      tagline: "Comună din Munții Metaliferi, cu trei rezervații de chei (Mada, Ardeu și Glod) și fortificația „Peștera Zidită”.",
+      description: [
+        "Balșa este o comună din județul Hunedoara, formată din 14 sate: Balșa, Almașu Mic de Munte, Ardeu, Bunești, Galbina, Mada, Oprișești, Poiana, Poienița, Roșia, Stăuini, Techereu, Vălișoara și Voia.",
+        "Printre obiectivele din comună se numără biserica de lemn din Almașu Mic de Munte (sec. XVII, monument istoric), bisericile din Vălișoara (sec. XVIII) și Bunești (1872) și fortificația „Peștera Zidită” (sec. XVII). În zonă se află rezervațiile Cheile Madei (10 ha), Cheile Ardeului și Cheile Glodului (Strâmtura), situl Natura 2000 Cheile Glodului, Cibului și Măzii."
+      ],
+      facts: [
+        { label: "Populație", value: "753 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Balșa, Almașu Mic de Munte, Ardeu, Bunești, Galbina, Mada, Oprișești, Poiana, Poienița, Roșia, Stăuini, Techereu, Vălișoara, Voia" },
+        { label: "Repere", value: "biserica de lemn din Almașu Mic de Munte (sec. XVII, monument istoric), bisericile din Vălișoara (sec. XVIII) și Bunești (1872) și fortificația „Peștera Zidită” (sec. XVII)" },
+        { label: "Natură și arii protejate", value: "rezervațiile Cheile Madei (10 ha), Cheile Ardeului și Cheile Glodului (Strâmtura), situl Natura 2000 Cheile Glodului, Cibului și Măzii" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Metaliferi Mountains, with three gorge reserves (Mada, Ardeu and Glod) and the “Walled Cave” fortification.",
+      description: [
+        "Balșa is a commune in Hunedoara County, made up of 14 villages: Balșa, Almașu Mic de Munte, Ardeu, Bunești, Galbina, Mada, Oprișești, Poiana, Poienița, Roșia, Stăuini, Techereu, Vălișoara and Voia.",
+        "Sights in the commune include the wooden church in Almașu Mic de Munte (17th c., a listed monument), the churches of Vălișoara (18th c.) and Bunești (1872) and the “Walled Cave” fortification (17th c.). The area also has the Mada Gorge (10 ha), Ardeu Gorge and Glod Gorge (Strâmtura) reserves, and the Natura 2000 site Glod, Cib and Măzii Gorges."
+      ],
+      facts: [
+        { label: "Population", value: "753 (2021 census)" },
+        { label: "Villages", value: "Balșa, Almașu Mic de Munte, Ardeu, Bunești, Galbina, Mada, Oprișești, Poiana, Poienița, Roșia, Stăuini, Techereu, Vălișoara, Voia" },
+        { label: "Landmarks", value: "the wooden church in Almașu Mic de Munte (17th c., a listed monument), the churches of Vălișoara (18th c.) and Bunești (1872) and the “Walled Cave” fortification (17th c.)" },
+        { label: "Nature and protected areas", value: "the Mada Gorge (10 ha), Ardeu Gorge and Glod Gorge (Strâmtura) reserves, and the Natura 2000 site Glod, Cib and Măzii Gorges" }
+      ]
+    }
+  },
+  {
+    id: "vorta",
+    name: "Vorța",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Munții Metaliferi",
+    coords: [46.0164,22.6747],
+    hasReviews: false,
+    relatedAreas: ["Vorța"],
+    relatedIds: [],
+    images: ["images/vorta.jpg"],
+    photoCredit: { author: "Florin Dobrei, uploaded by Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Luncsoara_wooden_church_1.jpg" },
+    ro: {
+      tagline: "Comună din Munții Metaliferi, cu patru biserici de lemn din secolele XVIII–XX.",
+      description: [
+        "Vorța este o comună din județul Hunedoara, formată din 7 sate: Vorța, Certeju de Jos, Coaja, Dumești, Luncșoara, Valea Poienii și Visca.",
+        "Printre obiectivele din comună se numără bisericile de lemn din Luncșoara (sec. XVIII), Visca (1764), Vorța (sec. XIX) și Valea Poienii (1920). În zonă se află Munții Metaliferi (sit de importanță comunitară)."
+      ],
+      facts: [
+        { label: "Populație", value: "748 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Vorța, Certeju de Jos, Coaja, Dumești, Luncșoara, Valea Poienii, Visca" },
+        { label: "Repere", value: "bisericile de lemn din Luncșoara (sec. XVIII), Visca (1764), Vorța (sec. XIX) și Valea Poienii (1920)" },
+        { label: "Natură și arii protejate", value: "Munții Metaliferi (sit de importanță comunitară)" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Metaliferi Mountains, with four wooden churches from the 18th–20th centuries.",
+      description: [
+        "Vorța is a commune in Hunedoara County, made up of 7 villages: Vorța, Certeju de Jos, Coaja, Dumești, Luncșoara, Valea Poienii and Visca.",
+        "Sights in the commune include the wooden churches of Luncșoara (18th c.), Visca (1764), Vorța (19th c.) and Valea Poienii (1920). The area also has the Metaliferi Mountains (Site of Community Importance)."
+      ],
+      facts: [
+        { label: "Population", value: "748 (2021 census)" },
+        { label: "Villages", value: "Vorța, Certeju de Jos, Coaja, Dumești, Luncșoara, Valea Poienii, Visca" },
+        { label: "Landmarks", value: "the wooden churches of Luncșoara (18th c.), Visca (1764), Vorța (19th c.) and Valea Poienii (1920)" },
+        { label: "Nature and protected areas", value: "the Metaliferi Mountains (Site of Community Importance)" }
+      ]
+    }
+  },
+  {
+    id: "burjuc",
+    name: "Burjuc",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.9697,22.4916],
+    hasReviews: false,
+    relatedAreas: ["Burjuc"],
+    relatedIds: [],
+    images: ["images/burjuc.jpg"],
+    photoCredit: { author: "Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 2.5", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Bradatel_12.jpg" },
+    ro: {
+      tagline: "Comună de pe Defileul Mureșului, în vestul județului, cu patru biserici de lemn din secolele XVIII–XIX.",
+      description: [
+        "Burjuc este o comună din județul Hunedoara, formată din 6 sate: Burjuc, Brădățel, Glodghilești, Petrești, Tătărăști și Tisa.",
+        "Printre obiectivele din comună se numără bisericile de lemn din Brădățel (sec. XIX, monument istoric), Tisa (sec. XVIII, monument istoric), Glodghilești și Tătărăști (sec. XVIII). În zonă se află situl Natura 2000 Defileul Mureșului."
+      ],
+      facts: [
+        { label: "Populație", value: "734 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Burjuc, Brădățel, Glodghilești, Petrești, Tătărăști, Tisa" },
+        { label: "Repere", value: "bisericile de lemn din Brădățel (sec. XIX, monument istoric), Tisa (sec. XVIII, monument istoric), Glodghilești și Tătărăști (sec. XVIII)" },
+        { label: "Natură și arii protejate", value: "situl Natura 2000 Defileul Mureșului" }
+      ]
+    },
+    en: {
+      tagline: "A commune on the Mureș Gorge, in the west of the county, with four wooden churches from the 18th–19th centuries.",
+      description: [
+        "Burjuc is a commune in Hunedoara County, made up of 6 villages: Burjuc, Brădățel, Glodghilești, Petrești, Tătărăști and Tisa.",
+        "Sights in the commune include the wooden churches of Brădățel (19th c., a listed monument), Tisa (18th c., a listed monument), Glodghilești and Tătărăști (18th c.). The area also has the Natura 2000 site Mureș Gorge."
+      ],
+      facts: [
+        { label: "Population", value: "734 (2021 census)" },
+        { label: "Villages", value: "Burjuc, Brădățel, Glodghilești, Petrești, Tătărăști, Tisa" },
+        { label: "Landmarks", value: "the wooden churches of Brădățel (19th c., a listed monument), Tisa (18th c., a listed monument), Glodghilești and Tătărăști (18th c.)" },
+        { label: "Nature and protected areas", value: "the Natura 2000 site Mureș Gorge" }
+      ]
+    }
+  },
+  {
+    id: "carjiti",
+    name: "Cârjiți",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Culoarul Mureșului",
+    coords: [45.85,22.8333],
+    hasReviews: false,
+    relatedAreas: ["Cârjiți"],
+    relatedIds: [],
+    images: ["images/carjiti.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 3.0 ro", source: "https://commons.wikimedia.org/wiki/File:Biserica_de_lemn_din_Cherghes_(1).jpg" },
+    ro: {
+      tagline: "Comună de lângă Deva, cu biserica de lemn din Chergheș (sec. XVII) și Pădurea Bejan.",
+      description: [
+        "Cârjiți este o comună din județul Hunedoara, formată din 5 sate: Cârjiți, Almașu Sec, Chergheș, Cozia și Popești.",
+        "Printre obiectivele din comună se numără biserica de lemn „Cuvioasa Paraschiva” din Chergheș (sec. XVII, monument istoric). În zonă se află situl de importanță comunitară „Pădurea Bejan”."
+      ],
+      facts: [
+        { label: "Populație", value: "686 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Cârjiți, Almașu Sec, Chergheș, Cozia, Popești" },
+        { label: "Repere", value: "biserica de lemn „Cuvioasa Paraschiva” din Chergheș (sec. XVII, monument istoric)" },
+        { label: "Natură și arii protejate", value: "situl de importanță comunitară „Pădurea Bejan”" }
+      ]
+    },
+    en: {
+      tagline: "A commune near Deva, with the wooden church in Chergheș (17th c.) and Bejan Forest.",
+      description: [
+        "Cârjiți is a commune in Hunedoara County, made up of 5 villages: Cârjiți, Almașu Sec, Chergheș, Cozia and Popești.",
+        "Sights in the commune include the wooden church of Saint Paraskeva in Chergheș (17th c., a listed monument). The area also has the Site of Community Importance “Bejan Forest”."
+      ],
+      facts: [
+        { label: "Population", value: "686 (2021 census)" },
+        { label: "Villages", value: "Cârjiți, Almașu Sec, Chergheș, Cozia, Popești" },
+        { label: "Landmarks", value: "the wooden church of Saint Paraskeva in Chergheș (17th c., a listed monument)" },
+        { label: "Nature and protected areas", value: "the Site of Community Importance “Bejan Forest”" }
+      ]
+    }
+  },
+  {
+    id: "toplita",
+    name: "Toplița",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Poiana Ruscă",
+    coords: [45.6833,22.7833],
+    hasReviews: false,
+    relatedAreas: ["Toplița"],
+    relatedIds: [],
+    images: ["images/placeholder.svg"],
+    ro: {
+      tagline: "Comună din Poiana Ruscă, cu ruinele furnalului de la Toplița, biserica de lemn din Vălari și Cheile Cernei.",
+      description: [
+        "Toplița este o comună din județul Hunedoara, formată din 8 sate: Toplița, Curpenii Silvașului, Dăbâca, Dealu Mic, Goleș, Hășdău, Mosoru și Vălari.",
+        "Printre obiectivele din comună se numără biserica de lemn „Sfântul Nicolae” din Vălari (sec. XVIII, monument istoric) și ruinele furnalului de la Toplița. În zonă se află situl Natura 2000 Cheile Cernei. Satul Dealu Mic a fost strămutat pe culmile din apropiere la construirea Barajului Cinciș."
+      ],
+      facts: [
+        { label: "Populație", value: "624 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Toplița, Curpenii Silvașului, Dăbâca, Dealu Mic, Goleș, Hășdău, Mosoru, Vălari" },
+        { label: "Repere", value: "biserica de lemn „Sfântul Nicolae” din Vălari (sec. XVIII, monument istoric) și ruinele furnalului de la Toplița" },
+        { label: "Natură și arii protejate", value: "situl Natura 2000 Cheile Cernei" }
+      ]
+    },
+    en: {
+      tagline: "A commune in the Poiana Ruscă range, with the ruins of the Toplița blast furnace, the wooden church in Vălari and the Cerna Gorge.",
+      description: [
+        "Toplița is a commune in Hunedoara County, made up of 8 villages: Toplița, Curpenii Silvașului, Dăbâca, Dealu Mic, Goleș, Hășdău, Mosoru and Vălari.",
+        "Sights in the commune include the wooden church of Saint Nicholas in Vălari (18th c., a listed monument) and the ruins of the Toplița blast furnace. The area also has the Natura 2000 site Cerna Gorge. The village of Dealu Mic was moved to the nearby hilltops when the Cinciș Dam was built."
+      ],
+      facts: [
+        { label: "Population", value: "624 (2021 census)" },
+        { label: "Villages", value: "Toplița, Curpenii Silvașului, Dăbâca, Dealu Mic, Goleș, Hășdău, Mosoru, Vălari" },
+        { label: "Landmarks", value: "the wooden church of Saint Nicholas in Vălari (18th c., a listed monument) and the ruins of the Toplița blast furnace" },
+        { label: "Nature and protected areas", value: "the Natura 2000 site Cerna Gorge" }
+      ]
+    }
+  },
+  {
+    id: "cerbal",
+    name: "Cerbăl",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Poiana Ruscă",
+    coords: [45.7814,22.7158],
+    hasReviews: false,
+    relatedAreas: ["Cerbăl"],
+    relatedIds: [],
+    images: ["images/cerbal.jpg"],
+    photoCredit: { author: "Dobrei Florin, uploaded by Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Feregi_1.jpg" },
+    ro: {
+      tagline: "Comună de munte din Poiana Ruscă, în Ținutul Pădurenilor, cu patru biserici de lemn din secolele XVII–XIX.",
+      description: [
+        "Cerbăl este o comună din județul Hunedoara, formată din 8 sate: Cerbăl, Arănieș, Feregi, Merișoru de Munte, Poiana Răchițelii, Poienița Tomii, Socet și Ulm.",
+        "Printre obiectivele din comună se numără bisericile de lemn din Feregi (sec. XVII), Merișoru de Munte (sec. XVII), Socet (1793) și Poienița Tomii (1805). În zonă se află rezervația „Codrii seculari pe Valea Dobrișoarei și Prisloapei” și situl Natura 2000 Ținutul Pădurenilor."
+      ],
+      facts: [
+        { label: "Populație", value: "403 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Cerbăl, Arănieș, Feregi, Merișoru de Munte, Poiana Răchițelii, Poienița Tomii, Socet, Ulm" },
+        { label: "Repere", value: "bisericile de lemn din Feregi (sec. XVII), Merișoru de Munte (sec. XVII), Socet (1793) și Poienița Tomii (1805)" },
+        { label: "Natură și arii protejate", value: "rezervația „Codrii seculari pe Valea Dobrișoarei și Prisloapei” și situl Natura 2000 Ținutul Pădurenilor" }
+      ]
+    },
+    en: {
+      tagline: "A mountain commune in the Poiana Ruscă range, in Pădureni Land, with four wooden churches from the 17th–19th centuries.",
+      description: [
+        "Cerbăl is a commune in Hunedoara County, made up of 8 villages: Cerbăl, Arănieș, Feregi, Merișoru de Munte, Poiana Răchițelii, Poienița Tomii, Socet and Ulm.",
+        "Sights in the commune include the wooden churches of Feregi (17th c.), Merișoru de Munte (17th c.), Socet (1793) and Poienița Tomii (1805). The area also has the “Old-growth forests on the Dobrișoara and Prislop valleys” reserve and the Natura 2000 site Pădureni Land."
+      ],
+      facts: [
+        { label: "Population", value: "403 (2021 census)" },
+        { label: "Villages", value: "Cerbăl, Arănieș, Feregi, Merișoru de Munte, Poiana Răchițelii, Poienița Tomii, Socet, Ulm" },
+        { label: "Landmarks", value: "the wooden churches of Feregi (17th c.), Merișoru de Munte (17th c.), Socet (1793) and Poienița Tomii (1805)" },
+        { label: "Nature and protected areas", value: "the “Old-growth forests on the Dobrișoara and Prislop valleys” reserve and the Natura 2000 site Pădureni Land" }
+      ]
+    }
+  },
+  {
+    id: "lelese",
+    name: "Lelese",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Poiana Ruscă",
+    coords: [45.7328,22.697],
+    hasReviews: false,
+    relatedAreas: ["Lelese"],
+    relatedIds: [],
+    images: ["images/lelese.jpg"],
+    photoCredit: { author: "Dobrei Florin, uploaded by Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Runcu_Mare_1.jpg" },
+    ro: {
+      tagline: "Comună mică din Poiana Ruscă, în Ținutul Pădurenilor, cu biserica de lemn din Runcu Mare (1887).",
+      description: [
+        "Lelese este o comună din județul Hunedoara, formată din 4 sate: Lelese, Cerișor, Runcu Mare și Sohodol.",
+        "Printre obiectivele din comună se numără biserica de lemn „Cuvioasa Paraschiva” din Runcu Mare (1887) și Valea Runcului."
+      ],
+      facts: [
+        { label: "Populație", value: "339 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Lelese, Cerișor, Runcu Mare, Sohodol" },
+        { label: "Repere", value: "biserica de lemn „Cuvioasa Paraschiva” din Runcu Mare (1887) și Valea Runcului" }
+      ]
+    },
+    en: {
+      tagline: "A small commune in the Poiana Ruscă range, in Pădureni Land, with the wooden church in Runcu Mare (1887).",
+      description: [
+        "Lelese is a commune in Hunedoara County, made up of 4 villages: Lelese, Cerișor, Runcu Mare and Sohodol.",
+        "Sights in the commune include the wooden church of Saint Paraskeva in Runcu Mare (1887) and the Runcu Valley."
+      ],
+      facts: [
+        { label: "Population", value: "339 (2021 census)" },
+        { label: "Villages", value: "Lelese, Cerișor, Runcu Mare, Sohodol" },
+        { label: "Landmarks", value: "the wooden church of Saint Paraskeva in Runcu Mare (1887) and the Runcu Valley" }
+      ]
+    }
+  },
+  {
+    id: "bunila",
+    name: "Bunila",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Poiana Ruscă",
+    coords: [45.6936,22.6714],
+    hasReviews: false,
+    relatedAreas: ["Bunila"],
+    relatedIds: [],
+    images: ["images/bunila.jpg"],
+    photoCredit: { author: "Florin Dobrei, uploaded by Utilizator:Țetcu Mircea Rareș at ro.wikipedia", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Alun_2.jpg" },
+    ro: {
+      tagline: "Comună de munte din Poiana Ruscă, lângă Cheile Cernei, cu o biserică de lemn din secolul al XVII-lea la Alun.",
+      description: [
+        "Bunila este o comună din județul Hunedoara, formată din 5 sate: Bunila, Alun, Cernișoara Florese, Poienița Voinii și Vadu Dobrii.",
+        "Printre obiectivele din comună se numără biserica de lemn „Adormirea Maicii Domnului” din Alun (sec. XVII, monument istoric) și biserica de lemn din Bunila (1903). În zonă se află rezervația „Codrii seculari pe Valea Dobrișoarei și Prisloapei” și siturile Natura 2000 Ținutul Pădurenilor și Cheile Cernei."
+      ],
+      facts: [
+        { label: "Populație", value: "247 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Bunila, Alun, Cernișoara Florese, Poienița Voinii, Vadu Dobrii" },
+        { label: "Repere", value: "biserica de lemn „Adormirea Maicii Domnului” din Alun (sec. XVII, monument istoric) și biserica de lemn din Bunila (1903)" },
+        { label: "Natură și arii protejate", value: "rezervația „Codrii seculari pe Valea Dobrișoarei și Prisloapei” și siturile Natura 2000 Ținutul Pădurenilor și Cheile Cernei" }
+      ]
+    },
+    en: {
+      tagline: "A mountain commune in the Poiana Ruscă range, near the Cerna Gorge, with a 17th-century wooden church at Alun.",
+      description: [
+        "Bunila is a commune in Hunedoara County, made up of 5 villages: Bunila, Alun, Cernișoara Florese, Poienița Voinii and Vadu Dobrii.",
+        "Sights in the commune include the wooden church of the Dormition in Alun (17th c., a listed monument) and the wooden church in Bunila (1903). The area also has the “Old-growth forests on the Dobrișoara and Prislop valleys” reserve and the Natura 2000 sites Pădureni Land and Cerna Gorge."
+      ],
+      facts: [
+        { label: "Population", value: "247 (2021 census)" },
+        { label: "Villages", value: "Bunila, Alun, Cernișoara Florese, Poienița Voinii, Vadu Dobrii" },
+        { label: "Landmarks", value: "the wooden church of the Dormition in Alun (17th c., a listed monument) and the wooden church in Bunila (1903)" },
+        { label: "Nature and protected areas", value: "the “Old-growth forests on the Dobrișoara and Prislop valleys” reserve and the Natura 2000 sites Pădureni Land and Cerna Gorge" }
+      ]
+    }
+  },
+  {
+    id: "batrana",
+    name: "Bătrâna",
+    category: { ro: "Comună", en: "Commune" },
+    area: "Poiana Ruscă",
+    coords: [45.7833,22.5833],
+    hasReviews: false,
+    relatedAreas: ["Bătrâna"],
+    relatedIds: [],
+    images: ["images/batrana.jpg"],
+    photoCredit: { author: "Mircea Rareș Țetcu", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:BatranaHD.jpg" },
+    ro: {
+      tagline: "Cea mai mică comună din județ, în Poiana Ruscă, cu biserica de lemn din 1780 și rezervația „Codrii seculari”.",
+      description: [
+        "Bătrâna este o comună din județul Hunedoara, formată din 4 sate: Bătrâna, Fața Roșie, Piatra și Răchițaua.",
+        "Printre obiectivele din comună se numără biserica de lemn „Cuvioasa Paraschiva” (1780). În zonă se află rezervația naturală „Codrii seculari” (139,3 ha) și situl Natura 2000 Ținutul Pădurenilor. Prima atestare a localității Bătrâna este din 1750."
+      ],
+      facts: [
+        { label: "Populație", value: "88 locuitori (recensământ 2021)" },
+        { label: "Sate", value: "Bătrâna, Fața Roșie, Piatra, Răchițaua" },
+        { label: "Repere", value: "biserica de lemn „Cuvioasa Paraschiva” (1780)" },
+        { label: "Natură și arii protejate", value: "rezervația naturală „Codrii seculari” (139,3 ha) și situl Natura 2000 Ținutul Pădurenilor" }
+      ]
+    },
+    en: {
+      tagline: "The smallest commune in the county, in the Poiana Ruscă range, with an 1780 wooden church and the “Old-growth forests” reserve.",
+      description: [
+        "Bătrâna is a commune in Hunedoara County, made up of 4 villages: Bătrâna, Fața Roșie, Piatra and Răchițaua.",
+        "Sights in the commune include the wooden church of Saint Paraskeva (1780). The area also has the “Old-growth forests” nature reserve (139.3 ha) and the Natura 2000 site Pădureni Land. The first record of Bătrâna dates from 1750."
+      ],
+      facts: [
+        { label: "Population", value: "88 (2021 census)" },
+        { label: "Villages", value: "Bătrâna, Fața Roșie, Piatra, Răchițaua" },
+        { label: "Landmarks", value: "the wooden church of Saint Paraskeva (1780)" },
+        { label: "Nature and protected areas", value: "the “Old-growth forests” nature reserve (139.3 ha) and the Natura 2000 site Pădureni Land" }
+      ]
+    }
   }
 ];
 
