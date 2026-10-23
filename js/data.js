@@ -5830,6 +5830,119 @@ window.SITE_TOWNS = [
 
 window.SITE_NEWS = [
   {
+    id: "sunetul-formelor-deva-2026",
+    name: "„Sunetul formelor”: spectacol multimedia „Brâncuși 150” la Deva, cu intrare liberă",
+    category: { ro: "Concert", en: "Concert" },
+    area: "Deva",
+    date: "2026-10-24",
+    hasReviews: false,
+    images: ["images/deva-piata-unirii.jpg"],
+    photoCredit: { author: "Țetcu Mircea Rareș", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Deva_Piata_Unirii_(8).jpg" },
+    ro: {
+      tagline: "Sâmbătă, 24 octombrie 2026, ora 19:00, la Teatrul de Artă Deva: violonista Diana Jipa și pianistul Ștefan Doniga, într-un spectacol care îmbină muzica live cu imagini filmate în muzee românești.",
+      description: [
+        "Proiectul cultural „Cadențe clasice la Deva” aduce pe scena Teatrului de Artă spectacolul multimedia „Sunetul formelor”, prezentat sub tema „Brâncuși 150”. Șase piese audiovizuale, filmate în muzee și colecții de artă din România, alternează cu momente de muzică live, iar publicul se mută între scenă și imaginile proiectate. Interpreții sunt violonista Diana Jipa și pianistul Ștefan Doniga.",
+        "Accesul este gratuit, dar locurile sunt limitate și se rezervă prin alegerea unui loc pe planul sălii. Organizator: Asociația Dobondi Art, cu cofinanțare de la Municipiul Deva și Consiliul Local."
+      ],
+      facts: [
+        { label: "Dată", value: "sâmbătă, 24 octombrie 2026, ora 19:00" },
+        { label: "Loc", value: "Teatrul de Artă Deva" },
+        { label: "Acces", value: "intrare liberă, cu rezervarea locului; locuri limitate" },
+        { label: "Organizator", value: "Asociația Dobondi Art, în proiectul „Cadențe clasice la Deva”" }
+      ]
+    },
+    en: {
+      name: "\"Sunetul formelor\": a \"Brâncuși 150\" multimedia show in Deva, free entry",
+      tagline: "Saturday, 24 October 2026, 19:00, at the Deva Art Theatre: violinist Diana Jipa and pianist Ștefan Doniga in a show that blends live music with images filmed in Romanian museums.",
+      description: [
+        "The cultural project \"Cadențe clasice la Deva\" brings the multimedia show \"Sunetul formelor\" to the stage of the Deva Art Theatre, presented under the \"Brâncuși 150\" theme. Six audiovisual pieces, filmed in museums and art collections across Romania, alternate with live music, and the audience moves between the stage and the projected images. The performers are violinist Diana Jipa and pianist Ștefan Doniga.",
+        "Entry is free, but seats are limited and must be reserved by choosing a seat on the hall plan. Organiser: Dobondi Art Association, co-financed by Deva Municipality and the Local Council."
+      ],
+      facts: [
+        { label: "Date", value: "Saturday, 24 October 2026, 19:00" },
+        { label: "Location", value: "Deva Art Theatre" },
+        { label: "Entry", value: "free, with seat reservation; limited seating" },
+        { label: "Organiser", value: "Dobondi Art Association, within the \"Cadențe clasice la Deva\" project" }
+      ]
+    }
+  },
+  {
+    id: "don-quijote-balet-deva-2026",
+    name: "Baletul „Don Quijote”, în turneu național, la Teatrul de Artă din Deva",
+    category: { ro: "Spectacol", en: "Performance" },
+    area: "Deva",
+    date: "2026-11-14",
+    hasReviews: false,
+    images: ["images/deva-cetate.jpg"],
+    photoCredit: { author: "Bogdan.onis", license: "CC BY-SA 3.0 RO", source: "https://commons.wikimedia.org/wiki/File:Cetatea_Deva.jpg" },
+    ro: {
+      tagline: "Sâmbătă, 14 noiembrie 2026, ora 19:00, la Teatrul de Artă Deva: producție de balet clasic Omnia Ballet Production, în regia coregrafică a lui Valentin Barteș.",
+      description: [
+        "Turneul național de balet „Don Quijote” ajunge la Deva sâmbătă, 14 noiembrie 2026. Spectacolul, inspirat din romanul lui Cervantes, urmărește povestea îndrăgostiților Kitri și Basil într-un ritm alert, cu momente spectaculoase și dans virtuoz. Producția este semnată de Omnia Ballet Production, împreună cu compania italiană „Messapica”, iar coregrafia îi aparține lui Valentin Barteș.",
+        "Ca soliști invitați apar Gustavo Ferreira și Cecilia Basseto, din Brazilia, solişti ai Operei Naționale Române din Timișoara. Organizatorii îl recomandă publicului de toate vârstele. Biletele se vând prin ticketstore.ro."
+      ],
+      facts: [
+        { label: "Dată", value: "sâmbătă, 14 noiembrie 2026, ora 19:00" },
+        { label: "Loc", value: "Teatrul de Artă Deva" },
+        { label: "Producție", value: "Omnia Ballet Production, cu compania „Messapica” (Italia)" },
+        { label: "Coregrafie", value: "Valentin Barteș" },
+        { label: "Bilete", value: "ticketstore.ro" }
+      ]
+    },
+    en: {
+      name: "\"Don Quijote\" ballet on national tour at the Deva Art Theatre",
+      tagline: "Saturday, 14 November 2026, 19:00, at the Deva Art Theatre: a classical ballet production by Omnia Ballet Production, choreographed by Valentin Barteș.",
+      description: [
+        "The \"Don Quijote\" national ballet tour reaches Deva on Saturday, 14 November 2026. Inspired by Cervantes's novel, the show follows the lovers Kitri and Basil at a lively pace, with spectacular moments and virtuoso dance. The production is by Omnia Ballet Production together with the Italian company \"Messapica\", with choreography by Valentin Barteș.",
+        "Guest soloists are Gustavo Ferreira and Cecilia Basseto from Brazil, soloists of the Romanian National Opera in Timișoara. The organisers recommend it to audiences of all ages. Tickets are sold through ticketstore.ro."
+      ],
+      facts: [
+        { label: "Date", value: "Saturday, 14 November 2026, 19:00" },
+        { label: "Location", value: "Deva Art Theatre" },
+        { label: "Production", value: "Omnia Ballet Production, with the \"Messapica\" company (Italy)" },
+        { label: "Choreography", value: "Valentin Barteș" },
+        { label: "Tickets", value: "ticketstore.ro" }
+      ]
+    }
+  },
+  {
+    id: "parcul-central-hunedoara-plantari-2026",
+    name: "Parcul Central din Hunedoara se reface: 25.000 de flori și sute de copaci",
+    category: { ro: "Oraș", en: "City" },
+    area: "Hunedoara",
+    date: "2026-10-20",
+    hasReviews: false,
+    images: ["images/hunedoara-corvin-castle.jpg"],
+    photoCredit: { author: "Andrei Stroe", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:RO_HD_Corvin_castle.jpg" },
+    ro: {
+      tagline: "Rehabilitarea Parcului Central, cu finanțare europeană, intră în etapa plantărilor: peste 25.000 de plante perene, 5.000 de bulbi și sute de arbori.",
+      description: [
+        "Primăria Hunedoara continuă proiectul de reabilitare și modernizare a Parcului Central, derulat cu finanțare europeană. Potrivit primarului Dan Bobouțanu, în aceste zile se plantează peste 25.000 de flori și plante perene din 23 de sortimente, iar în perioada următoare urmează peste 5.000 de bulbi și peste 100 de arbuști.",
+        "În primăvara acestui an au fost plantați peste 130 de copaci în parc, iar o nouă acțiune vizează alți circa 130 de arbori în zonele adiacente, lângă blocurile CM și E. În total, în parc și în zonele din jur vor fi peste 250 de arbori, iar edilul spune că nu au fost tăiați copaci sănătoși. Lucrările sunt executate de o firmă specializată în amenajări peisagistice."
+      ],
+      facts: [
+        { label: "Plante perene", value: "peste 25.000, din 23 de sortimente" },
+        { label: "Urmează", value: "peste 5.000 de bulbi și peste 100 de arbuști" },
+        { label: "Arbori", value: "peste 250 în parc și zonele adiacente, în total" },
+        { label: "Beneficiar", value: "Primăria Municipiului Hunedoara (finanțare europeană)" }
+      ]
+    },
+    en: {
+      name: "Hunedoara's Central Park is being renewed: 25,000 flowers and hundreds of trees",
+      tagline: "The EU-funded rehabilitation of the Central Park has reached the planting stage: over 25,000 perennials, 5,000 bulbs and hundreds of trees.",
+      description: [
+        "Hunedoara City Hall is continuing the rehabilitation and modernisation of the Central Park, carried out with European funding. According to mayor Dan Bobouțanu, over 25,000 flowers and perennials of 23 varieties are being planted these days, with more than 5,000 bulbs and over 100 shrubs to follow.",
+        "More than 130 trees were planted in the park this spring, and a new campaign covers about another 130 trees in the adjacent areas, near the CM and E blocks of flats. In total there will be over 250 trees in the park and surrounding areas, and the mayor says no healthy trees were cut. The works are carried out by a company specialised in landscaping."
+      ],
+      facts: [
+        { label: "Perennials", value: "over 25,000, of 23 varieties" },
+        { label: "Still to come", value: "over 5,000 bulbs and over 100 shrubs" },
+        { label: "Trees", value: "over 250 in the park and adjacent areas in total" },
+        { label: "Beneficiary", value: "Hunedoara City Hall (EU funding)" }
+      ]
+    }
+  },
+  {
     id: "bella-voce-bella-musica-deva-2026",
     name: "„Bella voce, Bella musica”: Leontina Văduva și Cătălin Răducanu, recital la Deva",
     category: { ro: "Concert", en: "Concert" },

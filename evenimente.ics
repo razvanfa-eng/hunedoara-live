@@ -7,7 +7,7 @@ X-WR-CALNAME:Hunedoara Live — evenimente
 X-WR-TIMEZONE:Europe/Bucharest
 BEGIN:VEVENT
 UID:concert-stagiunea-iancu-de-hunedoara-castelul-corvinilor-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Concert de muzică sacră și de cameră la Castelul Corvinilor\, 
@@ -24,7 +24,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:festivalul-umor-liviu-oros-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261011
 SUMMARY:Festivalul Național de Umor „Liviu Oros” — ediția a XXV-a\
@@ -40,7 +40,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:festivalul-vanatorilor-castelul-nopcsa-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:Festivalul Vânătorilor revine la Castelul Nopcsa: șoimărit\, a
@@ -57,7 +57,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:violoncellissimo-deva-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:Violoncellissimo la Deva — concert în turneul aniversar „Mari
@@ -73,7 +73,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:stelele-cetatii-deva-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261026
 SUMMARY:„Stelele Cetății” Deva — festival-concurs de muzică ușoa
@@ -87,8 +87,24 @@ URL:https://gohd.ro/stiri/stelele-cetatii-deva-2026/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:sunetul-formelor-deva-2026@gohd.ro
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:„Sunetul formelor”: spectacol multimedia „Brâncuși 150” 
+ la Deva\, cu intrare liberă
+DESCRIPTION:sâmbătă\, 24 octombrie 2026\, ora 19:00 — Sâmbătă\, 24
+  octombrie 2026\, ora 19:00\, la Teatrul de Artă Deva: violonista Diana 
+ Jipa și pianistul Ștefan Doniga\, într-un spectacol care îmbină muzi
+ ca live cu imagini filmate în muzee românești. Detalii: https://gohd.r
+ o/stiri/sunetul-formelor-deva-2026/
+LOCATION:Teatrul de Artă Deva
+URL:https://gohd.ro/stiri/sunetul-formelor-deva-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:vivaldi-rocks-deva-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:Vivaldi Rocks — legendele rockului\, în variantă simfonică\, 
@@ -103,8 +119,23 @@ URL:https://gohd.ro/stiri/vivaldi-rocks-deva-2026/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:don-quijote-balet-deva-2026@gohd.ro
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Baletul „Don Quijote”\, în turneu național\, la Teatrul de A
+ rtă din Deva
+DESCRIPTION:sâmbătă\, 14 noiembrie 2026\, ora 19:00 — Sâmbătă\, 14
+  noiembrie 2026\, ora 19:00\, la Teatrul de Artă Deva: producție de bal
+ et clasic Omnia Ballet Production\, în regia coregrafică a lui Valentin
+  Barteș. Detalii: https://gohd.ro/stiri/don-quijote-balet-deva-2026/
+LOCATION:Teatrul de Artă Deva
+URL:https://gohd.ro/stiri/don-quijote-balet-deva-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:bella-voce-bella-musica-deva-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:„Bella voce\, Bella musica”: Leontina Văduva și Cătălin R
@@ -120,7 +151,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:spargatorul-de-nuci-deva-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:„Spărgătorul de nuci”\, cu Balletto Nazionale Italiano\, la 
@@ -136,7 +167,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:vioara-si-enescu-deva-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Turneul Național „Vioara și Enescu” ajunge din nou la Deva
@@ -150,7 +181,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:morosenii-va-colinda-deva-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:„Moroșenii vă colindă” — o întoarcere la Crăciunul de a
@@ -166,7 +197,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:targul-de-craciun-deva-2026@gohd.ro
-DTSTAMP:20261021T000000Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20270111
 SUMMARY:Târgul de Crăciun Deva 2026 se deschide pe 1 decembrie\, în Pia
