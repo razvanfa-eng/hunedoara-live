@@ -178,7 +178,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/trimite-poza.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/trimite-poza.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/trimite-poza.html"/>
@@ -186,7 +186,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/trimite-poza.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/trimite-poza.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/trimite-poza.html"/>
@@ -210,7 +210,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/harta.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/harta.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/harta.html"/>
@@ -218,7 +218,7 @@
   </url>
   <url>
     <loc>https://gohd.ro/en/harta.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/harta.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/harta.html"/>
@@ -3119,6 +3119,22 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/stiri/targul-de-craciun-deva-2026/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/stiri/targul-de-craciun-deva-2026/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/stiri/targul-de-craciun-deva-2026/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/afaceri/vila-castelul-maria-banpotoc/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/afaceri/vila-castelul-maria-banpotoc/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/afaceri/vila-castelul-maria-banpotoc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/afaceri/vila-castelul-maria-banpotoc/"/>
+  </url>
+  <url>
+    <loc>https://gohd.ro/en/afaceri/vila-castelul-maria-banpotoc/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://gohd.ro/afaceri/vila-castelul-maria-banpotoc/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gohd.ro/en/afaceri/vila-castelul-maria-banpotoc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gohd.ro/afaceri/vila-castelul-maria-banpotoc/"/>
   </url>
   <url>
     <loc>https://gohd.ro/afaceri/conacul-radacinilor/</loc>

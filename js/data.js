@@ -6783,6 +6783,46 @@ window.SITE_NEWS = [
 
 window.SITE_BUSINESSES = [
   {
+    id: "vila-castelul-maria-banpotoc",
+    name: "Vila Castelul Maria",
+    category: { ro: "Vilă turistică", en: "Tourist villa" },
+    area: "Hărău",
+    coords: [45.8605, 23.0128],
+    hasReviews: true,
+    season: "tot-anul",
+    images: ["images/vila-castelul-maria-banpotoc.jpg"],
+    photoCredit: { author: "Vila Castelul Maria", license: "material promoțional al afacerii", source: "https://castelulmaria.ro", sourceLabel: "castelulmaria.ro" },
+    ro: {
+      tagline: "Vilă în stil de mic castel cu turn, în satul Bănpotoc (comuna Hărău), la câțiva kilometri de Deva: grădină de 7.000 m², saună finlandeză și evenimente de familie.",
+      description: [
+        "Vila Castelul Maria se află în satul Bănpotoc, comuna Hărău, în apropiere de Deva, și este o clădire veche, construită ca un mic castel cu turn, înconjurată de o grădină mare, de circa 7.000 m², cu flori și pomi. Castelul are trei apartamente cu decor propriu (roșu, albastru și bej) și o cameră în turn, cu vedere panoramică. La câteva minute de mers, Casa Maria adaugă șapte camere cu baie proprie, dintre care patru cu balcon.",
+        "Oaspeții pot rezerva separat o sesiune în sauna finlandeză cu vedere spre grădină. Micul dejun se servește la bufet, iar cina se comandă din timp. Pentru nunți mici, mese festive, petreceri și mese de afaceri există două saloane și o terasă acoperită, pentru cel mult 40 de persoane. Ca puncte de plecare apropiate sunt Cetatea Devei, Castelul Corvinilor din Hunedoara, Parcul Dendrologic Simeria și cetățile dacice din Munții Orăștiei."
+      ],
+      facts: [
+        { label: "Locație", value: "Sat Bănpotoc nr. 20, comuna Hărău" },
+        { label: "Cazare", value: "3 apartamente și o cameră în turn la Castelul Maria; 7 camere la Casa Maria" },
+        { label: "Facilități", value: "grădină de 7.000 m², saună finlandeză, saloane și terasă pentru evenimente (max. 40 de persoane)" },
+        { label: "Check-in / check-out", value: "16:00–22:00, pe bază de rezervare / până la 11:00" },
+        { label: "Contact", value: "tel. 0722 382 212 · luminita.castelulmaria@gmail.com · castelulmaria.ro" }
+      ]
+    },
+    en: {
+      name: "Castelul Maria Villa, Bănpotoc",
+      tagline: "A villa built as a small castle with a tower, in the village of Bănpotoc (Hărău commune), a few kilometres from Deva: a 7,000 sq m garden, a Finnish sauna and family events.",
+      description: [
+        "Castelul Maria Villa stands in the village of Bănpotoc, Hărău commune, near Deva. It is an old building designed as a small castle with a tower, set in a large garden of about 7,000 sq m with flowers and fruit trees. The castle has three apartments with their own decor (red, blue and beige) and a tower room with panoramic views. A few minutes' walk away, Casa Maria adds seven rooms with private bathrooms, four of them with a balcony.",
+        "Guests can book a session in the Finnish sauna overlooking the garden separately. Breakfast is served as a buffet, and dinner is ordered in advance. For small weddings, festive dinners, parties and business meals there are two dining rooms and a covered terrace, for up to 40 people. Nearby starting points include Deva Fortress, Corvin Castle in Hunedoara, the Simeria Dendrological Park and the Dacian fortresses of the Orăștie Mountains."
+      ],
+      facts: [
+        { label: "Location", value: "Bănpotoc village no. 20, Hărău commune" },
+        { label: "Accommodation", value: "3 apartments and a tower room at Castelul Maria; 7 rooms at Casa Maria" },
+        { label: "Facilities", value: "7,000 sq m garden, Finnish sauna, dining rooms and terrace for events (max. 40 people)" },
+        { label: "Check-in / check-out", value: "16:00–22:00, by reservation / until 11:00" },
+        { label: "Contact", value: "phone +40 722 382 212 · luminita.castelulmaria@gmail.com · castelulmaria.ro" }
+      ]
+    }
+  },
+  {
     id: "conacul-radacinilor",
     name: "Conacul Rădăcinilor",
     category: { ro: "Hotel & restaurant", en: "Hotel & restaurant" },
