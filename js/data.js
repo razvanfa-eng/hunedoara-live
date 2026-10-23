@@ -6829,6 +6829,7 @@ window.SITE_BUSINESSES = [
     name: "Vila Castelul Maria",
     category: { ro: "Vilă turistică", en: "Tourist villa" },
     area: "Hărău",
+    townId: "harau",
     coords: [45.8605, 23.0128],
     hasReviews: true,
     season: "tot-anul",

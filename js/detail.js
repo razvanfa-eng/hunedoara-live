@@ -76,6 +76,12 @@
         }).join("") + "</dl>"
       : "";
 
+    // intrare legată explicit de o localitate (câmp opțional townId): link înapoi spre pagina ei
+    var town = entry.townId && RL.entryById("SITE_TOWNS", entry.townId);
+    if (town) {
+      out.facts += '<p class="detail-town"><span data-i18n="detail.town">' + RL.esc(t("detail.town")) + '</span> <a href="' + RL.esc(RL.entryUrl("SITE_TOWNS", town.id, lang)) + '">' + RL.esc(RL.entryName(town, lang)) + " →</a></p>";
+    }
+
     out.map = entry.coords
       ? '<a class="btn btn--outline" target="_blank" rel="noopener noreferrer" href="' + RL.wazeUrl(entry.coords) + '">' + RL.esc(t("detail.waze")) + "</a>" +
         '<a class="btn btn--outline" target="_blank" rel="noopener noreferrer" href="' + RL.gmapsDirUrl(entry.coords) + '">' + RL.esc(t("detail.gmaps")) + "</a>"
